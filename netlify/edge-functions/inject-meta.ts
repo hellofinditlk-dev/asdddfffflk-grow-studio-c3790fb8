@@ -10,7 +10,7 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "The Digital Marketing Agency Helping Sri Lankan Brands Win Online",
   },
   "/social-media-management-sri-lanka": {
-    title: "Social Media Management Sri Lanka | Social Media Marketing",
+    title: "Social Media Marketing Sri Lanka | Social Media Management",
     description: "#1 Social media management Sri Lanka & social media marketing Sri Lanka. Best social media marketing packages, trusted social media marketing company. Free call.",
     h1: "Social Media Marketing Sri Lanka – Grow Your Business with Expert Social Media Management",
   },
