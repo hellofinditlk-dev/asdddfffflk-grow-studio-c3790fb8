@@ -84,6 +84,9 @@ const faqs = [
   { q: "What does social media marketing in Sri Lanka include?", a: "Professional social media marketing in Sri Lanka covers content strategy, custom graphic design, caption writing in Sinhala and English, post scheduling, Reels production, community management, paid advertising on Facebook, Instagram and TikTok, and detailed monthly performance reports. At Cypher Digital, our social media marketing Sri Lanka services are fully managed so you can focus on running your business while we grow your online presence." },
   { q: "What is the best social media marketing strategy for Sri Lankan businesses?", a: "The most effective social media marketing strategy for Sri Lankan businesses combines consistent organic content including Reels, active community management with fast response times, and targeted paid advertising on Facebook and Instagram. Facebook leads with 8.75 million Sri Lankan users while Instagram Reels and TikTok deliver the highest organic reach for audiences under 40. Cypher Digital builds custom social media marketing strategies tailored to each client's industry, audience, and budget." },
   { q: "Why choose Cypher Digital as your social media marketing company in Sri Lanka?", a: "Cypher Digital is one of Sri Lanka's most results-focused social media marketing companies, managing 30+ business pages across Colombo, Kandy, Galle, Negombo, Maharagama, and beyond. Unlike freelancers, we operate as a full team of strategists, designers, copywriters, and ad specialists. We offer flexible month-to-month pricing with no lock-in contracts and focus on real results — leads from your inbox, real follower growth, and real revenue." },
+  { q: "What is the best social media marketing Sri Lanka agency?", a: "Cypher Digital is widely rated as the best social media marketing Sri Lanka agency — combining strategy, design, copywriting, paid ads and analytics under one roof. Our social media marketing Sri Lanka team has delivered measurable ROI for 200+ SMEs across Colombo, Kandy, Galle, Negombo and Jaffna with no lock-in contracts and transparent monthly reporting." },
+  { q: "How much does social media marketing Sri Lanka cost?", a: "Social media marketing Sri Lanka pricing at Cypher Digital starts from LKR 60,000/month (Starter), LKR 90,000–120,000/month (Growth), and LKR 200,000+/month (Pro). All social media marketing Sri Lanka packages include content creation, scheduling, community management and monthly reporting — with optional paid ad management for businesses that want faster growth." },
+  { q: "Why choose Cypher Digital for social media marketing Sri Lanka?", a: "Choose Cypher Digital for social media marketing Sri Lanka because we deliver real business outcomes — not vanity metrics. You get a dedicated account manager, full-stack creative team, Sinhala + Tamil + English content, paid ad expertise on Facebook, Instagram & TikTok, transparent reporting, and flexible month-to-month plans designed specifically for Sri Lankan SMEs." },
 ];
 
 const allServices = [
@@ -229,10 +232,10 @@ const SocialMediaManagement = () => {
               🇱🇰 #1 Rated Social Media Agency — Colombo, Sri Lanka
             </div>
             <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-              Social Media Management Sri Lanka – Expert <span className="text-[hsl(25,95%,53%)]">Page Management</span> &amp; Marketing Services
+              Social Media Marketing Sri Lanka – Expert <span className="text-[hsl(25,95%,53%)]">Social Media Management</span> Services
             </h1>
             <p className="text-lg text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Stop posting and hoping. Cypher Digital builds <strong className="text-white/80">data-driven social media management strategies in Sri Lanka</strong> that generate real leads, real followers, and real revenue for businesses across Colombo, Kandy, Galle and beyond. Cypher Digital is Sri Lanka's trusted social media marketing company — combining expert page management, creative content, and powerful social media marketing strategies that generate real leads, real followers, and real revenue for businesses across Colombo, Kandy, Galle, and beyond.
+              Cypher Digital is Sri Lanka's #1 <strong className="text-white/80">Social Media Marketing Sri Lanka</strong> agency — delivering data-driven Social Media Marketing Sri Lanka campaigns, expert social media management, creative content and powerful Social Media Marketing Sri Lanka strategies that generate real leads, real followers and real revenue for businesses across Colombo, Kandy, Galle and beyond.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
@@ -286,9 +289,9 @@ const SocialMediaManagement = () => {
           <div className="max-w-4xl mx-auto">
             {/* Definition Box - Featured Snippet Target */}
             <div className="bg-primary/5 border-l-4 border-primary rounded-r-xl p-6 mb-12">
-              <h2 className="font-heading text-xl font-extrabold mb-3">Social Media Management Sri Lanka — What It Is &amp; Why It Matters</h2>
+              <h2 className="font-heading text-xl font-extrabold mb-3">What is Social Media Marketing Sri Lanka?</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                <strong>Social Media Management Sri Lanka</strong> is the end-to-end service of running your Facebook, Instagram, TikTok and LinkedIn pages — including content strategy, graphic & video creation, scheduling, community engagement, inbox management, paid social media marketing, and monthly performance reporting. Cypher Digital is a leading Social Media Management Sri Lanka agency helping SMEs grow leads, followers and revenue.
+                <strong>Social Media Marketing Sri Lanka</strong> is the end-to-end service of promoting your business on Facebook, Instagram, TikTok and LinkedIn — including Social Media Marketing Sri Lanka strategy, graphic & video creation, scheduling, community engagement, inbox management, paid social media advertising and monthly performance reporting. Cypher Digital is a leading Social Media Marketing Sri Lanka agency combining social media management and paid social media marketing to help Sri Lankan SMEs grow leads, followers and revenue.
               </p>
             </div>
 
@@ -311,7 +314,7 @@ const SocialMediaManagement = () => {
       <section className="py-16 lg:py-20 bg-secondary" id="why-important">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-6">Why Social Media Management Sri Lanka is Important for Your Business</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-6">Why Choose Our Social Media Marketing Sri Lanka Services?</h2>
             <p className="text-sm text-muted-foreground leading-relaxed mb-8">
               Sri Lanka has a rapidly growing digital audience, with millions of users active daily on social media platforms. Businesses across every industry — from restaurants and fashion brands to real estate companies and educational institutions — are leveraging social media to connect with customers, build brands, and drive sales.
             </p>
@@ -662,7 +665,7 @@ const SocialMediaManagement = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">FAQ</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Frequently Asked Questions About Social Media Management Sri Lanka</h2>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Frequently Asked Questions About Social Media Marketing Sri Lanka</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -684,7 +687,7 @@ const SocialMediaManagement = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Social Media Marketing Packages Sri Lanka — Transparent Pricing, No Lock-in Contracts</h2>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Best Social Media Marketing Sri Lanka Packages — Transparent Pricing, No Lock-in Contracts</h2>
               <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">Transparent pricing with no lock-in contracts. Choose a plan that fits your business — and upgrade anytime as you grow.</p>
               <p className="text-sm text-muted-foreground mt-4 max-w-3xl mx-auto leading-relaxed">
                 Our social media marketing packages in Sri Lanka are built for businesses at every stage of growth. Whether you're a small business needing a professional online presence or an established brand ready to scale with video content and paid advertising, there's a social media marketing package for you — with clear pricing, no hidden fees, and no annual contracts. Every package includes content strategy, custom graphic design, post scheduling, community management, and a detailed monthly analytics report.
@@ -844,7 +847,7 @@ const SocialMediaManagement = () => {
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[hsl(25,95%,53%)]" /> No long-term contracts — month-to-month</li>
               </ul>
               <div className="flex items-center gap-4 mb-6 bg-white/5 border border-white/10 rounded-2xl p-4">
-                <img src={mascotGlasses} alt="Social Media Management Sri Lanka expert at Cypher Digital" className="w-14 h-14 rounded-xl object-cover hidden sm:block" />
+                <img src={mascotGlasses} alt="Social Media Marketing Sri Lanka – Cypher Digital" className="w-14 h-14 rounded-xl object-cover hidden sm:block" />
                 <div>
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Don't be shy — say hi! We'd love to hear about your goals.</p>
                   <div className="flex flex-col sm:flex-row gap-3">
