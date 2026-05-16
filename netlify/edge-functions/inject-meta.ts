@@ -1,7 +1,7 @@
 const META_MAP: Record<string, { title: string; description: string; h1: string }> = {
   "/": {
-    title: "Cypher Digital | Digital Marketing Agency Sri Lanka",
-    description: "Best digital marketing agency in Sri Lanka. Social media management, Facebook & Google Ads, SEO, video production & graphic design",
+    title: "Best Digital Marketing Agency Sri Lanka | Cypher Digital",
+    description: "#1 digital marketing agency in Sri Lanka & best social media agency Sri Lanka. Trusted digital marketing companies in Sri Lanka. Get free call today!",
     h1: "Social Media & Digital Marketing Solutions in Sri Lanka",
   },
   "/about": {
