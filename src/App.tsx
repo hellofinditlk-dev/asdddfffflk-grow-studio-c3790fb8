@@ -111,6 +111,11 @@ const BlogPost79 = lazy(() => import("./pages/BlogPost79"));
 const BlogPost80 = lazy(() => import("./pages/BlogPost80"));
 const BlogPost81 = lazy(() => import("./pages/BlogPost81"));
 const BlogPost82 = lazy(() => import("./pages/BlogPost82"));
+const BlogPost83 = lazy(() => import("./pages/BlogPost83"));
+const BlogPost84 = lazy(() => import("./pages/BlogPost84"));
+const BlogPost85 = lazy(() => import("./pages/BlogPost85"));
+const BlogPost86 = lazy(() => import("./pages/BlogPost86"));
+const BlogPost87 = lazy(() => import("./pages/BlogPost87"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const IndustryPage = lazy(() => import("./pages/IndustryPage"));
 const DesignSubService = lazy(() => import("./pages/DesignSubService"));
@@ -245,6 +250,11 @@ const App = () => (
               <Route path="/blog/advertising-cost-sri-lanka-2026" element={<BlogPost80 />} />
               <Route path="/blog/online-advertising-sri-lanka-platform-guide" element={<BlogPost81 />} />
               <Route path="/blog/advertising-mistakes-sri-lankan-businesses" element={<BlogPost82 />} />
+              <Route path="/blog/social-media-marketing-packages-sri-lanka" element={<BlogPost83 />} />
+              <Route path="/blog/social-media-marketing-agency-sri-lanka" element={<BlogPost84 />} />
+              <Route path="/blog/social-media-marketing-sri-lanka-guide-2025" element={<BlogPost85 />} />
+              <Route path="/blog/what-is-social-media-marketing" element={<BlogPost86 />} />
+              <Route path="/blog/what-does-a-social-media-marketing-agency-do" element={<BlogPost87 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
