@@ -14,7 +14,7 @@ const BlogPost87 = () => (
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">
-            <time className="text-xs text-muted-foreground">May 14, 2026</time>
+            <time className="text-xs text-muted-foreground">May 17, 2026</time>
             <h1 className="font-heading text-2xl md:text-3xl font-extrabold mt-3 mb-4">What Does a Social Media Marketing Agency Actually Do? (And Is It Worth It?)</h1>
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
