@@ -98,7 +98,7 @@ const Footer = () => (
         <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
           <Link to="/advertising-in-sri-lanka" className="hover:text-foreground transition-colors">Advertising Sri Lanka</Link>
           <span className="text-border">|</span>
-          <Link to="/social-media-management-sri-lanka" className="hover:text-foreground transition-colors">Social Media Management Sri Lanka</Link>
+          <Link to="/social-media-management-sri-lanka" className="hover:text-foreground transition-colors">Social Media Marketing Sri Lanka</Link>
           <span className="text-border">|</span>
           <Link to="/google-ads-sri-lanka" className="hover:text-foreground transition-colors">Google Ads Sri Lanka</Link>
           <span className="text-border">|</span>
