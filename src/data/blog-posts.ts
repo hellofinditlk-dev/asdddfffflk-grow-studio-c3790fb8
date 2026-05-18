@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "top-rated-social-media-management-companies-sri-lanka",
+    title: "Top-Rated Social Media Management Companies in Sri Lanka (2026)",
+    excerpt: "What separates top-rated social media management companies in Sri Lanka — evaluation criteria, monthly workflows, and why Cypher Digital leads the market.",
+    date: "2026-05-18",
+    keyword: "social media marketing sri lanka",
+  },
+  {
     slug: "affordable-social-media-marketing-services-sri-lanka",
     title: "Affordable Social Media Marketing Services in Sri Lanka (2026 Pricing Guide)",
     excerpt: "Real pricing for affordable social media marketing services in Sri Lanka — packages, what's included, and how to get professional results from LKR 60,000/month.",
