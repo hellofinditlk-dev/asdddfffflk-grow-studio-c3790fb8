@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "best-social-media-agencies-sri-lanka-small-businesses",
+    title: "Best Social Media Agencies in Sri Lanka for Small Businesses (2026 Guide)",
+    excerpt: "Discover the best social media agencies in Sri Lanka for small businesses — what to look for, pricing, and how Cypher Digital delivers real results.",
+    date: "2026-05-18",
+    keyword: "social media agencies in Sri Lanka for small businesses",
+  },
+  {
     slug: "why-social-media-management-important-businesses-sri-lanka",
     title: "Why Social Media Management is Important for Businesses in Sri Lanka",
     excerpt: "Discover why a structured social media strategy is essential for Sri Lankan businesses to grow their reach, engagement, and conversions.",
