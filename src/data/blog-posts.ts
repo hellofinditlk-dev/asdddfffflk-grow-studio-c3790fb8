@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "affordable-social-media-marketing-services-sri-lanka",
+    title: "Affordable Social Media Marketing Services in Sri Lanka (2026 Pricing Guide)",
+    excerpt: "Real pricing for affordable social media marketing services in Sri Lanka — packages, what's included, and how to get professional results from LKR 60,000/month.",
+    date: "2026-05-18",
+    keyword: "affordable social media marketing services in Sri Lanka",
+  },
+  {
     slug: "best-social-media-agencies-sri-lanka-small-businesses",
     title: "Best Social Media Agencies in Sri Lanka for Small Businesses (2026 Guide)",
     excerpt: "Discover the best social media agencies in Sri Lanka for small businesses — what to look for, pricing, and how Cypher Digital delivers real results.",
