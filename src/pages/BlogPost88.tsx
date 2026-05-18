@@ -49,20 +49,16 @@ const BlogPost88 = () => (
             <p>Services include <Link to="/social-media-management-sri-lanka" className="text-primary underline">Social Media Management</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary underline">Facebook & Instagram Advertising</Link>, <Link to="/google-ads-sri-lanka" className="text-primary underline">Google Ads</Link>, <Link to="/seo-services-sri-lanka" className="text-primary underline">SEO</Link>, <Link to="/graphic-design-sri-lanka" className="text-primary underline">Graphic Design</Link>, <Link to="/video-production-sri-lanka" className="text-primary underline">Video Production</Link>, and <Link to="/tiktok-marketing-sri-lanka" className="text-primary underline">TikTok Marketing</Link>.</p>
             <p>With over 15,000 leads generated, 2,000+ campaigns run, and a 5.0-star client rating, Cypher Digital has a strong track record across multiple industries. Their packages are designed for Sri Lankan small business budgets, with transparent pricing and dedicated account management.</p>
 
-            <h3 className="font-heading text-lg font-bold text-foreground mt-6">2. Antyra Solutions — Best for Hospitality and Tourism Businesses</h3>
-            <p><strong className="text-foreground">Location:</strong> Battaramulla, Sri Lanka. A well-established agency with a strong focus on the hospitality sector — luxury hotels and boutique properties — known for SEO, social media strategies, and accountability.</p>
-
-            <h3 className="font-heading text-lg font-bold text-foreground mt-6">3. Echt Social — Best for SMEs Wanting Direct, Hands-On Management</h3>
-            <p><strong className="text-foreground">Location:</strong> Sri Jayawardenepura Kotte. A specialist social media agency that suits SMEs looking for practical management without complex agency layers. Pricing and service scope are straightforward.</p>
-
-            <h3 className="font-heading text-lg font-bold text-foreground mt-6">4. HypeX Digital — Best for Lead Generation and International Reach</h3>
-            <p><strong className="text-foreground">Location:</strong> Colombo. ROI-focused with a data-driven lead generation approach across Sri Lanka, Australia, the Philippines, Singapore, and the Maldives. Services span Google Ads, Social Media, SEO, and WhatsApp Marketing.</p>
-
-            <h3 className="font-heading text-lg font-bold text-foreground mt-6">5. Marketing Chrome — Best for Businesses in Kandy and Central Sri Lanka</h3>
-            <p><strong className="text-foreground">Location:</strong> Kandy. SEO, social media, and web development for businesses in the Central Province — a solid choice if you want a locally-based agency outside Colombo.</p>
-
-            <h3 className="font-heading text-lg font-bold text-foreground mt-6">6. Jasmin Media — Best for Long-Standing Expertise</h3>
-            <p><strong className="text-foreground">Location:</strong> Colombo (also UK). Established in 2008, offering social media marketing alongside e-commerce, web development, and custom software — useful if you need multiple digital services under one roof.</p>
+            <h3 className="font-heading text-lg font-bold text-foreground mt-6">Other Agency Categories to Consider</h3>
+            <p>Beyond Cypher Digital, the Sri Lankan market includes several other types of agencies. Match the agency type to your business needs:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong className="text-foreground">Hospitality & tourism specialists</strong> — agencies focused on hotels and boutique properties, strong in SEO and booking-driven campaigns.</li>
+              <li><strong className="text-foreground">SME-only specialists</strong> — small teams offering simple, hands-on management without complex agency layers. Best for very small budgets.</li>
+              <li><strong className="text-foreground">International / regional agencies</strong> — data-driven shops serving clients across South and Southeast Asia. Higher fees but broader reach.</li>
+              <li><strong className="text-foreground">Regional agencies outside Colombo</strong> — based in Kandy, Galle, or Jaffna for businesses that prefer a locally-based partner familiar with their province.</li>
+              <li><strong className="text-foreground">Full-stack digital + web agencies</strong> — long-standing firms that bundle social media with web development, e-commerce, and custom software.</li>
+            </ul>
+            <p>The right fit depends on your industry, budget, and how much hand-holding you need. For most Sri Lankan SMEs focused on lead generation, a results-driven specialist like Cypher Digital is the strongest match.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">How Much Does Social Media Marketing Cost in Sri Lanka?</h2>
             <div className="overflow-x-auto">
