@@ -101,6 +101,7 @@ const BlogPost88 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">The Bottom Line</h2>
             <p>Social media marketing done right is one of the most cost-effective ways for Sri Lankan small businesses to reach new customers, build trust, and grow revenue. The results you get depend entirely on the agency you choose.</p>
             <p>The best <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media agencies in Sri Lanka for small businesses</Link> combine local market knowledge, lead generation focus, transparent pricing, and genuine accountability. Cypher Digital stands out as the top choice — with a proven track record, results-driven approach, and packages built for local businesses.</p>
+            <p>Looking for results-driven <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing sri lanka</Link> built around lead generation and measurable ROI? Cypher Digital is the partner SMEs trust.</p>
             <p><a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20consultation%20for%20my%20small%20business" className="text-primary font-semibold hover:underline">📞 Book your free consultation on WhatsApp →</a></p>
           </div>
           <div className="mt-10 text-center"><Link to="/blog" className="text-primary font-semibold underline">← Back to Blog</Link></div>
