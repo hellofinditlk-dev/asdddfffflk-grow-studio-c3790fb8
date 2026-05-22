@@ -110,6 +110,9 @@ const BlogPost89 = () => (
             <p>If you're ready to stop guessing and start growing, Cypher Digital offers professional, <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold underline">affordable social media marketing services in Sri Lanka</Link> built specifically for local businesses — packages from LKR 60,000/month, dedicated creative team, results-first approach.</p>
             <p>Get professional, results-driven <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold underline">social media marketing sri lanka</Link> built for SMEs — every campaign optimised for enquiries, bookings, and sales.</p>
             <p><a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20social%20media%20strategy%20call" className="text-primary font-semibold hover:underline">📞 Book your free strategy call on WhatsApp →</a></p>
+
+            <h2 className="font-heading text-xl font-bold text-foreground mt-8">Continue Reading</h2>
+            <p>See our shortlist of the <Link to="/blog/best-social-media-agencies-sri-lanka-small-businesses" className="text-primary font-semibold hover:underline">best social media agencies in Sri Lanka for small businesses</Link>, or check the latest rankings of <Link to="/blog/top-rated-social-media-management-companies-sri-lanka" className="text-primary font-semibold hover:underline">top-rated social media management companies in Sri Lanka</Link>. For full service details, visit our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing sri lanka</Link> page.</p>
           </div>
           <div className="mt-10 text-center"><Link to="/blog" className="text-primary font-semibold underline">← Back to Blog</Link></div>
         </div>
