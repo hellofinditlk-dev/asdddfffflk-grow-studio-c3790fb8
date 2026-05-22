@@ -625,6 +625,13 @@ const TikTokMarketing = () => {
               <Link to="/advertising-in-sri-lanka" className="text-sm text-primary font-semibold hover:underline inline-flex items-center gap-1">
                 📖 Read our Complete Advertising Guide for Sri Lanka <ArrowRight className="w-3.5 h-3.5" />
               </Link>
+              <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                Going beyond TikTok? Explore{" "}
+                <Link to="/media-buying-agencies-sri-lanka" className="text-primary hover:underline font-semibold">media buying in Sri Lanka</Link>,{" "}
+                <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV advertising</Link>,{" "}
+                <Link to="/radio-advertising-sri-lanka" className="text-primary hover:underline font-semibold">radio advertising</Link> and{" "}
+                <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline font-semibold">newspaper advertising</Link>.
+              </p>
             </div>
           </div>
         </div>
