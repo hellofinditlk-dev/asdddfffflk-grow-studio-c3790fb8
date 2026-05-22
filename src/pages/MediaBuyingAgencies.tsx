@@ -451,10 +451,10 @@ const MediaBuyingAgencies = () => {
             </table>
           </div>
           <p className="text-muted-foreground leading-relaxed mt-4">
-            <strong>The winning strategy in Sri Lanka:</strong> Run TV for brand awareness and credibility, combined with Facebook and Google Ads for lead generation and direct response. This integrated approach delivers the widest reach and the best measurable ROI.
+            <strong>The winning strategy in Sri Lanka:</strong> Run <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV</Link> for brand awareness and credibility, combined with <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook</Link> and <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link> for lead generation and direct response. This integrated approach delivers the widest reach and the best measurable ROI.
           </p>
 
-          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">How Cypher Digital Helps with TV & Newspaper Advertising</h3>
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">How Cypher Digital Helps with <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV</Link> & <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline">Newspaper Advertising</Link></h3>
           <p className="text-muted-foreground leading-relaxed mb-3">While Cypher Digital specialises in digital media buying, we help our clients navigate traditional media as well:</p>
           <ul className="space-y-2 text-muted-foreground">
             {[
@@ -469,7 +469,7 @@ const MediaBuyingAgencies = () => {
           </ul>
 
           <div className="mt-6 p-5 rounded-lg border border-primary/30 bg-primary/5">
-            <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A TV spot on Hiru TV or Sirasa TV paired with a Facebook retargeting campaign can deliver dramatically better results than either channel alone.</p>
+            <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV spot</Link> on Hiru TV or Sirasa TV paired with a <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook retargeting campaign</Link> can deliver dramatically better results than either channel alone.</p>
           </div>
         </section>
 
