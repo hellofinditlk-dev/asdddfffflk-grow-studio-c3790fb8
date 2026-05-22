@@ -585,14 +585,17 @@ const MediaBuyingAgencies = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold mb-4">Related Services</h2>
+          <h2 className="font-heading text-2xl font-bold mb-4">Related Advertising Guides &amp; Services</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+            <Link to="/tv-advertising-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">TV Advertising in Sri Lanka</Link>
+            <Link to="/newspaper-advertising-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Newspaper Advertising in Sri Lanka</Link>
+            <Link to="/radio-advertising-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Radio Advertising in Sri Lanka</Link>
+            <Link to="/advertising-in-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Advertising in Sri Lanka</Link>
             <Link to="/facebook-ads-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Facebook Advertising</Link>
             <Link to="/google-ads-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Google Ads</Link>
             <Link to="/tiktok-marketing-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">TikTok Marketing</Link>
             <Link to="/social-media-management-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Social Media Management</Link>
             <Link to="/influencer-marketing-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Influencer Marketing</Link>
-            <Link to="/advertising-in-sri-lanka" className="p-4 rounded-lg border border-border hover:border-primary transition-colors">Advertising in Sri Lanka</Link>
           </div>
         </section>
 
