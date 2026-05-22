@@ -179,6 +179,26 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Advertising Sri Lanka guide covering Sri Lanka advertising, digital marketing, branding, SEO, social media marketing and online advertising services in Sri Lanka.",
     h1: "Advertising in Sri Lanka: The Complete Guide to Digital Advertising for Businesses",
   },
+  "/tv-advertising-sri-lanka": {
+    title: "TV Advertising Sri Lanka (2026) | TV Commercial Rates & Channels | Cypher Digital",
+    description: "Complete guide to TV advertising in Sri Lanka. Compare rates for Hiru TV, Sirasa, Derana, ITN & Rupavahini. Production costs, prime-time slots & media buying support.",
+    h1: "TV Advertising in Sri Lanka: Rates, Channels & Campaign Strategy Guide",
+  },
+  "/radio-advertising-sri-lanka": {
+    title: "Radio Advertising Sri Lanka (2026) | FM Radio Rates & Stations | Cypher Digital",
+    description: "Radio advertising in Sri Lanka with rates for Sirasa FM, Hiru FM, Y FM, Neth FM & TNL. Drive-time slots, jingle production and island-wide radio media buying.",
+    h1: "Radio Advertising in Sri Lanka: FM Station Rates, Slots & Strategy",
+  },
+  "/newspaper-advertising-sri-lanka": {
+    title: "Newspaper Advertising Sri Lanka (2026) | Print Ad Rates | Cypher Digital",
+    description: "Newspaper advertising rates in Sri Lanka for Sunday Times, Daily Mirror, Lankadeepa, Divaina, Thinakaran & more. Classified, display & full-page ad planning.",
+    h1: "Newspaper Advertising in Sri Lanka: Rates, Publications & Booking Guide",
+  },
+  "/media-buying-agencies-sri-lanka": {
+    title: "Media Buying Agencies Sri Lanka (2026) | Best Media Buying Agency | Cypher Digital",
+    description: "Top media buying agency in Sri Lanka. We negotiate TV, radio, newspaper, outdoor & digital ad placements at the best rates with full campaign reporting.",
+    h1: "Media Buying Agencies in Sri Lanka: How to Choose & What to Expect",
+  },
   "/contact": {
     title: "Contact Cypher Digital | Get a Free Consultation",
     description: "Contact Cypher Digital for a free digital marketing consultation. Call +94 70 177 2626 or visit us in Colombo, Sri Lanka. We're ready to grow your business.",
