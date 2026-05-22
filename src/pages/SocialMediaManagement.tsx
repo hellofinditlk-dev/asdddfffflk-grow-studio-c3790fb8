@@ -804,6 +804,13 @@ const SocialMediaManagement = () => {
             <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>?
             {" "}Our complete guide covers market statistics, advertising costs, best platforms, targeting strategies, and industry-specific insights for Sri Lankan businesses.
           </p>
+          <p className="text-xs text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4">
+            Building a bigger campaign? Pair social media with{" "}
+            <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying in Sri Lanka</Link>,{" "}
+            <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising</Link>,{" "}
+            <Link to="/radio-advertising-sri-lanka" className="text-primary font-semibold hover:underline">radio advertising</Link> and{" "}
+            <Link to="/newspaper-advertising-sri-lanka" className="text-primary font-semibold hover:underline">newspaper advertising</Link>.
+          </p>
         </div>
       </section>
 

@@ -668,6 +668,13 @@ const SEOServices = () => {
           <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl">
             <Link to="/advertising-in-sri-lanka">Read the Full Advertising Guide <ArrowRight className="w-4 h-4 ml-2" /></Link>
           </Button>
+          <p className="text-xs text-white/60 mt-6 max-w-2xl mx-auto leading-relaxed">
+            Also explore{" "}
+            <Link to="/media-buying-agencies-sri-lanka" className="text-primary hover:underline font-semibold">media buying in Sri Lanka</Link>,{" "}
+            <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV advertising</Link>,{" "}
+            <Link to="/radio-advertising-sri-lanka" className="text-primary hover:underline font-semibold">radio advertising</Link> and{" "}
+            <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline font-semibold">newspaper advertising</Link>.
+          </p>
         </div>
       </section>
       <RelatedPosts
