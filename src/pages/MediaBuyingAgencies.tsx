@@ -160,24 +160,6 @@ const MediaBuyingAgencies = () => {
           </div>
         </section>
 
-        <section>
-          <h2 className="font-heading text-3xl font-bold mb-4">How to Choose the Best Media Buying Agency in Sri Lanka</h2>
-          <div className="space-y-4">
-            {[
-              ["Do they understand your target audience?","The best agencies build detailed audience profiles — location, age, interests, device, language, income — before spending a single rupee."],
-              ["Do they offer transparent reporting?","You should receive regular reports with clear metrics: reach, impressions, CPM, CPC, CTR, conversion rate, and ROAS."],
-              ["Are they platform-certified?","Look for Google Partner status or Meta Business Partner credentials — these signal verified expertise."],
-              ["What is their track record?","Case studies, testimonials, and proven results matter more than awards or size. Ask for local examples from your industry."],
-              ["Do they handle creative as well?","Media buying without strong creative is like buying billboard space and putting up a blank poster. The best agencies align both."],
-            ].map(([q,a],i)=>(
-              <div key={i} className="p-5 rounded-lg border border-border">
-                <h3 className="font-heading font-semibold mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5 text-primary" />{q}</h3>
-                <p className="text-sm text-muted-foreground">{a}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Newspaper Advertising Section */}
         <section>
           <h2 className="font-heading text-3xl font-bold mb-4">Newspaper Advertising in Sri Lanka — Complete Guide</h2>
@@ -488,6 +470,24 @@ const MediaBuyingAgencies = () => {
 
           <div className="mt-6 p-5 rounded-lg border border-primary/30 bg-primary/5">
             <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A TV spot on Hiru TV or Sirasa TV paired with a Facebook retargeting campaign can deliver dramatically better results than either channel alone.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="font-heading text-3xl font-bold mb-4">How to Choose the Best Media Buying Agency in Sri Lanka</h2>
+          <div className="space-y-4">
+            {[
+              ["Do they understand your target audience?","The best agencies build detailed audience profiles — location, age, interests, device, language, income — before spending a single rupee."],
+              ["Do they offer transparent reporting?","You should receive regular reports with clear metrics: reach, impressions, CPM, CPC, CTR, conversion rate, and ROAS."],
+              ["Are they platform-certified?","Look for Google Partner status or Meta Business Partner credentials — these signal verified expertise."],
+              ["What is their track record?","Case studies, testimonials, and proven results matter more than awards or size. Ask for local examples from your industry."],
+              ["Do they handle creative as well?","Media buying without strong creative is like buying billboard space and putting up a blank poster. The best agencies align both."],
+            ].map(([q,a],i)=>(
+              <div key={i} className="p-5 rounded-lg border border-border">
+                <h3 className="font-heading font-semibold mb-2 flex items-center gap-2"><CheckCircle className="w-5 h-5 text-primary" />{q}</h3>
+                <p className="text-sm text-muted-foreground">{a}</p>
+              </div>
+            ))}
           </div>
         </section>
 
