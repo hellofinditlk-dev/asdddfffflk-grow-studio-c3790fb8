@@ -1058,6 +1058,72 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
+        {/* Traditional Advertising Channels in Sri Lanka */}
+        <section id="traditional-channels" className="mb-16 scroll-mt-20">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Traditional Advertising Channels in Sri Lanka — TV, Radio, Newspaper &amp; Media Buying</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl leading-relaxed">
+            Digital is winning share, but traditional media still drives massive reach in Sri Lanka — especially for FMCG, telco, banking, automotive, real estate and political campaigns. Here's a quick orientation to the four channels every serious marketer should understand, with deep-dive guides for each.
+          </p>
+
+          <div className="space-y-6">
+            {/* TV */}
+            <div className="p-6 rounded-2xl border border-border bg-card">
+              <h3 className="font-heading text-xl font-bold mb-2">
+                <Link to="/tv-advertising-sri-lanka" className="hover:text-primary">TV Advertising in Sri Lanka</Link>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Television still delivers the highest single-impression reach in Sri Lanka. The market is dominated by <strong>Hiru TV</strong>, <strong>Sirasa TV</strong>, <strong>Derana</strong>, <strong>Swarnavahini</strong>, <strong>ITN</strong> and <strong>Rupavahini</strong> in Sinhala, with <strong>Shakthi TV</strong> and <strong>Vasantham</strong> serving Tamil audiences. Prime-time rates (7:00–10:00 PM) range roughly LKR 80,000–250,000 for a 30-second spot on top channels, with production costs starting around LKR 150,000 for a basic TVC.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                TV works best for brand-building, new product launches and seasonal campaigns where you need to land a single message in front of millions of households quickly. GRP and TRP planning, channel-mix optimisation and proper post-buy reconciliation are essential to avoid overpaying.
+              </p>
+              <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">Read the complete TV Advertising in Sri Lanka guide →</Link>
+            </div>
+
+            {/* Radio */}
+            <div className="p-6 rounded-2xl border border-border bg-card">
+              <h3 className="font-heading text-xl font-bold mb-2">
+                <Link to="/radio-advertising-sri-lanka" className="hover:text-primary">Radio Advertising in Sri Lanka</Link>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Radio remains the cheapest mass-reach channel in Sri Lanka and is unbeatable for drive-time frequency. Key stations include <strong>Sirasa FM</strong> and <strong>Hiru FM</strong> (Sinhala mass market), <strong>Yes FM</strong> and <strong>TNL Radio</strong> (English urban), <strong>Shakthi FM</strong> (Tamil), and <strong>Shaa FM</strong> / <strong>Y FM</strong> (youth). A 30-second spot typically costs LKR 3,000–18,000 depending on station and daypart.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Morning drive (6–10 AM) and evening drive (4–7 PM) deliver peak in-car listenership. Radio pairs exceptionally well with digital retargeting — listeners exposed to your audio spot become high-intent audiences for follow-up Facebook and Google Ads.
+              </p>
+              <Link to="/radio-advertising-sri-lanka" className="text-primary font-semibold hover:underline">Read the complete Radio Advertising in Sri Lanka guide →</Link>
+            </div>
+
+            {/* Newspaper */}
+            <div className="p-6 rounded-2xl border border-border bg-card">
+              <h3 className="font-heading text-xl font-bold mb-2">
+                <Link to="/newspaper-advertising-sri-lanka" className="hover:text-primary">Newspaper Advertising in Sri Lanka</Link>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Print remains the most trusted channel for older, professional and regional audiences. Major titles include <strong>Daily News</strong>, <strong>Sunday Times</strong> and <strong>Sunday Observer</strong> in English; <strong>Lankadeepa</strong>, <strong>Divaina</strong> and <strong>Silumina</strong> in Sinhala; and <strong>Thinakkural</strong> and <strong>Virakesari</strong> in Tamil. Common formats run from classified line ads to full-page colour, strip ads, jacket wraps and front-page solus positions.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Newspaper advertising is especially effective for tenders, vacancies, property listings, auction notices, financial disclosures, education intakes and high-trust B2B announcements. Premium positions (front page, back page, page 3) carry 30–100% loading above standard rates.
+              </p>
+              <Link to="/newspaper-advertising-sri-lanka" className="text-primary font-semibold hover:underline">Read the complete Newspaper Advertising in Sri Lanka guide →</Link>
+            </div>
+
+            {/* Media Buying */}
+            <div className="p-6 rounded-2xl border border-border bg-card">
+              <h3 className="font-heading text-xl font-bold mb-2">
+                <Link to="/media-buying-agencies-sri-lanka" className="hover:text-primary">Media Buying Agencies in Sri Lanka</Link>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                A professional media buying agency is the single biggest lever for traditional ad spend efficiency in Sri Lanka. Established agencies hold annual volume deals with TV channels, radio networks and newspaper houses, and typically negotiate <strong>20–40% below published rate cards</strong> — savings that more than cover the agency commission.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Beyond rate negotiation, agencies handle media planning (channel mix, GRP/TRP targets, daypart strategy), booking and scheduling, copy clearance, post-buy reconciliation and cross-channel reporting. For any brand spending more than LKR 500,000/month on traditional media, going direct almost always costs more.
+              </p>
+              <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">Read the complete Media Buying Agencies in Sri Lanka guide →</Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section id="faq" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Frequently Asked Questions About Advertising in Sri Lanka</h2>
