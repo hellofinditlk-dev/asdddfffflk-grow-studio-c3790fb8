@@ -160,6 +160,319 @@ const MediaBuyingAgencies = () => {
           </div>
         </section>
 
+        {/* Newspaper Advertising Section */}
+        <section>
+          <h2 className="font-heading text-3xl font-bold mb-4">Newspaper Advertising in Sri Lanka — Complete Guide</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Newspaper advertising remains one of the most trusted and high-reach advertising channels in Sri Lanka, particularly for reaching older demographics, regional audiences, and business decision-makers. Despite the rise of digital media, print advertising in Sri Lanka continues to deliver strong credibility and brand authority.
+          </p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Major Newspapers in Sri Lanka for Advertising</h3>
+
+          <h4 className="font-heading text-lg font-semibold mt-6 mb-2">English Language Newspapers</h4>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Daily Mirror</strong> is one of the most widely read English newspapers in Sri Lanka, ideal for reaching urban professionals, business owners, and educated consumers in Colombo and major cities. Advertising here positions your brand as credible and established.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>The Sunday Times</strong> is the highest-circulating English Sunday newspaper in Sri Lanka, making it ideal for weekend campaigns targeting family decision-makers and urban professionals.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Daily FT (Financial Times Sri Lanka)</strong> is the go-to newspaper for reaching Sri Lanka's business community — CEOs, CFOs, investors, and corporate decision-makers. Best for B2B brands, financial services, real estate, and professional services.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>The Island</strong> is a well-established English daily with a loyal readership base across Colombo and the Western Province.</p>
+
+          <h4 className="font-heading text-lg font-semibold mt-6 mb-2">Sinhala Language Newspapers</h4>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Lankadeepa</strong> is Sri Lanka's most widely read Sinhala daily newspaper with a daily circulation of over 285,000 and a Sunday edition exceeding 580,000 readers. It has won the SLIM-Kantar Most Popular Newspaper Award for 18 consecutive years. For mass-market Sinhala-speaking audiences, Lankadeepa is the #1 choice.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Divaina</strong> is another popular Sinhala daily owned by Associated Newspapers of Ceylon (Lake House), reaching readers across the island including regional cities and towns.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Silumina</strong> is the Sunday Sinhala newspaper from Lake House — a strong vehicle for Sunday campaigns targeting family audiences.</p>
+
+          <h4 className="font-heading text-lg font-semibold mt-6 mb-2">Tamil Language Newspapers</h4>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Virakesari</strong> is the most widely read Tamil daily newspaper in Sri Lanka, essential for reaching the Tamil-speaking population across the Northern, Eastern, and Central Provinces.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Tamil Mirror</strong> is a sister publication of Daily Mirror targeting Tamil readers in Colombo and the Northern Province.</p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Types of Newspaper Ads in Sri Lanka</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Ad Format</th>
+                  <th className="text-left p-3 font-heading">Description</th>
+                  <th className="text-left p-3 font-heading">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Full Page","Complete page coverage, maximum impact","Brand launches, major promotions"],
+                  ["Half Page","Strong presence at lower cost than full page","Product launches, sales events"],
+                  ["Quarter Page","Cost-effective visibility","Regular promotions, announcements"],
+                  ["Strip Ad","Horizontal banner across the page","Retail offers, contact promotions"],
+                  ["Classified Ad","Text-only small ad","Jobs, property, vehicle listings"],
+                  ["Advertorial","Editorial-style paid article","Trust-building, detailed brand stories"],
+                  ["Front Page Strip","Prime position at top/bottom of front page","Maximum visibility campaigns"],
+                  ["Wraparound","Covers front and back page","Major brand campaigns"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Newspaper Advertising Costs in Sri Lanka (2025)</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Newspaper</th>
+                  <th className="text-left p-3 font-heading">Full Page (Approx.)</th>
+                  <th className="text-left p-3 font-heading">Half Page (Approx.)</th>
+                  <th className="text-left p-3 font-heading">Audience</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Lankadeepa (Daily)","LKR 300,000–600,000","LKR 150,000–300,000","Sinhala mass market"],
+                  ["Lankadeepa (Sunday)","LKR 500,000–900,000","LKR 250,000–450,000","Sinhala family/Sunday"],
+                  ["Daily Mirror","LKR 250,000–500,000","LKR 120,000–250,000","English urban professionals"],
+                  ["Sunday Times","LKR 400,000–750,000","LKR 200,000–375,000","English family/Sunday"],
+                  ["Daily FT","LKR 200,000–400,000","LKR 100,000–200,000","Business decision-makers"],
+                  ["Virakesari","LKR 150,000–350,000","LKR 80,000–175,000","Tamil-speaking audiences"],
+                  ["Divaina","LKR 250,000–500,000","LKR 125,000–250,000","Sinhala regional audiences"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                    <td className="p-3 text-muted-foreground">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-muted-foreground italic mt-3">Note: Rates vary by position (front page vs. inside), day of week, and negotiated media buys. A media buying agency can often negotiate 20–40% off rate card prices.</p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">When Should Your Business Advertise in Newspapers?</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">Newspaper advertising works best for:</p>
+          <ul className="space-y-2 text-muted-foreground">
+            {[
+              ["Brand credibility","When you want your business to appear established and trustworthy"],
+              ["Mass market launches","Reaching large audiences quickly across the island"],
+              ["Event announcements","Sales, grand openings, product launches"],
+              ["Real estate","Property listings and project launches remain strong in print"],
+              ["Government tenders & legal notices","Mandatory print publication requirements"],
+              ["Recruitment","Job advertisements still perform well in Sunday editions"],
+              ["FMCG promotions","Price promotions and offers targeting householders"],
+              ["Regional campaigns","Reaching audiences in cities outside Colombo"],
+            ].map(([t,d],i)=>(
+              <li key={i} className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>{t}</strong> — {d}</span></li>
+            ))}
+          </ul>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Tips for Effective Newspaper Advertising in Sri Lanka</h3>
+          <ol className="space-y-3 text-muted-foreground list-decimal pl-6">
+            <li><strong>Choose the right language</strong> — Sinhala newspapers reach the widest audience, but English papers reach higher-income, decision-making demographics. Tamil papers are essential for Northern and Eastern Province campaigns.</li>
+            <li><strong>Sunday editions outperform weekdays</strong> — Sunday circulation is significantly higher than daily editions across all major Sri Lankan newspapers. Schedule key ads for Sunday for maximum reach.</li>
+            <li><strong>Front page positions command premium</strong> — A strip ad or jacket on the front page of Lankadeepa or Daily Mirror delivers exceptional visibility but costs 2–3x standard rates.</li>
+            <li><strong>Combine print with digital</strong> — The most effective campaigns run newspaper ads simultaneously with Facebook and Google campaigns. Print builds credibility; digital captures the leads.</li>
+            <li><strong>Advertorials outperform standard display ads</strong> — A well-written advertorial (editorial-style article) builds deeper trust than a display banner and often gets read in full.</li>
+            <li><strong>Book early for peak seasons</strong> — New Year (Avurudu), Christmas, and Vesak periods see high advertiser demand. Book newspaper space 3–4 weeks in advance for peak periods.</li>
+          </ol>
+        </section>
+
+        {/* TV Advertising Section */}
+        <section>
+          <h2 className="font-heading text-3xl font-bold mb-4">TV Advertising in Sri Lanka — Complete Guide</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Television advertising remains the most powerful mass-reach medium in Sri Lanka, capable of reaching millions of viewers across all demographics and regions simultaneously. For brands seeking nationwide visibility, strong brand recall, and emotional connection with audiences, TV advertising in Sri Lanka is unmatched.
+          </p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Major TV Channels in Sri Lanka for Advertising</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Hiru TV</strong> is Sri Lanka's first and only digital HD television channel, owned by Asia Broadcasting Corporation. Launched in 2012, Hiru TV has rapidly grown to become one of the highest-rated channels in Sri Lanka for entertainment and news programming. It reaches a wide Sinhala-speaking audience across all age groups and income levels nationwide.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Sirasa TV</strong> is owned by Maharaja Entertainment and is one of Sri Lanka's most established and trusted television brands. Known for strong drama serials, news programmes (News First), and entertainment shows, Sirasa TV commands a loyal, mass-market Sinhala viewership. The Sirasa brand also includes Shakthi TV for Tamil-speaking audiences.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>TV Derana</strong> is operated by Capital Maharaja Organisation and is consistently ranked among Sri Lanka's top-rated channels. TV Derana has won multiple SLIM-Nielsen Television Channel of the Year awards and holds records for having the most programmes in the top 10 ratings. Ada Derana is the island's #1 news brand with massive digital reach as well.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Swarnavahini</strong> is one of Sri Lanka's oldest private television channels with a particularly strong following in rural and regional audiences. Known for drama serials, reality shows, and religious programming targeting traditional, family-oriented viewers.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>ITN (Independent Television Network)</strong> is the state broadcaster with nationwide transmission coverage including areas that private channels may not fully reach. ITN is the go-to for campaigns requiring maximum geographic coverage across Sri Lanka.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Rupavahini (SLRC)</strong> is Sri Lanka's first television channel and the national broadcaster, with strong viewership among older demographics and government-related content.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Vasantham TV (under ITN)</strong> is the dedicated Tamil-language state channel — essential for reaching Tamil audiences across the Northern and Eastern Provinces.</p>
+          <p className="text-muted-foreground leading-relaxed mb-3"><strong>Siyatha TV</strong> is a growing channel under Voice of Asia Networks with an increasing youth and urban audience base.</p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">TV Ad Formats in Sri Lanka</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Format</th>
+                  <th className="text-left p-3 font-heading">Duration</th>
+                  <th className="text-left p-3 font-heading">Description</th>
+                  <th className="text-left p-3 font-heading">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Standard TVC","30 seconds","Main commercial spot","Brand awareness, product launch"],
+                  ["Short TVC","15 seconds","Condensed brand message","Recall campaigns, frequency"],
+                  ["Long-form TVC","45–60 seconds","Extended storytelling","Premium brand narratives"],
+                  ["Sponsorship Billboard","5–10 seconds","Sponsored content tag","Programme association"],
+                  ["Programme Sponsorship","Ongoing","Exclusive programme title sponsor","Deep brand association"],
+                  ["Scroll / Ticker Ad","Ongoing","Text crawl at bottom of screen","News channels, announcements"],
+                  ["Infomercial","3–10 minutes","Long-form product demonstration","Direct response, product education"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                    <td className="p-3 text-muted-foreground">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">TV Advertising Costs in Sri Lanka (2025)</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Channel</th>
+                  <th className="text-left p-3 font-heading">Prime Time 30-sec</th>
+                  <th className="text-left p-3 font-heading">Off-Peak 30-sec</th>
+                  <th className="text-left p-3 font-heading">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Hiru TV","LKR 150,000–400,000","LKR 50,000–150,000","Mass Sinhala audience, HD quality"],
+                  ["Sirasa TV","LKR 150,000–380,000","LKR 50,000–140,000","Drama-watching Sinhala families"],
+                  ["TV Derana","LKR 140,000–380,000","LKR 45,000–130,000","News audience, youth, urban"],
+                  ["Swarnavahini","LKR 100,000–280,000","LKR 35,000–100,000","Rural & regional Sinhala audiences"],
+                  ["ITN","LKR 80,000–220,000","LKR 30,000–90,000","Nationwide coverage, regional reach"],
+                  ["Rupavahini","LKR 60,000–180,000","LKR 25,000–80,000","Older demographics, government sector"],
+                  ["Vasantham TV","LKR 50,000–150,000","LKR 20,000–70,000","Tamil-speaking audiences"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                    <td className="p-3 text-muted-foreground">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-muted-foreground italic mt-3">Prime time in Sri Lanka is typically 7:00 PM – 10:30 PM. News programmes and popular drama serials command the highest rates. A media buying agency can negotiate packages significantly below rate card.</p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Understanding TV Ratings in Sri Lanka</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">Sri Lanka's TV advertising industry uses LMRB (Lanka Market Research Bureau) ratings data to measure channel viewership. Key metrics include:</p>
+          <ul className="space-y-2 text-muted-foreground">
+            {[
+              ["GRP (Gross Rating Points)","Total audience delivery across all spots in a campaign"],
+              ["TRP (Target Rating Points)","Audience delivery among your specific target demographic"],
+              ["Reach","The percentage of the total audience who saw your ad at least once"],
+              ["Frequency","The average number of times your target audience saw your ad"],
+              ["CPT (Cost Per Thousand)","How much you pay per 1,000 viewers reached"],
+            ].map(([t,d],i)=>(
+              <li key={i} className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>{t}</strong> — {d}</span></li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground leading-relaxed mt-4">A professional media buying agency plans TV campaigns using LMRB data to ensure your budget reaches the right audience at the lowest cost per target viewer.</p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Prime Time Programming: When to Advertise on Sri Lankan TV</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Time Slot</th>
+                  <th className="text-left p-3 font-heading">Programme Type</th>
+                  <th className="text-left p-3 font-heading">Audience</th>
+                  <th className="text-left p-3 font-heading">Strategy</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["6:00 AM – 9:00 AM","Morning news, breakfast shows","Working adults, commuters","Brand recall, news association"],
+                  ["12:00 PM – 2:00 PM","Afternoon dramas, news","Homemakers, older viewers","FMCG, household products"],
+                  ["5:00 PM – 7:00 PM","Evening dramas, children's","Families, children","Family products, children's brands"],
+                  ["7:00 PM – 10:30 PM","Prime time drama, news","All demographics — peak","Maximum reach campaigns"],
+                  ["10:30 PM – 12:00 AM","Late news, talk shows","Urban adults 25–45","Premium brands, financial services"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                    <td className="p-3 text-muted-foreground">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">When Should Your Business Advertise on TV?</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">TV advertising in Sri Lanka is most effective for:</p>
+          <ul className="space-y-2 text-muted-foreground">
+            {[
+              ["FMCG brands","Reaching householders making daily purchase decisions"],
+              ["Telecom & banking","Mass awareness campaigns for new products or offers"],
+              ["Automotive","New model launches and dealership campaigns"],
+              ["Real estate","Project launches requiring mass market awareness"],
+              ["Political & government campaigns","Island-wide messaging"],
+              ["Seasonal promotions","Avurudu, Christmas, Vesak, back-to-school"],
+              ["Brand building","Establishing new brands or repositioning existing ones"],
+              ["Retail chains","Promotional campaigns across multiple branches"],
+            ].map(([t,d],i)=>(
+              <li key={i} className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>{t}</strong> — {d}</span></li>
+            ))}
+          </ul>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">TV Advertising vs Digital Advertising in Sri Lanka</h3>
+          <div className="overflow-x-auto rounded-lg border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-secondary">
+                <tr>
+                  <th className="text-left p-3 font-heading">Factor</th>
+                  <th className="text-left p-3 font-heading">TV Advertising</th>
+                  <th className="text-left p-3 font-heading">Digital Advertising</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Reach","Mass reach (millions per spot)","Targeted reach (scalable)"],
+                  ["Targeting","Broad demographic segments","Precise — age, interest, behaviour, location"],
+                  ["Minimum Budget","LKR 200,000+ per campaign","LKR 5,000+ per campaign"],
+                  ["Production Cost","LKR 150,000–1,000,000+ for TVC","LKR 15,000–150,000 for video ad"],
+                  ["Speed to Launch","2–4 weeks (production + booking)","24–48 hours"],
+                  ["Measurability","GRP/TRP estimates","Real-time clicks, leads, conversions"],
+                  ["Trust Factor","Very high (TV = credibility)","Medium–high (depends on platform)"],
+                  ["Best For","Mass awareness, brand credibility","Lead generation, ROI measurement"],
+                ].map((row,i)=>(
+                  <tr key={i} className="border-t border-border">
+                    <td className="p-3 font-medium">{row[0]}</td>
+                    <td className="p-3 text-muted-foreground">{row[1]}</td>
+                    <td className="p-3 text-muted-foreground">{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mt-4">
+            <strong>The winning strategy in Sri Lanka:</strong> Run TV for brand awareness and credibility, combined with Facebook and Google Ads for lead generation and direct response. This integrated approach delivers the widest reach and the best measurable ROI.
+          </p>
+
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">How Cypher Digital Helps with TV & Newspaper Advertising</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">While Cypher Digital specialises in digital media buying, we help our clients navigate traditional media as well:</p>
+          <ul className="space-y-2 text-muted-foreground">
+            {[
+              ["TV & Newspaper Media Planning","We advise on the right channels, publications, and budgets for your campaign objectives"],
+              ["TVC Creative Brief","We help develop the creative brief and messaging strategy for your TV commercial"],
+              ["Integrated Campaign Strategy","We build full-funnel plans that combine TV or newspaper advertising with digital campaigns for maximum impact"],
+              ["Media Partner Connections","We connect clients with trusted traditional media buying partners in Sri Lanka for TV and newspaper placements"],
+              ["Performance Tracking","We set up digital tracking to measure how traditional advertising drives online behaviour (website visits, searches, social engagement)"],
+            ].map(([t,d],i)=>(
+              <li key={i} className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>{t}</strong> — {d}</span></li>
+            ))}
+          </ul>
+
+          <div className="mt-6 p-5 rounded-lg border border-primary/30 bg-primary/5">
+            <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A TV spot on Hiru TV or Sirasa TV paired with a Facebook retargeting campaign can deliver dramatically better results than either channel alone.</p>
+          </div>
+        </section>
+
         <section>
           <h2 className="font-heading text-3xl font-bold mb-4">How to Choose the Best Media Buying Agency in Sri Lanka</h2>
           <div className="space-y-4">
