@@ -105,7 +105,6 @@ const organizationSchema = {
   description: "Leading digital marketing agency in Sri Lanka offering social media management, Facebook & Google Ads, SEO, video production & graphic design.",
   url: "https://cypherdigital.lk",
   telephone: "+94701772626",
-  email: "info@cypherdigital.lk",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Colombo",
