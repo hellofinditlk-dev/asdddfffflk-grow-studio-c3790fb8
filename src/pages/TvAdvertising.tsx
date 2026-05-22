@@ -492,6 +492,32 @@ const TvAdvertising = () => {
           </div>
         </div>
       </section>
+
+      {/* Related Advertising Guides */}
+      <section className="py-14 border-t border-border">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Related Advertising Guides — Sri Lanka</h2>
+          <p className="text-muted-foreground mb-6">Plan a full-funnel campaign by combining TV with print, radio and professional media buying.</p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Link to="/media-buying-agencies-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Media Buying Agencies in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">How to choose the right agency to negotiate TV, print and radio rates on your behalf.</div>
+            </Link>
+            <Link to="/newspaper-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Newspaper Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Daily News, Lankadeepa, Thinakkural & more — 2025 rates and ad formats.</div>
+            </Link>
+            <Link to="/radio-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Radio Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Sirasa FM, Hiru FM, Yes FM, Shakthi FM — station mix and daypart strategy.</div>
+            </Link>
+            <Link to="/advertising-in-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Advertising in Sri Lanka — Complete Guide</div>
+              <div className="text-sm text-muted-foreground">The pillar guide covering every paid channel, budgets and 2025 benchmarks.</div>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

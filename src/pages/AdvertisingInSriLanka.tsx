@@ -1075,6 +1075,28 @@ const AdvertisingInSriLanka = () => {
 
         {/* Related Advertising Topics */}
         <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Complete Advertising Channel Guides — Sri Lanka</h2>
+          <p className="text-muted-foreground mb-6 max-w-3xl">
+            In-depth guides for every major advertising channel in Sri Lanka — written by Cypher Digital's media team. Compare rates, reach, formats, and strategy before you commit a rupee of ad spend.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-12">
+            <Link to="/media-buying-agencies-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Media Buying Agencies in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">How agencies negotiate 20–40% below rate card across TV, radio, print and digital.</div>
+            </Link>
+            <Link to="/tv-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">TV Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Hiru, Sirasa, Derana, ITN & more — 2025 rates, prime-time slots and channel mix strategy.</div>
+            </Link>
+            <Link to="/newspaper-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Newspaper Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Daily News, Lankadeepa, Thinakkural & more — ad formats, premium positions and 2025 rates.</div>
+            </Link>
+            <Link to="/radio-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Radio Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Sirasa FM, Hiru FM, Yes FM, Shakthi FM — station selection, dayparts and 2025 rate cards.</div>
+            </Link>
+          </div>
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Related Advertising Topics</h2>
           <div className="flex flex-wrap gap-3">
             {[
@@ -1086,6 +1108,10 @@ const AdvertisingInSriLanka = () => {
               { label: "Facebook Ads Sri Lanka", to: "/facebook-ads-sri-lanka" },
               { label: "Video Production Sri Lanka", to: "/video-production-sri-lanka" },
               { label: "Graphic Design Sri Lanka", to: "/graphic-design-sri-lanka" },
+              { label: "Media Buying Agencies Sri Lanka", to: "/media-buying-agencies-sri-lanka" },
+              { label: "TV Advertising Sri Lanka", to: "/tv-advertising-sri-lanka" },
+              { label: "Newspaper Advertising Sri Lanka", to: "/newspaper-advertising-sri-lanka" },
+              { label: "Radio Advertising Sri Lanka", to: "/radio-advertising-sri-lanka" },
             ].map(({ label, to }) => (
               <Link key={label} to={to} className="px-4 py-2 rounded-full border border-border bg-background hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all text-sm font-medium">
                 {label}

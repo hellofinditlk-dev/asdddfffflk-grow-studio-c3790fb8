@@ -490,6 +490,32 @@ const NewspaperAdvertising = () => {
           </div>
         </div>
       </section>
+
+      {/* Related Advertising Guides */}
+      <section className="py-14 border-t border-border">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Related Advertising Guides — Sri Lanka</h2>
+          <p className="text-muted-foreground mb-6">Combine print with TV, radio and a professional media buyer for a full-funnel campaign.</p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Link to="/media-buying-agencies-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Media Buying Agencies in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">How agencies secure 20–35% below published newspaper rate cards.</div>
+            </Link>
+            <Link to="/tv-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">TV Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Hiru, Sirasa, Derana, ITN & more — 2025 rates and prime-time strategy.</div>
+            </Link>
+            <Link to="/radio-advertising-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Radio Advertising in Sri Lanka</div>
+              <div className="text-sm text-muted-foreground">Station selection, daypart strategy and 2025 radio rate cards.</div>
+            </Link>
+            <Link to="/advertising-in-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Advertising in Sri Lanka — Complete Guide</div>
+              <div className="text-sm text-muted-foreground">The pillar guide covering every paid channel, budgets and 2025 benchmarks.</div>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
