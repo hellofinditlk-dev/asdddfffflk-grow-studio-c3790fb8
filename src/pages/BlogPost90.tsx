@@ -2,8 +2,28 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 
+const faqs = [
+  { q: "How do I know if a company is genuinely top-rated?", a: "Look for verified third-party reviews — not just on-site testimonials. Named clients with specific results are the strongest signal of a genuinely top-rated social media management company." },
+  { q: "Agency vs. freelancer — which is better?", a: "Agencies have a dedicated team — strategist, designer, copywriter, ad specialist, and account manager. Freelancers handle everything alone, which limits quality and depth on most projects." },
+  { q: "How long does it take to see results?", a: "Organic growth builds over 60–90 days. Paid ads can generate leads in week one when targeting and creative are set up correctly." },
+  { q: "Should I choose a local Sri Lankan agency or an international one?", a: "Local agencies with deep Sri Lankan market knowledge significantly outperform international agencies working remotely, especially for Sinhala, Tamil, and English copy that converts." },
+  { q: "Does a higher rating mean a higher price?", a: "No. Cypher Digital maintains a 5.0-star rating while offering packages from LKR 60,000/month, accessible to most Sri Lankan SMEs." },
+  { q: "Which platforms should a Sri Lankan business cover?", a: "Facebook and Instagram first for most SMEs. TikTok for under-35 audiences. LinkedIn for B2B. A good agency advises strategically rather than spreading budget thinly across every platform." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(f => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 const BlogPost90 = () => (
   <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <SEOHead
       title="Top-Rated Social Media Management Companies in Sri Lanka | Cypher Digital"
       description="Looking for a top-rated social media management company in Sri Lanka? Discover what separates the best from the rest — and why Cypher Digital leads the market in 2026."
@@ -94,12 +114,12 @@ const BlogPost90 = () => (
             </div>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Frequently Asked Questions</h2>
-            <p><strong className="text-foreground">How do I know if a company is genuinely top-rated?</strong> Look for verified third-party reviews — not just on-site testimonials. Named clients with specific results are the strongest signal.</p>
-            <p><strong className="text-foreground">Agency vs. freelancer?</strong> Agencies have a dedicated team — strategist, designer, copywriter, ad specialist, account manager. Freelancers handle everything alone, which limits quality and depth.</p>
-            <p><strong className="text-foreground">How long to see results?</strong> Organic builds over 60–90 days. Paid ads can generate leads in week one with strong targeting and creative.</p>
-            <p><strong className="text-foreground">Local Sri Lankan agency or international?</strong> Local agencies with deep market knowledge significantly outperform international ones working remotely.</p>
-            <p><strong className="text-foreground">Does a higher rating mean a higher price?</strong> No. Cypher Digital maintains a 5.0-star rating while offering packages accessible to SMEs.</p>
-            <p><strong className="text-foreground">Which platforms should we cover?</strong> Facebook and Instagram first for most SMEs. TikTok for under-35 audiences. LinkedIn for B2B. A good agency advises strategically rather than spreading budget thinly.</p>
+            {faqs.map((f, i) => (
+              <div key={i}>
+                <p><strong className="text-foreground">{f.q}</strong></p>
+                <p>{f.a}</p>
+              </div>
+            ))}
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Ready to Work With Sri Lanka's Top-Rated Company?</h2>
             <p>If you're serious about growing your business, partnering with a top-rated, results-driven <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold underline">social media marketing sri lanka</Link> agency is the fastest path. Cypher Digital has earned its position through consistent delivery, transparent reporting, and an unwavering focus on business outcomes — not vanity metrics.</p>
