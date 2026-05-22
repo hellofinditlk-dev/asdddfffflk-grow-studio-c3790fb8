@@ -74,7 +74,7 @@ const MediaBuyingAgencies = () => {
             Whether you're a startup in Colombo or an established brand scaling across Sri Lanka, choosing the right media buying agency can make or break your advertising ROI. This guide covers what media buying is, how to choose an agency, what to expect, and why <strong>Cypher Digital</strong> is the go-to choice for businesses that want results.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button asChild size="lg" variant="cta">
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
               <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20a%20media%20buying%20agency" target="_blank" rel="noopener noreferrer">
                 <Phone className="w-4 h-4 mr-2" /> Free Consultation
               </a>
@@ -262,7 +262,7 @@ const MediaBuyingAgencies = () => {
             The right media buying agency doesn't just place ads — they make sure every rupee is working toward a measurable business goal. Let's talk about your campaign.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Button asChild size="lg" variant="cta">
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
               <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20a%20media%20buying%20agency" target="_blank" rel="noopener noreferrer">
                 <Phone className="w-4 h-4 mr-2" /> WhatsApp +94 70 177 2626
               </a>
