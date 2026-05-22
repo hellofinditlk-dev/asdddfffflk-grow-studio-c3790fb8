@@ -94,8 +94,8 @@ const MediaBuyingAgencies = () => {
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">In Sri Lanka, this includes:</p>
           <ul className="space-y-2 text-muted-foreground">
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Digital media buying</strong> — Facebook Ads, Google Ads, YouTube Ads, TikTok Ads, Instagram Ads</span></li>
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Traditional media buying</strong> — TV commercials, radio spots, newspaper and magazine placements</span></li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Digital media buying</strong> — <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link>, YouTube Ads, <Link to="/tiktok-marketing-sri-lanka" className="text-primary hover:underline">TikTok Ads</Link>, Instagram Ads</span></li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Traditional media buying</strong> — <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV commercials</Link>, <Link to="/radio-advertising-sri-lanka" className="text-primary hover:underline">radio spots</Link>, <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline">newspaper</Link> and magazine placements</span></li>
             <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Out-of-Home (OOH) buying</strong> — billboards, transit ads, hoardings</span></li>
             <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Programmatic media buying</strong> — automated digital ad purchases using audience data</span></li>
           </ul>
@@ -115,7 +115,7 @@ const MediaBuyingAgencies = () => {
             ))}
           </ul>
           <p className="text-muted-foreground leading-relaxed mt-4">
-            A specialist <strong>media buying agency in Sri Lanka</strong> knows the local digital landscape, platform costs, audience behaviours, and campaign seasonality — helping you spend smarter and scale faster.
+            A specialist <strong>media buying agency in Sri Lanka</strong> knows the local digital landscape, platform costs, audience behaviours, and campaign seasonality — helping you spend smarter and scale faster. For context, read our complete <Link to="/advertising-in-sri-lanka" className="text-primary hover:underline font-semibold">guide to advertising in Sri Lanka</Link>.
           </p>
         </section>
 
@@ -131,9 +131,9 @@ const MediaBuyingAgencies = () => {
           </ul>
           <h3 className="font-heading text-xl font-semibold mt-6 mb-3">Traditional Media</h3>
           <ul className="space-y-2 text-muted-foreground">
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>TV advertising</strong> — Hiru TV, Sirasa TV, Derana, and Swarnavahini dominate mass-market reach.</span></li>
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Radio advertising</strong> — Strong reach in rural and commuter segments via Yes FM, Shakthi FM, and Sirasa FM.</span></li>
-            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong>Newspaper advertising</strong> — Daily Mirror, Lankadeepa, and Virakesari serve demographic-specific segments.</span></li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong><Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV advertising</Link></strong> — Hiru TV, Sirasa TV, Derana, and Swarnavahini dominate mass-market reach.</span></li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong><Link to="/radio-advertising-sri-lanka" className="text-primary hover:underline">Radio advertising</Link></strong> — Strong reach in rural and commuter segments via Yes FM, Shakthi FM, and Sirasa FM.</span></li>
+            <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span><strong><Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline">Newspaper advertising</Link></strong> — Daily Mirror, Lankadeepa, and Virakesari serve demographic-specific segments.</span></li>
           </ul>
           <h3 className="font-heading text-xl font-semibold mt-6 mb-3">Key Trends for 2025</h3>
           <ul className="space-y-2 text-muted-foreground">
@@ -270,7 +270,7 @@ const MediaBuyingAgencies = () => {
             <li><strong>Choose the right language</strong> — Sinhala newspapers reach the widest audience, but English papers reach higher-income, decision-making demographics. Tamil papers are essential for Northern and Eastern Province campaigns.</li>
             <li><strong>Sunday editions outperform weekdays</strong> — Sunday circulation is significantly higher than daily editions across all major Sri Lankan newspapers. Schedule key ads for Sunday for maximum reach.</li>
             <li><strong>Front page positions command premium</strong> — A strip ad or jacket on the front page of Lankadeepa or Daily Mirror delivers exceptional visibility but costs 2–3x standard rates.</li>
-            <li><strong>Combine print with digital</strong> — The most effective campaigns run newspaper ads simultaneously with Facebook and Google campaigns. Print builds credibility; digital captures the leads.</li>
+            <li><strong>Combine print with digital</strong> — The most effective campaigns run <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline">newspaper ads</Link> simultaneously with <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook</Link> and <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google campaigns</Link>. Print builds credibility; digital captures the leads.</li>
             <li><strong>Advertorials outperform standard display ads</strong> — A well-written advertorial (editorial-style article) builds deeper trust than a display banner and often gets read in full.</li>
             <li><strong>Book early for peak seasons</strong> — New Year (Avurudu), Christmas, and Vesak periods see high advertiser demand. Book newspaper space 3–4 weeks in advance for peak periods.</li>
           </ol>
@@ -451,10 +451,10 @@ const MediaBuyingAgencies = () => {
             </table>
           </div>
           <p className="text-muted-foreground leading-relaxed mt-4">
-            <strong>The winning strategy in Sri Lanka:</strong> Run TV for brand awareness and credibility, combined with Facebook and Google Ads for lead generation and direct response. This integrated approach delivers the widest reach and the best measurable ROI.
+            <strong>The winning strategy in Sri Lanka:</strong> Run <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV</Link> for brand awareness and credibility, combined with <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook</Link> and <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link> for lead generation and direct response. This integrated approach delivers the widest reach and the best measurable ROI.
           </p>
 
-          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">How Cypher Digital Helps with TV & Newspaper Advertising</h3>
+          <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">How Cypher Digital Helps with <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV</Link> & <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline">Newspaper Advertising</Link></h3>
           <p className="text-muted-foreground leading-relaxed mb-3">While Cypher Digital specialises in digital media buying, we help our clients navigate traditional media as well:</p>
           <ul className="space-y-2 text-muted-foreground">
             {[
@@ -469,7 +469,7 @@ const MediaBuyingAgencies = () => {
           </ul>
 
           <div className="mt-6 p-5 rounded-lg border border-primary/30 bg-primary/5">
-            <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A TV spot on Hiru TV or Sirasa TV paired with a Facebook retargeting campaign can deliver dramatically better results than either channel alone.</p>
+            <p className="text-sm text-foreground"><strong>💡 Pro Tip from Cypher Digital:</strong> The most effective advertising campaigns in Sri Lanka in 2025 combine traditional media for reach and credibility with digital media for targeting and lead generation. A <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV spot</Link> on Hiru TV or Sirasa TV paired with a <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook retargeting campaign</Link> can deliver dramatically better results than either channel alone.</p>
           </div>
         </section>
 
