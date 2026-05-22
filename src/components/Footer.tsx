@@ -37,6 +37,7 @@ const Footer = () => (
             <Link to="/tiktok-marketing-sri-lanka" className="hover:text-foreground transition-colors">TikTok Marketing</Link>
             <Link to="/influencer-marketing-sri-lanka" className="hover:text-foreground transition-colors">Influencer Marketing</Link>
             <Link to="/event-management-sri-lanka" className="hover:text-foreground transition-colors">Event Management</Link>
+            <Link to="/media-buying-agencies-sri-lanka" className="hover:text-foreground transition-colors">Media Buying</Link>
           </div>
         </div>
 
@@ -103,6 +104,8 @@ const Footer = () => (
           <Link to="/google-ads-sri-lanka" className="hover:text-foreground transition-colors">Google Ads Sri Lanka</Link>
           <span className="text-border">|</span>
           <Link to="/tiktok-marketing-sri-lanka" className="hover:text-foreground transition-colors">TikTok Marketing Sri Lanka</Link>
+          <span className="text-border">|</span>
+          <Link to="/media-buying-agencies-sri-lanka" className="hover:text-foreground transition-colors">Media Buying Sri Lanka</Link>
         </div>
         <p>© 2022 Cypher Digital — <Link to="/" className="hover:text-foreground transition-colors">Digital Marketing Agency Sri Lanka</Link></p>
       </div>
