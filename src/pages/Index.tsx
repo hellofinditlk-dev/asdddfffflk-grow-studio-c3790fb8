@@ -163,9 +163,7 @@ const Index = () => (
               #1 Digital Marketing Agency Sri Lanka
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.08] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Social Media & Digital Marketing{" "}
-              <span className="gradient-text">Solutions</span>
-              {" "}in Sri Lanka
+              Digital Marketing <span className="gradient-text">Agency</span> in Sri Lanka
             </h1>
             <p className="text-lg md:text-xl text-white/55 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
               We help Sri Lankan businesses grow with professional <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link>, Facebook advertising, Google Ads, and video production.
