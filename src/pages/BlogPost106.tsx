@@ -59,6 +59,7 @@ const BlogPost106 = () => (
             <p><strong className="text-foreground">Do you create Sinhala content?</strong> Yes — bilingual content is included on Growth and Pro packages.</p>
 
             <p>Looking at Colombo instead? Read <Link to="/blog/digital-marketing-colombo" className="text-primary hover:underline">digital marketing in Colombo</Link>. For local search strategy, see <Link to="/blog/local-seo-strategies-sri-lankan-businesses" className="text-primary hover:underline">local SEO strategies for Sri Lankan businesses</Link>. Or compare costs across services in our <Link to="/blog/digital-marketing-cost-sri-lanka-pricing" className="text-primary hover:underline">digital marketing cost guide</Link>.</p>
+            <p>Kandy brands grow fastest with a full-service <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link>. Start with consistent <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management in Sri Lanka</Link> and layer on the right channels of <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>
