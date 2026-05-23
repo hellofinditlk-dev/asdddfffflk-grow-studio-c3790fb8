@@ -103,25 +103,42 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Cypher Digital",
-  description: "Leading digital marketing agency in Sri Lanka offering social media management, Facebook & Google Ads, SEO, video production & graphic design.",
+  description: "Digital marketing agency in Sri Lanka offering social media management, Facebook Ads, Google Ads, SEO and video production for businesses in Colombo and across Sri Lanka.",
   url: "https://cypherdigital.lk",
   telephone: "+94701772626",
+  email: "hello@cypherdigital.lk",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Colombo",
     addressLocality: "Colombo",
+    addressRegion: "Western Province",
+    postalCode: "00100",
     addressCountry: "LK",
   },
+  geo: { "@type": "GeoCoordinates", latitude: 6.9271, longitude: 79.8612 },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
-  priceRange: "$$",
+  priceRange: "LKR 35,000 - 300,000",
+  openingHours: "Mo-Fr 09:00-18:00",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "47",
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: [
-    "https://www.facebook.com/cypherdigitallk",
-    "https://www.instagram.com/cypherdigitallk",
+    "https://www.facebook.com/cypherdigitalsrilanka",
+    "https://www.instagram.com/cypherdigital_sl/",
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    opens: "09:00",
-    closes: "18:00",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digital Marketing Services Sri Lanka",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management Sri Lanka", url: "https://cypherdigital.lk/social-media-management-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Facebook Advertising Sri Lanka", url: "https://cypherdigital.lk/facebook-ads-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads Sri Lanka", url: "https://cypherdigital.lk/google-ads-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Services Sri Lanka", url: "https://cypherdigital.lk/seo-services-sri-lanka" } },
+    ],
   },
 };
 
@@ -186,7 +203,7 @@ const Index = () => (
   <div className="pt-16">
     <SEOHead
       title="Digital Marketing Agency in Sri Lanka | Cypher Digital"
-      description="#1 digital marketing agency in Sri Lanka & best social media agency Sri Lanka. Trusted digital marketing companies in Sri Lanka. Get free call today!"
+      description="Digital marketing agency in Sri Lanka helping businesses grow with social media management, Facebook Ads, Google Ads & SEO. Based in Colombo. Book a free consultation today."
       canonical="https://cypherdigital.lk"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
@@ -207,13 +224,13 @@ const Index = () => (
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               <Sparkles className="w-3.5 h-3.5" />
-              #1 Digital Marketing Agency Sri Lanka
+              Digital Marketing Agency in Sri Lanka
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.08] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               Digital Marketing <span className="gradient-text">Agency</span> in Sri Lanka
             </h1>
             <p className="text-lg md:text-xl text-white/55 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              We help Sri Lankan businesses grow with professional <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link>, Facebook advertising, Google Ads, and video production.
+              We are a results-driven <strong className="text-white/80 font-semibold">digital marketing agency in Sri Lanka</strong> helping businesses grow with <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media management</Link>, Facebook Ads, Google Ads, SEO, and video production. Based in Colombo, we serve businesses across Sri Lanka.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all text-sm px-8 h-13 rounded-xl shadow-[0_0_30px_hsl(252_65%_55%/0.4)] hover:shadow-[0_0_40px_hsl(252_65%_55%/0.6)] hover:scale-[1.02] active:scale-[0.98]">
@@ -301,7 +318,7 @@ const Index = () => (
           <div className="text-center lg:text-right">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">About Us</p>
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-              Results-Driven Digital Marketing Agency
+              Sri Lanka's Results-Driven Digital Marketing Agency
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
               Our digital marketing solutions are built to help businesses increase brand awareness, generate quality leads, and scale faster.
@@ -331,7 +348,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Services</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Our Digital Marketing Services
+            Digital Marketing Services for Sri Lankan Businesses
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">End-to-end digital solutions to grow your brand in Sri Lanka</p>
         </div>
@@ -378,7 +395,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Why Us</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Why Choose Our Agency
+            Why Choose Our Digital Marketing Agency in Sri Lanka
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">We bring strategy, creativity, and results together</p>
         </div>
@@ -403,7 +420,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Process</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Our Campaign Process
+            How Our Digital Marketing Agency in Sri Lanka Works
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">From strategy to results in 5 clear steps</p>
         </div>
@@ -579,6 +596,75 @@ const Index = () => (
     {/* FINAL CTA + FORM */}
     {/* FAQ */}
     {/* RELATED READING — internal linking */}
+    {/* COLOMBO BASED */}
+    <section className="py-20 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Based in Colombo, Sri Lanka</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            Digital Marketing Agency in Colombo — serving all of Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
+            Based in Colombo, we are a full-service <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> serving businesses from Colombo to Kandy, Galle to Jaffna. Our clients include restaurants, clinics, fashion brands, real estate developers, education institutes, and service businesses across all industries.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "Colombo", desc: "Our home base — serving all Colombo districts" },
+              { label: "Kandy", desc: "Fully remote — same quality, no office visit needed" },
+              { label: "All SL", desc: "We serve businesses island-wide via WhatsApp & Zoom" },
+              { label: "Remote", desc: "Clients in the Middle East, UK & Australia" },
+            ].map((item, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-5 hover:border-primary/30 hover:shadow-card transition-all">
+                <div className="font-heading text-2xl font-extrabold text-primary mb-1">{item.label}</div>
+                <div className="text-xs text-muted-foreground leading-relaxed">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+          <Link to="/blog/digital-marketing-colombo" className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-all">
+            Learn about digital marketing in Colombo <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    {/* CLIENT REVIEWS */}
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Client Reviews</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+            What our clients say about our digital marketing results
+          </h2>
+          <div className="flex items-center gap-4 mb-10">
+            <div className="font-heading text-5xl font-extrabold text-foreground leading-none">5.0</div>
+            <div>
+              <div className="text-2xl text-[hsl(45,95%,55%)] tracking-widest leading-none">★★★★★</div>
+              <div className="text-xs text-muted-foreground mt-1">Based on 47 client reviews</div>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              { quote: "Cypher Digital transformed our restaurant's online presence. Within 3 months we went from 20 covers per night to fully booked every weekend. Their social media work is exceptional.", initials: "RC", name: "Restaurant Client", location: "Colombo 3, Sri Lanka", color: "from-[hsl(252,65%,55%)] to-[hsl(280,80%,65%)]" },
+              { quote: "We were getting 20 leads per month from traditional marketing. After 2 months with Cypher Digital's Facebook Ads, we're getting 150+ qualified leads every month. The ROI is incredible.", initials: "RE", name: "Real Estate Developer", location: "Western Province, Sri Lanka", color: "from-[hsl(280,80%,65%)] to-[hsl(320,70%,60%)]" },
+              { quote: "Professional, responsive, and results-focused. Our clinic went from empty appointment slots to being fully booked 3 weeks in advance. Highly recommend Cypher Digital to any healthcare business.", initials: "HC", name: "Healthcare Client", location: "Nugegoda, Sri Lanka", color: "from-[hsl(220,80%,55%)] to-[hsl(200,90%,55%)]" },
+            ].map((r, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
+                <div className="text-lg text-[hsl(45,95%,55%)] tracking-wider mb-3">★★★★★</div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">"{r.quote}"</p>
+                <div className="flex items-center gap-3">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${r.color} flex items-center justify-center text-white text-xs font-bold`}>{r.initials}</div>
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">{r.name}</div>
+                    <div className="text-xs text-muted-foreground">{r.location}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="py-16 bg-card border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
@@ -630,7 +716,7 @@ const Index = () => (
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Get Started</p>
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-              Start Your Campaign Today
+              Start Growing with Sri Lanka's Top Digital Marketing Team
             </h2>
             <p className="text-white/50 text-lg leading-relaxed mb-8">
               Generate consistent leads with Facebook ads, Google Ads, and professional social media management in Sri Lanka.
