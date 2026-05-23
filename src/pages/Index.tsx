@@ -103,25 +103,42 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Cypher Digital",
-  description: "Leading digital marketing agency in Sri Lanka offering social media management, Facebook & Google Ads, SEO, video production & graphic design.",
+  description: "Digital marketing agency in Sri Lanka offering social media management, Facebook Ads, Google Ads, SEO and video production for businesses in Colombo and across Sri Lanka.",
   url: "https://cypherdigital.lk",
   telephone: "+94701772626",
+  email: "hello@cypherdigital.lk",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Colombo",
     addressLocality: "Colombo",
+    addressRegion: "Western Province",
+    postalCode: "00100",
     addressCountry: "LK",
   },
+  geo: { "@type": "GeoCoordinates", latitude: 6.9271, longitude: 79.8612 },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
-  priceRange: "$$",
+  priceRange: "LKR 35,000 - 300,000",
+  openingHours: "Mo-Fr 09:00-18:00",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "47",
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: [
-    "https://www.facebook.com/cypherdigitallk",
-    "https://www.instagram.com/cypherdigitallk",
+    "https://www.facebook.com/cypherdigitalsrilanka",
+    "https://www.instagram.com/cypherdigital_sl/",
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    opens: "09:00",
-    closes: "18:00",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digital Marketing Services Sri Lanka",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management Sri Lanka", url: "https://cypherdigital.lk/social-media-management-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Facebook Advertising Sri Lanka", url: "https://cypherdigital.lk/facebook-ads-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads Sri Lanka", url: "https://cypherdigital.lk/google-ads-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Services Sri Lanka", url: "https://cypherdigital.lk/seo-services-sri-lanka" } },
+    ],
   },
 };
 
@@ -186,7 +203,7 @@ const Index = () => (
   <div className="pt-16">
     <SEOHead
       title="Digital Marketing Agency in Sri Lanka | Cypher Digital"
-      description="#1 digital marketing agency in Sri Lanka & best social media agency Sri Lanka. Trusted digital marketing companies in Sri Lanka. Get free call today!"
+      description="Digital marketing agency in Sri Lanka helping businesses grow with social media management, Facebook Ads, Google Ads & SEO. Based in Colombo. Book a free consultation today."
       canonical="https://cypherdigital.lk"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
@@ -207,13 +224,13 @@ const Index = () => (
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               <Sparkles className="w-3.5 h-3.5" />
-              #1 Digital Marketing Agency Sri Lanka
+              Digital Marketing Agency in Sri Lanka
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.08] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               Digital Marketing <span className="gradient-text">Agency</span> in Sri Lanka
             </h1>
             <p className="text-lg md:text-xl text-white/55 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              We help Sri Lankan businesses grow with professional <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link>, Facebook advertising, Google Ads, and video production.
+              We are a results-driven <strong className="text-white/80 font-semibold">digital marketing agency in Sri Lanka</strong> helping businesses grow with <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media management</Link>, Facebook Ads, Google Ads, SEO, and video production. Based in Colombo, we serve businesses across Sri Lanka.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all text-sm px-8 h-13 rounded-xl shadow-[0_0_30px_hsl(252_65%_55%/0.4)] hover:shadow-[0_0_40px_hsl(252_65%_55%/0.6)] hover:scale-[1.02] active:scale-[0.98]">
@@ -301,7 +318,7 @@ const Index = () => (
           <div className="text-center lg:text-right">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">About Us</p>
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-              Results-Driven Digital Marketing Agency
+              Sri Lanka's Results-Driven Digital Marketing Agency
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
               Our digital marketing solutions are built to help businesses increase brand awareness, generate quality leads, and scale faster.
@@ -331,7 +348,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Services</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Our Digital Marketing Services
+            Digital Marketing Services for Sri Lankan Businesses
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">End-to-end digital solutions to grow your brand in Sri Lanka</p>
         </div>
@@ -378,7 +395,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Why Us</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Why Choose Our Agency
+            Why Choose Our Digital Marketing Agency in Sri Lanka
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">We bring strategy, creativity, and results together</p>
         </div>
@@ -403,7 +420,7 @@ const Index = () => (
         <div className="text-center mb-16">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Process</p>
           <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            Our Campaign Process
+            How Our Digital Marketing Agency in Sri Lanka Works
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">From strategy to results in 5 clear steps</p>
         </div>
