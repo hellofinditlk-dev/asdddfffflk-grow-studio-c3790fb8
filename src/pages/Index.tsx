@@ -577,6 +577,35 @@ const Index = () => (
     </section>
 
     {/* FINAL CTA + FORM */}
+    {/* FAQ */}
+    <section id="faqs" className="py-20 bg-background scroll-mt-20">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">FAQs</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+              Digital Marketing in Sri Lanka — Frequently Asked Questions
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              Answers to the most common questions about digital marketing services, pricing and results in Sri Lanka.
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="space-y-3">
+            {faqs.map((faq, i) => (
+              <AccordionItem key={i} value={`faq-${i}`} className="bg-card border border-border rounded-xl px-6">
+                <AccordionTrigger className="text-sm md:text-base font-semibold text-foreground hover:no-underline py-4 text-left">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+    </section>
+
     <section className="relative py-24 lg:py-32 bg-foreground text-white overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[120px] -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-[hsl(280,80%,65%)]/10 rounded-full blur-[100px]" />
