@@ -56,6 +56,8 @@ const BlogPost63 = () => (
                 { label: "Facebook Ads Sri Lanka", path: "/facebook-ads-sri-lanka", desc: "Lead generation campaigns that convert." },
                 { label: "TikTok Marketing Sri Lanka", path: "/tiktok-marketing-sri-lanka", desc: "Viral short-form video for Sri Lankan audiences." },
                 { label: "Video Production Sri Lanka", path: "/video-production-sri-lanka", desc: "Professional Reels and brand video." },
+                { label: "Social Media Marketing Packages", path: "/blog/social-media-marketing-packages", desc: "Transparent monthly package pricing." },
+                { label: "Instagram Marketing Sri Lanka", path: "/blog/instagram-marketing-sri-lanka", desc: "Reels, Stories and Instagram Ads packages." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>

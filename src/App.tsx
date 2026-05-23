@@ -129,6 +129,13 @@ const BlogPost97 = lazy(() => import("./pages/BlogPost97"));
 const BlogPost98 = lazy(() => import("./pages/BlogPost98"));
 const BlogPost99 = lazy(() => import("./pages/BlogPost99"));
 const BlogPost100 = lazy(() => import("./pages/BlogPost100"));
+const BlogPost101 = lazy(() => import("./pages/BlogPost101"));
+const BlogPost102 = lazy(() => import("./pages/BlogPost102"));
+const BlogPost103 = lazy(() => import("./pages/BlogPost103"));
+const BlogPost104 = lazy(() => import("./pages/BlogPost104"));
+const BlogPost105 = lazy(() => import("./pages/BlogPost105"));
+const BlogPost106 = lazy(() => import("./pages/BlogPost106"));
+const BlogPost107 = lazy(() => import("./pages/BlogPost107"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
@@ -285,6 +292,13 @@ const App = () => (
               <Route path="/blog/digital-marketing-healthcare-sri-lanka" element={<BlogPost98 />} />
               <Route path="/blog/avurudu-marketing-ideas-sri-lanka" element={<BlogPost99 />} />
               <Route path="/blog/digital-marketing-results-case-studies-sri-lanka" element={<BlogPost100 />} />
+              <Route path="/blog/seo-packages-sri-lanka" element={<BlogPost101 />} />
+              <Route path="/blog/social-media-marketing-packages" element={<BlogPost102 />} />
+              <Route path="/blog/web-design-sri-lanka" element={<BlogPost103 />} />
+              <Route path="/blog/digital-marketing-colombo" element={<BlogPost104 />} />
+              <Route path="/blog/ecommerce-development-sri-lanka" element={<BlogPost105 />} />
+              <Route path="/blog/digital-marketing-kandy" element={<BlogPost106 />} />
+              <Route path="/blog/instagram-marketing-sri-lanka" element={<BlogPost107 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />

@@ -53,6 +53,9 @@ const BlogPost75 = () => (
                 { label: "Facebook Ads Sri Lanka", path: "/facebook-ads-sri-lanka", desc: "Lead generation campaigns that convert." },
                 { label: "Google Ads Sri Lanka", path: "/google-ads-sri-lanka", desc: "High-intent search and display campaigns." },
                 { label: "SEO Services Sri Lanka", path: "/seo-services-sri-lanka", desc: "Rank #1 on Google with proven SEO." },
+                { label: "SEO Packages Sri Lanka", path: "/blog/seo-packages-sri-lanka", desc: "Transparent SEO pricing & inclusions." },
+                { label: "Social Media Marketing Packages", path: "/blog/social-media-marketing-packages", desc: "Facebook + Instagram + TikTok pricing." },
+                { label: "Web Design Sri Lanka", path: "/blog/web-design-sri-lanka", desc: "Website pricing from LKR 75K." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>

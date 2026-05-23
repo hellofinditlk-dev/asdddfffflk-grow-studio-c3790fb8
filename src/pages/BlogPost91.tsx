@@ -75,6 +75,7 @@ const BlogPost91 = () => (
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Final thoughts</h2>
             <p>Choosing the right <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> — especially in a city like Colombo — is one of the most impactful business decisions you can make. The right partner will not just manage your social media. They will build a system that generates consistent leads, strengthens your brand, and creates measurable growth.</p>
             <p>Take time to research your options, ask the right questions, and explore all available <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising options in Sri Lanka</Link> before committing to a partner.</p>
+            <p>For a focused look at services, areas served, and Colombo-specific pricing, read our companion guide on <Link to="/blog/digital-marketing-colombo" className="text-primary hover:underline">digital marketing in Colombo</Link>. Targeting customers outside the capital? See <Link to="/blog/digital-marketing-kandy" className="text-primary hover:underline">digital marketing in Kandy</Link>.</p>
           </div>
         </div>
       </div>
