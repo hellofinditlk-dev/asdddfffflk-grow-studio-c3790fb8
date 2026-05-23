@@ -882,6 +882,19 @@ const SocialMediaManagement = () => {
         heading="More on Social Media Marketing"
         intro="Platform strategies, posting schedules, and content tactics for Sri Lankan brands on Facebook, Instagram and TikTok."
       />
+      <section className="py-16 bg-card border-t border-border">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Related reading</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-foreground mb-6">Deepen your social media strategy</h2>
+          <ul className="space-y-3 text-sm">
+            <li>Read <Link to="/blog/social-media-agency-colombo" className="text-primary font-semibold hover:underline">how to choose a social media agency in Colombo</Link>.</li>
+            <li>Explore <Link to="/blog/linkedin-marketing-sri-lanka-2026" className="text-primary font-semibold hover:underline">LinkedIn marketing for Sri Lankan businesses</Link>.</li>
+            <li>Plan <Link to="/blog/avurudu-marketing-ideas-sri-lanka" className="text-primary font-semibold hover:underline">Avurudu campaign ideas for social media</Link>.</li>
+            <li>Browse our <Link to="/blog/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing packages</Link>.</li>
+            <li>View our full <Link to="/blog/social-media-marketing-packages" className="text-primary font-semibold hover:underline">social media marketing packages and pricing</Link>.</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
