@@ -630,6 +630,15 @@ const AdvertisingInSriLanka = () => {
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <Megaphone className="w-12 h-12 mx-auto mb-4 text-primary" />
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Grow Your Business with Advertising in Sri Lanka?</h2>
+          <div className="text-left bg-background/5 border border-background/10 rounded-xl p-6 mb-8">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Related reading</p>
+            <ul className="space-y-2 text-sm text-background/80">
+              <li>Discover <Link to="/blog/ai-tools-digital-marketing-sri-lanka-2026" className="text-primary font-semibold hover:underline">AI tools changing digital advertising in Sri Lanka</Link>.</li>
+              <li>Read our guide on <Link to="/blog/digital-marketing-healthcare-sri-lanka" className="text-primary font-semibold hover:underline">digital marketing for healthcare in Sri Lanka</Link>.</li>
+              <li>Plan <Link to="/blog/avurudu-marketing-ideas-sri-lanka" className="text-primary font-semibold hover:underline">Avurudu advertising campaigns</Link> for seasonal reach.</li>
+              <li>Local focus? Read <Link to="/blog/digital-marketing-colombo" className="text-primary font-semibold hover:underline">digital marketing in Colombo</Link>.</li>
+            </ul>
+          </div>
           <p className="text-background/70 mb-6">Cypher Digital is Sri Lanka's results-driven advertising and digital marketing agency. We build campaigns across every channel — Facebook, Google, TikTok, TV, radio and more — and deliver measurable ROI for businesses of every size.</p>
           <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
             <a href={wa("Hi, I want a free advertising consultation")} target="_blank" rel="noopener noreferrer">
