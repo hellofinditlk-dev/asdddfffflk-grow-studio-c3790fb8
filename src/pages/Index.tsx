@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
@@ -136,6 +137,51 @@ const websiteSchema = {
   },
 };
 
+const faqs = [
+  {
+    q: "What does a digital marketing agency do?",
+    a: "A digital marketing agency helps businesses grow online through services like social media management, Facebook & Google Ads, SEO, content marketing, video production and graphic design. At Cypher Digital, we focus on generating real leads and sales for Sri Lankan SMEs — not just likes and followers.",
+  },
+  {
+    q: "How much does digital marketing cost in Sri Lanka?",
+    a: "Digital marketing in Sri Lanka typically starts from around LKR 25,000 per month for basic social media management and goes up to LKR 200,000+ for full-service campaigns including paid ads, SEO and content. Cypher Digital offers flexible monthly packages built around your goals and budget — message us on WhatsApp for a custom quote.",
+  },
+  {
+    q: "Which is the best digital marketing agency in Sri Lanka?",
+    a: "Cypher Digital is one of the top-rated digital marketing agencies in Sri Lanka, trusted by SMEs across Colombo, Kandy, Galle and beyond. We specialise in Facebook Ads, Google Ads, SEO and social media management with a clear ROI-first approach — every campaign is tracked, reported and optimised for measurable results.",
+  },
+  {
+    q: "How long does SEO take to show results in Sri Lanka?",
+    a: "Most SEO campaigns in Sri Lanka start showing meaningful results in 3 to 6 months, with stronger rankings and steady organic traffic typically appearing between months 6 and 12. Local SEO for cities like Colombo, Negombo or Kandy can show faster wins within 60–90 days when paired with Google Business Profile optimisation.",
+  },
+  {
+    q: "Do you work with small businesses and startups?",
+    a: "Yes. Cypher Digital is built specifically for Sri Lankan small businesses, startups and SMEs. We offer affordable starter packages, transparent reporting and no long-term lock-in contracts, so you can grow your marketing as your business grows.",
+  },
+  {
+    q: "What digital marketing services does Cypher Digital offer?",
+    a: "We offer Social Media Management, Facebook Advertising, Google Ads, SEO Services, Graphic Design, Video Production, TikTok Marketing and Influencer Marketing — all tailored for the Sri Lankan market. You can also explore industry-specific solutions for hotels, real estate, restaurants, salons, schools and ecommerce brands.",
+  },
+  {
+    q: "Do you serve businesses outside Colombo?",
+    a: "Absolutely. We work with businesses across Sri Lanka including Colombo, Kandy, Galle, Negombo, Jaffna, Kurunegala, Matara, Anuradhapura, Ratnapura and Batticaloa. All our services are delivered remotely with WhatsApp-first communication, so location is never a barrier.",
+  },
+  {
+    q: "How do I get started with Cypher Digital?",
+    a: "Getting started is simple — message us on WhatsApp at +94 70 177 2626 or fill in our inquiry form. We'll schedule a free 30-minute consultation to understand your business, recommend the right services and share a custom proposal within 24 hours.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 const Index = () => (
   <div className="pt-16">
     <SEOHead
@@ -145,6 +191,7 @@ const Index = () => (
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
     {/* HERO */}
     <section className="relative py-28 lg:py-40 bg-foreground overflow-hidden">
