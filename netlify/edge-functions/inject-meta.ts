@@ -596,6 +596,56 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "A complete beginner's guide to digital marketing for small businesses in Sri Lanka. Learn which channels to start with, how much to spend, and how to get real results fast.",
     h1: "Digital Marketing for Small Businesses in Sri Lanka — Complete Beginner's Guide (2026)",
   },
+  "/blog/digital-marketing-agency-colombo": {
+    title: "Digital Marketing Agency in Colombo — the Complete 2026 Guide",
+    description: "How to choose a digital marketing agency in Colombo — services, pricing, evaluation criteria, and what to expect from a top Sri Lankan agency in 2026.",
+    h1: "Digital marketing agency in Colombo — the complete 2026 guide",
+  },
+  "/blog/lead-generation-strategies-sri-lanka-2026": {
+    title: "Lead Generation in Sri Lanka — 10 Proven Strategies for 2026",
+    description: "The 10 most effective lead generation strategies for Sri Lankan businesses in 2026 — Facebook Ads, Google Ads, WhatsApp funnels, SEO, retargeting and more.",
+    h1: "Lead generation in Sri Lanka — 10 proven strategies for 2026",
+  },
+  "/blog/social-media-agency-colombo": {
+    title: "Social Media Agency in Colombo — What to Look For & How to Choose (2026)",
+    description: "What a good social media agency in Colombo offers, the red flags to avoid, realistic pricing, and the questions to ask before signing a contract.",
+    h1: "Social media agency in Colombo — what to look for and how to choose (2026)",
+  },
+  "/blog/email-marketing-sri-lanka-guide-2026": {
+    title: "Email Marketing in Sri Lanka — the Beginner's Guide for Businesses (2026)",
+    description: "A complete beginner's guide to email marketing in Sri Lanka — list building, the best tools, writing tips, compliance, and measurement.",
+    h1: "Email marketing in Sri Lanka — the beginner's guide for businesses (2026)",
+  },
+  "/blog/ai-tools-digital-marketing-sri-lanka-2026": {
+    title: "AI Tools for Digital Marketing in Sri Lanka — What Actually Works in 2026",
+    description: "The AI tools genuinely useful for Sri Lankan digital marketers in 2026 — ChatGPT, Meta Advantage+, Performance Max, Canva AI, chatbots, Semrush and more.",
+    h1: "AI tools for digital marketing in Sri Lanka — what actually works in 2026",
+  },
+  "/blog/freelancer-vs-digital-marketing-agency-sri-lanka": {
+    title: "Freelancer vs Digital Marketing Agency in Sri Lanka — Which Should You Hire?",
+    description: "An honest comparison of hiring a freelancer vs a digital marketing agency in Sri Lanka — costs, capabilities, reliability, and when each is the right choice.",
+    h1: "Freelancer vs digital marketing agency in Sri Lanka — which should you hire?",
+  },
+  "/blog/linkedin-marketing-sri-lanka-2026": {
+    title: "LinkedIn Marketing for Sri Lankan Businesses — the 2026 Guide",
+    description: "How Sri Lankan businesses can use LinkedIn marketing in 2026 to generate B2B leads, build industry authority, and reach international corporate clients.",
+    h1: "LinkedIn marketing for Sri Lankan businesses — the 2026 guide",
+  },
+  "/blog/digital-marketing-healthcare-sri-lanka": {
+    title: "Digital Marketing for Healthcare Businesses in Sri Lanka (2026)",
+    description: "The most effective digital marketing strategies for healthcare businesses in Sri Lanka — Google My Business, educational content, Facebook, Google Ads & WhatsApp.",
+    h1: "Digital marketing for healthcare businesses in Sri Lanka (2026)",
+  },
+  "/blog/avurudu-marketing-ideas-sri-lanka": {
+    title: "Avurudu Marketing Ideas for Sri Lankan Businesses — Seasonal Campaigns That Work",
+    description: "10 proven Avurudu marketing ideas and a practical campaign framework that Sri Lankan businesses can apply for the Sinhala & Tamil New Year season.",
+    h1: "Avurudu marketing ideas for Sri Lankan businesses — seasonal campaigns that work",
+  },
+  "/blog/digital-marketing-results-case-studies-sri-lanka": {
+    title: "How Digital Marketing Grew 5 Sri Lankan Businesses — Real Results & Case Studies",
+    description: "Five real Sri Lankan digital marketing case studies — restaurant, real estate, fashion, healthcare and B2B — with strategies, results, and key lessons.",
+    h1: "How digital marketing grew 5 Sri Lankan businesses — real results and case studies",
+  },
 };
 
 const escapeAttr = (value: string) =>
