@@ -647,7 +647,7 @@ const Index = () => (
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Get Started</p>
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-              Start Your Campaign Today
+              Start Growing with Sri Lanka's Top Digital Marketing Team
             </h2>
             <p className="text-white/50 text-lg leading-relaxed mb-8">
               Generate consistent leads with Facebook ads, Google Ads, and professional social media management in Sri Lanka.
