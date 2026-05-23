@@ -52,6 +52,7 @@ const BlogPost104 = () => (
             <p><strong className="text-foreground">Do you work with small businesses?</strong> Yes — packages are designed to scale.</p>
 
             <p>For an agency overview, read <Link to="/blog/digital-marketing-agency-colombo" className="text-primary hover:underline">digital marketing agency in Colombo</Link>. Outside the capital? See <Link to="/blog/digital-marketing-kandy" className="text-primary hover:underline">digital marketing in Kandy</Link>. For pricing benchmarks across services, read our <Link to="/blog/digital-marketing-cost-sri-lanka-pricing" className="text-primary hover:underline">digital marketing cost guide</Link>.</p>
+            <p>Most Colombo brands benefit from working with a full-service <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link>. Start with consistent <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management in Sri Lanka</Link> and layer on the right mix of <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>

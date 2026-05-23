@@ -56,6 +56,7 @@ const BlogPost103 = () => (
             <p><strong className="text-foreground">Will my site be SEO-friendly?</strong> Yes — proper heading structure, meta titles, fast loading, mobile optimisation and schema markup are built in.</p>
 
             <p>Building an online store specifically? See our guide on <Link to="/blog/ecommerce-development-sri-lanka" className="text-primary hover:underline">e-commerce development in Sri Lanka</Link>. To turn that new site into traffic and leads, pair it with <Link to="/seo-services-sri-lanka" className="text-primary hover:underline">SEO services</Link> and <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link>. For UI principles that improve conversion, read <Link to="/blog/ui-ux-design-best-practices-sri-lankan-websites" className="text-primary hover:underline">UI/UX best practices for Sri Lankan websites</Link>.</p>
+            <p>For a full marketing partner after launch, work with a <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> and explore the wider mix of <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>. Need ongoing organic growth? Compare our <Link to="/blog/seo-packages-sri-lanka" className="text-primary hover:underline">SEO packages in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>

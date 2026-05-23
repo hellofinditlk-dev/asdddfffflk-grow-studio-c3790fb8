@@ -50,6 +50,7 @@ const BlogPost102 = () => (
             <p><strong className="text-foreground">Do you create Sinhala content?</strong> Yes — Growth and Pro packages include bilingual content written by native Sinhala writers.</p>
 
             <p>For a deeper look at delivery and case studies, see our <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline">social media management in Sri Lanka</Link> service page. To weigh organic vs paid effort, read <Link to="/blog/organic-social-media-vs-paid-ads-sri-lanka" className="text-primary hover:underline">organic social media vs paid ads</Link>. Pure focus on Instagram? See our guide on <Link to="/blog/instagram-marketing-sri-lanka" className="text-primary hover:underline">Instagram marketing in Sri Lanka</Link>.</p>
+            <p>Work with a full-service <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> to scale results, or explore our <Link to="/blog/instagram-marketing-sri-lanka" className="text-primary hover:underline">Instagram marketing in Sri Lanka</Link> packages. For agency evaluation criteria, read <Link to="/blog/social-media-agency-colombo" className="text-primary hover:underline">how to choose a social media agency in Colombo</Link>.</p>
           </div>
         </div>
       </div>

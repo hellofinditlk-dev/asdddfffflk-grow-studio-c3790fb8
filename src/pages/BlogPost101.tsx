@@ -59,6 +59,7 @@ const BlogPost101 = () => (
             <p><strong className="text-foreground">Do I need local SEO?</strong> Yes, if your customers search by city — Colombo, Kandy, Galle and others. Local SEO is what gets you into Google Maps and the local pack.</p>
 
             <p>For a deeper dive into <Link to="/seo-services-sri-lanka" className="text-primary hover:underline">SEO services in Sri Lanka</Link>, see our service page. For pricing comparison across all channels, read our guide on <Link to="/blog/digital-marketing-cost-sri-lanka-pricing" className="text-primary hover:underline">digital marketing cost in Sri Lanka</Link>. Or explore the full picture on <Link to="/advertising-in-sri-lanka" className="text-primary hover:underline">advertising in Sri Lanka</Link>.</p>
+            <p>Choosing the right <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> matters as much as the package itself. Pair SEO with strong <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management in Sri Lanka</Link>, and apply the playbook in our guide on <Link to="/blog/lead-generation-strategies-sri-lanka-2026" className="text-primary hover:underline">lead generation in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>

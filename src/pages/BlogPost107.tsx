@@ -54,6 +54,7 @@ const BlogPost107 = () => (
             <p><strong className="text-foreground">Do you create Reels?</strong> Yes — Growth and Pro packages include professionally produced Reels every month.</p>
 
             <p>For wider platform strategy, see <Link to="/blog/instagram-marketing-strategy-sri-lankan-businesses" className="text-primary hover:underline">Instagram marketing strategy for Sri Lankan businesses</Link>, and to launch paid campaigns read <Link to="/blog/how-to-run-instagram-ads-sri-lanka" className="text-primary hover:underline">how to run Instagram Ads in Sri Lanka</Link>. For multi-platform packages, compare <Link to="/blog/social-media-marketing-packages" className="text-primary hover:underline">social media marketing packages</Link> or go straight to our <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline">social media management service</Link>.</p>
+            <p>Instagram works best inside a wider plan run by a <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>

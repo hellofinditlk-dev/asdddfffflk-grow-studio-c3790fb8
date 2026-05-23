@@ -49,6 +49,7 @@ const BlogPost105 = () => (
             <p><strong className="text-foreground">Can I sell outside Sri Lanka?</strong> Yes — multi-currency, international shipping rates and global gateways are supported.</p>
 
             <p>For broader website strategy and pricing, read <Link to="/blog/web-design-sri-lanka" className="text-primary hover:underline">web design in Sri Lanka</Link>. To drive traffic to your new store, see <Link to="/blog/ecommerce-digital-marketing-sri-lanka" className="text-primary hover:underline">e-commerce digital marketing</Link> and pair with <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link> and <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook Ads</Link>.</p>
+            <p>For a full launch and growth partner, work with a <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> and combine your new store with the right mix of <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>.</p>
           </div>
         </div>
       </div>

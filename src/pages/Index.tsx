@@ -578,6 +578,22 @@ const Index = () => (
 
     {/* FINAL CTA + FORM */}
     {/* FAQ */}
+    {/* RELATED READING — internal linking */}
+    <section className="py-16 bg-card border-t border-border">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Related reading</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-foreground mb-6">More guides for Sri Lankan businesses</h2>
+          <ul className="space-y-3 text-sm">
+            <li>Read our full <Link to="/blog/digital-marketing-agency-colombo" className="text-primary font-semibold hover:underline">digital marketing guide for Colombo businesses</Link>.</li>
+            <li>Learn proven <Link to="/blog/lead-generation-strategies-sri-lanka-2026" className="text-primary font-semibold hover:underline">lead generation strategies for Sri Lankan businesses</Link>.</li>
+            <li>Compare <Link to="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" className="text-primary font-semibold hover:underline">agency vs freelancer in Sri Lanka</Link> before you hire.</li>
+            <li>See how we grew <Link to="/blog/digital-marketing-results-case-studies-sri-lanka" className="text-primary font-semibold hover:underline">5 Sri Lankan businesses with digital marketing</Link>.</li>
+            <li>Browse our <Link to="/blog/seo-packages-sri-lanka" className="text-primary font-semibold hover:underline">SEO packages for Sri Lankan businesses</Link>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section id="faqs" className="py-20 bg-background scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
