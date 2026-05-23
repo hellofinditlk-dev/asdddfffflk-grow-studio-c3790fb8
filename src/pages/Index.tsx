@@ -596,6 +596,75 @@ const Index = () => (
     {/* FINAL CTA + FORM */}
     {/* FAQ */}
     {/* RELATED READING — internal linking */}
+    {/* COLOMBO BASED */}
+    <section className="py-20 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Based in Colombo, Sri Lanka</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            Digital Marketing Agency in Colombo — serving all of Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed max-w-2xl mb-10">
+            Based in Colombo, we are a full-service <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link> serving businesses from Colombo to Kandy, Galle to Jaffna. Our clients include restaurants, clinics, fashion brands, real estate developers, education institutes, and service businesses across all industries.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "Colombo", desc: "Our home base — serving all Colombo districts" },
+              { label: "Kandy", desc: "Fully remote — same quality, no office visit needed" },
+              { label: "All SL", desc: "We serve businesses island-wide via WhatsApp & Zoom" },
+              { label: "Remote", desc: "Clients in the Middle East, UK & Australia" },
+            ].map((item, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-5 hover:border-primary/30 hover:shadow-card transition-all">
+                <div className="font-heading text-2xl font-extrabold text-primary mb-1">{item.label}</div>
+                <div className="text-xs text-muted-foreground leading-relaxed">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+          <Link to="/blog/digital-marketing-colombo" className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-all">
+            Learn about digital marketing in Colombo <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+
+    {/* CLIENT REVIEWS */}
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Client Reviews</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+            What our clients say about our digital marketing results
+          </h2>
+          <div className="flex items-center gap-4 mb-10">
+            <div className="font-heading text-5xl font-extrabold text-foreground leading-none">5.0</div>
+            <div>
+              <div className="text-2xl text-[hsl(45,95%,55%)] tracking-widest leading-none">★★★★★</div>
+              <div className="text-xs text-muted-foreground mt-1">Based on 47 client reviews</div>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              { quote: "Cypher Digital transformed our restaurant's online presence. Within 3 months we went from 20 covers per night to fully booked every weekend. Their social media work is exceptional.", initials: "RC", name: "Restaurant Client", location: "Colombo 3, Sri Lanka", color: "from-[hsl(252,65%,55%)] to-[hsl(280,80%,65%)]" },
+              { quote: "We were getting 20 leads per month from traditional marketing. After 2 months with Cypher Digital's Facebook Ads, we're getting 150+ qualified leads every month. The ROI is incredible.", initials: "RE", name: "Real Estate Developer", location: "Western Province, Sri Lanka", color: "from-[hsl(280,80%,65%)] to-[hsl(320,70%,60%)]" },
+              { quote: "Professional, responsive, and results-focused. Our clinic went from empty appointment slots to being fully booked 3 weeks in advance. Highly recommend Cypher Digital to any healthcare business.", initials: "HC", name: "Healthcare Client", location: "Nugegoda, Sri Lanka", color: "from-[hsl(220,80%,55%)] to-[hsl(200,90%,55%)]" },
+            ].map((r, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
+                <div className="text-lg text-[hsl(45,95%,55%)] tracking-wider mb-3">★★★★★</div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">"{r.quote}"</p>
+                <div className="flex items-center gap-3">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${r.color} flex items-center justify-center text-white text-xs font-bold`}>{r.initials}</div>
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">{r.name}</div>
+                    <div className="text-xs text-muted-foreground">{r.location}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="py-16 bg-card border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
