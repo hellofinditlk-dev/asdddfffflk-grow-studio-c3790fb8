@@ -84,6 +84,7 @@ const BlogPost47 = () => (
                 { label: "How Ad Videos Increase Conversions", path: "/blog/how-ad-videos-increase-conversions-businesses", desc: "Convert with video." },
                 { label: "Social Media Design Best Practices", path: "/blog/social-media-design-best-practices-better-engagement", desc: "Design for engagement." },
                 { label: "Influencer Marketing Guide", path: "/blog/influencer-marketing-guide-sri-lankan-brands", desc: "Work with creators." },
+                { label: "Instagram Marketing Sri Lanka — Packages", path: "/blog/instagram-marketing-sri-lanka", desc: "Pricing, Reels and ad management." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>

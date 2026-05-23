@@ -70,6 +70,7 @@ const BlogPost38 = () => (
                 { label: "Consistent Posting Builds Brand Trust", path: "/blog/how-consistent-social-media-posting-builds-brand-trust", desc: "Long-term growth via consistency." },
                 { label: "Facebook & Instagram Management Guide", path: "/blog/facebook-instagram-management-guide-sri-lankan-brands", desc: "Manage both platforms effectively." },
                 { label: "Social Media Design Best Practices", path: "/blog/social-media-design-best-practices-better-engagement", desc: "Engagement-driving design tips." },
+                { label: "Instagram Marketing Sri Lanka — Packages", path: "/blog/instagram-marketing-sri-lanka", desc: "Reels, Ads & monthly package pricing." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>

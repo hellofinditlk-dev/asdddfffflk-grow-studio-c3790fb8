@@ -67,6 +67,8 @@ const BlogPost61 = () => (
                 { label: "WhatsApp Marketing Sri Lanka", path: "/blog/whatsapp-marketing-sri-lankan-businesses", desc: "Retention via WhatsApp." },
                 { label: "Why SEO is Important for Long-Term Growth", path: "/blog/why-seo-important-long-term-business-growth", desc: "Organic compounding." },
                 { label: "Instagram Marketing Strategy", path: "/blog/instagram-marketing-strategy-sri-lankan-businesses", desc: "Grow on Instagram." },
+                { label: "E-commerce Development Sri Lanka", path: "/blog/ecommerce-development-sri-lanka", desc: "Online store pricing and platforms." },
+                { label: "Web Design Sri Lanka", path: "/blog/web-design-sri-lanka", desc: "Pricing, process and what's included." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>
