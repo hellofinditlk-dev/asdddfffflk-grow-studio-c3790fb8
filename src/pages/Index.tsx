@@ -139,7 +139,7 @@ const websiteSchema = {
 const Index = () => (
   <div className="pt-16">
     <SEOHead
-      title="Best Digital Marketing Agency Sri Lanka | Cypher Digital"
+      title="Digital Marketing Agency in Sri Lanka | Cypher Digital"
       description="#1 digital marketing agency in Sri Lanka & best social media agency Sri Lanka. Trusted digital marketing companies in Sri Lanka. Get free call today!"
       canonical="https://cypherdigital.lk"
     />
