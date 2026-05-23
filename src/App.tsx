@@ -119,6 +119,16 @@ const BlogPost87 = lazy(() => import("./pages/BlogPost87"));
 const BlogPost88 = lazy(() => import("./pages/BlogPost88"));
 const BlogPost89 = lazy(() => import("./pages/BlogPost89"));
 const BlogPost90 = lazy(() => import("./pages/BlogPost90"));
+const BlogPost91 = lazy(() => import("./pages/BlogPost91"));
+const BlogPost92 = lazy(() => import("./pages/BlogPost92"));
+const BlogPost93 = lazy(() => import("./pages/BlogPost93"));
+const BlogPost94 = lazy(() => import("./pages/BlogPost94"));
+const BlogPost95 = lazy(() => import("./pages/BlogPost95"));
+const BlogPost96 = lazy(() => import("./pages/BlogPost96"));
+const BlogPost97 = lazy(() => import("./pages/BlogPost97"));
+const BlogPost98 = lazy(() => import("./pages/BlogPost98"));
+const BlogPost99 = lazy(() => import("./pages/BlogPost99"));
+const BlogPost100 = lazy(() => import("./pages/BlogPost100"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
@@ -265,6 +275,16 @@ const App = () => (
               <Route path="/blog/best-social-media-agencies-sri-lanka-small-businesses" element={<BlogPost88 />} />
               <Route path="/blog/affordable-social-media-marketing-services-sri-lanka" element={<BlogPost89 />} />
               <Route path="/blog/top-rated-social-media-management-companies-sri-lanka" element={<BlogPost90 />} />
+              <Route path="/blog/digital-marketing-agency-colombo" element={<BlogPost91 />} />
+              <Route path="/blog/lead-generation-strategies-sri-lanka-2026" element={<BlogPost92 />} />
+              <Route path="/blog/social-media-agency-colombo" element={<BlogPost93 />} />
+              <Route path="/blog/email-marketing-sri-lanka-guide-2026" element={<BlogPost94 />} />
+              <Route path="/blog/ai-tools-digital-marketing-sri-lanka-2026" element={<BlogPost95 />} />
+              <Route path="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" element={<BlogPost96 />} />
+              <Route path="/blog/linkedin-marketing-sri-lanka-2026" element={<BlogPost97 />} />
+              <Route path="/blog/digital-marketing-healthcare-sri-lanka" element={<BlogPost98 />} />
+              <Route path="/blog/avurudu-marketing-ideas-sri-lanka" element={<BlogPost99 />} />
+              <Route path="/blog/digital-marketing-results-case-studies-sri-lanka" element={<BlogPost100 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
