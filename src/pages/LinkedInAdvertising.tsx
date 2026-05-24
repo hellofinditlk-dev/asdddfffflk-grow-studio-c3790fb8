@@ -146,7 +146,7 @@ const LinkedInAdvertising = () => {
             Sri Lanka's specialist LinkedIn marketing agency — B2B lead generation, company page management, LinkedIn Ads, and thought leadership strategies that reach decision-makers locally and internationally.
           </p>
           <div className="flex flex-wrap gap-3 mb-14">
-            <a href={WA} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-[hsl(var(--cta))] text-white font-semibold hover:opacity-90 transition !border-0">
+            <a href={WA} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none">
               Get a Free LinkedIn Audit
             </a>
             <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-background/30 text-background hover:border-background/60 font-medium transition">
@@ -323,7 +323,7 @@ const LinkedInAdvertising = () => {
                     </li>
                   ))}
                 </ul>
-                <a href={`https://wa.me/94701772626?text=${p.cta}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 rounded-lg bg-[hsl(var(--cta))] text-white font-semibold hover:opacity-90 transition !border-0">Get Started</a>
+                <a href={`https://wa.me/94701772626?text=${p.cta}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 rounded-lg bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none">Get Started</a>
               </Card>
             ))}
           </div>
@@ -409,7 +409,7 @@ const LinkedInAdvertising = () => {
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold mb-4 max-w-2xl mx-auto">Ready to generate B2B leads with LinkedIn in Sri Lanka?</h2>
           <p className="opacity-80 max-w-xl mx-auto mb-10">Get a free LinkedIn audit and strategy session — we will show you exactly what is possible for your business on LinkedIn.</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href={WA} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-[hsl(var(--cta))] text-white font-semibold hover:opacity-90 transition !border-0">Get a Free LinkedIn Audit</a>
+            <a href={WA} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none">Get a Free LinkedIn Audit</a>
             <Link to="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-lg border-2 border-primary-foreground/50 text-primary-foreground hover:border-primary-foreground font-medium transition">Talk to an Expert</Link>
           </div>
         </div>
