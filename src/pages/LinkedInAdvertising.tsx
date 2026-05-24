@@ -426,6 +426,65 @@ const LinkedInAdvertising = () => {
           <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads Sri Lanka</Link>
         </div>
       </div>
+
+      {/* Pair LinkedIn with Other Digital Services */}
+      <section className="py-16 border-t border-border bg-secondary/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Build a Full-Funnel B2B Strategy</div>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Pair LinkedIn Marketing with Our Other Services</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">LinkedIn captures B2B decision-makers — combine it with these Cypher Digital services to build a complete brand presence and lead pipeline in Sri Lanka.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link to="/social-media-management-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Social Media Management</div>
+              <div className="text-sm text-muted-foreground">Full management across Facebook, Instagram, TikTok and LinkedIn.</div>
+            </Link>
+            <Link to="/facebook-ads-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Facebook Advertising</div>
+              <div className="text-sm text-muted-foreground">Retarget LinkedIn audiences on Meta for lower CPL on warm leads.</div>
+            </Link>
+            <Link to="/google-ads-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Google Ads</div>
+              <div className="text-sm text-muted-foreground">Capture high-intent searches from decision-makers researching solutions.</div>
+            </Link>
+            <Link to="/seo-services-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">SEO Services</div>
+              <div className="text-sm text-muted-foreground">Rank for B2B keywords so LinkedIn-warmed prospects find your website.</div>
+            </Link>
+            <Link to="/video-production-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Video Production</div>
+              <div className="text-sm text-muted-foreground">Corporate videos, executive interviews and case-study films for LinkedIn.</div>
+            </Link>
+            <Link to="/instagram-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Instagram Marketing</div>
+              <div className="text-sm text-muted-foreground">Humanise your B2B brand with culture and behind-the-scenes content.</div>
+            </Link>
+            <Link to="/tiktok-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">TikTok Marketing</div>
+              <div className="text-sm text-muted-foreground">Reach younger professionals and recruit talent with short-form video.</div>
+            </Link>
+            <Link to="/influencer-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Influencer Marketing</div>
+              <div className="text-sm text-muted-foreground">Collaborate with Sri Lankan industry thought-leaders and creators.</div>
+            </Link>
+            <Link to="/graphic-design-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Graphic Design</div>
+              <div className="text-sm text-muted-foreground">LinkedIn carousels, banners, infographics and pitch-deck design.</div>
+            </Link>
+            <Link to="/brand-identity-design-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Brand Identity Design</div>
+              <div className="text-sm text-muted-foreground">Logo, colour and visual system to look credible to enterprise buyers.</div>
+            </Link>
+            <Link to="/event-management-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Event Management</div>
+              <div className="text-sm text-muted-foreground">Corporate events, B2B summits and product launches in Sri Lanka.</div>
+            </Link>
+            <Link to="/media-buying-agencies-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Media Buying</div>
+              <div className="text-sm text-muted-foreground">Unified media plan across LinkedIn, Meta, Google and programmatic.</div>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
