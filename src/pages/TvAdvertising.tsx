@@ -518,6 +518,65 @@ const TvAdvertising = () => {
           </div>
         </div>
       </section>
+
+      {/* Amplify TV with Digital Services */}
+      <section className="py-14 border-t border-border bg-secondary/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Amplify Your TV Campaign</span>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Pair TV Advertising with Our Digital Marketing Services</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">TV builds awareness — digital captures the demand. Combine your TV campaign with these Cypher Digital services for measurable ROI from every rupee spent on TV.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link to="/social-media-management-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Social Media Management</div>
+              <div className="text-sm text-muted-foreground">Re-target TV viewers on Facebook, Instagram & TikTok with the same creative.</div>
+            </Link>
+            <Link to="/facebook-ads-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Facebook Advertising</div>
+              <div className="text-sm text-muted-foreground">Run lower-funnel conversion ads while your TVC drives top-of-mind awareness.</div>
+            </Link>
+            <Link to="/google-ads-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Google Ads</div>
+              <div className="text-sm text-muted-foreground">Capture branded search spikes that always follow a strong TV campaign.</div>
+            </Link>
+            <Link to="/event-management-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Event Management</div>
+              <div className="text-sm text-muted-foreground">Activate your TV campaign on-ground with launches and brand experiences.</div>
+            </Link>
+            <Link to="/seo-services-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">SEO Services</div>
+              <div className="text-sm text-muted-foreground">Make sure your website ranks #1 when viewers search after seeing your TVC.</div>
+            </Link>
+            <Link to="/video-production-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Video Production</div>
+              <div className="text-sm text-muted-foreground">Full TVC production — script, shoot, edit and broadcast-ready delivery.</div>
+            </Link>
+            <Link to="/tiktok-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">TikTok Marketing</div>
+              <div className="text-sm text-muted-foreground">Cut your TVC into short-form TikTok content to reach Gen Z viewers.</div>
+            </Link>
+            <Link to="/influencer-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Influencer Marketing</div>
+              <div className="text-sm text-muted-foreground">Partner with Sri Lankan influencers to amplify your TV campaign message.</div>
+            </Link>
+            <Link to="/instagram-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Instagram Marketing</div>
+              <div className="text-sm text-muted-foreground">Build a strong Instagram presence so TV-driven traffic finds an active brand.</div>
+            </Link>
+            <Link to="/linkedin-marketing-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">LinkedIn Marketing</div>
+              <div className="text-sm text-muted-foreground">B2B brands on TV — capture decision-makers via LinkedIn targeting.</div>
+            </Link>
+            <Link to="/graphic-design-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Graphic Design</div>
+              <div className="text-sm text-muted-foreground">Keyframes, end-cards and matching print/social creative for your TVC.</div>
+            </Link>
+            <Link to="/media-buying-agencies-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Media Buying</div>
+              <div className="text-sm text-muted-foreground">Negotiate TV slots, print and digital placements under one media plan.</div>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
