@@ -538,9 +538,9 @@ const TvAdvertising = () => {
               <div className="font-heading font-bold mb-1">Google Ads</div>
               <div className="text-sm text-muted-foreground">Capture branded search spikes that always follow a strong TV campaign.</div>
             </Link>
-            <Link to="/youtube-ads-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
-              <div className="font-heading font-bold mb-1">YouTube Ads</div>
-              <div className="text-sm text-muted-foreground">Extend your TVC reach to cord-cutters and younger audiences on YouTube.</div>
+            <Link to="/event-management-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
+              <div className="font-heading font-bold mb-1">Event Management</div>
+              <div className="text-sm text-muted-foreground">Activate your TV campaign on-ground with launches and brand experiences.</div>
             </Link>
             <Link to="/seo-services-sri-lanka" className="block p-5 rounded-xl border border-border bg-card hover:border-primary transition-colors">
               <div className="font-heading font-bold mb-1">SEO Services</div>
