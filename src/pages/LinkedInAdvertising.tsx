@@ -126,9 +126,9 @@ const LinkedInAdvertising = () => {
   return (
     <>
       <SEOHead
-        title="LinkedIn Marketing Sri Lanka — LinkedIn Advertising Agency | Cypher Digital"
-        description="Expert LinkedIn marketing and LinkedIn advertising in Sri Lanka. B2B lead generation, company page management, Sponsored Content & LinkedIn Ads. Free consultation."
-        canonical="https://cypherdigital.lk/linkedin-advertising-sri-lanka"
+        title="LinkedIn Marketing Sri Lanka — LinkedIn Advertising & B2B Lead Generation | Cypher Digital"
+        description="LinkedIn marketing Sri Lanka — B2B lead generation, LinkedIn Ads, company page management & executive branding. Reach decision-makers locally & internationally. Free consultation."
+        canonical="https://cypherdigital.lk/linkedin-marketing-sri-lanka"
       />
       <PageBreadcrumb items={[{ label: "Services", href: "/" }, { label: "LinkedIn Marketing Sri Lanka" }]} />
 
