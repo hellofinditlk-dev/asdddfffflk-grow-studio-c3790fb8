@@ -19,7 +19,7 @@ const BlogPost38 = () => (
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>Cypher Digital is among the trusted <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agencies Sri Lanka</Link> businesses rely on to grow consistent leads and sales.</p>
-            <p>Instagram is one of the most powerful marketing tools available to Sri Lankan businesses right now. With millions of active users in Sri Lanka scrolling daily, businesses that build a strong Instagram presence are consistently outperforming competitors who rely solely on Facebook or traditional advertising.</p>
+            <p>Instagram is one of the most powerful marketing tools available to Sri Lankan businesses right now. With millions of active users in Sri Lanka scrolling daily, businesses that invest in professional <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing Sri Lanka</Link> are consistently outperforming competitors who rely solely on Facebook or traditional advertising.</p>
             <p>But simply having an Instagram account isn't enough. To actually grow your business using Instagram in Sri Lanka, you need a clear strategy.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Why Instagram Matters in 2026</h2>
@@ -48,7 +48,7 @@ const BlogPost38 = () => (
             <p>Use 10–15 hashtags per post: 3–4 large (#srilanka), 4–5 medium (#srilankabusiness), 3–4 niche (#colomborestaurant), and 1–2 branded.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 5: Instagram Ads</h2>
-            <p>Organic reach is limited. Instagram Ads let you target by location, age, interests, and behaviour. Most effective formats: Reel Ads, Story Ads, Explore Ads, and Lead Generation Ads. Our <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook and Instagram advertising team</Link> manages campaigns for businesses across Sri Lanka, focused on quality leads at the lowest cost per result.</p>
+            <p>Organic reach is limited. <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram advertising in Sri Lanka</Link> lets you target by location, age, interests, and behaviour. Most effective formats: Reel Ads, Story Ads, Explore Ads, and Lead Generation Ads. Our <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook and Instagram advertising team</Link> manages campaigns for businesses across Sri Lanka, focused on quality leads at the lowest cost per result.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 6: Convert Followers Into Customers</h2>
             <p>Include "Message us on WhatsApp" in your bio link. Set up DM auto-replies. Run limited-time, Instagram-only offers. Use clean link-in-bio landing pages.</p>
