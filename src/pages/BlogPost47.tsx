@@ -19,7 +19,7 @@ const BlogPost47 = () => (
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>Cypher Digital is among the trusted <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agencies Sri Lanka</Link> businesses rely on to grow consistent leads and sales.</p>
-            <p>Instagram Ads are one of the most powerful tools for Sri Lankan businesses to reach new customers — but many business owners attempt to run them without proper setup, waste their budget, and conclude "Instagram Ads don't work." They do work. The difference is knowing how to set them up correctly.</p>
+            <p>Instagram Ads are one of the most powerful tools for Sri Lankan businesses to reach new customers — but many business owners attempt to run them without proper setup, waste their budget, and conclude "Instagram Ads don't work." They do work. The difference is knowing how to set them up correctly. For full-service support, see our <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing Sri Lanka</Link> service.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Before You Start</h2>
             <p>You need: a Facebook Business Manager account, a Facebook Page connected to your Instagram Business Account, payment method (Sri Lankan cards generally work), a clear goal, and ad creative ready.</p>

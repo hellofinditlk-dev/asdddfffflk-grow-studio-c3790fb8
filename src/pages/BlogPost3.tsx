@@ -21,7 +21,7 @@ const BlogPost3 = () => (
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>Looking for a results-driven <Link to="/" className="text-primary font-semibold hover:underline">digital marketing agency in Sri Lanka</Link>? This guide explains the strategy that actually moves the needle for Sri Lankan businesses.</p>
-            <p>Facebook and Instagram remain the most powerful social media platforms for businesses in Sri Lanka. These platforms allow brands to reach targeted audiences, build relationships, and generate leads consistently.</p>
+            <p>Facebook and <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing in Sri Lanka</Link> remain the most powerful social media channels for businesses. These platforms allow brands to reach targeted audiences, build relationships, and generate leads consistently.</p>
             <p>However, successful management requires more than posting images. Businesses need a clear strategy that includes content planning, audience targeting, visual branding, and engagement.</p>
             <p>A strong Facebook and Instagram management approach focuses on content variety. Educational posts build authority, entertaining posts increase reach, and promotional posts drive conversions. Brands that balance these content types typically achieve better results.</p>
             <p>Visual consistency is another critical factor. When a brand maintains a recognizable design style, customers can easily identify its content. This strengthens brand recall and improves trust.</p>
