@@ -22,7 +22,7 @@ const BlogPost54 = () => (
             <p>One of the most common questions Sri Lankan business owners ask: should I post in Sinhala, English, or both? The answer isn't one-size-fits-all. It depends on your target audience, industry, and brand positioning.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">The Language Reality of Sri Lankan Social Media</h2>
-            <p><strong>English-dominant:</strong> Urban professionals, upper-middle class, expats, internationally educated — Instagram, LinkedIn, X.<br /><strong>Sinhala-dominant:</strong> Largest segment. Rural and semi-urban, age 25–55, predominantly on Facebook. Engage far more in their first language.<br /><strong>Bilingual:</strong> Comfortable with both, especially in Colombo and Western Province.</p>
+            <p><strong>English-dominant:</strong> Urban professionals, upper-middle class, expats, internationally educated — Instagram, <Link to="/linkedin-marketing-sri-lanka" className="text-primary font-semibold hover:underline">LinkedIn marketing Sri Lanka</Link>, X.<br /><strong>Sinhala-dominant:</strong> Largest segment. Rural and semi-urban, age 25–55, predominantly on Facebook. Engage far more in their first language.<br /><strong>Bilingual:</strong> Comfortable with both, especially in Colombo and Western Province.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">When Sinhala Content Outperforms English</h2>
             <ul className="list-disc pl-5 space-y-2">
