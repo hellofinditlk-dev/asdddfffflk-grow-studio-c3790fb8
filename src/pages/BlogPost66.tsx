@@ -25,7 +25,7 @@ const BlogPost66 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 2: Define Your Target Audience</h2>
             <p>Sri Lanka's social audience is diverse — by language (Sinhala, Tamil, English), location (Colombo metro vs provincial), age (Gen Z TikTok vs Millennial Facebook), and income. Define by age, gender, location, language preference, interests, and behaviours.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 3: Choose the Right Platform</h2>
-            <p>Facebook: lead generation, event promotion, ages 25–55. Instagram: visual brand campaigns, fashion, food, ages 18–35. TikTok: viral awareness, audiences under 30. LinkedIn: B2B targeting professionals.</p>
+            <p>Facebook: lead generation, event promotion, ages 25–55. Instagram: visual brand campaigns, fashion, food, ages 18–35. TikTok: viral awareness, audiences under 30. <Link to="/linkedin-marketing-sri-lanka" className="text-primary font-semibold hover:underline">LinkedIn advertising in Sri Lanka</Link>: B2B targeting professionals.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 4: Plan Your Content</h2>
             <p>Best-performing content for Sri Lankan audiences: short-form video (Reels/TikToks), carousel posts, single image posts, Stories, and live videos. Plan at least 5–8 pieces per campaign — pre-launch teasers, main content, reminders, and final push.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Step 5: Set Your Budget</h2>
