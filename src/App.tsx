@@ -31,6 +31,7 @@ const ProductLaunchEvents = lazy(() => import("./pages/ProductLaunchEvents"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 const Careers = lazy(() => import("./pages/Careers"));
+const VacancyPage = lazy(() => import("./pages/VacancyPage"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost1 = lazy(() => import("./pages/BlogPost1"));
 const BlogPost2 = lazy(() => import("./pages/BlogPost2"));
@@ -307,6 +308,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/careers" element={<Careers />} />
+              <Route path="/careers/:slug" element={<VacancyPage />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
               <Route path="/media-buying-agencies-sri-lanka" element={<MediaBuyingAgencies />} />
               <Route path="/tv-advertising-sri-lanka" element={<TvAdvertising />} />
