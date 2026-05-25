@@ -30,6 +30,7 @@ const EventMarketing = lazy(() => import("./pages/EventMarketing"));
 const ProductLaunchEvents = lazy(() => import("./pages/ProductLaunchEvents"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
+const Careers = lazy(() => import("./pages/Careers"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost1 = lazy(() => import("./pages/BlogPost1"));
 const BlogPost2 = lazy(() => import("./pages/BlogPost2"));
