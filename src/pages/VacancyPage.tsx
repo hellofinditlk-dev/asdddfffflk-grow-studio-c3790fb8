@@ -24,12 +24,13 @@ const VacancyPage = () => {
     title: vacancy.title,
     description: `${vacancy.summary} Responsibilities: ${vacancy.duties.join("; ")}. Requirements: ${vacancy.requirements.join("; ")}.`,
     datePosted: vacancy.datePosted,
+    validThrough: "2026-08-25",
     employmentType: vacancy.employmentType,
     hiringOrganization: {
       "@type": "Organization",
       name: "Cypher Digital",
       sameAs: "https://cypherdigital.lk",
-      logo: "https://cypherdigital.lk/logo.png",
+      logo: "https://cypherdigital.lk/assets/logo-DJLYsmc6.png",
     },
     jobLocation: {
       "@type": "Place",
