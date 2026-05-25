@@ -99,11 +99,13 @@ const jobPostingsSchema = positions.map((p) => ({
   "@type": "JobPosting",
   title: p.title,
   description: p.summary,
-  employmentType: [
-    "FULL_TIME",
-    ...(p.type.toUpperCase().includes("PART") ? ["PART_TIME"] : []),
-    ...(p.type.toUpperCase().includes("FREELANCE") ? ["CONTRACTOR"] : []),
-  ],
+  employmentType: p.type.toUpperCase().includes("INTERN")
+    ? "INTERN"
+    : [
+        "FULL_TIME",
+        ...(p.type.toUpperCase().includes("PART") ? ["PART_TIME"] : []),
+        ...(p.type.toUpperCase().includes("FREELANCE") ? ["CONTRACTOR"] : []),
+      ],
   hiringOrganization: {
     "@type": "Organization",
     name: "Cypher Digital",
@@ -202,6 +204,22 @@ const Careers = () => (
                       </ul>
                     </div>
                   </div>
+
+                  {"perks" in p && (p as { perks?: string[] }).perks && (
+                    <div className="mb-8 p-5 rounded-xl bg-primary/5 border border-primary/20">
+                      <h4 className="font-heading font-bold mb-3 flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-primary" /> What you'll gain
+                      </h4>
+                      <ul className="space-y-2">
+                        {(p as { perks: string[] }).perks.map((g, idx) => (
+                          <li key={idx} className="flex gap-2 text-sm text-muted-foreground">
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                            <span>{g}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
                   <div className="bg-secondary/40 rounded-xl p-5 border border-border">
                     <p className="text-sm font-semibold mb-2">Apply via WhatsApp</p>
