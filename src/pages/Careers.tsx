@@ -38,7 +38,7 @@ const itemListSchema = {
 const Careers = () => (
   <div className="pt-16">
     <SEOHead
-      title="Careers at Cypher Digital | Digital Marketing Jobs in Sri Lanka"
+      title="Digital Marketing Jobs in Sri Lanka | Careers at Cypher Digital"
       description="Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketing Specialist, Video Editor and Marketing Intern in Colombo."
       canonical="https://cypherdigital.lk/careers"
     />

@@ -658,7 +658,7 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
   },
   // Careers
   "/careers": {
-    title: "Careers at Cypher Digital | Digital Marketing Jobs in Sri Lanka",
+    title: "Digital Marketing Jobs in Sri Lanka | Careers at Cypher Digital",
     description: "Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketing Specialist, Video Editor and Marketing Intern in Colombo.",
     h1: "Digital Marketing Jobs in Sri Lanka — Join Cypher Digital",
   },
