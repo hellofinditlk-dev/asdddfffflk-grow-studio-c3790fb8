@@ -306,6 +306,7 @@ const App = () => (
               <Route path="/blog/instagram-marketing-sri-lanka" element={<BlogPost107 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
+              <Route path="/careers" element={<Careers />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
               <Route path="/media-buying-agencies-sri-lanka" element={<MediaBuyingAgencies />} />
               <Route path="/tv-advertising-sri-lanka" element={<TvAdvertising />} />

@@ -42,6 +42,7 @@ Cypher Digital (cypherdigital.lk) is a Colombo-based digital marketing agency se
 ## Company
 
 - [About Cypher Digital](/about): Team, approach, and story.
+- [Careers](/careers): Open roles for designers and digital marketers in Colombo.
 - [Contact](/contact): Get a proposal or quote.
 - [Blog](/blog): Digital marketing guides, case studies, and Sri Lanka market insights.
 
