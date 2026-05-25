@@ -205,6 +205,22 @@ const Careers = () => (
                     </div>
                   </div>
 
+                  {p.perks && (
+                    <div className="mb-8 p-5 rounded-xl bg-primary/5 border border-primary/20">
+                      <h4 className="font-heading font-bold mb-3 flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-primary" /> What you'll gain
+                      </h4>
+                      <ul className="space-y-2">
+                        {p.perks.map((g, idx) => (
+                          <li key={idx} className="flex gap-2 text-sm text-muted-foreground">
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                            <span>{g}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
                   <div className="bg-secondary/40 rounded-xl p-5 border border-border">
                     <p className="text-sm font-semibold mb-2">Apply via WhatsApp</p>
                     <p className="text-sm text-muted-foreground mb-4">
