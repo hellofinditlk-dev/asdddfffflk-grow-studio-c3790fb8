@@ -656,6 +656,32 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Five real Sri Lankan digital marketing case studies — restaurant, real estate, fashion, healthcare and B2B — with strategies, results, and key lessons.",
     h1: "How digital marketing grew 5 Sri Lankan businesses — real results and case studies",
   },
+  // Careers
+  "/careers": {
+    title: "Careers at Cypher Digital | Digital Marketing Jobs in Sri Lanka",
+    description: "Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketing Specialist, Video Editor and Marketing Intern in Colombo.",
+    h1: "Digital Marketing Jobs in Sri Lanka — Join Cypher Digital",
+  },
+  "/careers/graphic-designer-jobs-sri-lanka": {
+    title: "Graphic Designer Jobs in Sri Lanka | Cypher Digital Careers",
+    description: "We're hiring a Graphic Designer in Colombo, Sri Lanka. Work on 800+ brand campaigns at Cypher Digital. Apply now via WhatsApp — no lengthy forms.",
+    h1: "Graphic Designer Vacancy in Sri Lanka — Cypher Digital",
+  },
+  "/careers/digital-marketing-jobs-sri-lanka": {
+    title: "Digital Marketing Jobs in Sri Lanka | Cypher Digital Careers",
+    description: "Hiring a Digital Marketing Specialist in Colombo. Run Facebook Ads, Google Ads and SEO campaigns for top Sri Lankan brands. Apply via WhatsApp today.",
+    h1: "Digital Marketing Specialist Vacancy in Sri Lanka — Cypher Digital",
+  },
+  "/careers/video-editor-jobs-sri-lanka": {
+    title: "Video Editor Jobs in Sri Lanka | Cypher Digital Careers",
+    description: "We're hiring a Video Editor in Colombo, Sri Lanka. Edit reels, TikToks and brand videos for 800+ clients. Apply now via WhatsApp at Cypher Digital.",
+    h1: "Video Editor Vacancy in Sri Lanka — Cypher Digital",
+  },
+  "/careers/marketing-internship-sri-lanka": {
+    title: "Marketing Internship in Sri Lanka | Cypher Digital Careers",
+    description: "Apply for a digital marketing internship in Colombo, Sri Lanka. Gain real experience in social media, ads and design at Cypher Digital. Apply via WhatsApp.",
+    h1: "Marketing Internship in Sri Lanka — Cypher Digital",
+  },
 };
 
 const escapeAttr = (value: string) =>
