@@ -99,7 +99,11 @@ const jobPostingsSchema = positions.map((p) => ({
   "@type": "JobPosting",
   title: p.title,
   description: p.summary,
-  employmentType: p.type.toUpperCase().includes("PART") ? ["FULL_TIME", "PART_TIME"] : "FULL_TIME",
+  employmentType: [
+    "FULL_TIME",
+    ...(p.type.toUpperCase().includes("PART") ? ["PART_TIME"] : []),
+    ...(p.type.toUpperCase().includes("FREELANCE") ? ["CONTRACTOR"] : []),
+  ],
   hiringOrganization: {
     "@type": "Organization",
     name: "Cypher Digital",
