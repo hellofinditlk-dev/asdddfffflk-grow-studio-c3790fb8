@@ -102,6 +102,11 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-border mt-12 pt-6 text-center text-xs text-muted-foreground space-y-2">
+        <p>
+          <Link to="/careers" className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary/20 transition-colors">
+            🚀 We're Hiring — View Careers
+          </Link>
+        </p>
         <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
           <Link to="/advertising-in-sri-lanka" className="hover:text-foreground transition-colors">Advertising Sri Lanka</Link>
           <span className="text-border">|</span>

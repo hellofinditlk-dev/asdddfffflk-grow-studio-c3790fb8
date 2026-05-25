@@ -180,6 +180,12 @@ const About = () => (
         <p className="text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
           <MapPin className="w-4 h-4" /> Colombo, Sri Lanka
         </p>
+        <p className="text-sm mt-4">
+          Want to join our team?{" "}
+          <Link to="/careers" className="text-orange-400 font-semibold hover:underline">
+            View open vacancies →
+          </Link>
+        </p>
       </div>
     </section>
   </div>

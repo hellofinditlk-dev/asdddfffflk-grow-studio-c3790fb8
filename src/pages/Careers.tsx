@@ -38,8 +38,8 @@ const itemListSchema = {
 const Careers = () => (
   <div className="pt-16">
     <SEOHead
-      title="Careers at Cypher Digital | Jobs in Sri Lanka"
-      description="Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketer, Video Editor & Internships in Colombo."
+      title="Careers at Cypher Digital | Digital Marketing Jobs in Sri Lanka"
+      description="Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketing Specialist, Video Editor and Marketing Intern in Colombo."
       canonical="https://cypherdigital.lk/careers"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(careersSchema) }} />
@@ -50,10 +50,10 @@ const Careers = () => (
       <div className="container mx-auto px-4 text-center animate-fade-up max-w-4xl">
         <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Careers at Cypher Digital</p>
         <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          Build Brands. Grow Fast. Work With Sri Lanka's Best.
+          Digital Marketing Jobs in Sri Lanka — Join Cypher Digital
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          At Cypher Digital — part of the Cypher360 Group — we're always looking for talented, driven people who want to do work that actually matters. If you're passionate about creativity and results, we want to hear from you.
+          We are always looking for talented, driven people who want to do work that actually matters. Cypher Digital is part of the Cypher360 Group — Sri Lanka's most integrated marketing group. Join our team in Colombo and work on campaigns for 800+ brands across Sri Lanka.
         </p>
         <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
           <a href={`${WHATSAPP_BASE}?text=${encodeURIComponent("Hi Cypher Digital, I'd like to join your team.")}`} target="_blank" rel="noopener noreferrer">
