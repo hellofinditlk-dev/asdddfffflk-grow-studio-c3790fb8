@@ -205,13 +205,13 @@ const Careers = () => (
                     </div>
                   </div>
 
-                  {p.perks && (
+                  {"perks" in p && (p as { perks?: string[] }).perks && (
                     <div className="mb-8 p-5 rounded-xl bg-primary/5 border border-primary/20">
                       <h4 className="font-heading font-bold mb-3 flex items-center gap-2">
                         <Sparkles className="w-4 h-4 text-primary" /> What you'll gain
                       </h4>
                       <ul className="space-y-2">
-                        {p.perks.map((g, idx) => (
+                        {(p as { perks: string[] }).perks.map((g, idx) => (
                           <li key={idx} className="flex gap-2 text-sm text-muted-foreground">
                             <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                             <span>{g}</span>
