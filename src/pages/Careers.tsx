@@ -112,7 +112,7 @@ const Careers = () => (
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
           At Cypher Digital — part of the Cypher360 Group — we're always looking for talented, driven people who want to do work that actually matters. If you're passionate about creativity and results, we want to hear from you.
         </p>
-        <Button asChild size="lg" variant="cta">
+        <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
           <a href={`${WHATSAPP_BASE}?text=${encodeURIComponent("Hi Cypher Digital, I'd like to join your team.")}`} target="_blank" rel="noopener noreferrer">
             <MessageCircle className="w-5 h-5 mr-2" /> Apply on WhatsApp
           </a>
@@ -180,7 +180,7 @@ const Careers = () => (
                     <p className="text-sm text-muted-foreground mb-4">
                       Send your name, portfolio link or experience summary, and a brief intro to <strong className="text-foreground">+94 70 177 2626</strong>. Message us: <em>"{p.whatsappMessage}"</em>
                     </p>
-                    <Button asChild variant="cta">
+                    <Button asChild className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
                       <a href={waUrl} target="_blank" rel="noopener noreferrer">
                         <MessageCircle className="w-4 h-4 mr-2" /> Apply for {p.title}
                       </a>
@@ -227,7 +227,7 @@ const Careers = () => (
         <p className="text-muted-foreground mb-8">
           We're always open to talented people. If you think you'd be a great fit at Cypher Digital, send us a message anyway.
         </p>
-        <Button asChild size="lg" variant="cta">
+        <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
           <a href={`${WHATSAPP_BASE}?text=${encodeURIComponent("Hi Cypher Digital, I'd like to apply for a role at your team.")}`} target="_blank" rel="noopener noreferrer">
             <MessageCircle className="w-5 h-5 mr-2" /> WhatsApp: +94 70 177 2626
           </a>
