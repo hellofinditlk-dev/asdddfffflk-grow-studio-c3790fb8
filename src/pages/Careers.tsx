@@ -1,4 +1,4 @@
-import { Palette, BarChart3, MessageCircle, Briefcase, Users, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
+import { Palette, BarChart3, MessageCircle, Briefcase, Users, Sparkles, MapPin, CheckCircle2, Film } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
@@ -52,6 +52,30 @@ const positions = [
     ],
     whatsappMessage: "Digital Marketing Specialist Application – [Your Name]",
   },
+  {
+    icon: Film,
+    title: "Video Editor",
+    type: "Full-time / Freelance",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "Edit scroll-stopping reels, TikToks, YouTube ads, and brand videos for Sri Lanka's fastest-growing brands.",
+    duties: [
+      "Edit promotional videos, reels, TikToks, and YouTube ads for client brands",
+      "Add motion graphics, transitions, subtitles, and sound design",
+      "Work with the creative team to produce scroll-stopping ad creatives",
+      "Edit raw footage into polished brand videos and product videos",
+      "Deliver content optimised for Facebook, Instagram, TikTok, and YouTube formats",
+    ],
+    requirements: [
+      "Proficiency in Adobe Premiere Pro, CapCut, or DaVinci Resolve",
+      "Experience editing short-form content (reels, TikToks, YouTube Shorts)",
+      "Good sense of pacing, colour grading, and storytelling through video",
+      "Ability to handle multiple projects and meet deadlines",
+      "Knowledge of After Effects or motion graphics is a strong plus",
+      "A portfolio or showreel of previous work is required",
+    ],
+    whatsappMessage: "Video Editor Application – [Your Name]",
+  },
 ];
 
 const perks = [
@@ -75,7 +99,11 @@ const jobPostingsSchema = positions.map((p) => ({
   "@type": "JobPosting",
   title: p.title,
   description: p.summary,
-  employmentType: p.type.toUpperCase().includes("PART") ? ["FULL_TIME", "PART_TIME"] : "FULL_TIME",
+  employmentType: [
+    "FULL_TIME",
+    ...(p.type.toUpperCase().includes("PART") ? ["PART_TIME"] : []),
+    ...(p.type.toUpperCase().includes("FREELANCE") ? ["CONTRACTOR"] : []),
+  ],
   hiringOrganization: {
     "@type": "Organization",
     name: "Cypher Digital",
@@ -125,7 +153,7 @@ const Careers = () => (
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Open Positions</h2>
-          <p className="text-muted-foreground">Two roles open right now — both Colombo-based, both full of growth.</p>
+          <p className="text-muted-foreground">Three roles open right now — all Colombo-based, all full of growth.</p>
         </div>
 
         <div className="grid gap-8">
