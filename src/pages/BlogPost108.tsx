@@ -111,6 +111,18 @@ const BlogPost108 = () => (
             <h3 className="text-foreground font-heading text-lg font-bold mt-6 mb-2">5. Integrated digital capability</h3>
             <p>TV advertising works best when paired with digital. When your TVC airs on Hiru TV during prime time, viewers search your brand on Google and visit your Facebook page immediately after. An agency that can run digital retargeting alongside your TV spots — capturing that demand the moment it is created — will deliver significantly better overall results than a TV-only agency.</p>
 
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Questions to Ask Before Hiring a TV Advertising Company in Sri Lanka</h2>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>Do you have access to LMRB ratings data?</li>
+              <li>Which channels do you have direct buying relationships with?</li>
+              <li>Is TVC production handled in-house or subcontracted?</li>
+              <li>Can you show examples of past TV campaigns you have managed?</li>
+              <li>How do you report on campaign delivery — spots aired, GRPs achieved?</li>
+              <li>Can you integrate the TV campaign with digital advertising?</li>
+              <li>What is your minimum campaign budget?</li>
+            </ol>
+            <p>Any reputable TV advertising company in Sri Lanka should answer all seven questions clearly and confidently.</p>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How much do TV advertising companies charge in Sri Lanka?</h2>
             <p>Agency fees vary depending on scope and services:</p>
             <div className="overflow-x-auto not-prose">
