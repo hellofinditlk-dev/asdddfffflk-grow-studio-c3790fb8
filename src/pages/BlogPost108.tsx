@@ -21,6 +21,25 @@ const BlogPost108 = () => (
             <p>If you're planning a TV advertising campaign in Sri Lanka, choosing the right agency is as important as choosing the right channel. A good <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link> partner handles everything from TVC production and media planning to airtime booking and audience measurement — so you're not just buying spots, you're buying results.</p>
             <p>This guide covers the different types of TV advertising companies in Sri Lanka, what each one offers, and exactly what to look for before you hire anyone.</p>
 
+            <div className="overflow-x-auto not-prose my-6">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-primary/5">
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Service Type</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">What They Offer</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Best For</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Min Budget</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  <tr><td className="p-3 border border-border">Full-service agency</td><td className="p-3 border border-border">Production + media buying</td><td className="p-3 border border-border">Brands wanting one partner</td><td className="p-3 border border-border">LKR 500,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Media buying only</td><td className="p-3 border border-border">Airtime negotiation</td><td className="p-3 border border-border">Brands with existing TVC</td><td className="p-3 border border-border">LKR 300,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Digital + TV agency</td><td className="p-3 border border-border">TV + Facebook Ads + Google Ads</td><td className="p-3 border border-border">Brands wanting ROI</td><td className="p-3 border border-border">LKR 500,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Production house</td><td className="p-3 border border-border">TVC production only</td><td className="p-3 border border-border">Brands with media agency</td><td className="p-3 border border-border">LKR 150,000+</td></tr>
+                </tbody>
+              </table>
+            </div>
+
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
               <p className="text-foreground font-semibold mb-2">Get a Free TV Media Plan</p>
               <p className="text-sm text-muted-foreground mb-3">Talk to our team about your campaign objectives, budget and channel mix.</p>
