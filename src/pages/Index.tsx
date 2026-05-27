@@ -351,6 +351,9 @@ const Index = () => (
             Digital Marketing Services for Sri Lankan Businesses
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">End-to-end digital solutions to grow your brand in Sri Lanka</p>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto mt-4">
+            We are one of the leading <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link> offering end-to-end TVC production and media planning.
+          </p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           {services.map((s, i) => (
