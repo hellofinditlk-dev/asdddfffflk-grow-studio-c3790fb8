@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tv-advertising-rates-sri-lanka",
+    title: "TV Advertising Rates in Sri Lanka — Hiru TV, Sirasa, Derana & More (2025)",
+    excerpt: "Channel-by-channel 2025 TV advertising rates in Sri Lanka, prime time vs off-peak comparison, how rates are negotiated and TVC production cost breakdown.",
+    date: "2026-05-28",
+    keyword: "tv advertising rates sri lanka",
+  },
+  {
     slug: "tv-advertising-companies-sri-lanka",
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared (2025)",
     excerpt: "Compare TV advertising companies in Sri Lanka — TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for 2025.",
