@@ -481,6 +481,28 @@ const TvAdvertising = () => {
         </div>
       </section>
 
+      {/* Why Choose Cypher Digital */}
+      <section className="py-14 border-t border-border">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Why Cypher Digital</span>
+          <h2 className="font-heading text-3xl font-bold mb-4">Why Work With a TV Advertising Agency in Sri Lanka</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Planning and buying TV advertising in Sri Lanka without agency support means paying published rate card prices, without LMRB data to validate your channel selection, and without post-campaign reporting to confirm your spots actually aired as booked.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Working with Cypher Digital gives you:</p>
+          <ul className="space-y-2 text-muted-foreground mb-4">
+            <li>• <strong className="text-foreground">Media planning backed by audience data</strong> — right channels, right time slots, right budget split</li>
+            <li>• <strong className="text-foreground">Negotiated airtime rates</strong> across Hiru TV, Sirasa, Derana, Swarnavahini, ITN and Shakthi TV</li>
+            <li>• <strong className="text-foreground">In-house TVC production</strong> from script to broadcast-ready delivery</li>
+            <li>• <strong className="text-foreground">Integration with Facebook Ads and Google Ads</strong> to capture the demand your TV campaign creates</li>
+            <li>• <strong className="text-foreground">Full post-campaign report</strong> showing spots aired, GRPs delivered and audience reached</li>
+          </ul>
+          <p className="text-sm text-muted-foreground">
+            For an agency comparison and how to brief one, read our guide to <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="container mx-auto px-4 max-w-3xl text-center">
