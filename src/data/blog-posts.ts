@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tv-advertising-companies-sri-lanka",
+    title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared (2025)",
+    excerpt: "Compare TV advertising companies in Sri Lanka — TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for 2025.",
+    date: "2026-05-27",
+    keyword: "tv advertising companies in sri lanka",
+  },
+  {
     slug: "digital-marketing-agency-colombo",
     title: "Digital Marketing Agency in Colombo — the Complete 2026 Guide",
     excerpt: "How to choose a digital marketing agency in Colombo — services, pricing, evaluation criteria, and what to expect from a top Sri Lankan agency in 2026.",
