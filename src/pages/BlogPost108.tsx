@@ -143,7 +143,7 @@ const BlogPost108 = () => (
                 </tbody>
               </table>
             </div>
-            <p>For a full breakdown of airtime costs per channel — including Hiru TV, Sirasa, Derana, Swarnavahini and ITN — see our complete <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV advertising rates and channel guide for Sri Lanka</Link>.</p>
+            <p>For a full breakdown of airtime costs per channel — including Hiru TV, Sirasa, Derana, Swarnavahini and ITN — see our dedicated <Link to="/blog/tv-advertising-rates-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising rates Sri Lanka</Link> guide, or the complete <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV advertising in Sri Lanka</Link> service page.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Cypher Digital — TV Advertising Company in Colombo, Sri Lanka</h2>
             <p>Cypher Digital is a results-driven TV advertising and digital marketing agency based in Colombo, Sri Lanka. We offer end-to-end TV advertising services for brands at every level:</p>

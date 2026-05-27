@@ -225,7 +225,7 @@ const TvAdvertising = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Advertising Costs</span>
           <h2 className="font-heading text-3xl font-bold mb-4">TV Advertising Rates in Sri Lanka 2025</h2>
-          <p className="text-muted-foreground mb-6">TV advertising rates in Sri Lanka are negotiated directly with channels or through media buying agencies. The rates below represent estimated market ranges — a professional <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying agency</Link> can typically negotiate 20–40% below published rate cards.</p>
+          <p className="text-muted-foreground mb-6">TV advertising rates in Sri Lanka are negotiated directly with channels or through media buying agencies. The rates below represent estimated market ranges — a professional <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying agency</Link> can typically negotiate 20–40% below published rate cards. For a full 2025 channel-by-channel breakdown with prime time vs off-peak comparison, see our dedicated <Link to="/blog/tv-advertising-rates-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising rates Sri Lanka</Link> guide.</p>
           <div className="overflow-x-auto border border-border rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-foreground text-background">

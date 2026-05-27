@@ -687,6 +687,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Looking for TV advertising companies in Sri Lanka? Compare the top agencies for TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for your campaign in 2025.",
     h1: "TV Advertising Companies in Sri Lanka — How to Choose the Right Agency (2025)",
   },
+  "/blog/tv-advertising-rates-sri-lanka": {
+    title: "TV Advertising Rates in Sri Lanka 2025 — Hiru, Sirasa, Derana & More | Cypher Digital",
+    description: "Up-to-date 2025 TV advertising rates in Sri Lanka — Hiru TV, Sirasa, Derana, Swarnavahini, ITN and Shakthi TV. Prime time vs off-peak comparison, negotiation tips and TVC production costs.",
+    h1: "TV Advertising Rates in Sri Lanka — Hiru TV, Sirasa, Derana & More (2025)",
+  },
 };
 
 const escapeAttr = (value: string) =>
