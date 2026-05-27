@@ -21,6 +21,25 @@ const BlogPost108 = () => (
             <p>If you're planning a TV advertising campaign in Sri Lanka, choosing the right agency is as important as choosing the right channel. A good <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link> partner handles everything from TVC production and media planning to airtime booking and audience measurement — so you're not just buying spots, you're buying results.</p>
             <p>This guide covers the different types of TV advertising companies in Sri Lanka, what each one offers, and exactly what to look for before you hire anyone.</p>
 
+            <div className="overflow-x-auto not-prose my-6">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-primary/5">
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Service Type</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">What They Offer</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Best For</th>
+                    <th className="text-left p-3 border border-border text-foreground font-semibold">Min Budget</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  <tr><td className="p-3 border border-border">Full-service agency</td><td className="p-3 border border-border">Production + media buying</td><td className="p-3 border border-border">Brands wanting one partner</td><td className="p-3 border border-border">LKR 500,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Media buying only</td><td className="p-3 border border-border">Airtime negotiation</td><td className="p-3 border border-border">Brands with existing TVC</td><td className="p-3 border border-border">LKR 300,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Digital + TV agency</td><td className="p-3 border border-border">TV + Facebook Ads + Google Ads</td><td className="p-3 border border-border">Brands wanting ROI</td><td className="p-3 border border-border">LKR 500,000+</td></tr>
+                  <tr><td className="p-3 border border-border">Production house</td><td className="p-3 border border-border">TVC production only</td><td className="p-3 border border-border">Brands with media agency</td><td className="p-3 border border-border">LKR 150,000+</td></tr>
+                </tbody>
+              </table>
+            </div>
+
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
               <p className="text-foreground font-semibold mb-2">Get a Free TV Media Plan</p>
               <p className="text-sm text-muted-foreground mb-3">Talk to our team about your campaign objectives, budget and channel mix.</p>
@@ -61,7 +80,19 @@ const BlogPost108 = () => (
             <p>Production houses focus exclusively on making the commercial — not buying or planning the media. If you already have a media agency handling your airtime, a production house can deliver the TVC within your creative brief.</p>
             <p>TVC production costs in Sri Lanka typically range from LKR 150,000 for a basic shoot to LKR 2,000,000 or more for a high-end branded film with full cast, locations and post-production.</p>
 
-            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">What to look for when choosing a TV advertising company in Sri Lanka</h2>
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Brief a TV Advertising Company in Sri Lanka</h2>
+            <p>Before you contact an agency, prepare the following information so they can build an accurate media plan for you:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Your campaign objective (awareness / launch / promotion)</li>
+              <li>Target audience (language, age, region, income)</li>
+              <li>Budget range (airtime + production separately)</li>
+              <li>Campaign period and key dates</li>
+              <li>Channels you want to appear on</li>
+              <li>Whether you have an existing TVC or need one produced</li>
+            </ul>
+            <p>The more detail you bring to the first meeting, the faster the agency can build an accurate media plan for you.</p>
+
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Choose a TV Advertising Company in Sri Lanka</h2>
             <p>Not every agency is the right fit for every brand. Here are the five things to check before committing.</p>
 
             <h3 className="text-foreground font-heading text-lg font-bold mt-6 mb-2">1. LMRB data access</h3>
@@ -79,6 +110,18 @@ const BlogPost108 = () => (
 
             <h3 className="text-foreground font-heading text-lg font-bold mt-6 mb-2">5. Integrated digital capability</h3>
             <p>TV advertising works best when paired with digital. When your TVC airs on Hiru TV during prime time, viewers search your brand on Google and visit your Facebook page immediately after. An agency that can run digital retargeting alongside your TV spots — capturing that demand the moment it is created — will deliver significantly better overall results than a TV-only agency.</p>
+
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Questions to Ask Before Hiring a TV Advertising Company in Sri Lanka</h2>
+            <ol className="list-decimal pl-6 space-y-2">
+              <li>Do you have access to LMRB ratings data?</li>
+              <li>Which channels do you have direct buying relationships with?</li>
+              <li>Is TVC production handled in-house or subcontracted?</li>
+              <li>Can you show examples of past TV campaigns you have managed?</li>
+              <li>How do you report on campaign delivery — spots aired, GRPs achieved?</li>
+              <li>Can you integrate the TV campaign with digital advertising?</li>
+              <li>What is your minimum campaign budget?</li>
+            </ol>
+            <p>Any reputable TV advertising company in Sri Lanka should answer all seven questions clearly and confidently.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How much do TV advertising companies charge in Sri Lanka?</h2>
             <p>Agency fees vary depending on scope and services:</p>
@@ -102,7 +145,7 @@ const BlogPost108 = () => (
             </div>
             <p>For a full breakdown of airtime costs per channel — including Hiru TV, Sirasa, Derana, Swarnavahini and ITN — see our complete <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV advertising rates and channel guide for Sri Lanka</Link>.</p>
 
-            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Cypher Digital — TV advertising services in Sri Lanka</h2>
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Cypher Digital — TV Advertising Company in Colombo, Sri Lanka</h2>
             <p>Cypher Digital is a results-driven TV advertising and digital marketing agency based in Colombo, Sri Lanka. We offer end-to-end TV advertising services for brands at every level:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Media planning using LMRB-aligned channel and time slot selection</li>
@@ -123,6 +166,7 @@ const BlogPost108 = () => (
             <p><strong className="text-foreground">How much does a TV advertising campaign cost in Sri Lanka?</strong> A basic campaign on 2–3 channels with 3 spots per day over 4 weeks typically starts at LKR 500,000 in airtime, plus TVC production. For a full breakdown by channel and time slot, see our <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">TV advertising cost guide for Sri Lanka</Link>.</p>
             <p><strong className="text-foreground">Can a small business afford TV advertising in Sri Lanka?</strong> TV requires a meaningful minimum budget — typically LKR 500,000 or more for a campaign with real reach. For smaller budgets, Facebook Ads and Google Ads deliver better ROI. TV becomes the right move once your digital campaigns are already generating returns and you are ready to scale awareness island-wide.</p>
             <p><strong className="text-foreground">What is the difference between a media buying agency and a TV advertising agency?</strong> A media buying agency focuses purely on planning and purchasing airtime at the best possible rates. A TV advertising agency offers the full picture — creative production, media planning, airtime buying and campaign reporting. For brands that need both the TVC and the media placement, a full-service TV advertising agency is the more efficient choice.</p>
+            <p><strong className="text-foreground">What does a TV media plan include?</strong> A TV media plan in Sri Lanka includes the recommended channels, selected time slots, number of spots per day, total GRP target, estimated reach and frequency, campaign duration, and total airtime budget. A good agency provides this before you commit to any spend — see our <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline">complete TV advertising guide</Link> for more.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Ready to run a TV campaign in Sri Lanka?</h2>
             <p>Cypher Digital handles everything — media planning, airtime booking, TVC production and digital integration — so your TV budget works as hard as possible. Explore our full <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link> service page or call 📞 +94 70 177 2626.</p>

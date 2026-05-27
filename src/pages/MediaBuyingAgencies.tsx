@@ -282,6 +282,9 @@ const MediaBuyingAgencies = () => {
           <p className="text-muted-foreground leading-relaxed mb-6">
             Television advertising remains the most powerful mass-reach medium in Sri Lanka, capable of reaching millions of viewers across all demographics and regions simultaneously. For brands seeking nationwide visibility, strong brand recall, and emotional connection with audiences, TV advertising in Sri Lanka is unmatched.
           </p>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Many brands searching for <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary hover:underline font-semibold">TV advertising companies in Sri Lanka</Link> also need a media buying partner — here is how to tell the difference. TV remains the most powerful mass media channel — read our complete <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV advertising in Sri Lanka</Link> guide for 2025 rates and channel selection.
+          </p>
 
           <h3 className="font-heading text-2xl font-semibold mt-8 mb-3">Major TV Channels in Sri Lanka for Advertising</h3>
           <p className="text-muted-foreground leading-relaxed mb-3"><strong>Hiru TV</strong> is Sri Lanka's first and only digital HD television channel, owned by Asia Broadcasting Corporation. Launched in 2012, Hiru TV has rapidly grown to become one of the highest-rated channels in Sri Lanka for entertainment and news programming. It reaches a wide Sinhala-speaking audience across all age groups and income levels nationwide.</p>

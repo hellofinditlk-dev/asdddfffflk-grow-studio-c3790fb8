@@ -147,8 +147,12 @@ const TvAdvertising = () => {
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
             TV Advertising in Sri Lanka — The Complete 2025 Guide
           </h1>
+          <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Last updated: June 2025</p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Channels, costs, ad formats, prime-time slots, LMRB ratings and how to run a successful TV campaign in Sri Lanka. Everything you need to plan, buy and measure television advertising — from <strong>Hiru TV, Sirasa, Derana</strong> to Shakthi TV and Vasantham — by <strong>Cypher Digital</strong>.
+            Television advertising in Sri Lanka remains one of the most powerful ways to reach mass audiences island-wide. Whether you are launching a new product, running a seasonal promotion or building brand awareness across Sinhala, Tamil and English speaking households, <strong>TV advertising in Sri Lanka</strong> delivers unmatched reach — particularly on <strong>Hiru TV, Sirasa TV and TV Derana</strong> during prime time. This complete 2025 guide by <strong>Cypher Digital</strong> covers channels, costs, ad formats, prime-time slots and LMRB ratings.
+          </p>
+          <p className="text-sm text-muted-foreground mb-6">
+            Looking for TV advertising companies in Sri Lanka? <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">See our full agency comparison guide →</Link>
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
@@ -474,6 +478,28 @@ const TvAdvertising = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why Choose Cypher Digital */}
+      <section className="py-14 border-t border-border">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Why Cypher Digital</span>
+          <h2 className="font-heading text-3xl font-bold mb-4">Why Work With a TV Advertising Agency in Sri Lanka</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Planning and buying TV advertising in Sri Lanka without agency support means paying published rate card prices, without LMRB data to validate your channel selection, and without post-campaign reporting to confirm your spots actually aired as booked.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Working with Cypher Digital gives you:</p>
+          <ul className="space-y-2 text-muted-foreground mb-4">
+            <li>• <strong className="text-foreground">Media planning backed by audience data</strong> — right channels, right time slots, right budget split</li>
+            <li>• <strong className="text-foreground">Negotiated airtime rates</strong> across Hiru TV, Sirasa, Derana, Swarnavahini, ITN and Shakthi TV</li>
+            <li>• <strong className="text-foreground">In-house TVC production</strong> from script to broadcast-ready delivery</li>
+            <li>• <strong className="text-foreground">Integration with Facebook Ads and Google Ads</strong> to capture the demand your TV campaign creates</li>
+            <li>• <strong className="text-foreground">Full post-campaign report</strong> showing spots aired, GRPs delivered and audience reached</li>
+          </ul>
+          <p className="text-sm text-muted-foreground">
+            For an agency comparison and how to brief one, read our guide to <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link>.
+          </p>
         </div>
       </section>
 

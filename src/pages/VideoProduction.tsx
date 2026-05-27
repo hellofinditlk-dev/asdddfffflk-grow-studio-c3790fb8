@@ -685,6 +685,9 @@ const VideoProduction = () => {
             <Link to="/radio-advertising-sri-lanka" className="text-primary hover:underline font-semibold">radio advertising</Link> and{" "}
             <Link to="/newspaper-advertising-sri-lanka" className="text-primary hover:underline font-semibold">newspaper advertising</Link>.
           </p>
+          <p className="text-xs text-white/60 mt-4 max-w-2xl mx-auto leading-relaxed">
+            Once your TVC is ready, the next step is <Link to="/tv-advertising-sri-lanka" className="text-primary hover:underline font-semibold">TV advertising in Sri Lanka</Link> — learn how to plan and buy airtime on Hiru TV, Sirasa and Derana.
+          </p>
         </div>
       </section>
       <RelatedPosts

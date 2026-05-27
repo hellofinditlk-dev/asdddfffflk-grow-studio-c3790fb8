@@ -310,6 +310,9 @@ const AdvertisingInSriLanka = () => {
           </Table>
         </div>
         <p className="mt-4 text-sm">→ Full guide: <Link to="/tv-advertising-sri-lanka" className="text-primary font-bold hover:underline">TV Advertising in Sri Lanka — Complete 2026 Guide</Link></p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          If you are comparing <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link>, our guide covers what each type of agency offers and how to choose the right one. For a complete breakdown of channels, rates and time slots, see our <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising in Sri Lanka</Link> guide.
+        </p>
       </section>
 
       {/* RADIO */}
