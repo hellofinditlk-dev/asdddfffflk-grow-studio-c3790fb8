@@ -80,7 +80,19 @@ const BlogPost108 = () => (
             <p>Production houses focus exclusively on making the commercial — not buying or planning the media. If you already have a media agency handling your airtime, a production house can deliver the TVC within your creative brief.</p>
             <p>TVC production costs in Sri Lanka typically range from LKR 150,000 for a basic shoot to LKR 2,000,000 or more for a high-end branded film with full cast, locations and post-production.</p>
 
-            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">What to look for when choosing a TV advertising company in Sri Lanka</h2>
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Brief a TV Advertising Company in Sri Lanka</h2>
+            <p>Before you contact an agency, prepare the following information so they can build an accurate media plan for you:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Your campaign objective (awareness / launch / promotion)</li>
+              <li>Target audience (language, age, region, income)</li>
+              <li>Budget range (airtime + production separately)</li>
+              <li>Campaign period and key dates</li>
+              <li>Channels you want to appear on</li>
+              <li>Whether you have an existing TVC or need one produced</li>
+            </ul>
+            <p>The more detail you bring to the first meeting, the faster the agency can build an accurate media plan for you.</p>
+
+            <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Choose a TV Advertising Company in Sri Lanka</h2>
             <p>Not every agency is the right fit for every brand. Here are the five things to check before committing.</p>
 
             <h3 className="text-foreground font-heading text-lg font-bold mt-6 mb-2">1. LMRB data access</h3>
