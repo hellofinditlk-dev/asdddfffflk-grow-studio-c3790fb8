@@ -572,8 +572,40 @@ const GoogleAds = () => {
         </div>
       </section>
 
+      {/* How to Set Up a Winning Campaign */}
+      <section id="how-to-setup" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How to Set Up a Winning Google Ads Campaign in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              A winning Google Ads campaign is built on a clear, methodical foundation. Here is the professional process Cypher Digital follows for every Sri Lankan client — from initial brief to live, optimised campaigns within 24 hours.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { title: "Business & Market Analysis", desc: "Understanding your business model, customer profile, average transaction value, and current marketing activity informs every later decision." },
+                { title: "Comprehensive Keyword Research", desc: "Google Keyword Planner plus third-party tools to identify high-intent commercial, local, and long-tail keywords — and negative keywords to block waste." },
+                { title: "Campaign Architecture", desc: "Tightly themed ad groups with closely related keywords. Strong structure drives Quality Score, lowering cost per click and improving ad position." },
+                { title: "Ad Copy & Extensions", desc: "Multiple headline and description variations per ad group. Sitelinks, callouts, call extensions, snippets, and images maximise SERP real estate." },
+                { title: "Landing Page Audit", desc: "We audit every landing page for load speed, mobile responsiveness, message match, trust signals, and conversion elements before launch." },
+                { title: "Conversion Tracking Setup", desc: "Google Analytics 4, Google Tag Manager, and event tracking for forms, calls, purchases, and WhatsApp chats — no guessing, only data." },
+                { title: "Bid Strategy Configuration", desc: "Start with Maximise Clicks to gather data, then transition to Target CPA or Target ROAS once Smart Bidding has enough conversion signal." },
+                { title: "Launch, Monitor & Optimise", desc: "Live within 24 hours of approval. Daily monitoring in week one, weekly optimisation thereafter — bids, negatives, ad copy and audiences." },
+              ].map((step, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5 flex gap-4">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-1">{step.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Advanced Strategies */}
-      <section id="advanced" className="py-16 bg-background scroll-mt-20">
+      <section id="advanced" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Advanced Google Ads Strategies That Drive Results</h2>
