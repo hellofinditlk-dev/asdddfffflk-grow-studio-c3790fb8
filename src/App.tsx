@@ -142,6 +142,21 @@ const BlogPost106 = lazy(() => import("./pages/BlogPost106"));
 const BlogPost107 = lazy(() => import("./pages/BlogPost107"));
 const BlogPost108 = lazy(() => import("./pages/BlogPost108"));
 const BlogPost109 = lazy(() => import("./pages/BlogPost109"));
+const BlogPost110 = lazy(() => import("./pages/BlogPost110"));
+const BlogPost111 = lazy(() => import("./pages/BlogPost111"));
+const BlogPost112 = lazy(() => import("./pages/BlogPost112"));
+const BlogPost113 = lazy(() => import("./pages/BlogPost113"));
+const BlogPost114 = lazy(() => import("./pages/BlogPost114"));
+const BlogPost115 = lazy(() => import("./pages/BlogPost115"));
+const BlogPost116 = lazy(() => import("./pages/BlogPost116"));
+const BlogPost117 = lazy(() => import("./pages/BlogPost117"));
+const BlogPost118 = lazy(() => import("./pages/BlogPost118"));
+const BlogPost119 = lazy(() => import("./pages/BlogPost119"));
+const BlogPost120 = lazy(() => import("./pages/BlogPost120"));
+const BlogPost121 = lazy(() => import("./pages/BlogPost121"));
+const BlogPost122 = lazy(() => import("./pages/BlogPost122"));
+const BlogPost123 = lazy(() => import("./pages/BlogPost123"));
+const BlogPost124 = lazy(() => import("./pages/BlogPost124"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
@@ -309,6 +324,21 @@ const App = () => (
               <Route path="/blog/instagram-marketing-sri-lanka" element={<BlogPost107 />} />
               <Route path="/blog/tv-advertising-companies-sri-lanka" element={<BlogPost108 />} />
               <Route path="/blog/tv-advertising-rates-sri-lanka" element={<BlogPost109 />} />
+              <Route path="/blog/advertising-cost-sri-lanka-2026" element={<BlogPost110 />} />
+              <Route path="/blog/tv-vs-digital-advertising-sri-lanka" element={<BlogPost111 />} />
+              <Route path="/blog/complete-guide-running-ads-sri-lanka" element={<BlogPost112 />} />
+              <Route path="/blog/linkedin-vs-tiktok-marketing-sri-lanka" element={<BlogPost113 />} />
+              <Route path="/blog/b2b-leads-linkedin-sri-lanka" element={<BlogPost114 />} />
+              <Route path="/blog/tiktok-ad-strategy-sri-lanka" element={<BlogPost115 />} />
+              <Route path="/blog/google-ads-vs-facebook-ads-sri-lanka" element={<BlogPost116 />} />
+              <Route path="/blog/how-to-set-up-google-ads-sri-lanka" element={<BlogPost117 />} />
+              <Route path="/blog/social-media-marketing-trends-sri-lanka-2026" element={<BlogPost118 />} />
+              <Route path="/blog/outsource-social-media-management-sri-lanka" element={<BlogPost119 />} />
+              <Route path="/blog/social-media-packages-sri-lanka" element={<BlogPost120 />} />
+              <Route path="/blog/case-study-instagram-growth-sri-lanka" element={<BlogPost121 />} />
+              <Route path="/blog/how-to-choose-digital-agency-sri-lanka" element={<BlogPost122 />} />
+              <Route path="/blog/what-is-media-buying-sri-lanka" element={<BlogPost123 />} />
+              <Route path="/blog/questions-to-ask-digital-agency-sri-lanka" element={<BlogPost124 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/careers" element={<Careers />} />
