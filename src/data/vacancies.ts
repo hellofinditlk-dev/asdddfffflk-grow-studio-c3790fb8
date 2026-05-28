@@ -29,16 +29,22 @@ export const vacancies: Vacancy[] = [
     slug: "graphic-designer-jobs-sri-lanka",
     title: "Graphic Designer",
     shortTitle: "Graphic Designer",
-    h1: "Graphic Designer Vacancy in Sri Lanka — Cypher Digital",
-    metaTitle: "Graphic Designer Jobs in Sri Lanka | Cypher Digital Careers",
+    h1: "Graphic Designer Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Graphic Designer Jobs in Sri Lanka 2026 | Graphic Design Jobs in Colombo",
     metaDescription:
-      "We're hiring a Graphic Designer in Colombo, Sri Lanka. Work on 800+ brand campaigns at Cypher Digital. Apply now via WhatsApp — no lengthy forms.",
+      "Looking for graphic designer jobs in Sri Lanka? Cypher Digital is hiring graphic design talent in Colombo to work on 800+ Sri Lankan brands. Apply via WhatsApp today.",
     icon: Palette,
     type: "Full-time / Part-time",
     employmentType: ["FULL_TIME", "PART_TIME"],
     location: "Colombo, Sri Lanka",
     summary:
-      "Design social media creatives, brand identities, and marketing collateral for 800+ Sri Lankan brands.",
+      "One of the most in-demand graphic designer jobs in Sri Lanka right now — design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 50000, max: 140000, currency: "LKR", unit: "MONTH" },
+    seoIntro: [
+      "Cypher Digital is hiring a Graphic Designer in Sri Lanka to join our Colombo creative studio. If you're searching for graphic designer jobs in Sri Lanka — or graphic design jobs in Sri Lanka in general — with real brands, real budgets and real creative freedom, this is one of the best graphic design vacancies in Colombo right now.",
+      "As our in-house Graphic Designer in Sri Lanka, you'll design social media creatives, ad visuals, brand identities, packaging and marketing collateral for 800+ Sri Lankan brands across Colombo, Kandy, Galle, Negombo and beyond. Your work goes live on paid Meta and Google Ads campaigns — not stuck in a folder.",
+      "This isn't a one-off freelance gig. It's a full-time (or part-time) graphic design career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
+    ],
     duties: [
       "Design social media creatives, banners, stories, and reels for 800+ brands",
       "Create logos, brand identities, flyers, brochures, and packaging",
@@ -51,6 +57,45 @@ export const vacancies: Vacancy[] = [
       "Creative eye with attention to detail",
       "Ability to work under deadlines and handle multiple projects",
       "Knowledge of Canva is a plus",
+    ],
+    perks: [
+      "Competitive salary benchmarked against top graphic design jobs in Colombo",
+      "Work on real brand campaigns for 800+ Sri Lankan clients — not stock projects",
+      "Modern design setup, latest Adobe Creative Cloud licences and asset libraries",
+      "Mentorship from senior designers, art directors and brand strategists",
+      "Clear growth path to Senior Graphic Designer / Art Director roles",
+      "Friendly Colombo studio culture with flexible hours for part-timers",
+    ],
+    whyJoin: [
+      { title: "Sri Lanka's most active brand pipeline", body: "We design hundreds of creatives every month for restaurants, fashion, real estate, education, healthcare and FMCG brands across Sri Lanka — your portfolio grows fast." },
+      { title: "Design that's measured, not just admired", body: "Our creatives run on Meta and Google Ads campaigns where performance is tracked. You'll learn how design choices affect real marketing ROI." },
+      { title: "Career growth inside Cypher360", body: "Move between brand design, social design, motion and packaging across our digital marketing, events and production arms." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring graphic designers in Sri Lanka right now?",
+        a: "Yes. Cypher Digital is actively hiring a Graphic Designer in Colombo, Sri Lanka on a full-time or part-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your portfolio.",
+      },
+      {
+        q: "What is the average salary for a Graphic Designer in Sri Lanka?",
+        a: "Graphic designer salaries in Sri Lanka typically range between LKR 50,000 and LKR 140,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength. Cypher Digital pays at the top end of the market.",
+      },
+      {
+        q: "Where is the graphic design job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka. Part-time and freelance graphic designers elsewhere in Sri Lanka — Kandy, Galle, Negombo, Jaffna — can also apply for remote project-based work.",
+      },
+      {
+        q: "What software do I need to know to apply?",
+        a: "Adobe Photoshop and Illustrator are essential. InDesign, Figma, Canva and basic After Effects are strong advantages for this graphic design job in Sri Lanka.",
+      },
+      {
+        q: "Do I need a design degree to apply for graphic designer jobs in Sri Lanka at Cypher Digital?",
+        a: "No degree required. A strong portfolio showing social media creatives, branding work or ad design matters far more than qualifications.",
+      },
+      {
+        q: "How do I apply for this Graphic Designer vacancy in Sri Lanka?",
+        a: "Send your name, portfolio link (Behance, Dribbble, Drive or Instagram) and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
     ],
     whatsappMessage: "Hi, I'm applying for the Graphic Designer position at Cypher Digital.",
     whatsappCta: "Apply for Graphic Designer",
