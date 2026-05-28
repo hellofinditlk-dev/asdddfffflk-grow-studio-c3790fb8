@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
+import ServiceStickyCTA from "@/components/ServiceStickyCTA";
 
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
@@ -382,6 +383,7 @@ const App = () => (
         <Footer />
         <WhatsAppButton />
         <BlogCTAInjector />
+        <ServiceStickyCTA />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
