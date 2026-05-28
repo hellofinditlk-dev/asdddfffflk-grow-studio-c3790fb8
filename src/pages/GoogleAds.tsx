@@ -174,7 +174,7 @@ const GoogleAds = () => {
     <div className="pt-16">
       <SEOHead
         title="Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital"
-        description="Professional Google Ads management in Sri Lanka. Search Ads, Display Ads, YouTube Ads & Shopping Ads with 5x average ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free account audit."
+        description="Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs."
         canonical="https://cypherdigital.lk/google-ads-sri-lanka"
       />
 
