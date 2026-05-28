@@ -82,7 +82,7 @@ const services = [
   },
   {
     icon: <Building2 className="w-5 h-5" />,
-    title: "LinkedIn Advertising",
+    title: "LinkedIn Marketing",
     desc: "B2B lead generation and brand authority campaigns for Sri Lankan companies.",
     items: ["Lead Gen Forms", "Sponsored content", "InMail campaigns", "Audience targeting", "Conversion tracking"],
     link: "/linkedin-advertising-sri-lanka",
@@ -536,7 +536,7 @@ const Index = () => (
             ))}
           </div>
           <p className="mt-10 text-[11px] leading-relaxed text-white/30 max-w-4xl">
-            Cypher Digital delivers <Link to="/social-media-management-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns, <Link to="/facebook-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">facebook ads Sri Lanka</Link> management, <Link to="/google-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">google ads Sri Lanka</Link> services, <Link to="/seo-services-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">SEO services Sri Lanka</Link>, <Link to="/tiktok-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">tiktok marketing Sri Lanka</Link>, <Link to="/instagram-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">instagram marketing Sri Lanka</Link>, <Link to="/linkedin-advertising-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">linkedin advertising Sri Lanka</Link>, <Link to="/video-production-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">video production Sri Lanka</Link>, <Link to="/graphic-design-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">graphic design Sri Lanka</Link>, <Link to="/influencer-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">influencer marketing Sri Lanka</Link>, <Link to="/media-buying-agencies-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">media buying agencies Sri Lanka</Link>, and a complete <Link to="/advertising-in-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">advertising in Sri Lanka</Link> guide for SMEs nationwide.
+            Cypher Digital delivers <Link to="/social-media-management-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns, <Link to="/facebook-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">facebook ads Sri Lanka</Link> management, <Link to="/google-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">google ads Sri Lanka</Link> services, <Link to="/seo-services-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">SEO services Sri Lanka</Link>, <Link to="/tiktok-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">tiktok marketing Sri Lanka</Link>, <Link to="/instagram-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">instagram marketing Sri Lanka</Link>, <Link to="/linkedin-advertising-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">linkedin marketing Sri Lanka</Link>, <Link to="/video-production-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">video production Sri Lanka</Link>, <Link to="/graphic-design-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">graphic design Sri Lanka</Link>, <Link to="/influencer-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">influencer marketing Sri Lanka</Link>, <Link to="/media-buying-agencies-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">media buying agencies Sri Lanka</Link>, and a complete <Link to="/advertising-in-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">advertising in Sri Lanka</Link> guide for SMEs nationwide.
           </p>
         </div>
       </div>
@@ -1006,7 +1006,7 @@ const Index = () => (
               { label: "SEO Services", to: "/seo-services-sri-lanka" },
               { label: "TikTok Marketing", to: "/tiktok-marketing-sri-lanka" },
               { label: "Instagram Marketing", to: "/instagram-marketing-sri-lanka" },
-              { label: "LinkedIn Advertising", to: "/linkedin-advertising-sri-lanka" },
+              { label: "LinkedIn Marketing", to: "/linkedin-advertising-sri-lanka" },
               { label: "Video Production", to: "/video-production-sri-lanka" },
               { label: "Graphic Design", to: "/graphic-design-sri-lanka" },
               { label: "Influencer Marketing", to: "/influencer-marketing-sri-lanka" },
