@@ -18,6 +18,10 @@ export interface Vacancy {
   whatsappMessage: string;
   whatsappCta: string;
   datePosted: string;
+  salaryRange?: { min: number; max: number; currency: string; unit: "MONTH" | "YEAR" | "HOUR" };
+  seoIntro?: string[];
+  whyJoin?: { title: string; body: string }[];
+  faqs?: { q: string; a: string }[];
 }
 
 export const vacancies: Vacancy[] = [
