@@ -202,8 +202,8 @@ const faqSchema = {
 const Index = () => (
   <div className="pt-16">
     <SEOHead
-      title="Digital Marketing Agency in Sri Lanka | Cypher Digital"
-      description="Digital marketing agency in Sri Lanka helping businesses grow with social media management, Facebook Ads, Google Ads & SEO. Based in Colombo. Book a free consultation today."
+      title="Digital Marketing Agency in Sri Lanka | #1 Colombo Agency | Cypher Digital"
+      description="Sri Lanka's top digital marketing agency. Social media, Facebook Ads, Google Ads, SEO & video production in Colombo. 2,000+ campaigns. 15,000+ leads generated. Free consultation today."
       canonical="https://cypherdigital.lk"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
