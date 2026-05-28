@@ -446,6 +446,227 @@ const Index = () => (
       </div>
     </section>
 
+    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">What is Digital Marketing</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-5">What is Digital Marketing in Sri Lanka?</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Digital marketing in Sri Lanka means promoting your business through online channels — Facebook, Instagram, Google Search, YouTube, TikTok, and email — to reach customers in Colombo, Kandy, Galle, Negombo, Jaffna, and across the island.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Unlike traditional advertising, digital marketing is <strong className="text-foreground font-semibold">measurable, targeted, and affordable</strong>. You see exactly how many people viewed your ad, clicked, messaged you, and bought — and you only pay to reach the right audience.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              At Cypher Digital, we combine <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO</Link> into one strategy that drives real leads for Sri Lankan SMEs.
+            </p>
+          </div>
+          <div className="bg-card border border-border rounded-2xl p-7 md:p-9">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-5">Sri Lanka Digital Landscape</p>
+            {[
+              { num: "10.9M", text: "internet users in Sri Lanka — over 50% of the population online" },
+              { num: "8.5M", text: "active social media users, with Facebook and Instagram leading" },
+              { num: "7.2M", text: "TikTok users in Sri Lanka — the fastest growing platform" },
+              { num: "82%", text: "of Sri Lankan consumers research online before buying offline" },
+              { num: "6.5h", text: "average daily time spent online by Sri Lankan adults" },
+            ].map((s, i) => (
+              <div key={i} className="flex gap-4 py-4 border-b border-border last:border-b-0">
+                <div className="font-heading text-2xl font-extrabold text-primary min-w-[80px]">{s.num}</div>
+                <div className="text-sm text-muted-foreground leading-relaxed">{s.text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* AGENCY VS FREELANCER COMPARISON */}
+    <section className="py-24 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Agency vs Freelancer</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Agency vs Freelancer in Sri Lanka</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Which is right for your business? Here's an honest side-by-side comparison.</p>
+          </div>
+          <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-card">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-foreground text-white">
+                    <th className="text-left p-4 font-semibold">Factor</th>
+                    <th className="text-left p-4 font-semibold">Agency (Cypher Digital)</th>
+                    <th className="text-left p-4 font-semibold">Freelancer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Team size", "10+ specialists (strategy, design, ads, video)", "1 person doing everything"],
+                    ["Range of services", "Full-service: social, ads, SEO, video, design", "Usually 1–2 skills only"],
+                    ["Accountability", "Contracts, SLAs, monthly reports", "No formal agreement"],
+                    ["Availability", "Always reachable — team backup", "Single point of failure"],
+                    ["Tools & software", "Premium tools included (LKR 50k+ value)", "Often free tools only"],
+                    ["Monthly cost", "LKR 40,000 – 200,000", "LKR 15,000 – 60,000"],
+                    ["Best for", "Businesses serious about growth", "Tiny budgets, one-off tasks"],
+                  ].map(([label, agency, freelancer], i) => (
+                    <tr key={i} className="border-t border-border hover:bg-secondary/50 transition-colors">
+                      <td className="p-4 font-semibold text-foreground">{label}</td>
+                      <td className="p-4 text-muted-foreground">{agency}</td>
+                      <td className="p-4 text-muted-foreground">{freelancer}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            Want a deeper comparison? Read our full <Link to="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" className="text-primary font-semibold hover:underline">agency vs freelancer guide</Link>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* TRANSPARENT PRICING */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Prices in Sri Lanka</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent monthly packages. No hidden fees. No long-term lock-in.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            {
+              name: "Starter", price: "LKR 40,000", note: "/month",
+              desc: "Perfect for small businesses starting out.",
+              features: ["1 platform (FB or IG)", "12 posts per month", "Basic ad management", "Monthly report", "WhatsApp support"],
+              featured: false,
+            },
+            {
+              name: "Growth", price: "LKR 95,000", note: "/month",
+              desc: "Our most popular package for growing SMEs.",
+              features: ["FB + IG + TikTok", "20 posts + 8 reels", "Facebook & Google Ads", "Basic SEO included", "Bi-weekly reports", "Dedicated account manager"],
+              featured: true,
+            },
+            {
+              name: "Pro", price: "LKR 180,000", note: "/month",
+              desc: "Full-service for serious scale-ups.",
+              features: ["All platforms managed", "30+ posts + video content", "Multi-channel ads", "Full SEO + content", "Weekly reports", "Strategy calls every 2 weeks"],
+              featured: false,
+            },
+          ].map((p, i) => (
+            <div key={i} className={`relative rounded-2xl p-7 md:p-8 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-primary bg-primary/5 shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
+              {p.featured && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+              )}
+              <h3 className="font-heading text-xl font-extrabold mb-2">{p.name}</h3>
+              <p className="text-xs text-muted-foreground mb-5">{p.desc}</p>
+              <div className="font-heading text-3xl font-extrabold text-primary mb-1">{p.price}<span className="text-sm font-medium text-muted-foreground">{p.note}</span></div>
+              <p className="text-xs text-muted-foreground mb-6">Ad budget billed separately</p>
+              <ul className="space-y-2 mb-7">
+                {p.features.map((f, j) => (
+                  <li key={j} className="flex gap-2 text-sm text-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-semibold py-3 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] transition-colors">
+                Get Custom Quote
+              </a>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          Need something custom? <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.
+        </p>
+      </div>
+    </section>
+
+    {/* RESULTS TIMELINE */}
+    <section className="py-24 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Realistic Timeline</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">How Long Does Digital Marketing Take to Show Results?</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Here's what to honestly expect month-by-month with a serious digital marketing strategy in Sri Lanka.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { m: "Month 1", t: "Setup & Launch", d: "Strategy, account setup, content creation, first ads live. Early data starts flowing in." },
+              { m: "Month 2–3", t: "First Wins", d: "Ads optimised, first leads from paid. Social engagement growing. SEO foundation built." },
+              { m: "Month 4–6", t: "Compound Growth", d: "Predictable lead flow from ads. SEO rankings climbing. Cost per lead dropping 30–50%." },
+              { m: "Month 6–12", t: "Scale Phase", d: "Strong ROI, organic traffic surge, brand recognition. Ready to scale ad spend." },
+            ].map((p, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
+                <span className="text-xs font-bold text-primary uppercase tracking-widest">{p.m}</span>
+                <h3 className="font-heading text-lg font-bold mt-2 mb-2">{p.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CASE STUDIES — REAL NUMBERS */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Case Studies</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Results for Sri Lankan Businesses</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Real numbers from real clients. Not vanity metrics — actual leads, sales, and revenue growth.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                industry: "Restaurant — Colombo 5", duration: "3 months",
+                stats: [{v: "5x", l: "Bookings"}, {v: "LKR 18", l: "Cost / lead"}, {v: "+340%", l: "Revenue"}],
+                summary: "Combined Facebook & Instagram ads with weekly food reels. Fully booked weekends within 8 weeks.",
+              },
+              {
+                industry: "Real Estate — Western Province", duration: "6 months",
+                stats: [{v: "150+", l: "Leads/mo"}, {v: "12", l: "Closed deals"}, {v: "8x", l: "ROAS"}],
+                summary: "Facebook lead-gen ads + Google Search ads targeting investors. Closed 12 deals in 6 months.",
+              },
+              {
+                industry: "Aesthetic Clinic — Nugegoda", duration: "4 months",
+                stats: [{v: "3 wks", l: "Wait time"}, {v: "LKR 320", l: "Cost / booking"}, {v: "+220%", l: "Inquiries"}],
+                summary: "Instagram-first strategy with before/after reels + targeted local ads. Fully booked 3 weeks ahead.",
+              },
+            ].map((c, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-card-hover transition-all">
+                <div className="p-6 pb-4">
+                  <h3 className="font-heading text-base font-bold">{c.industry}</h3>
+                  <p className="text-xs text-muted-foreground">{c.duration} campaign</p>
+                </div>
+                <div className="grid grid-cols-3 border-t border-border">
+                  {c.stats.map((s, j) => (
+                    <div key={j} className={`text-center py-4 ${j < 2 ? "border-r border-border" : ""}`}>
+                      <div className="font-heading text-xl font-extrabold text-primary leading-none">{s.v}</div>
+                      <div className="text-[10px] text-muted-foreground uppercase tracking-wide mt-1">{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="p-6 pt-4 border-t border-border">
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.summary}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/blog/digital-marketing-results-case-studies-sri-lanka" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline">
+              See full case study breakdown <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* DIGITAL ADVERTISING IN SRI LANKA */}
     <section className="py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4">
