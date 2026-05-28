@@ -105,16 +105,65 @@ export const vacancies: Vacancy[] = [
     slug: "digital-marketing-jobs-sri-lanka",
     title: "Digital Marketing Specialist",
     shortTitle: "Digital Marketing Specialist",
-    h1: "Digital Marketing Specialist Vacancy in Sri Lanka — Cypher Digital",
-    metaTitle: "Digital Marketing Jobs in Sri Lanka | Cypher Digital Careers",
+    h1: "Digital Marketing Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Digital Marketing Specialist Jobs in Sri Lanka 2026 | Vacancy in Colombo",
     metaDescription:
-      "Hiring a Digital Marketing Specialist in Colombo. Run Facebook Ads, Google Ads & SEO campaigns for top Sri Lankan brands. Apply via WhatsApp today.",
+      "Looking for Digital Marketing Specialist jobs in Sri Lanka? Cypher Digital has an open Digital Marketing Specialist vacancy in Colombo — Meta Ads, Google Ads, SEO. Apply via WhatsApp.",
     icon: BarChart3,
     type: "Full-time",
     employmentType: "FULL_TIME",
     location: "Colombo, Sri Lanka",
     summary:
-      "Plan and run Meta, Google, and TikTok ad campaigns that generate real leads and measurable ROI.",
+      "One of the most in-demand Digital Marketing Specialist jobs in Sri Lanka right now — plan and run Meta, Google and TikTok ad campaigns that generate real leads and measurable ROI for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 80000, max: 200000, currency: "LKR", unit: "MONTH" },
+    seoIntro: [
+      "Cypher Digital is hiring a Digital Marketing Specialist in Sri Lanka to join our Colombo performance team. If you're searching for digital marketing specialist jobs in Sri Lanka — or a serious digital marketing specialist vacancy in Sri Lanka with real budgets and real accountability — this is one of the best opportunities in Colombo right now.",
+      "As our Digital Marketing Specialist in Sri Lanka, you'll plan, launch and optimise Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond. You'll own performance — leads, ROAS, CPL — not just post-and-pray social media.",
+      "This is a full-time digital marketing career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
+    ],
+    perks: [
+      "Competitive salary benchmarked against top digital marketing jobs in Colombo",
+      "Manage real ad budgets across Meta Ads, Google Ads and TikTok Ads",
+      "Direct access to Meta Blueprint and Google Ads certified mentors",
+      "Clear growth path to Performance Lead / Head of Digital roles",
+      "Work on 800+ Sri Lankan brand campaigns across multiple industries",
+      "Friendly Colombo studio culture with hybrid flexibility",
+    ],
+    whyJoin: [
+      { title: "Sri Lanka's most diverse campaign portfolio", body: "Restaurants, fashion, real estate, education, healthcare and FMCG — you'll run campaigns across every major industry, not just one vertical." },
+      { title: "Real ad budgets, real accountability", body: "You'll own monthly Meta and Google Ads budgets ranging from LKR 50K to LKR 5M+, measured on leads, ROAS and CPL — not vanity metrics." },
+      { title: "Fast career growth inside Cypher360", body: "Top performers move into Performance Lead, Account Director or Head of Digital roles inside Sri Lanka's most integrated marketing group." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring Digital Marketing Specialists in Sri Lanka right now?",
+        a: "Yes. Cypher Digital has an open Digital Marketing Specialist vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and campaign results.",
+      },
+      {
+        q: "What is the average salary for a Digital Marketing Specialist in Sri Lanka?",
+        a: "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 80,000 and LKR 200,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI. Cypher Digital pays at the top end of the market.",
+      },
+      {
+        q: "What does a Digital Marketing Specialist at Cypher Digital actually do?",
+        a: "You'll plan and manage Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns, generate leads, track performance in Meta Ads Manager and Google Ads, manage client social pages and report on monthly performance.",
+      },
+      {
+        q: "Where is the Digital Marketing Specialist job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Most digital marketing specialists are expected on-site at least 3 days per week.",
+      },
+      {
+        q: "What experience do I need to apply?",
+        a: "1–4 years of hands-on experience running paid ad campaigns (Meta Ads and/or Google Ads), an understanding of SEO and lead generation, and the ability to read campaign data. Meta Blueprint or Google Ads certification is a strong plus.",
+      },
+      {
+        q: "Do I need a marketing degree to apply for this digital marketing job in Sri Lanka?",
+        a: "No degree required. We hire based on real campaign results — your ad accounts, your case studies, your ROI numbers matter far more than qualifications.",
+      },
+      {
+        q: "How do I apply for this Digital Marketing Specialist vacancy in Sri Lanka?",
+        a: "Send your name, CV or LinkedIn link and a short summary of campaigns you've run to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
     duties: [
       "Plan and manage Facebook, Instagram, Google, and TikTok ad campaigns",
       "Generate leads and track performance using Meta Ads Manager and Google Ads",
