@@ -179,6 +179,20 @@ const TikTokMarketing = () => {
         description="Professional TikTok marketing services in Sri Lanka. Viral content creation, TikTok Ads management, influencer marketing & trend optimization. Cost-effective campaigns from LKR 30,000/month."
         canonical="https://cypherdigital.lk/tiktok-marketing-sri-lanka"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          }),
+        }}
+      />
 
       {/* Breadcrumb */}
       <PageBreadcrumb items={[{ label: "TikTok Marketing Sri Lanka" }]} />
