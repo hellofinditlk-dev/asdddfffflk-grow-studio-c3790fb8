@@ -105,8 +105,12 @@ const tocItems = [
   { id: "advanced", label: "Advanced Strategies" },
   { id: "common-mistakes", label: "Common Google Ads Mistakes" },
   { id: "cro", label: "Conversion Rate Optimization" },
+  { id: "quality-score", label: "Google Ads Quality Score Explained" },
+  { id: "case-studies", label: "Case Studies — Real Results" },
+  { id: "roi-timeline", label: "Month-by-Month ROI Timeline" },
   { id: "pricing", label: "Pricing & Packages" },
   { id: "packages-table", label: "Google Ads Packages" },
+  { id: "glossary", label: "Google Ads Glossary" },
   { id: "faqs", label: "FAQs" },
 ];
 
