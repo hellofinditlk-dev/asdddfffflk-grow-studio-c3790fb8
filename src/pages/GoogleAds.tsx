@@ -839,9 +839,143 @@ const GoogleAds = () => {
         </div>
       </section>
 
+      {/* Google Ads Quality Score Explained */}
+      <section id="quality-score" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Google Ads Quality Score Explained</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Quality Score is Google's 1–10 rating of how relevant your keywords, ads, and landing pages are. A higher Quality Score means <strong className="text-foreground">lower cost per click and better ad positions</strong> — sometimes paying 50% less than competitors for the same spot.</p>
+            <div className="grid md:grid-cols-3 gap-5 mb-8">
+              {[
+                { title: "Expected CTR", desc: "Google predicts how likely users are to click your ad based on historical performance vs competitors for the same keyword." },
+                { title: "Ad Relevance", desc: "How closely your ad copy matches the searcher's intent. Tight keyword–ad–landing alignment scores highest." },
+                { title: "Landing Page Experience", desc: "Speed, mobile-friendliness, relevance, and trust signals on the page users land on after clicking." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full border border-border rounded-xl overflow-hidden">
+                <thead><tr className="bg-card">
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Quality Score</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">CPC Impact</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Ad Position</th>
+                </tr></thead>
+                <tbody>
+                  {[
+                    { qs: "9 – 10", cpc: "Up to 50% discount vs competitors", pos: "Top positions, lower bids" },
+                    { qs: "7 – 8", cpc: "Near-average CPC", pos: "Competitive placement" },
+                    { qs: "5 – 6", cpc: "Slight premium", pos: "Mid-page or lower" },
+                    { qs: "1 – 4", cpc: "Up to 400% premium", pos: "Rarely shown or page 2" },
+                  ].map((r, i) => (
+                    <tr key={i} className="bg-card">
+                      <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{r.qs}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.cpc}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.pos}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-6 leading-relaxed">Cypher Digital actively optimises Quality Score every week — tightening ad groups, rewriting ad copy, and improving landing page relevance to drive your <strong className="text-foreground">Google Ads Sri Lanka</strong> CPC down month over month.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies */}
+      <section id="case-studies" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Google Ads Case Studies — Real Sri Lankan Results</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Anonymised performance snapshots from active Google Ads campaigns managed by Cypher Digital for Sri Lankan businesses.</p>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                {
+                  industry: "Healthcare Clinic — Colombo",
+                  challenge: "Low appointment bookings despite a strong reputation; competing with hospital chains on branded keywords.",
+                  approach: "Search Ads on high-intent symptom keywords + branded defence, call-only ads during clinic hours, conversion tracking via WhatsApp clicks.",
+                  results: [
+                    { k: "Cost per lead", v: "LKR 980" },
+                    { k: "Monthly bookings", v: "+312%" },
+                    { k: "ROAS", v: "6.4x" },
+                  ],
+                },
+                {
+                  industry: "Education / Study Abroad",
+                  challenge: "High CPCs (LKR 250+) on competitive course keywords were burning budget without producing enrolments.",
+                  approach: "Restructured into long-tail SKAGs, added negative keywords, built dedicated landing pages per programme, ran YouTube remarketing.",
+                  results: [
+                    { k: "Avg CPC", v: "↓ 58%" },
+                    { k: "Qualified leads / mo", v: "240+" },
+                    { k: "Cost per enrolment", v: "LKR 18,500" },
+                  ],
+                },
+                {
+                  industry: "E-commerce — Fashion",
+                  challenge: "Shopping Ads were spending evenly across SKUs with no insight into which products actually drove profit.",
+                  approach: "Restructured Shopping campaigns by margin tier, deployed Performance Max for best-sellers, dynamic remarketing for cart abandoners.",
+                  results: [
+                    { k: "ROAS", v: "8.2x" },
+                    { k: "Revenue growth", v: "+417%" },
+                    { k: "Cart recovery", v: "23%" },
+                  ],
+                },
+              ].map((cs, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-6">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">Case Study {i + 1}</p>
+                  <h3 className="font-heading text-base font-bold text-foreground mb-4">{cs.industry}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed mb-3"><strong className="text-foreground">Challenge:</strong> {cs.challenge}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed mb-4"><strong className="text-foreground">Approach:</strong> {cs.approach}</p>
+                  <div className="grid grid-cols-3 gap-2 pt-4 border-t border-border">
+                    {cs.results.map((r, j) => (
+                      <div key={j} className="text-center">
+                        <div className="text-sm font-extrabold text-primary">{r.v}</div>
+                        <div className="text-[10px] text-muted-foreground mt-1 leading-tight">{r.k}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-muted-foreground italic text-center mt-6">Results based on anonymised client campaigns. Past performance does not guarantee future results — Quality Score, niche competition, and seasonality affect every account differently.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Month-by-Month ROI Timeline */}
+      <section id="roi-timeline" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Month-by-Month Google Ads ROI Timeline</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Honest expectations from a well-structured Google Ads Sri Lanka campaign. Most accounts move from setup to scale within 90 days.</p>
+            <div className="space-y-4">
+              {[
+                { m: "Month 1", title: "Foundation & First Clicks", desc: "Keyword research, conversion tracking, ad groups built, landing pages aligned. Campaigns go live within week 1. First leads usually arrive within 24–72 hours of launch — data collection phase." },
+                { m: "Month 2", title: "Optimisation & CPC Reduction", desc: "Negative keywords expanded, low-performing ads paused, Quality Score climbs, CPC typically drops 20–40%. Cost per lead stabilises and starts trending down." },
+                { m: "Month 3", title: "Scaling Winners", desc: "Top-performing ad groups get budget reallocated, remarketing audiences mature, Shopping/Performance Max kicks in for e-commerce. ROAS typically reaches the 3–5x range." },
+                { m: "Month 4 – 6", title: "Compounding Returns", desc: "Account history builds Google's machine-learning confidence. CPCs continue to decrease, conversion rates climb. Top accounts reach 5–8x ROAS and unlock new campaign types (YouTube, Display remarketing)." },
+                { m: "Month 6+", title: "Market Leadership", desc: "Sustained #1 ad positions on core keywords, full-funnel coverage from awareness to conversion, predictable monthly lead volume. Budget can be scaled aggressively without inflating CPL." },
+              ].map((t, i) => (
+                <div key={i} className="flex gap-4 bg-card border border-border rounded-xl p-5">
+                  <div className="w-20 shrink-0 text-center">
+                    <div className="text-xs font-semibold uppercase tracking-wider text-primary">{t.m}</div>
+                  </div>
+                  <div className="flex-1 border-l border-border pl-4">
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-1">{t.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{t.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section id="faqs" className="py-16 bg-background scroll-mt-20">
-        {/* injected sentinel — content begins below */}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Frequently Asked Questions – Google Ads Sri Lanka</h2>
