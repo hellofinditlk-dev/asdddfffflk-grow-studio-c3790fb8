@@ -18,7 +18,7 @@ const VacancyPage = () => {
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
 
-  const jobPostingSchema = {
+  const jobPostingSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: vacancy.title,
@@ -46,6 +46,29 @@ const VacancyPage = () => {
     url: canonical,
   };
 
+  if (vacancy.salaryRange) {
+    jobPostingSchema.baseSalary = {
+      "@type": "MonetaryAmount",
+      currency: vacancy.salaryRange.currency,
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: vacancy.salaryRange.min,
+        maxValue: vacancy.salaryRange.max,
+        unitText: vacancy.salaryRange.unit,
+      },
+    };
+  }
+
+  const faqSchema = vacancy.faqs && vacancy.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: vacancy.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -61,6 +84,9 @@ const VacancyPage = () => {
       <SEOHead title={vacancy.metaTitle} description={vacancy.metaDescription} canonical={canonical} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       <PageBreadcrumb items={[{ label: "Careers", href: "/careers" }, { label: vacancy.shortTitle }]} />
 
       {/* Hero */}
@@ -81,6 +107,20 @@ const VacancyPage = () => {
           </Button>
         </div>
       </section>
+
+      {/* SEO intro */}
+      {vacancy.seoIntro && vacancy.seoIntro.length > 0 && (
+        <section className="py-12 lg:py-16">
+          <div className="container mx-auto px-4 max-w-3xl space-y-5">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">
+              About this {vacancy.shortTitle} job in Sri Lanka
+            </h2>
+            {vacancy.seoIntro.map((p, i) => (
+              <p key={i} className="text-base text-muted-foreground leading-relaxed">{p}</p>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Job details */}
       <section className="py-16 lg:py-20">
@@ -150,6 +190,44 @@ const VacancyPage = () => {
           </Card>
         </div>
       </section>
+
+      {/* Why join */}
+      {vacancy.whyJoin && vacancy.whyJoin.length > 0 && (
+        <section className="py-12 lg:py-16 bg-secondary/20">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-8">
+              Why this is one of the best {vacancy.shortTitle.toLowerCase()} jobs in Sri Lanka
+            </h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              {vacancy.whyJoin.map((w, i) => (
+                <div key={i} className="p-5 rounded-xl bg-card border border-border">
+                  <h3 className="font-heading font-bold mb-2">{w.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{w.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQs */}
+      {vacancy.faqs && vacancy.faqs.length > 0 && (
+        <section className="py-12 lg:py-16">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-8">
+              {vacancy.shortTitle} jobs in Sri Lanka — FAQs
+            </h2>
+            <div className="space-y-5">
+              {vacancy.faqs.map((f, i) => (
+                <div key={i} className="p-5 rounded-xl bg-card border border-border">
+                  <h3 className="font-heading font-bold mb-2">{f.q}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Internal links */}
       <section className="py-12 bg-secondary/30 border-t border-border">
