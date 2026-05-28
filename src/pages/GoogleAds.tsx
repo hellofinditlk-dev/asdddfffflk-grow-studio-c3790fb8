@@ -341,6 +341,64 @@ const GoogleAds = () => {
         </div>
       </section>
 
+      {/* Google Ads Cost in Sri Lanka */}
+      <section id="cost" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How Much Do Google Ads Cost in Sri Lanka?</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+              Google Ads has no minimum spend — you set your own daily budget and only pay when someone clicks. Cost per click (CPC) varies by industry, keyword competition, Quality Score, and location targeting. CPCs in Sri Lanka are generally far lower than Western markets, making PPC advertising highly accessible for local SMEs.
+            </p>
+            <div className="overflow-x-auto bg-card border border-border rounded-xl mb-8">
+              <table className="w-full text-sm">
+                <thead className="bg-secondary border-b border-border">
+                  <tr>
+                    <th className="text-left p-4 font-semibold text-foreground">Industry</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Estimated CPC Range (LKR)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Education & Training", "LKR 40 – 200"],
+                    ["Retail & E-commerce", "LKR 30 – 150"],
+                    ["Restaurants & Food", "LKR 25 – 120"],
+                    ["Hotels & Tourism", "LKR 60 – 350"],
+                    ["Real Estate", "LKR 80 – 400"],
+                    ["Healthcare & Medical", "LKR 70 – 300"],
+                    ["Legal Services", "LKR 150 – 600"],
+                    ["Financial Services", "LKR 100 – 500"],
+                  ].map(([ind, cpc], i) => (
+                    <tr key={i} className="border-b border-border last:border-0">
+                      <td className="p-4 text-foreground font-medium">{ind}</td>
+                      <td className="p-4 text-muted-foreground">{cpc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground text-center mb-8 italic">
+              Estimates based on typical Sri Lankan market conditions. Actual CPCs vary by campaign quality, competition, and targeting.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { label: "Starter / Testing", value: "LKR 50K – 100K", desc: "Small business or testing phase ad spend per month" },
+                { label: "Growth Stage", value: "LKR 100K – 300K", desc: "Growing SMEs and e-commerce monthly ad spend" },
+                { label: "Aggressive Growth", value: "LKR 300K+", desc: "Established brands scaling nationally per month" },
+              ].map((b, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5 text-center">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">{b.label}</p>
+                  <div className="font-heading text-lg font-bold text-foreground mb-2">{b.value}</div>
+                  <p className="text-xs text-muted-foreground">{b.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground mt-8 leading-relaxed text-center max-w-2xl mx-auto">
+              <strong className="text-foreground">The real question:</strong> not how much you spend, but your cost per qualified lead. A campaign converting at 5% with an average CPC of LKR 100 produces a lead for around LKR 2,000 — a strong ROI when that lead converts into a customer worth LKR 50,000+.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* What's Included */}
       <section id="whats-included" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
