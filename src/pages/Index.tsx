@@ -258,7 +258,7 @@ const Index = () => (
             </h1>
 
             <p className="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed mb-10">
-              We empower brands across <span className="text-white font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook & Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
+              We empower brands across <span className="text-white font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook</Link> & <Link to="/google-ads-sri-lanka" className="text-primary hover:underline font-semibold">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
