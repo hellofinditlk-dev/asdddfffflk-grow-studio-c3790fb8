@@ -991,6 +991,35 @@ const GoogleAds = () => {
         </div>
       </section>
 
+      {/* Google Ads Glossary */}
+      <section id="glossary" className="py-16 bg-secondary scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Google Ads Glossary — 10 Terms Every Sri Lankan Advertiser Should Know</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">A quick reference for the most-asked Google Ads terms.</p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { t: "CPC (Cost Per Click)", d: "What you pay each time a user clicks your ad. Varies by keyword competition and Quality Score." },
+                { t: "CPM (Cost Per Mille)", d: "Cost per 1,000 ad impressions — primarily a Display and YouTube metric." },
+                { t: "CTR (Click-Through Rate)", d: "Clicks ÷ impressions. A high CTR signals relevance to Google and improves Quality Score." },
+                { t: "ROAS (Return on Ad Spend)", d: "Revenue generated for every LKR 1 spent on ads. 5x ROAS = LKR 5 in sales per LKR 1 spent." },
+                { t: "Quality Score", d: "Google's 1–10 rating of keyword–ad–landing page relevance. Higher score = lower CPC, better positions." },
+                { t: "Conversion", d: "Any tracked goal completion — form submit, WhatsApp click, phone call, purchase, app install." },
+                { t: "Ad Rank", d: "Determines your ad's position. Calculated from your bid × Quality Score × ad extensions impact." },
+                { t: "Negative Keywords", d: "Terms you exclude to prevent your ads from showing on irrelevant searches — saves budget." },
+                { t: "Performance Max (PMax)", d: "Goal-based campaign type that runs across all Google channels (Search, Display, YouTube, Maps, Discover) using AI." },
+                { t: "Remarketing", d: "Showing ads to users who previously visited your site or interacted with your business — typically the highest-ROAS audience." },
+              ].map((g, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{g.t}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{g.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA + Inquiry Form */}
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
