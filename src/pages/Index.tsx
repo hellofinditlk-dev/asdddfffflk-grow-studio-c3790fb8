@@ -92,9 +92,10 @@ const process = [
 ];
 
 const stats = [
-  { value: "15,000+", label: "Leads Generated", icon: <Zap className="w-5 h-5" /> },
-  { value: "20+", label: "Happy Clients", icon: <Star className="w-5 h-5" /> },
-  { value: "2,000+", label: "Campaigns Run", icon: <Rocket className="w-5 h-5" /> },
+  { value: "15,000+", label: "Leads Generated", tone: "neutral" as const },
+  { value: "2,000+", label: "Campaigns Run", tone: "purple" as const },
+  { value: "5.0★", label: "Client Rating", tone: "neutral" as const },
+  { value: "+340%", label: "Avg Campaign ROI", tone: "orange" as const },
 ];
 
 const trustedLogos = ["Facebook", "Google", "TikTok", "Instagram", "YouTube", "LinkedIn"];
