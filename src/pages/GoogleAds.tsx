@@ -94,15 +94,19 @@ const tocItems = [
   { id: "why-important", label: "Why Google Ads is Essential" },
   { id: "campaign-types", label: "Types of Google Ads Campaigns" },
   { id: "services", label: "Our Services" },
+  { id: "cost", label: "Google Ads Cost in Sri Lanka" },
   { id: "whats-included", label: "What's Included" },
   { id: "process", label: "Our Process" },
   { id: "funnel", label: "Full-Funnel Strategy" },
   { id: "google-vs-seo", label: "Google Ads vs SEO" },
   { id: "google-vs-facebook", label: "Google Ads vs Facebook Ads" },
   { id: "industry-strategies", label: "Industry-Specific Strategies" },
+  { id: "how-to-setup", label: "How to Set Up a Winning Campaign" },
   { id: "advanced", label: "Advanced Strategies" },
+  { id: "common-mistakes", label: "Common Google Ads Mistakes" },
   { id: "cro", label: "Conversion Rate Optimization" },
   { id: "pricing", label: "Pricing & Packages" },
+  { id: "packages-table", label: "Google Ads Packages" },
   { id: "faqs", label: "FAQs" },
 ];
 
@@ -170,7 +174,7 @@ const GoogleAds = () => {
     <div className="pt-16">
       <SEOHead
         title="Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital"
-        description="Professional Google Ads management in Sri Lanka. Search Ads, Display Ads, YouTube Ads & Shopping Ads with 5x average ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free account audit."
+        description="Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs."
         canonical="https://cypherdigital.lk/google-ads-sri-lanka"
       />
 
@@ -333,6 +337,64 @@ const GoogleAds = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Google Ads Cost in Sri Lanka */}
+      <section id="cost" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How Much Do Google Ads Cost in Sri Lanka?</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+              Google Ads has no minimum spend — you set your own daily budget and only pay when someone clicks. Cost per click (CPC) varies by industry, keyword competition, Quality Score, and location targeting. CPCs in Sri Lanka are generally far lower than Western markets, making PPC advertising highly accessible for local SMEs.
+            </p>
+            <div className="overflow-x-auto bg-card border border-border rounded-xl mb-8">
+              <table className="w-full text-sm">
+                <thead className="bg-secondary border-b border-border">
+                  <tr>
+                    <th className="text-left p-4 font-semibold text-foreground">Industry</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Estimated CPC Range (LKR)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Education & Training", "LKR 40 – 200"],
+                    ["Retail & E-commerce", "LKR 30 – 150"],
+                    ["Restaurants & Food", "LKR 25 – 120"],
+                    ["Hotels & Tourism", "LKR 60 – 350"],
+                    ["Real Estate", "LKR 80 – 400"],
+                    ["Healthcare & Medical", "LKR 70 – 300"],
+                    ["Legal Services", "LKR 150 – 600"],
+                    ["Financial Services", "LKR 100 – 500"],
+                  ].map(([ind, cpc], i) => (
+                    <tr key={i} className="border-b border-border last:border-0">
+                      <td className="p-4 text-foreground font-medium">{ind}</td>
+                      <td className="p-4 text-muted-foreground">{cpc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground text-center mb-8 italic">
+              Estimates based on typical Sri Lankan market conditions. Actual CPCs vary by campaign quality, competition, and targeting.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { label: "Starter / Testing", value: "LKR 50K – 100K", desc: "Small business or testing phase ad spend per month" },
+                { label: "Growth Stage", value: "LKR 100K – 300K", desc: "Growing SMEs and e-commerce monthly ad spend" },
+                { label: "Aggressive Growth", value: "LKR 300K+", desc: "Established brands scaling nationally per month" },
+              ].map((b, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5 text-center">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">{b.label}</p>
+                  <div className="font-heading text-lg font-bold text-foreground mb-2">{b.value}</div>
+                  <p className="text-xs text-muted-foreground">{b.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground mt-8 leading-relaxed text-center max-w-2xl mx-auto">
+              <strong className="text-foreground">The real question:</strong> not how much you spend, but your cost per qualified lead. A campaign converting at 5% with an average CPC of LKR 100 produces a lead for around LKR 2,000 — a strong ROI when that lead converts into a customer worth LKR 50,000+.
+            </p>
           </div>
         </div>
       </section>
@@ -510,11 +572,43 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* Advanced Strategies */}
-      <section id="advanced" className="py-16 bg-background scroll-mt-20">
+      {/* How to Set Up a Winning Campaign */}
+      <section id="how-to-setup" className="py-16 bg-background scroll-mt-20 border-t border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Advanced Google Ads Strategies</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How to Set Up a Winning Google Ads Campaign in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              A winning Google Ads campaign is built on a clear, methodical foundation. Here is the professional process Cypher Digital follows for every Sri Lankan client — from initial brief to live, optimised campaigns within 24 hours.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { title: "Business & Market Analysis", desc: "Understanding your business model, customer profile, average transaction value, and current marketing activity informs every later decision." },
+                { title: "Comprehensive Keyword Research", desc: "Google Keyword Planner plus third-party tools to identify high-intent commercial, local, and long-tail keywords — and negative keywords to block waste." },
+                { title: "Campaign Architecture", desc: "Tightly themed ad groups with closely related keywords. Strong structure drives Quality Score, lowering cost per click and improving ad position." },
+                { title: "Ad Copy & Extensions", desc: "Multiple headline and description variations per ad group. Sitelinks, callouts, call extensions, snippets, and images maximise SERP real estate." },
+                { title: "Landing Page Audit", desc: "We audit every landing page for load speed, mobile responsiveness, message match, trust signals, and conversion elements before launch." },
+                { title: "Conversion Tracking Setup", desc: "Google Analytics 4, Google Tag Manager, and event tracking for forms, calls, purchases, and WhatsApp chats — no guessing, only data." },
+                { title: "Bid Strategy Configuration", desc: "Start with Maximise Clicks to gather data, then transition to Target CPA or Target ROAS once Smart Bidding has enough conversion signal." },
+                { title: "Launch, Monitor & Optimise", desc: "Live within 24 hours of approval. Daily monitoring in week one, weekly optimisation thereafter — bids, negatives, ad copy and audiences." },
+              ].map((step, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5 flex gap-4">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-1">{step.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Strategies */}
+      <section id="advanced" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Advanced Google Ads Strategies That Drive Results</h2>
             <div className="grid sm:grid-cols-2 gap-6">
               {[
                 { icon: <Brain className="w-5 h-5" />, title: "Smart Bidding & AI Optimization", desc: "Leverage Google's machine learning with Target CPA, Target ROAS, and Maximize Conversions bidding strategies." },
@@ -528,6 +622,33 @@ const GoogleAds = () => {
                     <h3 className="font-heading text-sm font-bold text-foreground mb-1">{item.title}</h3>
                     <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CRO Section */}
+      <section id="common-mistakes" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Common Google Ads Mistakes Sri Lankan Businesses Make</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              When auditing Google Ads accounts in Sri Lanka, we repeatedly see the same costly mistakes. Avoiding these instantly improves your ROI.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-5">
+              {[
+                { mistake: "Running broad match keywords without negatives", fix: "Broad match without a robust negative keyword list burns budget on irrelevant searches. We build comprehensive negative lists from day one." },
+                { mistake: "No conversion tracking in place", fix: "Without conversion tracking, every decision is a guess. We install GA4, GTM, and event tracking before any campaign goes live." },
+                { mistake: "Sending all traffic to the homepage", fix: "Each ad group deserves its own dedicated landing page that matches the search intent, not a generic homepage drop-off." },
+                { mistake: "Ignoring mobile performance", fix: "Most Sri Lankan searches happen on mobile. Slow or non-responsive landing pages waste every click you pay for." },
+                { mistake: "Not using ad extensions", fix: "Sitelinks, callouts, call buttons and structured snippets dramatically improve CTR and Quality Score — and they are free." },
+                { mistake: "Setting and forgetting campaigns", fix: "Performance decays without active management. We adjust bids, negatives, copy and audiences every single week." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <p className="text-sm font-semibold text-destructive mb-2">❌ {item.mistake}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">✅ {item.fix}</p>
                 </div>
               ))}
             </div>
@@ -582,6 +703,61 @@ const GoogleAds = () => {
                   <p className="text-xs text-muted-foreground">{tp.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Search Optimized Answer */}
+      <section id="packages-table" className="py-16 bg-secondary scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Google Ads Packages & Pricing in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+              Cypher Digital offers flexible Google Ads management packages designed for Sri Lankan businesses at every growth stage. All tiers include campaign setup, ongoing management, conversion tracking and monthly reporting.
+            </p>
+            <div className="overflow-x-auto bg-card border border-border rounded-xl">
+              <table className="w-full text-sm">
+                <thead className="bg-background border-b border-border">
+                  <tr>
+                    <th className="text-left p-4 font-semibold text-foreground">Package</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Ad Spend Budget</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Starter", "LKR 50,000 – 100,000 / month", "Small businesses & local services"],
+                    ["Growth", "LKR 100,000 – 250,000 / month", "Growing SMEs & e-commerce"],
+                    ["Scale", "LKR 250,000 – 500,000 / month", "Established brands & multi-location"],
+                    ["Enterprise", "LKR 500,000+ / month", "Large businesses & national campaigns"],
+                  ].map(([pkg, spend, best], i) => (
+                    <tr key={i} className="border-b border-border last:border-0">
+                      <td className="p-4 text-foreground font-semibold">{pkg}</td>
+                      <td className="p-4 text-muted-foreground">{spend}</td>
+                      <td className="p-4 text-muted-foreground">{best}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground italic text-center mt-4">
+              Management fees quoted separately based on campaign complexity. Contact us for a custom proposal tailored to your business.
+            </p>
+            <div className="mt-8 bg-card border border-border rounded-xl p-6">
+              <h3 className="font-heading text-base font-bold text-foreground mb-3">Additional Services Available</h3>
+              <ul className="grid sm:grid-cols-2 gap-2 text-sm text-muted-foreground">
+                {[
+                  "Landing page design & CRO optimisation",
+                  "Google Analytics 4 setup & configuration",
+                  "Google Tag Manager implementation",
+                  "Conversion tracking & call tracking setup",
+                  "Google Ads account audits (free for new clients)",
+                  "Performance Max & Shopping feed management",
+                ].map((s, i) => (
+                  <li key={i} className="flex items-start gap-2"><CheckCircle className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />{s}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

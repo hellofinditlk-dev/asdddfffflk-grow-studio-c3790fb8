@@ -31,7 +31,7 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
   },
   "/google-ads-sri-lanka": {
     title: "Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital",
-    description: "Professional Google Ads management in Sri Lanka. Search Ads, Display Ads, YouTube Ads & Shopping Ads with 5x average ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free account audit.",
+    description: "Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs.",
     h1: "Google Ads Sri Lanka – High-Performance PPC Advertising That Drives Results",
   },
   "/video-production-sri-lanka": {
