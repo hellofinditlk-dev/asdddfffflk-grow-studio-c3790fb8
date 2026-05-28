@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { MessageCircle, Phone, Sparkles, Star, X } from "lucide-react";
+import { MessageCircle, Phone, Sparkles, Star, CheckCircle } from "lucide-react";
 
 const SERVICE_ROUTE_PATTERNS = [
   /-sri-lanka$/,
@@ -25,98 +24,63 @@ const TEL_HREF = "tel:+94701772626";
 
 const ServiceStickyCTA = () => {
   const { pathname } = useLocation();
-  const [dismissed, setDismissed] = useState(false);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setDismissed(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    if (!isServiceRoute(pathname)) {
-      setVisible(false);
-      return;
-    }
-    const onScroll = () => setVisible(window.scrollY > 400);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [pathname]);
-
-  if (!isServiceRoute(pathname) || dismissed || !visible) return null;
+  if (!isServiceRoute(pathname)) return null;
 
   return (
-    <div
-      className="fixed inset-x-0 bottom-0 z-40 px-3 pb-3 sm:px-4 sm:pb-4 pointer-events-none"
-      role="region"
-      aria-label="Talk to us"
-    >
-      <div className="pointer-events-auto mx-auto max-w-5xl rounded-2xl border border-primary/20 bg-background/95 backdrop-blur shadow-[0_20px_60px_-20px_hsl(252,65%,55%,0.45)] overflow-hidden">
-        <div className="flex items-stretch">
-          {/* Left: pitch + trust */}
-          <div className="hidden md:flex flex-col justify-center px-5 py-3 border-r border-border min-w-[260px] bg-gradient-to-br from-primary/8 via-background to-accent/8">
-            <div className="inline-flex items-center gap-1.5 self-start rounded-full bg-primary/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
-              <Sparkles className="h-3 w-3" /> Free audit · This month
+    <section className="bg-secondary/40 border-t border-border py-12 md:py-16" aria-label="Talk to us">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/8 via-background to-accent/8 overflow-hidden shadow-[0_20px_60px_-30px_hsl(252,65%,55%,0.35)]">
+          <div className="grid md:grid-cols-[1.2fr_1fr] gap-6 md:gap-8 p-6 md:p-10 items-center">
+            <div>
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">
+                <Sparkles className="h-3.5 w-3.5" /> Free audit · This month
+              </div>
+              <h2 className="mt-3 font-heading text-2xl md:text-3xl font-extrabold text-foreground leading-tight">
+                Talk to a strategist — we reply in 1 hour
+              </h2>
+              <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
+                Get a free audit and a transparent quote on WhatsApp. No contracts, no fluff — just an honest plan tailored to your business.
+              </p>
+              <ul className="mt-5 grid sm:grid-cols-2 gap-2 text-sm">
+                <li className="flex items-center gap-2 text-foreground/80"><CheckCircle className="h-4 w-4 text-primary shrink-0" /> Free 30-min strategy call</li>
+                <li className="flex items-center gap-2 text-foreground/80"><CheckCircle className="h-4 w-4 text-primary shrink-0" /> Reply within 1 business hour</li>
+                <li className="flex items-center gap-2 text-foreground/80"><CheckCircle className="h-4 w-4 text-primary shrink-0" /> No long-term contracts</li>
+                <li className="flex items-center gap-2 text-foreground/80"><CheckCircle className="h-4 w-4 text-primary shrink-0" /> Transparent monthly reports</li>
+              </ul>
             </div>
-            <p className="mt-1.5 font-heading text-sm font-extrabold text-foreground leading-tight">
-              Talk to a strategist — reply in 1 hour
-            </p>
-            <div className="mt-1 flex items-center gap-1.5 text-[11px] text-muted-foreground">
-              <span className="flex text-[hsl(38,92%,50%)]">
-                <Star className="h-3 w-3 fill-current" />
-                <Star className="h-3 w-3 fill-current" />
-                <Star className="h-3 w-3 fill-current" />
-                <Star className="h-3 w-3 fill-current" />
-                <Star className="h-3 w-3 fill-current" />
-              </span>
-              <span className="font-semibold text-foreground">200+</span> Sri Lankan clients
+            <div className="flex flex-col gap-3">
+              <div className="rounded-2xl bg-card border border-border p-5">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="flex text-[hsl(38,92%,50%)]" aria-hidden="true">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                  </span>
+                  <span className="text-xs font-semibold text-foreground">5.0 · 200+ Sri Lankan clients</span>
+                </div>
+                <p className="text-xs text-muted-foreground">Trusted by SMEs across Colombo, Kandy, Galle, Negombo, Jaffna and beyond.</p>
+              </div>
+              <a
+                href={WA_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] !text-white px-5 h-12 text-sm font-bold shadow-md hover:opacity-90 transition-opacity border-none"
+              >
+                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+              </a>
+              <a
+                href={TEL_HREF}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[hsl(25,95%,53%)] !text-white px-5 h-12 text-sm font-bold shadow-md hover:bg-[hsl(25,95%,45%)] transition-colors border-none"
+              >
+                <Phone className="h-4 w-4" /> Call +94 70 177 2626
+              </a>
             </div>
-          </div>
-
-          {/* Mobile pitch */}
-          <div className="flex md:hidden flex-col justify-center px-3 py-2 flex-1 min-w-0">
-            <div className="inline-flex items-center gap-1 self-start rounded-full bg-primary/15 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-primary">
-              <Sparkles className="h-2.5 w-2.5" /> Free audit
-            </div>
-            <p className="mt-1 font-heading text-[13px] font-extrabold text-foreground leading-tight truncate">
-              Reply in 1 hour
-            </p>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex items-center gap-2 p-2 sm:p-3 md:flex-1 md:justify-end">
-            <a
-              href={WA_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-[#25D366] !text-white px-3 sm:px-4 h-11 text-sm font-bold shadow-md hover:opacity-90 transition-opacity whitespace-nowrap"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle className="h-4 w-4" />
-              <span className="hidden sm:inline">WhatsApp</span>
-              <span className="sm:hidden">Chat</span>
-            </a>
-            <a
-              href={TEL_HREF}
-              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-[hsl(25,95%,53%)] !text-white px-3 sm:px-4 h-11 text-sm font-bold shadow-md hover:bg-[hsl(25,95%,45%)] transition-colors whitespace-nowrap border-none"
-              aria-label="Call Cypher Digital"
-            >
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">Call now</span>
-              <span className="sm:hidden">Call</span>
-            </a>
-            <button
-              type="button"
-              onClick={() => setDismissed(true)}
-              className="hidden sm:inline-flex items-center justify-center w-9 h-9 rounded-lg text-muted-foreground hover:bg-secondary transition-colors"
-              aria-label="Dismiss"
-            >
-              <X className="h-4 w-4" />
-            </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
