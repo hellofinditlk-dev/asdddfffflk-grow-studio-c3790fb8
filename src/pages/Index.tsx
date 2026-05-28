@@ -18,7 +18,7 @@ import mascotHeadset from "@/assets/mascot-headset.jpeg";
 const services = [
   {
     icon: <Megaphone className="w-5 h-5" />,
-    title: "Social Media Management",
+    title: "Social Media Marketing",
     desc: "Complete Facebook and Instagram page management to build a strong online presence.",
     items: ["Content planning", "Creative post design", "Post scheduling", "Inbox management", "Monthly reports"],
     link: "/social-media-management-sri-lanka",
@@ -159,7 +159,7 @@ const organizationSchema = {
     "@type": "OfferCatalog",
     name: "Digital Marketing Services Sri Lanka",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Management Sri Lanka", url: "https://cypherdigital.lk/social-media-management-sri-lanka" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Social Media Marketing Sri Lanka", url: "https://cypherdigital.lk/social-media-management-sri-lanka" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Facebook Advertising Sri Lanka", url: "https://cypherdigital.lk/facebook-ads-sri-lanka" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads Sri Lanka", url: "https://cypherdigital.lk/google-ads-sri-lanka" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Services Sri Lanka", url: "https://cypherdigital.lk/seo-services-sri-lanka" } },
@@ -202,7 +202,7 @@ const faqs = [
   },
   {
     q: "What digital marketing services does Cypher Digital offer?",
-    a: "We offer Social Media Management, Facebook Advertising, Google Ads, SEO Services, Graphic Design, Video Production, TikTok Marketing and Influencer Marketing — all tailored for the Sri Lankan market. You can also explore industry-specific solutions for hotels, real estate, restaurants, salons, schools and ecommerce brands.",
+    a: "We offer Social Media Marketing, Facebook Advertising, Google Ads, SEO Services, Graphic Design, Video Production, TikTok Marketing and Influencer Marketing — all tailored for the Sri Lankan market. You can also explore industry-specific solutions for hotels, real estate, restaurants, salons, schools and ecommerce brands.",
   },
   {
     q: "Do you serve businesses outside Colombo?",
@@ -1000,7 +1000,7 @@ const Index = () => (
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">All Digital Marketing Services in Sri Lanka</h2>
           <div className="flex flex-wrap gap-2.5">
             {[
-              { label: "Social Media Management", to: "/social-media-management-sri-lanka" },
+              { label: "Social Media Marketing", to: "/social-media-management-sri-lanka" },
               { label: "Facebook Ads", to: "/facebook-ads-sri-lanka" },
               { label: "Google Ads", to: "/google-ads-sri-lanka" },
               { label: "SEO Services", to: "/seo-services-sri-lanka" },
