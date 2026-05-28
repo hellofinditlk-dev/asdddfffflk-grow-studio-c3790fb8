@@ -576,7 +576,7 @@ const GoogleAds = () => {
       <section id="advanced" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Advanced Google Ads Strategies</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Advanced Google Ads Strategies That Drive Results</h2>
             <div className="grid sm:grid-cols-2 gap-6">
               {[
                 { icon: <Brain className="w-5 h-5" />, title: "Smart Bidding & AI Optimization", desc: "Leverage Google's machine learning with Target CPA, Target ROAS, and Maximize Conversions bidding strategies." },
