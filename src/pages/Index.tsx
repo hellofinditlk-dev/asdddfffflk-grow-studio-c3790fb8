@@ -72,6 +72,30 @@ const services = [
     link: "/tiktok-marketing-sri-lanka",
     gradient: "from-[hsl(350,80%,55%)] to-[hsl(330,75%,60%)]",
   },
+  {
+    icon: <Sparkles className="w-5 h-5" />,
+    title: "Instagram Marketing",
+    desc: "Grow your Instagram following with Reels, Stories and shoppable content.",
+    items: ["Reels strategy", "Story design", "Instagram Ads", "Hashtag research", "Engagement growth"],
+    link: "/instagram-marketing-sri-lanka",
+    gradient: "from-[hsl(320,80%,60%)] to-[hsl(20,90%,55%)]",
+  },
+  {
+    icon: <Building2 className="w-5 h-5" />,
+    title: "LinkedIn Advertising",
+    desc: "B2B lead generation and brand authority campaigns for Sri Lankan companies.",
+    items: ["Lead Gen Forms", "Sponsored content", "InMail campaigns", "Audience targeting", "Conversion tracking"],
+    link: "/linkedin-advertising-sri-lanka",
+    gradient: "from-[hsl(210,80%,45%)] to-[hsl(200,85%,55%)]",
+  },
+  {
+    icon: <Users className="w-5 h-5" />,
+    title: "Influencer Marketing",
+    desc: "Partner with Sri Lankan influencers to amplify reach and drive conversions.",
+    items: ["Influencer sourcing", "Campaign management", "Content briefs", "Performance tracking", "ROI reporting"],
+    link: "/influencer-marketing-sri-lanka",
+    gradient: "from-[hsl(280,75%,60%)] to-[hsl(252,65%,55%)]",
+  },
 ];
 
 const whyUs = [
