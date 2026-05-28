@@ -67,19 +67,18 @@ const trustPoints = [
 ];
 
 const faqs = [
-  { q: "What is TikTok marketing?", a: "TikTok marketing involves using short-form video content to promote products and services, build brand awareness, engage audiences, and drive traffic and sales. It includes organic content strategy, paid TikTok advertising, influencer collaborations, and trend-based content creation." },
-  { q: "How much does TikTok marketing cost in Sri Lanka?", a: "TikTok marketing is highly flexible. Small businesses can start from LKR 30,000–100,000/month, medium businesses typically invest LKR 100,000–300,000/month, and larger campaigns start from LKR 300,000+. We design custom packages based on your goals and budget." },
-  { q: "Is TikTok effective for businesses in Sri Lanka?", a: "Yes! TikTok has millions of active users in Sri Lanka with rapidly growing adoption among Gen Z and Millennials. The platform's algorithm allows even small businesses to reach massive audiences organically, making it one of the most cost-effective marketing channels available." },
-  { q: "How soon will I see results from TikTok marketing?", a: "Organic content can gain traction within the first week if it aligns with trends. Paid campaigns typically show measurable results within 7–14 days. We recommend at least 4–6 weeks for a comprehensive strategy to fully optimize and scale." },
-  { q: "Do I need a large following to succeed on TikTok?", a: "No! Unlike other platforms, TikTok's algorithm pushes content to new audiences regardless of follower count. A well-crafted video can reach hundreds of thousands of viewers even from an account with zero followers." },
-  { q: "What types of businesses benefit from TikTok marketing?", a: "Hotels & tourism, e-commerce & retail, education & study abroad, restaurants & cafes, SMEs & startups, beauty & wellness, and many more. Any business that can create engaging visual content can benefit from TikTok marketing in Sri Lanka." },
-  { q: "Can you create TikTok content in Sinhala and Tamil?", a: "Absolutely! We create localized content in Sinhala, Tamil, and English to maximize reach and engagement across all demographics in Sri Lanka." },
-  { q: "What is the difference between TikTok Ads and Facebook Ads?", a: "TikTok Ads offer significantly lower CPM, higher organic reach potential, and stronger engagement rates—especially with younger audiences. Facebook Ads provide more mature targeting options and broader demographics. The best strategy often combines both platforms." },
-  { q: "Do you handle influencer collaborations?", a: "Yes! We identify and connect your brand with relevant Sri Lankan TikTok influencers and niche content creators to build trust, reach targeted audiences, and increase conversions through authentic recommendations." },
-  { q: "What is the best TikTok marketing agency in Sri Lanka?", a: "Cypher Digital is a leading TikTok marketing agency in Sri Lanka providing viral content creation, strategic ad campaigns, influencer marketing, and data-driven optimization that delivers measurable leads and sales for businesses across all industries." },
-  { q: "Should I combine TikTok marketing with Social Media Management Sri Lanka services?", a: "Absolutely. Combining TikTok marketing with our full Social Media Management Sri Lanka service gives you a unified content strategy across TikTok, Facebook, Instagram, and YouTube. This multi-platform approach increases brand visibility, repurposes viral TikTok content across channels, and delivers stronger ROI than running TikTok in isolation." },
-  { q: "Do you offer Social Media Management Sri Lanka along with TikTok content creation?", a: "Yes. As a leading Social Media Management Sri Lanka agency, we provide end-to-end management — TikTok video production, posting calendars, community engagement, hashtag research, and analytics reporting — all under one team so your brand voice stays consistent across every platform." },
-  { q: "How does TikTok fit into a Social Media Management Sri Lanka strategy?", a: "TikTok is now a core pillar of any modern Social Media Management Sri Lanka strategy. We use TikTok for top-of-funnel discovery and viral reach, Instagram Reels for nurturing, and Facebook for retargeting and lead generation — creating a complete sales funnel powered by short-form video." },
+  { q: "What is TikTok marketing and why does it matter for Sri Lankan businesses?", a: "TikTok marketing is the use of short-form video content, paid TikTok Ads, and influencer collaborations to build brand awareness, generate leads, and drive sales on TikTok. It matters for Sri Lankan businesses because TikTok now has approximately 5 million active users in Sri Lanka — spending an average of 60 to 90 minutes per day on the platform — and it offers organic reach potential and advertising costs that no other platform currently matches." },
+  { q: "How much does TikTok marketing cost in Sri Lanka?", a: "TikTok marketing packages in Sri Lanka start from LKR 30,000 per month for organic content management with Cypher Digital. TikTok advertising budgets can begin from as little as LKR 20,000 to 30,000 per month, with CPMs significantly lower than Facebook or Instagram. Influencer marketing costs range from LKR 5,000 for nano-influencers to over LKR 250,000 for macro-influencers per post." },
+  { q: "Is TikTok effective for businesses in Sri Lanka?", a: "Yes. TikTok is one of the most effective marketing platforms available to Sri Lankan businesses in 2026, particularly for reaching 18 to 35 year old consumers. Its algorithm allows even new accounts to reach massive audiences organically, its advertising costs are lower than competing platforms, and its engaged user base makes it ideal for building authentic brand connections that drive real business results." },
+  { q: "Do I need a large following to succeed on TikTok?", a: "No — this is one of TikTok's most important characteristics. Unlike Facebook or Instagram, where content primarily reaches existing followers, TikTok's For You Page algorithm distributes content based on quality and relevance, not follower count. A brand new TikTok account with zero followers can publish a video that reaches 100,000 people if the content is compelling." },
+  { q: "How soon will I see results from TikTok marketing in Sri Lanka?", a: "For organic content, initial results — video views, profile visits, and first follower growth — typically appear within the first week of consistent posting. Meaningful business results (leads, enquiries, and sales) from organic content usually develop over 4 to 12 weeks as your content output builds and the algorithm learns your content's optimal audience. TikTok Ads can generate leads and traffic from day one of a campaign going live." },
+  { q: "What types of businesses benefit most from TikTok marketing in Sri Lanka?", a: "TikTok marketing works across virtually every industry in Sri Lanka. Businesses that see particularly strong results include: restaurants and food businesses, hotels and tourism operators, e-commerce and retail brands, beauty salons, fashion brands, educational institutions, real estate agencies, automotive businesses, and any business targeting Sri Lanka's 18 to 35 demographic." },
+  { q: "Can you create TikTok content in Sinhala and Tamil?", a: "Yes. Cypher Digital creates TikTok content in Sinhala, Tamil, and English depending on your target audience. Multilingual content is an important strategy for reaching Sri Lanka's diverse consumer base, and we tailor content style, language, and cultural references appropriately for each audience segment." },
+  { q: "What is the difference between TikTok Ads and Facebook Ads?", a: "Facebook Ads use interest and behaviour-based targeting to reach users who are passively browsing their social feed. TikTok Ads appear natively within the For You Page and look and feel like organic content, which generally produces higher engagement. TikTok also delivers lower CPMs (cost per thousand impressions) than Facebook in Sri Lanka, making it more cost-efficient for reach-based objectives. Facebook currently offers more sophisticated audience targeting tools and remains stronger for direct lead generation across all age groups." },
+  { q: "Do you handle TikTok influencer collaborations for Sri Lankan brands?", a: "Yes. We manage the complete influencer marketing process — from identifying the right Sri Lankan TikTok creators for your brand, negotiating collaboration terms, briefing and coordinating content creation, obtaining Spark Ad permissions, and measuring campaign results. We have an established network of creators across multiple niches in Sri Lanka." },
+  { q: "What is the best TikTok marketing agency in Sri Lanka?", a: "Cypher Digital is a leading TikTok marketing agency in Sri Lanka providing viral content creation, strategic TikTok Ads management, influencer campaign coordination, and data-driven performance optimisation. With transparent reporting, no lock-in contracts, and dedicated account managers for every client, we are the trusted choice for TikTok marketing across Colombo, Kandy, Galle, and all of Sri Lanka." },
+  { q: "Should I combine TikTok marketing with other digital marketing services?", a: "Absolutely. The most effective digital marketing strategies in Sri Lanka combine TikTok for top-of-funnel awareness and community building with Facebook Ads for lead generation, Google Ads for capturing high-intent search traffic, and SEO for long-term organic visibility. Cypher Digital offers all of these services, allowing us to build fully integrated, multi-channel campaigns that maximise your marketing investment." },
+  { q: "Does Cypher Digital offer Social Media Management alongside TikTok marketing?", a: "Yes. Our Social Media Management Sri Lanka service covers Facebook and Instagram page management and can be combined with TikTok marketing as part of a comprehensive multi-platform social strategy. Managing all three platforms through a single agency ensures consistent brand messaging, shared creative assets, and cross-platform optimisation." },
 ];
 
 const allServices = [
@@ -92,13 +91,20 @@ const allServices = [
 
 const tocItems = [
   { id: "what-is", label: "What is TikTok Marketing?" },
+  { id: "sri-lanka-numbers", label: "TikTok in Sri Lanka — The 2026 Numbers" },
+  { id: "algorithm", label: "How TikTok's Algorithm Works" },
   { id: "why-booming", label: "Why TikTok is Booming in Sri Lanka" },
   { id: "why-need", label: "Why Your Business Needs TikTok" },
   { id: "services", label: "Our TikTok Marketing Services" },
+  { id: "ad-formats", label: "TikTok Ad Formats Explained" },
   { id: "whats-included", label: "What's Included" },
   { id: "process", label: "Our Strategy Process" },
   { id: "cost-effective", label: "Cost-Effective Approach" },
+  { id: "cost-tables", label: "TikTok Marketing Cost in Sri Lanka" },
   { id: "industries", label: "Industries We Serve" },
+  { id: "viral-framework", label: "Viral Content Framework" },
+  { id: "influencer", label: "TikTok Influencer Marketing" },
+  { id: "tiktok-seo", label: "TikTok SEO" },
   { id: "tiktok-vs-others", label: "TikTok vs Other Platforms" },
   { id: "mistakes", label: "Common Mistakes to Avoid" },
   { id: "pricing", label: "Pricing & Packages" },
@@ -173,6 +179,20 @@ const TikTokMarketing = () => {
         description="Professional TikTok marketing services in Sri Lanka. Viral content creation, TikTok Ads management, influencer marketing & trend optimization. Cost-effective campaigns from LKR 30,000/month."
         canonical="https://cypherdigital.lk/tiktok-marketing-sri-lanka"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          }),
+        }}
+      />
 
       {/* Breadcrumb */}
       <PageBreadcrumb items={[{ label: "TikTok Marketing Sri Lanka" }]} />
@@ -221,6 +241,55 @@ const TikTokMarketing = () => {
             <p className="text-muted-foreground leading-relaxed">
               <strong className="text-foreground">TikTok marketing</strong> involves using short-form video content to promote products and services, build brand awareness, engage audiences, and drive traffic and sales. This includes organic content strategy, paid TikTok advertising (In-Feed Ads, Spark Ads, TopView Ads), influencer collaborations, and trend-based content creation. TikTok's unique algorithm allows businesses in Sri Lanka to reach massive audiences organically — even with zero followers — making it one of the most cost-effective digital marketing platforms available today.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TikTok in Sri Lanka — Numbers */}
+      <section id="sri-lanka-numbers" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok in Sri Lanka — The Numbers That Matter in 2026</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">TikTok is no longer a niche platform for teenage dancers. It is a mainstream marketing channel with a massive, highly engaged Sri Lankan audience.</p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { stat: "5M+", label: "Active TikTok users in Sri Lanka — growing dramatically year-over-year." },
+                { stat: "60–90 min", label: "Average daily time spent per Sri Lankan user — more than any other social app." },
+                { stat: "#1 Gen Z search", label: "TikTok has become the primary search engine for Gen Z in Sri Lanka." },
+                { stat: "30–60% lower CPM", label: "TikTok Ads cost less per impression than Facebook or Instagram in Sri Lanka." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-2xl font-extrabold text-primary mb-2">{item.stat}</div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.label}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-8 max-w-3xl mx-auto leading-relaxed">Short-form vertical video (TikTok, Reels, Shorts) is now the dominant format for digital content consumption in Sri Lanka — and the businesses investing in <strong className="text-foreground">TikTok marketing Sri Lanka</strong> in 2026 are building a significant competitive advantage over those that wait.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* How TikTok's Algorithm Works */}
+      <section id="algorithm" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How TikTok's Algorithm Works — And Why It Favours Small Businesses</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Every TikTok user's home screen is the <strong className="text-foreground">For You Page (FYP)</strong> — a personalised feed of content from accounts they have never seen before. This means your content can reach millions of Sri Lankans with zero ad budget if it is relevant and engaging.</p>
+            <div className="grid md:grid-cols-2 gap-5">
+              {[
+                { title: "Watch Time & Completion Rate", desc: "The most critical signal. Videos watched to completion get pushed wider. The first 1–3 seconds determine everything." },
+                { title: "Engagement Rate", desc: "Likes, comments, shares, and saves signal value. Comments are particularly powerful — they keep viewers on your video longer." },
+                { title: "Shares", desc: "The highest-value engagement action on TikTok. When someone shares your video, distribution accelerates significantly." },
+                { title: "Re-watches", desc: "If users watch your video more than once, TikTok counts this as an exceptional quality signal — perfect for tips, recipes, price lists." },
+                { title: "Audio & Text Matching", desc: "TikTok reads captions, on-screen text, and transcribes spoken audio. Using your target keywords helps TikTok show your content to the right audience." },
+                { title: "Sri Lanka Advantage", desc: "A bakery in Kandy, a workshop in Negombo, or a startup in Colombo can build massive audiences organically — no follower-buying, no big ad spend." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -346,6 +415,32 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* TikTok Ad Formats Explained */}
+      <section id="ad-formats" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok Ad Formats Explained</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Choosing the right TikTok ad format is essential for an efficient advertising strategy. Here are the six formats Sri Lankan businesses use most.</p>
+            <div className="space-y-4">
+              {[
+                { name: "In-Feed Ads", desc: "Short video ads (9–60 sec) appearing natively within the For You Page. Look and feel like organic content. Include a CTA button to website, app, or WhatsApp.", best: "Lead generation, website traffic, app installs, product awareness" },
+                { name: "Spark Ads", desc: "TikTok's most powerful format — promote your existing organic posts (or a creator's) as paid ads while keeping all real likes, comments, and shares. Outperforms traditional ad creative consistently.", best: "Amplifying high-performing organic content & influencer collaborations" },
+                { name: "TopView Ads", desc: "Full-screen, sound-on video ads shown as the first piece of content when a user opens TikTok. Maximum visibility for major brand campaigns.", best: "Large brand campaigns, product launches, national-scale awareness" },
+                { name: "Brand Takeover", desc: "Full-screen ad appearing immediately when the app opens, before the FYP loads. Only one advertiser per day per category — extremely visible.", best: "High-impact, premium brand campaigns" },
+                { name: "Collection Ads", desc: "Showcase multiple products in a single ad with a tappable product gallery. Users can browse and purchase without leaving TikTok.", best: "E-commerce & retail businesses in Sri Lanka selling multiple SKUs" },
+                { name: "TikTok Shopping Ads", desc: "Product tagging directly within videos. Seamless path from content discovery to purchase — all inside TikTok.", best: "Sri Lankan e-commerce brands ready for in-app commerce" },
+              ].map((f, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{f.name}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed mb-2">{f.desc}</p>
+                  <p className="text-xs"><strong className="text-foreground">Best for:</strong> <span className="text-muted-foreground">{f.best}</span></p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
@@ -407,6 +502,66 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* TikTok Marketing Cost Tables */}
+      <section id="cost-tables" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How Much Does TikTok Marketing Cost in Sri Lanka?</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">A realistic breakdown of TikTok Ads CPM, CPC and influencer rates in the current Sri Lankan market.</p>
+
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4">TikTok Advertising Costs (Sri Lanka 2026)</h3>
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full border border-border rounded-xl overflow-hidden">
+                <thead><tr className="bg-card">
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Ad Format</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Estimated Cost</th>
+                </tr></thead>
+                <tbody>
+                  {[
+                    { f: "In-Feed Ads (CPM)", c: "LKR 500 – 2,000 per 1,000 impressions" },
+                    { f: "Spark Ads (CPM)", c: "LKR 400 – 1,500 per 1,000 impressions" },
+                    { f: "TopView Ads", c: "LKR 500,000+ per campaign" },
+                    { f: "In-Feed CPC", c: "LKR 20 – 80 per click" },
+                  ].map((r, i) => (
+                    <tr key={i} className="bg-card">
+                      <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{r.f}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground italic mb-10">Estimates based on current Sri Lankan market conditions. Actual costs vary based on targeting, creative quality and competition. TikTok typically delivers 30–60% lower CPM than Facebook Ads.</p>
+
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4">TikTok Influencer Marketing Costs in Sri Lanka</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border border-border rounded-xl overflow-hidden">
+                <thead><tr className="bg-card">
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Creator Tier</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Followers</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Cost Per Post</th>
+                </tr></thead>
+                <tbody>
+                  {[
+                    { t: "Nano-influencer", f: "1,000 – 10,000", c: "LKR 5,000 – 20,000" },
+                    { t: "Micro-influencer", f: "10,000 – 100,000", c: "LKR 20,000 – 80,000" },
+                    { t: "Mid-tier creator", f: "100,000 – 500,000", c: "LKR 80,000 – 250,000" },
+                    { t: "Macro-influencer", f: "500,000+", c: "LKR 250,000+" },
+                  ].map((r, i) => (
+                    <tr key={i} className="bg-card">
+                      <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{r.t}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.f}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground mt-6 leading-relaxed">Nano and micro-influencers often deliver the highest engagement rates and the most authentic audience connections, making them exceptional value for Sri Lankan SMEs. Cypher Digital's <strong className="text-foreground">TikTok marketing Sri Lanka</strong> packages start at LKR 30,000/month with no lock-in contracts.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Industries We Serve */}
       <section id="industries" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
@@ -431,6 +586,104 @@ const TikTokMarketing = () => {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Viral Content Framework */}
+      <section id="viral-framework" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How to Create Viral TikTok Content — The Proven Framework</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">The exact 5-step framework Cypher Digital uses to consistently produce high-performing TikTok content for Sri Lankan business clients.</p>
+            <div className="space-y-4">
+              {[
+                { n: 1, title: "The Hook (First 1–3 Seconds)", desc: "The single most important element. Use provocative questions (\"Do you know why your business is losing customers on Google?\"), surprising statements (\"I opened a restaurant in Colombo with LKR 200,000…\"), visual intrigue (the finished result first), or trending audio." },
+                { n: 2, title: "The Value Delivery", desc: "Deliver on the promise. Generic promo gets scrolled past. Educators share one genuine study tip. Restaurants show their signature dish being prepared. Hotels reveal the view that makes viewers want to book. Retailers demo a real problem-solving moment." },
+                { n: 3, title: "The Pattern Interrupt", desc: "Every 3–5 seconds, introduce something that prevents scrolling — a visual cut, new info, unexpected development, text overlay, or sound effect. TikTok's editing culture expects rapid pacing." },
+                { n: 4, title: "The Call to Action", desc: "Frame it naturally. \"Follow us for more tips\" beats \"Buy now.\" \"Comment what city you're from\" feeds the algorithm. Reserve direct sales CTAs for Spark Ads and In-Feed Ads." },
+                { n: 5, title: "Optimise for TikTok SEO", desc: "Use target keywords in captions, spoken dialogue, and on-screen text. Add 3–5 relevant hashtags (mix niche-specific + broader). Choose trending audio where it fits naturally — audio popularity is a distribution signal." },
+              ].map((s, i) => (
+                <div key={i} className="flex gap-4 bg-card border border-border rounded-xl p-5">
+                  <div className="w-9 h-9 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold shrink-0">{s.n}</div>
+                  <div>
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Influencer Marketing */}
+      <section id="influencer" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok Influencer Marketing in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">On TikTok, <strong className="text-foreground">engagement rate and content authenticity matter far more than follower count</strong>. A Sri Lankan micro-influencer with 25,000 highly engaged followers typically outperforms a macro-influencer with 500,000 passive ones.</p>
+            <div className="grid md:grid-cols-2 gap-5 mb-10">
+              {[
+                { title: "Niche Alignment", desc: "Does the creator's content naturally fit your product, service, or industry?" },
+                { title: "Audience Demographics", desc: "Does their audience match your target customer profile in Sri Lanka?" },
+                { title: "Engagement Rate", desc: "Are followers actively liking, commenting, and sharing — or just scrolling past?" },
+                { title: "Content Quality", desc: "Is the creator's video quality, pacing, and storytelling appropriate for your brand?" },
+                { title: "Previous Collaborations", desc: "Have they worked with brands in your category before? How did those posts actually perform?" },
+                { title: "Sri Lanka Creator Network", desc: "Cypher Digital maintains relationships with TikTok creators across food, travel, fashion, lifestyle, education, business & entertainment verticals." },
+              ].map((c, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{c.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4 text-center">Types of Influencer Collaborations We Manage</h3>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                "Gifted reviews — product/service in exchange for honest coverage",
+                "Paid posts — compensated dedicated branded content",
+                "Spark Ad permissions — license a creator's post to run as a paid Spark Ad",
+                "Long-term brand ambassador programmes for sustained association",
+                "Branded hashtag challenge campaigns",
+                "Multi-creator coordinated campaigns for product launches",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 bg-card border border-border rounded-xl">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <span className="text-sm text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-6">
+              Want creator-led campaigns? Explore our full <Link to="/influencer-marketing-sri-lanka" className="text-primary font-semibold hover:underline">influencer marketing Sri Lanka</Link> service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TikTok SEO */}
+      <section id="tiktok-seo" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok SEO — How to Get Found Without Paying for Ads</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">TikTok SEO is one of the most overlooked, highest-opportunity strategies for Sri Lankan businesses in 2026. As more Sri Lankans — particularly Gen Z — use TikTok as their first search destination, appearing in TikTok search results drives massive organic traffic.</p>
+            <div className="space-y-4">
+              {[
+                { title: "Keywords in Video Captions", desc: "Write captions that naturally include the terms your customers would search. A restaurant in Colombo should include \"best restaurant Colombo,\" \"food Sri Lanka,\" and related terms in their captions." },
+                { title: "Speak Your Keywords Aloud", desc: "TikTok's auto-caption technology transcribes spoken dialogue. Speaking target keywords in the video itself signals relevance to the search algorithm." },
+                { title: "On-Screen Text Overlays", desc: "Text displayed on screen is read by TikTok's algorithm and counted as a ranking signal. Include core keywords in on-screen text." },
+                { title: "Optimise Your Profile Bio", desc: "Your TikTok bio is indexed by platform search. Include your main service and location — e.g. \"TikTok Marketing Agency | Colombo, Sri Lanka.\"" },
+                { title: "Strategic Hashtag Mix", desc: "Use 3–5 targeted hashtags — mixing high-volume category hashtags with specific niche hashtags — to help TikTok categorise and surface your content in relevant searches." },
+              ].map((s, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{s.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-8 leading-relaxed">
+              Pair this with our <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services Sri Lanka</Link> for unified discoverability across Google and TikTok.
+            </p>
           </div>
         </div>
       </section>
