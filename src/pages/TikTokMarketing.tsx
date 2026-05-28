@@ -415,6 +415,32 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* TikTok Ad Formats Explained */}
+      <section id="ad-formats" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok Ad Formats Explained</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Choosing the right TikTok ad format is essential for an efficient advertising strategy. Here are the six formats Sri Lankan businesses use most.</p>
+            <div className="space-y-4">
+              {[
+                { name: "In-Feed Ads", desc: "Short video ads (9–60 sec) appearing natively within the For You Page. Look and feel like organic content. Include a CTA button to website, app, or WhatsApp.", best: "Lead generation, website traffic, app installs, product awareness" },
+                { name: "Spark Ads", desc: "TikTok's most powerful format — promote your existing organic posts (or a creator's) as paid ads while keeping all real likes, comments, and shares. Outperforms traditional ad creative consistently.", best: "Amplifying high-performing organic content & influencer collaborations" },
+                { name: "TopView Ads", desc: "Full-screen, sound-on video ads shown as the first piece of content when a user opens TikTok. Maximum visibility for major brand campaigns.", best: "Large brand campaigns, product launches, national-scale awareness" },
+                { name: "Brand Takeover", desc: "Full-screen ad appearing immediately when the app opens, before the FYP loads. Only one advertiser per day per category — extremely visible.", best: "High-impact, premium brand campaigns" },
+                { name: "Collection Ads", desc: "Showcase multiple products in a single ad with a tappable product gallery. Users can browse and purchase without leaving TikTok.", best: "E-commerce & retail businesses in Sri Lanka selling multiple SKUs" },
+                { name: "TikTok Shopping Ads", desc: "Product tagging directly within videos. Seamless path from content discovery to purchase — all inside TikTok.", best: "Sri Lankan e-commerce brands ready for in-app commerce" },
+              ].map((f, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{f.name}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed mb-2">{f.desc}</p>
+                  <p className="text-xs"><strong className="text-foreground">Best for:</strong> <span className="text-muted-foreground">{f.best}</span></p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
