@@ -177,6 +177,20 @@ const GoogleAds = () => {
         description="Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs."
         canonical="https://cypherdigital.lk/google-ads-sri-lanka"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          }),
+        }}
+      />
 
       {/* Breadcrumb */}
       <nav className="bg-secondary border-b border-border" aria-label="Breadcrumb">
