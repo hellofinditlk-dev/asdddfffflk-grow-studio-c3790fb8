@@ -39,7 +39,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most in-demand graphic designer jobs in Sri Lanka right now — design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 50000, max: 140000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 60000, max: 100000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Graphic Designer in Sri Lanka to join our Colombo creative studio. If you're searching for graphic designer jobs in Sri Lanka — or graphic design jobs in Sri Lanka in general — with real brands, real budgets and real creative freedom, this is one of the best graphic design vacancies in Colombo right now.",
       "As our in-house Graphic Designer in Sri Lanka, you'll design social media creatives, ad visuals, brand identities, packaging and marketing collateral for 800+ Sri Lankan brands across Colombo, Kandy, Galle, Negombo and beyond. Your work goes live on paid Meta and Google Ads campaigns — not stuck in a folder.",
@@ -78,7 +78,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Graphic Designer in Sri Lanka?",
-        a: "Graphic designer salaries in Sri Lanka typically range between LKR 50,000 and LKR 140,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength. Cypher Digital pays at the top end of the market.",
+        a: "Graphic designer salaries in Sri Lanka typically range between LKR 60,000 and LKR 100,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength.",
       },
       {
         q: "Where is the graphic design job located?",
@@ -196,7 +196,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most in-demand Video Editor jobs in Sri Lanka right now — edit scroll-stopping reels, TikToks, YouTube ads and brand films for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 60000, max: 150000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 60000, max: 100000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Video Editor in Sri Lanka to join our Colombo creative studio. If you're searching for video editor jobs in Sri Lanka with real brands, real budgets, and creative freedom — this is one of the best video editing vacancies in Colombo right now.",
       "As our in-house Video Editor in Sri Lanka, you'll cut high-performing short-form video content for Facebook, Instagram Reels, TikTok, YouTube Shorts and YouTube Ads — the same creatives that drive paid campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond.",
@@ -237,7 +237,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Video Editor in Sri Lanka?",
-        a: "Video Editor salaries in Sri Lanka typically range between LKR 60,000 and LKR 150,000 per month depending on experience, software skills (Premiere Pro, After Effects, DaVinci Resolve) and portfolio strength. Cypher Digital pays competitively at the top end of the market.",
+        a: "Video Editor salaries in Sri Lanka typically range between LKR 60,000 and LKR 100,000 per month depending on experience, software skills (Premiere Pro, After Effects, DaVinci Resolve) and portfolio strength.",
       },
       {
         q: "Where is the video editor job located?",
