@@ -24,51 +24,51 @@ agencies. The reason? Social media management has become too complex,
 too time-consuming, and too important to treat as an afterthought.
 Here’s why Sri Lankan SMEs are making the switch to outsourced social
 media management — and why it is working.</em></p>
-<p><strong>Reason 1: Social Media Requires Full-Time
-Attention</strong></p>
+<h2>Reason 1: Social Media Requires Full-Time
+Attention</h2>
 <p>In 2026, effective social media management is not a 30-minute daily
 task. It involves content planning, professional photography and
 videography, graphic design, copywriting in multiple languages,
 community management, advertising, analytics, and strategy. Most SME
 owners and their staff simply do not have the time or expertise to do
 this properly while running their core business.</p>
-<p><strong>Reason 2: The Algorithm Doesn’t Forgive
-Inconsistency</strong></p>
+<h2>Reason 2: The Algorithm Doesn’t Forgive
+Inconsistency</h2>
 <p>Every major social media platform rewards consistent, high-quality
 posting. Accounts that post sporadically or drop off for weeks at a time
 see their reach collapse. Professional agencies maintain content
 calendars, posting schedules, and quality standards that in-house teams
 rarely sustain through busy business periods.</p>
-<p><strong>Reason 3: Professional Content Outperforms DIY</strong></p>
+<h2>Reason 3: Professional Content Outperforms DIY</h2>
 <p>Smartphone photos and basic Canva graphics worked in 2019. In 2026,
 Sri Lankan consumers are accustomed to polished, professional social
 media content. Brands that continue with low-quality visuals are
 actively undermining their credibility. Professional agencies bring
 graphic designers, videographers, and copywriters who produce content
 that builds brand equity with every post.</p>
-<p><strong>Reason 4: Data-Driven Strategy Delivers Real ROI</strong></p>
+<h2>Reason 4: Data-Driven Strategy Delivers Real ROI</h2>
 <p>Most DIY social media efforts are driven by gut feel rather than
 data. Professional agencies track performance meticulously — what
 content drives the most reach, what posting times perform best for your
 specific audience, which topics generate the most engagement. This
 data-driven approach continuously improves results over time in a way
 that informal management cannot.</p>
-<p><strong>Reason 5: Cost-Effectiveness vs In-House Team</strong></p>
+<h2>Reason 5: Cost-Effectiveness vs In-House Team</h2>
 <p>Hiring a full-time social media manager in Sri Lanka costs LKR
 80,000–150,000 per month in salary alone — before equipment, software,
 and training costs. A professional social media agency provides a full
 team (strategist, designer, copywriter, analyst) at a comparable or
 lower total cost, with higher output quality and no HR overhead.</p>
-<p><strong>Reason 6: Access to the Latest Platform Features and
-Trends</strong></p>
+<h2>Reason 6: Access to the Latest Platform Features and
+Trends</h2>
 <p>Social media platforms update their algorithms and features
 constantly. Agencies whose entire business depends on staying ahead of
 these changes invest heavily in training, industry research, and
 platform partnerships. Your in-house team, however talented, rarely has
 the bandwidth to stay current with platform changes across Facebook,
 Instagram, TikTok, LinkedIn, and YouTube simultaneously.</p>
-<p><strong>What to Look for in a Social Media Management Agency in Sri
-Lanka</strong></p>
+<h2>What to Look for in a Social Media Management Agency in Sri
+Lanka</h2>
 <ul>
 <li><p>Proven track record with Sri Lankan brands (ask for case
 studies)</p></li>
@@ -79,7 +79,7 @@ approaches</p></li>
 <li><p>Creative team that includes designers, videographers, and
 copywriters</p></li>
 </ul>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Outsourcing social media management is no longer just for large
 corporations. It is becoming the preferred approach for ambitious Sri
 Lankan SMEs that understand the value of professional brand-building and

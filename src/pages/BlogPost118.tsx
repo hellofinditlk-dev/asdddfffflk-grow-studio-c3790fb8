@@ -22,57 +22,57 @@ worked in 2023 no longer guarantees results in 2026. Platforms are
 changing, audiences are maturing, and competition is intensifying.
 Understanding the latest trends is essential for any Sri Lankan business
 that wants to stay ahead in social media marketing this year.</em></p>
-<p><strong>Trend 1: Short-Form Video Dominates All
-Platforms</strong></p>
+<h2>Trend 1: Short-Form Video Dominates All
+Platforms</h2>
 <p>Instagram Reels, TikTok, and YouTube Shorts now generate
 significantly more organic reach than static images or text posts. Sri
 Lankan brands that invested in short-form video content in 2025 saw
 follower growth rates 3–5x higher than those relying on traditional
 posts. In 2026, video is not optional — it is the default format for
 social media success.</p>
-<p><strong>Trend 2: Sinhala and Tamil Content is Outperforming
-English</strong></p>
+<h2>Trend 2: Sinhala and Tamil Content is Outperforming
+English</h2>
 <p>As smartphone penetration deepens beyond Colombo’s urban elite, the
 majority of Sri Lanka’s social media users now primarily consume content
 in Sinhala or Tamil. Brands creating native-language content are seeing
 dramatically higher engagement rates, more comments, and stronger
 community building compared to English-only approaches.</p>
-<p><strong>Trend 3: Creator Partnerships Over
-Mega-Influencers</strong></p>
+<h2>Trend 3: Creator Partnerships Over
+Mega-Influencers</h2>
 <p>The era of mega-influencer deals (100K+ followers) is giving way to
 micro-creator partnerships. Sri Lankan creators with 5,000–50,000
 followers in specific niches — food, fitness, beauty, gaming, parenting
 — deliver better engagement rates and more authentic recommendations
 than celebrity endorsers. Brands are building networks of 5–20
 micro-creators for ongoing content partnerships.</p>
-<p><strong>Trend 4: Social Commerce is Taking Off</strong></p>
+<h2>Trend 4: Social Commerce is Taking Off</h2>
 <p>Instagram Shopping, TikTok Shop, and Facebook Marketplace are
 transforming social media into a direct sales channel. Sri Lankan
 businesses that enable in-app purchasing are reducing friction and
 converting impulse buyers more effectively. Expect social commerce to
 grow significantly through 2026 as platform features mature and Sri
 Lankan consumers grow more comfortable with in-app payments.</p>
-<p><strong>Trend 5: Community Building Over Broadcasting</strong></p>
+<h2>Trend 5: Community Building Over Broadcasting</h2>
 <p>The most successful Sri Lankan brands on social media in 2026 are
 treating their social presence as a community rather than a broadcasting
 channel. Regular live sessions, polls, Q&amp;As, user-generated content
 campaigns, and genuine conversations in comments are replacing one-way
 content publishing. Brands that make their followers feel heard grow
 significantly faster.</p>
-<p><strong>Trend 6: Data-Driven Content Strategy</strong></p>
+<h2>Trend 6: Data-Driven Content Strategy</h2>
 <p>Guessing what to post is no longer acceptable. Top-performing Sri
 Lankan brands analyse their content performance weekly — tracking reach,
 engagement rate, profile visits, and follower growth by content type.
 This data informs not just what to post, but when to post, how long
 videos should be, and which topics resonate with their specific
 audience.</p>
-<p><strong>Trend 7: LinkedIn for B2B Growth</strong></p>
+<h2>Trend 7: LinkedIn for B2B Growth</h2>
 <p>While LinkedIn has always been in the mix, 2026 has seen a marked
 increase in Sri Lankan B2B brands investing seriously in LinkedIn.
 Company pages are being revamped, founder content strategies are being
 developed, and LinkedIn advertising is being included in mainstream
 marketing budgets for the first time at many local firms.</p>
-<p><strong>What This Means for Your Business</strong></p>
+<h2>What This Means for Your Business</h2>
 <p>Staying ahead of social media trends requires dedicated expertise,
 creative agility, and consistent execution. For most Sri Lankan
 businesses, the most cost-effective path to social media success is

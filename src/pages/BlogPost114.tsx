@@ -23,22 +23,22 @@ Lankan professionals on the platform, LinkedIn gives you direct access
 to decision makers, procurement heads, and business owners who are
 actively seeking solutions. Here’s exactly how to turn LinkedIn into a
 B2B lead machine for your Sri Lankan business.</em></p>
-<p><strong>Step 1: Optimise Your Company Page</strong></p>
+<h2>Step 1: Optimise Your Company Page</h2>
 <p>Your LinkedIn company page is your digital business card. It must
 communicate exactly what you do, who you serve, and why you are the best
 choice. Use a professional logo, write a compelling about section with
 relevant keywords (including ‘Sri Lanka’ for local SEO signals), and
 keep your service offerings up to date. Add your website link — every
 visitor should know where to go next.</p>
-<p><strong>Step 2: Build Your Personal Brand as the Founder or
-Expert</strong></p>
+<h2>Step 2: Build Your Personal Brand as the Founder or
+Expert</h2>
 <p>In Sri Lanka’s B2B market, people buy from people. The personal
 profile of the founder or senior team members often gets more traction
 than the company page. Post regularly about your industry, share client
 success stories, comment on industry news, and position yourself as a
 thought leader. This builds trust before a conversation even begins.</p>
-<p><strong>Step 3: Create Content That Attracts Decision
-Makers</strong></p>
+<h2>Step 3: Create Content That Attracts Decision
+Makers</h2>
 <ul>
 <li><p>Case studies showing real results for Sri Lankan clients</p></li>
 <li><p>Industry insights and market data relevant to your target
@@ -47,29 +47,29 @@ audience</p></li>
 <li><p>Video content showcasing your team and culture</p></li>
 <li><p>Client testimonials and success stories</p></li>
 </ul>
-<p><strong>Step 4: Use LinkedIn Sales Navigator or InMail</strong></p>
+<h2>Step 4: Use LinkedIn Sales Navigator or InMail</h2>
 <p>LinkedIn’s premium tools allow you to identify and directly contact
 decision makers without needing a connection. With Sales Navigator, you
 can filter by company size, industry, job title, and geography — making
 it possible to create a hyper-targeted outreach list of Sri Lankan B2B
 prospects. A personalised InMail message achieves 3–4x higher response
 rates than cold emails.</p>
-<p><strong>Step 5: Run LinkedIn Lead Generation Ad
-Campaigns</strong></p>
+<h2>Step 5: Run LinkedIn Lead Generation Ad
+Campaigns</h2>
 <p>LinkedIn’s native lead gen forms allow prospects to submit their
 contact details without leaving the platform — dramatically reducing
 friction. Target by job title (CEO, Marketing Manager, Procurement
 Director), company size, and industry. While LinkedIn ads cost more than
 Facebook, the quality of B2B leads is significantly higher and
 conversion rates from LinkedIn leads tend to be stronger.</p>
-<p><strong>Step 6: Follow Up Consistently</strong></p>
+<h2>Step 6: Follow Up Consistently</h2>
 <p>Lead generation only works if you follow up. Create a simple CRM
 workflow to track every LinkedIn lead, send personalised follow-up
 messages, and nurture prospects over time. Most B2B deals in Sri Lanka
 require multiple touchpoints before a decision is made — patience and
 consistency win.</p>
-<p><strong>Common LinkedIn Mistakes Sri Lankan Businesses
-Make</strong></p>
+<h2>Common LinkedIn Mistakes Sri Lankan Businesses
+Make</h2>
 <ul>
 <li><p>Posting only promotional content with no educational
 value</p></li>
@@ -80,7 +80,7 @@ leads</p></li>
 <li><p>Treating LinkedIn as a job board rather than a business
 development tool</p></li>
 </ul>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>LinkedIn is the most powerful B2B marketing platform available to Sri
 Lankan businesses today. With the right strategy — optimised profiles,
 consistent thought leadership content, and targeted advertising — you

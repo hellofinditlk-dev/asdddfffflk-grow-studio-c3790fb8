@@ -25,41 +25,41 @@ increasingly selective. In this case study, we walk through the
 strategy, content approach, and tactics that Cypher Digital used to help
 a Sri Lankan lifestyle brand reach this milestone and what it meant for
 their business.</em></p>
-<p><strong>The Challenge</strong></p>
+<h2>The Challenge</h2>
 <p>Our client — a Colombo-based lifestyle and wellness brand — had an
 Instagram presence with fewer than 800 followers and minimal engagement.
 Their content was inconsistent, English-only, and lacked a clear visual
 identity. Despite having excellent products and strong offline
 word-of-mouth, their social media was failing to convert interest into
 followers or sales.</p>
-<p><strong>Our Strategy: The 4 Pillars of Instagram Growth</strong></p>
-<p><strong>Pillar 1: Brand Identity and Visual Consistency</strong></p>
+<h2>Our Strategy: The 4 Pillars of Instagram Growth</h2>
+<h2>Pillar 1: Brand Identity and Visual Consistency</h2>
 <p>The first step was establishing a clear visual identity — a
 consistent colour palette, typography, and photography style that would
 make the brand instantly recognisable in a crowded feed. We developed
 brand guidelines and a content design system that every piece of content
 would follow, creating a professional and cohesive grid aesthetic.</p>
-<p><strong>Pillar 2: Bilingual Content Strategy</strong></p>
+<h2>Pillar 2: Bilingual Content Strategy</h2>
 <p>We introduced Sinhala captions alongside English content, immediately
 expanding the brand’s organic reach to a much broader Sri Lankan
 audience. Posts with Sinhala copy consistently outperformed English-only
 content by 40–60% in reach and engagement — validating the importance of
 native language content in the Sri Lankan market.</p>
-<p><strong>Pillar 3: Reels-First Video Approach</strong></p>
+<h2>Pillar 3: Reels-First Video Approach</h2>
 <p>We shifted the content mix from primarily static images to a
 Reels-first approach, producing 4–6 short-form videos per month. These
 Reels were optimised with trending audio, local relevance, and strong
 hooks in the first 2 seconds. Instagram’s algorithm rewarded this with
 significantly higher distribution to non-followers, driving the majority
 of new follower growth.</p>
-<p><strong>Pillar 4: Strategic Micro-Influencer
-Partnerships</strong></p>
+<h2>Pillar 4: Strategic Micro-Influencer
+Partnerships</h2>
 <p>We identified 8 Sri Lankan micro-creators in the lifestyle, wellness,
 and food niches with highly engaged audiences of 5,000–30,000. These
 partnerships delivered authentic content that reached new audience
 segments and drove several hundred new followers per partnership at a
 fraction of the cost of traditional advertising.</p>
-<p><strong>The Results</strong></p>
+<h2>The Results</h2>
 <ul>
 <li><p>Followers grew from 800 to 10,400 in 9 months</p></li>
 <li><p>Average engagement rate increased from 0.8% to 4.6%</p></li>
@@ -68,7 +68,7 @@ fraction of the cost of traditional advertising.</p>
 <li><p>Multiple influencer partnerships converted into brand ambassador
 agreements</p></li>
 </ul>
-<p><strong>Key Lessons for Sri Lankan Brands</strong></p>
+<h2>Key Lessons for Sri Lankan Brands</h2>
 <p>This case study demonstrates that Instagram growth in Sri Lanka
 requires a combination of consistent professional content, native
 language strategy, video prioritisation, and community partnerships.

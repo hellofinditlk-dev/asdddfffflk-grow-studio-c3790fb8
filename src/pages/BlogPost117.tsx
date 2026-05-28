@@ -23,26 +23,26 @@ it puts your business at the top of Google search results exactly when
 potential customers are looking for your products or services. This
 step-by-step guide walks you through everything you need to know to
 launch your first Google Ads campaign in Sri Lanka in 2026.</em></p>
-<p><strong>Step 1: Create Your Google Ads Account</strong></p>
+<h2>Step 1: Create Your Google Ads Account</h2>
 <p>Visit ads.google.com and sign in with your Google account (or create
 one). Choose your billing country as Sri Lanka and set your currency to
 LKR (Sri Lankan Rupee) or USD depending on your preference. Google Ads
 bills in the currency you select, so choose carefully. Your billing can
 be set up using a credit card, debit card, or bank transfer.</p>
-<p><strong>Step 2: Define Your Campaign Goal</strong></p>
+<h2>Step 2: Define Your Campaign Goal</h2>
 <p>Google Ads asks you to select a campaign goal first. For most Sri
 Lankan businesses, the most relevant goals are Sales (for e-commerce),
 Leads (for service businesses), and Website Traffic (for awareness).
 Choose the goal that matches what you actually want — this shapes the
 bidding strategy and ad formats Google recommends.</p>
-<p><strong>Step 3: Choose Your Campaign Type</strong></p>
+<h2>Step 3: Choose Your Campaign Type</h2>
 <p>For beginners, Google Search campaigns are the best starting point.
 Your ads appear as text at the top of Google search results when people
 search for your keywords. Other types include Display (banner ads on
 websites), Shopping (for e-commerce product listings), and YouTube
 (video ads). Start with Search and expand as you gain experience.</p>
-<p><strong>Step 4: Keyword Research for Sri Lankan
-Audiences</strong></p>
+<h2>Step 4: Keyword Research for Sri Lankan
+Audiences</h2>
 <p>Keywords are the phrases people type into Google that trigger your
 ads. Use Google Keyword Planner (free within Google Ads) to find
 relevant keywords with Sri Lanka search volume data. Focus on keywords
@@ -58,27 +58,27 @@ first phrase shows the searcher wants to hire someone.</p>
 <li><p>Start with 10–20 highly targeted keywords rather than 100 broad
 ones</p></li>
 </ul>
-<p><strong>Step 5: Write Compelling Ad Copy</strong></p>
+<h2>Step 5: Write Compelling Ad Copy</h2>
 <p>Each Google Search ad includes a headline (up to 15 options, Google
 tests combinations), a display URL, and a description. Your headline
 must include your main keyword, a clear benefit, and a strong call to
 action. Sri Lankan business ads perform best when they include specific
 local references (e.g. ‘Serving Colombo Businesses Since 2018’) and
 clear differentiators.</p>
-<p><strong>Step 6: Set Your Budget and Bidding Strategy</strong></p>
+<h2>Step 6: Set Your Budget and Bidding Strategy</h2>
 <p>Start with a daily budget of LKR 1,500–5,000 to gather initial data.
 Google’s Smart Bidding strategies (Target CPA or Maximize Conversions)
 work best once you have at least 30–50 conversions tracked. For new
 accounts, use Maximize Clicks to start and gather data before switching
 to conversion-focused bidding.</p>
-<p><strong>Step 7: Set Up Conversion Tracking</strong></p>
+<h2>Step 7: Set Up Conversion Tracking</h2>
 <p>This is the most critical step that most Sri Lankan businesses skip.
 Conversion tracking tells Google what counts as a success — a form
 submission, a phone call, a purchase. Without it, your campaign cannot
 optimize properly. Install the Google Ads conversion tracking tag on
 your website’s thank-you page or use Google Tag Manager for easier
 implementation.</p>
-<p><strong>Common Google Ads Mistakes to Avoid</strong></p>
+<h2>Common Google Ads Mistakes to Avoid</h2>
 <ul>
 <li><p>Not setting up conversion tracking from day one</p></li>
 <li><p>Using only broad match keywords (burns budget fast)</p></li>
@@ -88,7 +88,7 @@ landing page</p></li>
 <li><p>Setting and forgetting — Google Ads requires weekly
 optimisation</p></li>
 </ul>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Setting up Google Ads for a Sri Lankan business is straightforward if
 you follow the right process. However, truly optimising a campaign for
 maximum ROI requires expertise, continuous testing, and strategic

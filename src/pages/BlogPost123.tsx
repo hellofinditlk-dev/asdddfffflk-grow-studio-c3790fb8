@@ -24,14 +24,14 @@ important yet least understood functions in advertising. This guide
 explains exactly what media buying is, how it works in the Sri Lankan
 context, and why getting it right can make or break your advertising
 campaign.</em></p>
-<p><strong>What is Media Buying?</strong></p>
+<h2>What is Media Buying?</h2>
 <p>Media buying is the process of purchasing advertising space and time
 across different media channels — television, radio, digital platforms,
 print publications, outdoor billboards, and more. A media buyer
 negotiates prices, selects placements, and manages the logistics of
 getting your brand’s message in front of the right audience at the right
 time and at the most cost-effective price.</p>
-<p><strong>Media Buying vs Media Planning</strong></p>
+<h2>Media Buying vs Media Planning</h2>
 <p>These two functions are closely related but distinct. Media planning
 is the strategic phase — determining which channels to use, how to
 allocate budget, and what schedule to follow based on your target
@@ -39,48 +39,48 @@ audience and campaign goals. Media buying is the execution phase —
 actually negotiating and purchasing the placements identified in the
 plan. Both require expertise; the best results come when planning and
 buying are coordinated seamlessly.</p>
-<p><strong>How Media Buying Works in Sri Lanka</strong></p>
-<p><strong>Traditional Media Buying</strong></p>
+<h2>How Media Buying Works in Sri Lanka</h2>
+<h2>Traditional Media Buying</h2>
 <p>For television, radio, and print, media buyers in Sri Lanka negotiate
 directly with local broadcasters and publishers. This involves
 understanding audience ratings data, negotiating rates (often
 significantly below rate card prices for agencies with volume), securing
 preferred time slots or placements, and managing the scheduling and
 traffic (getting your ad materials to the media owner on time).</p>
-<p><strong>Digital Media Buying</strong></p>
+<h2>Digital Media Buying</h2>
 <p>Digital media buying in Sri Lanka operates on programmatic platforms,
 social media ad managers, and direct publisher deals. Programmatic
 buying uses automated technology to purchase digital ad impressions in
 real time, targeting specific audiences across thousands of websites
 simultaneously. Social media buying on Facebook, Instagram, TikTok, and
 YouTube is managed through each platform’s native ad manager.</p>
-<p><strong>Why Professional Media Buying Matters</strong></p>
-<p><strong>Better Rates</strong></p>
+<h2>Why Professional Media Buying Matters</h2>
+<h2>Better Rates</h2>
 <p>Media agencies in Sri Lanka have established relationships with local
 broadcasters, publishers, and digital platforms. These relationships,
 combined with the buying volumes agencies represent, allow them to
 negotiate significantly better rates than individual advertisers can
 achieve on their own. Savings of 15–40% off rate card pricing are common
 for established media buyers.</p>
-<p><strong>Audience Intelligence</strong></p>
+<h2>Audience Intelligence</h2>
 <p>Professional media buyers have access to audience research data —
 viewership ratings, readership surveys, digital audience insights — that
 most businesses cannot access independently. This data informs smarter
 channel selection and scheduling decisions that maximise reach to your
 target audience and minimise wasted impressions.</p>
-<p><strong>Campaign Management</strong></p>
+<h2>Campaign Management</h2>
 <p>Managing an advertising campaign across multiple channels
 simultaneously — television, digital, outdoor, and radio — requires
 significant operational expertise. Missed deadlines, wrong materials,
 scheduling errors, and poor coordination can waste significant budget.
 Professional media buyers manage these logistics meticulously.</p>
-<p><strong>Who Needs Media Buying Services in Sri Lanka?</strong></p>
+<h2>Who Needs Media Buying Services in Sri Lanka?</h2>
 <p>Any business running advertising across multiple channels benefits
 from professional media buying. It is particularly valuable for brands
 running national campaigns across TV, digital, and outdoor
 simultaneously, where the complexity and budget at stake justify
 specialist expertise.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Media buying is a specialised discipline that can dramatically
 improve the efficiency and effectiveness of your advertising spend in
 Sri Lanka. Working with experienced media buyers gives you access to

@@ -23,7 +23,7 @@ the question is no longer whether to advertise — it’s where to put your
 money. In this article, we compare TV advertising and digital
 advertising head-to-head to help you decide which delivers better ROI
 for your business.</em></p>
-<p><strong>The Case for <a href="/tv-advertising-sri-lanka" class="text-primary font-semibold hover:underline">TV advertising in Sri Lanka</a></strong></p>
+<h2>The Case for <a href="/tv-advertising-sri-lanka" class="text-primary font-semibold hover:underline">TV advertising in Sri Lanka</a></h2>
 <p>Television still commands massive reach in Sri Lanka. Popular Sinhala
 and Tamil channels draw millions of daily viewers, making TV the go-to
 choice for consumer brands targeting a mass audience. A well-placed
@@ -36,7 +36,7 @@ that no digital ad can match in sheer simultaneous reach.</p>
 <li><p>Ideal for FMCG, banking, and telecom brands</p></li>
 <li><p>Complementary to digital for retargeting</p></li>
 </ul>
-<p><strong>The Case for Digital Advertising in Sri Lanka</strong></p>
+<h2>The Case for Digital Advertising in Sri Lanka</h2>
 <p>Digital advertising has transformed how Sri Lankan brands connect
 with their customers. Platforms like Facebook, Instagram, Google, and
 TikTok allow you to target specific demographics, interests, and
@@ -49,32 +49,32 @@ measurable — every click, view, and conversion is tracked.</p>
 <li><p>Multiple formats: video, carousel, search, stories</p></li>
 <li><p>Retargeting: re-engage people who visited your website</p></li>
 </ul>
-<p><strong>ROI Comparison: TV vs Digital</strong></p>
-<p><strong>Cost Per Thousand Impressions (CPM)</strong></p>
+<h2>ROI Comparison: TV vs Digital</h2>
+<h2>Cost Per Thousand Impressions (CPM)</h2>
 <p>TV CPM in Sri Lanka typically ranges from LKR 500–2,000 depending on
 the channel and time slot. Digital CPM on Facebook and Instagram ranges
 from LKR 150–600, making digital significantly cheaper for raw reach.
 Google Search ads operate on cost-per-click (CPC) rather than
 impressions, making them extremely efficient for purchase-intent
 audiences.</p>
-<p><strong>Measurability</strong></p>
+<h2>Measurability</h2>
 <p>Digital wins this category completely. Every digital campaign
 generates data — impressions, clicks, cost per lead, cost per sale. TV
 provides viewership ratings but cannot tell you how many sales it
 directly generated. Digital attribution tools let you trace the exact
 customer journey from ad to purchase.</p>
-<p><strong>Speed and Flexibility</strong></p>
+<h2>Speed and Flexibility</h2>
 <p>A digital campaign can be launched in 24 hours and adjusted in real
 time. TV campaigns require weeks of production and planning, and once
 aired, cannot be changed. Digital’s agility is a major advantage for
 seasonal promotions and reactive marketing.</p>
-<p><strong>Which Should You Choose?</strong></p>
+<h2>Which Should You Choose?</h2>
 <p>The smartest approach for most Sri Lankan brands is a hybrid
 strategy. Use TV to build broad brand awareness and trust, then use
 digital to retarget those viewers with specific offers and drive them to
 action. This combination delivers the best of both worlds — mass reach
 from TV and precision conversion from digital.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Both TV and digital advertising have their place in the Sri Lankan
 market. The right choice depends on your brand, audience, budget, and
 goals. A professional advertising agency can help you build an

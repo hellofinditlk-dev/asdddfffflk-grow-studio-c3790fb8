@@ -22,60 +22,60 @@ understanding the unique characteristics of the local market, the
 available media channels, and the strategies that resonate with Sri
 Lankan consumers. This complete guide covers every major advertising
 channel and how to use each one effectively in 2026.</em></p>
-<p><strong>Step 1: Define Your Advertising Goals</strong></p>
+<h2>Step 1: Define Your Advertising Goals</h2>
 <p>Before choosing any channel, define what you want your advertising to
 achieve. Common goals include brand awareness, lead generation, website
 traffic, app downloads, or direct sales. Each goal requires a different
 channel mix and measurement framework.</p>
-<p><strong>Step 2: Know Your Audience</strong></p>
+<h2>Step 2: Know Your Audience</h2>
 <p>Sri Lanka has a diverse consumer base. Language (Sinhala, Tamil,
 English), location (urban vs rural), age, income level, and digital
 literacy all shape which advertising channels will work best for you.
 Colombo-based professionals behave very differently from regional
 audiences in Kandy, Galle, or Jaffna.</p>
-<p><strong>Step 3: Choose Your Advertising Channels</strong></p>
-<p><strong>Digital Advertising</strong></p>
+<h2>Step 3: Choose Your Advertising Channels</h2>
+<h2>Digital Advertising</h2>
 <p>Google Ads, Facebook, Instagram, TikTok, and YouTube are the primary
 digital channels. Google Search captures high-intent customers who are
 actively searching for your product. Social media channels are better
 for awareness and retargeting. Digital <a href="/advertising-in-sri-lanka" class="text-primary font-semibold hover:underline">advertising in Sri Lanka</a> offers
 the best measurability and the most flexible budgets.</p>
-<p><strong>Television Advertising</strong></p>
+<h2>Television Advertising</h2>
 <p>Best for mass-market brands needing broad reach. Choose channels
 based on your target demographic. Rupavahini and ITN target older, rural
 audiences; Siyatha and Sirasa have strong urban and youth
 viewership.</p>
-<p><strong>Radio Advertising</strong></p>
+<h2>Radio Advertising</h2>
 <p>Radio is highly effective during commute hours. Stations like Y FM,
 Shaa FM, and TNL Radio command loyal audiences. Radio is ideal for price
 promotions and event announcements with immediate call-to-action.</p>
-<p><strong>Outdoor Advertising</strong></p>
+<h2>Outdoor Advertising</h2>
 <p>Billboards, bus shelters, and transit advertising create strong brand
 visibility in Colombo and other major cities. Best used for brand
 reinforcement alongside digital campaigns.</p>
-<p><strong>Print Advertising</strong></p>
+<h2>Print Advertising</h2>
 <p>Daily Mirror, Sunday Times, and Lankadeepa offer print advertising
 for brands targeting older, more traditional consumers. Print works well
 for real estate, education, and financial services.</p>
-<p><strong>Step 4: Create Your Creative Strategy</strong></p>
+<h2>Step 4: Create Your Creative Strategy</h2>
 <p>Sri Lankan consumers respond strongly to culturally relevant content.
 Use local languages, local humour, and local contexts. Avoid direct
 translations of global campaigns — localise the message. High-quality
 visuals and emotionally engaging storytelling drive the best
 results.</p>
-<p><strong>Step 5: Set Your Budget and Media Plan</strong></p>
+<h2>Step 5: Set Your Budget and Media Plan</h2>
 <p>Media buying — the process of purchasing advertising space at the
 best price — is a specialised skill that can significantly affect your
 campaign ROI. Professional media buyers have relationships with
 publishers and platforms that give them access to better rates and
 premium placements.</p>
-<p><strong>Step 6: Measure and Optimise</strong></p>
+<h2>Step 6: Measure and Optimise</h2>
 <p>Every campaign should have clear KPIs set before launch. For digital,
 track impressions, clicks, conversions, and cost per result. For
 traditional media, use brand lift studies and sales correlation
 analysis. Regular reporting and optimization are essential for
 maximising your advertising investment.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Successful <a href="/advertising-in-sri-lanka" class="text-primary font-semibold hover:underline">advertising in Sri Lanka</a> is about matching the right
 message to the right audience through the right channel. An integrated
 multi-channel approach, managed by a professional agency with deep local

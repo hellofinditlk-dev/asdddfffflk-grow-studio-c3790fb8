@@ -23,7 +23,7 @@ partner accelerates your brand growth, generates qualified leads, and
 delivers measurable ROI. The wrong one wastes your budget and your time.
 This checklist will help you evaluate any digital agency in Sri Lanka
 and make a confident, informed decision.</em></p>
-<p><strong>Step 1: Define What You Need Before You Search</strong></p>
+<h2>Step 1: Define What You Need Before You Search</h2>
 <p>Before approaching any agency, define your goals with as much
 specificity as possible. Are you looking for more website traffic? More
 leads? Better social media presence? Higher Google rankings? An
@@ -31,28 +31,28 @@ e-commerce solution? Different agencies specialise in different areas.
 Knowing what you need helps you find the right type of specialist rather
 than a generalist that does everything adequately but nothing
 excellently.</p>
-<p><strong>Step 2: Evaluate Their Portfolio and Case
-Studies</strong></p>
+<h2>Step 2: Evaluate Their Portfolio and Case
+Studies</h2>
 <p>Any reputable digital agency in Sri Lanka should be able to show you
 concrete examples of work they have done for clients similar to your
 business. Look for measurable results — not just pretty creatives. Ask
 for specific metrics: How much did organic traffic increase? What was
 the lead generation cost? How much did social media followers grow?
 Vague answers or visual-only portfolios should raise concerns.</p>
-<p><strong>Step 3: Assess Local Market Knowledge</strong></p>
+<h2>Step 3: Assess Local Market Knowledge</h2>
 <p>Sri Lanka has a unique market with specific cultural, linguistic, and
 economic characteristics. An agency that understands the Sinhala and
 Tamil speaking markets, knows which platforms Sri Lankan audiences use,
 and has experience navigating local consumer behaviour will outperform a
 generic agency that applies global templates. Always ask how they
 approach the local market specifically.</p>
-<p><strong>Step 4: Understand Their Team Structure</strong></p>
+<h2>Step 4: Understand Their Team Structure</h2>
 <p>Who will actually work on your account? A legitimate agency has
 dedicated specialists — strategists, designers, copywriters, media
 buyers, and analysts. Be wary of ‘full-service’ agencies that are
 actually one or two people with outsourced everything. Ask for the CV or
 background of the people who will manage your campaigns directly.</p>
-<p><strong>Step 5: Evaluate Reporting and Transparency</strong></p>
+<h2>Step 5: Evaluate Reporting and Transparency</h2>
 <p>How will you know if the agency’s work is paying off? Insist on
 clear, regular reporting that shows the metrics most relevant to your
 business goals — not just vanity metrics like impressions. Monthly
@@ -60,7 +60,7 @@ reports with detailed performance data, honest analysis of what is
 working and what is not, and clear communication about how strategies
 are being adjusted based on data are signs of a professional
 partner.</p>
-<p><strong>The Digital Agency Checklist</strong></p>
+<h2>The Digital Agency Checklist</h2>
 <ul>
 <li><p>Can show specific case studies with measurable results from Sri
 Lankan clients</p></li>
@@ -77,7 +77,7 @@ promises</p></li>
 <li><p>Active and professional own social media and website</p></li>
 <li><p>Clear pricing with no hidden fees</p></li>
 </ul>
-<p><strong>Questions to Ask Any Digital Agency</strong></p>
+<h2>Questions to Ask Any Digital Agency</h2>
 <ul>
 <li><p>Who will be my primary point of contact?</p></li>
 <li><p>How do you stay current with platform changes and algorithm
@@ -87,7 +87,7 @@ contract?</p></li>
 <li><p>Can you show me a sample monthly report?</p></li>
 <li><p>How do you measure success for a business like mine?</p></li>
 </ul>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>The right digital agency in Sri Lanka is a genuine business partner
 who is as invested in your success as you are. Take time to evaluate
 properly, ask hard questions, and trust your assessment of the people

@@ -23,7 +23,7 @@ const BlogPost113 = () => (
 audiences. TikTok is the entertainment engine — capturing young
 consumers with creative, authentic short-form video. So which one should
 your business be on? This guide breaks it all down.</em></p>
-<p><strong>LinkedIn in Sri Lanka: Who’s Using It?</strong></p>
+<h2>LinkedIn in Sri Lanka: Who’s Using It?</h2>
 <p>LinkedIn’s Sri Lankan user base has grown dramatically over the past
 three years. Today it hosts professionals from finance, technology,
 healthcare, education, and manufacturing. Decision makers at SMEs and
@@ -38,7 +38,7 @@ makers</p></li>
 video</p></li>
 <li><p>Ad formats: Sponsored content, InMail, lead gen forms</p></li>
 </ul>
-<p><strong>TikTok in Sri Lanka: Who’s Using It?</strong></p>
+<h2>TikTok in Sri Lanka: Who’s Using It?</h2>
 <p>TikTok has exploded in Sri Lanka with users skewing strongly toward
 Gen Z and younger millennials. The platform’s algorithm is uniquely
 powerful — even new accounts with zero followers can achieve millions of
@@ -55,31 +55,31 @@ duets</p></li>
 <li><p>Ad formats: In-feed video, TopView, Branded hashtag
 challenges</p></li>
 </ul>
-<p><strong>Key Differences: LinkedIn vs TikTok</strong></p>
-<p><strong>Audience Intent</strong></p>
+<h2>Key Differences: LinkedIn vs TikTok</h2>
+<h2>Audience Intent</h2>
 <p>LinkedIn users are in a professional mindset — they are open to
 business content, industry insights, and professional services. TikTok
 users are in entertainment mode — your content must entertain first and
 sell second. This fundamental difference should shape everything about
 your content strategy on each platform.</p>
-<p><strong>Cost of Advertising</strong></p>
+<h2>Cost of Advertising</h2>
 <p>LinkedIn advertising has a higher minimum daily budget and higher CPC
 compared to TikTok. However, the quality of B2B leads from LinkedIn
 typically justifies the premium cost. TikTok offers more affordable
 reach for brand awareness campaigns targeting mass consumer
 audiences.</p>
-<p><strong>Content Production Requirements</strong></p>
+<h2>Content Production Requirements</h2>
 <p>LinkedIn content can be text-heavy and professional. TikTok demands
 creative, authentic, high-energy short video production. Both platforms
 reward consistency and quality, but the style is completely
 different.</p>
-<p><strong>Which Platform Should Your Business Choose?</strong></p>
+<h2>Which Platform Should Your Business Choose?</h2>
 <p>If you sell to businesses → prioritise LinkedIn. If you sell to
 consumers, especially younger ones → prioritise TikTok. If your brand
 serves both markets, invest in both with platform-specific content
 strategies. The worst approach is using the same content on both
 platforms — each has its own language and expectations.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Both LinkedIn and TikTok offer tremendous opportunities for Sri
 Lankan brands in 2026. The key is understanding your audience and
 crafting platform-native content that resonates. A professional social

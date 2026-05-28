@@ -24,7 +24,7 @@ brand-building programs, the options are numerous — and the differences
 between a good package and a poor one can significantly impact your
 business outcomes. Here is exactly what to look for before you sign any
 contract.</em></p>
-<p><strong>What a Basic Social Media Package Should Include</strong></p>
+<h2>What a Basic Social Media Package Should Include</h2>
 <ul>
 <li><p>Content calendar with planned post topics and dates</p></li>
 <li><p>8–16 professionally designed posts per month per
@@ -35,8 +35,8 @@ Tamil)</p></li>
 DMs)</p></li>
 <li><p>Monthly performance report with key metrics</p></li>
 </ul>
-<p><strong>What a Comprehensive Social Media Package Should
-Include</strong></p>
+<h2>What a Comprehensive Social Media Package Should
+Include</h2>
 <ul>
 <li><p>Full content strategy tailored to your brand and
 audience</p></li>
@@ -48,25 +48,25 @@ budget)</p></li>
 <li><p>Advanced analytics and competitor benchmarking</p></li>
 <li><p>Dedicated account manager</p></li>
 </ul>
-<p><strong>Red Flags to Watch Out For</strong></p>
-<p><strong>No Transparency on Who Does the Work</strong></p>
+<h2>Red Flags to Watch Out For</h2>
+<h2>No Transparency on Who Does the Work</h2>
 <p>Some agencies in Sri Lanka outsource your account to unqualified
 freelancers or even overseas teams with no understanding of the local
 market. Always ask who specifically will manage your account, what their
 background is, and whether they have experience with Sri Lankan
 audiences.</p>
-<p><strong>Guaranteed Follower Numbers</strong></p>
+<h2>Guaranteed Follower Numbers</h2>
 <p>Any agency that guarantees specific follower numbers is likely using
 fake account tactics or bot traffic. Follower count is a vanity metric —
 what matters is engagement rate and business outcomes (leads, website
 traffic, sales). Legitimate agencies focus on quality audience
 growth.</p>
-<p><strong>No Reporting or Vague Reporting</strong></p>
+<h2>No Reporting or Vague Reporting</h2>
 <p>A professional social media agency provides clear monthly reports
 showing reach, engagement, follower growth, profile visits, and link
 clicks. If an agency cannot show you exactly what results your
 investment is generating, that is a serious concern.</p>
-<p><strong>Questions to Ask Before Signing</strong></p>
+<h2>Questions to Ask Before Signing</h2>
 <ul>
 <li><p>Can I see case studies from Sri Lankan clients similar to my
 business?</p></li>
@@ -77,15 +77,15 @@ business?</p></li>
 <li><p>What happens to my account content if I leave the
 contract?</p></li>
 </ul>
-<p><strong>What Should Social Media Management Cost in Sri
-Lanka?</strong></p>
+<h2>What Should Social Media Management Cost in Sri
+Lanka?</h2>
 <p>Basic social media management (posting only, no ads) typically ranges
 from LKR 30,000–60,000 per month. A comprehensive package including
 content creation, video, and ad management ranges from LKR
 80,000–200,000+ per month depending on the scope. Remember that the ad
 budget (money spent on Facebook/Instagram/TikTok ads) is separate from
 agency fees.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Choosing the right social media package in Sri Lanka is about finding
 a partner who genuinely understands your business, your audience, and
 the local market — not just the cheapest option. The right investment in

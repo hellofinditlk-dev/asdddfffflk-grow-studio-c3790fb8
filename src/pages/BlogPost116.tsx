@@ -22,43 +22,43 @@ business owner faces when starting digital advertising. Both platforms
 are powerful but work in fundamentally different ways. Understanding
 when to use each one (and how to use both together) is the key to
 maximising your digital advertising ROI in Sri Lanka.</em></p>
-<p><strong>How Google Ads Works</strong></p>
+<h2>How Google Ads Works</h2>
 <p>Google Ads operates on a search intent model. When someone in Sri
 Lanka types ‘plumbing services Colombo’ or ‘digital marketing agency sri
 lanka’ into Google, your ad appears at the top of the results page. You
 only pay when someone clicks your ad (pay-per-click or PPC). This means
 you are reaching people at the exact moment they are looking for what
 you offer — the highest possible purchase intent.</p>
-<p><strong>How Facebook Ads Works</strong></p>
+<h2>How Facebook Ads Works</h2>
 <p>Facebook (and Instagram) Ads operate on an interest and behaviour
 model. You define your target audience — age, location, interests,
 behaviours — and Facebook shows your ad to people matching that profile
 whether or not they are actively searching for your product. Facebook is
 about creating demand; Google is about capturing existing demand.</p>
-<p><strong>Conversion Rate Comparison in the Sri Lankan
-Market</strong></p>
-<p><strong>Google Ads</strong></p>
+<h2>Conversion Rate Comparison in the Sri Lankan
+Market</h2>
+<h2>Google Ads</h2>
 <p>For service-based businesses in Sri Lanka — legal services,
 accounting, digital agencies, medical clinics, engineering firms —
 Google Ads typically delivers higher conversion rates because the
 audience is actively seeking the service. Average conversion rates of
 3–8% are common for well-optimised Google Search campaigns in
 competitive Sri Lankan categories.</p>
-<p><strong>Facebook Ads</strong></p>
+<h2>Facebook Ads</h2>
 <p>For product-based businesses, e-commerce, events, and brand awareness
 campaigns, Facebook Ads often deliver better reach-to-cost ratios.
 Conversion rates are typically lower (1–3%) but the ability to reach a
 much larger audience at lower cost per impression compensates.
 Facebook’s retargeting is especially powerful for bringing back website
 visitors who didn’t convert the first time.</p>
-<p><strong>Cost Comparison</strong></p>
-<p><strong>Cost Per Click (CPC)</strong></p>
+<h2>Cost Comparison</h2>
+<h2>Cost Per Click (CPC)</h2>
 <p>Google Ads CPCs in Sri Lanka range from LKR 30 for low-competition
 keywords to LKR 500+ for highly competitive categories like finance,
 insurance, and real estate. Facebook Ad CPCs average LKR 15–80 depending
 on the audience and ad quality. On a per-click basis, Facebook is
 cheaper — but Google clicks often convert at a higher rate.</p>
-<p><strong>When to Choose Google Ads</strong></p>
+<h2>When to Choose Google Ads</h2>
 <ul>
 <li><p>You offer a service people actively search for</p></li>
 <li><p>You want leads from customers with high purchase intent</p></li>
@@ -67,7 +67,7 @@ problem</p></li>
 <li><p>You want to appear above competitors in search results
 immediately</p></li>
 </ul>
-<p><strong>When to Choose Facebook Ads</strong></p>
+<h2>When to Choose Facebook Ads</h2>
 <ul>
 <li><p>You sell products or lifestyle brands</p></li>
 <li><p>You want to build brand awareness among a specific
@@ -77,13 +77,13 @@ promotion</p></li>
 <li><p>You want to retarget website visitors with specific
 offers</p></li>
 </ul>
-<p><strong>The Best Strategy: Use Both Together</strong></p>
+<h2>The Best Strategy: Use Both Together</h2>
 <p>The most effective digital advertising strategies in Sri Lanka
 combine both platforms. Use Google to capture high-intent searchers and
 convert them. Use Facebook to build awareness, generate top-of-funnel
 traffic, and retarget Google visitors who didn’t convert. This
 full-funnel approach consistently delivers the best overall ROI.</p>
-<p><strong>Conclusion</strong></p>
+<h2>Conclusion</h2>
 <p>Neither Google Ads nor Facebook Ads is universally better — the right
 choice depends on your business, your audience, and your goals. For most
 Sri Lankan businesses, a combined strategy managed by professionals
