@@ -590,6 +590,104 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* Viral Content Framework */}
+      <section id="viral-framework" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How to Create Viral TikTok Content — The Proven Framework</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">The exact 5-step framework Cypher Digital uses to consistently produce high-performing TikTok content for Sri Lankan business clients.</p>
+            <div className="space-y-4">
+              {[
+                { n: 1, title: "The Hook (First 1–3 Seconds)", desc: "The single most important element. Use provocative questions (\"Do you know why your business is losing customers on Google?\"), surprising statements (\"I opened a restaurant in Colombo with LKR 200,000…\"), visual intrigue (the finished result first), or trending audio." },
+                { n: 2, title: "The Value Delivery", desc: "Deliver on the promise. Generic promo gets scrolled past. Educators share one genuine study tip. Restaurants show their signature dish being prepared. Hotels reveal the view that makes viewers want to book. Retailers demo a real problem-solving moment." },
+                { n: 3, title: "The Pattern Interrupt", desc: "Every 3–5 seconds, introduce something that prevents scrolling — a visual cut, new info, unexpected development, text overlay, or sound effect. TikTok's editing culture expects rapid pacing." },
+                { n: 4, title: "The Call to Action", desc: "Frame it naturally. \"Follow us for more tips\" beats \"Buy now.\" \"Comment what city you're from\" feeds the algorithm. Reserve direct sales CTAs for Spark Ads and In-Feed Ads." },
+                { n: 5, title: "Optimise for TikTok SEO", desc: "Use target keywords in captions, spoken dialogue, and on-screen text. Add 3–5 relevant hashtags (mix niche-specific + broader). Choose trending audio where it fits naturally — audio popularity is a distribution signal." },
+              ].map((s, i) => (
+                <div key={i} className="flex gap-4 bg-card border border-border rounded-xl p-5">
+                  <div className="w-9 h-9 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold shrink-0">{s.n}</div>
+                  <div>
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Influencer Marketing */}
+      <section id="influencer" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok Influencer Marketing in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">On TikTok, <strong className="text-foreground">engagement rate and content authenticity matter far more than follower count</strong>. A Sri Lankan micro-influencer with 25,000 highly engaged followers typically outperforms a macro-influencer with 500,000 passive ones.</p>
+            <div className="grid md:grid-cols-2 gap-5 mb-10">
+              {[
+                { title: "Niche Alignment", desc: "Does the creator's content naturally fit your product, service, or industry?" },
+                { title: "Audience Demographics", desc: "Does their audience match your target customer profile in Sri Lanka?" },
+                { title: "Engagement Rate", desc: "Are followers actively liking, commenting, and sharing — or just scrolling past?" },
+                { title: "Content Quality", desc: "Is the creator's video quality, pacing, and storytelling appropriate for your brand?" },
+                { title: "Previous Collaborations", desc: "Have they worked with brands in your category before? How did those posts actually perform?" },
+                { title: "Sri Lanka Creator Network", desc: "Cypher Digital maintains relationships with TikTok creators across food, travel, fashion, lifestyle, education, business & entertainment verticals." },
+              ].map((c, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{c.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4 text-center">Types of Influencer Collaborations We Manage</h3>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                "Gifted reviews — product/service in exchange for honest coverage",
+                "Paid posts — compensated dedicated branded content",
+                "Spark Ad permissions — license a creator's post to run as a paid Spark Ad",
+                "Long-term brand ambassador programmes for sustained association",
+                "Branded hashtag challenge campaigns",
+                "Multi-creator coordinated campaigns for product launches",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 bg-card border border-border rounded-xl">
+                  <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                  <span className="text-sm text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-6">
+              Want creator-led campaigns? Explore our full <Link to="/influencer-marketing-sri-lanka" className="text-primary font-semibold hover:underline">influencer marketing Sri Lanka</Link> service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TikTok SEO */}
+      <section id="tiktok-seo" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok SEO — How to Get Found Without Paying for Ads</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">TikTok SEO is one of the most overlooked, highest-opportunity strategies for Sri Lankan businesses in 2026. As more Sri Lankans — particularly Gen Z — use TikTok as their first search destination, appearing in TikTok search results drives massive organic traffic.</p>
+            <div className="space-y-4">
+              {[
+                { title: "Keywords in Video Captions", desc: "Write captions that naturally include the terms your customers would search. A restaurant in Colombo should include \"best restaurant Colombo,\" \"food Sri Lanka,\" and related terms in their captions." },
+                { title: "Speak Your Keywords Aloud", desc: "TikTok's auto-caption technology transcribes spoken dialogue. Speaking target keywords in the video itself signals relevance to the search algorithm." },
+                { title: "On-Screen Text Overlays", desc: "Text displayed on screen is read by TikTok's algorithm and counted as a ranking signal. Include core keywords in on-screen text." },
+                { title: "Optimise Your Profile Bio", desc: "Your TikTok bio is indexed by platform search. Include your main service and location — e.g. \"TikTok Marketing Agency | Colombo, Sri Lanka.\"" },
+                { title: "Strategic Hashtag Mix", desc: "Use 3–5 targeted hashtags — mixing high-volume category hashtags with specific niche hashtags — to help TikTok categorise and surface your content in relevant searches." },
+              ].map((s, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{s.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-8 leading-relaxed">
+              Pair this with our <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services Sri Lanka</Link> for unified discoverability across Google and TikTok.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* TikTok vs Other Platforms */}
       <section id="tiktok-vs-others" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
