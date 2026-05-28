@@ -93,6 +93,7 @@ const tocItems = [
   { id: "what-is", label: "What is Google Ads?" },
   { id: "why-important", label: "Why Google Ads is Essential" },
   { id: "campaign-types", label: "Types of Google Ads Campaigns" },
+  { id: "cost", label: "Google Ads Cost in Sri Lanka" },
   { id: "services", label: "Our Services" },
   { id: "whats-included", label: "What's Included" },
   { id: "process", label: "Our Process" },
@@ -100,9 +101,12 @@ const tocItems = [
   { id: "google-vs-seo", label: "Google Ads vs SEO" },
   { id: "google-vs-facebook", label: "Google Ads vs Facebook Ads" },
   { id: "industry-strategies", label: "Industry-Specific Strategies" },
+  { id: "how-to-setup", label: "How to Set Up a Winning Campaign" },
   { id: "advanced", label: "Advanced Strategies" },
+  { id: "common-mistakes", label: "Common Google Ads Mistakes" },
   { id: "cro", label: "Conversion Rate Optimization" },
   { id: "pricing", label: "Pricing & Packages" },
+  { id: "packages-table", label: "Google Ads Packages" },
   { id: "faqs", label: "FAQs" },
 ];
 
