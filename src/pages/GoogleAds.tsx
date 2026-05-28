@@ -630,6 +630,33 @@ const GoogleAds = () => {
       </section>
 
       {/* CRO Section */}
+      <section id="common-mistakes" className="py-16 bg-background scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Common Google Ads Mistakes Sri Lankan Businesses Make</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              When auditing Google Ads accounts in Sri Lanka, we repeatedly see the same costly mistakes. Avoiding these instantly improves your ROI.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-5">
+              {[
+                { mistake: "Running broad match keywords without negatives", fix: "Broad match without a robust negative keyword list burns budget on irrelevant searches. We build comprehensive negative lists from day one." },
+                { mistake: "No conversion tracking in place", fix: "Without conversion tracking, every decision is a guess. We install GA4, GTM, and event tracking before any campaign goes live." },
+                { mistake: "Sending all traffic to the homepage", fix: "Each ad group deserves its own dedicated landing page that matches the search intent, not a generic homepage drop-off." },
+                { mistake: "Ignoring mobile performance", fix: "Most Sri Lankan searches happen on mobile. Slow or non-responsive landing pages waste every click you pay for." },
+                { mistake: "Not using ad extensions", fix: "Sitelinks, callouts, call buttons and structured snippets dramatically improve CTR and Quality Score — and they are free." },
+                { mistake: "Setting and forgetting campaigns", fix: "Performance decays without active management. We adjust bids, negatives, copy and audiences every single week." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <p className="text-sm font-semibold text-destructive mb-2">❌ {item.mistake}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">✅ {item.fix}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CRO Section */}
       <section id="cro" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
