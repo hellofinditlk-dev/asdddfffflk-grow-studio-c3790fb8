@@ -608,7 +608,7 @@ const AdvertisingInSriLanka = () => {
             { to: "/instagram-marketing-sri-lanka", t: "Instagram Marketing in Sri Lanka", d: "Reels, Stories and Shopping campaigns to reach Sri Lanka's lifestyle audience." },
             { to: "/linkedin-marketing-sri-lanka", t: "LinkedIn Advertising in Sri Lanka", d: "B2B lead generation, sponsored content and recruitment campaigns for corporates." },
             { to: "/influencer-marketing-sri-lanka", t: "Influencer Marketing in Sri Lanka", d: "Macro and micro creator partnerships for trust-driven reach and conversions." },
-            { to: "/social-media-management-sri-lanka", t: "Social Media Marketing in Sri Lanka", d: "Full-service content, community and reporting across Facebook, Instagram and TikTok." },
+            { to: "/social-media-management-sri-lanka", t: "Social Media Marketing Sri Lanka", d: "Full-service content, community and reporting across Facebook, Instagram and TikTok." },
             { to: "/video-production-sri-lanka", t: "Video Production in Sri Lanka", d: "TVCs, corporate videos, ad films and social-first content shot end-to-end." },
             { to: "/graphic-design-sri-lanka", t: "Graphic Design in Sri Lanka", d: "Logos, brand identity, ad creatives and print collateral for sharper campaigns." },
             { to: "/event-management-sri-lanka", t: "Event Management in Sri Lanka", d: "Corporate events, launches and activations planned and executed end-to-end." },
