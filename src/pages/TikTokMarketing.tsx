@@ -502,6 +502,66 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* TikTok Marketing Cost Tables */}
+      <section id="cost-tables" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How Much Does TikTok Marketing Cost in Sri Lanka?</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">A realistic breakdown of TikTok Ads CPM, CPC and influencer rates in the current Sri Lankan market.</p>
+
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4">TikTok Advertising Costs (Sri Lanka 2026)</h3>
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full border border-border rounded-xl overflow-hidden">
+                <thead><tr className="bg-card">
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Ad Format</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Estimated Cost</th>
+                </tr></thead>
+                <tbody>
+                  {[
+                    { f: "In-Feed Ads (CPM)", c: "LKR 500 – 2,000 per 1,000 impressions" },
+                    { f: "Spark Ads (CPM)", c: "LKR 400 – 1,500 per 1,000 impressions" },
+                    { f: "TopView Ads", c: "LKR 500,000+ per campaign" },
+                    { f: "In-Feed CPC", c: "LKR 20 – 80 per click" },
+                  ].map((r, i) => (
+                    <tr key={i} className="bg-card">
+                      <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{r.f}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground italic mb-10">Estimates based on current Sri Lankan market conditions. Actual costs vary based on targeting, creative quality and competition. TikTok typically delivers 30–60% lower CPM than Facebook Ads.</p>
+
+            <h3 className="font-heading text-lg font-bold text-foreground mb-4">TikTok Influencer Marketing Costs in Sri Lanka</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border border-border rounded-xl overflow-hidden">
+                <thead><tr className="bg-card">
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Creator Tier</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Followers</th>
+                  <th className="p-4 text-left text-sm font-bold text-foreground border-b border-border">Cost Per Post</th>
+                </tr></thead>
+                <tbody>
+                  {[
+                    { t: "Nano-influencer", f: "1,000 – 10,000", c: "LKR 5,000 – 20,000" },
+                    { t: "Micro-influencer", f: "10,000 – 100,000", c: "LKR 20,000 – 80,000" },
+                    { t: "Mid-tier creator", f: "100,000 – 500,000", c: "LKR 80,000 – 250,000" },
+                    { t: "Macro-influencer", f: "500,000+", c: "LKR 250,000+" },
+                  ].map((r, i) => (
+                    <tr key={i} className="bg-card">
+                      <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{r.t}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.f}</td>
+                      <td className="p-4 text-sm text-muted-foreground border-b border-border">{r.c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground mt-6 leading-relaxed">Nano and micro-influencers often deliver the highest engagement rates and the most authentic audience connections, making them exceptional value for Sri Lankan SMEs. Cypher Digital's <strong className="text-foreground">TikTok marketing Sri Lanka</strong> packages start at LKR 30,000/month with no lock-in contracts.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Industries We Serve */}
       <section id="industries" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
