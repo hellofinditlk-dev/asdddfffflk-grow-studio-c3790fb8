@@ -245,6 +245,55 @@ const TikTokMarketing = () => {
         </div>
       </section>
 
+      {/* TikTok in Sri Lanka — Numbers */}
+      <section id="sri-lanka-numbers" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">TikTok in Sri Lanka — The Numbers That Matter in 2026</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">TikTok is no longer a niche platform for teenage dancers. It is a mainstream marketing channel with a massive, highly engaged Sri Lankan audience.</p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { stat: "5M+", label: "Active TikTok users in Sri Lanka — growing dramatically year-over-year." },
+                { stat: "60–90 min", label: "Average daily time spent per Sri Lankan user — more than any other social app." },
+                { stat: "#1 Gen Z search", label: "TikTok has become the primary search engine for Gen Z in Sri Lanka." },
+                { stat: "30–60% lower CPM", label: "TikTok Ads cost less per impression than Facebook or Instagram in Sri Lanka." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-6">
+                  <div className="text-2xl font-extrabold text-primary mb-2">{item.stat}</div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.label}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center mt-8 max-w-3xl mx-auto leading-relaxed">Short-form vertical video (TikTok, Reels, Shorts) is now the dominant format for digital content consumption in Sri Lanka — and the businesses investing in <strong className="text-foreground">TikTok marketing Sri Lanka</strong> in 2026 are building a significant competitive advantage over those that wait.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* How TikTok's Algorithm Works */}
+      <section id="algorithm" className="py-16 bg-secondary scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">How TikTok's Algorithm Works — And Why It Favours Small Businesses</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">Every TikTok user's home screen is the <strong className="text-foreground">For You Page (FYP)</strong> — a personalised feed of content from accounts they have never seen before. This means your content can reach millions of Sri Lankans with zero ad budget if it is relevant and engaging.</p>
+            <div className="grid md:grid-cols-2 gap-5">
+              {[
+                { title: "Watch Time & Completion Rate", desc: "The most critical signal. Videos watched to completion get pushed wider. The first 1–3 seconds determine everything." },
+                { title: "Engagement Rate", desc: "Likes, comments, shares, and saves signal value. Comments are particularly powerful — they keep viewers on your video longer." },
+                { title: "Shares", desc: "The highest-value engagement action on TikTok. When someone shares your video, distribution accelerates significantly." },
+                { title: "Re-watches", desc: "If users watch your video more than once, TikTok counts this as an exceptional quality signal — perfect for tips, recipes, price lists." },
+                { title: "Audio & Text Matching", desc: "TikTok reads captions, on-screen text, and transcribes spoken audio. Using your target keywords helps TikTok show your content to the right audience." },
+                { title: "Sri Lanka Advantage", desc: "A bakery in Kandy, a workshop in Negombo, or a startup in Colombo can build massive audiences organically — no follower-buying, no big ad spend." },
+              ].map((item, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-5">
+                  <h3 className="font-heading text-sm font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Table of Contents */}
       <section className="py-10 bg-background border-b border-border">
         <div className="container mx-auto px-4">
