@@ -932,6 +932,39 @@ const Index = () => (
       </div>
     </section>
 
+    {/* INTERNAL LINKS BAR — all service pages */}
+    <section className="py-16 bg-foreground text-white">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Explore All Services</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">All Digital Marketing Services in Sri Lanka</h2>
+          <div className="flex flex-wrap gap-2.5">
+            {[
+              { label: "Social Media Management", to: "/social-media-management-sri-lanka" },
+              { label: "Facebook Ads", to: "/facebook-ads-sri-lanka" },
+              { label: "Google Ads", to: "/google-ads-sri-lanka" },
+              { label: "SEO Services", to: "/seo-services-sri-lanka" },
+              { label: "TikTok Marketing", to: "/tiktok-marketing-sri-lanka" },
+              { label: "Instagram Marketing", to: "/instagram-marketing-sri-lanka" },
+              { label: "LinkedIn Advertising", to: "/linkedin-advertising-sri-lanka" },
+              { label: "Video Production", to: "/video-production-sri-lanka" },
+              { label: "Graphic Design", to: "/graphic-design-sri-lanka" },
+              { label: "Influencer Marketing", to: "/influencer-marketing-sri-lanka" },
+              { label: "TV Advertising", to: "/tv-advertising-sri-lanka" },
+              { label: "Radio Advertising", to: "/radio-advertising-sri-lanka" },
+              { label: "Newspaper Advertising", to: "/newspaper-advertising-sri-lanka" },
+              { label: "Media Buying", to: "/media-buying-agencies-sri-lanka" },
+              { label: "Advertising Guide", to: "/advertising-in-sri-lanka" },
+            ].map((l) => (
+              <Link key={l.to} to={l.to} className="bg-white/5 border border-white/10 rounded-lg px-3.5 py-2 text-xs font-medium text-white/75 hover:bg-white/10 hover:text-white hover:border-primary/40 transition-all">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="relative py-24 lg:py-32 bg-foreground text-white overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[120px] -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-[hsl(280,80%,65%)]/10 rounded-full blur-[100px]" />
