@@ -841,6 +841,7 @@ const GoogleAds = () => {
 
       {/* FAQs */}
       <section id="faqs" className="py-16 bg-background scroll-mt-20">
+        {/* injected sentinel — content begins below */}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Frequently Asked Questions – Google Ads Sri Lanka</h2>
