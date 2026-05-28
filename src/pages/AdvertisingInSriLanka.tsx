@@ -605,6 +605,14 @@ const AdvertisingInSriLanka = () => {
             { to: "/google-ads-sri-lanka", t: "Google Ads in Sri Lanka", d: "Search, Display and Shopping campaigns for high-intent customer acquisition." },
             { to: "/seo-services-sri-lanka", t: "SEO Services in Sri Lanka", d: "Long-term organic ranking, content strategy and technical SEO for compounding ROI." },
             { to: "/tiktok-marketing-sri-lanka", t: "TikTok Marketing in Sri Lanka", d: "Reach 5.79M+ youth aged 18+ — Sri Lanka's fastest-growing platform in 2026." },
+            { to: "/instagram-marketing-sri-lanka", t: "Instagram Marketing in Sri Lanka", d: "Reels, Stories and Shopping campaigns to reach Sri Lanka's lifestyle audience." },
+            { to: "/linkedin-marketing-sri-lanka", t: "LinkedIn Advertising in Sri Lanka", d: "B2B lead generation, sponsored content and recruitment campaigns for corporates." },
+            { to: "/influencer-marketing-sri-lanka", t: "Influencer Marketing in Sri Lanka", d: "Macro and micro creator partnerships for trust-driven reach and conversions." },
+            { to: "/social-media-management-sri-lanka", t: "Social Media Management in Sri Lanka", d: "Full-service content, community and reporting across Facebook, Instagram and TikTok." },
+            { to: "/video-production-sri-lanka", t: "Video Production in Sri Lanka", d: "TVCs, corporate videos, ad films and social-first content shot end-to-end." },
+            { to: "/graphic-design-sri-lanka", t: "Graphic Design in Sri Lanka", d: "Logos, brand identity, ad creatives and print collateral for sharper campaigns." },
+            { to: "/event-management-sri-lanka", t: "Event Management in Sri Lanka", d: "Corporate events, launches and activations planned and executed end-to-end." },
+            { to: "/event-marketing-sri-lanka", t: "Event Marketing in Sri Lanka", d: "Pre-event hype, on-ground capture and post-event amplification across channels." },
           ].map(c => (
             <Card key={c.to} className="p-5 hover:shadow-md hover:-translate-y-0.5 transition-all">
               <Link to={c.to} className="font-bold text-base hover:text-primary inline-flex items-center gap-1">{c.t} <ArrowRight className="w-3.5 h-3.5" /></Link>
