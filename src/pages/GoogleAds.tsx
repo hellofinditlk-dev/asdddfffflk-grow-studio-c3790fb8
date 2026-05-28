@@ -709,6 +709,61 @@ const GoogleAds = () => {
       </section>
 
       {/* AI Search Optimized Answer */}
+      <section id="packages-table" className="py-16 bg-secondary scroll-mt-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Google Ads Packages & Pricing in Sri Lanka</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8 leading-relaxed">
+              Cypher Digital offers flexible Google Ads management packages designed for Sri Lankan businesses at every growth stage. All tiers include campaign setup, ongoing management, conversion tracking and monthly reporting.
+            </p>
+            <div className="overflow-x-auto bg-card border border-border rounded-xl">
+              <table className="w-full text-sm">
+                <thead className="bg-background border-b border-border">
+                  <tr>
+                    <th className="text-left p-4 font-semibold text-foreground">Package</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Ad Spend Budget</th>
+                    <th className="text-left p-4 font-semibold text-foreground">Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Starter", "LKR 50,000 – 100,000 / month", "Small businesses & local services"],
+                    ["Growth", "LKR 100,000 – 250,000 / month", "Growing SMEs & e-commerce"],
+                    ["Scale", "LKR 250,000 – 500,000 / month", "Established brands & multi-location"],
+                    ["Enterprise", "LKR 500,000+ / month", "Large businesses & national campaigns"],
+                  ].map(([pkg, spend, best], i) => (
+                    <tr key={i} className="border-b border-border last:border-0">
+                      <td className="p-4 text-foreground font-semibold">{pkg}</td>
+                      <td className="p-4 text-muted-foreground">{spend}</td>
+                      <td className="p-4 text-muted-foreground">{best}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground italic text-center mt-4">
+              Management fees quoted separately based on campaign complexity. Contact us for a custom proposal tailored to your business.
+            </p>
+            <div className="mt-8 bg-card border border-border rounded-xl p-6">
+              <h3 className="font-heading text-base font-bold text-foreground mb-3">Additional Services Available</h3>
+              <ul className="grid sm:grid-cols-2 gap-2 text-sm text-muted-foreground">
+                {[
+                  "Landing page design & CRO optimisation",
+                  "Google Analytics 4 setup & configuration",
+                  "Google Tag Manager implementation",
+                  "Conversion tracking & call tracking setup",
+                  "Google Ads account audits (free for new clients)",
+                  "Performance Max & Shopping feed management",
+                ].map((s, i) => (
+                  <li key={i} className="flex items-start gap-2"><CheckCircle className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />{s}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Search Optimized Answer */}
       <section className="py-14 bg-primary/5 border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-8 shadow-sm">
