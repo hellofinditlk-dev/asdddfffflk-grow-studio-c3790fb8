@@ -92,9 +92,10 @@ const process = [
 ];
 
 const stats = [
-  { value: "15,000+", label: "Leads Generated", icon: <Zap className="w-5 h-5" /> },
-  { value: "20+", label: "Happy Clients", icon: <Star className="w-5 h-5" /> },
-  { value: "2,000+", label: "Campaigns Run", icon: <Rocket className="w-5 h-5" /> },
+  { value: "15,000+", label: "Leads Generated", tone: "neutral" as const },
+  { value: "2,000+", label: "Campaigns Run", tone: "purple" as const },
+  { value: "5.0★", label: "Client Rating", tone: "neutral" as const },
+  { value: "+340%", label: "Avg Campaign ROI", tone: "orange" as const },
 ];
 
 const trustedLogos = ["Facebook", "Google", "TikTok", "Instagram", "YouTube", "LinkedIn"];
@@ -211,78 +212,99 @@ const Index = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
     {/* HERO */}
-    <section className="relative py-28 lg:py-40 bg-foreground overflow-hidden">
-      {/* Multiple animated gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-primary/25 rounded-full blur-[140px] animate-float" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[hsl(280,80%,65%)]/15 rounded-full blur-[120px] animate-float" style={{ animationDelay: "1.5s" }} />
-      <div className="absolute top-0 right-1/4 w-64 h-64 bg-[hsl(200,90%,55%)]/10 rounded-full blur-[100px] animate-float" style={{ animationDelay: "3s" }} />
-      {/* Dot grid */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, hsl(0 0% 100%) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              <Sparkles className="w-3.5 h-3.5" />
-              Digital Marketing Agency in Sri Lanka
+    {/* HERO — Immersive Glass */}
+    <section className="relative bg-[#030612] overflow-hidden py-20 lg:py-28">
+      {/* Background glow effects */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 -right-24 w-80 h-80 bg-[hsl(25,95%,53%)]/10 blur-[100px] rounded-full pointer-events-none" />
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+          {/* LEFT — copy */}
+          <div className="relative z-10 animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
+              <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_hsl(252_65%_55%/0.8)]" />
+              <span className="text-primary text-xs font-bold tracking-widest uppercase">Premier Digital Agency • Sri Lanka</span>
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.08] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Digital Marketing <span className="gradient-text">Agency</span> in Sri Lanka
+
+            <h1 className="font-heading text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold leading-[0.95] tracking-tight text-white mb-8">
+              Digital <br />
+              <span className="text-primary">Marketing</span> <br />
+              Agency <span className="text-white/70 font-bold text-4xl md:text-5xl lg:text-6xl">in Sri Lanka</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/55 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              We are a results-driven <strong className="text-white/80 font-semibold">digital marketing agency in Sri Lanka</strong> helping businesses grow with <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media management</Link>, Facebook Ads, Google Ads, SEO, and video production. Based in Colombo, we serve businesses across Sri Lanka.
+
+            <p className="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed mb-10">
+              We empower brands across <span className="text-white font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook & Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all text-sm px-8 h-13 rounded-xl shadow-[0_0_30px_hsl(252_65%_55%/0.4)] hover:shadow-[0_0_40px_hsl(252_65%_55%/0.6)] hover:scale-[1.02] active:scale-[0.98]">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
-                  Book a Free Consultation <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-8 h-13 rounded-xl font-semibold border-none shadow-[0_0_30px_hsl(25_95%_53%/0.35)] hover:shadow-[0_0_40px_hsl(25_95%_53%/0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
-                  Get a Free Quote <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative px-8 py-5 bg-[hsl(25,95%,53%)] hover:bg-[hsl(25,95%,48%)] !text-white font-bold rounded-2xl transition-all overflow-hidden flex items-center justify-center gap-3 shadow-[0_20px_40px_-10px_hsl(25_95%_53%/0.4)] hover:shadow-[0_25px_50px_-12px_hsl(25_95%_53%/0.55)] active:scale-95"
+              >
+                <span className="relative z-10">Get a Free Quote</span>
+                <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-5 bg-white/5 hover:bg-white/10 text-white font-bold rounded-2xl border border-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-md active:scale-95"
+              >
+                Book a Consultation
+              </a>
             </div>
+
             {/* Trust markers */}
-            <div className="mt-10 animate-fade-up" style={{ animationDelay: "0.5s" }}>
-              <p className="text-xs text-white/30 uppercase tracking-widest mb-3">We Advertise On</p>
-              <div className="flex flex-wrap items-center gap-4">
+            <div className="mt-12">
+              <p className="text-[10px] text-slate-500 uppercase tracking-widest mb-3 font-bold">We Advertise On</p>
+              <div className="flex flex-wrap items-center gap-2.5">
                 {trustedLogos.map((name) => (
-                  <span key={name} className="text-xs font-semibold text-white/25 border border-white/10 px-3 py-1.5 rounded-lg">{name}</span>
+                  <span key={name} className="text-xs font-semibold text-slate-400 border border-white/10 bg-white/[0.02] px-3 py-1.5 rounded-lg backdrop-blur-sm">{name}</span>
                 ))}
               </div>
             </div>
           </div>
-          <div className="hidden lg:flex justify-center animate-fade-up" style={{ animationDelay: "0.5s" }}>
-            <div className="relative">
-              <div className="absolute -inset-8 bg-gradient-to-br from-primary/30 via-[hsl(280,80%,65%)]/20 to-transparent rounded-full blur-[80px] animate-pulse-glow" />
-              {/* Decorative ring */}
-              <div className="absolute -inset-4 rounded-[2rem] border border-white/10 animate-float" style={{ animationDelay: "0.5s" }} />
-              <img src={mascotDefault} alt="Cypher Digital mascot" className="relative w-80 h-80 rounded-3xl object-cover shadow-[0_20px_60px_hsl(252_65%_55%/0.4)] animate-float" />
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 -left-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-4 py-3 animate-float" style={{ animationDelay: "1s" }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 text-green-400" />
+
+          {/* RIGHT — Mascot composition */}
+          <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <div className="relative aspect-square w-full max-w-lg mx-auto">
+              {/* Glass frame */}
+              <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-slate-900/40 backdrop-blur-3xl overflow-hidden shadow-2xl ring-1 ring-white/20">
+                <img
+                  src={mascotDefault}
+                  alt="Cypher Digital mascot — Sri Lanka digital marketing agency"
+                  className="w-full h-full object-cover"
+                />
+
+                {/* Floating Badge: Rating */}
+                <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-5 rounded-3xl shadow-2xl flex items-center gap-3 md:gap-4 hover:scale-105 transition-transform">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-yellow-500/20 flex items-center justify-center text-yellow-400">
+                    <Star className="w-5 h-5 md:w-6 md:h-6 fill-current" />
                   </div>
                   <div>
-                    <p className="text-white text-xs font-bold">+340%</p>
-                    <p className="text-white/50 text-[10px]">Avg. ROI</p>
+                    <p className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Client Satisfaction</p>
+                    <p className="text-xl md:text-2xl font-black text-white leading-tight">5.0 ★</p>
+                  </div>
+                </div>
+
+                {/* Floating Badge: ROI */}
+                <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-5 rounded-3xl shadow-2xl flex items-center gap-3 md:gap-4 hover:scale-105 transition-transform">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+                    <TrendingUp className="w-5 h-5 md:w-6 md:h-6" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Performance</p>
+                    <p className="text-xl md:text-2xl font-black text-white leading-tight">+340% <span className="text-emerald-400 text-sm">ROI</span></p>
                   </div>
                 </div>
               </div>
-              {/* Floating badge right */}
-              <div className="absolute -top-4 -right-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-4 py-3 animate-float" style={{ animationDelay: "2s" }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Star className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-white text-xs font-bold">5.0 ★</p>
-                    <p className="text-white/50 text-[10px]">Client Rating</p>
-                  </div>
-                </div>
+
+              {/* Small detail mascot avatar */}
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full border-[6px] border-[#030612] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-2 ring-white/10">
+                <img src={mascotGlasses} alt="Cypher Digital mascot avatar" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -290,23 +312,34 @@ const Index = () => (
       </div>
     </section>
 
-    {/* STATS */}
-    <section className="relative -mt-10 z-20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {stats.map((s, i) => (
-            <div
-              key={i}
-              className="glass-card rounded-2xl py-8 px-4 text-center hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 animate-count-up"
-              style={{ animationDelay: `${0.1 * (i + 1)}s` }}
-            >
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center text-primary mx-auto mb-3">
-                {s.icon}
+    {/* STATS — 4-up tinted glass cards */}
+    <section className="relative bg-[#030612] pb-20 lg:pb-28">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+          {stats.map((s, i) => {
+            const toneClasses =
+              s.tone === "purple"
+                ? "bg-primary/5 border-primary/20"
+                : s.tone === "orange"
+                  ? "bg-[hsl(25,95%,53%)]/5 border-[hsl(25,95%,53%)]/20"
+                  : "bg-white/[0.02] border-white/5";
+            const valueColor =
+              s.tone === "purple"
+                ? "text-primary"
+                : s.tone === "orange"
+                  ? "text-[hsl(25,95%,53%)]"
+                  : "text-white";
+            return (
+              <div
+                key={i}
+                className={`p-6 md:p-8 rounded-[2rem] border backdrop-blur-sm animate-fade-up hover:-translate-y-1 transition-transform ${toneClasses}`}
+                style={{ animationDelay: `${0.1 * (i + 1)}s` }}
+              >
+                <h3 className={`font-heading text-3xl md:text-4xl font-extrabold mb-2 ${valueColor}`}>{s.value}</h3>
+                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">{s.label}</p>
               </div>
-              <div className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-1">{s.value}</div>
-              <div className="text-xs text-muted-foreground font-medium">{s.label}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
