@@ -379,11 +379,11 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
+          <ServiceStickyCTA />
         </main>
         <Footer />
         <WhatsAppButton />
         <BlogCTAInjector />
-        <ServiceStickyCTA />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
