@@ -274,7 +274,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the best marketing internships in Sri Lanka — a hands-on, paid internship in Colombo where you work alongside our team on live client campaigns for 800+ Sri Lankan brands.",
-    salaryRange: { min: 15000, max: 35000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 30000, max: 45000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is offering a Marketing Internship in Sri Lanka for students and fresh graduates who want to break into digital marketing the right way. If you're searching for a marketing internship in Colombo, a digital marketing internship in Sri Lanka, or a social media internship near you — this is one of the most hands-on internship opportunities in the country right now.",
       "As a Marketing Intern at Cypher Digital, you'll work on real Facebook, Instagram, TikTok and Google Ads campaigns for 800+ Sri Lankan brands across restaurants, fashion, education, real estate and healthcare. You'll learn how professional marketers plan, launch, optimise and report on paid campaigns — not just theory from a textbook.",
@@ -317,7 +317,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "Is this a paid marketing internship in Sri Lanka?",
-        a: "Yes — this is a paid internship. Stipends typically range between LKR 15,000 and LKR 35,000 per month based on hours committed and skills demonstrated.",
+        a: "Yes — this is a paid internship. Stipends range between LKR 30,000 and LKR 45,000 per month based on hours committed and skills demonstrated.",
       },
       {
         q: "Can university students apply for this digital marketing internship?",
