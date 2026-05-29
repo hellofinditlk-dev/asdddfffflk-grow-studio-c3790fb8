@@ -149,6 +149,17 @@ const faqs = [
   },
 ];
 
+faqs.push(
+  {
+    q: "What skills do I need for a digital marketing job in Sri Lanka?",
+    a: "Required skills depend on the role. Paid ads: Meta Ads and Google Ads campaign experience. SEO: on-page SEO, keyword research, Google Search Console. Social media: content planning, copywriting, community management. Graphic design: Adobe Creative Suite or Canva Pro with a strong portfolio. Video editing: Adobe Premiere Pro or DaVinci Resolve. All roles need good communication and a commercial mindset.",
+  },
+  {
+    q: "What is the digital marketing career growth path in Sri Lanka?",
+    a: "A typical path moves from Marketing Intern (LKR 20K–40K) → Digital Marketing Executive (LKR 60K–90K) → Digital Marketing Specialist (LKR 90K–150K) → Digital Marketing Manager (LKR 150K–280K). At Cypher Digital, team members regularly advance within 12–18 months due to the volume and variety of brand campaigns.",
+  },
+);
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
