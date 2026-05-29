@@ -16,9 +16,9 @@ const AREAS = [
 ];
 
 const SALARY = [
-  { level: "Junior SEO executive (0–1 yr)", range: "LKR 60,000 – 80,000", note: "On-page SEO, basic keyword research, Search Console" },
-  { level: "Mid-level SEO executive (2–3 yr)", range: "LKR 85,000 – 130,000", note: "Multi-client, content strategy, local SEO" },
-  { level: "Senior SEO specialist (4+ yr)", range: "LKR 135,000 – 200,000+", note: "Technical SEO, site audits, team lead" },
+  { level: "Junior SEO executive (0–1 yr)", range: "LKR 50,000 – 80,000", note: "On-page SEO, basic keyword research, Search Console" },
+  { level: "Mid-level SEO executive (2–3 yr)", range: "LKR 80,000 – 130,000", note: "Multi-client, content strategy, local SEO" },
+  { level: "Senior SEO specialist (4+ yr)", range: "LKR 130,000 – 200,000", note: "Technical SEO, site audits, team lead" },
 ];
 
 const TOOLS = [
