@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Google Ads", path: "/google-ads-sri-lanka" },
   { label: "SEO", path: "/seo-services-sri-lanka" },
   { label: "Graphic Design", path: "/graphic-design-sri-lanka" },
-  { label: "Video Production", path: "/video-production-sri-lanka" },
+  
   { label: "TikTok", path: "/tiktok-marketing-sri-lanka" },
   { label: "AI Visibility", path: "/ai-visibility-sri-lanka" },
 ];
