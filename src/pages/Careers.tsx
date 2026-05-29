@@ -227,33 +227,52 @@ const Careers = () => (
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[hsl(20,90%,55%)]/10 border border-[hsl(20,90%,55%)]/30 mb-5">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-[hsl(20,90%,55%)] opacity-75 animate-ping" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(20,90%,55%)]" />
+            </span>
+            <span className="text-xs font-semibold uppercase tracking-wider text-[hsl(20,90%,55%)]">We're hiring now</span>
+          </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Open Digital Marketing Vacancies in Sri Lanka</h2>
-          <p className="text-muted-foreground">Four roles open right now — all Colombo-based, all full of growth.</p>
+          <p className="text-muted-foreground">{vacancies.length} roles open right now — all Colombo-based, all full of growth.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
           {vacancies.map((v) => {
             const Icon = v.icon;
+            const salary = v.salaryRange
+              ? `${v.salaryRange.currency} ${(v.salaryRange.min / 1000).toFixed(0)}K–${(v.salaryRange.max / 1000).toFixed(0)}K/mo`
+              : null;
             return (
               <Link key={v.slug} to={`/careers/${v.slug}`} className="group">
-                <Card className="h-full border-border hover:border-primary transition-colors">
-                  <CardContent className="p-6 md:p-8">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                <Card className="h-full border-border hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-[hsl(20,90%,55%)] to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="p-6 md:p-7 flex flex-col h-full">
+                    <div className="flex items-start justify-between gap-3 mb-4">
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
-                      <div>
-                        <h3 className="font-heading text-xl md:text-2xl font-bold mb-1 group-hover:text-primary transition-colors">
-                          {v.title}
-                        </h3>
-                        <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
-                          <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> {v.location}</span>
-                          <span className="flex items-center gap-1"><Briefcase className="w-3 h-3" /> {v.type}</span>
-                        </div>
-                      </div>
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[hsl(20,90%,55%)]/10 text-[10px] font-semibold uppercase tracking-wider text-[hsl(20,90%,55%)]">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[hsl(20,90%,55%)] animate-pulse" />
+                        Hiring
+                      </span>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">{v.summary}</p>
-                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                    <h3 className="font-heading text-xl md:text-2xl font-bold mb-2 group-hover:text-primary transition-colors leading-tight">
+                      {v.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-x-3 gap-y-1.5 text-xs text-muted-foreground mb-4">
+                      <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> {v.location}</span>
+                      <span className="flex items-center gap-1"><Briefcase className="w-3 h-3" /> {v.type}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-5 leading-relaxed line-clamp-3">{v.summary}</p>
+                    {salary && (
+                      <div className="mb-5 pb-5 border-b border-border/60">
+                        <div className="text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Salary range</div>
+                        <div className="text-base font-bold text-primary">{salary}</div>
+                      </div>
+                    )}
+                    <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
                       View role & apply <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </CardContent>
