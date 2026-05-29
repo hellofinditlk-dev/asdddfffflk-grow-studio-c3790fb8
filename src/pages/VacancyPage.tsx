@@ -18,9 +18,9 @@ const VacancyPage = () => {
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
 
-  // Auto-extend validThrough to 90 days from datePosted so Google keeps the listing live.
+  // Rolling validThrough: always 90 days from today so evergreen vacancies never expire in Google for Jobs.
   const validThrough = (() => {
-    const d = new Date(vacancy.datePosted);
+    const d = new Date();
     d.setDate(d.getDate() + 90);
     return d.toISOString().slice(0, 10);
   })();
