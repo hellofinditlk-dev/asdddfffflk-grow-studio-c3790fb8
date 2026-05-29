@@ -10,9 +10,9 @@ const VACANCIES = [
 ];
 
 const SALARY_TABLE = [
-  { level: "Junior (0–1 yr)", range: "LKR 55,000 – 75,000", skills: "Canva, basic Photoshop" },
-  { level: "Mid-level (2–3 yr)", range: "LKR 80,000 – 110,000", skills: "Adobe suite, brand identity" },
-  { level: "Senior (4+ yr)", range: "LKR 120,000 – 180,000+", skills: "Full Adobe, motion, strategy" },
+  { level: "Junior (0–1 yr)", range: "LKR 45,000 – 70,000", skills: "Canva, basic Photoshop" },
+  { level: "Mid-level (2–3 yr)", range: "LKR 70,000 – 100,000", skills: "Adobe suite, brand identity" },
+  { level: "Senior (4+ yr)", range: "LKR 100,000 – 150,000", skills: "Full Adobe, motion, strategy" },
 ];
 
 const DAILY_TASKS = [
