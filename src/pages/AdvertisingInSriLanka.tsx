@@ -648,6 +648,7 @@ const AdvertisingInSriLanka = () => {
               <li>Read our guide on <Link to="/blog/digital-marketing-healthcare-sri-lanka" className="text-primary font-semibold hover:underline">digital marketing for healthcare in Sri Lanka</Link>.</li>
               <li>Plan <Link to="/blog/avurudu-marketing-ideas-sri-lanka" className="text-primary font-semibold hover:underline">Avurudu advertising campaigns</Link> for seasonal reach.</li>
               <li>Local focus? Read <Link to="/blog/digital-marketing-colombo" className="text-primary font-semibold hover:underline">digital marketing in Colombo</Link>.</li>
+              <li>Want to work in the industry? Browse open <Link to="/careers" className="text-primary font-semibold hover:underline">digital marketing jobs in Sri Lanka</Link> at Cypher Digital.</li>
             </ul>
           </div>
           <p className="text-background/70 mb-6">Cypher Digital is Sri Lanka's results-driven advertising and digital marketing agency. We build campaigns across every channel — Facebook, Google, TikTok, TV, radio and more — and deliver measurable ROI for businesses of every size.</p>

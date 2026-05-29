@@ -113,7 +113,7 @@ const BlogPost126 = () => (
             </p>
             <h3 className="font-heading text-lg font-bold mt-6 mb-2">Google Ads certification (Google Skillshop)</h3>
             <p>
-              Free through Google Skillshop. Complete the Search Advertising certification first, then add Display and YouTube. Each certification takes roughly 3–5 hours of study. Combined with Meta Blueprint, these two credentials make you a stronger candidate than the majority of applicants for <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold underline">digital marketing jobs in Sri Lanka</Link>.
+              Free through Google Skillshop. Complete the Search Advertising certification first, then add Display and YouTube. Each certification takes roughly 3–5 hours of study. Combined with Meta Blueprint, these two credentials make you a stronger candidate than the majority of applicants for <Link to="/careers" className="text-primary font-semibold underline">digital marketing jobs in Sri Lanka</Link>.
             </p>
             <h3 className="font-heading text-lg font-bold mt-6 mb-2">Other useful certifications</h3>
             <p>
