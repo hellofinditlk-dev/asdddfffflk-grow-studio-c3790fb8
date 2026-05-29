@@ -442,7 +442,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most senior digital marketing manager jobs in Sri Lanka right now — lead a team of performance marketers, strategists and creatives running Meta, Google and TikTok campaigns for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 150000, max: 350000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 120000, max: 200000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Digital Marketing Manager in Sri Lanka to lead our Colombo performance team. If you're searching for digital marketing manager jobs in Sri Lanka — or a serious digital marketing manager vacancy in Colombo with real budgets, real teams and real accountability — this is one of the best leadership opportunities in the country right now.",
       "As our Digital Marketing Manager in Sri Lanka, you'll lead a team of specialists, executives and interns running Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond. You'll own strategy, budgets, ROAS, client relationships and team growth — not just execute someone else's plan.",
