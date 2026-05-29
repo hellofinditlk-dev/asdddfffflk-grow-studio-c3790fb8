@@ -141,7 +141,7 @@ const BlogPost128 = () => (
               ))}
             </div>
             <p>
-              Most people who follow this plan and build a basic portfolio are ready to apply for <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold underline">digital marketing executive jobs in Sri Lanka</Link> within five weeks. For salary expectations before your interviews, read our <Link to="/blog/digital-marketing-salary-sri-lanka-2026" className="text-primary font-semibold underline">2026 digital marketing salary guide for Sri Lanka</Link>.
+              Most people who follow this plan and build a basic portfolio are ready to apply for <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold underline">digital marketing jobs in Sri Lanka</Link> within five weeks. For salary expectations before your interviews, read our <Link to="/blog/digital-marketing-salary-sri-lanka-2026" className="text-primary font-semibold underline">2026 digital marketing salary guide for Sri Lanka</Link>.
             </p>
 
             <h2 className="font-heading text-2xl font-bold mt-12 mb-4 pb-2 border-b-2 border-primary">Do you need a degree for digital marketing jobs in Sri Lanka?</h2>
