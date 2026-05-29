@@ -18,13 +18,25 @@ const VacancyPage = () => {
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
 
+  // Auto-extend validThrough to 90 days from datePosted so Google keeps the listing live.
+  const validThrough = (() => {
+    const d = new Date(vacancy.datePosted);
+    d.setDate(d.getDate() + 90);
+    return d.toISOString().slice(0, 10);
+  })();
+
   const jobPostingSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: vacancy.title,
     description: `${vacancy.summary} Responsibilities: ${vacancy.duties.join("; ")}. Requirements: ${vacancy.requirements.join("; ")}.`,
     datePosted: vacancy.datePosted,
-    validThrough: "2026-08-25",
+    validThrough,
+    identifier: {
+      "@type": "PropertyValue",
+      name: "Cypher Digital",
+      value: vacancy.slug,
+    },
     employmentType: vacancy.employmentType,
     hiringOrganization: {
       "@type": "Organization",
