@@ -183,6 +183,89 @@ export const vacancies: Vacancy[] = [
     datePosted: "2026-05-25",
   },
   {
+    slug: "digital-marketing-executive-jobs-sri-lanka",
+    title: "Digital Marketing Executive",
+    shortTitle: "Digital Marketing Executive",
+    h1: "Digital Marketing Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Digital Marketing Executive Jobs in Sri Lanka 2026 | Vacancy in Colombo",
+    metaDescription:
+      "Looking for Digital Marketing Executive jobs in Sri Lanka? Cypher Digital is hiring a Digital Marketing Executive in Colombo — Meta Ads, Google Ads, SEO, content. Apply via WhatsApp.",
+    icon: Briefcase,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the most in-demand Digital Marketing Executive jobs in Sri Lanka right now — execute Meta, Google and TikTok ad campaigns, manage social pages and report on real lead-generation results for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 45000, max: 120000, currency: "LKR", unit: "MONTH" },
+    seoIntro: [
+      "Cypher Digital is hiring a Digital Marketing Executive in Sri Lanka to join our Colombo performance team. If you're searching for digital marketing executive jobs in Sri Lanka — or a serious digital marketing executive vacancy in Colombo with real campaigns, real budgets and real career growth — this is one of the best opportunities open right now.",
+      "As our Digital Marketing Executive in Sri Lanka, you'll execute Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond. You'll manage day-to-day campaign delivery, social media scheduling, lead tracking and monthly client reporting — the core executive work that keeps performance marketing running.",
+      "This is a full-time digital marketing executive career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production. Clear growth path from Digital Marketing Executive → Senior Executive → Digital Marketing Specialist → Performance Lead.",
+    ],
+    duties: [
+      "Execute Facebook, Instagram, Google and TikTok ad campaigns under the Specialist's plan",
+      "Schedule and publish daily content on client social media pages",
+      "Track leads, ad spend and key metrics in Meta Ads Manager and Google Ads",
+      "Prepare weekly and monthly client performance reports",
+      "Manage client WhatsApp inboxes, comments and DMs for assigned brands",
+      "Coordinate with designers and video editors on campaign creatives",
+    ],
+    requirements: [
+      "0–2 years of hands-on digital marketing experience (internship counts)",
+      "Working knowledge of Meta Ads Manager and/or Google Ads",
+      "Understanding of social media scheduling tools (Meta Business Suite, Buffer, etc.)",
+      "Strong communication skills in English and Sinhala (Tamil a plus)",
+      "Organised, deadline-driven and comfortable juggling multiple client accounts",
+      "Meta Blueprint or Google Ads certification is a strong plus",
+    ],
+    perks: [
+      "Competitive salary benchmarked against top digital marketing executive jobs in Colombo",
+      "Hands-on training on Meta Ads, Google Ads, SEO and analytics",
+      "Direct mentorship from Meta Blueprint and Google Ads certified specialists",
+      "Clear promotion path to Digital Marketing Specialist within 12–18 months",
+      "Work across 800+ Sri Lankan brand campaigns in multiple industries",
+      "Friendly Colombo studio culture with hybrid flexibility",
+    ],
+    whyJoin: [
+      { title: "Best executive-level training in Sri Lanka", body: "You'll execute real campaigns from day one — Meta Ads, Google Ads, TikTok Ads, SEO and content — under the mentorship of certified specialists. Most executives are running their own client accounts within 3 months." },
+      { title: "Real brands, real budgets, real results", body: "You'll work on live ad accounts for 800+ Sri Lankan brands across restaurants, fashion, real estate, education, healthcare and FMCG — not dummy projects." },
+      { title: "Fastest promotion path in the industry", body: "Top Digital Marketing Executives at Cypher Digital are promoted to Specialist within 12–18 months, with a clear track to Performance Lead and Account Director inside Cypher360." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring Digital Marketing Executives in Sri Lanka right now?",
+        a: "Yes. Cypher Digital has an open Digital Marketing Executive vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV.",
+      },
+      {
+        q: "What is the average salary for a Digital Marketing Executive in Sri Lanka?",
+        a: "Digital Marketing Executive salaries in Sri Lanka typically range between LKR 45,000 and LKR 120,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and the number of client accounts handled.",
+      },
+      {
+        q: "What's the difference between a Digital Marketing Executive and a Digital Marketing Specialist?",
+        a: "A Digital Marketing Executive focuses on day-to-day execution — running campaigns, scheduling content, pulling reports — under a Specialist's strategy. A Specialist owns campaign strategy, budget allocation and ROI accountability. Most Executives at Cypher Digital are promoted to Specialist within 12–18 months.",
+      },
+      {
+        q: "Do I need experience to apply for this Digital Marketing Executive job in Sri Lanka?",
+        a: "0–2 years of hands-on digital marketing experience is preferred — an internship in social media management or paid ads counts. Strong English/Sinhala communication and a willingness to learn matter more than years on a CV.",
+      },
+      {
+        q: "Where is the Digital Marketing Executive job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Executives are expected on-site at least 3 days per week so they can learn directly from senior specialists.",
+      },
+      {
+        q: "Do I need a marketing degree to apply?",
+        a: "No degree required. We hire based on attitude, communication and willingness to learn. Meta Blueprint, Google Ads or any digital marketing certification is a strong plus.",
+      },
+      {
+        q: "How do I apply for this Digital Marketing Executive vacancy in Sri Lanka?",
+        a: "Send your name, CV or LinkedIn link and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Digital Marketing Executive position at Cypher Digital.",
+    whatsappCta: "Apply for Digital Marketing Executive",
+    datePosted: "2026-05-25",
+  },
+  {
     slug: "video-editor-jobs-sri-lanka",
     title: "Video Editor",
     shortTitle: "Video Editor",
