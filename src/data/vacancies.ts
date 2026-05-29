@@ -39,7 +39,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most in-demand graphic designer jobs in Sri Lanka right now — design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 60000, max: 100000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 45000, max: 150000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Graphic Designer in Sri Lanka to join our Colombo creative studio. If you're searching for graphic designer jobs in Sri Lanka — or graphic design jobs in Sri Lanka in general — with real brands, real budgets and real creative freedom, this is one of the best graphic design vacancies in Colombo right now.",
       "As our in-house Graphic Designer in Sri Lanka, you'll design social media creatives, ad visuals, brand identities, packaging and marketing collateral for 800+ Sri Lankan brands across Colombo, Kandy, Galle, Negombo and beyond. Your work goes live on paid Meta and Google Ads campaigns — not stuck in a folder.",
@@ -78,7 +78,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Graphic Designer in Sri Lanka?",
-        a: "Graphic designer salaries in Sri Lanka typically range between LKR 60,000 and LKR 100,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength.",
+        a: "Graphic designer salaries in Sri Lanka typically range between LKR 45,000 and LKR 150,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength.",
       },
       {
         q: "Where is the graphic design job located?",
@@ -115,7 +115,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most in-demand Digital Marketing Specialist jobs in Sri Lanka right now — plan and run Meta, Google and TikTok ad campaigns that generate real leads and measurable ROI for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 60000, max: 120000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 50000, max: 200000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Digital Marketing Specialist in Sri Lanka to join our Colombo performance team. If you're searching for digital marketing specialist jobs in Sri Lanka — or a serious digital marketing specialist vacancy in Sri Lanka with real budgets and real accountability — this is one of the best opportunities in Colombo right now.",
       "As our Digital Marketing Specialist in Sri Lanka, you'll plan, launch and optimise Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond. You'll own performance — leads, ROAS, CPL — not just post-and-pray social media.",
@@ -141,7 +141,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Digital Marketing Specialist in Sri Lanka?",
-        a: "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 60,000 and LKR 175,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI.",
+        a: "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 50,000 and LKR 200,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI.",
       },
       {
         q: "What does a Digital Marketing Specialist at Cypher Digital actually do?",
@@ -196,7 +196,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the most in-demand Video Editor jobs in Sri Lanka right now — edit scroll-stopping reels, TikToks, YouTube ads and brand films for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
-    salaryRange: { min: 60000, max: 100000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 45000, max: 150000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is hiring a Video Editor in Sri Lanka to join our Colombo creative studio. If you're searching for video editor jobs in Sri Lanka with real brands, real budgets, and creative freedom — this is one of the best video editing vacancies in Colombo right now.",
       "As our in-house Video Editor in Sri Lanka, you'll cut high-performing short-form video content for Facebook, Instagram Reels, TikTok, YouTube Shorts and YouTube Ads — the same creatives that drive paid campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond.",
@@ -237,7 +237,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Video Editor in Sri Lanka?",
-        a: "Video Editor salaries in Sri Lanka typically range between LKR 60,000 and LKR 100,000 per month depending on experience, software skills (Premiere Pro, After Effects, DaVinci Resolve) and portfolio strength.",
+        a: "Video Editor salaries in Sri Lanka typically range between LKR 45,000 and LKR 150,000 per month depending on experience, software skills (Premiere Pro, After Effects, DaVinci Resolve) and portfolio strength.",
       },
       {
         q: "Where is the video editor job located?",
@@ -274,7 +274,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the best marketing internships in Sri Lanka — a hands-on, paid internship in Colombo where you work alongside our team on live client campaigns for 800+ Sri Lankan brands.",
-    salaryRange: { min: 30000, max: 45000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 20000, max: 40000, currency: "LKR", unit: "MONTH" },
     seoIntro: [
       "Cypher Digital is offering a Marketing Internship in Sri Lanka for students and fresh graduates who want to break into digital marketing the right way. If you're searching for a marketing internship in Colombo, a digital marketing internship in Sri Lanka, or a social media internship near you — this is one of the most hands-on internship opportunities in the country right now.",
       "As a Marketing Intern at Cypher Digital, you'll work on real Facebook, Instagram, TikTok and Google Ads campaigns for 800+ Sri Lankan brands across restaurants, fashion, education, real estate and healthcare. You'll learn how professional marketers plan, launch, optimise and report on paid campaigns — not just theory from a textbook.",
@@ -317,7 +317,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "Is this a paid marketing internship in Sri Lanka?",
-        a: "Yes — this is a paid internship. Stipends range between LKR 30,000 and LKR 45,000 per month based on hours committed and skills demonstrated.",
+        a: "Yes — this is a paid internship. Stipends range between LKR 20,000 and LKR 40,000 per month based on hours committed and skills demonstrated.",
       },
       {
         q: "Can university students apply for this digital marketing internship?",

@@ -3,16 +3,16 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 
 const VACANCIES = [
-  { title: "Video Editor", type: "Full-time / Freelance", salary: "LKR 50,000 – 120,000", href: "/careers/video-editor-jobs-sri-lanka", hot: true },
-  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 60,000 – 175,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: false },
-  { title: "Graphic Designer", type: "Full-time / Part-time", salary: "LKR 55,000 – 130,000", href: "/careers/graphic-designer-jobs-sri-lanka", hot: false },
-  { title: "Marketing Intern", type: "Internship", salary: "LKR 25,000 – 45,000", href: "/careers/marketing-internship-sri-lanka", hot: false },
+  { title: "Video Editor", type: "Full-time / Freelance", salary: "LKR 45,000 – 150,000", href: "/careers/video-editor-jobs-sri-lanka", hot: true },
+  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 50,000 – 200,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: false },
+  { title: "Graphic Designer", type: "Full-time / Part-time", salary: "LKR 45,000 – 150,000", href: "/careers/graphic-designer-jobs-sri-lanka", hot: false },
+  { title: "Marketing Intern", type: "Internship", salary: "LKR 20,000 – 40,000", href: "/careers/marketing-internship-sri-lanka", hot: false },
 ];
 
 const SALARY = [
-  { level: "Junior (0–1 yr)", range: "LKR 50,000 – 70,000", note: "CapCut proficient, basic Premiere" },
-  { level: "Mid-level (2–3 yr)", range: "LKR 75,000 – 110,000", note: "Full Premiere, DaVinci, fast turnaround" },
-  { level: "Senior (4+ yr)", range: "LKR 115,000 – 180,000+", note: "After Effects, motion graphics, ad strategy" },
+  { level: "Junior (0–1 yr)", range: "LKR 45,000 – 70,000", note: "CapCut proficient, basic Premiere" },
+  { level: "Mid-level (2–3 yr)", range: "LKR 70,000 – 100,000", note: "Full Premiere, DaVinci, fast turnaround" },
+  { level: "Senior (4+ yr)", range: "LKR 100,000 – 150,000", note: "After Effects, motion graphics, ad strategy" },
   { level: "Freelance per Reel", range: "LKR 3,000 – 15,000", note: "Depends on brief complexity and client" },
 ];
 

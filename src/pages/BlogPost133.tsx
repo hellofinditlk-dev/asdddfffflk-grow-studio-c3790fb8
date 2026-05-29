@@ -3,10 +3,10 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 
 const VACANCIES = [
-  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 60,000 – 175,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: true },
-  { title: "Digital Marketing Executive", type: "Full-time", salary: "LKR 80,000 – 140,000", href: "/careers/digital-marketing-jobs-sri-lanka", hot: false },
-  { title: "Marketing Intern", type: "Internship", salary: "LKR 25,000 – 45,000", href: "/careers/marketing-internship-sri-lanka", hot: false },
-  { title: "Graphic Designer", type: "Full-time / Part-time", salary: "LKR 55,000 – 130,000", href: "/careers/graphic-designer-jobs-sri-lanka", hot: false },
+  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 50,000 – 200,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: true },
+  { title: "Digital Marketing Executive", type: "Full-time", salary: "LKR 50,000 – 200,000", href: "/careers/digital-marketing-jobs-sri-lanka", hot: false },
+  { title: "Marketing Intern", type: "Internship", salary: "LKR 20,000 – 40,000", href: "/careers/marketing-internship-sri-lanka", hot: false },
+  { title: "Graphic Designer", type: "Full-time / Part-time", salary: "LKR 45,000 – 150,000", href: "/careers/graphic-designer-jobs-sri-lanka", hot: false },
 ];
 
 const DAILY = [
@@ -19,9 +19,9 @@ const DAILY = [
 ];
 
 const SALARY = [
-  { level: "Junior ads manager (0–1 yr)", range: "LKR 80,000 – 110,000", note: "Basic campaign setup, supervised optimisation" },
-  { level: "Ads executive (2–3 yr)", range: "LKR 115,000 – 160,000", note: "Independent account management, strategy input" },
-  { level: "Senior specialist (4+ yr)", range: "LKR 165,000 – 220,000+", note: "Multi-account leadership, client strategy ownership" },
+  { level: "Junior ads manager (0–1 yr)", range: "LKR 50,000 – 80,000", note: "Basic campaign setup, supervised optimisation" },
+  { level: "Ads executive (2–3 yr)", range: "LKR 80,000 – 130,000", note: "Independent account management, strategy input" },
+  { level: "Senior specialist (4+ yr)", range: "LKR 130,000 – 200,000", note: "Multi-account leadership, client strategy ownership" },
 ];
 
 const BLUEPRINT = [
@@ -38,7 +38,7 @@ const EXPECTATIONS = [
 ];
 
 const PATHS = [
-  { path: "Senior Ads Specialist / Team Lead", desc: "Manage junior ads managers and own strategic direction across multiple client accounts. Salary range: LKR 180,000 – 250,000." },
+  { path: "Senior Ads Specialist / Team Lead", desc: "Manage junior ads managers and own strategic direction across multiple client accounts. Salary range: LKR 130,000 – 200,000." },
   { path: "Digital Marketing Manager", desc: "Oversee all digital channels — Meta, Google, TikTok, SEO, email — for an agency or in-house. Typically requires 4–5 years of multi-channel experience." },
   { path: "Performance Marketing Consultant (freelance)", desc: "Work independently managing ad accounts for multiple clients. More viable after 3+ years of agency experience with a proven track record." },
   { path: "Head of Growth (in-house)", desc: "Senior in-house role at a product or ecommerce company, responsible for paid acquisition, retention, and revenue growth. Highest earning ceiling." },
