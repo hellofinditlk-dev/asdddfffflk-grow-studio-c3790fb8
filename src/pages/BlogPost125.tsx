@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 
 const SALARY_DATA = [
   { role: "Digital Marketing Specialist", min: 60000, max: 175000, link: "/careers/digital-marketing-specialist-sri-lanka", tag: "Most In-Demand" },
-  { role: "Social Media Manager", min: 65000, max: 140000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
+  { role: "Social Media Manager", min: 65000, max: 180000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
   { role: "SEO Executive", min: 60000, max: 150000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
   { role: "Graphic Designer", min: 55000, max: 130000, link: "/careers/graphic-designer-jobs-sri-lanka", tag: null as string | null },
   { role: "Video Editor", min: 50000, max: 120000, link: "/careers/video-editor-jobs-sri-lanka", tag: null as string | null },
