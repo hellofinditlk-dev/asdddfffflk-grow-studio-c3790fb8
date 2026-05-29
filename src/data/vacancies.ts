@@ -141,7 +141,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Digital Marketing Specialist in Sri Lanka?",
-        a: "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 60,000 and LKR 120,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI.",
+        a: "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 60,000 and LKR 175,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI.",
       },
       {
         q: "What does a Digital Marketing Specialist at Cypher Digital actually do?",
