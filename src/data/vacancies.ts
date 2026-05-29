@@ -486,7 +486,7 @@ export const vacancies: Vacancy[] = [
       },
       {
         q: "What is the average salary for a Digital Marketing Manager in Sri Lanka?",
-        a: "Digital Marketing Manager salaries in Sri Lanka typically range between LKR 150,000 and LKR 350,000 per month depending on years of experience, team size managed, certifications and proven campaign ROI.",
+        a: "Digital Marketing Manager salaries in Sri Lanka typically range between LKR 120,000 and LKR 200,000 per month depending on years of experience, team size managed, certifications and proven campaign ROI.",
       },
       {
         q: "What does a Digital Marketing Manager at Cypher Digital actually do?",
