@@ -672,6 +672,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Hiring a Digital Marketing Specialist in Colombo. Run Facebook Ads, Google Ads and SEO campaigns for top Sri Lankan brands. Apply via WhatsApp today.",
     h1: "Digital Marketing Specialist Vacancy in Sri Lanka — Cypher Digital",
   },
+  "/careers/digital-marketing-executive-jobs-sri-lanka": {
+    title: "Digital Marketing Executive Jobs in Sri Lanka 2026 | Vacancy in Colombo",
+    description: "Looking for Digital Marketing Executive jobs in Sri Lanka? Cypher Digital is hiring a Digital Marketing Executive in Colombo — Meta Ads, Google Ads, SEO, content. Apply via WhatsApp.",
+    h1: "Digital Marketing Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+  },
   "/careers/video-editor-jobs-sri-lanka": {
     title: "Video Editor Jobs in Sri Lanka | Cypher Digital Careers",
     description: "We're hiring a Video Editor in Colombo, Sri Lanka. Edit reels, TikToks and brand videos for 800+ clients. Apply now via WhatsApp at Cypher Digital.",
