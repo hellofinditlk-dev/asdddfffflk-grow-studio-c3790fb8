@@ -3,18 +3,18 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 
 const SALARY_DATA = [
-  { role: "Digital Marketing Specialist", min: 60000, max: 175000, link: "/careers/digital-marketing-specialist-sri-lanka", tag: "Most In-Demand" },
-  { role: "Social Media Manager", min: 65000, max: 180000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
-  { role: "SEO Executive", min: 60000, max: 150000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
-  { role: "Graphic Designer", min: 55000, max: 130000, link: "/careers/graphic-designer-jobs-sri-lanka", tag: null as string | null },
-  { role: "Video Editor", min: 50000, max: 120000, link: "/careers/video-editor-jobs-sri-lanka", tag: null as string | null },
-  { role: "Marketing Intern", min: 25000, max: 45000, link: "/careers/marketing-internship-sri-lanka", tag: null as string | null },
+  { role: "Digital Marketing Specialist", min: 50000, max: 200000, link: "/careers/digital-marketing-specialist-sri-lanka", tag: "Most In-Demand" },
+  { role: "Social Media Executive", min: 45000, max: 180000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
+  { role: "SEO Specialist", min: 50000, max: 200000, link: "/careers/digital-marketing-jobs-sri-lanka", tag: null as string | null },
+  { role: "Graphic Designer", min: 45000, max: 150000, link: "/careers/graphic-designer-jobs-sri-lanka", tag: null as string | null },
+  { role: "Video Editor", min: 45000, max: 150000, link: "/careers/video-editor-jobs-sri-lanka", tag: null as string | null },
+  { role: "Marketing Intern", min: 20000, max: 40000, link: "/careers/marketing-internship-sri-lanka", tag: null as string | null },
 ];
 
 const EXPERIENCE_DATA = [
-  { level: "Fresh Graduate", years: "0–1 year", range: "LKR 55,000 – 80,000" },
-  { level: "Mid-Level", years: "2–4 years", range: "LKR 90,000 – 150,000" },
-  { level: "Senior", years: "5+ years", range: "LKR 160,000 – 250,000+" },
+  { level: "Junior", years: "0–1 year", range: "LKR 50,000 – 80,000" },
+  { level: "Mid-Level", years: "2–3 years", range: "LKR 80,000 – 130,000" },
+  { level: "Senior", years: "4+ years", range: "LKR 130,000 – 200,000" },
 ];
 
 const CITY_DATA = [
