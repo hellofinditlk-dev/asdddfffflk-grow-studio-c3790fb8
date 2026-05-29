@@ -22,7 +22,7 @@ const FLAGS = [
 ];
 
 const PAY_ROWS = [
-  ["Paid internship at an established agency", "LKR 25,000 – 45,000", "Industry standard — company values your time"],
+  ["Paid internship at an established agency", "LKR 20,000 – 40,000", "Industry standard — company values your time"],
   ["Paid internship at a small agency or startup", "LKR 10,000 – 25,000", "Acceptable if the learning opportunity is strong"],
   ["Unpaid with stipend (transport, meals)", "LKR 3,000 – 8,000", "Only worthwhile if learning opportunity is exceptional"],
   ["Fully unpaid", "LKR 0", "Rare at professional agencies — evaluate carefully"],
@@ -50,7 +50,7 @@ const CYPHER_BULLETS = [
   "You receive structured weekly skills sessions covering Meta Ads, Google Ads, content strategy, and reporting",
   "Your work will be in the market — actual ads running, actual posts published, actual results you can screenshot for your portfolio",
   "Strong performers are offered full-time roles before we post new vacancies publicly",
-  "The programme pays a monthly allowance of LKR 25,000 – 45,000",
+  "The programme pays a monthly allowance of LKR 20,000 – 40,000",
 ];
 
 const RELATED = [
