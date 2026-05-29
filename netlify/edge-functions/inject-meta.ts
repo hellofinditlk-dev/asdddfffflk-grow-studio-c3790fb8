@@ -4,6 +4,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "#1 digital marketing agency in Sri Lanka & best social media agency Sri Lanka. Trusted digital marketing companies in Sri Lanka. Get free call today!",
     h1: "Digital Marketing Agency in Sri Lanka",
   },
+  "/ai-visibility-sri-lanka": {
+    title: "AI Visibility Checker Sri Lanka | Get Found on ChatGPT & Gemini | Cypher Digital",
+    description: "Sri Lanka's first AI Visibility service. Find out if your business appears on ChatGPT, Gemini & Perplexity. Free AI audit for Sri Lankan businesses. Cypher Digital, Colombo.",
+    h1: "Is Your Business Visible on ChatGPT & Gemini?",
+  },
   "/linkedin-marketing-sri-lanka": {
     title: "LinkedIn Marketing Sri Lanka | B2B LinkedIn Ads & Lead Generation | Cypher Digital",
     description: "LinkedIn marketing Sri Lanka — B2B lead generation, LinkedIn Ads, company page management & executive branding. Reach decision-makers locally & internationally. Free consultation.",

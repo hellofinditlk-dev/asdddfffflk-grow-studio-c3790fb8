@@ -96,6 +96,14 @@ const services = [
     link: "/influencer-marketing-sri-lanka",
     gradient: "from-[hsl(280,75%,60%)] to-[hsl(252,65%,55%)]",
   },
+  {
+    icon: <Sparkles className="w-5 h-5" />,
+    title: "AI Visibility",
+    desc: "Get your business found on ChatGPT, Gemini & Perplexity in Sri Lanka.",
+    items: ["AI Visibility Audit", "Answer Engine Optimisation", "Brand authority building", "Schema & structured data", "Monthly AI visibility score"],
+    link: "/ai-visibility-sri-lanka",
+    gradient: "from-[hsl(180,80%,45%)] to-[hsl(220,80%,55%)]",
+  },
 ];
 
 const whyUs = [
