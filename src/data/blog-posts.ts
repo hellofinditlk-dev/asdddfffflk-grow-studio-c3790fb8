@@ -882,4 +882,11 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-23",
     keyword: "instagram marketing sri lanka",
   },
+  {
+    slug: "digital-marketing-salary-sri-lanka-2026",
+    title: "Digital Marketing Salary in Sri Lanka 2026 — The Complete Guide",
+    excerpt: "Real digital marketing salaries in Sri Lanka 2026 — by role, experience and city. LKR 25,000 intern to 250,000+ senior. By Cypher Digital.",
+    date: "2026-05-29",
+    keyword: "digital marketing salary sri lanka",
+  },
 ];
