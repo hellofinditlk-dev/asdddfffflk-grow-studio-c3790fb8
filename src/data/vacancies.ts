@@ -1,4 +1,4 @@
-import { Palette, BarChart3, Film, GraduationCap, Share2, type LucideIcon } from "lucide-react";
+import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, type LucideIcon } from "lucide-react";
 
 export interface Vacancy {
   slug: string;
@@ -426,6 +426,91 @@ export const vacancies: Vacancy[] = [
     ],
     whatsappMessage: "Hi, I'm applying for the Social Media Manager position at Cypher Digital.",
     whatsappCta: "Apply for Social Media Manager",
+    datePosted: "2026-05-25",
+  },
+  {
+    slug: "digital-marketing-manager-jobs-sri-lanka",
+    title: "Digital Marketing Manager",
+    shortTitle: "Digital Marketing Manager",
+    h1: "Digital Marketing Manager Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Digital Marketing Manager Jobs in Sri Lanka 2026 | Vacancy in Colombo",
+    metaDescription:
+      "Looking for Digital Marketing Manager jobs in Sri Lanka? Cypher Digital is hiring a Digital Marketing Manager in Colombo to lead Meta, Google & TikTok campaigns for 800+ brands. Apply via WhatsApp.",
+    icon: Briefcase,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the most senior digital marketing manager jobs in Sri Lanka right now — lead a team of performance marketers, strategists and creatives running Meta, Google and TikTok campaigns for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 150000, max: 350000, currency: "LKR", unit: "MONTH" },
+    seoIntro: [
+      "Cypher Digital is hiring a Digital Marketing Manager in Sri Lanka to lead our Colombo performance team. If you're searching for digital marketing manager jobs in Sri Lanka — or a serious digital marketing manager vacancy in Colombo with real budgets, real teams and real accountability — this is one of the best leadership opportunities in the country right now.",
+      "As our Digital Marketing Manager in Sri Lanka, you'll lead a team of specialists, executives and interns running Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond. You'll own strategy, budgets, ROAS, client relationships and team growth — not just execute someone else's plan.",
+      "This is a full-time digital marketing leadership opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
+    ],
+    duties: [
+      "Lead the digital marketing team — specialists, executives and interns",
+      "Plan integrated Meta Ads, Google Ads, TikTok Ads and SEO strategies",
+      "Own monthly performance — leads, ROAS, CPL — across 800+ brand accounts",
+      "Manage client relationships, strategy calls and quarterly reviews",
+      "Allocate and optimise monthly ad budgets from LKR 50K to LKR 5M+",
+      "Mentor specialists and executives toward Meta Blueprint and Google Ads certifications",
+      "Report weekly to senior leadership on team and campaign performance",
+    ],
+    requirements: [
+      "4–8 years of hands-on digital marketing experience",
+      "Proven track record managing Meta Ads and Google Ads budgets at scale",
+      "Experience leading or mentoring a small marketing team",
+      "Strong understanding of SEO, lead generation and full-funnel strategy",
+      "Confident in client-facing strategy calls and quarterly business reviews",
+      "Meta Blueprint and/or Google Ads certification strongly preferred",
+      "Analytical mindset — comfort with GA4, Looker Studio and attribution",
+    ],
+    perks: [
+      "Senior salary benchmarked against top digital marketing manager jobs in Colombo",
+      "Lead real ad budgets across Meta Ads, Google Ads and TikTok Ads",
+      "Direct seat at the leadership table inside Cypher360",
+      "Clear growth path to Head of Digital / Performance Director roles",
+      "Work on 800+ Sri Lankan brand campaigns across every major industry",
+      "Friendly Colombo studio culture with hybrid flexibility",
+    ],
+    whyJoin: [
+      { title: "Sri Lanka's most diverse campaign portfolio", body: "Restaurants, fashion, real estate, education, healthcare and FMCG — you'll lead strategy across every major industry, not just one vertical." },
+      { title: "Real budgets, real teams, real accountability", body: "You'll own monthly Meta and Google Ads budgets ranging from LKR 50K to LKR 5M+, plus a team of specialists and executives — measured on leads, ROAS and CPL." },
+      { title: "Leadership growth inside Cypher360", body: "Top managers move into Head of Digital, Performance Director or Account Director roles inside Sri Lanka's most integrated marketing group." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring Digital Marketing Managers in Sri Lanka right now?",
+        a: "Yes. Cypher Digital has an open Digital Marketing Manager vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and team/campaign results.",
+      },
+      {
+        q: "What is the average salary for a Digital Marketing Manager in Sri Lanka?",
+        a: "Digital Marketing Manager salaries in Sri Lanka typically range between LKR 150,000 and LKR 350,000 per month depending on years of experience, team size managed, certifications and proven campaign ROI.",
+      },
+      {
+        q: "What does a Digital Marketing Manager at Cypher Digital actually do?",
+        a: "You'll lead the performance team, plan integrated Meta, Google, TikTok and SEO strategies, own monthly performance across 800+ brand accounts, manage client relationships and mentor specialists and executives toward certifications.",
+      },
+      {
+        q: "Where is the Digital Marketing Manager job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Managers are expected on-site at least 3 days per week for team and client reviews.",
+      },
+      {
+        q: "What experience do I need to apply for this digital marketing manager job in Sri Lanka?",
+        a: "4–8 years of hands-on digital marketing experience with a proven track record managing Meta Ads and Google Ads budgets at scale, plus experience leading or mentoring a small team. Meta Blueprint or Google Ads certification is strongly preferred.",
+      },
+      {
+        q: "Do I need a marketing degree to apply?",
+        a: "No degree required. We hire based on real results — the campaigns you've led, the budgets you've managed, the ROAS you've delivered and the teams you've grown matter far more than qualifications.",
+      },
+      {
+        q: "How do I apply for this Digital Marketing Manager vacancy in Sri Lanka?",
+        a: "Send your name, CV or LinkedIn link and a short summary of campaigns and teams you've led to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Digital Marketing Manager position at Cypher Digital.",
+    whatsappCta: "Apply for Digital Marketing Manager",
     datePosted: "2026-05-25",
   },
 ];
