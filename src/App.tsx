@@ -229,6 +229,7 @@ const App = () => (
               <Route path="/influencer-marketing-sri-lanka" element={<InfluencerMarketing />} />
               <Route path="/linkedin-marketing-sri-lanka" element={<LinkedInAdvertising />} />
               <Route path="/instagram-marketing-sri-lanka" element={<InstagramMarketing />} />
+              <Route path="/ai-visibility-sri-lanka" element={<AIVisibility />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/why-social-media-management-important-businesses-sri-lanka" element={<BlogPost1 />} />
               <Route path="/blog/how-consistent-social-media-posting-builds-brand-trust" element={<BlogPost2 />} />
