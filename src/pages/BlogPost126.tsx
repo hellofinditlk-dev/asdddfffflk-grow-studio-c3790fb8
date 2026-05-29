@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 
 const VACANCIES = [
-  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 120,000 – 200,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: true },
+  { title: "Digital Marketing Specialist", type: "Full-time", salary: "LKR 60,000 – 175,000", href: "/careers/digital-marketing-specialist-sri-lanka", hot: true },
   { title: "Graphic Designer", type: "Full-time / Part-time", salary: "LKR 55,000 – 130,000", href: "/careers/graphic-designer-jobs-sri-lanka", hot: false },
   { title: "Video Editor", type: "Full-time / Freelance", salary: "LKR 50,000 – 120,000", href: "/careers/video-editor-jobs-sri-lanka", hot: false },
   { title: "Marketing Intern", type: "Internship (3–6 months)", salary: "LKR 25,000 – 45,000", href: "/careers/marketing-internship-sri-lanka", hot: false },
