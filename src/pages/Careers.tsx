@@ -13,6 +13,35 @@ const perks = [
   { icon: Sparkles, title: "Cypher360 Group", desc: "Part of the country's most integrated marketing ecosystem." },
   { icon: Briefcase, title: "Real responsibility", desc: "Own your work, ship fast, and see the impact in weeks — not years." },
   { icon: MapPin, title: "Colombo + flexibility", desc: "Office-based in Colombo with remote flexibility where it makes sense." },
+  { icon: TrendingUp, title: "Fast career growth", desc: "Team members regularly advance to the next level within 12–18 months." },
+  { icon: MessageCircle, title: "Apply in 60 seconds", desc: "WhatsApp-based hiring. We respond within 24 hours — no lengthy forms." },
+];
+
+const salaryRows = [
+  { role: "Marketing Intern", level: "Student / Entry Level", salary: "LKR 20,000 – 40,000", type: "Internship" },
+  { role: "Graphic Designer", level: "1–3 years experience", salary: "LKR 60,000 – 120,000", type: "Full-time / Part-time" },
+  { role: "Video Editor", level: "1–4 years experience", salary: "LKR 60,000 – 150,000", type: "Full-time / Freelance" },
+  { role: "Social Media Executive", level: "1–3 years experience", salary: "LKR 65,000 – 110,000", type: "Full-time" },
+  { role: "SEO Executive", level: "1–3 years experience", salary: "LKR 70,000 – 120,000", type: "Full-time" },
+  { role: "Digital Marketing Specialist", level: "2–5 years experience", salary: "LKR 80,000 – 200,000", type: "Full-time" },
+  { role: "Paid Ads Manager (Meta + Google)", level: "3–6 years experience", salary: "LKR 120,000 – 220,000", type: "Full-time" },
+  { role: "Digital Marketing Manager", level: "5+ years experience", salary: "LKR 150,000 – 280,000", type: "Full-time" },
+];
+
+const careerPath = [
+  { step: "Step 1", title: "Marketing Intern", salary: "LKR 20K–40K/mo", time: "0–6 months" },
+  { step: "Step 2", title: "DM Executive", salary: "LKR 60K–90K/mo", time: "6–18 months" },
+  { step: "Step 3", title: "DM Specialist", salary: "LKR 90K–150K/mo", time: "1.5–3 years" },
+  { step: "Step 4", title: "DM Manager", salary: "LKR 150K–280K/mo", time: "3–6 years" },
+];
+
+const roleDescriptions = [
+  { title: "Social Media Marketing Jobs in Sri Lanka", desc: "Social media marketing executives at Cypher Digital plan, create and manage Facebook and Instagram content and community management for clients across Sri Lanka. Typical tasks include content calendar planning, caption writing, posting, inbox management and monthly performance reporting. Salaries range from LKR 65,000 to LKR 110,000 per month." },
+  { title: "Paid Ads Specialist Jobs — Meta Ads & Google Ads Sri Lanka", desc: "Paid ads specialists manage Meta Ads (Facebook and Instagram advertising) and Google Ads budgets across Search, Display and YouTube for Sri Lankan brands. This is the highest-paying digital marketing job in Sri Lanka at the specialist level, with salaries of LKR 80,000–200,000 per month. Meta Blueprint or Google Ads certification is a strong advantage." },
+  { title: "SEO Executive Jobs in Colombo, Sri Lanka", desc: "SEO executive roles involve on-page optimisation, keyword research, technical SEO audits, link building and local SEO for Sri Lankan business clients. SEO jobs in Colombo typically pay LKR 70,000 to LKR 120,000 per month. Knowledge of Google Search Console, Ahrefs or SEMrush is a strong advantage." },
+  { title: "Graphic Designer Jobs in Sri Lanka", desc: "Graphic designers create social media creatives, brand identities, ad visuals, flyers and marketing collateral. The team works across Adobe Photoshop, Illustrator and Canva Pro. One of the most in-demand creative jobs in Sri Lanka, with strong demand in Colombo, Kandy and Galle." },
+  { title: "Video Editor Jobs in Sri Lanka", desc: "Video editors focus on social media content — Reels, TikToks, YouTube ads and brand films — designed to perform in paid advertising campaigns. Editors work in Adobe Premiere Pro or DaVinci Resolve. After Effects motion graphics experience is a strong advantage. Both full-time and freelance arrangements available." },
+  { title: "Digital Marketing Internships in Sri Lanka", desc: "Cypher Digital's marketing internship programme in Colombo is one of the best digital marketing internships in Sri Lanka. Interns work on live campaigns — not coffee runs. Runs for 3 to 6 months, paid, and regularly converts into full-time roles. Open to students of marketing, business, design or IT." },
 ];
 
 const careersSchema = {
@@ -119,6 +148,17 @@ const faqs = [
     a: "Send your name, CV or portfolio link and the role you want to apply for to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
   },
 ];
+
+faqs.push(
+  {
+    q: "What skills do I need for a digital marketing job in Sri Lanka?",
+    a: "Required skills depend on the role. Paid ads: Meta Ads and Google Ads campaign experience. SEO: on-page SEO, keyword research, Google Search Console. Social media: content planning, copywriting, community management. Graphic design: Adobe Creative Suite or Canva Pro with a strong portfolio. Video editing: Adobe Premiere Pro or DaVinci Resolve. All roles need good communication and a commercial mindset.",
+  },
+  {
+    q: "What is the digital marketing career growth path in Sri Lanka?",
+    a: "A typical path moves from Marketing Intern (LKR 20K–40K) → Digital Marketing Executive (LKR 60K–90K) → Digital Marketing Specialist (LKR 90K–150K) → Digital Marketing Manager (LKR 150K–280K). At Cypher Digital, team members regularly advance within 12–18 months due to the volume and variety of brand campaigns.",
+  },
+);
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -247,6 +287,84 @@ const Careers = () => (
               </Card>
             );
           })}
+        </div>
+      </div>
+    </section>
+
+    {/* Salary table */}
+    <section className="py-16 lg:py-20">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Salary in Sri Lanka 2026</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent salary ranges for every digital marketing role — so you know what to expect before you apply.</p>
+        </div>
+        <div className="overflow-x-auto rounded-xl border border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-secondary/40">
+              <tr className="text-left">
+                <th className="p-4 font-heading font-bold">Role</th>
+                <th className="p-4 font-heading font-bold">Experience Level</th>
+                <th className="p-4 font-heading font-bold">Monthly Salary (LKR)</th>
+                <th className="p-4 font-heading font-bold">Employment Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              {salaryRows.map((r, i) => (
+                <tr key={i} className="border-t border-border">
+                  <td className="p-4 font-medium">{r.role}</td>
+                  <td className="p-4 text-muted-foreground">{r.level}</td>
+                  <td className="p-4 font-semibold text-primary">{r.salary}</td>
+                  <td className="p-4 text-muted-foreground">{r.type}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-muted-foreground mt-4">
+          Salary ranges are based on Cypher Digital's 2026 hiring benchmarks for the Sri Lankan digital marketing market. Actual salaries depend on portfolio quality, platform certifications, and demonstrated campaign results.
+        </p>
+      </div>
+    </section>
+
+    {/* Career path */}
+    <section className="py-16 lg:py-20 bg-secondary/20">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-12">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Career Growth Path in Sri Lanka</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">What a digital marketing career progression looks like at Cypher Digital — and across Sri Lanka in 2026.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {careerPath.map((s, i) => (
+            <Card key={i} className="bg-card border-border">
+              <CardContent className="p-6">
+                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">{s.step}</div>
+                <h3 className="font-heading text-lg font-bold mb-2">{s.title}</h3>
+                <div className="text-sm font-semibold mb-1">{s.salary}</div>
+                <div className="text-xs text-muted-foreground">{s.time}</div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <p className="text-sm text-muted-foreground mt-8 max-w-3xl mx-auto text-center">
+          At Cypher Digital, team members regularly advance to the next level within 12–18 months because of the sheer volume and variety of brand campaigns they work on. Running live campaigns for 800+ brands across restaurants, real estate, fashion, healthcare and education means you gain more practical experience in one year here than in three years at a smaller agency or single-brand in-house role.
+        </p>
+      </div>
+    </section>
+
+    {/* Role descriptions — keyword-rich content */}
+    <section className="py-16 lg:py-20">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Roles at Cypher Digital — In Detail</h2>
+          <p className="text-muted-foreground">Every digital marketing career path in Sri Lanka under one roof.</p>
+        </div>
+        <div className="space-y-6">
+          {roleDescriptions.map((r, i) => (
+            <div key={i} className="p-6 rounded-xl bg-card border border-border">
+              <h3 className="font-heading text-lg md:text-xl font-bold mb-2">{r.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{r.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
