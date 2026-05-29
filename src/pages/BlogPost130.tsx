@@ -10,9 +10,9 @@ const VACANCIES = [
 ];
 
 const SALARY = [
-  { level: "Junior (0–1 yr)", range: "LKR 50,000 – 70,000", note: "CapCut proficient, basic Premiere" },
-  { level: "Mid-level (2–3 yr)", range: "LKR 75,000 – 110,000", note: "Full Premiere, DaVinci, fast turnaround" },
-  { level: "Senior (4+ yr)", range: "LKR 115,000 – 180,000+", note: "After Effects, motion graphics, ad strategy" },
+  { level: "Junior (0–1 yr)", range: "LKR 45,000 – 70,000", note: "CapCut proficient, basic Premiere" },
+  { level: "Mid-level (2–3 yr)", range: "LKR 70,000 – 100,000", note: "Full Premiere, DaVinci, fast turnaround" },
+  { level: "Senior (4+ yr)", range: "LKR 100,000 – 150,000", note: "After Effects, motion graphics, ad strategy" },
   { level: "Freelance per Reel", range: "LKR 3,000 – 15,000", note: "Depends on brief complexity and client" },
 ];
 
