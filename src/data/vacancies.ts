@@ -1,4 +1,4 @@
-import { Palette, BarChart3, Film, GraduationCap, type LucideIcon } from "lucide-react";
+import { Palette, BarChart3, Film, GraduationCap, Share2, type LucideIcon } from "lucide-react";
 
 export interface Vacancy {
   slug: string;
@@ -342,6 +342,90 @@ export const vacancies: Vacancy[] = [
     ],
     whatsappMessage: "Hi, I'm applying for the Marketing Internship at Cypher Digital.",
     whatsappCta: "Apply for Internship",
+    datePosted: "2026-05-25",
+  },
+  {
+    slug: "social-media-jobs-sri-lanka",
+    title: "Social Media Manager",
+    shortTitle: "Social Media Manager",
+    h1: "Social Media Manager Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Social Media Manager Jobs in Sri Lanka 2026 | Social Media Jobs Colombo",
+    metaDescription:
+      "Looking for social media jobs in Sri Lanka? Cypher Digital is hiring a Social Media Manager in Colombo to run Facebook, Instagram & TikTok for 800+ brands. Apply via WhatsApp.",
+    icon: Share2,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the most in-demand social media manager jobs in Sri Lanka right now — plan content, run Facebook, Instagram and TikTok pages and grow engaged audiences for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 45000, max: 180000, currency: "LKR", unit: "MONTH" },
+    seoIntro: [
+      "Cypher Digital is hiring a Social Media Manager in Sri Lanka to join our Colombo team. If you're searching for social media jobs in Sri Lanka — or a serious social media manager vacancy in Colombo with real brands, real budgets and real creative freedom — this is one of the best opportunities in the country right now.",
+      "As our Social Media Manager in Sri Lanka, you'll plan monthly content calendars, manage Facebook, Instagram, TikTok and LinkedIn pages, brief creatives, schedule posts, run organic growth and support paid social campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle, Negombo and beyond.",
+      "This is a full-time social media career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
+    ],
+    duties: [
+      "Plan monthly social media content calendars for client brands",
+      "Manage Facebook, Instagram, TikTok and LinkedIn pages day-to-day",
+      "Brief graphic designers and video editors on creative assets",
+      "Schedule posts, reels, stories and TikToks across multiple accounts",
+      "Engage with followers, manage inboxes and respond to comments",
+      "Track engagement, reach and follower growth and report monthly",
+      "Support the performance team with boosted posts and paid social",
+    ],
+    requirements: [
+      "1–3 years of hands-on social media management experience",
+      "Strong understanding of Facebook, Instagram, TikTok and LinkedIn",
+      "Experience writing captions in English and Sinhala",
+      "Comfort briefing designers and editors on creative direction",
+      "Familiarity with Meta Business Suite, Later, Buffer or similar tools",
+      "Basic understanding of paid social and boosted post performance",
+    ],
+    perks: [
+      "Competitive salary benchmarked against top social media jobs in Colombo",
+      "Work on 800+ Sri Lankan brand pages across multiple industries",
+      "Direct mentorship from Meta Blueprint certified specialists",
+      "Clear growth path to Senior Social Media Manager / Content Lead roles",
+      "Modern Colombo studio, latest scheduling and analytics tools",
+      "Friendly studio culture with hybrid flexibility",
+    ],
+    whyJoin: [
+      { title: "Sri Lanka's most diverse social media portfolio", body: "Restaurants, fashion, real estate, education, healthcare and FMCG — you'll manage pages across every major industry, not just one vertical." },
+      { title: "Content that's measured, not just posted", body: "Our social content is tracked on reach, engagement and lead conversions — you'll learn how content choices affect real marketing ROI." },
+      { title: "Fast career growth inside Cypher360", body: "Top performers move into Senior Social Media Manager, Content Lead or Account Director roles inside Sri Lanka's most integrated marketing group." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring Social Media Managers in Sri Lanka right now?",
+        a: "Yes. Cypher Digital has an open Social Media Manager vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and sample pages you've managed.",
+      },
+      {
+        q: "What is the average salary for a Social Media Manager in Sri Lanka?",
+        a: "Social Media Manager salaries in Sri Lanka typically range between LKR 45,000 and LKR 180,000 per month depending on experience, the number of brand pages managed and proven engagement and growth results.",
+      },
+      {
+        q: "What does a Social Media Manager at Cypher Digital actually do?",
+        a: "You'll plan content calendars, manage Facebook, Instagram, TikTok and LinkedIn pages, brief designers and editors, schedule posts, engage with followers, manage inboxes and report monthly on reach, engagement and growth.",
+      },
+      {
+        q: "Where is the Social Media Manager job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Most social media managers are expected on-site at least 3 days per week.",
+      },
+      {
+        q: "What experience do I need to apply for this social media job in Sri Lanka?",
+        a: "1–3 years of hands-on social media management experience, comfort writing captions in English and Sinhala, and familiarity with Meta Business Suite or similar scheduling tools. Paid social experience is a strong plus.",
+      },
+      {
+        q: "Do I need a marketing degree to apply?",
+        a: "No degree required. We hire based on real results — the brand pages you've managed, the growth and engagement you've driven and the content samples in your portfolio matter far more than qualifications.",
+      },
+      {
+        q: "How do I apply for this Social Media Manager vacancy in Sri Lanka?",
+        a: "Send your name, CV or LinkedIn link and links to brand pages you've managed to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Social Media Manager position at Cypher Digital.",
+    whatsappCta: "Apply for Social Media Manager",
     datePosted: "2026-05-25",
   },
 ];
