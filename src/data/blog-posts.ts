@@ -952,4 +952,25 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-29",
     keyword: "seo jobs sri lanka",
   },
+  {
+    slug: "why-work-at-digital-marketing-agency-sri-lanka",
+    title: "Why Work at a Digital Marketing Agency in Sri Lanka? The Honest Take",
+    excerpt: "The real advantages, genuine downsides, and what a career at a Colombo digital marketing agency looks like day-to-day in 2026.",
+    date: "2026-05-29",
+    keyword: "digital marketing agency jobs sri lanka",
+  },
+  {
+    slug: "tiktok-marketing-jobs-sri-lanka",
+    title: "TikTok Marketing Jobs in Sri Lanka — The Newest and Fastest Growing Role (2026)",
+    excerpt: "Why TikTok specialist roles are in high demand, what the job involves, what it pays, and how to get hired in Colombo's fastest-growing digital discipline.",
+    date: "2026-05-29",
+    keyword: "tiktok marketing jobs sri lanka",
+  },
+  {
+    slug: "google-ads-jobs-sri-lanka",
+    title: "Google Ads Jobs in Sri Lanka — What You Need to Get Hired in 2026",
+    excerpt: "Salary ranges, which certifications matter, Search vs Display vs YouTube, and how to build real Google Ads expertise in Colombo.",
+    date: "2026-05-29",
+    keyword: "google ads jobs sri lanka",
+  },
 ];
