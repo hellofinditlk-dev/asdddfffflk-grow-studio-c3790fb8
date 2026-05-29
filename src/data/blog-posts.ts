@@ -889,4 +889,25 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-29",
     keyword: "digital marketing salary sri lanka",
   },
+  {
+    slug: "how-to-get-digital-marketing-job-sri-lanka",
+    title: "How to Get a Digital Marketing Job in Sri Lanka — 2026 Roadmap",
+    excerpt: "Step-by-step 2026 roadmap to getting hired for a digital marketing job in Sri Lanka — qualifications, certifications, portfolio building, and where to apply.",
+    date: "2026-05-29",
+    keyword: "digital marketing jobs sri lanka",
+  },
+  {
+    slug: "digital-marketing-skills-sri-lanka",
+    title: "Top 10 Digital Marketing Skills Employers in Sri Lanka Look For (2026)",
+    excerpt: "The top 10 digital marketing skills Sri Lankan agencies hire for in 2026 — Meta Ads, Google Ads, TikTok, SEO, design, video, analytics. Salaries included.",
+    date: "2026-05-29",
+    keyword: "digital marketing skills sri lanka",
+  },
+  {
+    slug: "digital-marketing-courses-sri-lanka",
+    title: "Digital Marketing Courses in Sri Lanka — Free and Paid Options (2026)",
+    excerpt: "The best digital marketing courses and certifications in Sri Lanka 2026 — free Meta Blueprint, Google Ads, paid Coursera and Udemy. Ranked by employer value.",
+    date: "2026-05-29",
+    keyword: "digital marketing courses sri lanka",
+  },
 ];
