@@ -35,6 +35,55 @@ const itemListSchema = {
   })),
 };
 
+// Aggregate JobPosting schemas — one per open vacancy — so /careers itself is
+// eligible for the Google Jobs rich result, not just each sub-page.
+const rollingValidThrough = (() => {
+  const d = new Date();
+  d.setDate(d.getDate() + 90);
+  return d.toISOString().slice(0, 10);
+})();
+
+const jobPostingSchemas = vacancies.map((v) => ({
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  title: v.title,
+  description: `${v.summary} Responsibilities: ${v.duties.join("; ")}. Requirements: ${v.requirements.join("; ")}.`,
+  datePosted: v.datePosted,
+  validThrough: rollingValidThrough,
+  employmentType: v.employmentType,
+  identifier: { "@type": "PropertyValue", name: "Cypher Digital", value: v.slug },
+  hiringOrganization: {
+    "@type": "Organization",
+    name: "Cypher Digital",
+    sameAs: "https://cypherdigital.lk/",
+    logo: "https://cypherdigital.lk/assets/logo-DJLYsmc6.png",
+  },
+  jobLocation: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Colombo",
+      addressRegion: "Western Province",
+      addressCountry: { "@type": "Country", name: "LK" },
+    },
+  },
+  applicantLocationRequirements: { "@type": "Country", name: "Sri Lanka" },
+  directApply: true,
+  url: `https://cypherdigital.lk/careers/${v.slug}`,
+  ...(v.salaryRange && {
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: v.salaryRange.currency,
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: v.salaryRange.min,
+        maxValue: v.salaryRange.max,
+        unitText: v.salaryRange.unit,
+      },
+    },
+  }),
+}));
+
 const jobCategories = [
   { icon: Megaphone, title: "Social Media Marketing Jobs in Sri Lanka", desc: "Plan and run Facebook, Instagram and TikTok campaigns for 800+ Sri Lankan brands." },
   { icon: BarChart3, title: "Paid Ads Specialist Jobs (Meta & Google Ads)", desc: "Manage Meta Ads, Google Ads and TikTok Ads budgets that drive real leads and ROI." },
@@ -91,6 +140,13 @@ const Careers = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(careersSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+    {jobPostingSchemas.map((schema, i) => (
+      <script
+        key={`jobposting-${i}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    ))}
     <PageBreadcrumb items={[{ label: "Careers" }]} />
 
     <section className="section-dark py-20 lg:py-28">
