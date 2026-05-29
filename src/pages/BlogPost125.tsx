@@ -115,7 +115,7 @@ const BlogPost125 = () => (
               Social media managers handling Facebook, Instagram, and TikTok content earn LKR 65,000–90,000 at the junior level. Those who can also run <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook advertising campaigns</Link> alongside organic content move up to LKR 120,000–140,000. The salary jump comes from adding paid media to creative skills.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              View our <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold hover:underline">digital marketing jobs in Sri Lanka</Link> — this role includes social media management.
+              View our <Link to="/careers" className="text-primary font-semibold hover:underline">digital marketing jobs in Sri Lanka</Link> — this role includes social media management.
             </p>
 
             <h3 className="text-lg font-bold text-foreground mb-3">SEO executive salary in Sri Lanka — LKR 60,000 to 150,000/month</h3>

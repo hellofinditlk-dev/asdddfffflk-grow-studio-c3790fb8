@@ -123,7 +123,7 @@ const Careers = () => (
           As part of the Cypher360 Group, we run digital marketing, events and production campaigns for 800+ Sri Lankan brands across restaurants, fashion, education, real estate, healthcare and FMCG. That means our team works on more real campaigns — and grows faster — than almost any other digital marketing employer in Sri Lanka.
         </p>
         <p className="text-base text-muted-foreground leading-relaxed">
-          Below you'll find every current digital marketing vacancy in Sri Lanka at Cypher Digital — including our flagship <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold hover:underline">digital marketing jobs in Sri Lanka</Link> role. Applications are reviewed within 24 hours via WhatsApp — no lengthy forms, no waiting weeks for a reply.
+          Below you'll find every current digital marketing vacancy in Sri Lanka at Cypher Digital — including specialist, executive, designer, video and internship roles. Applications are reviewed within 24 hours via WhatsApp — no lengthy forms, no waiting weeks for a reply.
         </p>
       </div>
     </section>

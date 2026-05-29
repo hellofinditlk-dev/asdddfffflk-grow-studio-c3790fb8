@@ -182,7 +182,7 @@ const About = () => (
         </p>
         <p className="text-sm mt-4">
           Want to join our team?{" "}
-          <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-orange-400 font-semibold hover:underline">
+          <Link to="/careers" className="text-orange-400 font-semibold hover:underline">
             Digital marketing jobs in Sri Lanka →
           </Link>
         </p>

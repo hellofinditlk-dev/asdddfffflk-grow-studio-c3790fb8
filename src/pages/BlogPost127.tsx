@@ -130,7 +130,7 @@ const BlogPost127 = () => (
 
             <h2 className="font-heading text-2xl font-bold mt-12 mb-4 pb-2 border-b-2 border-primary">Which skill should you learn first?</h2>
             <p>
-              If you want to get hired as fast as possible and earn the highest starting salary, learn <strong>Meta Ads first</strong>. Complete your Meta Blueprint certification, build two or three mock campaign case studies, and start applying for <Link to="/careers/digital-marketing-jobs-sri-lanka" className="text-primary font-semibold underline">digital marketing jobs in Sri Lanka</Link>. This is the fastest path from zero experience to a paying role.
+              If you want to get hired as fast as possible and earn the highest starting salary, learn <strong>Meta Ads first</strong>. Complete your Meta Blueprint certification, build two or three mock campaign case studies, and start applying for <Link to="/careers" className="text-primary font-semibold underline">digital marketing jobs in Sri Lanka</Link>. This is the fastest path from zero experience to a paying role.
             </p>
             <p>
               If you are more creative and less analytical, start with <strong>graphic design or video editing</strong>. Build a portfolio of 6–10 pieces, learn the tools used by agencies (Canva minimum, Adobe for senior roles), and apply for <Link to="/careers/graphic-designer-jobs-sri-lanka" className="text-primary font-semibold underline">graphic designer jobs in Sri Lanka</Link> or <Link to="/careers/video-editor-jobs-sri-lanka" className="text-primary font-semibold underline">video editor jobs in Sri Lanka</Link>.
