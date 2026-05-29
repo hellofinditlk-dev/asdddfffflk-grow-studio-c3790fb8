@@ -158,6 +158,7 @@ const BlogPost121 = lazy(() => import("./pages/BlogPost121"));
 const BlogPost122 = lazy(() => import("./pages/BlogPost122"));
 const BlogPost123 = lazy(() => import("./pages/BlogPost123"));
 const BlogPost124 = lazy(() => import("./pages/BlogPost124"));
+const BlogPost125 = lazy(() => import("./pages/BlogPost125"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
