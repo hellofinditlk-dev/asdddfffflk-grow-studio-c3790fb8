@@ -291,6 +291,84 @@ const Careers = () => (
       </div>
     </section>
 
+    {/* Salary table */}
+    <section className="py-16 lg:py-20">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Salary in Sri Lanka 2026</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent salary ranges for every digital marketing role — so you know what to expect before you apply.</p>
+        </div>
+        <div className="overflow-x-auto rounded-xl border border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-secondary/40">
+              <tr className="text-left">
+                <th className="p-4 font-heading font-bold">Role</th>
+                <th className="p-4 font-heading font-bold">Experience Level</th>
+                <th className="p-4 font-heading font-bold">Monthly Salary (LKR)</th>
+                <th className="p-4 font-heading font-bold">Employment Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              {salaryRows.map((r, i) => (
+                <tr key={i} className="border-t border-border">
+                  <td className="p-4 font-medium">{r.role}</td>
+                  <td className="p-4 text-muted-foreground">{r.level}</td>
+                  <td className="p-4 font-semibold text-primary">{r.salary}</td>
+                  <td className="p-4 text-muted-foreground">{r.type}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-muted-foreground mt-4">
+          Salary ranges are based on Cypher Digital's 2026 hiring benchmarks for the Sri Lankan digital marketing market. Actual salaries depend on portfolio quality, platform certifications, and demonstrated campaign results.
+        </p>
+      </div>
+    </section>
+
+    {/* Career path */}
+    <section className="py-16 lg:py-20 bg-secondary/20">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-12">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Career Growth Path in Sri Lanka</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">What a digital marketing career progression looks like at Cypher Digital — and across Sri Lanka in 2026.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {careerPath.map((s, i) => (
+            <Card key={i} className="bg-card border-border">
+              <CardContent className="p-6">
+                <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">{s.step}</div>
+                <h3 className="font-heading text-lg font-bold mb-2">{s.title}</h3>
+                <div className="text-sm font-semibold mb-1">{s.salary}</div>
+                <div className="text-xs text-muted-foreground">{s.time}</div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <p className="text-sm text-muted-foreground mt-8 max-w-3xl mx-auto text-center">
+          At Cypher Digital, team members regularly advance to the next level within 12–18 months because of the sheer volume and variety of brand campaigns they work on. Running live campaigns for 800+ brands across restaurants, real estate, fashion, healthcare and education means you gain more practical experience in one year here than in three years at a smaller agency or single-brand in-house role.
+        </p>
+      </div>
+    </section>
+
+    {/* Role descriptions — keyword-rich content */}
+    <section className="py-16 lg:py-20">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-3">Digital Marketing Roles at Cypher Digital — In Detail</h2>
+          <p className="text-muted-foreground">Every digital marketing career path in Sri Lanka under one roof.</p>
+        </div>
+        <div className="space-y-6">
+          {roleDescriptions.map((r, i) => (
+            <div key={i} className="p-6 rounded-xl bg-card border border-border">
+              <h3 className="font-heading text-lg md:text-xl font-bold mb-2">{r.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{r.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <section className="py-16 lg:py-24 bg-secondary/30 border-y border-border">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
