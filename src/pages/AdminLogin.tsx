@@ -8,6 +8,7 @@ import { toast } from "sonner";
 
 export default function AdminLogin() {
   const navigate = useNavigate();
+  const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -18,9 +19,24 @@ export default function AdminLogin() {
     });
   }, [navigate]);
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    if (mode === "signup") {
+      const { error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: { emailRedirectTo: `${window.location.origin}/admin/leads` },
+      });
+      setLoading(false);
+      if (error) {
+        toast.error(error.message);
+        return;
+      }
+      toast.success("Account created — check your email to confirm, then sign in.");
+      setMode("signin");
+      return;
+    }
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     setLoading(false);
     if (error) {
@@ -34,11 +50,15 @@ export default function AdminLogin() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center px-4 py-16">
       <div className="w-full max-w-md bg-card border border-border rounded-2xl p-8 shadow-lg">
-        <h1 className="text-2xl font-bold mb-2">Admin Login</h1>
+        <h1 className="text-2xl font-bold mb-2">
+          {mode === "signin" ? "Admin Login" : "Create Admin Account"}
+        </h1>
         <p className="text-sm text-muted-foreground mb-6">
-          Sign in to view AI Visibility leads.
+          {mode === "signin"
+            ? "Sign in to view AI Visibility leads."
+            : "The first account created becomes the admin."}
         </p>
-        <form onSubmit={handleLogin} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <Label htmlFor="email">Email</Label>
             <Input
@@ -60,9 +80,18 @@ export default function AdminLogin() {
             />
           </div>
           <Button type="submit" disabled={loading} className="w-full">
-            {loading ? "Signing in..." : "Sign In"}
+            {loading ? "Please wait..." : mode === "signin" ? "Sign In" : "Create Account"}
           </Button>
         </form>
+        <button
+          type="button"
+          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+          className="mt-4 text-sm text-primary hover:underline w-full text-center"
+        >
+          {mode === "signin"
+            ? "No account yet? Create one"
+            : "Already have an account? Sign in"}
+        </button>
       </div>
     </div>
   );
