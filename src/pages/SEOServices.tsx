@@ -678,6 +678,7 @@ const SEOServices = () => {
           </p>
         </div>
       </section>
+      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["SEO Services Sri Lanka", "Google My Business Sri Lanka", "Content Marketing Sri Lanka"]}
         heading="More on SEO & Organic Growth"
