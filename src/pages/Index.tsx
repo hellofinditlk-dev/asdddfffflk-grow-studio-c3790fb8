@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
@@ -1067,6 +1068,7 @@ const Index = () => (
         </div>
       </div>
     </section>
+    <AIVisibilityHighlightCard />
   </div>
 );
 

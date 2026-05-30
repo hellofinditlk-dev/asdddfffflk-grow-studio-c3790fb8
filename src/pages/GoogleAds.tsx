@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import RelatedPosts from "@/components/RelatedPosts";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { useEffect } from "react";
 import {
   Search, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
@@ -1046,6 +1047,7 @@ const GoogleAds = () => {
           </div>
         </div>
       </section>
+      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["Google Ads Sri Lanka", "YouTube Ads Sri Lanka", "Remarketing Ads Sri Lanka", "Online Advertising Sri Lanka"]}
         heading="More on Google Ads & Paid Search"

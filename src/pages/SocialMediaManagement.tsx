@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import RelatedPosts from "@/components/RelatedPosts";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { useEffect } from "react";
 import {
   Megaphone, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
@@ -877,6 +878,7 @@ const SocialMediaManagement = () => {
           </div>
         </div>
       </section>
+      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["Social Media Management Sri Lanka", "Instagram Marketing Sri Lanka", "Sinhala Social Media Sri Lanka", "Organic vs Paid Social Sri Lanka"]}
         heading="More on Social Media Marketing"
