@@ -5,8 +5,8 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Digital Marketing Agency in Sri Lanka",
   },
   "/ai-visibility-sri-lanka": {
-    title: "AI Visibility Checker Sri Lanka | Get Found on ChatGPT & Gemini | Cypher Digital",
-    description: "Sri Lanka's first AI Visibility service. Find out if your business appears on ChatGPT, Gemini & Perplexity. Free AI audit for Sri Lankan businesses. Cypher Digital, Colombo.",
+    title: "AI Visibility Check Sri Lanka | AI Visibility Checker Sri Lanka",
+    description: "Get a free AI Visibility Check in Sri Lanka. See how visible your business is on ChatGPT, Gemini, Claude & Perplexity. Get your AI visibility score.",
     h1: "Is Your Business Visible on ChatGPT & Gemini?",
   },
   "/blog/creative-agency-sri-lanka": {
