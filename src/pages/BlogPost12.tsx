@@ -24,6 +24,7 @@ const BlogPost12 = () => (
             <p>Content also plays a major role. Creating location-focused articles helps search engines understand where a business operates.</p>
             <p>Another important factor is website structure. Clear service pages, internal linking, and technical optimization improve search visibility.</p>
             <p>Local SEO drives high-intent traffic because users searching locally are often ready to take action.</p>
+            <p>Local discovery now extends to AI answer engines too — run a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> to see whether ChatGPT, Gemini and Perplexity recommend your business when locals ask.</p>
             <p>Working with experts in{" "}
               <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO Services Sri Lanka</Link>{" "}
               helps businesses implement effective local SEO strategies that attract nearby customers.
