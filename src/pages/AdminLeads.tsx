@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -146,8 +146,8 @@ export default function AdminLeads() {
               </thead>
               <tbody>
                 {leads.map((l) => (
-                  <>
-                    <tr key={l.id} className="border-t border-border">
+                  <Fragment key={l.id}>
+                    <tr className="border-t border-border">
                       <td className="px-4 py-3 whitespace-nowrap">
                         {new Date(l.created_at).toLocaleString()}
                       </td>
@@ -194,7 +194,7 @@ export default function AdminLeads() {
                         </td>
                       </tr>
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>
