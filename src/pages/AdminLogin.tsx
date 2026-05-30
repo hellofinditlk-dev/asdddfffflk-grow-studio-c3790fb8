@@ -12,10 +12,14 @@ export default function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [adminExists, setAdminExists] = useState<boolean | null>(null);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
       if (data.session) navigate("/admin/leads", { replace: true });
+    });
+    supabase.rpc("admin_exists").then(({ data }) => {
+      setAdminExists(Boolean(data));
     });
   }, [navigate]);
 
@@ -83,15 +87,17 @@ export default function AdminLogin() {
             {loading ? "Please wait..." : mode === "signin" ? "Sign In" : "Create Account"}
           </Button>
         </form>
-        <button
-          type="button"
-          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
-          className="mt-4 text-sm text-primary hover:underline w-full text-center"
-        >
-          {mode === "signin"
-            ? "No account yet? Create one"
-            : "Already have an account? Sign in"}
-        </button>
+        {adminExists === false && (
+          <button
+            type="button"
+            onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+            className="mt-4 text-sm text-primary hover:underline w-full text-center"
+          >
+            {mode === "signin"
+              ? "No account yet? Create one"
+              : "Already have an account? Sign in"}
+          </button>
+        )}
       </div>
     </div>
   );
