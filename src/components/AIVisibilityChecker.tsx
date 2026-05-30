@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { Sparkles, Loader2, CheckCircle2, AlertCircle, TrendingUp, Lightbulb, Zap } from "lucide-react";
+import { Sparkles, Loader2, CheckCircle2, AlertCircle, TrendingUp, Lightbulb, Zap, Lock } from "lucide-react";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Enter your name").max(100),
@@ -37,6 +37,7 @@ const AIVisibilityChecker = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<CheckerResult | null>(null);
   const [website, setWebsite] = useState("");
+  const [creditOver, setCreditOver] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", website: "", industry: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -49,12 +50,26 @@ const AIVisibilityChecker = () => {
     }
     setLoading(true);
     setResult(null);
+    setCreditOver(false);
     try {
       const { data, error } = await supabase.functions.invoke("ai-visibility-check", {
         body: parsed.data,
       });
-      if (error) throw error;
-      if (data?.error) throw new Error(data.error);
+      if (error) {
+        const msg = error instanceof Error ? error.message : String(error);
+        if (msg.includes("409") || data?.locked) {
+          setCreditOver(true);
+          return;
+        }
+        throw error;
+      }
+      if (data?.error) {
+        if (data?.locked) {
+          setCreditOver(true);
+          return;
+        }
+        throw new Error(data.error);
+      }
       setResult(data.result);
       setWebsite(data.website);
       toast({ title: "Audit ready", description: "Your AI Visibility report is below." });
@@ -123,6 +138,22 @@ const AIVisibilityChecker = () => {
               </div>
             </form>
           </div>
+
+          {creditOver && (
+            <div className="mt-10 animate-fade-up">
+              <div className="bg-foreground rounded-2xl p-8 text-white text-center">
+                <Lock className="w-10 h-10 text-primary mx-auto mb-4" />
+                <h3 className="font-heading text-2xl font-bold mb-2">Your credit is over</h3>
+                <p className="text-white/70 text-sm max-w-lg mx-auto mb-6">
+                  You have already used your free AI Visibility audit. Every email gets one free credit. Contact us on WhatsApp to unlock a full detailed audit.
+                </p>
+                <Button asChild className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] border-none h-11 rounded-xl px-6 font-semibold">
+                  <a href={`https://wa.me/94701772626?text=${encodeURIComponent("Hi, I used the AI Visibility Checker and my credit is over. Can I get a full audit?")}`}
+                    target="_blank" rel="noopener noreferrer">Get Full Audit on WhatsApp</a>
+                </Button>
+              </div>
+            </div>
+          )}
 
           {result && (
             <div className="mt-10 space-y-6 animate-fade-up">
