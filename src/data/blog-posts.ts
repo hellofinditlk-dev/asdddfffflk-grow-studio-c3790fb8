@@ -973,4 +973,11 @@ export const blogPosts: BlogPost[] = [
     date: "2026-05-29",
     keyword: "google ads jobs sri lanka",
   },
+  {
+    slug: "creative-agency-sri-lanka",
+    title: "Creative Agency Sri Lanka (2026) | #1 Creative & Design Agency",
+    excerpt: "Complete guide to hiring a creative agency in Sri Lanka — services, pricing, agency vs freelancer, and why Cypher Digital is Colombo's top creative team.",
+    date: "2026-05-30",
+    keyword: "creative agency sri lanka",
+  },
 ];
