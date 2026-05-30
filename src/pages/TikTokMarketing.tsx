@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import RelatedPosts from "@/components/RelatedPosts";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { useEffect } from "react";
 import {
   Target, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
@@ -933,6 +934,7 @@ const TikTokMarketing = () => {
           </div>
         </div>
       </section>
+      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["TikTok Marketing Sri Lanka", "Influencer Marketing Sri Lanka", "Instagram Marketing Sri Lanka"]}
         heading="More on TikTok & Short-Form Video"

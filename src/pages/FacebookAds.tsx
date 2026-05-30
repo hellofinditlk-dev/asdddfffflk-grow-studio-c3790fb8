@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import RelatedPosts from "@/components/RelatedPosts";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { useEffect } from "react";
 import {
   Target, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
@@ -809,6 +810,7 @@ const FacebookAds = () => {
           </div>
         </div>
       </section>
+      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["Facebook Ads Sri Lanka", "Instagram Ads Sri Lanka", "Remarketing Ads Sri Lanka", "Online Advertising Sri Lanka"]}
         heading="More on Facebook & Paid Social Ads"
