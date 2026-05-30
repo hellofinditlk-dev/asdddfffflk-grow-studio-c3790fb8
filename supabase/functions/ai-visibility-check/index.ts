@@ -83,7 +83,7 @@ Deno.serve(async (req) => {
         .replace(/<[^>]+>/g, ' ')
         .replace(/\s+/g, ' ')
         .trim();
-      pageSnippet = text.slice(0, 4000);
+      pageSnippet = text.slice(0, 1500);
     } catch (e) {
       fetchError = e instanceof Error ? e.message : 'unknown';
     }
@@ -91,7 +91,7 @@ Deno.serve(async (req) => {
     const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
     if (!LOVABLE_API_KEY) throw new Error('LOVABLE_API_KEY missing');
 
-    const systemPrompt = `You are an expert AI Visibility / Answer Engine Optimisation (AEO) auditor for Sri Lankan businesses. You analyse whether a website is likely to be cited or recommended by ChatGPT, Gemini, Perplexity, and Claude. Be specific, candid, and useful.`;
+    const systemPrompt = `You are a concise AI Visibility (AEO) auditor for Sri Lankan SMEs. Be brief. Output only short bullet points. Do not write long paragraphs.`;
 
     const userPrompt = `Analyse this business for AI Visibility readiness.
 
@@ -108,21 +108,15 @@ Homepage text snippet:
 ${pageSnippet || '(could not fetch content)'}
 """
 
-Return STRICTLY this JSON structure (no markdown):
+Return STRICTLY this JSON (no markdown, keep every string under 12 words):
 {
   "overallScore": number (0-100),
   "rating": "Poor" | "Weak" | "Average" | "Good" | "Excellent",
-  "summary": "2-3 sentence plain-English summary",
-  "platformScores": {
-    "chatgpt": number (0-100),
-    "gemini": number (0-100),
-    "perplexity": number (0-100),
-    "claude": number (0-100)
-  },
-  "strengths": [3-5 short bullet strings],
-  "weaknesses": [3-5 short bullet strings],
-  "recommendations": [5-7 specific actionable recommendations],
-  "quickWins": [3 fastest highest-impact actions]
+  "summary": "1 short sentence",
+  "platformScores": { "chatgpt": number, "gemini": number, "perplexity": number, "claude": number },
+  "strengths": [2 short bullets],
+  "weaknesses": [2 short bullets],
+  "quickWins": [2 short bullets]
 }`;
 
     const aiResp = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
@@ -132,12 +126,13 @@ Return STRICTLY this JSON structure (no markdown):
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'google/gemini-2.5-flash',
+        model: 'google/gemini-2.5-flash-lite',
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
+        max_tokens: 600,
       }),
     });
 
@@ -163,7 +158,20 @@ Return STRICTLY this JSON structure (no markdown):
       name, email: normalisedEmail, phone, company, website: normalisedUrl, industry: industry ?? null, result,
     });
 
-    return new Response(JSON.stringify({ result, website: normalisedUrl }), {
+    // Return a LIMITED teaser to customers (full report kept in DB for admin / WhatsApp follow-up)
+    const teaser = {
+      overallScore: result?.overallScore,
+      rating: result?.rating,
+      summary: result?.summary,
+      platformScores: result?.platformScores,
+      strengths: Array.isArray(result?.strengths) ? result.strengths.slice(0, 2) : [],
+      weaknesses: Array.isArray(result?.weaknesses) ? result.weaknesses.slice(0, 2) : [],
+      quickWins: Array.isArray(result?.quickWins) ? result.quickWins.slice(0, 1) : [],
+      locked: true,
+      lockedMessage: 'Full recommendations, detailed action plan, and competitor comparison are unlocked after a free WhatsApp consultation.',
+    };
+
+    return new Response(JSON.stringify({ result: teaser, website: normalisedUrl }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
   } catch (e) {
