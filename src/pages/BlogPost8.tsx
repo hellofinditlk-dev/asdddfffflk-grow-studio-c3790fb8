@@ -24,6 +24,7 @@ const BlogPost8 = () => (
             <p>SEO includes technical improvements, content optimization, keyword strategy, and backlink building. Each component contributes to higher rankings and better performance.</p>
             <p>Local SEO is especially important for Sri Lankan businesses. Optimizing for location-based searches helps companies attract nearby customers actively looking for services.</p>
             <p>Another major benefit of SEO is trust. Users often trust organic results more than paid ads, which improves conversion rates.</p>
+            <p>SEO is also evolving beyond Google. To see how your brand appears across ChatGPT, Gemini, Claude and Perplexity, get a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link>.</p>
             <p>Working with professionals in{" "}
               <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO Services Sri Lanka</Link>{" "}
               helps businesses implement structured strategies that deliver long-term results.

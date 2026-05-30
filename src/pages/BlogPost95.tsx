@@ -42,6 +42,7 @@ const BlogPost95 = () => (
 
             <h3 className="text-foreground font-heading text-lg font-bold mt-6 mb-2">6. Semrush and Ahrefs AI features — for SEO</h3>
             <p>Both have integrated AI into their keyword research and content planning tools. Sri Lankan marketers can identify keyword gaps, analyse competitor strategies, and generate optimised content briefs — speeding up the <Link to="/seo-services-sri-lanka" className="text-primary hover:underline">SEO</Link> process.</p>
+            <p>Beyond traditional SEO, brands now need to track how they show up in AI answer engines. Run a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> to see how often your business is mentioned by ChatGPT, Gemini, Claude and Perplexity.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Where AI does NOT replace human expertise in Sri Lanka</h2>
             <ul className="list-disc pl-6 space-y-2">

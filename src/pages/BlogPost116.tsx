@@ -97,6 +97,8 @@ delivers the strongest results.</p>
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">Related: <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads Sri Lanka</Link> · <Link to="/blog" className="text-primary font-semibold hover:underline">All Blog Posts</Link></p>
+
+          <p className="mt-4 text-sm text-muted-foreground">Beyond Google and Facebook, customers now ask AI for recommendations — run a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> to see whether ChatGPT, Gemini and Perplexity mention your brand.</p>
         </div>
       </div>
     </article>

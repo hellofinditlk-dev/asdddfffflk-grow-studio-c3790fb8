@@ -87,6 +87,8 @@ every day.</p>
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">Related: <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> · <Link to="/blog" className="text-primary font-semibold hover:underline">All Blog Posts</Link></p>
+
+          <p className="mt-4 text-sm text-muted-foreground">New for 2026: get a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> and see how your brand shows up across ChatGPT, Gemini, Claude and Perplexity.</p>
         </div>
       </div>
     </article>
