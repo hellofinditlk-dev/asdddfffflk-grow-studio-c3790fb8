@@ -284,6 +284,9 @@ const GoogleAds = () => {
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
               Sri Lanka has become a search-driven market, where customers rely on Google to make purchasing decisions. Without Google Ads, you're leaving high-intent customers to your competitors. Combine search campaigns with our <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link> services for a complete funnel — from awareness to conversion.
             </p>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              Customers also increasingly ask AI tools before they Google. Get a free <Link to="/ai-visibility-sri-lanka" className="text-primary hover:underline font-semibold">AI Visibility Check in Sri Lanka</Link> to see how your business appears in ChatGPT, Gemini, Claude and Perplexity answers.
+            </p>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { icon: <Search className="w-5 h-5" />, title: "Instant Search Visibility", desc: "Appear at the top of Google results when customers search for your products or services in Sri Lanka." },

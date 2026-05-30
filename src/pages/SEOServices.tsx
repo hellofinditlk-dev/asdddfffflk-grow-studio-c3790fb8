@@ -666,6 +666,9 @@ const SEOServices = () => {
           <p className="text-white/60 max-w-2xl mx-auto mb-8 text-sm leading-relaxed">
             SEO is one part of a comprehensive digital marketing strategy. Read our complete guide to learn how all digital marketing channels — including Google Ads, Facebook Ads, and <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link> — work together for maximum growth.
           </p>
+          <p className="text-white/60 max-w-2xl mx-auto mb-8 text-sm leading-relaxed">
+            SEO is no longer just about Google. Run a free <Link to="/ai-visibility-sri-lanka" className="text-primary hover:underline font-semibold">AI Visibility Check in Sri Lanka</Link> to see how often ChatGPT, Gemini, Claude and Perplexity mention your brand.
+          </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl">
             <Link to="/advertising-in-sri-lanka">Read the Full Advertising Guide <ArrowRight className="w-4 h-4 ml-2" /></Link>
           </Button>

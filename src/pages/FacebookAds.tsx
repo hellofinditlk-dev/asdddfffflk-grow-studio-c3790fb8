@@ -273,6 +273,9 @@ const FacebookAds = () => {
             <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
               Sri Lanka has a rapidly growing digital audience, with Facebook being the most widely used social media platform in the country. Millions of Sri Lankans actively browse, engage, and shop through Facebook and Instagram daily. Pair your ads with expert <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">Social Media Management Sri Lanka</Link> services to maximise reach and engagement.
             </p>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+              While Facebook drives social discovery, AI assistants are the new word-of-mouth. Get a free <Link to="/ai-visibility-sri-lanka" className="text-primary hover:underline font-semibold">AI Visibility Check in Sri Lanka</Link> to see how your brand shows up on ChatGPT, Gemini, Claude and Perplexity.
+            </p>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 { icon: <Users className="w-5 h-5" />, title: "Massive Audience Reach", desc: "Access millions of active Facebook and Instagram users across Sri Lanka with a single campaign." },

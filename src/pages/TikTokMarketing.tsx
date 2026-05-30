@@ -685,6 +685,9 @@ const TikTokMarketing = () => {
             <p className="text-sm text-muted-foreground text-center mt-8 leading-relaxed">
               Pair this with our <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services Sri Lanka</Link> for unified discoverability across Google and TikTok.
             </p>
+            <p className="text-sm text-muted-foreground text-center mt-4 leading-relaxed">
+              Want to see how AI search ranks your brand too? Get a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> across ChatGPT, Gemini, Claude and Perplexity.
+            </p>
           </div>
         </div>
       </section>
