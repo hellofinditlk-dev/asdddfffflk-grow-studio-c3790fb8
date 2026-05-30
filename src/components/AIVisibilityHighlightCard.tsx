@@ -32,9 +32,9 @@ const AIVisibilityHighlightCard = () => (
             <div className="rounded-2xl bg-card border border-border p-5">
               <div className="flex items-center gap-2 mb-1">
                 <Bot className="h-5 w-5 text-primary" />
-                <span className="text-xs font-semibold text-foreground">First of its kind in Sri Lanka</span>
+                <span className="text-xs font-semibold text-foreground">Free AI Visibility Audit</span>
               </div>
-              <p className="text-xs text-muted-foreground">Built specifically for Sri Lankan SMEs to track brand mentions across leading AI assistants.</p>
+              <p className="text-xs text-muted-foreground">Track your brand mentions across ChatGPT, Gemini, Perplexity and Claude — completely free.</p>
             </div>
             <Link
               to="/ai-visibility-sri-lanka"
