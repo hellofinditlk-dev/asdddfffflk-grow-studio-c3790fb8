@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Bot, ArrowRight, MapPin, CheckCircle } from "lucide-react";
+import { Sparkles, Bot, ArrowRight, CheckCircle } from "lucide-react";
 
 /**
  * Reusable internal-link card highlighting our free AI Visibility Checker.
