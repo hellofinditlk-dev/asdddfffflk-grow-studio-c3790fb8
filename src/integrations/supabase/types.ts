@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ai_visibility_leads: {
+        Row: {
+          company: string
+          created_at: string
+          email: string
+          id: string
+          industry: string | null
+          name: string
+          phone: string
+          result: Json | null
+          website: string
+        }
+        Insert: {
+          company: string
+          created_at?: string
+          email: string
+          id?: string
+          industry?: string | null
+          name: string
+          phone: string
+          result?: Json | null
+          website: string
+        }
+        Update: {
+          company?: string
+          created_at?: string
+          email?: string
+          id?: string
+          industry?: string | null
+          name?: string
+          phone?: string
+          result?: Json | null
+          website?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
