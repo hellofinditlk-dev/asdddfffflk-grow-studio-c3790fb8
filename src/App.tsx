@@ -369,6 +369,7 @@ const App = () => (
               <Route path="/blog/why-work-at-digital-marketing-agency-sri-lanka" element={<BlogPost135 />} />
               <Route path="/blog/tiktok-marketing-jobs-sri-lanka" element={<BlogPost136 />} />
               <Route path="/blog/google-ads-jobs-sri-lanka" element={<BlogPost137 />} />
+              <Route path="/blog/creative-agency-sri-lanka" element={<BlogCreativeAgency />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/careers" element={<Careers />} />
