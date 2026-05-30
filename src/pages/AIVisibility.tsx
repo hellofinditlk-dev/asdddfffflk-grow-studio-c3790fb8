@@ -165,8 +165,8 @@ const AIVisibility = () => {
   return (
     <div className="pt-16">
       <SEOHead
-        title="AI Visibility Checker Sri Lanka | Get Found on ChatGPT & Gemini | Cypher Digital"
-        description="Sri Lanka's first AI Visibility service. Find out if your business appears on ChatGPT, Gemini & Perplexity. Free AI audit for Sri Lankan businesses. Cypher Digital, Colombo."
+        title="AI Visibility Check Sri Lanka | AI Visibility Checker Sri Lanka"
+        description="Get a free AI Visibility Check in Sri Lanka. See how visible your business is on ChatGPT, Gemini, Claude & Perplexity. Get your AI visibility score."
         canonical="https://cypherdigital.lk/ai-visibility-sri-lanka"
       />
 
