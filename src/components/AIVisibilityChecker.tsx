@@ -37,6 +37,7 @@ const AIVisibilityChecker = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<CheckerResult | null>(null);
   const [website, setWebsite] = useState("");
+  const [creditOver, setCreditOver] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", website: "", industry: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -49,12 +50,26 @@ const AIVisibilityChecker = () => {
     }
     setLoading(true);
     setResult(null);
+    setCreditOver(false);
     try {
       const { data, error } = await supabase.functions.invoke("ai-visibility-check", {
         body: parsed.data,
       });
-      if (error) throw error;
-      if (data?.error) throw new Error(data.error);
+      if (error) {
+        const msg = error instanceof Error ? error.message : String(error);
+        if (msg.includes("409") || data?.locked) {
+          setCreditOver(true);
+          return;
+        }
+        throw error;
+      }
+      if (data?.error) {
+        if (data?.locked) {
+          setCreditOver(true);
+          return;
+        }
+        throw new Error(data.error);
+      }
       setResult(data.result);
       setWebsite(data.website);
       toast({ title: "Audit ready", description: "Your AI Visibility report is below." });
