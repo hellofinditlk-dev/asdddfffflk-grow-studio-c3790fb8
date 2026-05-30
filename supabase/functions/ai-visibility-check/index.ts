@@ -19,6 +19,48 @@ Deno.serve(async (req) => {
     let normalisedUrl = String(website).trim();
     if (!/^https?:\/\//i.test(normalisedUrl)) normalisedUrl = 'https://' + normalisedUrl;
 
+    // Extract bare host (no www) for duplicate detection
+    let host = '';
+    try {
+      host = new URL(normalisedUrl).hostname.replace(/^www\./i, '').toLowerCase();
+    } catch {
+      host = normalisedUrl.toLowerCase();
+    }
+    const normalisedEmail = String(email).trim().toLowerCase();
+
+    // Duplicate guard: one email may only audit one website (and one website per email)
+    const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
+    const SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+    const admin = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
+
+    const { data: existing, error: dupErr } = await admin
+      .from('ai_visibility_leads')
+      .select('email, website')
+      .or(`email.ilike.${normalisedEmail},website.ilike.%${host}%`)
+      .limit(20);
+    if (dupErr) console.error('dup check error', dupErr);
+
+    if (existing && existing.length) {
+      const emailUsed = existing.some((r: any) => (r.email || '').toLowerCase() === normalisedEmail);
+      const siteUsed = existing.some((r: any) => {
+        try {
+          const h = new URL(r.website).hostname.replace(/^www\./i, '').toLowerCase();
+          return h === host;
+        } catch { return false; }
+      });
+      if (emailUsed || siteUsed) {
+        const msg = emailUsed && siteUsed
+          ? 'This email and website have already been audited. Each email can only audit one website. Please contact us on WhatsApp for a deeper custom audit.'
+          : emailUsed
+            ? 'This email has already been used for an AI Visibility audit. Each email is limited to one website. Please WhatsApp us for additional audits.'
+            : 'This website has already been audited. Please WhatsApp us for an updated or deeper audit.';
+        return new Response(JSON.stringify({ error: msg }), {
+          status: 409,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        });
+      }
+    }
+
     // Try to fetch the website HTML (best-effort)
     let pageSnippet = '';
     let pageTitle = '';
@@ -116,12 +158,9 @@ Return STRICTLY this JSON structure (no markdown):
     let result: any;
     try { result = JSON.parse(content); } catch { result = { raw: content }; }
 
-    // Store lead with service role to bypass RLS for full insert with result
-    const SUPABASE_URL = Deno.env.get('SUPABASE_URL')!;
-    const SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-    const admin = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
+    // Store lead (admin client already created above for dup check)
     await admin.from('ai_visibility_leads').insert({
-      name, email, phone, company, website: normalisedUrl, industry: industry ?? null, result,
+      name, email: normalisedEmail, phone, company, website: normalisedUrl, industry: industry ?? null, result,
     });
 
     return new Response(JSON.stringify({ result, website: normalisedUrl }), {
