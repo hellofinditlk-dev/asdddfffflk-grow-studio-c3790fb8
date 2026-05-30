@@ -187,14 +187,28 @@ const AIVisibilityChecker = () => {
                 </ul>
               </div>
 
-              <div className="bg-card border border-border rounded-xl p-5">
+              <div className="relative bg-card border border-border rounded-xl p-5 overflow-hidden">
                 <div className="flex items-center gap-2 mb-3">
                   <Lightbulb className="w-5 h-5 text-amber-500" />
                   <h3 className="font-bold text-foreground">Full Recommendations</h3>
+                  <span className="ml-auto text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-2 py-1 rounded-full">Locked</span>
                 </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {result.recommendations?.map((s, i) => <li key={i}>• {s}</li>)}
+                <ul className="space-y-2 text-sm text-muted-foreground blur-sm select-none pointer-events-none" aria-hidden="true">
+                  <li>• Optimise homepage H1 with primary AI search keywords.</li>
+                  <li>• Add FAQ schema targeting conversational AI queries.</li>
+                  <li>• Build citation-worthy content for ChatGPT & Perplexity.</li>
+                  <li>• Strengthen E-E-A-T signals and author bios.</li>
+                  <li>• Add structured data for services, reviews and locations.</li>
                 </ul>
+                <div className="mt-4 border-t border-border pt-4 text-center">
+                  <p className="text-sm text-foreground mb-3">
+                    To get your <span className="font-semibold">full personalised recommendations</span>, contact our team on WhatsApp for a free detailed audit.
+                  </p>
+                  <Button asChild className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] border-none h-10 rounded-xl px-5 font-semibold">
+                    <a href={`https://wa.me/94701772626?text=${encodeURIComponent("Hi, I just used the AI Visibility Checker for " + website + ". Please share my full audit and recommendations.")}`}
+                      target="_blank" rel="noopener noreferrer">Unlock Full Audit on WhatsApp</a>
+                  </Button>
+                </div>
               </div>
 
               <div className="text-center bg-foreground rounded-2xl p-6 text-white">
