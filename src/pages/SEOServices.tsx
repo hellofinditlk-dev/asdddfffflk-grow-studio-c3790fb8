@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import RelatedPosts from "@/components/RelatedPosts";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { useEffect } from "react";
 import {
   Search, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
