@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import AIVisibilityChecker from "@/components/AIVisibilityChecker";
 
 const WA_AUDIT = "https://wa.me/94701772626?text=Hi,%20I%20want%20a%20free%20AI%20visibility%20audit";
 const WA_QUOTE = "https://wa.me/94701772626?text=Hi,%20I%20want%20a%20custom%20AI%20visibility%20quote";
@@ -196,7 +197,7 @@ const AIVisibility = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none shadow-[0_0_24px_hsl(25_95%_53%/0.3)] hover:shadow-[0_0_32px_hsl(25_95%_53%/0.5)] transition-all">
-                <a href={WA_AUDIT} target="_blank" rel="noopener noreferrer">Get a Free AI Audit</a>
+                <a href="#free-checker">Try Free AI Visibility Checker</a>
               </Button>
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
                 <a href="#process">See How It Works</a>
@@ -213,6 +214,9 @@ const AIVisibility = () => {
           </div>
         </div>
       </section>
+
+      {/* Free AI Visibility Checker */}
+      <AIVisibilityChecker />
 
       {/* Stats heading section */}
       <section className="py-14 bg-primary/5 border-b border-border">
