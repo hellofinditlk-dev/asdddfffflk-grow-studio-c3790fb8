@@ -49,12 +49,7 @@ Deno.serve(async (req) => {
         } catch { return false; }
       });
       if (emailUsed || siteUsed) {
-        const msg = emailUsed && siteUsed
-          ? 'This email and website have already been audited. Each email can only audit one website. Please contact us on WhatsApp for a deeper custom audit.'
-          : emailUsed
-            ? 'This email has already been used for an AI Visibility audit. Each email is limited to one website. Please WhatsApp us for additional audits.'
-            : 'This website has already been audited. Please WhatsApp us for an updated or deeper audit.';
-        return new Response(JSON.stringify({ error: msg }), {
+        return new Response(JSON.stringify({ error: 'Your credit is over.', locked: true }), {
           status: 409,
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         });
