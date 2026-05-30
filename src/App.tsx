@@ -181,6 +181,8 @@ const DesignSubService = lazy(() => import("./pages/DesignSubService"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AIVisibility = lazy(() => import("./pages/AIVisibility"));
 const BlogCreativeAgency = lazy(() => import("./pages/BlogCreativeAgency"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin"));
+const AdminLeads = lazy(() => import("./pages/AdminLeads"));
 
 
 const queryClient = new QueryClient();
@@ -405,6 +407,10 @@ const App = () => (
               <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               <Route path="/product-launch-events-sri-lanka" element={<ProductLaunchEvents />} />
               
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin/leads" element={<AdminLeads />} />
+              <Route path="/admin" element={<Navigate to="/admin/leads" replace />} />
+
               <Route path="/:slug" element={<IndustryPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
