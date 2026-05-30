@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { Sparkles, Bot, ArrowRight, MapPin, CheckCircle } from "lucide-react";
 
 /**
- * Reusable internal-link card highlighting our free AI Visibility Checker
- * (unique to Sri Lanka). Drop into service pages to build internal links to
- * /ai-visibility-sri-lanka with descriptive anchor text.
+ * Reusable internal-link card highlighting our free AI Visibility Checker.
+ * Drop into service pages to build internal links to /ai-visibility-sri-lanka
+ * with descriptive anchor text.
  */
 const AIVisibilityHighlightCard = () => (
   <section className="py-12 md:py-16 bg-background" aria-label="Free AI visibility checker Sri Lanka">
