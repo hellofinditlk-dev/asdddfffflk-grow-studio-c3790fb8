@@ -805,6 +805,9 @@ const SocialMediaManagement = () => {
             <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>?
             {" "}Our complete guide covers market statistics, advertising costs, best platforms, targeting strategies, and industry-specific insights for Sri Lankan businesses.
           </p>
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4">
+            Social conversations now extend into AI chat — run a free <Link to="/ai-visibility-sri-lanka" className="text-primary font-semibold hover:underline">AI Visibility Check in Sri Lanka</Link> to see how often ChatGPT, Gemini, Claude and Perplexity recommend your brand.
+          </p>
           <p className="text-xs text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4">
             Building a bigger campaign? Pair social media with{" "}
             <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying in Sri Lanka</Link>,{" "}
