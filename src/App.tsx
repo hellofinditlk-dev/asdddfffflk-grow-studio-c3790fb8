@@ -180,6 +180,7 @@ const IndustryPage = lazy(() => import("./pages/IndustryPage"));
 const DesignSubService = lazy(() => import("./pages/DesignSubService"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AIVisibility = lazy(() => import("./pages/AIVisibility"));
+const BlogCreativeAgency = lazy(() => import("./pages/BlogCreativeAgency"));
 
 
 const queryClient = new QueryClient();
