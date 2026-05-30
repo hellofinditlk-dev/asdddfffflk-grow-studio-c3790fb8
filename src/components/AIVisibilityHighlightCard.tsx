@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Bot, ArrowRight, MapPin, CheckCircle } from "lucide-react";
+import { Sparkles, Bot, ArrowRight, CheckCircle } from "lucide-react";
 
 /**
- * Reusable internal-link card highlighting our free AI Visibility Checker
- * (unique to Sri Lanka). Drop into service pages to build internal links to
- * /ai-visibility-sri-lanka with descriptive anchor text.
+ * Reusable internal-link card highlighting our free AI Visibility Checker.
+ * Drop into service pages to build internal links to /ai-visibility-sri-lanka
+ * with descriptive anchor text.
  */
 const AIVisibilityHighlightCard = () => (
   <section className="py-12 md:py-16 bg-background" aria-label="Free AI visibility checker Sri Lanka">
@@ -13,7 +13,7 @@ const AIVisibilityHighlightCard = () => (
         <div className="grid md:grid-cols-[1.2fr_1fr] gap-6 md:gap-8 p-6 md:p-10 items-center">
           <div>
             <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">
-              <MapPin className="h-3.5 w-3.5" /> Unique to Sri Lanka · Free tool
+              <Sparkles className="h-3.5 w-3.5" /> Free Tool
             </div>
             <h2 className="mt-3 font-heading text-2xl md:text-3xl font-extrabold text-foreground leading-tight">
               Free AI Visibility Checker Sri Lanka
@@ -32,9 +32,9 @@ const AIVisibilityHighlightCard = () => (
             <div className="rounded-2xl bg-card border border-border p-5">
               <div className="flex items-center gap-2 mb-1">
                 <Bot className="h-5 w-5 text-primary" />
-                <span className="text-xs font-semibold text-foreground">First of its kind in Sri Lanka</span>
+                <span className="text-xs font-semibold text-foreground">Free AI Visibility Audit</span>
               </div>
-              <p className="text-xs text-muted-foreground">Built specifically for Sri Lankan SMEs to track brand mentions across leading AI assistants.</p>
+              <p className="text-xs text-muted-foreground">Track your brand mentions across ChatGPT, Gemini, Perplexity and Claude — completely free.</p>
             </div>
             <Link
               to="/ai-visibility-sri-lanka"
