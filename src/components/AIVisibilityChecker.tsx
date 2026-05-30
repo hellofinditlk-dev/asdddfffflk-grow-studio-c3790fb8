@@ -139,6 +139,22 @@ const AIVisibilityChecker = () => {
             </form>
           </div>
 
+          {creditOver && (
+            <div className="mt-10 animate-fade-up">
+              <div className="bg-foreground rounded-2xl p-8 text-white text-center">
+                <Lock className="w-10 h-10 text-primary mx-auto mb-4" />
+                <h3 className="font-heading text-2xl font-bold mb-2">Your credit is over</h3>
+                <p className="text-white/70 text-sm max-w-lg mx-auto mb-6">
+                  You have already used your free AI Visibility audit. Every email gets one free credit. Contact us on WhatsApp to unlock a full detailed audit.
+                </p>
+                <Button asChild className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] border-none h-11 rounded-xl px-6 font-semibold">
+                  <a href={`https://wa.me/94701772626?text=${encodeURIComponent("Hi, I used the AI Visibility Checker and my credit is over. Can I get a full audit?")}`}
+                    target="_blank" rel="noopener noreferrer">Get Full Audit on WhatsApp</a>
+                </Button>
+              </div>
+            </div>
+          )}
+
           {result && (
             <div className="mt-10 space-y-6 animate-fade-up">
               <div className="bg-foreground rounded-2xl p-6 md:p-8 text-white">
