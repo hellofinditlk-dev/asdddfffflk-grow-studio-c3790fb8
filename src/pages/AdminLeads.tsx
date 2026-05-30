@@ -83,6 +83,14 @@ export default function AdminLeads() {
     URL.revokeObjectURL(url);
   };
 
+  const now = new Date();
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  const totalAudits = leads?.length ?? 0;
+  const auditsToday = leads?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
+  const auditsThisMonth = leads?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
+  const estCreditsUsed = totalAudits; // ~1 credit per audit (gemini-2.5-flash-lite)
+
   if (!authChecked) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center">
@@ -121,6 +129,28 @@ export default function AdminLeads() {
           <Button variant="outline" onClick={handleLogout}>Sign Out</Button>
         </div>
       </div>
+
+      {leads && (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="border border-border rounded-xl p-4 bg-card">
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">Total Audits</p>
+            <p className="text-2xl font-bold mt-1">{totalAudits}</p>
+          </div>
+          <div className="border border-border rounded-xl p-4 bg-card">
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">Today</p>
+            <p className="text-2xl font-bold mt-1">{auditsToday}</p>
+          </div>
+          <div className="border border-border rounded-xl p-4 bg-card">
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">This Month</p>
+            <p className="text-2xl font-bold mt-1">{auditsThisMonth}</p>
+          </div>
+          <div className="border border-border rounded-xl p-4 bg-card">
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">Est. Credits Used</p>
+            <p className="text-2xl font-bold mt-1">~{estCreditsUsed}</p>
+            <p className="text-[10px] text-muted-foreground mt-1">≈1 credit / audit</p>
+          </div>
+        </div>
+      )}
 
       {!leads ? (
         <div className="flex justify-center py-12">
