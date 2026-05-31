@@ -245,6 +245,8 @@ const GoogleAds = () => {
       </section>
 
       {/* Snippet Bait Definition */}
+<AIVisibilityHighlightCard />
+
       <section id="what-is" className="py-14 bg-primary/5 border-b border-border scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-8 shadow-sm">
@@ -1050,7 +1052,6 @@ const GoogleAds = () => {
           </div>
         </div>
       </section>
-      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["Google Ads Sri Lanka", "YouTube Ads Sri Lanka", "Remarketing Ads Sri Lanka", "Online Advertising Sri Lanka"]}
         heading="More on Google Ads & Paid Search"
