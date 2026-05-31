@@ -171,6 +171,16 @@ const BlogPost134 = lazy(() => import("./pages/BlogPost134"));
 const BlogPost135 = lazy(() => import("./pages/BlogPost135"));
 const BlogPost136 = lazy(() => import("./pages/BlogPost136"));
 const BlogPost137 = lazy(() => import("./pages/BlogPost137"));
+const BlogPost138 = lazy(() => import("./pages/BlogPost138"));
+const BlogPost139 = lazy(() => import("./pages/BlogPost139"));
+const BlogPost140 = lazy(() => import("./pages/BlogPost140"));
+const BlogPost141 = lazy(() => import("./pages/BlogPost141"));
+const BlogPost142 = lazy(() => import("./pages/BlogPost142"));
+const BlogPost143 = lazy(() => import("./pages/BlogPost143"));
+const BlogPost144 = lazy(() => import("./pages/BlogPost144"));
+const BlogPost145 = lazy(() => import("./pages/BlogPost145"));
+const BlogPost146 = lazy(() => import("./pages/BlogPost146"));
+const BlogPost147 = lazy(() => import("./pages/BlogPost147"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
@@ -371,6 +381,16 @@ const App = () => (
               <Route path="/blog/why-work-at-digital-marketing-agency-sri-lanka" element={<BlogPost135 />} />
               <Route path="/blog/tiktok-marketing-jobs-sri-lanka" element={<BlogPost136 />} />
               <Route path="/blog/google-ads-jobs-sri-lanka" element={<BlogPost137 />} />
+              <Route path="/blog/manage-business-facebook-page-sri-lanka" element={<BlogPost138 />} />
+              <Route path="/blog/get-more-customers-facebook-ads-sri-lanka" element={<BlogPost139 />} />
+              <Route path="/blog/show-up-google-search-sri-lanka" element={<BlogPost140 />} />
+              <Route path="/blog/rank-website-google-sri-lanka" element={<BlogPost141 />} />
+              <Route path="/blog/what-video-to-promote-business-sri-lanka" element={<BlogPost142 />} />
+              <Route path="/blog/should-business-be-on-tiktok-sri-lanka" element={<BlogPost143 />} />
+              <Route path="/blog/make-business-look-professional-online-sri-lanka" element={<BlogPost144 />} />
+              <Route path="/blog/get-business-on-chatgpt-sri-lanka" element={<BlogPost145 />} />
+              <Route path="/blog/grow-business-instagram-sri-lanka" element={<BlogPost146 />} />
+              <Route path="/blog/linkedin-b2b-clients-sri-lanka" element={<BlogPost147 />} />
               <Route path="/blog/creative-agency-sri-lanka" element={<BlogCreativeAgency />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
