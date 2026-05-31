@@ -77,7 +77,9 @@ const BlogPost41 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">How Cypher Digital Helps Small Businesses</h2>
             <p>We built Cypher Digital specifically for Sri Lankan SMEs. Our services include <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook and Instagram advertising</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads management</Link>, <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services</Link>, <Link to="/graphic-design-sri-lanka" className="text-primary font-semibold hover:underline">graphic design</Link> and <Link to="/logo-design-sri-lanka" className="text-primary font-semibold hover:underline">logo design</Link>, and <Link to="/video-production-sri-lanka" className="text-primary font-semibold hover:underline">video production</Link>.</p>
             <p><Link to="/contact" className="text-primary font-semibold hover:underline">Book your free consultation</Link> — we'll recommend the right starting strategy with no pressure.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

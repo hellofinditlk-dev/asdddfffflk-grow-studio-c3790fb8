@@ -67,7 +67,9 @@ const BlogPost36 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Ready to Get a Custom Quote?</h2>
             <p>Every business is different. The best way to know your exact costs is to <Link to="/contact" className="text-primary font-semibold hover:underline">book a free consultation</Link> with our team. We'll assess your business, your competition, and your goals — and build a package that makes sense for your budget.</p>
             <p>For a deeper view of the Sri Lankan ad landscape, see our <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link> pillar guide, or compare top <Link to="/" className="text-primary font-semibold hover:underline">digital agencies</Link> before making your final decision.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">
