@@ -425,6 +425,8 @@ const IndustryPageLayout = ({ data }: Props) => {
       )}
 
       {/* FAQs */}
+      <AIVisibilityHighlightCard />
+
       {data.faqs.length > 0 && (
         <section className="py-20 lg:py-28">
           <div className="container mx-auto px-4 max-w-3xl">
