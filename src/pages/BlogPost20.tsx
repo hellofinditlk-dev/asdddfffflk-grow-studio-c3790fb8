@@ -26,7 +26,7 @@ const BlogPost20 = () => (
             <p>As one of the{" "}<Link to="/" className="text-primary font-semibold hover:underline">best digital marketing agencies in Sri Lanka</Link>, Cypher Digital offers expert solutions tailored to grow your business online.</p>
           
             <p>Explore our deep dive on <Link to="/flyer-design-sri-lanka" className="text-primary font-semibold hover:underline">flyer design Sri Lanka</Link> to extend the strategy outlined above.</p>
-                      <p>For paid campaigns on Meta platforms, explore our <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">social media advertising Sri Lanka</Link> service to reach buyers with precise targeting.</p>
+                      <p>For paid campaigns on Meta platforms, explore our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media advertising Sri Lanka</Link> service to reach buyers with precise targeting.</p>
 </div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Services</h2>
