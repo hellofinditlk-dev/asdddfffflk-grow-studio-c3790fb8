@@ -1070,7 +1070,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-    <AIVisibilityHighlightCard />
   </div>
 );
 
