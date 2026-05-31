@@ -58,7 +58,9 @@ const BlogPost39 = () => (
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Need Help?</h2>
             <p>Cypher Digital helps Sri Lankan businesses integrate WhatsApp into their digital funnel — from Click-to-WhatsApp ad campaigns to <Link to="/social-media-design-sri-lanka" className="text-primary font-semibold hover:underline">social media content</Link> that drives direct enquiries. <Link to="/contact" className="text-primary font-semibold hover:underline">Talk to our team today</Link>.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

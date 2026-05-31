@@ -55,7 +55,9 @@ const BlogPost40 = () => (
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Get It Professionally Managed</h2>
             <p>Setting up correctly and maintaining it with regular posts, photo updates, and review responses takes consistent effort. Our <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO team</Link> handles this as part of our local SEO service. <Link to="/contact" className="text-primary font-semibold hover:underline">Book a free SEO consultation</Link>.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

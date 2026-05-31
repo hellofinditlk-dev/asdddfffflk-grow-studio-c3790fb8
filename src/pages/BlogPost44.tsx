@@ -59,7 +59,9 @@ const BlogPost44 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Cypher Digital's Restaurant Marketing Service</h2>
             <p>We offer dedicated <Link to="/restaurant-digital-marketing-sri-lanka" className="text-primary font-semibold hover:underline">restaurant digital marketing services in Sri Lanka</Link> covering Instagram and Facebook content, advertising, Google Business Profile management, food photography direction, and reporting.</p>
             <p><Link to="/contact" className="text-primary font-semibold hover:underline">Get a Free Restaurant Marketing Consultation →</Link></p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

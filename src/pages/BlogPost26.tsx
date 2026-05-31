@@ -24,7 +24,9 @@ const BlogPost26 = () => (
             <p>Complement your SEO with{" "}<Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads Sri Lanka</Link>{" "}for immediate visibility, or strengthen content with{" "}<Link to="/graphic-design-sri-lanka" className="text-primary font-semibold hover:underline">graphic design Sri Lanka</Link>{" "}and{" "}<Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management Sri Lanka</Link>.</p>
             <p>For detailed insights on{" "}<Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">Advertising Sri Lanka</Link>{" "}including market data, platform comparisons, and budget strategies, explore our complete guide.</p>
             <p>As one of the{" "}<Link to="/" className="text-primary font-semibold hover:underline">best digital marketing agencies in Sri Lanka</Link>, Cypher Digital offers expert solutions tailored to grow your business online.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Services</h2>
             <div className="grid sm:grid-cols-2 gap-4">

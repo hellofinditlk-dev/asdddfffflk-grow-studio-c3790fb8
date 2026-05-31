@@ -83,7 +83,9 @@ const BlogPost37 = () => (
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">How to Get Started</h2>
             <p>The smartest first step is a free consultation. <Link to="/contact" className="text-primary font-semibold hover:underline">Book your free consultation with Cypher Digital</Link> — our team will analyse your business and give you a clear recommendation with no pressure.</p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

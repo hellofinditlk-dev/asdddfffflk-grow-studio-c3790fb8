@@ -65,7 +65,9 @@ const BlogPost42 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Does Your Business Need a Content Marketing Agency?</h2>
             <p>Producing consistent, high-quality blog content requires time, writing skill, SEO knowledge, and strategic thinking. At Cypher Digital, our <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services</Link> include content strategy, keyword research, and blog article creation as part of a comprehensive organic growth plan.</p>
             <p><Link to="/contact" className="text-primary font-semibold hover:underline">Book a Free Content Marketing Consultation →</Link></p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">

@@ -68,7 +68,9 @@ const BlogPost43 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Ready to Start YouTube Advertising?</h2>
             <p>Cypher Digital manages YouTube advertising as part of our <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads service in Sri Lanka</Link>. If you don't have video content yet, our <Link to="/video-production-sri-lanka" className="text-primary font-semibold hover:underline">video production team</Link> can create professional YouTube ad videos starting from LKR 30,000.</p>
             <p><Link to="/contact" className="text-primary font-semibold hover:underline">Book a Free YouTube Ads Consultation →</Link></p>
-          </div>
+          
+                      <p>For ongoing organic growth, our <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing Sri Lanka</Link> team plans, designs, and posts content that builds your brand every week.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Articles</h2>
             <div className="grid sm:grid-cols-2 gap-4">
