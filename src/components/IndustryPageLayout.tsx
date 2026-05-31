@@ -1,4 +1,5 @@
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -424,6 +425,8 @@ const IndustryPageLayout = ({ data }: Props) => {
       )}
 
       {/* FAQs */}
+      <AIVisibilityHighlightCard />
+
       {data.faqs.length > 0 && (
         <section className="py-20 lg:py-28">
           <div className="container mx-auto px-4 max-w-3xl">

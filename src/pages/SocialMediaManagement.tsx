@@ -256,6 +256,8 @@ const SocialMediaManagement = () => {
       </section>
 
       {/* Stats Bar */}
+<AIVisibilityHighlightCard />
+
       <section className="border-b border-border">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
@@ -881,7 +883,6 @@ const SocialMediaManagement = () => {
           </div>
         </div>
       </section>
-      <AIVisibilityHighlightCard />
       <RelatedPosts
         keywords={["Social Media Management Sri Lanka", "Instagram Marketing Sri Lanka", "Sinhala Social Media Sri Lanka", "Organic vs Paid Social Sri Lanka"]}
         heading="More on Social Media Marketing"
