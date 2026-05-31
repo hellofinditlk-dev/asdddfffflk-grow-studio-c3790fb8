@@ -74,8 +74,11 @@ const AIVisibilityChecker = () => {
       setWebsite(data.website);
       toast({ title: "Audit ready", description: "Your AI Visibility report is below." });
     } catch (err) {
-      const msg = err instanceof Error ? err.message : "Something went wrong";
-      toast({ title: "Audit failed", description: msg, variant: "destructive" });
+      toast({
+        title: "Free quota is over for this website",
+        description: "Please call +94 70 177 2626 to get your full AI visibility report.",
+        variant: "destructive",
+      });
     } finally {
       setLoading(false);
     }
