@@ -1,4 +1,5 @@
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
+import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
