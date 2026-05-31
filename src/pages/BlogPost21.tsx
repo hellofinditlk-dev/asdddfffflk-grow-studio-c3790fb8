@@ -26,7 +26,8 @@ const BlogPost21 = () => (
             <p>As one of the{" "}<Link to="/" className="text-primary font-semibold hover:underline">best digital marketing agencies in Sri Lanka</Link>, Cypher Digital offers expert solutions tailored to grow your business online.</p>
           
             <p>Explore our deep dive on <Link to="/blog/google-ads-vs-facebook-ads-which-better-business" className="text-primary font-semibold hover:underline">Google Ads vs Facebook Ads</Link> to extend the strategy outlined above.</p>
-          </div>
+                      <p>For paid campaigns on Meta platforms, explore our <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">social media advertising Sri Lanka</Link> service to reach buyers with precise targeting.</p>
+</div>
           <div className="mt-14 pt-10 border-t border-border">
             <h2 className="font-heading text-lg font-bold mb-5">Related Services</h2>
             <div className="grid sm:grid-cols-2 gap-4">
