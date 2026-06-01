@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Send, MessageCircle } from "lucide-react";
 import type { IndustryFormField } from "@/data/industries";
+import { supabase } from "@/integrations/supabase/client";
 
 interface IndustryInquiryFormProps {
   fields: IndustryFormField[];
@@ -17,11 +18,32 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
     Object.fromEntries(fields.map((f) => [f.name, ""]))
   );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name?.trim() || !form.phone?.trim()) {
       toast.error("Please fill in your name and phone number");
       return;
+    }
+
+    const extra: Record<string, string> = {};
+    fields
+      .filter((f) => !["name", "email", "phone", "message"].includes(f.name) && form[f.name]?.trim())
+      .forEach((f) => {
+        extra[f.placeholder.replace(" *", "")] = form[f.name];
+      });
+
+    try {
+      await supabase.from("inquiries").insert({
+        name: form.name.trim(),
+        email: form.email?.trim() || null,
+        phone: form.phone.trim(),
+        message: form.message?.trim() || null,
+        service: serviceName,
+        source_path: typeof window !== "undefined" ? window.location.pathname : null,
+        extra: Object.keys(extra).length ? extra : null,
+      });
+    } catch (err) {
+      console.error("Failed to save inquiry", err);
     }
 
     const lines = [

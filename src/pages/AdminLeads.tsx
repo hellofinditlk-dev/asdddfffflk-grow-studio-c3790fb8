@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -123,6 +123,9 @@ export default function AdminLeads() {
           </p>
         </div>
         <div className="flex gap-2">
+          <Link to="/admin/inquiries">
+            <Button variant="outline">Website Inquiries</Button>
+          </Link>
           <Button variant="outline" onClick={exportCSV} disabled={!leads?.length}>
             Export CSV
           </Button>

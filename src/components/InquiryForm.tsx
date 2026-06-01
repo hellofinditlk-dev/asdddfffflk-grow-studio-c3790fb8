@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Send, MessageCircle } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 interface InquiryFormProps {
   service?: string;
@@ -12,12 +13,26 @@ interface InquiryFormProps {
 const InquiryForm = ({ service }: InquiryFormProps) => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.phone.trim()) {
       toast.error("Please fill in your name and phone number");
       return;
     }
+
+    try {
+      await supabase.from("inquiries").insert({
+        name: form.name.trim(),
+        email: form.email.trim() || null,
+        phone: form.phone.trim(),
+        message: form.message.trim() || null,
+        service: service || "General Inquiry",
+        source_path: typeof window !== "undefined" ? window.location.pathname : null,
+      });
+    } catch (err) {
+      console.error("Failed to save inquiry", err);
+    }
+
     const message = [
       `Hi, I'm ${form.name}.`,
       form.email ? `Email: ${form.email}` : "",
