@@ -139,7 +139,7 @@ export default function AdminInquiries() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-7xl">
+    <div className="container mx-auto px-4 pt-28 pb-12 max-w-7xl">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
         <div>
           <h1 className="text-3xl font-bold">Website Inquiries</h1>
