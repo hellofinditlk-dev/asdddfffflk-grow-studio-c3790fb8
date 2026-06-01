@@ -6,7 +6,7 @@ Deno.serve(async (req) => {
 
   try {
     const body = await req.json();
-    const { name, email, phone, company, website, industry } = body ?? {};
+    const { name, email, phone, company, website, industry, source_page, utm_source } = body ?? {};
 
     if (!name || !email || !phone || !company || !website) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
@@ -151,6 +151,7 @@ Return STRICTLY this JSON (no markdown, keep every string under 12 words):
     // Store lead (admin client already created above for dup check)
     await admin.from('ai_visibility_leads').insert({
       name, email: normalisedEmail, phone, company, website: normalisedUrl, industry: industry ?? null, result,
+      source_page: source_page ?? null, utm_source: utm_source ?? null,
     });
 
     // Return a LIMITED teaser to customers (full report kept in DB for admin / WhatsApp follow-up)

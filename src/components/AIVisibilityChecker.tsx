@@ -52,8 +52,21 @@ const AIVisibilityChecker = () => {
     setResult(null);
     setCreditOver(false);
     try {
+      const sourcePage = typeof window !== "undefined" ? window.location.pathname + window.location.search : "";
+      let utmSource = "";
+      try {
+        const params = new URLSearchParams(window.location.search);
+        utmSource = params.get("utm_source") || "";
+        if (!utmSource && document.referrer) {
+          const ref = new URL(document.referrer).hostname.replace(/^www\./, "");
+          if (ref && !ref.includes(window.location.hostname.replace(/^www\./, ""))) {
+            utmSource = ref;
+          }
+        }
+        if (!utmSource) utmSource = "direct";
+      } catch { utmSource = "direct"; }
       const { data, error } = await supabase.functions.invoke("ai-visibility-check", {
-        body: parsed.data,
+        body: { ...parsed.data, source_page: sourcePage, utm_source: utmSource },
       });
       if (error) {
         const msg = error instanceof Error ? error.message : String(error);
