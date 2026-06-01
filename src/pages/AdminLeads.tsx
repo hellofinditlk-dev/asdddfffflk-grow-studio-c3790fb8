@@ -113,7 +113,7 @@ export default function AdminLeads() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-7xl">
+    <div className="container mx-auto px-4 pt-28 pb-12 max-w-7xl">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">AI Visibility Leads</h1>
