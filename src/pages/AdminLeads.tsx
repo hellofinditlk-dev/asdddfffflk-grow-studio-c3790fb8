@@ -133,7 +133,7 @@ export default function AdminLeads() {
       </div>
 
       {leads && (
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div className="border border-border rounded-xl p-4 bg-card">
             <p className="text-xs text-muted-foreground uppercase tracking-wide">Total Audits</p>
             <p className="text-2xl font-bold mt-1">{totalAudits}</p>
@@ -147,15 +147,11 @@ export default function AdminLeads() {
             <p className="text-2xl font-bold mt-1">{auditsThisMonth}</p>
           </div>
           <div className="border border-border rounded-xl p-4 bg-card">
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">Est. Credits Used</p>
-            <p className="text-2xl font-bold mt-1">~{estCreditsUsed}</p>
-            <p className="text-[10px] text-muted-foreground mt-1">≈1 credit / audit</p>
-          </div>
-          <div className={`border rounded-xl p-4 ${creditsRemaining === 0 ? "border-destructive bg-destructive/10" : creditsRemaining <= 2 ? "border-orange-500 bg-orange-500/10" : "border-border bg-card"}`}>
-            <p className="text-xs text-muted-foreground uppercase tracking-wide">Credits Remaining</p>
-            <p className="text-2xl font-bold mt-1">{creditsRemaining} / {CREDIT_LIMIT}</p>
-            <p className="text-[10px] text-muted-foreground mt-1">
-              {creditsRemaining === 0 ? "Limit reached" : `${creditsRemaining} audit${creditsRemaining === 1 ? "" : "s"} left`}
+            <p className="text-xs text-muted-foreground uppercase tracking-wide">Avg. Score</p>
+            <p className="text-2xl font-bold mt-1">
+              {leads.length > 0
+                ? Math.round(leads.reduce((s, l) => s + (l.result?.overall_score ?? 0), 0) / leads.length)
+                : "—"}
             </p>
           </div>
         </div>
