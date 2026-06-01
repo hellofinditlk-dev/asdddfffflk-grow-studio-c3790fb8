@@ -24,6 +24,8 @@ export type Database = {
           name: string
           phone: string
           result: Json | null
+          source_page: string | null
+          utm_source: string | null
           website: string
         }
         Insert: {
@@ -35,6 +37,8 @@ export type Database = {
           name: string
           phone: string
           result?: Json | null
+          source_page?: string | null
+          utm_source?: string | null
           website: string
         }
         Update: {
@@ -46,6 +50,8 @@ export type Database = {
           name?: string
           phone?: string
           result?: Json | null
+          source_page?: string | null
+          utm_source?: string | null
           website?: string
         }
         Relationships: []
