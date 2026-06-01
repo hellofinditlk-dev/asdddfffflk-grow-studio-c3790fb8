@@ -89,9 +89,6 @@ export default function AdminLeads() {
   const totalAudits = leads?.length ?? 0;
   const auditsToday = leads?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const auditsThisMonth = leads?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
-  const estCreditsUsed = totalAudits; // ~1 credit per audit (gemini-2.5-flash-lite)
-  const CREDIT_LIMIT = 7;
-  const creditsRemaining = Math.max(0, CREDIT_LIMIT - totalAudits);
 
   if (!authChecked) {
     return (
