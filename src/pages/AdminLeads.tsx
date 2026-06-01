@@ -14,6 +14,8 @@ interface Lead {
   industry: string | null;
   result: any;
   created_at: string;
+  source_page: string | null;
+  utm_source: string | null;
 }
 
 export default function AdminLeads() {
@@ -60,7 +62,7 @@ export default function AdminLeads() {
 
   const exportCSV = () => {
     if (!leads || leads.length === 0) return;
-    const header = ["Date", "Name", "Email", "Phone", "Company", "Website", "Industry", "Score"];
+    const header = ["Date", "Name", "Email", "Phone", "Company", "Website", "Industry", "Score", "Source Page", "UTM Source"];
     const rows = leads.map((l) => [
       new Date(l.created_at).toISOString(),
       l.name,
@@ -70,6 +72,8 @@ export default function AdminLeads() {
       l.website,
       l.industry ?? "",
       l.result?.overall_score ?? "",
+      l.source_page ?? "",
+      l.utm_source ?? "",
     ]);
     const csv = [header, ...rows]
       .map((r) => r.map((c) => `"${String(c).replace(/"/g, '""')}"`).join(","))
@@ -89,6 +93,22 @@ export default function AdminLeads() {
   const totalAudits = leads?.length ?? 0;
   const auditsToday = leads?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const auditsThisMonth = leads?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
+
+  const leadsByPage = (() => {
+    if (!leads) return [] as { page: string; count: number; avg: number }[];
+    const map = new Map<string, { count: number; sum: number; scored: number }>();
+    for (const l of leads) {
+      const key = (l.source_page || "(unknown)").split("?")[0] || "(unknown)";
+      const score = Number(l.result?.overall_score ?? l.result?.overallScore ?? 0);
+      const cur = map.get(key) ?? { count: 0, sum: 0, scored: 0 };
+      cur.count += 1;
+      if (score > 0) { cur.sum += score; cur.scored += 1; }
+      map.set(key, cur);
+    }
+    return Array.from(map.entries())
+      .map(([page, v]) => ({ page, count: v.count, avg: v.scored ? Math.round(v.sum / v.scored) : 0 }))
+      .sort((a, b) => b.count - a.count);
+  })();
 
   if (!authChecked) {
     return (
@@ -157,6 +177,35 @@ export default function AdminLeads() {
         </div>
       )}
 
+      {leads && leads.length > 0 && (
+        <div className="border border-border rounded-xl bg-card mb-8 overflow-hidden">
+          <div className="px-4 py-3 border-b border-border bg-muted/30">
+            <h2 className="font-semibold">Leads by Page</h2>
+            <p className="text-xs text-muted-foreground mt-1">Which pages are generating the most audit submissions</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20">
+                <tr className="text-left">
+                  <th className="px-4 py-2 font-semibold">Page</th>
+                  <th className="px-4 py-2 font-semibold">Leads</th>
+                  <th className="px-4 py-2 font-semibold">Avg. Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                {leadsByPage.map((row) => (
+                  <tr key={row.page} className="border-t border-border">
+                    <td className="px-4 py-2 font-mono text-xs">{row.page}</td>
+                    <td className="px-4 py-2 font-semibold">{row.count}</td>
+                    <td className="px-4 py-2">{row.avg || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
       {!leads ? (
         <div className="flex justify-center py-12">
           <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
@@ -175,6 +224,7 @@ export default function AdminLeads() {
                   <th className="px-4 py-3 font-semibold">Phone</th>
                   <th className="px-4 py-3 font-semibold">Company</th>
                   <th className="px-4 py-3 font-semibold">Website</th>
+                  <th className="px-4 py-3 font-semibold">Source Page</th>
                   <th className="px-4 py-3 font-semibold">Score</th>
                   <th className="px-4 py-3 font-semibold">Report</th>
                 </tr>
@@ -208,6 +258,12 @@ export default function AdminLeads() {
                           {l.website}
                         </a>
                       </td>
+                      <td className="px-4 py-3 font-mono text-xs">
+                        {l.source_page || "—"}
+                        {l.utm_source && (
+                          <span className="ml-1 text-muted-foreground">({l.utm_source})</span>
+                        )}
+                      </td>
                       <td className="px-4 py-3 font-semibold">
                         {l.result?.overall_score ?? "—"}
                       </td>
@@ -222,7 +278,7 @@ export default function AdminLeads() {
                     </tr>
                     {expanded === l.id && (
                       <tr className="border-t border-border bg-muted/30">
-                        <td colSpan={8} className="px-4 py-4">
+                        <td colSpan={9} className="px-4 py-4">
                           <pre className="text-xs whitespace-pre-wrap break-words max-h-96 overflow-auto">
                             {JSON.stringify(l.result, null, 2)}
                           </pre>
