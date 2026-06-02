@@ -279,6 +279,110 @@ const AIVideoProduction = () => {
           </section>
 
 
+          {/* INDUSTRIES */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Industries</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production for Every Industry in Sri Lanka</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Tailored to the specific needs and audiences of different industries across Sri Lanka.</p>
+            <div className="grid-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 10 }}>
+              {industries.map((ind) => (
+                <div key={ind.title} className="why-card">
+                  <h3 style={{ fontWeight: 600, fontSize: 14, margin: 0, marginBottom: 5 }}>{ind.title}</h3>
+                  <div style={{ fontSize: 13, color: "#777", lineHeight: 1.5 }}>{ind.desc}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* COMPARISON */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Comparison</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production vs Traditional Video Production in Sri Lanka</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 24 }}>AI video production doesn't mean lower quality — it means smarter production.</p>
+            <div style={{ border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "auto" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
+                <thead>
+                  <tr style={{ background: "#f5f4f0" }}>
+                    <th style={{ textAlign: "left", padding: "12px 14px", fontWeight: 700 }}> </th>
+                    <th style={{ textAlign: "left", padding: "12px 14px", fontWeight: 700, color: "#FF6B2B" }}>AI Video (Cypher Digital)</th>
+                    <th style={{ textAlign: "left", padding: "12px 14px", fontWeight: 700, color: "#666" }}>Traditional Production</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparison.map(([label, ai, trad], i) => (
+                    <tr key={label} style={{ borderTop: "0.5px solid rgba(0,0,0,0.07)", background: i % 2 ? "#fafafa" : "#fff" }}>
+                      <td style={{ padding: "11px 14px", fontWeight: 600 }}>{label}</td>
+                      <td style={{ padding: "11px 14px", color: "#222" }}>{ai}</td>
+                      <td style={{ padding: "11px 14px", color: "#777" }}>{trad}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* LOCATIONS */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Locations</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Services Across Sri Lanka</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 24, lineHeight: 1.65 }}>Cypher Digital serves businesses across Sri Lanka from our base in Colombo. Most AI video production services are delivered remotely — meaning businesses in any part of the island can access the same quality and pricing as Colombo clients.</p>
+            <div className="grid-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 8 }}>
+              {locations.map(([city, desc]) => (
+                <div key={city} style={{ display: "flex", alignItems: "flex-start", gap: 10, padding: "10px 0", borderBottom: "0.5px solid rgba(0,0,0,0.06)" }}>
+                  <span style={{ color: "#FF6B2B", fontWeight: 700, fontSize: 13, minWidth: 90 }}>{city}</span>
+                  <span style={{ fontSize: 13, color: "#666" }}>{desc}</span>
+                </div>
+              ))}
+            </div>
+            <p style={{ fontSize: 13, color: "#666", marginTop: 18, lineHeight: 1.65 }}>For on-site filming in Colombo and the Western Province, our team can come to your location. For all other areas, we work remotely using your existing footage, AI-generated visuals, or phone-captured content.</p>
+          </section>
+
+          {/* TESTIMONIALS */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Testimonials</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>What Our Video Production Clients Say</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 24 }}>5.0 ★ rating across 47+ verified client reviews.</p>
+            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+              {testimonials.map((t, i) => (
+                <div key={i} className="why-card">
+                  <div style={{ fontSize: 14, color: "#FF6B2B", marginBottom: 8 }}>★★★★★</div>
+                  <div style={{ fontSize: 13, color: "#333", lineHeight: 1.6, marginBottom: 12, fontStyle: "italic" }}>"{t.quote}"</div>
+                  <div style={{ fontSize: 12, color: "#888", fontWeight: 600 }}>— {t.author}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>FAQ</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 24, lineHeight: 1.2 }}>Frequently Asked Questions — AI Video Production Sri Lanka</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {faqs.map((f, i) => (
+                <details key={i} style={{ border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, padding: "14px 18px", background: "#fff" }}>
+                  <summary style={{ cursor: "pointer", fontSize: 14, fontWeight: 600, color: "#0a0a0a", listStyle: "none", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
+                    <span>{f.q}</span>
+                    <span style={{ color: "#FF6B2B", fontSize: 18, fontWeight: 700 }}>+</span>
+                  </summary>
+                  <div style={{ fontSize: 13, color: "#555", lineHeight: 1.7, marginTop: 12 }}>{f.a}</div>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* RELATED SERVICES */}
+          <section style={{ padding: "32px 0 16px", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Related Services</div>
+            <p style={{ fontSize: 14, color: "#555", lineHeight: 1.75 }}>
+              Pair AI video with our{" "}
+              <a href="/social-media-management-sri-lanka" style={{ color: "#FF6B2B" }}>social media management</a>,{" "}
+              <a href="/facebook-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Facebook advertising</a>,{" "}
+              <a href="/google-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Google Ads</a>,{" "}
+              <a href="/graphic-design-sri-lanka" style={{ color: "#FF6B2B" }}>graphic design</a>, and{" "}
+              <a href="/tiktok-marketing-sri-lanka" style={{ color: "#FF6B2B" }}>TikTok marketing</a> for a full-funnel campaign.
+            </p>
+          </section>
+
           {/* CTA */}
           <section style={{ padding: "48px 0 64px" }}>
             <div style={{ background: "#FF6B2B", borderRadius: 14, padding: "44px 32px", textAlign: "center" }}>
