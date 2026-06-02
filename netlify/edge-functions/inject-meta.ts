@@ -1153,9 +1153,18 @@ export default async function handler(request: Request, context: any) {
 
   // Inject H1 into body for crawlers that don't execute JS
   const safeH1 = escapeAttr(meta.h1);
+  const safeDescription2 = escapeAttr(meta.description);
+  const safeTitle2 = escapeAttr(meta.title.replace(/\s*\|\s*Cypher Digital.*$/i, ""));
+  const seoBody = `
+    <h1>${safeH1}</h1>
+    <p>${safeDescription2}</p>
+    <p>${safeTitle2} — delivered by Cypher Digital, a leading digital marketing agency in Sri Lanka helping local brands grow with data-driven strategies, creative campaigns and measurable results across Colombo, Kandy, Galle and the wider Sri Lankan market.</p>
+    <p>Our team specialises in social media marketing, Facebook Ads, Google Ads, SEO, video production, graphic design, influencer marketing and TikTok marketing for small and medium businesses in Sri Lanka. We build full-funnel digital marketing campaigns that drive real leads, sales and brand awareness for Sri Lankan SMEs.</p>
+    <p>Talk to Cypher Digital about ${safeH1.toLowerCase()} — request a free consultation on WhatsApp at +94 70 177 2626 or visit cypherdigital.lk to see case studies, pricing and packages from one of the most trusted digital marketing agencies in Sri Lanka serving hotels, restaurants, real estate, education, beauty salons, fashion brands and healthcare providers.</p>
+  `;
   modified = modified.replace(
     '<div id="root"></div>',
-    `<div id="root"><h1>${safeH1}</h1></div>`
+    `<div id="root">${seoBody}</div>`
   );
 
   // Canonical tag
