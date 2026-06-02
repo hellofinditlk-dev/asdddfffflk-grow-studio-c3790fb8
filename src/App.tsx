@@ -194,6 +194,7 @@ const BlogCreativeAgency = lazy(() => import("./pages/BlogCreativeAgency"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminLeads = lazy(() => import("./pages/AdminLeads"));
 const AdminInquiries = lazy(() => import("./pages/AdminInquiries"));
+const AdminCallClicks = lazy(() => import("./pages/AdminCallClicks"));
 
 
 const queryClient = new QueryClient();
