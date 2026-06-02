@@ -1007,6 +1007,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "The 5 types of business videos in Sri Lanka — brand, promo, testimonial, product and educational. What to make, when and what it costs. Cypher Digital.",
     h1: "What Kind of Video Should I Make to Promote My Business in Sri Lanka?",
   },
+  "/blog/how-much-does-video-production-cost-sri-lanka": {
+    title: "How Much Does Video Production Cost in Sri Lanka? (2025 Price Guide)",
+    description: "Video production cost Sri Lanka — full 2025 price guide for reels, brand videos, AI video and agency packages from LKR 5,000–500,000. Cypher Digital.",
+    h1: "How Much Does Video Production Cost in Sri Lanka? (2025 Price Guide)",
+  },
   "/blog/why-work-at-digital-marketing-agency-sri-lanka": {
     title: "Why Work at a Digital Marketing Agency in Sri Lanka? The Honest Take | Cypher Digital",
     description: "The real advantages, genuine downsides, and what a career at a Colombo digital marketing agency looks like day-to-day in 2026.",
