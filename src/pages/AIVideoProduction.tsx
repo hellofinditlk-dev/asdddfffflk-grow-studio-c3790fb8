@@ -259,18 +259,19 @@ const AIVideoProduction = () => {
                 </div>
               ))}
             </div>
+            <p style={{ fontSize: 13, color: "#666", marginTop: 20, textAlign: "center" }}>Not sure which package is right for you? WhatsApp us on <a href={waBase + encodeURIComponent("Hi, I need help choosing an AI video package")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", fontWeight: 600 }}>+94 70 177 2626</a> and we'll recommend the best option for your budget and goals.</p>
           </section>
 
           {/* WHY US */}
           <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Why Cypher Digital</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Built for Sri Lankan Businesses</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>We understand the local market, the platforms, and what drives conversions in Sri Lanka.</p>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Why Sri Lankan Businesses Choose Cypher Digital for AI Video Production</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Six reasons 500+ businesses across Sri Lanka trust our AI video production team.</p>
             <div className="grid-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 10 }}>
               {whyUs.map((w) => (
                 <div key={w.title} className="why-card">
                   <div style={{ fontSize: 24, marginBottom: 10 }}>{w.icon}</div>
-                  <div style={{ fontWeight: 600, fontSize: 14, marginBottom: 5 }}>{w.title}</div>
+                  <h3 style={{ fontWeight: 600, fontSize: 14, margin: 0, marginBottom: 5 }}>{w.title}</h3>
                   <div style={{ fontSize: 13, color: "#777", lineHeight: 1.5 }}>{w.desc}</div>
                 </div>
               ))}
