@@ -180,20 +180,6 @@ const AIVideoProduction = () => {
             </div>
           </section>
 
-          {/* PORTFOLIO */}
-          <section id="portfolio" style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Portfolio</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Recent Video Productions</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 28 }}>A snapshot of brand and social videos produced for Sri Lankan clients.</p>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
-              {portfolio.map((p) => (
-                <div key={p.label} className="sample-thumb">
-                  <div className="play-btn">▶</div>
-                  <span style={{ fontSize: 11, color: "#aaa", fontWeight: 500 }}>{p.label}</span>
-                </div>
-              ))}
-            </div>
-          </section>
 
           {/* CTA */}
           <section style={{ padding: "48px 0 64px" }}>
