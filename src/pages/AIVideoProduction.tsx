@@ -79,7 +79,6 @@ const AIVideoProduction = () => {
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
               <a href={waBase + encodeURIComponent("Hi, I want a quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">▶ View Packages</a>
-              <a href="#portfolio" className="btn-secondary">🎬 See Examples</a>
             </div>
             <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 480 }}>
               {[["500+", "Videos Produced"], ["48 hrs", "Avg Turnaround"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
