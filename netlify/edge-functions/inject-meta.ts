@@ -1012,6 +1012,26 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Video production cost Sri Lanka — full 2025 price guide for reels, brand videos, AI video and agency packages from LKR 5,000–500,000. Cypher Digital.",
     h1: "How Much Does Video Production Cost in Sri Lanka? (2025 Price Guide)",
   },
+  "/blog/best-ai-tools-video-production-2025": {
+    title: "7 Best AI Tools for Video Production Used by Sri Lankan Agencies (2025)",
+    description: "The 7 best AI tools for video production in 2025 — Runway, HeyGen, ElevenLabs, CapCut, Descript, Pika and Adobe Firefly. How Sri Lankan agencies use them.",
+    h1: "The 7 Best AI Tools for Video Production Used by Agencies in Sri Lanka (2025)",
+  },
+  "/blog/social-media-video-content-strategy-sri-lanka": {
+    title: "Social Media Video Strategy for Sri Lankan Businesses in 2025",
+    description: "What actually works for social media video strategy in Sri Lanka — Reels, TikTok, Instagram, YouTube formats, posting frequency and AI scaling. Cypher Digital.",
+    h1: "Social Media Video Strategy for Sri Lankan Businesses in 2025: What Actually Works",
+  },
+  "/blog/video-ads-facebook-google-sri-lanka": {
+    title: "Video Ads on Facebook & Google in Sri Lanka: The Complete Guide",
+    description: "How to use video ads on Facebook and Google in Sri Lanka — formats, hooks, budgets, CPMs and what makes a high-converting video ad. Cypher Digital.",
+    h1: "How to Use Video Ads on Facebook and Google to Grow Your Business in Sri Lanka",
+  },
+  "/blog/ai-avatar-videos-businesses-sri-lanka": {
+    title: "AI Avatar Videos for Sri Lankan Businesses: The 2025 Guide",
+    description: "AI avatar video Sri Lanka — what they are, use cases for education, healthcare, finance, HR and e-commerce, costs and how to get started. Cypher Digital.",
+    h1: "AI Avatar Videos: The Future of Business Communication in Sri Lanka",
+  },
   "/blog/why-work-at-digital-marketing-agency-sri-lanka": {
     title: "Why Work at a Digital Marketing Agency in Sri Lanka? The Honest Take | Cypher Digital",
     description: "The real advantages, genuine downsides, and what a career at a Colombo digital marketing agency looks like day-to-day in 2026.",
