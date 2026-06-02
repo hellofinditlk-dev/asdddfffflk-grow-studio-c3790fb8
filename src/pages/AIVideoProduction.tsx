@@ -189,8 +189,8 @@ const AIVideoProduction = () => {
           {/* VIDEO TYPES */}
           <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>What We Create</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Every Video Format Your Brand Needs</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>From 15-second social reels to full brand films — all AI-enhanced, all production-ready.</p>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Services We Offer in Sri Lanka</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Every video format your business needs — scripted, produced, and delivered.</p>
             <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
               {videoTypes.map((v, i) => (
                 <div key={i} className="video-card" onMouseEnter={() => setHoveredCard(i)} onMouseLeave={() => setHoveredCard(null)}>
@@ -198,8 +198,9 @@ const AIVideoProduction = () => {
                     <div style={{ position: "absolute", top: 12, right: 12, background: "rgba(255,107,43,0.1)", color: "#FF6B2B", fontSize: 10, fontWeight: 700, padding: "3px 8px", borderRadius: 10 }}>{v.tag}</div>
                   )}
                   <div style={{ width: 40, height: 40, background: "rgba(255,107,43,0.08)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, marginBottom: 12 }}>{v.icon}</div>
-                  <div className="syne" style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{v.title}</div>
+                  <h3 className="syne" style={{ fontWeight: 700, fontSize: 14, margin: 0, marginBottom: 6 }}>{v.title}</h3>
                   <div style={{ fontSize: 12, color: "#777", lineHeight: 1.55 }}>{v.desc}</div>
+                  <div style={{ fontSize: 11, color: "#FF6B2B", marginTop: 10, fontWeight: 600 }}>Best for: <span style={{ color: "#555", fontWeight: 400 }}>{v.best}</span></div>
                 </div>
               ))}
             </div>
@@ -210,14 +211,14 @@ const AIVideoProduction = () => {
             <div style={{ background: "#0a0a0a", borderRadius: 14, padding: "36px 32px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: -50, right: -50, width: 200, height: 200, borderRadius: "50%", border: "36px solid rgba(255,107,43,0.12)", pointerEvents: "none" }} />
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 12 }}>Our Process</div>
-              <h2 className="syne" style={{ fontWeight: 800, fontSize: 26, color: "#fff", marginBottom: 8, lineHeight: 1.15 }}>From Brief to Broadcast — In 48 Hours</h2>
-              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginBottom: 28, lineHeight: 1.6 }}>AI tools accelerate every step. Our creative team ensures every frame is on-brand.</p>
+              <h2 className="syne" style={{ fontWeight: 800, fontSize: 26, color: "#fff", marginBottom: 8, lineHeight: 1.15 }}>How Our AI Video Production Process Works — From Brief to Broadcast in 48 Hours</h2>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginBottom: 28, lineHeight: 1.6 }}>A production pipeline that combines AI speed with human creative judgment.</p>
               <div className="grid-2" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 20 }}>
                 {steps.map((s) => (
                   <div key={s.num} style={{ display: "flex", alignItems: "flex-start", gap: 14 }}>
                     <div style={{ minWidth: 32, height: 32, borderRadius: "50%", border: "1px solid rgba(255,107,43,0.4)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, color: "#FF6B2B", flexShrink: 0 }}>{s.num}</div>
                     <div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: "#fff", marginBottom: 3 }}>{s.title}</div>
+                      <h3 style={{ fontSize: 13, fontWeight: 600, color: "#fff", margin: 0, marginBottom: 3 }}>{s.title}</h3>
                       <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5 }}>{s.desc}</div>
                     </div>
                   </div>
@@ -227,10 +228,10 @@ const AIVideoProduction = () => {
           </section>
 
           {/* PACKAGES */}
-          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+          <section id="packages" style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Pricing</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Transparent Video Production Packages</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>All packages include scripting, editing, music, captions & revisions.</p>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Packages & Pricing in Sri Lanka</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Transparent, fixed-price packages designed for Sri Lankan businesses. All packages include scripting, editing, music, captions & revisions.</p>
             <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
               {packages.map((p) => (
                 <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
