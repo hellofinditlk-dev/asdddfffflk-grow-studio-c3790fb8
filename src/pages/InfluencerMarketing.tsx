@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import { useEffect } from "react";
@@ -617,7 +618,7 @@ const InfluencerMarketing = () => {
             <li>Campaign Execution & Management</li>
             <li>Performance Tracking & Reporting</li>
           </ul>
-          <p>Contact us: <a href="tel:+94701772626">+94 70 177 2626</a></p>
+          <p>Contact us: <a href="tel:+94701772626" onClick={() => trackCallClick()}>+94 70 177 2626</a></p>
         </div>
       </noscript>
     </div>

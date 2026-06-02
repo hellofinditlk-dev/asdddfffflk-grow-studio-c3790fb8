@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
@@ -442,7 +443,7 @@ const RadioAdvertising = () => {
             </a>
           </Button>
           <div className="mt-6 text-sm text-muted-foreground">
-            📞 <a href="tel:+94701772626" className="hover:text-primary">+94 70 177 2626</a> · 📍 Colombo, Sri Lanka
+            📞 <a href="tel:+94701772626" className="hover:text-primary" onClick={() => trackCallClick()}>+94 70 177 2626</a> · 📍 Colombo, Sri Lanka
           </div>
         </div>
       </section>

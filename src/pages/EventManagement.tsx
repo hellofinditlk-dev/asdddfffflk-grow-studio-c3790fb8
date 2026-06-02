@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import { useEffect } from "react";
@@ -839,7 +840,7 @@ const EventManagement = () => {
                       <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20plan%20an%20event" target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href="tel:+94701772626">Call 070 177 2626</a>
+                      <a href="tel:+94701772626" onClick={() => trackCallClick()}>Call 070 177 2626</a>
                     </Button>
                   </div>
                 </div>

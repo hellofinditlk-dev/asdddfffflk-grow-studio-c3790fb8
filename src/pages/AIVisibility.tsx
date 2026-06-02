@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import { useEffect } from "react";
 import {
@@ -409,7 +410,7 @@ const AIVisibility = () => {
                 <a href={WA_AUDIT} target="_blank" rel="noopener noreferrer">Request Your Free Audit</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white text-sm px-7 h-12 rounded-xl font-semibold">
-                <a href="tel:+94701772626"><Phone className="w-4 h-4 mr-2" /> +94 70 177 2626</a>
+                <a href="tel:+94701772626" onClick={() => trackCallClick()}><Phone className="w-4 h-4 mr-2" /> +94 70 177 2626</a>
               </Button>
             </div>
           </div>

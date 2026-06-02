@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
@@ -658,7 +659,7 @@ const AdvertisingInSriLanka = () => {
             </a>
           </Button>
           <div className="mt-6 text-sm text-background/60">
-            📞 <a href="tel:+94701772626" className="text-background hover:text-primary font-bold">+94 70 177 2626</a> · 📍 Colombo, Sri Lanka
+            📞 <a href="tel:+94701772626" className="text-background hover:text-primary font-bold" onClick={() => trackCallClick()}>+94 70 177 2626</a> · 📍 Colombo, Sri Lanka
           </div>
         </div>
       </section>
