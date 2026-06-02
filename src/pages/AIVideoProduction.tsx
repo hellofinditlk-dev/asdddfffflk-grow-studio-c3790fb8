@@ -33,11 +33,6 @@ const AIVideoProduction = () => {
     { icon: "📊", title: "Ad-Performance Focused", desc: "Every video is structured for engagement, click-throughs, and conversions" },
   ];
 
-  const portfolio = [
-    { label: "Fashion Brand Reel" },
-    { label: "Restaurant Promo" },
-    { label: "Real Estate Tour" },
-  ];
 
   const waBase = "https://wa.me/94701772626?text=";
 
@@ -84,7 +79,6 @@ const AIVideoProduction = () => {
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
               <a href={waBase + encodeURIComponent("Hi, I want a quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">▶ View Packages</a>
-              <a href="#portfolio" className="btn-secondary">🎬 See Examples</a>
             </div>
             <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 480 }}>
               {[["500+", "Videos Produced"], ["48 hrs", "Avg Turnaround"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
@@ -186,20 +180,6 @@ const AIVideoProduction = () => {
             </div>
           </section>
 
-          {/* PORTFOLIO */}
-          <section id="portfolio" style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
-            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Portfolio</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>Recent Video Productions</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 28 }}>A snapshot of brand and social videos produced for Sri Lankan clients.</p>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
-              {portfolio.map((p) => (
-                <div key={p.label} className="sample-thumb">
-                  <div className="play-btn">▶</div>
-                  <span style={{ fontSize: 11, color: "#aaa", fontWeight: 500 }}>{p.label}</span>
-                </div>
-              ))}
-            </div>
-          </section>
 
           {/* CTA */}
           <section style={{ padding: "48px 0 64px" }}>
