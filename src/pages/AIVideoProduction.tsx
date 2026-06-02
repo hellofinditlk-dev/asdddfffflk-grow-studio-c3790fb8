@@ -152,24 +152,37 @@ const AIVideoProduction = () => {
           {/* HERO */}
           <section style={{ padding: "40px 0 48px", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,107,43,0.08)", border: "0.5px solid rgba(255,107,43,0.25)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: "#FF6B2B", letterSpacing: "0.6px", textTransform: "uppercase", marginBottom: 22 }}>
-              ✦ New · AI-Powered
+              ✦ Sri Lanka's #1 AI Video Production Agency
             </div>
             <h1 className="syne hero" style={{ fontWeight: 800, fontSize: 52, lineHeight: 1.04, letterSpacing: "-1.5px", marginBottom: 18, maxWidth: 620 }}>
               AI Video Production<br />in <span style={{ color: "#FF6B2B" }}>Sri Lanka</span>
             </h1>
             <p style={{ fontSize: 16, color: "#555", lineHeight: 1.65, maxWidth: 520, marginBottom: 32 }}>
-              Cinematic brand videos, social reels, and ad creatives — powered by the latest AI tools and produced by Sri Lanka's most trusted digital team in Colombo.
+              Cinematic brand videos, social media reels, and high-converting ad creatives — produced with the latest AI tools and delivered in 48 hours. Trusted by 500+ businesses across Colombo and Sri Lanka.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
-              <a href={waBase + encodeURIComponent("Hi, I want a quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">▶ View Packages</a>
+              <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">Get a Free Quote →</a>
+              <a href="#packages" className="btn-secondary">View Packages</a>
             </div>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 480 }}>
-              {[["500+", "Videos Produced"], ["48 hrs", "Avg Turnaround"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
+            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
+              {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 15K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
                 <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
                   <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
                   <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{lbl}</div>
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* INTRO */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Why Video Now</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 16, lineHeight: 1.2 }}>What Is AI Video Production — and Why Is It the Smartest Investment for Your Business in 2025?</h2>
+            <div style={{ fontSize: 15, color: "#444", lineHeight: 1.75, display: "flex", flexDirection: "column", gap: 14 }}>
+              <p>Video is the highest-performing content format on every platform Sri Lankan businesses use — Facebook, Instagram, TikTok, YouTube, and Google. But traditional video production in Sri Lanka is expensive, slow, and inaccessible for most small and medium businesses.</p>
+              <p>AI video production changes this completely.</p>
+              <p>At Cypher Digital, we combine the latest AI tools — for scripting, voiceover, motion graphics, and editing — with our in-house creative team to produce professional videos at a fraction of the traditional cost and in half the time. The result: broadcast-quality video content that your competitors can't match, at a price your business can actually afford.</p>
+              <p>From a single <a href={waBase + encodeURIComponent("Hi, I want a social media reel")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", textDecoration: "underline" }}>social media reel</a> to a full brand film, our AI video production Sri Lanka service covers every format your business needs.</p>
             </div>
           </section>
 
