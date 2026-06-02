@@ -56,6 +56,33 @@ export type Database = {
         }
         Relationships: []
       }
+      call_clicks: {
+        Row: {
+          created_at: string
+          id: string
+          phone: string
+          referrer: string | null
+          source_path: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          phone: string
+          referrer?: string | null
+          source_path?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          phone?: string
+          referrer?: string | null
+          source_path?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
       inquiries: {
         Row: {
           created_at: string

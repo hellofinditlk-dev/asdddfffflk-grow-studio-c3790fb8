@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import { Target, Users, TrendingUp, Award, Heart, Lightbulb, Phone, MessageCircle, MapPin } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
@@ -174,7 +175,7 @@ const About = () => (
             </a>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-background/30 text-background hover:bg-background hover:text-foreground">
-            <a href="tel:+94701772626"><Phone className="w-5 h-5" /> +94 70 177 2626</a>
+            <a href="tel:+94701772626" onClick={() => trackCallClick()}><Phone className="w-5 h-5" /> +94 70 177 2626</a>
           </Button>
         </div>
         <p className="text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">

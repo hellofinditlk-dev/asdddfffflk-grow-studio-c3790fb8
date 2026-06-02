@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight, CheckCircle, Megaphone, Target, Video, Search,
@@ -1055,7 +1056,7 @@ const Index = () => (
                 <p className="text-white/80 text-sm font-medium mb-2">💬 Ready to grow? Drop us a message — we reply fast!</p>
                 <div className="flex items-center gap-3 text-white/70">
                   <Phone className="w-4 h-4" />
-                  <a href="tel:+94701772626" className="font-heading font-semibold hover:text-primary transition-colors">
+                  <a href="tel:+94701772626" className="font-heading font-semibold hover:text-primary transition-colors" onClick={() => trackCallClick()}>
                     +94 70 177 2626
                   </a>
                 </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 import mascotDefault from "@/assets/mascot-default.jpeg";
@@ -92,7 +93,7 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm font-bold mb-4">Contact</h4>
           <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-            <a href="tel:+94701772626" className="flex items-center gap-2 hover:text-foreground transition-colors">
+            <a href="tel:+94701772626" className="flex items-center gap-2 hover:text-foreground transition-colors" onClick={() => trackCallClick()}>
               <Phone className="w-3.5 h-3.5" /> +94 70 177 2626
             </a>
             <span className="flex items-center gap-2">
