@@ -151,6 +151,9 @@ export default function AdminInquiries() {
           <Link to="/admin/leads">
             <Button variant="outline">AI Visibility Leads</Button>
           </Link>
+          <Link to="/admin/call-clicks">
+            <Button variant="outline">Call Clicks</Button>
+          </Link>
           <Button onClick={exportCSV} disabled={!filtered.length}>Export CSV</Button>
           <Button onClick={handleLogout} variant="outline">Sign Out</Button>
         </div>
