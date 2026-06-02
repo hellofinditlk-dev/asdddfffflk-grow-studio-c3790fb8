@@ -33,11 +33,6 @@ const AIVideoProduction = () => {
     { icon: "📊", title: "Ad-Performance Focused", desc: "Every video is structured for engagement, click-throughs, and conversions" },
   ];
 
-  const portfolio = [
-    { label: "Fashion Brand Reel" },
-    { label: "Restaurant Promo" },
-    { label: "Real Estate Tour" },
-  ];
 
   const waBase = "https://wa.me/94701772626?text=";
 
