@@ -19,6 +19,7 @@ const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement")
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
 const VideoProduction = lazy(() => import("./pages/VideoProduction"));
+const AIVideoProduction = lazy(() => import("./pages/AIVideoProduction"));
 const SEOServices = lazy(() => import("./pages/SEOServices"));
 const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
 const TikTokMarketing = lazy(() => import("./pages/TikTokMarketing"));
@@ -239,6 +240,7 @@ const App = () => (
               <Route path="/facebook-ads-sri-lanka" element={<FacebookAds />} />
               <Route path="/google-ads-sri-lanka" element={<GoogleAds />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
+              <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
               <Route path="/seo-services-sri-lanka" element={<SEOServices />} />
               <Route path="/graphic-design-sri-lanka" element={<GraphicDesign />} />
               <Route path="/tiktok-marketing-sri-lanka" element={<TikTokMarketing />} />
