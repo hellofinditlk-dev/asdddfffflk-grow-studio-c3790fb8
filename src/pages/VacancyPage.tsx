@@ -130,6 +130,13 @@ const VacancyPage = () => {
             {vacancy.seoIntro.map((p, i) => (
               <p key={i} className="text-base text-muted-foreground leading-relaxed">{p}</p>
             ))}
+            {vacancy.slug === "digital-marketing-jobs-sri-lanka" && (
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Looking for more{" "}
+                <Link to="/careers" className="text-primary hover:underline">digital marketing jobs in sri lanka</Link>
+                ? Browse all open vacancies at Cypher Digital.
+              </p>
+            )}
           </div>
         </section>
       )}
