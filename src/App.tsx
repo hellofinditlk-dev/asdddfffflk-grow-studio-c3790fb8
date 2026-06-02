@@ -432,6 +432,7 @@ const App = () => (
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin/leads" element={<AdminLeads />} />
               <Route path="/admin/inquiries" element={<AdminInquiries />} />
+              <Route path="/admin/call-clicks" element={<AdminCallClicks />} />
               <Route path="/admin" element={<Navigate to="/admin/inquiries" replace />} />
 
               <Route path="/:slug" element={<IndustryPage />} />
