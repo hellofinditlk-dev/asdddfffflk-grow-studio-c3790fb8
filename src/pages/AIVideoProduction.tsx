@@ -46,7 +46,6 @@ const AIVideoProduction = () => {
       <SEOHead
         title="AI Video Production Sri Lanka | Cypher Digital"
         description="AI-powered video production in Sri Lanka. Cinematic brand videos, social reels, and ad creatives delivered in 48 hours. Packages from LKR 15,000."
-        keywords="ai video production sri lanka, video production colombo, brand video sri lanka, social media reels, ad video production"
       />
       <div style={{ fontFamily: "'DM Sans', sans-serif", color: "#0a0a0a", background: "#fff" }}>
         <style>{`
