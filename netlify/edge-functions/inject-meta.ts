@@ -782,6 +782,231 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "The most important questions to ask before hiring a digital agency in Sri Lanka — strategy, reporting, pricing and accountability. Cypher Digital.",
     h1: "Top Questions to Ask Before Hiring a Digital Agency in Sri Lanka",
   },
+  "/blog/advertising-mistakes-sri-lankan-businesses": {
+    title: "Advertising Mistakes Sri Lankan Businesses Make — And How to Avoid Them (2026) | Cypher Digital",
+    description: "The 10 most common advertising mistakes Sri Lankan businesses make — and exactly how to fix each one to stop wasting budget.",
+    h1: "Advertising Mistakes Sri Lankan Businesses Make — And How to Avoid Them (2026)",
+  },
+  "/blog/affordable-social-media-marketing-services-sri-lanka": {
+    title: "Affordable Social Media Marketing Services in Sri Lanka (2026 Pricing Guide) | Cypher Digital",
+    description: "Real pricing for affordable social media marketing services in Sri Lanka — packages, what's included, and how to get professional results from LKR 60,000/month.",
+    h1: "Affordable Social Media Marketing Services in Sri Lanka (2026 Pricing Guide)",
+  },
+  "/blog/best-advertising-agencies-sri-lanka": {
+    title: "Best Advertising Agencies in Sri Lanka — How to Choose the Right One (2026) | Cypher Digital",
+    description: "Compare top advertising agencies in Sri Lanka by service, pricing, reporting, red flags and questions to ask before hiring.",
+    h1: "Best Advertising Agencies in Sri Lanka — How to Choose the Right One (2026)",
+  },
+  "/blog/best-social-media-agencies-sri-lanka-small-businesses": {
+    title: "Best Social Media Agencies in Sri Lanka for Small Businesses (2026 Guide) | Cypher Digital",
+    description: "Discover the best social media agencies in Sri Lanka for small businesses — what to look for, pricing, and how Cypher Digital delivers real results.",
+    h1: "Best Social Media Agencies in Sri Lanka for Small Businesses (2026 Guide)",
+  },
+  "/blog/best-social-media-platform-sri-lanka-business": {
+    title: "Facebook vs Instagram vs TikTok: Which Platform is Best for Your Sri Lankan Business? | Cypher Digital",
+    description: "Compare Facebook, Instagram, and TikTok for Sri Lankan businesses in 2025. Data-backed guide to choosing the right platform for your industry.",
+    h1: "Facebook vs Instagram vs TikTok: Which Platform is Best for Your Sri Lankan Business?",
+  },
+  "/blog/best-time-to-post-social-media-sri-lanka": {
+    title: "Best Time to Post on Facebook and Instagram in Sri Lanka (Data-Backed 2025 Guide) | Cypher Digital",
+    description: "Data-backed guide to the best times and days to post on Facebook and Instagram in Sri Lanka 2025 — by industry and platform.",
+    h1: "Best Time to Post on Facebook and Instagram in Sri Lanka (Data-Backed 2025 Guide)",
+  },
+  "/blog/colombo-restaurant-social-media-case-study": {
+    title: "Case Study: How a Colombo Restaurant Grew Social Media Leads by 300% in 3 Months | Cypher Digital",
+    description: "Real case study — how Cypher Digital grew a Colombo restaurant's social media leads by 300% in 3 months through strategic management.",
+    h1: "Case Study: How a Colombo Restaurant Grew Social Media Leads by 300% in 3 Months",
+  },
+  "/blog/digital-marketing-courses-sri-lanka": {
+    title: "Digital Marketing Courses in Sri Lanka — Free and Paid Options (2026) | Cypher Digital",
+    description: "The best digital marketing courses and certifications in Sri Lanka 2026 — free Meta Blueprint, Google Ads, paid Coursera and Udemy. Ranked by employer value.",
+    h1: "Digital Marketing Courses in Sri Lanka — Free and Paid Options (2026)",
+  },
+  "/blog/digital-marketing-portfolio-sri-lanka": {
+    title: "How to Build a Digital Marketing Portfolio in Sri Lanka With No Experience | Cypher Digital",
+    description: "A practical guide to building portfolio pieces for paid ads, design, video, and SEO roles — using free tools and no client budget required.",
+    h1: "How to Build a Digital Marketing Portfolio in Sri Lanka With No Experience",
+  },
+  "/blog/digital-marketing-salary-sri-lanka-2026": {
+    title: "Digital Marketing Salary in Sri Lanka 2026 — The Complete Guide | Cypher Digital",
+    description: "Real digital marketing salaries in Sri Lanka 2026 — by role, experience and city. LKR 25,000 intern to 250,000+ senior. By Cypher Digital.",
+    h1: "Digital Marketing Salary in Sri Lanka 2026 — The Complete Guide",
+  },
+  "/blog/digital-marketing-skills-sri-lanka": {
+    title: "Top 10 Digital Marketing Skills Employers in Sri Lanka Look For (2026) | Cypher Digital",
+    description: "The top 10 digital marketing skills Sri Lankan agencies hire for in 2026 — Meta Ads, Google Ads, TikTok, SEO, design, video, analytics. Salaries included.",
+    h1: "Top 10 Digital Marketing Skills Employers in Sri Lanka Look For (2026)",
+  },
+  "/blog/get-business-on-chatgpt-sri-lanka": {
+    title: "How Do I Get My Business to Show Up on ChatGPT Answers? | Cypher Digital",
+    description: "How to get your Sri Lankan business cited by ChatGPT, Gemini and Perplexity — AEO, structured content and AI visibility check. Cypher Digital.",
+    h1: "How Do I Get My Business to Show Up on ChatGPT Answers?",
+  },
+  "/blog/get-more-customers-facebook-ads-sri-lanka": {
+    title: "How to Get More Customers Using Facebook Ads in Sri Lanka | Cypher Digital",
+    description: "Get more customers with Facebook Ads in Sri Lanka — budgets, campaign types, targeting and how to avoid the boost-post trap. Cypher Digital.",
+    h1: "How to Get More Customers Using Facebook Ads in Sri Lanka",
+  },
+  "/blog/google-ads-jobs-sri-lanka": {
+    title: "Google Ads Jobs in Sri Lanka — What You Need to Get Hired in 2026 | Cypher Digital",
+    description: "Salary ranges, which certifications matter, Search vs Display vs YouTube, and how to build real Google Ads expertise in Colombo.",
+    h1: "Google Ads Jobs in Sri Lanka — What You Need to Get Hired in 2026",
+  },
+  "/blog/graphic-designer-jobs-sri-lanka-guide": {
+    title: "Graphic Designer Jobs in Sri Lanka — What to Expect, What It Pays (2026) | Cypher Digital",
+    description: "Salary ranges, required tools, portfolio advice, and how to land your first graphic design role at a digital marketing agency in Sri Lanka.",
+    h1: "Graphic Designer Jobs in Sri Lanka — What to Expect, What It Pays (2026)",
+  },
+  "/blog/grow-business-instagram-sri-lanka": {
+    title: "How to Grow Your Business Instagram Following in Sri Lanka | Cypher Digital",
+    description: "Grow your business Instagram following in Sri Lanka — Reels, profile setup, content mix and the strategies that drive real results. Cypher Digital.",
+    h1: "How to Grow Your Business Instagram Following in Sri Lanka",
+  },
+  "/blog/how-to-get-digital-marketing-job-sri-lanka": {
+    title: "How to Get a Digital Marketing Job in Sri Lanka — 2026 Roadmap | Cypher Digital",
+    description: "Step-by-step 2026 roadmap to getting hired for a digital marketing job in Sri Lanka — qualifications, certifications, portfolio building, and where to apply.",
+    h1: "How to Get a Digital Marketing Job in Sri Lanka — 2026 Roadmap",
+  },
+  "/blog/how-to-run-social-media-campaign-sri-lanka": {
+    title: "How to Run a Successful Social Media Campaign in Sri Lanka: Step-by-Step Guide | Cypher Digital",
+    description: "Step-by-step guide to running successful social media campaigns in Sri Lanka — goals, audience, platform, content, budget, launch, and reporting.",
+    h1: "How to Run a Successful Social Media Campaign in Sri Lanka: Step-by-Step Guide",
+  },
+  "/blog/linkedin-b2b-clients-sri-lanka": {
+    title: "How to Use LinkedIn to Get B2B Clients for Your Business in Sri Lanka | Cypher Digital",
+    description: "Use LinkedIn to get B2B clients in Sri Lanka — company page, content, outreach and LinkedIn Ads playbook for SMEs. Cypher Digital.",
+    h1: "How to Use LinkedIn to Get B2B Clients for Your Business in Sri Lanka",
+  },
+  "/blog/make-business-look-professional-online-sri-lanka": {
+    title: "How to Make My Business Look More Professional Online in Sri Lanka | Cypher Digital",
+    description: "Make your business look more professional online in Sri Lanka — logo, profiles, website and content design tips that build trust. Cypher Digital.",
+    h1: "How to Make My Business Look More Professional Online in Sri Lanka",
+  },
+  "/blog/manage-business-facebook-page-sri-lanka": {
+    title: "Best Way to Manage Your Business Facebook Page in Sri Lanka | Cypher Digital",
+    description: "How to manage your business Facebook page in Sri Lanka — posting schedule, content mix, response time and when to hire help. Cypher Digital.",
+    h1: "Best Way to Manage Your Business Facebook Page in Sri Lanka",
+  },
+  "/blog/marketing-internship-sri-lanka-guide": {
+    title: "Marketing Internships in Sri Lanka — The Honest 2026 Guide | Cypher Digital",
+    description: "What a good internship actually involves, what you should be paid, questions to ask before saying yes, and how to turn it into a full-time job.",
+    h1: "Marketing Internships in Sri Lanka — The Honest 2026 Guide",
+  },
+  "/blog/meta-ads-jobs-sri-lanka": {
+    title: "Meta Ads Jobs in Sri Lanka — What Facebook Advertising Specialists Earn (2026) | Cypher Digital",
+    description: "Salary ranges, daily responsibilities, Meta Blueprint advice, and what agencies in Colombo look for when hiring paid social specialists.",
+    h1: "Meta Ads Jobs in Sri Lanka — What Facebook Advertising Specialists Earn (2026)",
+  },
+  "/blog/online-advertising-sri-lanka-platform-guide": {
+    title: "Online Advertising in Sri Lanka — Complete Platform Guide for Businesses (2026) | Cypher Digital",
+    description: "Every major online advertising platform in Sri Lanka — Facebook, Instagram, Google, YouTube, TikTok, Display and WhatsApp — costs, audiences and best fit.",
+    h1: "Online Advertising in Sri Lanka — Complete Platform Guide for Businesses (2026)",
+  },
+  "/blog/rank-website-google-sri-lanka": {
+    title: "How to Rank Your Business Website on Google in Sri Lanka | Cypher Digital",
+    description: "How to rank your website on Google in Sri Lanka — on-page, technical, content and link building strategies that actually work. Cypher Digital.",
+    h1: "How to Rank Your Business Website on Google in Sri Lanka",
+  },
+  "/blog/seo-jobs-sri-lanka": {
+    title: "SEO Jobs in Sri Lanka — Career Guide for 2026 | Cypher Digital",
+    description: "What SEO roles at digital marketing agencies involve, what they pay, which tools you need, and how to build an SEO career in Colombo.",
+    h1: "SEO Jobs in Sri Lanka — Career Guide for 2026",
+  },
+  "/blog/should-business-be-on-tiktok-sri-lanka": {
+    title: "Should My Business Be on TikTok in Sri Lanka? | Cypher Digital",
+    description: "Should your business be on TikTok in Sri Lanka? Honest guide to who it works for, who it doesn't and how to start. Cypher Digital.",
+    h1: "Should My Business Be on TikTok in Sri Lanka?",
+  },
+  "/blog/show-up-google-search-sri-lanka": {
+    title: "How to Get Your Business to Show Up on Google Search in Sri Lanka | Cypher Digital",
+    description: "How to show up on Google search in Sri Lanka with Google Ads and SEO — costs, timelines and which to choose first. Cypher Digital.",
+    h1: "How to Get Your Business to Show Up on Google Search in Sri Lanka",
+  },
+  "/blog/signs-you-need-social-media-agency-sri-lanka": {
+    title: "10 Signs You Need to Hire a Social Media Management Agency in Sri Lanka | Cypher Digital",
+    description: "10 signs it's time to hire a social media management agency in Sri Lanka — what to look for and how to choose the right partner.",
+    h1: "10 Signs You Need to Hire a Social Media Management Agency in Sri Lanka",
+  },
+  "/blog/sinhala-vs-english-social-media-sri-lanka": {
+    title: "Sinhala vs English: Which Language Should You Use for Social Media in Sri Lanka? | Cypher Digital",
+    description: "Sinhala vs English vs Tamil — choosing the right language strategy for social media in Sri Lanka, with bilingual tactics for maximum reach.",
+    h1: "Sinhala vs English: Which Language Should You Use for Social Media in Sri Lanka?",
+  },
+  "/blog/social-media-campaign-ideas-sri-lanka": {
+    title: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2025 | Cypher Digital",
+    description: "10 proven social media campaign ideas for Sri Lankan businesses — from Avurudu campaigns to flash sales, BTS series, cricket tie-ins, and influencer collaborations.",
+    h1: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2025",
+  },
+  "/blog/social-media-management-cost-sri-lanka": {
+    title: "How Much Does Social Media Management Cost in Sri Lanka? (2025 Pricing Guide) | Cypher Digital",
+    description: "How much does social media management cost in Sri Lanka? Detailed 2025 pricing guide — agency vs freelancer vs in-house, packages, and what's included.",
+    h1: "How Much Does Social Media Management Cost in Sri Lanka? (2025 Pricing Guide)",
+  },
+  "/blog/social-media-management-small-business-sri-lanka": {
+    title: "Social Media Management for Small Businesses in Sri Lanka: A Complete 2025 Guide | Cypher Digital",
+    description: "Complete 2025 social media management guide for small businesses in Sri Lanka — mistakes to avoid, what's included, budgets, and real results.",
+    h1: "Social Media Management for Small Businesses in Sri Lanka: A Complete 2025 Guide",
+  },
+  "/blog/social-media-marketing-agency-sri-lanka": {
+    title: "How to Choose the Right Social Media Marketing Agency in Sri Lanka (2025) | Cypher Digital",
+    description: "A practical framework for choosing a social media marketing agency in Sri Lanka — questions to ask, services to expect, and what 90 days should look like.",
+    h1: "How to Choose the Right Social Media Marketing Agency in Sri Lanka (2025)",
+  },
+  "/blog/social-media-marketing-packages-sri-lanka": {
+    title: "Social Media Marketing Packages in Sri Lanka: What's Included & How to Choose (2025 Guide) | Cypher Digital",
+    description: "What's included in social media marketing packages in Sri Lanka, fair 2025 pricing, starter vs growth vs pro tiers, and red flags to avoid.",
+    h1: "Social Media Marketing Packages in Sri Lanka: What's Included & How to Choose (2025 Guide)",
+  },
+  "/blog/social-media-marketing-sri-lanka-guide-2025": {
+    title: "Social Media Marketing in Sri Lanka: The Complete 2025 Guide for Businesses | Cypher Digital",
+    description: "The complete 2025 guide to social media marketing in Sri Lanka — platforms, content, organic vs paid, real costs and how to get started.",
+    h1: "Social Media Marketing in Sri Lanka: The Complete 2025 Guide for Businesses",
+  },
+  "/blog/tiktok-marketing-jobs-sri-lanka": {
+    title: "TikTok Marketing Jobs in Sri Lanka — The Newest and Fastest Growing Role (2026) | Cypher Digital",
+    description: "Why TikTok specialist roles are in high demand, what the job involves, what it pays, and how to get hired in Colombo's fastest-growing digital discipline.",
+    h1: "TikTok Marketing Jobs in Sri Lanka — The Newest and Fastest Growing Role (2026)",
+  },
+  "/blog/tiktok-marketing-sri-lanka-2025": {
+    title: "TikTok Marketing in Sri Lanka: How to Go Viral and Get Customers in 2025 | Cypher Digital",
+    description: "TikTok marketing in Sri Lanka 2025 — algorithm, viral content types, ads, and how to turn TikTok views into real customers.",
+    h1: "TikTok Marketing in Sri Lanka: How to Go Viral and Get Customers in 2025",
+  },
+  "/blog/top-rated-social-media-management-companies-sri-lanka": {
+    title: "Top-Rated Social Media Management Companies in Sri Lanka (2026) | Cypher Digital",
+    description: "What separates top-rated social media management companies in Sri Lanka — evaluation criteria, monthly workflows, and why Cypher Digital leads the market.",
+    h1: "Top-Rated Social Media Management Companies in Sri Lanka (2026)",
+  },
+  "/blog/traditional-vs-digital-advertising-sri-lanka": {
+    title: "Traditional vs Digital Advertising in Sri Lanka — Which Delivers Better ROI? (2026) | Cypher Digital",
+    description: "Compare TV, radio, newspaper and billboard against Facebook, Google, TikTok and SEO. Cost, reach, targeting and ROI — which wins in 2026?",
+    h1: "Traditional vs Digital Advertising in Sri Lanka — Which Delivers Better ROI? (2026)",
+  },
+  "/blog/video-editor-jobs-sri-lanka": {
+    title: "Video Editor Jobs in Sri Lanka — Freelance, Full-Time & What Pays Best (2026) | Cypher Digital",
+    description: "Tools, salary ranges, showreel advice, and how to get your first video editing role at a digital marketing agency in Colombo.",
+    h1: "Video Editor Jobs in Sri Lanka — Freelance, Full-Time & What Pays Best (2026)",
+  },
+  "/blog/what-does-a-social-media-marketing-agency-do": {
+    title: "What Does a Social Media Marketing Agency Actually Do? (And Is It Worth It?) | Cypher Digital",
+    description: "What a social media marketing agency actually does day-to-day, what it should not promise, real pricing in Sri Lanka and whether it's worth it.",
+    h1: "What Does a Social Media Marketing Agency Actually Do? (And Is It Worth It?)",
+  },
+  "/blog/what-is-social-media-marketing": {
+    title: "What Is Social Media Marketing? A Plain-English Guide for Business Owners | Cypher Digital",
+    description: "A plain-English guide to what social media marketing is, how it differs from social media management, what it involves and what makes it effective.",
+    h1: "What Is Social Media Marketing? A Plain-English Guide for Business Owners",
+  },
+  "/blog/what-video-to-promote-business-sri-lanka": {
+    title: "What Kind of Video Should I Make to Promote My Business in Sri Lanka? | Cypher Digital",
+    description: "The 5 types of business videos in Sri Lanka — brand, promo, testimonial, product and educational. What to make, when and what it costs. Cypher Digital.",
+    h1: "What Kind of Video Should I Make to Promote My Business in Sri Lanka?",
+  },
+  "/blog/why-work-at-digital-marketing-agency-sri-lanka": {
+    title: "Why Work at a Digital Marketing Agency in Sri Lanka? The Honest Take | Cypher Digital",
+    description: "The real advantages, genuine downsides, and what a career at a Colombo digital marketing agency looks like day-to-day in 2026.",
+    h1: "Why Work at a Digital Marketing Agency in Sri Lanka? The Honest Take",
+  },
 };
 
 const escapeAttr = (value: string) =>
