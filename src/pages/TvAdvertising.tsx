@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
