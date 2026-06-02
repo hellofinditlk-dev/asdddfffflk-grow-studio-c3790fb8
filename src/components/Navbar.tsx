@@ -1,9 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import { industries } from "@/data/industries";
+import { trackCallClick } from "@/lib/trackCallClick";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -100,7 +102,15 @@ const Navbar = () => {
             )}
           </div>
 
-          <Button asChild size="sm" className="ml-3 bg-[hsl(25,95%,53%)] !text-white font-semibold hover:bg-[hsl(25,95%,45%)] rounded-lg h-9 px-4 border-none">
+          <a
+            href="tel:+94701772626"
+            onClick={() => trackCallClick()}
+            className="ml-3 inline-flex items-center gap-1.5 h-9 px-3 rounded-lg border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/5 transition-colors"
+            aria-label="Call us"
+          >
+            <Phone className="w-3.5 h-3.5" /> Call
+          </a>
+          <Button asChild size="sm" className="ml-2 bg-[hsl(25,95%,53%)] !text-white font-semibold hover:bg-[hsl(25,95%,45%)] rounded-lg h-9 px-4 border-none">
             <Link to="/contact">Get Started</Link>
           </Button>
         </div>
@@ -165,6 +175,13 @@ const Navbar = () => {
               </div>
             )}
 
+            <a
+              href="tel:+94701772626"
+              onClick={() => { trackCallClick(); setOpen(false); }}
+              className="mt-2 inline-flex items-center justify-center gap-2 h-10 rounded-lg border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/5 transition-colors"
+            >
+              <Phone className="w-4 h-4" /> Call +94 70 177 2626
+            </a>
             <Button asChild size="sm" className="bg-[hsl(25,95%,53%)] !text-white font-semibold mt-2 rounded-lg hover:bg-[hsl(25,95%,45%)] border-none">
               <Link to="/contact" onClick={() => setOpen(false)}>
                 Get Started

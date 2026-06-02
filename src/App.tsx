@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
 import ServiceStickyCTA from "@/components/ServiceStickyCTA";
 
@@ -443,6 +444,7 @@ const App = () => (
         </main>
         <Footer />
         <WhatsAppButton />
+        <FloatingCallButton />
         <BlogCTAInjector />
       </BrowserRouter>
     </TooltipProvider>
