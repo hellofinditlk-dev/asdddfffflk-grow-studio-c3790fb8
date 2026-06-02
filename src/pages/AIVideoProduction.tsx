@@ -238,7 +238,7 @@ const AIVideoProduction = () => {
                   {p.featured && (
                     <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Most Popular</div>
                   )}
-                  <div className="syne" style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>{p.name}</div>
+                  <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
                   <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
                   <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 18 }}>{p.price}</div>
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
