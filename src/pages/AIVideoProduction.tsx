@@ -282,10 +282,17 @@ const AIVideoProduction = () => {
           {/* CTA */}
           <section style={{ padding: "48px 0 64px" }}>
             <div style={{ background: "#FF6B2B", borderRadius: 14, padding: "44px 32px", textAlign: "center" }}>
-              <h2 className="syne" style={{ fontWeight: 800, fontSize: 30, color: "#fff", marginBottom: 10 }}>Ready to Create Your First AI Video?</h2>
-              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.85)", marginBottom: 28, lineHeight: 1.6 }}>Get a free consultation with our video team. We'll recommend the right format and package for your brand.</p>
-              <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-                <a href={waBase + encodeURIComponent("Hi, I want a free consultation for AI video production")} target="_blank" rel="noreferrer" className="wa-btn">💬 WhatsApp Us</a>
+              <h2 className="syne" style={{ fontWeight: 800, fontSize: 30, color: "#fff", marginBottom: 10 }}>Ready to Create Your First AI Video in Sri Lanka?</h2>
+              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.92)", maxWidth: 560, margin: "0 auto 24px", lineHeight: 1.6 }}>Join 500+ businesses across Sri Lanka that trust Cypher Digital to produce their video content. Get a free consultation and fixed-price quote — no commitment required.</p>
+              <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginBottom: 22 }}>
+                <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production in Sri Lanka")} target="_blank" rel="noreferrer" className="wa-btn">💬 WhatsApp Us Now</a>
+                <a href="tel:+94701772626" style={{ background: "rgba(255,255,255,0.18)", color: "#fff", padding: "12px 22px", borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: "none", border: "1px solid rgba(255,255,255,0.35)" }}>📞 Call +94 70 177 2626</a>
+              </div>
+              <div style={{ display: "flex", gap: 18, justifyContent: "center", flexWrap: "wrap", fontSize: 12, color: "rgba(255,255,255,0.95)", fontWeight: 600 }}>
+                <span>✅ 500+ videos produced</span>
+                <span>✅ 48-hour delivery</span>
+                <span>✅ Fixed LKR pricing</span>
+                <span>✅ 5.0 ★ rating</span>
               </div>
             </div>
           </section>
