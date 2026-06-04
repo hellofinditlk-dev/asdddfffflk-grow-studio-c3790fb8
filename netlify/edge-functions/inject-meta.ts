@@ -678,9 +678,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Digital Marketing Jobs in Sri Lanka — Join Cypher Digital",
   },
   "/careers/graphic-designer-jobs-sri-lanka": {
-    title: "Graphic Designer Jobs in Sri Lanka | Cypher Digital Careers",
-    description: "We're hiring a Graphic Designer in Colombo, Sri Lanka. Work on 800+ brand campaigns at Cypher Digital. Apply now via WhatsApp — no lengthy forms.",
-    h1: "Graphic Designer Vacancy in Sri Lanka — Cypher Digital",
+    title: "Graphic Designer Jobs in Sri Lanka 2026 | LKR 45K–150K | Cypher Digital",
+    description: "Graphic designer jobs in Sri Lanka at Cypher Digital, Colombo. Work on 800+ brand campaigns. Salary LKR 45,000–150,000/month. Full-time & part-time. Apply via WhatsApp in 60 seconds.",
+    h1: "Graphic Designer Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/digital-marketing-jobs-sri-lanka": {
     title: "Digital Marketing Jobs in Sri Lanka | Cypher Digital Careers",
