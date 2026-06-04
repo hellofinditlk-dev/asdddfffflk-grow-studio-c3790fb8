@@ -22,6 +22,25 @@ export interface Vacancy {
   seoIntro?: string[];
   whyJoin?: { title: string; body: string }[];
   faqs?: { q: string; a: string }[];
+  kwIntro?: string;
+  salaryGuide?: {
+    intro: string[];
+    levels: { name: string; exp: string; salary: string }[];
+    note?: string;
+  };
+  softwareSkills?: {
+    intro: string;
+    items: { icon: string; name: string; desc: string }[];
+  };
+  portfolioSteps?: { intro: string; steps: string[] };
+  careerPath?: {
+    steps: { title: string; salary: string; exp: string }[];
+    note?: string;
+  };
+  dayInLife?: {
+    intro?: string;
+    items: { time: string; task: string }[];
+  };
 }
 
 export const vacancies: Vacancy[] = [
