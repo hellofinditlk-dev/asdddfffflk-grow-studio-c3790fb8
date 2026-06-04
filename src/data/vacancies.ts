@@ -49,9 +49,9 @@ export const vacancies: Vacancy[] = [
     title: "Graphic Designer",
     shortTitle: "Graphic Designer",
     h1: "Graphic Designer Jobs in Sri Lanka — Hiring Now at Cypher Digital",
-    metaTitle: "Graphic Designer Jobs in Sri Lanka 2026 | Graphic Design Jobs in Colombo",
+    metaTitle: "Graphic Designer Jobs in Sri Lanka 2026 | LKR 45K–150K | Cypher Digital",
     metaDescription:
-      "Looking for graphic designer jobs in Sri Lanka? Cypher Digital is hiring graphic design talent in Colombo to work on 800+ Sri Lankan brands. Apply via WhatsApp today.",
+      "Graphic designer jobs in Sri Lanka at Cypher Digital, Colombo. Work on 800+ brand campaigns. Salary LKR 45,000–150,000/month. Full-time & part-time. Apply via WhatsApp in 60 seconds.",
     icon: Palette,
     type: "Full-time / Part-time",
     employmentType: ["FULL_TIME", "PART_TIME"],
@@ -59,11 +59,74 @@ export const vacancies: Vacancy[] = [
     summary:
       "One of the most in-demand graphic designer jobs in Sri Lanka right now — design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
     salaryRange: { min: 45000, max: 150000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Looking for graphic designer jobs in Sri Lanka? Cypher Digital is actively hiring across graphic design vacancies in Sri Lanka — from junior graphic designer jobs in Colombo to senior creative roles working on 800+ brand campaigns. Whether you specialise in social media design, brand identity or digital advertising visuals, there's a graphic design job in Colombo here for you. Part-time, full-time and freelance creative jobs in Sri Lanka available.",
     seoIntro: [
       "Cypher Digital is hiring a Graphic Designer in Sri Lanka to join our Colombo creative studio. If you're searching for graphic designer jobs in Sri Lanka — or graphic design jobs in Sri Lanka in general — with real brands, real budgets and real creative freedom, this is one of the best graphic design vacancies in Colombo right now.",
       "As our in-house Graphic Designer in Sri Lanka, you'll design social media creatives, ad visuals, brand identities, packaging and marketing collateral for 800+ Sri Lankan brands across Colombo, Kandy, Galle, Negombo and beyond. Your work goes live on paid Meta and Google Ads campaigns — not stuck in a folder.",
       "This isn't a one-off freelance gig. It's a full-time (or part-time) graphic design career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
     ],
+    salaryGuide: {
+      intro: [
+        "Graphic designer salaries in Sri Lanka vary widely by experience, portfolio quality, specialisation and employer type. Agency graphic designers in Colombo earn differently from in-house designers at corporates, and freelance designers working internationally via Upwork can earn multiple times the local agency rate.",
+        "According to 2026 market data, the median graphic designer salary in Sri Lanka is approximately LKR 90,000 per month. Entry-level designers start at LKR 23,000–45,000. Senior designers with strong portfolios and 5+ years of experience earn LKR 150,000–330,000. At Cypher Digital, we pay at the upper end of the Colombo agency market — LKR 45,000 to LKR 150,000 — based on your portfolio and what you can demonstrate, not years of experience alone.",
+      ],
+      levels: [
+        { name: "Intern", exp: "0–6 months", salary: "LKR 20K–40K/mo" },
+        { name: "Junior Designer", exp: "0–2 years", salary: "LKR 30K–65K/mo" },
+        { name: "Mid-Level Designer", exp: "2–4 years", salary: "LKR 65K–120K/mo" },
+        { name: "Senior Designer", exp: "4–7 years", salary: "LKR 120K–200K/mo" },
+        { name: "Art Director", exp: "7+ years", salary: "LKR 180K–330K/mo" },
+      ],
+      note: "Cypher Digital salaries: LKR 45,000–150,000/month based on portfolio quality and demonstrated output. Adobe Creative Suite certifications and a proven social media design portfolio add LKR 15,000–40,000 to starting salary.",
+    },
+    softwareSkills: {
+      intro:
+        "The Sri Lankan digital agency market in 2026 expects graphic designers to be proficient in at least two to three of the tools below. For graphic designer jobs at digital marketing agencies in Colombo, social media design tools and ad creative production are the highest priority.",
+      items: [
+        { icon: "🎨", name: "Adobe Photoshop", desc: "Photo editing, digital art, social media post design. Essential for most agency roles in Sri Lanka." },
+        { icon: "✏️", name: "Adobe Illustrator", desc: "Logo design, vector graphics, brand identity. Required for any brand or identity design work." },
+        { icon: "📐", name: "Adobe InDesign", desc: "Brochures, catalogues, print layouts. Important for clients requiring print-ready marketing materials." },
+        { icon: "🖼️", name: "Figma", desc: "UI/UX design, collaborative design, web mockups. Growing fast in Sri Lankan agency workflows." },
+        { icon: "⚡", name: "Canva Pro", desc: "Fast social media content, client self-service templates. Every Sri Lankan agency uses Canva alongside Adobe." },
+        { icon: "🎬", name: "Adobe After Effects", desc: "Motion graphics, animated social posts, ad animations. A strong differentiator for senior roles." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "The #1 question we get from applicants for graphic designer jobs in Sri Lanka is: 'I don't have work experience — how do I get a portfolio?' Here is the practical answer. These five steps build a strong portfolio fast, with or without paid client work.",
+      steps: [
+        "Design 5 mock brand projects from scratch — pick 5 imaginary Sri Lankan businesses (a restaurant, a clothing brand, a tech startup, a salon, a gym) and design a complete brand identity for each: logo, colour palette, business card and three social media posts.",
+        "Offer free or discounted design work to 2–3 local small businesses — this gives you real briefs, real feedback and real results you can show.",
+        "Upload everything to Behance or Dribbble — these are the platforms Sri Lankan employers and recruiters check. A Behance profile with 10 well-presented projects is more compelling than a PDF portfolio sent by email.",
+        "Recreate and improve existing Sri Lankan brand designs — take a real Sri Lankan brand and redesign their logo, social profile or ad creative. Show the before-and-after.",
+        "Apply for Cypher Digital's Marketing Intern or Junior Graphic Designer role — working on 800+ brand campaigns builds a real portfolio faster than any other route.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Intern / Junior Designer", salary: "LKR 20K–65K/mo", exp: "0–2 years" },
+        { title: "Mid-Level Designer", salary: "LKR 65K–120K/mo", exp: "2–4 years" },
+        { title: "Senior Designer", salary: "LKR 120K–200K/mo", exp: "4–7 years" },
+        { title: "Art Director", salary: "LKR 180K–330K/mo", exp: "7+ years" },
+        { title: "Creative Director", salary: "LKR 280K–500K+/mo", exp: "10+ years" },
+      ],
+      note:
+        "At Cypher Digital, designers regularly advance one full level within 12–18 months. Working on 800+ brand campaigns across restaurants, fashion, real estate, education and healthcare means you gain more diverse design experience in one year than most designers get in three years at a single-brand in-house role. Senior graphic designer jobs in Sri Lanka and art director roles are most commonly filled from agency backgrounds for this reason.",
+    },
+    dayInLife: {
+      intro:
+        "What the actual daily work looks like — no vague job descriptions, just the real experience of working on live campaigns for 800+ Sri Lankan brands.",
+      items: [
+        { time: "9:00 AM", task: "Daily standup with the creative team — review live campaign performance, discuss any design changes needed based on overnight ad results." },
+        { time: "9:30 AM", task: "Design social media posts for the week's content calendar — 3–5 clients, each with different brand guidelines, messaging and content themes." },
+        { time: "11:00 AM", task: "Create Meta Ads creatives for a product launch — multiple size variations (1:1, 4:5, 9:16 Story) and A/B test versions for the media buyer." },
+        { time: "1:30 PM", task: "Brand identity project — logo design and visual identity for a new client onboarding. Present concepts via Figma to the account manager." },
+        { time: "3:00 PM", task: "Revisions based on client feedback — iterate quickly, maintain brand consistency, deliver updated files." },
+        { time: "4:00 PM", task: "Create animated social post in After Effects for a restaurant client's weekend promotion — ready for scheduling by 5 PM." },
+        { time: "5:00 PM", task: "Brief review for tomorrow's work, file organisation and handoff to the video team for any motion graphics requirements." },
+      ],
+    },
     duties: [
       "Design social media creatives, banners, stories, and reels for 800+ brands",
       "Create logos, brand identities, flyers, brochures, and packaging",
@@ -92,24 +155,36 @@ export const vacancies: Vacancy[] = [
     ],
     faqs: [
       {
-        q: "Are you hiring graphic designers in Sri Lanka right now?",
-        a: "Yes. Cypher Digital is actively hiring a Graphic Designer in Colombo, Sri Lanka on a full-time or part-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your portfolio.",
+        q: "What is the graphic designer salary in Sri Lanka?",
+        a: "Graphic designer salaries in Sri Lanka range from LKR 23,000 at entry level to LKR 330,000+ for senior designers in 2026. The median is approximately LKR 90,000 per month. At Cypher Digital, graphic designers earn LKR 45,000–150,000 per month depending on portfolio quality and experience.",
       },
       {
-        q: "What is the average salary for a Graphic Designer in Sri Lanka?",
-        a: "Graphic designer salaries in Sri Lanka typically range between LKR 45,000 and LKR 150,000 per month depending on experience, software skills (Photoshop, Illustrator, InDesign) and portfolio strength.",
+        q: "What software do I need for graphic designer jobs in Sri Lanka?",
+        a: "The most in-demand design software for graphic designer jobs in Sri Lanka are Adobe Photoshop (photo editing, social posts), Adobe Illustrator (logos, vectors), Adobe InDesign (print layouts), Figma (UI/UX, collaboration), Canva Pro (fast social content) and After Effects (motion graphics). Proficiency in at least Photoshop, Illustrator and Canva is expected for most graphic design jobs in Colombo agencies.",
       },
       {
-        q: "Where is the graphic design job located?",
-        a: "The role is based at our Colombo studio in Sri Lanka. Part-time and freelance graphic designers elsewhere in Sri Lanka — Kandy, Galle, Negombo, Jaffna — can also apply for remote project-based work.",
+        q: "Do I need a degree for graphic designer jobs in Sri Lanka?",
+        a: "No degree is required for graphic designer jobs at Cypher Digital. We hire based on portfolio quality and demonstrated design skills. A strong portfolio showing social media design, logo work and brand identity projects is more valuable than a formal qualification. Diplomas from SLIDA, NIBM or university design courses are valued but not mandatory.",
       },
       {
-        q: "What software do I need to know to apply?",
-        a: "Adobe Photoshop and Illustrator are essential. InDesign, Figma, Canva and basic After Effects are strong advantages for this graphic design job in Sri Lanka.",
+        q: "What is a junior graphic designer salary in Sri Lanka?",
+        a: "Junior graphic designer salaries in Sri Lanka typically range from LKR 30,000 to LKR 65,000 per month for 0–2 years experience. At digital marketing agencies in Colombo, junior designers with strong portfolios can start at LKR 45,000–60,000. Salaries increase rapidly with demonstrated performance and client campaign results.",
       },
       {
-        q: "Do I need a design degree to apply for graphic designer jobs in Sri Lanka at Cypher Digital?",
-        a: "No degree required. A strong portfolio showing social media creatives, branding work or ad design matters far more than qualifications.",
+        q: "Are there freelance graphic design jobs in Sri Lanka?",
+        a: "Yes — Cypher Digital offers part-time and freelance graphic design arrangements for the right candidates. Freelance graphic designers in Sri Lanka typically charge LKR 2,000–15,000 per design depending on complexity. Experienced freelancers working across 3–5 clients can earn LKR 150,000–400,000 per month. Platforms like Upwork, Fiverr and 99designs also connect Sri Lankan designers with international clients.",
+      },
+      {
+        q: "What does a graphic designer do at a digital marketing agency in Sri Lanka?",
+        a: "At a digital marketing agency in Sri Lanka like Cypher Digital, graphic designers create social media posts for Facebook and Instagram, ad creatives for Meta Ads and Google Display campaigns, brand identity packages including logos and style guides, marketing materials like flyers and brochures, email newsletter designs, and video thumbnails for YouTube and TikTok. The role combines brand design with performance marketing creative.",
+      },
+      {
+        q: "How do I build a graphic design portfolio in Sri Lanka?",
+        a: "Create 5–10 mock brand projects (logos, social designs, marketing materials), offer free or discounted work to local small businesses for real client results, upload to Behance or Dribbble (Sri Lankan employers check these), design for social causes or local events to show range, and apply for Cypher Digital's internship to get real campaign work fast. A portfolio with 10–15 strong pieces beats a degree with no portfolio every time.",
+      },
+      {
+        q: "What is the career path for a graphic designer in Sri Lanka?",
+        a: "The typical graphic designer career path in Sri Lanka: Junior Graphic Designer (LKR 30K–65K, 0–2 years) → Mid-level Graphic Designer (LKR 65K–120K, 2–4 years) → Senior Graphic Designer (LKR 120K–200K, 4–7 years) → Art Director (LKR 180K–300K, 7+ years) → Creative Director (LKR 250K–500K+). At Cypher Digital, designers regularly advance one level within 12–18 months due to the high volume and variety of brand campaigns.",
       },
       {
         q: "How do I apply for this Graphic Designer vacancy in Sri Lanka?",
