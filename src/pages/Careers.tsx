@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MessageCircle, Briefcase, Users, Sparkles, MapPin, ArrowRight, TrendingUp, Megaphone, Search, Video, Palette, BarChart3 } from "lucide-react";
+import { MessageCircle, Briefcase, Users, Sparkles, MapPin, ArrowRight, TrendingUp, Megaphone, Search, Video, Palette, BarChart3, Award, Building2, Rocket, Briefcase as BriefcaseIcon, Target } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { vacancies } from "@/data/vacancies";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
@@ -160,6 +164,48 @@ faqs.push(
   },
 );
 
+faqs.push(
+  {
+    q: "Is digital marketing a good career in Sri Lanka?",
+    a: "Yes — digital marketing is one of the fastest-growing careers in Sri Lanka in 2026. With 8+ million active social media users, rapidly growing digital ad spend, and demand for skilled digital marketers far outpacing supply, it is one of the best career choices for young professionals in Colombo and islandwide. Salaries have grown 30–40% over the past two years and continue rising.",
+  },
+  {
+    q: "What is the highest paying digital marketing job in Sri Lanka?",
+    a: "The highest paying digital marketing roles in Sri Lanka are Digital Marketing Manager (LKR 150,000–280,000/month) and Paid Ads Manager specialising in Meta Ads and Google Ads (LKR 120,000–220,000/month). Both require 3–5 years of proven campaign performance. Freelance consultants with strong track records can earn LKR 300,000–500,000/month across multiple clients.",
+  },
+  {
+    q: "Are there remote digital marketing jobs in Sri Lanka?",
+    a: "Yes — Cypher Digital offers remote and freelance arrangements for video editing and graphic design roles. Most full-time positions are office-based in Colombo. Candidates in Kandy, Galle, Negombo, Jaffna and other parts of Sri Lanka can apply for freelance roles. Experienced Sri Lankan digital marketers also increasingly work remotely for UAE, UK and Australian companies.",
+  },
+  {
+    q: "How do I start a digital marketing career in Sri Lanka with no experience?",
+    a: "Start with these four steps: (1) Complete the free Google Digital Garage and Meta Blueprint Foundation courses online. (2) Build a personal project — run a small Facebook ad campaign or manage a friend's business social media. (3) Apply for Cypher Digital's paid Marketing Internship (LKR 20,000–40,000/month) — no experience required. (4) Build your portfolio from internship work and apply for executive roles after 3–6 months of real campaign experience.",
+  },
+  {
+    q: "What qualifications do I need for digital marketing jobs in Sri Lanka?",
+    a: "For most digital marketing jobs in Sri Lanka, demonstrated campaign results matter more than formal qualifications. The most valued credentials in 2026 are: Google Ads certification, Meta Blueprint, HubSpot Inbound Marketing, and a portfolio showing real results (CPL, ROAS, follower growth). Communication skills in English and Sinhala or Tamil are a strong advantage for client-facing roles.",
+  },
+);
+
+const salaryFactors = [
+  { icon: MapPin, title: "City vs Province", desc: "Colombo salaries are 25–40% higher than equivalent roles in Kandy, Galle or Jaffna. Most agency jobs remain Colombo-based; remote roles are closing the gap for freelancers." },
+  { icon: Award, title: "Certifications add LKR 20K–40K", desc: "Meta Blueprint, Google Ads, and HubSpot certifications each add LKR 20,000–40,000 per month over uncertified candidates at the same experience level." },
+  { icon: Building2, title: "Agency vs In-House", desc: "Agency roles pay 15–25% less than in-house brand roles but offer far faster skill growth. Most of Sri Lanka's top digital marketers come from 2–3 years at an agency first." },
+  { icon: Rocket, title: "2026 Market Trend", desc: "Paid ads specialists and AI-literate marketers are the two fastest-growing salary segments in Sri Lanka's digital job market. Demand up 45% year-on-year." },
+  { icon: BriefcaseIcon, title: "Freelance Premium", desc: "Experienced freelance digital marketers in Sri Lanka charge LKR 150,000–500,000/month across 3–5 clients. Higher earning potential than employment but no stability." },
+  { icon: Target, title: "Portfolio over Degree", desc: "A portfolio showing real campaign results (CPL, ROAS, follower growth) commands a 20–30% higher starting salary than a degree without demonstrated results." },
+];
+
+const roleOptions = [
+  "Digital Marketing Specialist (LKR 50K–200K)",
+  "Digital Marketing Executive (LKR 45K–120K)",
+  "Digital Marketing Manager (LKR 120K–280K)",
+  "Social Media Manager (LKR 45K–180K)",
+  "Graphic Designer (LKR 45K–150K)",
+  "Video Editor (LKR 45K–150K)",
+  "Marketing Intern (LKR 20K–40K)",
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -168,6 +214,85 @@ const faqSchema = {
     name: f.q,
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
+};
+
+const ApplyForm = () => {
+  const [form, setForm] = useState({ name: "", email: "", phone: "", role: "", portfolio: "", message: "" });
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const text = encodeURIComponent(
+      `Hi Cypher Digital, I'd like to apply for a role!\n\n` +
+      `Name: ${form.name}\n` +
+      `Email: ${form.email}\n` +
+      `Phone: ${form.phone}\n` +
+      `Role: ${form.role}\n` +
+      `Portfolio: ${form.portfolio || "Not provided"}\n` +
+      `Message: ${form.message || "No message"}`
+    );
+    setSent(true);
+    window.open(`${WHATSAPP_BASE}?text=${text}`, "_blank");
+  };
+
+  return (
+    <section className="py-16 lg:py-20">
+      <div className="container mx-auto px-4 max-w-3xl">
+        <div className="rounded-2xl border border-border bg-gradient-to-br from-secondary/40 to-card p-6 md:p-10">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Apply Now — Digital Marketing Jobs Sri Lanka</h2>
+          <p className="text-sm text-muted-foreground mb-6">60-second application. We review every submission within 24 hours.</p>
+          <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4">
+            <div>
+              <Label htmlFor="cf-name" className="text-xs uppercase tracking-wider text-muted-foreground">Full Name *</Label>
+              <Input id="cf-name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Your full name" className="mt-1.5" />
+            </div>
+            <div>
+              <Label htmlFor="cf-email" className="text-xs uppercase tracking-wider text-muted-foreground">Email *</Label>
+              <Input id="cf-email" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="your@email.com" className="mt-1.5" />
+            </div>
+            <div>
+              <Label htmlFor="cf-phone" className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp Number *</Label>
+              <Input id="cf-phone" type="tel" required value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="+94 7X XXX XXXX" className="mt-1.5" />
+            </div>
+            <div>
+              <Label htmlFor="cf-role" className="text-xs uppercase tracking-wider text-muted-foreground">Role *</Label>
+              <select
+                id="cf-role"
+                required
+                value={form.role}
+                onChange={(e) => setForm({ ...form, role: e.target.value })}
+                className="mt-1.5 w-full h-10 rounded-md border border-input bg-background px-3 text-sm"
+              >
+                <option value="" disabled>Select a role</option>
+                {roleOptions.map((r) => <option key={r} value={r}>{r}</option>)}
+              </select>
+            </div>
+            <div className="sm:col-span-2">
+              <Label htmlFor="cf-portfolio" className="text-xs uppercase tracking-wider text-muted-foreground">Portfolio or LinkedIn URL</Label>
+              <Input id="cf-portfolio" type="url" value={form.portfolio} onChange={(e) => setForm({ ...form, portfolio: e.target.value })} placeholder="https://your-portfolio.com or linkedin.com/in/you" className="mt-1.5" />
+            </div>
+            <div className="sm:col-span-2">
+              <Label htmlFor="cf-message" className="text-xs uppercase tracking-wider text-muted-foreground">Why Cypher Digital? (optional)</Label>
+              <Textarea id="cf-message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Tell us briefly what you bring and why you want to join the team..." className="mt-1.5 min-h-[100px]" />
+            </div>
+            <div className="sm:col-span-2">
+              <Button type="submit" size="lg" className="w-full bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
+                {sent ? "✅ Sent — opening WhatsApp…" : "Submit Application →"}
+              </Button>
+            </div>
+            <div className="sm:col-span-2 text-center text-xs text-muted-foreground">— or apply directly on WhatsApp —</div>
+            <div className="sm:col-span-2">
+              <Button asChild variant="outline" size="lg" className="w-full">
+                <a href={`${WHATSAPP_BASE}?text=${encodeURIComponent("Hi Cypher Digital, I'd like to apply for a digital marketing job.")}`} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Apply on WhatsApp — Reply in 5 min
+                </a>
+              </Button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 const Careers = () => (
@@ -221,6 +346,9 @@ const Careers = () => (
         <p className="text-base text-muted-foreground leading-relaxed">
           Below you'll find every current digital marketing vacancy in Sri Lanka at Cypher Digital — including specialist, executive, designer, video and internship roles. Applications are reviewed within 24 hours via WhatsApp — no lengthy forms, no waiting weeks for a reply.
         </p>
+        <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4 text-sm leading-relaxed text-foreground">
+          Whether you're searching for <strong>digital marketing vacancies in Sri Lanka</strong>, exploring <strong>marketing jobs in Colombo 2026</strong>, or starting your first <strong>digital marketing career in Sri Lanka</strong> — Cypher Digital offers the most hands-on, growth-focused environment available. We hire <strong>social media jobs Sri Lanka</strong> candidates, <strong>SEO jobs Colombo</strong> specialists, paid ads managers, graphic designers and video editors — all under one creative roof.
+        </div>
       </div>
     </section>
 
@@ -342,6 +470,28 @@ const Careers = () => (
         <p className="text-xs text-muted-foreground mt-4">
           Salary ranges are based on Cypher Digital's 2026 hiring benchmarks for the Sri Lankan digital marketing market. Actual salaries depend on portfolio quality, platform certifications, and demonstrated campaign results.
         </p>
+
+        {/* Salary Guide — factor cards */}
+        <div className="mt-12 rounded-2xl border border-border bg-secondary/30 p-6 md:p-10">
+          <h3 className="font-heading text-2xl md:text-3xl font-bold mb-3">Digital Marketing Salary Guide Sri Lanka 2026</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+            Digital marketing salaries in Sri Lanka have grown 30–40% over the past two years, driven by rapid growth in ad spend, the expansion of agency networks like Cypher360, and demand that consistently outpaces supply of trained professionals. Here's what shapes salary at every level.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {salaryFactors.map((f, i) => {
+              const Icon = f.icon;
+              return (
+                <div key={i} className="rounded-lg bg-card border-l-4 border-primary p-4">
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <Icon className="w-4 h-4 text-primary" />
+                    <h4 className="font-heading font-bold text-sm">{f.title}</h4>
+                  </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
 
@@ -429,6 +579,8 @@ const Careers = () => (
         </div>
       </div>
     </section>
+
+    <ApplyForm />
 
     <section className="py-16 lg:py-20">
       <div className="container mx-auto px-4 max-w-3xl text-center">
