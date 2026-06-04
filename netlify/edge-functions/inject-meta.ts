@@ -693,9 +693,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Digital Marketing Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/video-editor-jobs-sri-lanka": {
-    title: "Video Editor Jobs in Sri Lanka | Cypher Digital Careers",
-    description: "We're hiring a Video Editor in Colombo, Sri Lanka. Edit reels, TikToks and brand videos for 800+ clients. Apply now via WhatsApp at Cypher Digital.",
-    h1: "Video Editor Vacancy in Sri Lanka — Cypher Digital",
+    title: "Video Editor Jobs in Sri Lanka 2026 | LKR 45K–150K | Cypher Digital",
+    description: "Video editor jobs in Sri Lanka at Cypher Digital, Colombo. Edit Reels, TikToks, YouTube ads & brand films for 800+ brands. Salary LKR 45K–150K/month. Full-time & freelance. Apply now.",
+    h1: "Video Editor Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/marketing-internship-sri-lanka": {
     title: "Marketing Internship in Sri Lanka | Cypher Digital Careers",

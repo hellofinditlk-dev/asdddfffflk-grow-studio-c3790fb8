@@ -364,9 +364,9 @@ export const vacancies: Vacancy[] = [
     title: "Video Editor",
     shortTitle: "Video Editor",
     h1: "Video Editor Jobs in Sri Lanka — Hiring Now at Cypher Digital",
-    metaTitle: "Video Editor Jobs in Sri Lanka 2026 | Apply Today — Cypher Digital",
+    metaTitle: "Video Editor Jobs in Sri Lanka 2026 | LKR 45K–150K | Cypher Digital",
     metaDescription:
-      "Looking for Video Editor jobs in Sri Lanka? Cypher Digital is hiring video editors in Colombo to edit reels, TikToks, YouTube ads & brand films for 800+ clients. Apply via WhatsApp.",
+      "Video editor jobs in Sri Lanka at Cypher Digital, Colombo. Edit Reels, TikToks, YouTube ads & brand films for 800+ brands. Salary LKR 45K–150K/month. Full-time & freelance. Apply now.",
     icon: Film,
     type: "Full-time / Freelance",
     employmentType: ["FULL_TIME", "CONTRACTOR"],
@@ -374,11 +374,74 @@ export const vacancies: Vacancy[] = [
     summary:
       "One of the most in-demand Video Editor jobs in Sri Lanka right now — edit scroll-stopping reels, TikToks, YouTube ads and brand films for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
     salaryRange: { min: 45000, max: 150000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Looking for video editor jobs in Sri Lanka? Cypher Digital is actively hiring across video editing vacancies in Sri Lanka — from junior video editor jobs in Colombo to senior editor roles working on 800+ brand campaigns. Whether you specialise in Reels & TikTok short-form, Meta Ads creatives, YouTube long-form or motion graphics, there's a video editing job in Colombo here for you. Full-time, part-time and freelance video editor jobs in Sri Lanka available.",
     seoIntro: [
       "Cypher Digital is hiring a Video Editor in Sri Lanka to join our Colombo creative studio. If you're searching for video editor jobs in Sri Lanka with real brands, real budgets, and creative freedom — this is one of the best video editing vacancies in Colombo right now.",
       "As our in-house Video Editor in Sri Lanka, you'll cut high-performing short-form video content for Facebook, Instagram Reels, TikTok, YouTube Shorts and YouTube Ads — the same creatives that drive paid campaigns for 800+ Sri Lankan brands across Colombo, Kandy, Galle and beyond.",
       "This isn't a freelance gig hidden behind a job board. It's a full-time (or freelance) video editor career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events, and production.",
     ],
+    salaryGuide: {
+      intro: [
+        "Video editor salaries in Sri Lanka vary widely by experience, showreel quality, software skills and employer type. Agency video editors in Colombo earn differently from in-house editors at corporates, and freelance editors working internationally via Upwork can earn multiple times the local agency rate.",
+        "According to 2026 PayScale and market data, video editor salaries in Sri Lanka range from LKR 45,000 at junior level to LKR 322,500+ for experienced editors. Early-career video editors earn a median of LKR 150,000 per month. At Cypher Digital, we pay LKR 45,000 to LKR 150,000 based on showreel quality and demonstrated editing ability — not years of experience alone.",
+      ],
+      levels: [
+        { name: "Intern", exp: "0–6 months", salary: "LKR 20K–45K/mo" },
+        { name: "Junior Editor", exp: "0–2 years", salary: "LKR 45K–75K/mo" },
+        { name: "Video Editor", exp: "2–4 years", salary: "LKR 75K–130K/mo" },
+        { name: "Senior Editor", exp: "4–7 years", salary: "LKR 130K–220K/mo" },
+        { name: "Production Manager", exp: "6+ years", salary: "LKR 180K–300K/mo" },
+      ],
+      note: "Cypher Digital salaries: LKR 45,000–150,000/month based on showreel quality. After Effects motion graphics skills add LKR 15,000–40,000 to starting salary. Editors who add colour grading and sound design earn 20–40% more than pure cutters.",
+    },
+    softwareSkills: {
+      intro:
+        "The Sri Lankan digital agency market in 2026 expects video editors to be proficient in at least two of the tools below. For video editor jobs at digital marketing agencies in Colombo, social-media-native editing tools and short-form content fluency are the highest priority — not film school software.",
+      items: [
+        { icon: "🎬", name: "Adobe Premiere Pro", desc: "Industry standard for social media, ad and brand film editing. Required for most agency video editor roles in Sri Lanka." },
+        { icon: "🎨", name: "DaVinci Resolve", desc: "Professional colour grading and post-production. Growing fast in Sri Lankan agency workflows for premium brand content." },
+        { icon: "✨", name: "Adobe After Effects", desc: "Motion graphics, animated titles and visual effects. A strong differentiator — editors with AE earn 20–40% more." },
+        { icon: "📱", name: "CapCut", desc: "TikTok and Reels optimised editing. Fast, template-based, platform-native. Essential for high-volume social content." },
+        { icon: "🍎", name: "Final Cut Pro", desc: "Mac-based production teams. Fast export and proxy workflows. Used by YouTube-first content teams in Sri Lanka." },
+        { icon: "🔊", name: "Adobe Audition / Sound", desc: "Audio mixing, music selection, dialogue cleaning. Editors with sound design skills produce better-performing ads." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "The most common question from applicants for video editor jobs in Sri Lanka: 'I don't have agency experience — how do I get a showreel that gets me hired?' Here is the practical answer from our hiring team. These five steps build a strong showreel fast, with or without paid client work.",
+      steps: [
+        "Edit 5 sample videos across different formats — a Reel-style social video, a talking-head interview with captions and lower thirds, a product showcase with music and motion graphics, a short TVC-style brand film, and a YouTube long-form edit. Variety demonstrates range.",
+        "Offer free editing to local businesses, YouTubers or content creators in Sri Lanka — real footage, real briefs, real feedback. A properly edited video for a local restaurant or clothing brand is more compelling to an agency than a technically perfect personal project.",
+        "Upload your best 3–5 pieces as a showreel to YouTube (unlisted or public) and link it clearly in your application. Vimeo is the professional standard. A Dropbox folder of raw files is not a showreel — edit it into a 60–90 second highlight reel.",
+        "Recreate a trending Sri Lankan brand video in your own style — take a real local brand ad and re-edit it with different pace, music and cuts. Show the original alongside your version to demonstrate commercial understanding and creative initiative.",
+        "Apply for Cypher Digital's paid internship to get real campaign footage fast — interns edit live campaign content within their first two weeks, and every piece that goes live becomes portfolio material with real performance data attached.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Intern / Junior Editor", salary: "LKR 20K–75K/mo", exp: "0–2 years" },
+        { title: "Video Editor", salary: "LKR 75K–130K/mo", exp: "2–4 years" },
+        { title: "Senior Video Editor", salary: "LKR 130K–220K/mo", exp: "4–7 years" },
+        { title: "Video Production Manager", salary: "LKR 180K–300K/mo", exp: "6+ years" },
+        { title: "Head of Content", salary: "LKR 250K–500K+/mo", exp: "10+ years" },
+      ],
+      note:
+        "At Cypher Digital, video editors advance quickly because of the sheer volume and variety of content produced. Working on 800+ brand campaigns means an editor here gets more varied editing experience in one year than most get in three years at a single-brand role. Senior video editor jobs in Sri Lanka are almost always filled from agency backgrounds. Editors who add After Effects motion graphics to their skill set advance 30–40% faster.",
+    },
+    dayInLife: {
+      intro:
+        "Real tasks, real timelines — not a job description. This is what the actual work looks like day to day at Cypher Digital.",
+      items: [
+        { time: "9:00 AM", task: "Daily creative standup — review overnight ad performance, identify which video formats are outperforming and brief the day's editing priorities accordingly." },
+        { time: "9:30 AM", task: "Edit 3 Instagram Reels for a restaurant client — raw footage from yesterday's shoot, music selection, caption overlay, and colour grade. Delivered in 9:16 and 4:5 formats." },
+        { time: "11:00 AM", task: "Cut 2 Meta Ads video creative variants for a fashion brand campaign — 15-second and 30-second versions, hook-first edit structure, subtitle burn-in for sound-off viewing." },
+        { time: "12:30 PM", task: "After Effects work — animate logo reveal and kinetic title sequence for a brand film intro. Export as transparent background for compositing." },
+        { time: "2:00 PM", task: "TikTok content edit for an FMCG client — trending audio, fast-cut rhythm, on-screen text, and product close-up sequence. Optimised for first-3-second retention." },
+        { time: "3:30 PM", task: "Colour grade and audio mix for a corporate brand film — grade to cinematic LUT, balance dialogue audio, score with licensed music, export in 4K for broadcast and compressed for web." },
+        { time: "5:00 PM", task: "File delivery, upload to client review links, feedback review, and brief check for tomorrow's content calendar shoots." },
+      ],
+    },
     duties: [
       "Edit promotional videos, reels, TikToks, and YouTube ads for client brands",
       "Add motion graphics, transitions, subtitles, and sound design",
@@ -409,28 +472,48 @@ export const vacancies: Vacancy[] = [
     ],
     faqs: [
       {
-        q: "Are you hiring video editors in Sri Lanka right now?",
-        a: "Yes. Cypher Digital is actively hiring a Video Editor in Colombo, Sri Lanka on a full-time or freelance basis. Apply directly via WhatsApp at +94 70 177 2626 with your showreel.",
+        q: "What is the video editor salary in Sri Lanka?",
+        a: "Video editor salaries in Sri Lanka range from LKR 45,000 at junior level to LKR 322,500+ for experienced editors in 2026 according to PayScale data. Early-career video editors earn a median of LKR 150,000 per month. At Cypher Digital, video editors earn LKR 45,000–150,000 per month depending on showreel quality and experience level.",
       },
       {
-        q: "What is the average salary for a Video Editor in Sri Lanka?",
-        a: "Video Editor salaries in Sri Lanka typically range between LKR 45,000 and LKR 150,000 per month depending on experience, software skills (Premiere Pro, After Effects, DaVinci Resolve) and portfolio strength.",
+        q: "What software do I need for video editor jobs in Sri Lanka?",
+        a: "The most required software for video editor jobs at digital agencies in Sri Lanka: Adobe Premiere Pro (industry standard for social media and ad editing), DaVinci Resolve (colour grading and professional post-production), Adobe After Effects (motion graphics and animated titles), CapCut (short-form social media content, especially TikTok and Reels), and Final Cut Pro (Mac-based production teams). Proficiency in Premiere Pro and at least one short-form editing tool is expected for most agency video editor roles in Colombo.",
       },
       {
-        q: "Where is the video editor job located?",
-        a: "The role is based at our Colombo studio in Sri Lanka. Freelance video editors elsewhere in Sri Lanka (Kandy, Galle, Negombo, Jaffna) can also apply for remote project-based work.",
+        q: "Do I need a degree for video editor jobs in Sri Lanka?",
+        a: "No degree is required for video editor jobs at Cypher Digital. We hire based on showreel quality and demonstrated editing skills. A showreel of 5–10 edited video projects — Reels, TikToks, brand films or ad content — is far more important than any formal qualification. Media and communications degrees from SLIDA, ICBT or universities are valued but not required.",
       },
       {
-        q: "What software do I need to know to apply?",
-        a: "Adobe Premiere Pro is essential. CapCut, DaVinci Resolve and After Effects (motion graphics) are strong advantages for this video editing job in Sri Lanka.",
+        q: "Are there freelance video editing jobs in Sri Lanka?",
+        a: "Yes — Cypher Digital offers freelance and part-time video editing arrangements for experienced editors. Freelance video editors in Sri Lanka typically charge LKR 3,000–25,000 per video depending on complexity and duration. Experienced freelancers working across multiple clients earn LKR 150,000–500,000 per month. International remote video editing work is also available through platforms including Upwork, Fiverr and Freelancer.",
       },
       {
-        q: "Do I need a degree to apply for video editor jobs in Sri Lanka at Cypher Digital?",
-        a: "No degree required. A strong showreel showing reels, TikToks, YouTube ads or brand videos matters far more than qualifications.",
+        q: "What does a video editor do at a digital marketing agency in Sri Lanka?",
+        a: "At Cypher Digital, video editors produce: short-form social media content for Instagram Reels and TikTok (15–90 seconds), Meta Ads video creatives in multiple formats and aspect ratios, YouTube ad content (6-second bumpers, 15-second skippable, and long-form), brand films and corporate video productions, motion graphics and animated titles in After Effects, and video thumbnails for YouTube and social platforms. All content is performance-tested in live ad campaigns.",
+      },
+      {
+        q: "How do I build a video editing portfolio in Sri Lanka?",
+        a: "To build a video editing showreel in Sri Lanka: (1) Edit 5–10 sample videos across different formats — a brand TVC, a Reel, a YouTube ad, and a talking-head interview edit. (2) Offer free editing to local businesses, YouTubers or content creators for real-world footage. (3) Upload your best work to YouTube as a showreel compilation or to Vimeo as a professional portfolio. (4) Edit trending content in CapCut or Premiere Pro to show social media format fluency. (5) Apply for Cypher Digital's internship to get live campaign footage and real performance data.",
+      },
+      {
+        q: "What is the career path for a video editor in Sri Lanka?",
+        a: "The video editor career path in Sri Lanka: Junior Video Editor (LKR 30K–65K, 0–2 years) → Video Editor (LKR 65K–120K, 2–4 years) → Senior Video Editor (LKR 120K–200K, 4–7 years) → Video Production Manager (LKR 180K–300K, 6+ years) → Head of Content / Creative Director (LKR 250K–500K+). At Cypher Digital, editors working on 800+ brand campaigns regularly advance within 12–18 months due to the volume and variety of content produced.",
+      },
+      {
+        q: "Is video editing a good career in Sri Lanka?",
+        a: "Yes — video editing is one of the fastest-growing careers in Sri Lanka in 2026. Demand for short-form video content for TikTok, Instagram Reels and YouTube has increased dramatically. Every business with a social media presence needs video content regularly. Skilled video editors who understand social media platform optimisation are in short supply across Colombo's growing digital agency market. Experienced editors can also earn significantly more through international remote work on Upwork.",
+      },
+      {
+        q: "What is the difference between a video editor and a videographer in Sri Lanka?",
+        a: "A videographer captures raw footage — operating cameras, setting up lighting, and recording content on location. A video editor takes raw footage and transforms it into a finished video — cutting, colour grading, adding music, motion graphics, subtitles and sound design in post-production. Some professionals do both (shooter-editors), but in agency environments in Sri Lanka these roles are typically separate. Cypher Digital hires dedicated video editors focused on post-production for social media and digital advertising.",
+      },
+      {
+        q: "Can I work as a remote video editor in Sri Lanka?",
+        a: "Yes — video editing is one of the most remote-friendly careers in Sri Lanka. Cypher Digital offers remote flexibility for freelance and part-time editors. International remote video editing work for UAE, UK, Australian and US clients is accessible through Upwork and Fiverr. Sri Lankan video editors working internationally typically earn USD 5–25 per hour, significantly above local agency rates.",
       },
       {
         q: "How do I apply for this Video Editor vacancy in Sri Lanka?",
-        a: "Send your name, showreel link and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+        a: "Send your name, showreel link (YouTube, Vimeo or Drive) and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
       },
     ],
     whatsappMessage: "Hi, I'm applying for the Video Editor position at Cypher Digital.",
