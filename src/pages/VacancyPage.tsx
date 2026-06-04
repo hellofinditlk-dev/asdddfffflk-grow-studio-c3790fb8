@@ -199,15 +199,15 @@ const VacancyPage = () => {
       {vacancy.portfolioSteps && (
         <section className="py-12 lg:py-16 section-dark">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-foreground">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">
               How to Build a {vacancy.shortTitle} Portfolio for Jobs in Sri Lanka
             </h2>
-            <p className="text-base text-muted-foreground leading-relaxed mb-6">{vacancy.portfolioSteps.intro}</p>
+            <p className="text-base opacity-80 leading-relaxed mb-6">{vacancy.portfolioSteps.intro}</p>
             <ol className="space-y-3">
               {vacancy.portfolioSteps.steps.map((step, i) => (
-                <li key={i} className="flex gap-3 items-start p-4 rounded-xl bg-card/40 border border-border">
+                <li key={i} className="flex gap-3 items-start p-4 rounded-xl bg-white/5 border border-white/10">
                   <span className="shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">{i + 1}</span>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{step}</p>
+                  <p className="text-sm md:text-base opacity-90 leading-relaxed">{step}</p>
                 </li>
               ))}
             </ol>
@@ -227,7 +227,7 @@ const VacancyPage = () => {
                 <div key={i} className="bg-card border border-border rounded-xl p-4 text-center">
                   <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">Step {i + 1}</p>
                   <p className="font-heading font-bold text-sm mb-1">{s.title}</p>
-                  <p className="text-xs text-emerald-600 font-medium mb-1">{s.salary}</p>
+                  <p className="text-xs text-primary font-semibold mb-1">{s.salary}</p>
                   <p className="text-xs text-muted-foreground">{s.exp}</p>
                 </div>
               ))}
