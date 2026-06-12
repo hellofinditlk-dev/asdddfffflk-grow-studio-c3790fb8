@@ -932,6 +932,87 @@ export const vacancies: Vacancy[] = [
     whatsappCta: "Apply for Sales Executive",
     datePosted: "2026-05-25",
   },
+  {
+    slug: "sales-manager-jobs-sri-lanka",
+    title: "Sales Manager",
+    shortTitle: "Sales Manager",
+    h1: "Sales Manager Jobs in Sri Lanka — Join Cypher Digital",
+    metaTitle: "Sales Manager Jobs in Sri Lanka 2026 | Cypher Digital",
+    metaDescription:
+      "Looking for sales manager jobs in Sri Lanka? Cypher Digital is hiring a Sales Manager in Colombo to lead digital product sales. Base LKR 80,000 + attractive earnings. Apply via WhatsApp.",
+    icon: Briefcase,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "Lead a high-performing sales team selling in-demand digital products to Sri Lankan businesses. Base LKR 80,000/month guaranteed, with strong additional earnings for top performers.",
+    salaryRange: { min: 80000, max: 250000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Searching for sales manager jobs in Sri Lanka, area sales manager jobs in Sri Lanka, or sales management jobs in Colombo? Cypher Digital is hiring a Sales Manager in 2026 to lead a team selling digital products — Facebook Ads, Google Ads, SEO, social media management and video production — to Sri Lankan businesses across every major industry.",
+    seoIntro: [
+      "Searching for the best sales manager jobs in Sri Lanka in 2026? Cypher Digital is hiring a Sales Manager in Colombo to lead a high-performing sales team, drive revenue growth, and sell in-demand digital products to Sri Lankan businesses across every major industry.",
+      "Sales manager jobs in Sri Lanka are rare when they come with real products, a real team, and real earning potential. At Cypher Digital, you will lead a team of Sales Executives selling high-demand digital marketing services — Facebook advertising, Google Ads, SEO, social media management, and video production — to Sri Lankan businesses that are actively looking to grow online.",
+      "As part of Cypher360 — Sri Lanka's most integrated marketing group — you will have 800+ client success stories behind every pitch your team makes. Your job is to build the pipeline, coach the team, close the big deals, and drive consistent revenue growth month on month.",
+    ],
+    duties: [
+      "Lead, coach, and manage a team of Sales Executives selling digital products across Sri Lanka",
+      "Set monthly revenue targets and hold the team accountable to consistent performance",
+      "Own the full sales pipeline — prospecting, pitching, closing, and retention",
+      "Develop and refine sales scripts, pitch decks, and proposal templates for digital services",
+      "Build and maintain relationships with key accounts and high-value clients",
+      "Work closely with the digital delivery team to ensure client expectations are met",
+      "Report weekly to senior leadership on pipeline health, revenue, and team performance",
+      "Identify new market opportunities and verticals for digital product sales in Sri Lanka",
+    ],
+    requirements: [
+      "3+ years of sales experience in Sri Lanka, with at least 1 year in a team lead or management role",
+      "Proven track record of hitting and exceeding sales targets consistently",
+      "Experience selling digital products, SaaS, media, or marketing services is a strong advantage",
+      "Strong leadership skills — you can motivate, coach, and develop junior sales staff",
+      "Excellent communication in Sinhala and English (Tamil a plus)",
+      "Data-driven mindset — you use numbers to make decisions, not just instinct",
+      "Existing network of business contacts across Sri Lankan industries is highly valued",
+      "No specific degree required — we hire on results, leadership ability, and commercial drive",
+    ],
+    perks: [
+      "Base salary LKR 80,000/month guaranteed, with strong additional earnings for top performers",
+      "Lead a team selling digital products that every Sri Lankan business needs in 2026",
+      "Digital ad spend in Sri Lanka growing 40%+ year-on-year — sell into a rising market",
+      "800+ client case studies give your team the strongest pitch in the room",
+      "Direct pathway to Head of Sales or Business Development Director roles",
+      "Part of Cypher360 — Sri Lanka's most integrated marketing group",
+    ],
+    whyJoin: [
+      { title: "Lead in a rising market", body: "Digital ad spend in Sri Lanka is growing 40%+ year-on-year — your team is selling into a market that's expanding, not shrinking." },
+      { title: "Strongest pitch in the room", body: "800+ client case studies back every meeting your team walks into — results, not promises." },
+      { title: "Real path up", body: "Direct pathway from Sales Manager into Head of Sales or Business Development Director roles inside Cypher360." },
+    ],
+    faqs: [
+      {
+        q: "Are there sales manager vacancies in Sri Lanka right now?",
+        a: "Yes — Cypher Digital is actively hiring a Sales Manager at our Colombo office in 2026. Apply via WhatsApp at +94 70 177 2626 and we will respond within 24 hours.",
+      },
+      {
+        q: "What is the salary for sales manager jobs in Sri Lanka?",
+        a: "At Cypher Digital, the Sales Manager base salary is LKR 80,000/month, guaranteed. Total earnings grow significantly above base for managers who build and lead consistently high-performing teams.",
+      },
+      {
+        q: "What is an area sales manager in Sri Lanka?",
+        a: "An Area Sales Manager oversees sales activity within a specific region of Sri Lanka such as Colombo, Kandy, or Galle. While Cypher Digital is currently only hiring for the Sales Manager role, candidates with area sales management backgrounds are very welcome to apply as this experience is highly relevant.",
+      },
+      {
+        q: "Do I need experience in digital marketing to apply?",
+        a: "Not deeply — but an interest in digital products helps. We provide full product training. What matters most is a proven record of leading sales teams and hitting targets. If you can manage people and close deals, we want to talk.",
+      },
+      {
+        q: "How do I apply for sales manager jobs in Sri Lanka at Cypher Digital?",
+        a: "Send your name, a brief note about your sales management background, and your CV to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Sales Manager position at Cypher Digital.",
+    whatsappCta: "Apply for Sales Manager",
+    datePosted: "2026-06-12",
+  },
 ];
 
 export const getVacancyBySlug = (slug?: string) =>
