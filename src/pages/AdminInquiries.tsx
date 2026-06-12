@@ -17,9 +17,17 @@ interface Inquiry {
   created_at: string;
 }
 
+interface CallClick {
+  id: string;
+  phone: string;
+  source_path: string | null;
+  created_at: string;
+}
+
 export default function AdminInquiries() {
   const navigate = useNavigate();
   const [inquiries, setInquiries] = useState<Inquiry[] | null>(null);
+  const [callClicks, setCallClicks] = useState<CallClick[] | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -43,15 +51,19 @@ export default function AdminInquiries() {
       setAuthChecked(true);
       if (!admin) return;
 
-      const { data, error } = await supabase
-        .from("inquiries")
-        .select("*")
-        .order("created_at", { ascending: false });
+      const [{ data, error }, { data: ccData, error: ccErr }] = await Promise.all([
+        supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
+        supabase.from("call_clicks").select("id,phone,source_path,created_at").order("created_at", { ascending: false }),
+      ]);
       if (error) {
         toast.error("Failed to load inquiries: " + error.message);
         return;
       }
+      if (ccErr) {
+        console.error("Failed to load call clicks", ccErr);
+      }
       setInquiries((data as Inquiry[]) ?? []);
+      setCallClicks((ccData as CallClick[]) ?? []);
     };
     init();
   }, [navigate]);
@@ -116,6 +128,81 @@ export default function AdminInquiries() {
   const today = inquiries?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const thisMonth = inquiries?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
 
+  const todaysInquiries = useMemo(
+    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= startOfToday),
+    [inquiries, startOfToday]
+  );
+  const todaysCalls = useMemo(
+    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
+    [callClicks, startOfToday]
+  );
+
+  const todaysByPage = useMemo(() => {
+    const map = new Map<string, {
+      page: string;
+      form: number;
+      whatsapp: number;
+      call: number;
+      email: number;
+      quote: number;
+      other: number;
+      total: number;
+      ctas: Map<string, number>; // "CTA — placement" -> count
+    }>();
+    const ensure = (page: string) => {
+      const key = page || "(unknown)";
+      let row = map.get(key);
+      if (!row) {
+        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map() };
+        map.set(key, row);
+      }
+      return row;
+    };
+    const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
+      const s = label.toLowerCase();
+      if (s.includes("whatsapp") || s.includes("wa ")) return "whatsapp";
+      if (s.includes("call") || s.includes("phone")) return "call";
+      if (s.includes("email") || s.includes("mail")) return "email";
+      if (s.includes("quote") || s.includes("audit") || s.includes("proposal")) return "quote";
+      if (s.includes("form") || s.includes("inquiry") || s.includes("contact")) return "form";
+      return "other";
+    };
+    for (const i of todaysInquiries) {
+      const row = ensure(i.source_path ?? "");
+      const ctaLabel = (i.extra?.cta as string) || "Form Submission";
+      const placement = (i.extra?.placement as string) || (i.service ?? "");
+      const bucket = classify(`${ctaLabel} ${placement}`);
+      row[bucket] += 1;
+      row.total += 1;
+      const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
+    for (const c of todaysCalls) {
+      const row = ensure(c.source_path ?? "");
+      row.call += 1;
+      row.total += 1;
+      const key = `Call Click — ${c.phone}`;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
+    return Array.from(map.values()).sort((a, b) => b.total - a.total);
+  }, [todaysInquiries, todaysCalls]);
+
+  const todayTotals = useMemo(() => {
+    return todaysByPage.reduce(
+      (acc, r) => {
+        acc.form += r.form;
+        acc.whatsapp += r.whatsapp;
+        acc.call += r.call;
+        acc.email += r.email;
+        acc.quote += r.quote;
+        acc.other += r.other;
+        acc.total += r.total;
+        return acc;
+      },
+      { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0 }
+    );
+  }, [todaysByPage]);
+
   if (!authChecked) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center">
@@ -172,6 +259,87 @@ export default function AdminInquiries() {
           <p className="text-xs text-muted-foreground uppercase tracking-wider">This Month</p>
           <p className="text-2xl font-bold mt-1">{thisMonth}</p>
         </div>
+      </div>
+
+      <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
+          <div>
+            <h2 className="text-lg font-semibold">Today's Inquiries</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Top pages by inquiry count and which CTAs were clicked on each page.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2 text-xs">
+            <span className="rounded-full bg-primary/10 text-primary px-2.5 py-1 font-medium">Total {todayTotals.total}</span>
+            <span className="rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2.5 py-1 font-medium">Form {todayTotals.form}</span>
+            <span className="rounded-full bg-green-500/10 text-green-600 dark:text-green-400 px-2.5 py-1 font-medium">WhatsApp {todayTotals.whatsapp}</span>
+            <span className="rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 px-2.5 py-1 font-medium">Call {todayTotals.call}</span>
+            <span className="rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 px-2.5 py-1 font-medium">Email {todayTotals.email}</span>
+            <span className="rounded-full bg-pink-500/10 text-pink-600 dark:text-pink-400 px-2.5 py-1 font-medium">Quote {todayTotals.quote}</span>
+          </div>
+        </div>
+
+        {todaysByPage.length === 0 ? (
+          <div className="px-5 py-10 text-center text-sm text-muted-foreground">
+            No inquiries or CTA clicks recorded today yet.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Page</th>
+                  <th className="px-4 py-3 font-semibold text-center">Total</th>
+                  <th className="px-4 py-3 font-semibold text-center">Form</th>
+                  <th className="px-4 py-3 font-semibold text-center">WhatsApp</th>
+                  <th className="px-4 py-3 font-semibold text-center">Call</th>
+                  <th className="px-4 py-3 font-semibold text-center">Email</th>
+                  <th className="px-4 py-3 font-semibold text-center">Quote</th>
+                  <th className="px-4 py-3 font-semibold">CTAs (placement × count)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {todaysByPage.map((row) => (
+                  <tr key={row.page} className="border-t border-border align-top">
+                    <td className="px-4 py-3 max-w-[260px]">
+                      {row.page && row.page !== "(unknown)" ? (
+                        <a
+                          href={row.page}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary hover:underline break-all"
+                        >
+                          {row.page}
+                        </a>
+                      ) : (
+                        <span className="text-muted-foreground">(unknown page)</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-center font-semibold">{row.total}</td>
+                    <td className="px-4 py-3 text-center">{row.form || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.whatsapp || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.call || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.email || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.quote || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-wrap gap-1.5">
+                        {Array.from(row.ctas.entries()).map(([label, count]) => (
+                          <span
+                            key={label}
+                            className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs"
+                          >
+                            <span>{label}</span>
+                            <span className="text-muted-foreground">× {count}</span>
+                          </span>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       <div className="flex flex-wrap gap-3 mb-4">
