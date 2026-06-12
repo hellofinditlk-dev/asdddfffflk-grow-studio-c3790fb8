@@ -17,9 +17,17 @@ interface Inquiry {
   created_at: string;
 }
 
+interface CallClick {
+  id: string;
+  phone: string;
+  source_path: string | null;
+  created_at: string;
+}
+
 export default function AdminInquiries() {
   const navigate = useNavigate();
   const [inquiries, setInquiries] = useState<Inquiry[] | null>(null);
+  const [callClicks, setCallClicks] = useState<CallClick[] | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -43,15 +51,19 @@ export default function AdminInquiries() {
       setAuthChecked(true);
       if (!admin) return;
 
-      const { data, error } = await supabase
-        .from("inquiries")
-        .select("*")
-        .order("created_at", { ascending: false });
+      const [{ data, error }, { data: ccData, error: ccErr }] = await Promise.all([
+        supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
+        supabase.from("call_clicks").select("id,phone,source_path,created_at").order("created_at", { ascending: false }),
+      ]);
       if (error) {
         toast.error("Failed to load inquiries: " + error.message);
         return;
       }
+      if (ccErr) {
+        console.error("Failed to load call clicks", ccErr);
+      }
       setInquiries((data as Inquiry[]) ?? []);
+      setCallClicks((ccData as CallClick[]) ?? []);
     };
     init();
   }, [navigate]);
