@@ -3,6 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { toast } from "sonner";
 
 interface Inquiry {
@@ -45,6 +52,7 @@ export default function AdminInquiries() {
   const [search, setSearch] = useState("");
   const [serviceFilter, setServiceFilter] = useState<string>("");
   const [range, setRange] = useState<"today" | "7d" | "30d">("today");
+  const [detailPage, setDetailPage] = useState<string | null>(null);
 
   useEffect(() => {
     const init = async () => {
@@ -361,20 +369,35 @@ export default function AdminInquiries() {
               </thead>
               <tbody>
                 {todaysByPage.map((row) => (
-                  <tr key={row.page} className="border-t border-border align-top">
+                  <tr
+                    key={row.page}
+                    className="border-t border-border align-top hover:bg-muted/30 cursor-pointer"
+                    onClick={() => setDetailPage(row.page)}
+                  >
                     <td className="px-4 py-3 max-w-[260px]">
-                      {row.page && row.page !== "(unknown)" ? (
-                        <a
-                          href={row.page}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-primary hover:underline break-all"
+                      <div className="flex flex-col gap-1">
+                        <button
+                          type="button"
+                          className="text-left text-primary hover:underline break-all font-medium"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setDetailPage(row.page);
+                          }}
                         >
-                          {row.page}
-                        </a>
-                      ) : (
-                        <span className="text-muted-foreground">(unknown page)</span>
-                      )}
+                          {row.page === "(unknown)" ? "(unknown page)" : row.page}
+                        </button>
+                        {row.page && row.page !== "(unknown)" && (
+                          <a
+                            href={row.page}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-xs text-muted-foreground hover:underline"
+                          >
+                            Open page ↗
+                          </a>
+                        )}
+                      </div>
                     </td>
                     <td className="px-4 py-3 text-center font-semibold">{row.total}</td>
                     <td className="px-4 py-3 text-center">{row.form || <span className="text-muted-foreground">—</span>}</td>
