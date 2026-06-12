@@ -128,6 +128,81 @@ export default function AdminInquiries() {
   const today = inquiries?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const thisMonth = inquiries?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
 
+  const todaysInquiries = useMemo(
+    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= startOfToday),
+    [inquiries, startOfToday]
+  );
+  const todaysCalls = useMemo(
+    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
+    [callClicks, startOfToday]
+  );
+
+  const todaysByPage = useMemo(() => {
+    const map = new Map<string, {
+      page: string;
+      form: number;
+      whatsapp: number;
+      call: number;
+      email: number;
+      quote: number;
+      other: number;
+      total: number;
+      ctas: Map<string, number>; // "CTA — placement" -> count
+    }>();
+    const ensure = (page: string) => {
+      const key = page || "(unknown)";
+      let row = map.get(key);
+      if (!row) {
+        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map() };
+        map.set(key, row);
+      }
+      return row;
+    };
+    const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
+      const s = label.toLowerCase();
+      if (s.includes("whatsapp") || s.includes("wa ")) return "whatsapp";
+      if (s.includes("call") || s.includes("phone")) return "call";
+      if (s.includes("email") || s.includes("mail")) return "email";
+      if (s.includes("quote") || s.includes("audit") || s.includes("proposal")) return "quote";
+      if (s.includes("form") || s.includes("inquiry") || s.includes("contact")) return "form";
+      return "other";
+    };
+    for (const i of todaysInquiries) {
+      const row = ensure(i.source_path ?? "");
+      const ctaLabel = (i.extra?.cta as string) || "Form Submission";
+      const placement = (i.extra?.placement as string) || (i.service ?? "");
+      const bucket = classify(`${ctaLabel} ${placement}`);
+      row[bucket] += 1;
+      row.total += 1;
+      const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
+    for (const c of todaysCalls) {
+      const row = ensure(c.source_path ?? "");
+      row.call += 1;
+      row.total += 1;
+      const key = `Call Click — ${c.phone}`;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
+    return Array.from(map.values()).sort((a, b) => b.total - a.total);
+  }, [todaysInquiries, todaysCalls]);
+
+  const todayTotals = useMemo(() => {
+    return todaysByPage.reduce(
+      (acc, r) => {
+        acc.form += r.form;
+        acc.whatsapp += r.whatsapp;
+        acc.call += r.call;
+        acc.email += r.email;
+        acc.quote += r.quote;
+        acc.other += r.other;
+        acc.total += r.total;
+        return acc;
+      },
+      { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0 }
+    );
+  }, [todaysByPage]);
+
   if (!authChecked) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center">
