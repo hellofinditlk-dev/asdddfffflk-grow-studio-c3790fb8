@@ -10,6 +10,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
 import ServiceStickyCTA from "@/components/ServiceStickyCTA";
+import CtaClickTracker from "@/components/CtaClickTracker";
 
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
@@ -236,6 +237,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <TrailingSlashRedirect />
+        <CtaClickTracker />
         <Navbar />
         <main>
           <Suspense fallback={<PageLoader />}>
