@@ -852,6 +852,86 @@ export const vacancies: Vacancy[] = [
     whatsappCta: "Apply for Digital Marketing Manager",
     datePosted: "2026-05-25",
   },
+  {
+    slug: "sales-jobs-in-sri-lanka",
+    title: "Sales Executive",
+    shortTitle: "Sales Executive",
+    h1: "Sales Jobs in Sri Lanka — Join Cypher Digital",
+    metaTitle: "Sales Jobs in Sri Lanka 2026 | Cypher Digital Careers",
+    metaDescription:
+      "Looking for sales jobs in Sri Lanka? Cypher Digital is hiring Sales Executives in Colombo to sell digital products. Base salary LKR 60,000 — ability to earn LKR 150,000/month. Apply via WhatsApp.",
+    icon: Briefcase,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the best sales jobs in Sri Lanka right now — sell high-demand digital products (social media management, Facebook Ads, Google Ads, SEO, video production) to Sri Lankan businesses. Base LKR 60,000 with ability to earn LKR 150,000+/month.",
+    salaryRange: { min: 60000, max: 150000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Searching for sales jobs in Sri Lanka, sales executive vacancies in Sri Lanka, or sales jobs in Colombo? Cypher Digital is hiring Sales Executives in 2026 to sell digital products — social media management, Facebook Ads, Google Ads, SEO and video production — to Sri Lankan businesses ready to grow.",
+    seoIntro: [
+      "Searching for the best sales jobs in Sri Lanka in 2026? Cypher Digital is hiring Sales Executives in Colombo to sell high-demand digital products — social media management, Facebook Ads, Google Ads, SEO, and video production — to Sri Lankan businesses that are ready to grow.",
+      "Sales jobs in Sri Lanka are shifting fast — and the biggest opportunity right now is in digital. At Cypher Digital, you'll be selling products every Sri Lankan business genuinely needs: Facebook advertising, Google Ads, SEO, social media management and video production. This is not cold-pitch selling — you're backed by 800+ client results across restaurants, real estate, fashion, education and FMCG.",
+      "As part of Sri Lanka's most integrated marketing group — Cypher360 — we give our sales team the strongest product in the room. If you're looking for sales executive vacancies in Sri Lanka where your income genuinely reflects your effort, this is it.",
+    ],
+    duties: [
+      "Prospect and pitch digital marketing packages to SMEs, startups, and corporates across Sri Lanka",
+      "Sell digital products including social media management, paid ads, SEO, and video production",
+      "Build a strong pipeline through cold outreach, referrals, and in-person networking",
+      "Conduct discovery calls and present customised digital marketing proposals",
+      "Consistently achieve and exceed monthly revenue targets",
+      "Maintain strong client relationships and identify upsell opportunities",
+      "Collaborate with the creative and delivery team to ensure client satisfaction",
+      "Track activity using CRM and report weekly to the sales manager",
+    ],
+    requirements: [
+      "Proven background in sales, business development, or client acquisition in Sri Lanka",
+      "Interest in or knowledge of digital products — social media, ads, SEO, or web services",
+      "Confident communicator in Sinhala and English (Tamil is a plus)",
+      "Self-motivated with a hunter mindset — you generate your own momentum",
+      "Ability to explain complex digital services in simple, benefit-led language",
+      "Experience using WhatsApp, email, and LinkedIn for outreach and follow-up",
+      "No formal degree required — we hire on results, attitude, and drive",
+    ],
+    perks: [
+      "Transparent salary from day one — base LKR 60,000 guaranteed",
+      "Ability to earn LKR 150,000+ per month with strong performance",
+      "Sell digital products every Sri Lankan business needs in 2026",
+      "800+ client case studies back every pitch",
+      "Fast career growth into Sales Manager, Account Director or Business Development roles",
+      "Part of Cypher360 — Sri Lanka's most integrated marketing group",
+    ],
+    whyJoin: [
+      { title: "A rising digital market", body: "Digital ad spend in Sri Lanka is growing 40%+ year-on-year — you're selling into a market that's expanding, not shrinking." },
+      { title: "Proven product, proven results", body: "800+ client case studies back every pitch. You walk into every meeting with results, not promises." },
+      { title: "Genuine earning potential", body: "Base of LKR 60,000 with the ability to earn LKR 150,000+ per month. Your income directly reflects your effort." },
+    ],
+    faqs: [
+      {
+        q: "Are there sales executive vacancies in Sri Lanka available right now?",
+        a: "Yes — Cypher Digital is actively hiring Sales Executives at our Colombo office in 2026. Applications are reviewed within 24 hours. Apply directly via WhatsApp at +94 70 177 2626.",
+      },
+      {
+        q: "What digital products will I be selling?",
+        a: "You will sell Cypher Digital's full suite: Facebook and Instagram advertising, Google Ads, SEO services, social media management, TikTok marketing, graphic design retainers, and video production — all in high demand from Sri Lankan businesses in 2026.",
+      },
+      {
+        q: "What is the salary for sales jobs at Cypher Digital Sri Lanka?",
+        a: "The base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings can reach LKR 150,000 and above. Your earning potential grows directly with your results.",
+      },
+      {
+        q: "Do I need a degree or digital marketing experience?",
+        a: "No degree is required. We hire based on attitude, communication skills, and a track record of results. Basic familiarity with social media and digital advertising is helpful — full product training is provided.",
+      },
+      {
+        q: "How do I apply for sales jobs in Sri Lanka at Cypher Digital?",
+        a: "Send your name and a brief note about your sales background to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms, no long wait.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Sales Executive position at Cypher Digital.",
+    whatsappCta: "Apply for Sales Executive",
+    datePosted: "2026-05-25",
+  },
 ];
 
 export const getVacancyBySlug = (slug?: string) =>
