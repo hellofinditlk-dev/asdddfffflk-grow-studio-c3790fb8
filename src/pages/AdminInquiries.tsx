@@ -261,6 +261,87 @@ export default function AdminInquiries() {
         </div>
       </div>
 
+      <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
+          <div>
+            <h2 className="text-lg font-semibold">Today's Inquiries</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Top pages by inquiry count and which CTAs were clicked on each page.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2 text-xs">
+            <span className="rounded-full bg-primary/10 text-primary px-2.5 py-1 font-medium">Total {todayTotals.total}</span>
+            <span className="rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2.5 py-1 font-medium">Form {todayTotals.form}</span>
+            <span className="rounded-full bg-green-500/10 text-green-600 dark:text-green-400 px-2.5 py-1 font-medium">WhatsApp {todayTotals.whatsapp}</span>
+            <span className="rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 px-2.5 py-1 font-medium">Call {todayTotals.call}</span>
+            <span className="rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 px-2.5 py-1 font-medium">Email {todayTotals.email}</span>
+            <span className="rounded-full bg-pink-500/10 text-pink-600 dark:text-pink-400 px-2.5 py-1 font-medium">Quote {todayTotals.quote}</span>
+          </div>
+        </div>
+
+        {todaysByPage.length === 0 ? (
+          <div className="px-5 py-10 text-center text-sm text-muted-foreground">
+            No inquiries or CTA clicks recorded today yet.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Page</th>
+                  <th className="px-4 py-3 font-semibold text-center">Total</th>
+                  <th className="px-4 py-3 font-semibold text-center">Form</th>
+                  <th className="px-4 py-3 font-semibold text-center">WhatsApp</th>
+                  <th className="px-4 py-3 font-semibold text-center">Call</th>
+                  <th className="px-4 py-3 font-semibold text-center">Email</th>
+                  <th className="px-4 py-3 font-semibold text-center">Quote</th>
+                  <th className="px-4 py-3 font-semibold">CTAs (placement × count)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {todaysByPage.map((row) => (
+                  <tr key={row.page} className="border-t border-border align-top">
+                    <td className="px-4 py-3 max-w-[260px]">
+                      {row.page && row.page !== "(unknown)" ? (
+                        <a
+                          href={row.page}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-primary hover:underline break-all"
+                        >
+                          {row.page}
+                        </a>
+                      ) : (
+                        <span className="text-muted-foreground">(unknown page)</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-center font-semibold">{row.total}</td>
+                    <td className="px-4 py-3 text-center">{row.form || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.whatsapp || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.call || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.email || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{row.quote || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-wrap gap-1.5">
+                        {Array.from(row.ctas.entries()).map(([label, count]) => (
+                          <span
+                            key={label}
+                            className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs"
+                          >
+                            <span>{label}</span>
+                            <span className="text-muted-foreground">× {count}</span>
+                          </span>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
       <div className="flex flex-wrap gap-3 mb-4">
         <Input
           placeholder="Search by name, phone, email, service, page..."
