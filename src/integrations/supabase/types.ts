@@ -83,6 +83,42 @@ export type Database = {
         }
         Relationships: []
       }
+      cta_clicks: {
+        Row: {
+          created_at: string
+          cta_label: string | null
+          cta_type: string
+          href: string | null
+          id: string
+          placement: string | null
+          referrer: string | null
+          source_path: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          created_at?: string
+          cta_label?: string | null
+          cta_type: string
+          href?: string | null
+          id?: string
+          placement?: string | null
+          referrer?: string | null
+          source_path?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          created_at?: string
+          cta_label?: string | null
+          cta_type?: string
+          href?: string | null
+          id?: string
+          placement?: string | null
+          referrer?: string | null
+          source_path?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
       inquiries: {
         Row: {
           created_at: string
