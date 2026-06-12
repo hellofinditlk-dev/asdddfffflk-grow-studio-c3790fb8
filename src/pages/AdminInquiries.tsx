@@ -44,6 +44,7 @@ export default function AdminInquiries() {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [search, setSearch] = useState("");
   const [serviceFilter, setServiceFilter] = useState<string>("");
+  const [range, setRange] = useState<"today" | "7d" | "30d">("today");
 
   useEffect(() => {
     const init = async () => {
@@ -143,21 +144,25 @@ export default function AdminInquiries() {
   const now = new Date();
   const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  const startOf7d = new Date(startOfToday.getTime() - 6 * 24 * 60 * 60 * 1000);
+  const startOf30d = new Date(startOfToday.getTime() - 29 * 24 * 60 * 60 * 1000);
+  const rangeStart = range === "today" ? startOfToday : range === "7d" ? startOf7d : startOf30d;
+  const rangeLabel = range === "today" ? "Today" : range === "7d" ? "Last 7 days" : "Last 30 days";
   const total = inquiries?.length ?? 0;
   const today = inquiries?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const thisMonth = inquiries?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
 
   const todaysInquiries = useMemo(
-    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= startOfToday),
-    [inquiries, startOfToday]
+    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= rangeStart),
+    [inquiries, rangeStart]
   );
   const todaysCalls = useMemo(
-    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
-    [callClicks, startOfToday]
+    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= rangeStart),
+    [callClicks, rangeStart]
   );
   const todaysCtas = useMemo(
-    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
-    [ctaClicks, startOfToday]
+    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= rangeStart),
+    [ctaClicks, rangeStart]
   );
 
   const todaysByPage = useMemo(() => {
