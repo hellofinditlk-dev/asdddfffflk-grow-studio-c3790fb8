@@ -48,8 +48,10 @@ const VacancyPage = () => {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "No. 215, Park Road",
         addressLocality: "Colombo",
         addressRegion: "Western Province",
+        postalCode: "00500",
         addressCountry: "LK",
       },
     },
