@@ -24,10 +24,21 @@ interface CallClick {
   created_at: string;
 }
 
+interface CtaClick {
+  id: string;
+  cta_type: string;
+  cta_label: string | null;
+  placement: string | null;
+  source_path: string | null;
+  href: string | null;
+  created_at: string;
+}
+
 export default function AdminInquiries() {
   const navigate = useNavigate();
   const [inquiries, setInquiries] = useState<Inquiry[] | null>(null);
   const [callClicks, setCallClicks] = useState<CallClick[] | null>(null);
+  const [ctaClicks, setCtaClicks] = useState<CtaClick[] | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -51,9 +62,13 @@ export default function AdminInquiries() {
       setAuthChecked(true);
       if (!admin) return;
 
-      const [{ data, error }, { data: ccData, error: ccErr }] = await Promise.all([
+      const [{ data, error }, { data: ccData, error: ccErr }, { data: ctaData, error: ctaErr }] = await Promise.all([
         supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
         supabase.from("call_clicks").select("id,phone,source_path,created_at").order("created_at", { ascending: false }),
+        (supabase as any)
+          .from("cta_clicks")
+          .select("id,cta_type,cta_label,placement,source_path,href,created_at")
+          .order("created_at", { ascending: false }),
       ]);
       if (error) {
         toast.error("Failed to load inquiries: " + error.message);
@@ -62,8 +77,12 @@ export default function AdminInquiries() {
       if (ccErr) {
         console.error("Failed to load call clicks", ccErr);
       }
+      if (ctaErr) {
+        console.error("Failed to load CTA clicks", ctaErr);
+      }
       setInquiries((data as Inquiry[]) ?? []);
       setCallClicks((ccData as CallClick[]) ?? []);
+      setCtaClicks((ctaData as CtaClick[]) ?? []);
     };
     init();
   }, [navigate]);
@@ -136,6 +155,10 @@ export default function AdminInquiries() {
     () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
     [callClicks, startOfToday]
   );
+  const todaysCtas = useMemo(
+    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
+    [ctaClicks, startOfToday]
+  );
 
   const todaysByPage = useMemo(() => {
     const map = new Map<string, {
@@ -184,8 +207,20 @@ export default function AdminInquiries() {
       const key = `Call Click — ${c.phone}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
     }
+    for (const c of todaysCtas) {
+      const row = ensure(c.source_path ?? "");
+      const bucket = (["whatsapp", "call", "email", "quote", "form", "other"] as const).includes(c.cta_type as any)
+        ? (c.cta_type as "whatsapp" | "call" | "email" | "quote" | "form" | "other")
+        : "other";
+      row[bucket] += 1;
+      row.total += 1;
+      const niceType = bucket.charAt(0).toUpperCase() + bucket.slice(1);
+      const label = c.cta_label?.trim() || niceType + " Click";
+      const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
     return Array.from(map.values()).sort((a, b) => b.total - a.total);
-  }, [todaysInquiries, todaysCalls]);
+  }, [todaysInquiries, todaysCalls, todaysCtas]);
 
   const todayTotals = useMemo(() => {
     return todaysByPage.reduce(
