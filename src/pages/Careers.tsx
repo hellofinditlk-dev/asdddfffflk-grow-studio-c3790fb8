@@ -95,8 +95,10 @@ const jobPostingSchemas = vacancies.map((v) => ({
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Kotte",
       addressLocality: "Colombo",
       addressRegion: "Western Province",
+      postalCode: "10100",
       addressCountry: { "@type": "Country", name: "LK" },
     },
   },
