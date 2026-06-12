@@ -18,12 +18,10 @@ const CtaClickTracker = () => {
 
       let ctaType: CtaType | null = null;
       if (/wa\.me|api\.whatsapp\.com|wa\.link/i.test(href)) ctaType = "whatsapp";
-      else if (href.startsWith("tel:")) ctaType = "call";
       else if (href.startsWith("mailto:")) ctaType = "email";
       if (!ctaType) return;
-
-      // Skip duplicate tracking for tel: links that already use trackCallClick.
-      // We still log them here as the canonical CTA record.
+      // Note: tel: links are tracked separately via call_clicks (trackCallClick)
+      // to avoid double-counting in the Today's Inquiries dashboard.
       const label = (anchor.getAttribute("aria-label") || anchor.innerText || "").trim().slice(0, 120);
       const placement =
         anchor.dataset.ctaPlacement ||
