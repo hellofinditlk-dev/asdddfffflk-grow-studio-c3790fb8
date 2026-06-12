@@ -251,6 +251,92 @@ export default function AdminInquiries() {
     );
   }, [todaysByPage]);
 
+  const detail = useMemo(() => {
+    if (!detailPage) return null;
+    const samePage = (p: string | null) => (p ?? "(unknown)") === detailPage;
+    const pageInquiries = todaysInquiries.filter((i) => samePage(i.source_path));
+    const pageCalls = todaysCalls.filter((c) => samePage(c.source_path));
+    const pageCtas = todaysCtas.filter((c) => samePage(c.source_path));
+
+    // Build day buckets covering the selected range
+    const days: { key: string; label: string; date: Date }[] = [];
+    const startMs = new Date(rangeStart.getFullYear(), rangeStart.getMonth(), rangeStart.getDate()).getTime();
+    const endMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    for (let t = startMs; t <= endMs; t += 24 * 60 * 60 * 1000) {
+      const d = new Date(t);
+      const key = d.toISOString().slice(0, 10);
+      days.push({
+        key,
+        date: d,
+        label: d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }),
+      });
+    }
+    const dayKey = (iso: string) => new Date(iso).toISOString().slice(0, 10);
+
+    const byDay = new Map<string, { form: number; whatsapp: number; call: number; email: number; quote: number; other: number; total: number }>();
+    days.forEach((d) => byDay.set(d.key, { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0 }));
+    const ctaTotals: Record<string, number> = { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0 };
+    const ctaBreakdown = new Map<string, number>();
+
+    const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
+      const s = label.toLowerCase();
+      if (s.includes("whatsapp") || s.includes("wa ")) return "whatsapp";
+      if (s.includes("call") || s.includes("phone")) return "call";
+      if (s.includes("email") || s.includes("mail")) return "email";
+      if (s.includes("quote") || s.includes("audit") || s.includes("proposal")) return "quote";
+      if (s.includes("form") || s.includes("inquiry") || s.includes("contact")) return "form";
+      return "other";
+    };
+
+    for (const i of pageInquiries) {
+      const day = byDay.get(dayKey(i.created_at));
+      if (!day) continue;
+      const ctaLabel = (i.extra?.cta as string) || "Form Submission";
+      const placement = (i.extra?.placement as string) || (i.service ?? "");
+      const bucket = classify(`${ctaLabel} ${placement}`);
+      day[bucket] += 1;
+      day.total += 1;
+      ctaTotals[bucket] += 1;
+      const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+    for (const c of pageCalls) {
+      const day = byDay.get(dayKey(c.created_at));
+      if (!day) continue;
+      day.call += 1;
+      day.total += 1;
+      ctaTotals.call += 1;
+      const key = `Call Click — ${c.phone}`;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+    for (const c of pageCtas) {
+      const day = byDay.get(dayKey(c.created_at));
+      if (!day) continue;
+      const bucket = (["whatsapp", "call", "email", "quote", "form", "other"] as const).includes(c.cta_type as any)
+        ? (c.cta_type as "whatsapp" | "call" | "email" | "quote" | "form" | "other")
+        : "other";
+      day[bucket] += 1;
+      day.total += 1;
+      ctaTotals[bucket] += 1;
+      const niceType = bucket.charAt(0).toUpperCase() + bucket.slice(1);
+      const label = c.cta_label?.trim() || niceType + " Click";
+      const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+
+    const total = Object.values(ctaTotals).reduce((a, b) => a + b, 0);
+    const maxDayTotal = Math.max(1, ...days.map((d) => byDay.get(d.key)!.total));
+    return {
+      page: detailPage,
+      total,
+      ctaTotals,
+      ctaBreakdown: Array.from(ctaBreakdown.entries()).sort((a, b) => b[1] - a[1]),
+      days: days.map((d) => ({ ...d, stats: byDay.get(d.key)! })),
+      maxDayTotal,
+      inquiriesList: pageInquiries.sort((a, b) => +new Date(b.created_at) - +new Date(a.created_at)),
+    };
+  }, [detailPage, todaysInquiries, todaysCalls, todaysCtas, rangeStart, now]);
+
   if (!authChecked) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center">
