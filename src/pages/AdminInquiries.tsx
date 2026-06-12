@@ -44,6 +44,7 @@ export default function AdminInquiries() {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [search, setSearch] = useState("");
   const [serviceFilter, setServiceFilter] = useState<string>("");
+  const [range, setRange] = useState<"today" | "7d" | "30d">("today");
 
   useEffect(() => {
     const init = async () => {
@@ -143,21 +144,25 @@ export default function AdminInquiries() {
   const now = new Date();
   const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  const startOf7d = new Date(startOfToday.getTime() - 6 * 24 * 60 * 60 * 1000);
+  const startOf30d = new Date(startOfToday.getTime() - 29 * 24 * 60 * 60 * 1000);
+  const rangeStart = range === "today" ? startOfToday : range === "7d" ? startOf7d : startOf30d;
+  const rangeLabel = range === "today" ? "Today" : range === "7d" ? "Last 7 days" : "Last 30 days";
   const total = inquiries?.length ?? 0;
   const today = inquiries?.filter((l) => new Date(l.created_at) >= startOfToday).length ?? 0;
   const thisMonth = inquiries?.filter((l) => new Date(l.created_at) >= startOfMonth).length ?? 0;
 
   const todaysInquiries = useMemo(
-    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= startOfToday),
-    [inquiries, startOfToday]
+    () => (inquiries ?? []).filter((l) => new Date(l.created_at) >= rangeStart),
+    [inquiries, rangeStart]
   );
   const todaysCalls = useMemo(
-    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
-    [callClicks, startOfToday]
+    () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= rangeStart),
+    [callClicks, rangeStart]
   );
   const todaysCtas = useMemo(
-    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
-    [ctaClicks, startOfToday]
+    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= rangeStart),
+    [ctaClicks, rangeStart]
   );
 
   const todaysByPage = useMemo(() => {
@@ -299,10 +304,31 @@ export default function AdminInquiries() {
       <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
         <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
           <div>
-            <h2 className="text-lg font-semibold">Today's Inquiries</h2>
+            <h2 className="text-lg font-semibold">Inquiries by Page — {rangeLabel}</h2>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Top pages by inquiry count and which CTAs were clicked on each page.
+              Which pages are driving demand and which CTAs visitors are clicking on each page.
             </p>
+            <div className="inline-flex mt-3 rounded-md border border-border bg-background overflow-hidden text-xs">
+              {([
+                { key: "today", label: "Today" },
+                { key: "7d", label: "Last 7 days" },
+                { key: "30d", label: "Last 30 days" },
+              ] as const).map((opt) => (
+                <button
+                  key={opt.key}
+                  type="button"
+                  onClick={() => setRange(opt.key)}
+                  className={
+                    "px-3 py-1.5 font-medium transition-colors " +
+                    (range === opt.key
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:bg-muted")
+                  }
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
           </div>
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="rounded-full bg-primary/10 text-primary px-2.5 py-1 font-medium">Total {todayTotals.total}</span>
@@ -316,7 +342,7 @@ export default function AdminInquiries() {
 
         {todaysByPage.length === 0 ? (
           <div className="px-5 py-10 text-center text-sm text-muted-foreground">
-            No inquiries or CTA clicks recorded today yet.
+            No inquiries or CTA clicks recorded in {rangeLabel.toLowerCase()} yet.
           </div>
         ) : (
           <div className="overflow-x-auto">
