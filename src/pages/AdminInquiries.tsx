@@ -155,6 +155,10 @@ export default function AdminInquiries() {
     () => (callClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
     [callClicks, startOfToday]
   );
+  const todaysCtas = useMemo(
+    () => (ctaClicks ?? []).filter((c) => new Date(c.created_at) >= startOfToday),
+    [ctaClicks, startOfToday]
+  );
 
   const todaysByPage = useMemo(() => {
     const map = new Map<string, {
@@ -203,8 +207,20 @@ export default function AdminInquiries() {
       const key = `Call Click — ${c.phone}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
     }
+    for (const c of todaysCtas) {
+      const row = ensure(c.source_path ?? "");
+      const bucket = (["whatsapp", "call", "email", "quote", "form", "other"] as const).includes(c.cta_type as any)
+        ? (c.cta_type as "whatsapp" | "call" | "email" | "quote" | "form" | "other")
+        : "other";
+      row[bucket] += 1;
+      row.total += 1;
+      const niceType = bucket.charAt(0).toUpperCase() + bucket.slice(1);
+      const label = c.cta_label?.trim() || niceType + " Click";
+      const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
+      row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+    }
     return Array.from(map.values()).sort((a, b) => b.total - a.total);
-  }, [todaysInquiries, todaysCalls]);
+  }, [todaysInquiries, todaysCalls, todaysCtas]);
 
   const todayTotals = useMemo(() => {
     return todaysByPage.reduce(
