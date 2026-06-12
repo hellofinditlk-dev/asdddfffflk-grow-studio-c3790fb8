@@ -3,6 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { toast } from "sonner";
 
 interface Inquiry {
@@ -45,6 +52,7 @@ export default function AdminInquiries() {
   const [search, setSearch] = useState("");
   const [serviceFilter, setServiceFilter] = useState<string>("");
   const [range, setRange] = useState<"today" | "7d" | "30d">("today");
+  const [detailPage, setDetailPage] = useState<string | null>(null);
 
   useEffect(() => {
     const init = async () => {
@@ -243,6 +251,92 @@ export default function AdminInquiries() {
     );
   }, [todaysByPage]);
 
+  const detail = useMemo(() => {
+    if (!detailPage) return null;
+    const samePage = (p: string | null) => (p ?? "(unknown)") === detailPage;
+    const pageInquiries = todaysInquiries.filter((i) => samePage(i.source_path));
+    const pageCalls = todaysCalls.filter((c) => samePage(c.source_path));
+    const pageCtas = todaysCtas.filter((c) => samePage(c.source_path));
+
+    // Build day buckets covering the selected range
+    const days: { key: string; label: string; date: Date }[] = [];
+    const startMs = new Date(rangeStart.getFullYear(), rangeStart.getMonth(), rangeStart.getDate()).getTime();
+    const endMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    for (let t = startMs; t <= endMs; t += 24 * 60 * 60 * 1000) {
+      const d = new Date(t);
+      const key = d.toISOString().slice(0, 10);
+      days.push({
+        key,
+        date: d,
+        label: d.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }),
+      });
+    }
+    const dayKey = (iso: string) => new Date(iso).toISOString().slice(0, 10);
+
+    const byDay = new Map<string, { form: number; whatsapp: number; call: number; email: number; quote: number; other: number; total: number }>();
+    days.forEach((d) => byDay.set(d.key, { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0 }));
+    const ctaTotals: Record<string, number> = { form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0 };
+    const ctaBreakdown = new Map<string, number>();
+
+    const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
+      const s = label.toLowerCase();
+      if (s.includes("whatsapp") || s.includes("wa ")) return "whatsapp";
+      if (s.includes("call") || s.includes("phone")) return "call";
+      if (s.includes("email") || s.includes("mail")) return "email";
+      if (s.includes("quote") || s.includes("audit") || s.includes("proposal")) return "quote";
+      if (s.includes("form") || s.includes("inquiry") || s.includes("contact")) return "form";
+      return "other";
+    };
+
+    for (const i of pageInquiries) {
+      const day = byDay.get(dayKey(i.created_at));
+      if (!day) continue;
+      const ctaLabel = (i.extra?.cta as string) || "Form Submission";
+      const placement = (i.extra?.placement as string) || (i.service ?? "");
+      const bucket = classify(`${ctaLabel} ${placement}`);
+      day[bucket] += 1;
+      day.total += 1;
+      ctaTotals[bucket] += 1;
+      const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+    for (const c of pageCalls) {
+      const day = byDay.get(dayKey(c.created_at));
+      if (!day) continue;
+      day.call += 1;
+      day.total += 1;
+      ctaTotals.call += 1;
+      const key = `Call Click — ${c.phone}`;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+    for (const c of pageCtas) {
+      const day = byDay.get(dayKey(c.created_at));
+      if (!day) continue;
+      const bucket = (["whatsapp", "call", "email", "quote", "form", "other"] as const).includes(c.cta_type as any)
+        ? (c.cta_type as "whatsapp" | "call" | "email" | "quote" | "form" | "other")
+        : "other";
+      day[bucket] += 1;
+      day.total += 1;
+      ctaTotals[bucket] += 1;
+      const niceType = bucket.charAt(0).toUpperCase() + bucket.slice(1);
+      const label = c.cta_label?.trim() || niceType + " Click";
+      const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
+      ctaBreakdown.set(key, (ctaBreakdown.get(key) ?? 0) + 1);
+    }
+
+    const total = Object.values(ctaTotals).reduce((a, b) => a + b, 0);
+    const maxDayTotal = Math.max(1, ...days.map((d) => byDay.get(d.key)!.total));
+    return {
+      page: detailPage,
+      total,
+      ctaTotals,
+      ctaBreakdown: Array.from(ctaBreakdown.entries()).sort((a, b) => b[1] - a[1]),
+      days: days.map((d) => ({ ...d, stats: byDay.get(d.key)! })),
+      maxDayTotal,
+      inquiriesList: pageInquiries.sort((a, b) => +new Date(b.created_at) - +new Date(a.created_at)),
+    };
+  }, [detailPage, todaysInquiries, todaysCalls, todaysCtas, rangeStart, now]);
+
   if (!authChecked) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center">
@@ -361,20 +455,35 @@ export default function AdminInquiries() {
               </thead>
               <tbody>
                 {todaysByPage.map((row) => (
-                  <tr key={row.page} className="border-t border-border align-top">
+                  <tr
+                    key={row.page}
+                    className="border-t border-border align-top hover:bg-muted/30 cursor-pointer"
+                    onClick={() => setDetailPage(row.page)}
+                  >
                     <td className="px-4 py-3 max-w-[260px]">
-                      {row.page && row.page !== "(unknown)" ? (
-                        <a
-                          href={row.page}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-primary hover:underline break-all"
+                      <div className="flex flex-col gap-1">
+                        <button
+                          type="button"
+                          className="text-left text-primary hover:underline break-all font-medium"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setDetailPage(row.page);
+                          }}
                         >
-                          {row.page}
-                        </a>
-                      ) : (
-                        <span className="text-muted-foreground">(unknown page)</span>
-                      )}
+                          {row.page === "(unknown)" ? "(unknown page)" : row.page}
+                        </button>
+                        {row.page && row.page !== "(unknown)" && (
+                          <a
+                            href={row.page}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-xs text-muted-foreground hover:underline"
+                          >
+                            Open page ↗
+                          </a>
+                        )}
+                      </div>
                     </td>
                     <td className="px-4 py-3 text-center font-semibold">{row.total}</td>
                     <td className="px-4 py-3 text-center">{row.form || <span className="text-muted-foreground">—</span>}</td>
@@ -532,6 +641,112 @@ export default function AdminInquiries() {
           </div>
         </div>
       )}
+
+      <Dialog open={!!detailPage} onOpenChange={(o) => !o && setDetailPage(null)}>
+        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="break-all">
+              {detail?.page === "(unknown)" ? "(unknown page)" : detail?.page}
+            </DialogTitle>
+            <DialogDescription>
+              Inquiries by day and by CTA — {rangeLabel.toLowerCase()}.
+            </DialogDescription>
+          </DialogHeader>
+
+          {detail && (
+            <div className="space-y-6">
+              <div className="flex flex-wrap gap-2 text-xs">
+                <span className="rounded-full bg-primary/10 text-primary px-2.5 py-1 font-medium">Total {detail.total}</span>
+                <span className="rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2.5 py-1 font-medium">Form {detail.ctaTotals.form}</span>
+                <span className="rounded-full bg-green-500/10 text-green-600 dark:text-green-400 px-2.5 py-1 font-medium">WhatsApp {detail.ctaTotals.whatsapp}</span>
+                <span className="rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 px-2.5 py-1 font-medium">Call {detail.ctaTotals.call}</span>
+                <span className="rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 px-2.5 py-1 font-medium">Email {detail.ctaTotals.email}</span>
+                <span className="rounded-full bg-pink-500/10 text-pink-600 dark:text-pink-400 px-2.5 py-1 font-medium">Quote {detail.ctaTotals.quote}</span>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-semibold mb-2">By day</h3>
+                <div className="rounded-md border border-border overflow-hidden">
+                  <table className="w-full text-sm">
+                    <thead className="bg-muted/40 text-left text-xs uppercase tracking-wider text-muted-foreground">
+                      <tr>
+                        <th className="px-3 py-2 font-semibold">Day</th>
+                        <th className="px-3 py-2 font-semibold text-center">Total</th>
+                        <th className="px-3 py-2 font-semibold text-center">Form</th>
+                        <th className="px-3 py-2 font-semibold text-center">WA</th>
+                        <th className="px-3 py-2 font-semibold text-center">Call</th>
+                        <th className="px-3 py-2 font-semibold text-center">Email</th>
+                        <th className="px-3 py-2 font-semibold text-center">Quote</th>
+                        <th className="px-3 py-2 font-semibold w-[30%]">Volume</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {detail.days.map((d) => (
+                        <tr key={d.key} className="border-t border-border">
+                          <td className="px-3 py-2 whitespace-nowrap">{d.label}</td>
+                          <td className="px-3 py-2 text-center font-semibold">{d.stats.total || "—"}</td>
+                          <td className="px-3 py-2 text-center">{d.stats.form || "—"}</td>
+                          <td className="px-3 py-2 text-center">{d.stats.whatsapp || "—"}</td>
+                          <td className="px-3 py-2 text-center">{d.stats.call || "—"}</td>
+                          <td className="px-3 py-2 text-center">{d.stats.email || "—"}</td>
+                          <td className="px-3 py-2 text-center">{d.stats.quote || "—"}</td>
+                          <td className="px-3 py-2">
+                            <div className="h-2 rounded bg-muted overflow-hidden">
+                              <div
+                                className="h-full bg-primary"
+                                style={{ width: `${(d.stats.total / detail.maxDayTotal) * 100}%` }}
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-semibold mb-2">CTA breakdown</h3>
+                {detail.ctaBreakdown.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No CTA clicks recorded for this page in the selected range.</p>
+                ) : (
+                  <div className="flex flex-wrap gap-1.5">
+                    {detail.ctaBreakdown.map(([label, count]) => (
+                      <span
+                        key={label}
+                        className="inline-flex items-center gap-1 rounded-md bg-muted px-2.5 py-1 text-xs"
+                      >
+                        <span>{label}</span>
+                        <span className="text-muted-foreground">× {count}</span>
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {detail.inquiriesList.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold mb-2">Form inquiries from this page ({detail.inquiriesList.length})</h3>
+                  <div className="rounded-md border border-border divide-y divide-border max-h-72 overflow-y-auto">
+                    {detail.inquiriesList.map((i) => (
+                      <div key={i.id} className="p-3 text-sm">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <div className="font-medium">{i.name}</div>
+                          <div className="text-xs text-muted-foreground">{new Date(i.created_at).toLocaleString()}</div>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-0.5">
+                          {i.phone}{i.email ? ` · ${i.email}` : ""}{i.service ? ` · ${i.service}` : ""}
+                        </div>
+                        {i.message && <p className="text-sm mt-1.5 whitespace-pre-wrap">{i.message}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
