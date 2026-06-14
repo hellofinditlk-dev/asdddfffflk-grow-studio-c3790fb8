@@ -488,6 +488,8 @@ export default function AdminInquiries() {
                   <th className="px-4 py-3 font-semibold text-center">Call</th>
                   <th className="px-4 py-3 font-semibold text-center">Email</th>
                   <th className="px-4 py-3 font-semibold text-center">Quote</th>
+                  <th className="px-4 py-3 font-semibold">Top Product / Service</th>
+                  <th className="px-4 py-3 font-semibold">Traffic Source</th>
                   <th className="px-4 py-3 font-semibold">CTAs (placement × count)</th>
                 </tr>
               </thead>
@@ -529,6 +531,40 @@ export default function AdminInquiries() {
                     <td className="px-4 py-3 text-center">{row.call || <span className="text-muted-foreground">—</span>}</td>
                     <td className="px-4 py-3 text-center">{row.email || <span className="text-muted-foreground">—</span>}</td>
                     <td className="px-4 py-3 text-center">{row.quote || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      {row.services.size === 0 ? (
+                        <span className="text-muted-foreground text-xs">—</span>
+                      ) : (
+                        <div className="flex flex-wrap gap-1">
+                          {Array.from(row.services.entries())
+                            .sort((a, b) => b[1] - a[1])
+                            .slice(0, 3)
+                            .map(([svc, count]) => (
+                              <span key={svc} className="inline-flex items-center gap-1 rounded-md bg-primary/10 text-primary px-2 py-0.5 text-xs">
+                                <span>{svc}</span>
+                                <span className="opacity-70">× {count}</span>
+                              </span>
+                            ))}
+                        </div>
+                      )}
+                    </td>
+                    <td className="px-4 py-3">
+                      {row.sources.size === 0 ? (
+                        <span className="text-muted-foreground text-xs">—</span>
+                      ) : (
+                        <div className="flex flex-wrap gap-1">
+                          {Array.from(row.sources.entries())
+                            .sort((a, b) => b[1] - a[1])
+                            .slice(0, 3)
+                            .map(([src, count]) => (
+                              <span key={src} className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs">
+                                <span>{src}</span>
+                                <span className="text-muted-foreground">× {count}</span>
+                              </span>
+                            ))}
+                        </div>
+                      )}
+                    </td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-1.5">
                         {Array.from(row.ctas.entries()).map(([label, count]) => (
