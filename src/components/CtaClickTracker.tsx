@@ -12,14 +12,22 @@ const CtaClickTracker = () => {
     const waitForTracking = (promise: Promise<unknown>) =>
       Promise.race([promise, new Promise((resolve) => window.setTimeout(resolve, 700))]);
 
-    const continueToHref = (anchor: HTMLAnchorElement, href: string) => {
+    const prepareNavigation = (anchor: HTMLAnchorElement, href: string) => {
       const target = anchor.getAttribute("target");
       if (target === "_blank") {
-        const tab = window.open(href, "_blank", "noopener,noreferrer");
-        if (!tab) window.location.href = href;
-        return;
+        const tab = window.open("about:blank", "_blank");
+        return () => {
+          if (tab) {
+            tab.opener = null;
+            tab.location.href = href;
+            return;
+          }
+          window.location.href = href;
+        };
       }
-      window.location.href = href;
+      return () => {
+        window.location.href = href;
+      };
     };
 
     const onClick = (e: MouseEvent) => {
@@ -35,7 +43,8 @@ const CtaClickTracker = () => {
       if (href.startsWith("tel:")) {
         const phone = href.replace(/^tel:/i, "").trim() || "+94701772626";
         e.preventDefault();
-        void waitForTracking(trackCallClick(phone)).finally(() => continueToHref(anchor, href));
+        const continueNavigation = prepareNavigation(anchor, href);
+        void waitForTracking(trackCallClick(phone)).finally(continueNavigation);
         return;
       }
 
@@ -50,9 +59,8 @@ const CtaClickTracker = () => {
         null;
 
       e.preventDefault();
-      void waitForTracking(trackCtaClick({ ctaType, ctaLabel: label || null, placement, href })).finally(() =>
-        continueToHref(anchor, href)
-      );
+      const continueNavigation = prepareNavigation(anchor, href);
+      void waitForTracking(trackCtaClick({ ctaType, ctaLabel: label || null, placement, href })).finally(continueNavigation);
     };
     document.addEventListener("click", onClick, { capture: true });
     return () => document.removeEventListener("click", onClick, { capture: true } as any);
