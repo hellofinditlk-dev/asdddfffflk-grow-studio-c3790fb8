@@ -22,15 +22,20 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
 
     try {
       const ref = typeof document !== "undefined" ? document.referrer || null : null;
-      await supabase.from("inquiries").insert({
+      const { error } = await supabase.from("inquiries").insert({
         name: form.name.trim(),
         email: form.email.trim() || null,
         phone: form.phone.trim(),
         message: form.message.trim() || null,
         service: service || "General Inquiry",
-        source_path: typeof window !== "undefined" ? window.location.pathname : null,
-        extra: ref ? { referrer: ref } : null,
+        source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
+        extra: {
+          cta: "WhatsApp Message Form",
+          placement: service || "General Inquiry",
+          ...(ref ? { referrer: ref } : {}),
+        },
       });
+      if (error) console.error("Failed to save inquiry", error);
     } catch (err) {
       console.error("Failed to save inquiry", err);
     }

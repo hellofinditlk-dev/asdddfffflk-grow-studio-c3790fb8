@@ -31,19 +31,22 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
       .forEach((f) => {
         extra[f.placeholder.replace(" *", "")] = form[f.name];
       });
+    extra.cta = "WhatsApp Message Form";
+    extra.placement = serviceName;
     const ref = typeof document !== "undefined" ? document.referrer || "" : "";
     if (ref) extra.referrer = ref;
 
     try {
-      await supabase.from("inquiries").insert({
+      const { error } = await supabase.from("inquiries").insert({
         name: form.name.trim(),
         email: form.email?.trim() || null,
         phone: form.phone.trim(),
         message: form.message?.trim() || null,
         service: serviceName,
-        source_path: typeof window !== "undefined" ? window.location.pathname : null,
+        source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
         extra: Object.keys(extra).length ? extra : null,
       });
+      if (error) console.error("Failed to save inquiry", error);
     } catch (err) {
       console.error("Failed to save inquiry", err);
     }

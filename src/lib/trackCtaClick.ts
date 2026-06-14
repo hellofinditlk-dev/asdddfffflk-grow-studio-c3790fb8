@@ -9,9 +9,9 @@ export interface TrackCtaClickArgs {
   href?: string | null;
 }
 
-export function trackCtaClick({ ctaType, ctaLabel, placement, href }: TrackCtaClickArgs) {
+export async function trackCtaClick({ ctaType, ctaLabel, placement, href }: TrackCtaClickArgs) {
   try {
-    void supabase.from("cta_clicks").insert({
+    const { error } = await supabase.from("cta_clicks").insert({
       cta_type: ctaType,
       cta_label: ctaLabel ?? null,
       placement: placement ?? null,
@@ -21,7 +21,13 @@ export function trackCtaClick({ ctaType, ctaLabel, placement, href }: TrackCtaCl
       referrer: typeof document !== "undefined" ? document.referrer || null : null,
       user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
     });
+    if (error) {
+      console.error("Failed to track CTA click", error);
+      return false;
+    }
+    return true;
   } catch (err) {
     console.error("Failed to track CTA click", err);
+    return false;
   }
 }

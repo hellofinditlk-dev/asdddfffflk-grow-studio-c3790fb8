@@ -9,7 +9,29 @@ import { trackCallClick } from "@/lib/trackCallClick";
  */
 const CtaClickTracker = () => {
   useEffect(() => {
+    const waitForTracking = (promise: Promise<unknown>) =>
+      Promise.race([promise, new Promise((resolve) => window.setTimeout(resolve, 700))]);
+
+    const prepareNavigation = (anchor: HTMLAnchorElement, href: string) => {
+      const target = anchor.getAttribute("target");
+      if (target === "_blank") {
+        const tab = window.open("about:blank", "_blank");
+        return () => {
+          if (tab) {
+            tab.opener = null;
+            tab.location.href = href;
+            return;
+          }
+          window.location.href = href;
+        };
+      }
+      return () => {
+        window.location.href = href;
+      };
+    };
+
     const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const target = e.target as HTMLElement | null;
       if (!target) return;
       const anchor = target.closest("a") as HTMLAnchorElement | null;
@@ -20,7 +42,9 @@ const CtaClickTracker = () => {
       // tel: links → record in call_clicks (separate table)
       if (href.startsWith("tel:")) {
         const phone = href.replace(/^tel:/i, "").trim() || "+94701772626";
-        trackCallClick(phone);
+        e.preventDefault();
+        const continueNavigation = prepareNavigation(anchor, href);
+        void waitForTracking(trackCallClick(phone)).finally(continueNavigation);
         return;
       }
 
@@ -34,7 +58,9 @@ const CtaClickTracker = () => {
         anchor.closest("[data-cta-placement]")?.getAttribute("data-cta-placement") ||
         null;
 
-      trackCtaClick({ ctaType, ctaLabel: label || null, placement, href });
+      e.preventDefault();
+      const continueNavigation = prepareNavigation(anchor, href);
+      void waitForTracking(trackCtaClick({ ctaType, ctaLabel: label || null, placement, href })).finally(continueNavigation);
     };
     document.addEventListener("click", onClick, { capture: true });
     return () => document.removeEventListener("click", onClick, { capture: true } as any);
