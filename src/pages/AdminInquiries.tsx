@@ -28,6 +28,7 @@ interface CallClick {
   id: string;
   phone: string;
   source_path: string | null;
+  referrer: string | null;
   created_at: string;
 }
 
@@ -38,6 +39,7 @@ interface CtaClick {
   placement: string | null;
   source_path: string | null;
   href: string | null;
+  referrer: string | null;
   created_at: string;
 }
 
@@ -73,10 +75,10 @@ export default function AdminInquiries() {
 
       const [{ data, error }, { data: ccData, error: ccErr }, { data: ctaData, error: ctaErr }] = await Promise.all([
         supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
-        supabase.from("call_clicks").select("id,phone,source_path,created_at").order("created_at", { ascending: false }),
+        supabase.from("call_clicks").select("id,phone,source_path,referrer,created_at").order("created_at", { ascending: false }),
         (supabase as any)
           .from("cta_clicks")
-          .select("id,cta_type,cta_label,placement,source_path,href,created_at")
+          .select("id,cta_type,cta_label,placement,source_path,href,referrer,created_at")
           .order("created_at", { ascending: false }),
       ]);
       if (error) {
