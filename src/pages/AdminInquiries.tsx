@@ -11,6 +11,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { toast } from "sonner";
+import { vacancies } from "@/data/vacancies";
 
 interface Inquiry {
   id: string;
