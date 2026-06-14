@@ -607,6 +607,68 @@ export default function AdminInquiries() {
       <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
         <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
           <div>
+            <h2 className="text-lg font-semibold">Vacancy CV WhatsApp Clicks — {rangeLabel}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Candidates who tapped "Apply on WhatsApp" (or called / submitted) from a <code className="text-xs">/careers/&lt;vacancy&gt;</code> page.
+            </p>
+          </div>
+          <div className="flex items-center gap-4 text-xs text-muted-foreground">
+            <span><span className="font-semibold text-foreground">{vacancyTotals.whatsapp}</span> WhatsApp</span>
+            <span><span className="font-semibold text-foreground">{vacancyTotals.call}</span> Call</span>
+            <span><span className="font-semibold text-foreground">{vacancyTotals.inquiry}</span> Form</span>
+            <span><span className="font-semibold text-foreground">{vacancyTotals.total}</span> Total</span>
+          </div>
+        </div>
+        {vacancySummary.length === 0 ? (
+          <div className="px-5 py-10 text-center text-sm text-muted-foreground">
+            No vacancy CV clicks recorded in {rangeLabel.toLowerCase()} yet.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Vacancy</th>
+                  <th className="px-4 py-3 font-semibold text-center">WhatsApp CV</th>
+                  <th className="px-4 py-3 font-semibold text-center">Call</th>
+                  <th className="px-4 py-3 font-semibold text-center">Form</th>
+                  <th className="px-4 py-3 font-semibold text-center">Total</th>
+                  <th className="px-4 py-3 font-semibold">Last Action</th>
+                  <th className="px-4 py-3 font-semibold">Page</th>
+                </tr>
+              </thead>
+              <tbody>
+                {vacancySummary.map((v) => {
+                  const page = `/careers/${v.slug}`;
+                  return (
+                    <tr key={v.slug} className="border-t border-border align-top">
+                      <td className="px-4 py-3 font-medium">{v.title}</td>
+                      <td className="px-4 py-3 text-center font-semibold text-primary">{v.whatsapp || <span className="text-muted-foreground font-normal">—</span>}</td>
+                      <td className="px-4 py-3 text-center">{v.call || <span className="text-muted-foreground">—</span>}</td>
+                      <td className="px-4 py-3 text-center">{v.inquiry || <span className="text-muted-foreground">—</span>}</td>
+                      <td className="px-4 py-3 text-center font-semibold">{v.total}</td>
+                      <td className="px-4 py-3 text-xs text-muted-foreground">{v.lastAt ? new Date(v.lastAt).toLocaleString() : "—"}</td>
+                      <td className="px-4 py-3">
+                        <button
+                          type="button"
+                          onClick={() => setDetailPage(page)}
+                          className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs hover:bg-primary/10 hover:text-primary"
+                        >
+                          <span className="max-w-[260px] truncate">{page}</span>
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
+      <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
+          <div>
             <h2 className="text-lg font-semibold">Inquiries by Page — {rangeLabel}</h2>
             <p className="text-xs text-muted-foreground mt-0.5">
               Which pages are driving demand and which CTAs visitors are clicking on each page.
