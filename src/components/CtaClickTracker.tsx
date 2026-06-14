@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { trackCtaClick, type CtaType } from "@/lib/trackCtaClick";
+import { trackCallClick } from "@/lib/trackCallClick";
 
 /**
  * Global delegated click listener that records clicks on WhatsApp, tel:,
@@ -16,12 +17,17 @@ const CtaClickTracker = () => {
       const href = anchor.getAttribute("href") || "";
       if (!href) return;
 
+      // tel: links → record in call_clicks (separate table)
+      if (href.startsWith("tel:")) {
+        const phone = href.replace(/^tel:/i, "").trim() || "+94701772626";
+        trackCallClick(phone);
+        return;
+      }
+
       let ctaType: CtaType | null = null;
       if (/wa\.me|api\.whatsapp\.com|wa\.link/i.test(href)) ctaType = "whatsapp";
       else if (href.startsWith("mailto:")) ctaType = "email";
       if (!ctaType) return;
-      // Note: tel: links are tracked separately via call_clicks (trackCallClick)
-      // to avoid double-counting in the Today's Inquiries dashboard.
       const label = (anchor.getAttribute("aria-label") || anchor.innerText || "").trim().slice(0, 120);
       const placement =
         anchor.dataset.ctaPlacement ||
