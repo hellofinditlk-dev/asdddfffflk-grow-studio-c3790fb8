@@ -186,15 +186,43 @@ export default function AdminInquiries() {
       other: number;
       total: number;
       ctas: Map<string, number>; // "CTA — placement" -> count
+      services: Map<string, number>; // product/service interest -> count
+      sources: Map<string, number>; // traffic source (referrer host) -> count
     }>();
     const ensure = (page: string) => {
       const key = page || "(unknown)";
       let row = map.get(key);
       if (!row) {
-        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map() };
+        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map(), services: new Map(), sources: new Map() };
         map.set(key, row);
       }
       return row;
+    };
+    const sourceFromReferrer = (ref: string | null | undefined): string => {
+      if (!ref) return "Direct / Unknown";
+      try {
+        const url = new URL(ref);
+        const host = url.hostname.replace(/^www\./, "");
+        if (host.includes("google.")) return "Google";
+        if (host.includes("bing.")) return "Bing";
+        if (host.includes("yahoo.")) return "Yahoo";
+        if (host.includes("duckduckgo.")) return "DuckDuckGo";
+        if (host.includes("facebook.") || host.includes("fb.")) return "Facebook";
+        if (host.includes("instagram.")) return "Instagram";
+        if (host.includes("linkedin.")) return "LinkedIn";
+        if (host.includes("tiktok.")) return "TikTok";
+        if (host.includes("youtube.")) return "YouTube";
+        if (host.includes("twitter.") || host.includes("x.com")) return "Twitter / X";
+        if (host.includes("whatsapp.") || host.includes("wa.me")) return "WhatsApp";
+        if (host.includes("t.co")) return "Twitter / X";
+        if (host.includes("chatgpt.") || host.includes("openai.")) return "ChatGPT";
+        if (host.includes("perplexity.")) return "Perplexity";
+        if (host.includes("gemini.") || host.includes("bard.")) return "Gemini";
+        if (host.includes("cypherdigital.lk")) return "Internal";
+        return host;
+      } catch {
+        return "Direct / Unknown";
+      }
     };
     const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
       const s = label.toLowerCase();
@@ -214,6 +242,10 @@ export default function AdminInquiries() {
       row.total += 1;
       const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const svc = (i.service ?? "").trim() || "General";
+      row.services.set(svc, (row.services.get(svc) ?? 0) + 1);
+      const src = sourceFromReferrer((i.extra?.referrer as string) ?? null);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     for (const c of todaysCalls) {
       const row = ensure(c.source_path ?? "");
@@ -221,6 +253,8 @@ export default function AdminInquiries() {
       row.total += 1;
       const key = `Call Click — ${c.phone}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const src = sourceFromReferrer(c.referrer);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     for (const c of todaysCtas) {
       const row = ensure(c.source_path ?? "");
@@ -233,6 +267,8 @@ export default function AdminInquiries() {
       const label = c.cta_label?.trim() || niceType + " Click";
       const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const src = sourceFromReferrer(c.referrer);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     return Array.from(map.values()).sort((a, b) => b.total - a.total);
   }, [todaysInquiries, todaysCalls, todaysCtas]);
