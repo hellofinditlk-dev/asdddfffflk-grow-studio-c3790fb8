@@ -28,6 +28,7 @@ interface CallClick {
   id: string;
   phone: string;
   source_path: string | null;
+  referrer: string | null;
   created_at: string;
 }
 
@@ -38,6 +39,7 @@ interface CtaClick {
   placement: string | null;
   source_path: string | null;
   href: string | null;
+  referrer: string | null;
   created_at: string;
 }
 
@@ -73,10 +75,10 @@ export default function AdminInquiries() {
 
       const [{ data, error }, { data: ccData, error: ccErr }, { data: ctaData, error: ctaErr }] = await Promise.all([
         supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
-        supabase.from("call_clicks").select("id,phone,source_path,created_at").order("created_at", { ascending: false }),
+        supabase.from("call_clicks").select("id,phone,source_path,referrer,created_at").order("created_at", { ascending: false }),
         (supabase as any)
           .from("cta_clicks")
-          .select("id,cta_type,cta_label,placement,source_path,href,created_at")
+          .select("id,cta_type,cta_label,placement,source_path,href,referrer,created_at")
           .order("created_at", { ascending: false }),
       ]);
       if (error) {
@@ -184,15 +186,43 @@ export default function AdminInquiries() {
       other: number;
       total: number;
       ctas: Map<string, number>; // "CTA — placement" -> count
+      services: Map<string, number>; // product/service interest -> count
+      sources: Map<string, number>; // traffic source (referrer host) -> count
     }>();
     const ensure = (page: string) => {
       const key = page || "(unknown)";
       let row = map.get(key);
       if (!row) {
-        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map() };
+        row = { page: key, form: 0, whatsapp: 0, call: 0, email: 0, quote: 0, other: 0, total: 0, ctas: new Map(), services: new Map(), sources: new Map() };
         map.set(key, row);
       }
       return row;
+    };
+    const sourceFromReferrer = (ref: string | null | undefined): string => {
+      if (!ref) return "Direct / Unknown";
+      try {
+        const url = new URL(ref);
+        const host = url.hostname.replace(/^www\./, "");
+        if (host.includes("google.")) return "Google";
+        if (host.includes("bing.")) return "Bing";
+        if (host.includes("yahoo.")) return "Yahoo";
+        if (host.includes("duckduckgo.")) return "DuckDuckGo";
+        if (host.includes("facebook.") || host.includes("fb.")) return "Facebook";
+        if (host.includes("instagram.")) return "Instagram";
+        if (host.includes("linkedin.")) return "LinkedIn";
+        if (host.includes("tiktok.")) return "TikTok";
+        if (host.includes("youtube.")) return "YouTube";
+        if (host.includes("twitter.") || host.includes("x.com")) return "Twitter / X";
+        if (host.includes("whatsapp.") || host.includes("wa.me")) return "WhatsApp";
+        if (host.includes("t.co")) return "Twitter / X";
+        if (host.includes("chatgpt.") || host.includes("openai.")) return "ChatGPT";
+        if (host.includes("perplexity.")) return "Perplexity";
+        if (host.includes("gemini.") || host.includes("bard.")) return "Gemini";
+        if (host.includes("cypherdigital.lk")) return "Internal";
+        return host;
+      } catch {
+        return "Direct / Unknown";
+      }
     };
     const classify = (label: string): "form" | "whatsapp" | "call" | "email" | "quote" | "other" => {
       const s = label.toLowerCase();
@@ -212,6 +242,10 @@ export default function AdminInquiries() {
       row.total += 1;
       const key = placement ? `${ctaLabel} — ${placement}` : ctaLabel;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const svc = (i.service ?? "").trim() || "General";
+      row.services.set(svc, (row.services.get(svc) ?? 0) + 1);
+      const src = sourceFromReferrer((i.extra?.referrer as string) ?? null);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     for (const c of todaysCalls) {
       const row = ensure(c.source_path ?? "");
@@ -219,6 +253,8 @@ export default function AdminInquiries() {
       row.total += 1;
       const key = `Call Click — ${c.phone}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const src = sourceFromReferrer(c.referrer);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     for (const c of todaysCtas) {
       const row = ensure(c.source_path ?? "");
@@ -231,6 +267,8 @@ export default function AdminInquiries() {
       const label = c.cta_label?.trim() || niceType + " Click";
       const key = c.placement ? `${niceType}: ${label} — ${c.placement}` : `${niceType}: ${label}`;
       row.ctas.set(key, (row.ctas.get(key) ?? 0) + 1);
+      const src = sourceFromReferrer(c.referrer);
+      row.sources.set(src, (row.sources.get(src) ?? 0) + 1);
     }
     return Array.from(map.values()).sort((a, b) => b.total - a.total);
   }, [todaysInquiries, todaysCalls, todaysCtas]);
@@ -450,6 +488,8 @@ export default function AdminInquiries() {
                   <th className="px-4 py-3 font-semibold text-center">Call</th>
                   <th className="px-4 py-3 font-semibold text-center">Email</th>
                   <th className="px-4 py-3 font-semibold text-center">Quote</th>
+                  <th className="px-4 py-3 font-semibold">Top Product / Service</th>
+                  <th className="px-4 py-3 font-semibold">Traffic Source</th>
                   <th className="px-4 py-3 font-semibold">CTAs (placement × count)</th>
                 </tr>
               </thead>
@@ -491,6 +531,40 @@ export default function AdminInquiries() {
                     <td className="px-4 py-3 text-center">{row.call || <span className="text-muted-foreground">—</span>}</td>
                     <td className="px-4 py-3 text-center">{row.email || <span className="text-muted-foreground">—</span>}</td>
                     <td className="px-4 py-3 text-center">{row.quote || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      {row.services.size === 0 ? (
+                        <span className="text-muted-foreground text-xs">—</span>
+                      ) : (
+                        <div className="flex flex-wrap gap-1">
+                          {Array.from(row.services.entries())
+                            .sort((a, b) => b[1] - a[1])
+                            .slice(0, 3)
+                            .map(([svc, count]) => (
+                              <span key={svc} className="inline-flex items-center gap-1 rounded-md bg-primary/10 text-primary px-2 py-0.5 text-xs">
+                                <span>{svc}</span>
+                                <span className="opacity-70">× {count}</span>
+                              </span>
+                            ))}
+                        </div>
+                      )}
+                    </td>
+                    <td className="px-4 py-3">
+                      {row.sources.size === 0 ? (
+                        <span className="text-muted-foreground text-xs">—</span>
+                      ) : (
+                        <div className="flex flex-wrap gap-1">
+                          {Array.from(row.sources.entries())
+                            .sort((a, b) => b[1] - a[1])
+                            .slice(0, 3)
+                            .map(([src, count]) => (
+                              <span key={src} className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs">
+                                <span>{src}</span>
+                                <span className="text-muted-foreground">× {count}</span>
+                              </span>
+                            ))}
+                        </div>
+                      )}
+                    </td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-1.5">
                         {Array.from(row.ctas.entries()).map(([label, count]) => (
