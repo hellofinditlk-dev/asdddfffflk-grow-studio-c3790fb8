@@ -28,8 +28,12 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
         phone: form.phone.trim(),
         message: form.message.trim() || null,
         service: service || "General Inquiry",
-        source_path: typeof window !== "undefined" ? window.location.pathname : null,
-        extra: ref ? { referrer: ref } : null,
+        source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
+        extra: {
+          cta: "WhatsApp Message Form",
+          placement: service || "General Inquiry",
+          ...(ref ? { referrer: ref } : {}),
+        },
       });
     } catch (err) {
       console.error("Failed to save inquiry", err);

@@ -31,6 +31,8 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
       .forEach((f) => {
         extra[f.placeholder.replace(" *", "")] = form[f.name];
       });
+    extra.cta = "WhatsApp Message Form";
+    extra.placement = serviceName;
     const ref = typeof document !== "undefined" ? document.referrer || "" : "";
     if (ref) extra.referrer = ref;
 
@@ -41,7 +43,7 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
         phone: form.phone.trim(),
         message: form.message?.trim() || null,
         service: serviceName,
-        source_path: typeof window !== "undefined" ? window.location.pathname : null,
+        source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
         extra: Object.keys(extra).length ? extra : null,
       });
     } catch (err) {
