@@ -496,6 +496,66 @@ export default function AdminInquiries() {
       <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
         <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
           <div>
+            <h2 className="text-lg font-semibold">Traffic Sources — {rangeLabel}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Where visitors came from before inquiring or clicking a CTA — ChatGPT, Google, Facebook, Perplexity, etc.
+            </p>
+          </div>
+        </div>
+        {sourceSummary.length === 0 ? (
+          <div className="px-5 py-10 text-center text-sm text-muted-foreground">
+            No traffic source data recorded in {rangeLabel.toLowerCase()} yet.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Source</th>
+                  <th className="px-4 py-3 font-semibold text-center">Total Actions</th>
+                  <th className="px-4 py-3 font-semibold text-center">Form Inquiries</th>
+                  <th className="px-4 py-3 font-semibold text-center">WhatsApp</th>
+                  <th className="px-4 py-3 font-semibold text-center">Call</th>
+                  <th className="px-4 py-3 font-semibold">Top Landing Pages</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sourceSummary.map((s) => (
+                  <tr key={s.source} className="border-t border-border align-top">
+                    <td className="px-4 py-3 font-medium">{s.source}</td>
+                    <td className="px-4 py-3 text-center font-semibold">{s.total}</td>
+                    <td className="px-4 py-3 text-center">{s.inquiries || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{s.whatsapp || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{s.call || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-wrap gap-1">
+                        {Array.from(s.pages.entries())
+                          .sort((a, b) => b[1] - a[1])
+                          .slice(0, 4)
+                          .map(([page, count]) => (
+                            <button
+                              key={page}
+                              type="button"
+                              onClick={() => setDetailPage(page)}
+                              className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs hover:bg-primary/10 hover:text-primary"
+                            >
+                              <span className="max-w-[220px] truncate">{page === "(unknown)" ? "(unknown)" : page}</span>
+                              <span className="text-muted-foreground">× {count}</span>
+                            </button>
+                          ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+
+      <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
+          <div>
             <h2 className="text-lg font-semibold">Inquiries by Page — {rangeLabel}</h2>
             <p className="text-xs text-muted-foreground mt-0.5">
               Which pages are driving demand and which CTAs visitors are clicking on each page.
