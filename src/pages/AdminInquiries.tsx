@@ -290,6 +290,56 @@ export default function AdminInquiries() {
     );
   }, [todaysByPage]);
 
+  const vacancySummary = useMemo(() => {
+    const titleBySlug = new Map(vacancies.map((v) => [v.slug, v.shortTitle || v.title]));
+    const map = new Map<string, { slug: string; title: string; whatsapp: number; inquiry: number; call: number; total: number; lastAt: string | null }>();
+    const slugFromPath = (p: string | null) => {
+      if (!p) return null;
+      const clean = p.split("?")[0].split("#")[0];
+      const m = clean.match(/^\/careers\/([^/]+)\/?$/);
+      return m ? m[1] : null;
+    };
+    const bump = (slug: string, kind: "whatsapp" | "inquiry" | "call", at: string) => {
+      const row = map.get(slug) ?? {
+        slug,
+        title: titleBySlug.get(slug) ?? slug,
+        whatsapp: 0,
+        inquiry: 0,
+        call: 0,
+        total: 0,
+        lastAt: null as string | null,
+      };
+      row[kind] += 1;
+      row.total += 1;
+      if (!row.lastAt || new Date(at) > new Date(row.lastAt)) row.lastAt = at;
+      map.set(slug, row);
+    };
+    for (const c of todaysCtas) {
+      const slug = slugFromPath(c.source_path);
+      if (!slug) continue;
+      if (c.cta_type === "whatsapp") bump(slug, "whatsapp", c.created_at);
+    }
+    for (const c of todaysCalls) {
+      const slug = slugFromPath(c.source_path);
+      if (!slug) continue;
+      bump(slug, "call", c.created_at);
+    }
+    for (const i of todaysInquiries) {
+      const slug = slugFromPath(i.source_path);
+      if (!slug) continue;
+      bump(slug, "inquiry", i.created_at);
+    }
+    return Array.from(map.values()).sort((a, b) => b.total - a.total);
+  }, [todaysCtas, todaysCalls, todaysInquiries]);
+
+  const vacancyTotals = useMemo(
+    () => vacancySummary.reduce(
+      (a, r) => ({ whatsapp: a.whatsapp + r.whatsapp, inquiry: a.inquiry + r.inquiry, call: a.call + r.call, total: a.total + r.total }),
+      { whatsapp: 0, inquiry: 0, call: 0, total: 0 }
+    ),
+    [vacancySummary]
+  );
+
   const sourceSummary = useMemo(() => {
     const totals = new Map<string, { total: number; inquiries: number; whatsapp: number; call: number; pages: Map<string, number> }>();
     const bump = (src: string, page: string, kind: "inquiry" | "whatsapp" | "call" | "other") => {
