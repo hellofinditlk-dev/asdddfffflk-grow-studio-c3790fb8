@@ -37,7 +37,7 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
     if (ref) extra.referrer = ref;
 
     try {
-      await supabase.from("inquiries").insert({
+      const { error } = await supabase.from("inquiries").insert({
         name: form.name.trim(),
         email: form.email?.trim() || null,
         phone: form.phone.trim(),
@@ -46,6 +46,7 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
         source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
         extra: Object.keys(extra).length ? extra : null,
       });
+      if (error) console.error("Failed to save inquiry", error);
     } catch (err) {
       console.error("Failed to save inquiry", err);
     }

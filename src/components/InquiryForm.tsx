@@ -22,7 +22,7 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
 
     try {
       const ref = typeof document !== "undefined" ? document.referrer || null : null;
-      await supabase.from("inquiries").insert({
+      const { error } = await supabase.from("inquiries").insert({
         name: form.name.trim(),
         email: form.email.trim() || null,
         phone: form.phone.trim(),
@@ -35,6 +35,7 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
           ...(ref ? { referrer: ref } : {}),
         },
       });
+      if (error) console.error("Failed to save inquiry", error);
     } catch (err) {
       console.error("Failed to save inquiry", err);
     }
