@@ -289,6 +289,66 @@ export default function AdminInquiries() {
     );
   }, [todaysByPage]);
 
+  const sourceSummary = useMemo(() => {
+    const totals = new Map<string, { total: number; inquiries: number; whatsapp: number; call: number; pages: Map<string, number> }>();
+    const bump = (src: string, page: string, kind: "inquiry" | "whatsapp" | "call" | "other") => {
+      let row = totals.get(src);
+      if (!row) {
+        row = { total: 0, inquiries: 0, whatsapp: 0, call: 0, pages: new Map() };
+        totals.set(src, row);
+      }
+      row.total += 1;
+      if (kind === "inquiry") row.inquiries += 1;
+      else if (kind === "whatsapp") row.whatsapp += 1;
+      else if (kind === "call") row.call += 1;
+      const p = page || "(unknown)";
+      row.pages.set(p, (row.pages.get(p) ?? 0) + 1);
+    };
+    for (const row of todaysByPage) {
+      // walk row.sources but we lost the kind split — rebuild from raw lists
+    }
+    // Rebuild directly from raw lists for accuracy
+    const fromRef = (ref: string | null | undefined): string => {
+      if (!ref) return "Direct / Unknown";
+      try {
+        const host = new URL(ref).hostname.replace(/^www\./, "");
+        if (host.includes("google.")) return "Google";
+        if (host.includes("bing.")) return "Bing";
+        if (host.includes("yahoo.")) return "Yahoo";
+        if (host.includes("duckduckgo.")) return "DuckDuckGo";
+        if (host.includes("facebook.") || host.includes("fb.")) return "Facebook";
+        if (host.includes("instagram.")) return "Instagram";
+        if (host.includes("linkedin.")) return "LinkedIn";
+        if (host.includes("tiktok.")) return "TikTok";
+        if (host.includes("youtube.")) return "YouTube";
+        if (host.includes("twitter.") || host.includes("x.com") || host.includes("t.co")) return "Twitter / X";
+        if (host.includes("whatsapp.") || host.includes("wa.me")) return "WhatsApp";
+        if (host.includes("chatgpt.") || host.includes("openai.")) return "ChatGPT";
+        if (host.includes("perplexity.")) return "Perplexity";
+        if (host.includes("gemini.") || host.includes("bard.")) return "Gemini";
+        if (host.includes("claude.")) return "Claude";
+        if (host.includes("copilot.microsoft") || host.includes("bing.com/chat")) return "Copilot";
+        if (host.includes("cypherdigital.lk")) return "Internal";
+        return host;
+      } catch {
+        return "Direct / Unknown";
+      }
+    };
+    for (const i of todaysInquiries) {
+      bump(fromRef((i.extra?.referrer as string) ?? null), i.source_path ?? "", "inquiry");
+    }
+    for (const c of todaysCalls) {
+      bump(fromRef(c.referrer), c.source_path ?? "", "call");
+    }
+    for (const c of todaysCtas) {
+      const kind = c.cta_type === "whatsapp" ? "whatsapp" : c.cta_type === "call" ? "call" : "other";
+      bump(fromRef(c.referrer), c.source_path ?? "", kind);
+    }
+    return Array.from(totals.entries())
+      .map(([source, v]) => ({ source, ...v }))
+      .sort((a, b) => b.total - a.total);
+  }, [todaysByPage, todaysInquiries, todaysCalls, todaysCtas]);
+
   const detail = useMemo(() => {
     if (!detailPage) return null;
     const samePage = (p: string | null) => (p ?? "(unknown)") === detailPage;
@@ -431,6 +491,66 @@ export default function AdminInquiries() {
           <p className="text-xs text-muted-foreground uppercase tracking-wider">This Month</p>
           <p className="text-2xl font-bold mt-1">{thisMonth}</p>
         </div>
+      </div>
+
+      <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-b border-border bg-muted/30">
+          <div>
+            <h2 className="text-lg font-semibold">Traffic Sources — {rangeLabel}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Where visitors came from before inquiring or clicking a CTA — ChatGPT, Google, Facebook, Perplexity, etc.
+            </p>
+          </div>
+        </div>
+        {sourceSummary.length === 0 ? (
+          <div className="px-5 py-10 text-center text-sm text-muted-foreground">
+            No traffic source data recorded in {rangeLabel.toLowerCase()} yet.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/20 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-semibold">Source</th>
+                  <th className="px-4 py-3 font-semibold text-center">Total Actions</th>
+                  <th className="px-4 py-3 font-semibold text-center">Form Inquiries</th>
+                  <th className="px-4 py-3 font-semibold text-center">WhatsApp</th>
+                  <th className="px-4 py-3 font-semibold text-center">Call</th>
+                  <th className="px-4 py-3 font-semibold">Top Landing Pages</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sourceSummary.map((s) => (
+                  <tr key={s.source} className="border-t border-border align-top">
+                    <td className="px-4 py-3 font-medium">{s.source}</td>
+                    <td className="px-4 py-3 text-center font-semibold">{s.total}</td>
+                    <td className="px-4 py-3 text-center">{s.inquiries || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{s.whatsapp || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{s.call || <span className="text-muted-foreground">—</span>}</td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-wrap gap-1">
+                        {Array.from(s.pages.entries())
+                          .sort((a, b) => b[1] - a[1])
+                          .slice(0, 4)
+                          .map(([page, count]) => (
+                            <button
+                              key={page}
+                              type="button"
+                              onClick={() => setDetailPage(page)}
+                              className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-xs hover:bg-primary/10 hover:text-primary"
+                            >
+                              <span className="max-w-[220px] truncate">{page === "(unknown)" ? "(unknown)" : page}</span>
+                              <span className="text-muted-foreground">× {count}</span>
+                            </button>
+                          ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       <div className="rounded-xl border border-border bg-card mb-8 overflow-hidden">

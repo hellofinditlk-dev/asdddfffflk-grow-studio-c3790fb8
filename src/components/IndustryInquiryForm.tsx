@@ -31,6 +31,8 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
       .forEach((f) => {
         extra[f.placeholder.replace(" *", "")] = form[f.name];
       });
+    const ref = typeof document !== "undefined" ? document.referrer || "" : "";
+    if (ref) extra.referrer = ref;
 
     try {
       await supabase.from("inquiries").insert({
