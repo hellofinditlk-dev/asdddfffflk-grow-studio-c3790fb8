@@ -24,10 +24,14 @@ const BlogPost109 = () => (
             <p>If you are planning a campaign in 2025, the first question is always the same — what are the current <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising rates Sri Lanka</Link> brands actually pay? This guide gives you a channel-by-channel breakdown, a prime time vs off-peak comparison, how rates are negotiated, and what TVC production costs to budget for.</p>
             <p>All rates below are indicative 2025 market ranges for a 30-second TVC. Final rates depend on volume, season (Avurudu, Vesak, Christmas inflate inventory), programme selection and your agency&apos;s buying relationships.</p>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose text-center">
               <p className="text-foreground font-semibold mb-2">Get a Free TV Media Plan</p>
               <p className="text-sm text-muted-foreground mb-3">We&apos;ll send you a 2025 channel mix, spot count and total budget within 24 hours.</p>
-              <Link to="/tv-advertising-sri-lanka" className="inline-block bg-[#f97316] text-white px-5 py-2 rounded-md font-semibold text-sm hover:opacity-90">Get a Free TV Media Plan →</Link>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20TV%20media%20plan%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a Free TV Media Plan on WhatsApp
+                </a>
+              </Button>
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">TV Advertising Rates in Sri Lanka — 2025 Channel Rate Card</h2>
