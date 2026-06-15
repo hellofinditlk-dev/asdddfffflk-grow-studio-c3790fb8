@@ -60,6 +60,16 @@ const BlogPost109 = () => (
             </div>
             <p>For the full channel guide — including LMRB ratings, ad formats and prime-time slot strategy — see our complete <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising in Sri Lanka</Link> guide.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Need Exact TV Ad Rates?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get real-time rate cards for Hiru TV, Sirasa, Derana &amp; more — with 20–40% agency negotiation discounts.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20exact%20TV%20advertising%20rates%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get Exact Rates on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Prime Time vs Off-Peak TV Advertising Rates in Sri Lanka</h2>
             <p>Prime time in Sri Lanka runs from <strong className="text-foreground">7:00 PM to 10:30 PM</strong> — peak family viewing, peak drama and peak news. A 30-second spot in prime time typically costs <strong className="text-foreground">2.5 to 4 times</strong> more than the same spot in off-peak, but reaches a dramatically larger audience.</p>
             <div className="overflow-x-auto not-prose my-6">
