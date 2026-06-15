@@ -15,14 +15,9 @@ const CtaClickTracker = () => {
     const prepareNavigation = (anchor: HTMLAnchorElement, href: string) => {
       const target = anchor.getAttribute("target");
       if (target === "_blank") {
-        const tab = window.open("about:blank", "_blank");
         return () => {
-          if (tab) {
-            tab.opener = null;
-            tab.location.href = href;
-            return;
-          }
-          window.location.href = href;
+          const tab = window.open(href, "_blank");
+          if (tab) tab.opener = null;
         };
       }
       return () => {
