@@ -3,7 +3,7 @@ import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
-import { Phone, Newspaper } from "lucide-react";
+import { Phone, Newspaper, MessageCircle } from "lucide-react";
 
 type Paper = { name: string; owner: string; freq: string; top?: boolean; lang: "English" | "Sinhala" | "Tamil"; desc: string; circ: string };
 
