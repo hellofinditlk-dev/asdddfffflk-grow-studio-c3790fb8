@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
 
 const BlogPost109 = () => (
   <>
