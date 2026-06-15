@@ -115,6 +115,16 @@ const BlogPost109 = () => (
             </ul>
             <p>If you don&apos;t have an in-house media buyer, a specialist <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying agency in Sri Lanka</Link> typically more than pays for itself through negotiated rates alone.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Get a Free Media Plan</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We&apos;ll negotiate 20–40% below rate card and build a channel mix that maximises your budget.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20TV%20media%20plan%20with%20negotiated%20rates" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a Free Media Plan on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">TVC Production Cost Breakdown</h2>
             <p>Airtime is only half your budget. You also need a broadcast-ready commercial. 2025 production costs in Sri Lanka break down like this:</p>
             <div className="overflow-x-auto not-prose my-6">
