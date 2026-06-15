@@ -342,6 +342,16 @@ const NewspaperAdvertising = () => {
           <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4 text-sm">
             <strong>💰 Rate Card Tip:</strong> Front page positions, back page, and Sunday editions command a <strong>30–100% premium</strong> over inside weekday rates. Full-colour ads cost more than B&W. A media buying agency can typically negotiate 20–35% below rate cards on multi-week campaigns.
           </div>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Need Exact Newspaper Ad Rates?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get a custom media plan with real-time rate cards, position availability, and 20–35% agency discounts for your campaign.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20exact%20newspaper%20advertising%20rates%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Get Exact Rates on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
