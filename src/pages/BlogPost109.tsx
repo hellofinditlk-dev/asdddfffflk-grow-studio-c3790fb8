@@ -94,6 +94,16 @@ const BlogPost109 = () => (
             </div>
             <p>A smart media plan rarely uses prime time alone. The most cost-efficient schedules mix 30–40% prime time spots for reach with 60–70% pre-prime and daytime spots for frequency — which is exactly what a media buyer optimises using LMRB data.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Not Sure Which Time Slot to Book?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We&apos;ll analyse your audience and recommend the ideal daypart mix for maximum reach and ROI.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20TV%20time%20slots%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Ask Us on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How TV Advertising Rates Are Negotiated in Sri Lanka</h2>
             <p>Published rate cards are a starting point, not the price you actually pay. Real <strong className="text-foreground">TV advertising rates Sri Lanka</strong> brands transact at depend on five factors:</p>
             <ul className="list-disc pl-6 space-y-2">
