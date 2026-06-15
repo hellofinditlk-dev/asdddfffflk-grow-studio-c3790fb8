@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
 
 const BlogPost109 = () => (
   <>
@@ -22,10 +24,14 @@ const BlogPost109 = () => (
             <p>If you are planning a campaign in 2025, the first question is always the same — what are the current <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising rates Sri Lanka</Link> brands actually pay? This guide gives you a channel-by-channel breakdown, a prime time vs off-peak comparison, how rates are negotiated, and what TVC production costs to budget for.</p>
             <p>All rates below are indicative 2025 market ranges for a 30-second TVC. Final rates depend on volume, season (Avurudu, Vesak, Christmas inflate inventory), programme selection and your agency&apos;s buying relationships.</p>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose text-center">
               <p className="text-foreground font-semibold mb-2">Get a Free TV Media Plan</p>
               <p className="text-sm text-muted-foreground mb-3">We&apos;ll send you a 2025 channel mix, spot count and total budget within 24 hours.</p>
-              <Link to="/tv-advertising-sri-lanka" className="inline-block bg-[#f97316] text-white px-5 py-2 rounded-md font-semibold text-sm hover:opacity-90">Get a Free TV Media Plan →</Link>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20TV%20media%20plan%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a Free TV Media Plan on WhatsApp
+                </a>
+              </Button>
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">TV Advertising Rates in Sri Lanka — 2025 Channel Rate Card</h2>
@@ -54,6 +60,16 @@ const BlogPost109 = () => (
             </div>
             <p>For the full channel guide — including LMRB ratings, ad formats and prime-time slot strategy — see our complete <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising in Sri Lanka</Link> guide.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Need Exact TV Ad Rates?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get real-time rate cards for Hiru TV, Sirasa, Derana &amp; more — with 20–40% agency negotiation discounts.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20exact%20TV%20advertising%20rates%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get Exact Rates on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Prime Time vs Off-Peak TV Advertising Rates in Sri Lanka</h2>
             <p>Prime time in Sri Lanka runs from <strong className="text-foreground">7:00 PM to 10:30 PM</strong> — peak family viewing, peak drama and peak news. A 30-second spot in prime time typically costs <strong className="text-foreground">2.5 to 4 times</strong> more than the same spot in off-peak, but reaches a dramatically larger audience.</p>
             <div className="overflow-x-auto not-prose my-6">
@@ -78,6 +94,16 @@ const BlogPost109 = () => (
             </div>
             <p>A smart media plan rarely uses prime time alone. The most cost-efficient schedules mix 30–40% prime time spots for reach with 60–70% pre-prime and daytime spots for frequency — which is exactly what a media buyer optimises using LMRB data.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Not Sure Which Time Slot to Book?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We&apos;ll analyse your audience and recommend the ideal daypart mix for maximum reach and ROI.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20TV%20time%20slots%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Ask Us on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How TV Advertising Rates Are Negotiated in Sri Lanka</h2>
             <p>Published rate cards are a starting point, not the price you actually pay. Real <strong className="text-foreground">TV advertising rates Sri Lanka</strong> brands transact at depend on five factors:</p>
             <ul className="list-disc pl-6 space-y-2">
@@ -88,6 +114,16 @@ const BlogPost109 = () => (
               <li><strong className="text-foreground">Spot length</strong> — 15-second spots are roughly 60% of the 30-second rate; 45-second spots are roughly 150%.</li>
             </ul>
             <p>If you don&apos;t have an in-house media buyer, a specialist <Link to="/media-buying-agencies-sri-lanka" className="text-primary font-semibold hover:underline">media buying agency in Sri Lanka</Link> typically more than pays for itself through negotiated rates alone.</p>
+
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Get a Free Media Plan</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We&apos;ll negotiate 20–40% below rate card and build a channel mix that maximises your budget.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20TV%20media%20plan%20with%20negotiated%20rates" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a Free Media Plan on WhatsApp
+                </a>
+              </Button>
+            </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">TVC Production Cost Breakdown</h2>
             <p>Airtime is only half your budget. You also need a broadcast-ready commercial. 2025 production costs in Sri Lanka break down like this:</p>
@@ -109,6 +145,16 @@ const BlogPost109 = () => (
             </div>
             <p>You can produce the TVC in-house with a digital agency that handles <Link to="/video-production-sri-lanka" className="text-primary font-semibold hover:underline">video production in Sri Lanka</Link>, or use a specialist production house. Either way, the same TVC airs on every channel — so production is a one-time cost spread across your entire campaign.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Need a TVC Produced?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">From script to screen — we handle concept, shoot, post-production and clearance for broadcast.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20TVC%20produced%20for%20my%20TV%20advertising%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a TVC Quote on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Get the Best TV Advertising Rates in Sri Lanka</h2>
             <ol className="list-decimal pl-6 space-y-2">
               <li><strong className="text-foreground">Commit to volume.</strong> Negotiate a 4–8 week schedule rather than a one-week burst.</li>
@@ -124,8 +170,14 @@ const BlogPost109 = () => (
             <p>Cypher Digital is a Colombo-based agency offering end-to-end TV advertising services — media planning using LMRB data, negotiated airtime across Hiru TV, Sirasa, Derana, Swarnavahini, ITN and Shakthi TV, in-house TVC production, and integration with Facebook Ads and Google Ads so your TV spend converts. For agency comparison and selection criteria, read our guide to <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link>.</p>
             <p>📞 +94 70 177 2626 | 📍 Colombo, Sri Lanka</p>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
-              <Link to="/tv-advertising-sri-lanka" className="inline-block bg-[#f97316] text-white px-5 py-2 rounded-md font-semibold text-sm hover:opacity-90">Get a Free TV Media Plan →</Link>
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Plan My TV Campaign</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Channel mix, spot scheduling, TVC production and digital integration — all in one package.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20plan%20my%20TV%20advertising%20campaign%20in%20Sri%20Lanka" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Plan My Campaign on WhatsApp
+                </a>
+              </Button>
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Frequently Asked Questions</h2>
