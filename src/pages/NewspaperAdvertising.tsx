@@ -430,6 +430,16 @@ const NewspaperAdvertising = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">{d}</p>
             </div>
           ))}
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Want Better Results from Your Print Ads?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get a free creative review and media plan — we design, book and track your newspaper campaign from start to finish.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20creative%20review%20and%20media%20plan%20for%20newspaper%20advertising" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Get a Free Media Plan
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
