@@ -473,6 +473,16 @@ const NewspaperAdvertising = () => {
             </table>
           </div>
           <p className="text-sm text-muted-foreground mt-6">Pair print with <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services in Sri Lanka</Link> for a fully integrated campaign.</p>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Get the Best of Both — Print + Digital</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We design integrated campaigns that use newspaper ads for credibility and digital ads for leads. Chat with our team today.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20an%20integrated%20print%20and%20digital%20campaign%20plan" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Plan My Campaign on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
