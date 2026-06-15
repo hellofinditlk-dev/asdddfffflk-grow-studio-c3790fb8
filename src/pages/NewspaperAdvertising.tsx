@@ -405,6 +405,16 @@ const NewspaperAdvertising = () => {
           <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4 text-sm">
             <strong>📅 Timing Tip:</strong> Peak newspaper advertising periods in Sri Lanka are <strong>January–February</strong> (new year, recruitment), <strong>March–April</strong> (Avurudu), <strong>May</strong> (Vesak), and <strong>November–December</strong> (Christmas and year-end). Book <strong>2–3 weeks in advance</strong> — prime positions sell out fast.
           </div>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Not Sure Which Newspaper to Choose?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Our media team will match your audience, budget and goals to the right publications — free consultation.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20newspaper%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Ask Us on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
