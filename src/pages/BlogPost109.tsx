@@ -170,8 +170,14 @@ const BlogPost109 = () => (
             <p>Cypher Digital is a Colombo-based agency offering end-to-end TV advertising services — media planning using LMRB data, negotiated airtime across Hiru TV, Sirasa, Derana, Swarnavahini, ITN and Shakthi TV, in-house TVC production, and integration with Facebook Ads and Google Ads so your TV spend converts. For agency comparison and selection criteria, read our guide to <Link to="/blog/tv-advertising-companies-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link>.</p>
             <p>📞 +94 70 177 2626 | 📍 Colombo, Sri Lanka</p>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose">
-              <Link to="/tv-advertising-sri-lanka" className="inline-block bg-[#f97316] text-white px-5 py-2 rounded-md font-semibold text-sm hover:opacity-90">Get a Free TV Media Plan →</Link>
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Plan My TV Campaign</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Channel mix, spot scheduling, TVC production and digital integration — all in one package.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20plan%20my%20TV%20advertising%20campaign%20in%20Sri%20Lanka" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Plan My Campaign on WhatsApp
+                </a>
+              </Button>
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Frequently Asked Questions</h2>
