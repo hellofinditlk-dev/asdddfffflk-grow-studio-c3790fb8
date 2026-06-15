@@ -3,7 +3,7 @@ import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
-import { Phone, Newspaper } from "lucide-react";
+import { Phone, Newspaper, MessageCircle } from "lucide-react";
 
 type Paper = { name: string; owner: string; freq: string; top?: boolean; lang: "English" | "Sinhala" | "Tamil"; desc: string; circ: string };
 
@@ -342,6 +342,16 @@ const NewspaperAdvertising = () => {
           <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4 text-sm">
             <strong>💰 Rate Card Tip:</strong> Front page positions, back page, and Sunday editions command a <strong>30–100% premium</strong> over inside weekday rates. Full-colour ads cost more than B&W. A media buying agency can typically negotiate 20–35% below rate cards on multi-week campaigns.
           </div>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Need Exact Newspaper Ad Rates?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get a custom media plan with real-time rate cards, position availability, and 20–35% agency discounts for your campaign.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20exact%20newspaper%20advertising%20rates%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Get Exact Rates on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -395,6 +405,16 @@ const NewspaperAdvertising = () => {
           <div className="rounded-lg border-l-4 border-primary bg-primary/5 p-4 text-sm">
             <strong>📅 Timing Tip:</strong> Peak newspaper advertising periods in Sri Lanka are <strong>January–February</strong> (new year, recruitment), <strong>March–April</strong> (Avurudu), <strong>May</strong> (Vesak), and <strong>November–December</strong> (Christmas and year-end). Book <strong>2–3 weeks in advance</strong> — prime positions sell out fast.
           </div>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Not Sure Which Newspaper to Choose?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Our media team will match your audience, budget and goals to the right publications — free consultation.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20newspaper%20for%20my%20campaign" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Ask Us on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -410,6 +430,16 @@ const NewspaperAdvertising = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">{d}</p>
             </div>
           ))}
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Want Better Results from Your Print Ads?</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">Get a free creative review and media plan — we design, book and track your newspaper campaign from start to finish.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20creative%20review%20and%20media%20plan%20for%20newspaper%20advertising" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Get a Free Media Plan
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -443,6 +473,16 @@ const NewspaperAdvertising = () => {
             </table>
           </div>
           <p className="text-sm text-muted-foreground mt-6">Pair print with <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO services in Sri Lanka</Link> for a fully integrated campaign.</p>
+
+          <div className="mt-10 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center">
+            <h3 className="font-heading text-xl font-bold mb-2">Get the Best of Both — Print + Digital</h3>
+            <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">We design integrated campaigns that use newspaper ads for credibility and digital ads for leads. Chat with our team today.</p>
+            <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20an%20integrated%20print%20and%20digital%20campaign%20plan" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" /> Plan My Campaign on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
