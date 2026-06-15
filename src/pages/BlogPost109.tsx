@@ -145,6 +145,16 @@ const BlogPost109 = () => (
             </div>
             <p>You can produce the TVC in-house with a digital agency that handles <Link to="/video-production-sri-lanka" className="text-primary font-semibold hover:underline">video production in Sri Lanka</Link>, or use a specialist production house. Either way, the same TVC airs on every channel — so production is a one-time cost spread across your entire campaign.</p>
 
+            <div className="mt-6 p-6 rounded-xl bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 text-center not-prose">
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">Need a TVC Produced?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">From script to screen — we handle concept, shoot, post-production and clearance for broadcast.</p>
+              <Button asChild size="lg" className="!bg-orange-500 hover:!bg-orange-600 !text-white !border-0">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20TVC%20produced%20for%20my%20TV%20advertising%20campaign" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" /> Get a TVC Quote on WhatsApp
+                </a>
+              </Button>
+            </div>
+
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">How to Get the Best TV Advertising Rates in Sri Lanka</h2>
             <ol className="list-decimal pl-6 space-y-2">
               <li><strong className="text-foreground">Commit to volume.</strong> Negotiate a 4–8 week schedule rather than a one-week burst.</li>
