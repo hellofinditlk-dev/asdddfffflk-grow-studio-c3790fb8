@@ -15,27 +15,40 @@ const FIRST_SEGMENT: Record<string, string> = {
   "seo-services": "SEO",
   "search-engine-optimization": "SEO",
   "google-ads": "Google Ads",
+  "google-ads-sri-lanka": "Google Ads",
   "facebook-ads": "Facebook Ads",
+  "facebook-advertising": "Facebook Ads",
+  "facebook-ads-sri-lanka": "Facebook Ads",
   "instagram-marketing": "Instagram Marketing",
   "tiktok-marketing": "TikTok Marketing",
+  "tiktok-marketing-sri-lanka": "TikTok Marketing",
   "linkedin-advertising": "LinkedIn Ads",
   "social-media-management": "Social Media",
   "social-media-management-sri-lanka": "Social Media",
   "influencer-marketing": "Influencer Marketing",
   "video-production": "Video Production",
+  "video-production-sri-lanka": "Video Production",
   "ai-video-production": "AI Video Production",
+  "ai-video-production-sri-lanka": "AI Video Production",
   "graphic-design": "Graphic Design",
+  "graphic-design-sri-lanka": "Graphic Design",
   "ai-visibility": "AI Visibility",
+  "ai-visibility-sri-lanka": "AI Visibility",
   "newspaper-advertising-sri-lanka": "Newspaper Advertising",
+  "newspaper-advertising": "Newspaper Advertising",
   "tv-advertising": "TV Advertising",
+  "tv-advertising-sri-lanka": "TV Advertising",
   "radio-advertising": "Radio Advertising",
+  "radio-advertising-sri-lanka": "Radio Advertising",
   "event-management": "Event Management",
   "corporate-event-management": "Event Management",
   "product-launch-events": "Event Management",
   "event-marketing": "Event Marketing",
   "wedding-planning": "Wedding Planning",
   "media-buying-agencies": "Media Buying",
+  "media-buying-sri-lanka": "Media Buying",
   "advertising-in-sri-lanka": "Advertising Pillar",
+  "advertising-sri-lanka": "Advertising Pillar",
 };
 
 export function serviceFromPath(rawPath: string | null | undefined): string {
@@ -56,6 +69,16 @@ export function serviceFromPath(rawPath: string | null | undefined): string {
   return seg
     .replace(/-/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// Return the canonical site URL that originally produced a given path.
+// Used so the admin dashboard can deep-link to the source page even when
+// multiple paths roll up to the same service name.
+export function urlFromPath(rawPath: string | null | undefined): string | null {
+  if (!rawPath) return null;
+  const clean = rawPath.split("?")[0].split("#")[0].replace(/\/+$/, "") || "/";
+  if (clean === "/" || clean.startsWith("/")) return clean;
+  return "/" + clean;
 }
 
 export function cleanPath(rawPath: string | null | undefined): string {

@@ -14,7 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl } from "@/lib/serviceFromPath";
+import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl, urlFromPath } from "@/lib/serviceFromPath";
 
 interface Inquiry {
   id: string;
@@ -131,21 +131,22 @@ export default function AdminInquiries() {
   const convRate = totalCtaClicks > 0 ? (totalLeads / totalCtaClicks) * 100 : 0;
 
   // ---------------- Service performance ----------------
-  type SvcRow = { service: string; views: number; ctaClicks: number; leads: number; conv: number };
+  type SvcRow = { service: string; url: string | null; views: number; ctaClicks: number; leads: number; conv: number };
   const serviceRows: SvcRow[] = useMemo(() => {
     const map = new Map<string, SvcRow>();
-    const ensure = (s: string) => {
+    const ensure = (s: string, path: string | null) => {
       let r = map.get(s);
       if (!r) {
-        r = { service: s, views: 0, ctaClicks: 0, leads: 0, conv: 0 };
+        r = { service: s, url: urlFromPath(path) ?? serviceUrl(s), views: 0, ctaClicks: 0, leads: 0, conv: 0 };
         map.set(s, r);
+      } else if (!r.url) {
+        r.url = urlFromPath(path) ?? serviceUrl(s);
       }
       return r;
     };
-    // views proxy = unique pages w/ activity isn't accurate; use total interactions as engagement signal
-    for (const c of periodCtas) ensure(serviceFromPath(c.source_path)).ctaClicks += 1;
-    for (const c of periodCalls) ensure(serviceFromPath(c.source_path)).ctaClicks += 1;
-    for (const i of periodInq) ensure(serviceFromPath(i.source_path)).leads += 1;
+    for (const c of periodCtas) ensure(serviceFromPath(c.source_path), c.source_path).ctaClicks += 1;
+    for (const c of periodCalls) ensure(serviceFromPath(c.source_path), c.source_path).ctaClicks += 1;
+    for (const i of periodInq) ensure(serviceFromPath(i.source_path), i.source_path).leads += 1;
     const arr = Array.from(map.values());
     arr.forEach((r) => {
       r.views = r.ctaClicks; // engagement proxy until pageview tracking exists
@@ -184,31 +185,33 @@ export default function AdminInquiries() {
   }, [ctaClicks, callClicks, inquiries]);
 
   // ---------------- CTA Heatmap (top services × CTA type) ----------------
-  type Heat = { service: string; whatsapp: number; call: number; form: number; total: number };
+  type Heat = { service: string; url: string | null; whatsapp: number; call: number; form: number; total: number };
   const ctaHeatmap: Heat[] = useMemo(() => {
     const map = new Map<string, Heat>();
-    const ensure = (s: string) => {
+    const ensure = (s: string, path: string | null) => {
       let r = map.get(s);
       if (!r) {
-        r = { service: s, whatsapp: 0, call: 0, form: 0, total: 0 };
+        r = { service: s, url: urlFromPath(path) ?? serviceUrl(s), whatsapp: 0, call: 0, form: 0, total: 0 };
         map.set(s, r);
+      } else if (!r.url) {
+        r.url = urlFromPath(path) ?? serviceUrl(s);
       }
       return r;
     };
     for (const c of periodCtas) {
-      const r = ensure(serviceFromPath(c.source_path));
+      const r = ensure(serviceFromPath(c.source_path), c.source_path);
       if (c.cta_type === "whatsapp") r.whatsapp += 1;
       else if (c.cta_type === "call") r.call += 1;
       else if (c.cta_type === "form") r.form += 1;
       r.total += 1;
     }
     for (const c of periodCalls) {
-      const r = ensure(serviceFromPath(c.source_path));
+      const r = ensure(serviceFromPath(c.source_path), c.source_path);
       r.call += 1;
       r.total += 1;
     }
     for (const i of periodInq) {
-      const r = ensure(serviceFromPath(i.source_path));
+      const r = ensure(serviceFromPath(i.source_path), i.source_path);
       r.form += 1;
       r.total += 1;
     }
@@ -372,12 +375,12 @@ export default function AdminInquiries() {
 
   const palette = ["hsl(var(--primary))", "#f97316", "#10b981", "#3b82f6"];
 
-  const ServiceLink = ({ name, className = "" }: { name: string; className?: string }) => {
-    const url = serviceUrl(name);
-    if (!url) return <span className={className}>{name}</span>;
+  const ServiceLink = ({ name, url, className = "" }: { name: string; url?: string | null; className?: string }) => {
+    const href = url ?? serviceUrl(name);
+    if (!href) return <span className={className}>{name}</span>;
     return (
       <Link
-        to={url}
+        to={href}
         target="_blank"
         rel="noopener noreferrer"
         className={`text-primary hover:underline ${className}`}
@@ -447,7 +450,7 @@ export default function AdminInquiries() {
         <DataTable
           headers={["Service", "Engagement", "CTA Clicks", "Leads", "Conv %"]}
           rows={serviceRows.slice(0, 12).map((r) => [
-            <ServiceLink name={r.service} className="font-medium" />,
+            <ServiceLink name={r.service} url={r.url} className="font-medium" />,
             fmtNum(r.views),
             fmtNum(r.ctaClicks),
             <span className="font-semibold text-foreground">{fmtNum(r.leads)}</span>,
@@ -485,7 +488,7 @@ export default function AdminInquiries() {
               <tbody>
                 {ctaHeatmap.map((r) => (
                   <tr key={r.service} className="border-t border-border">
-                    <td className="px-4 py-2 font-medium"><ServiceLink name={r.service} /></td>
+                    <td className="px-4 py-2 font-medium"><ServiceLink name={r.service} url={r.url} /></td>
                     <td className="px-2 py-2">
                       <div className={`mx-auto w-14 py-1 text-center rounded ${heatCell(r.whatsapp, heatMax)}`}>{r.whatsapp}</div>
                     </td>
@@ -611,7 +614,7 @@ export default function AdminInquiries() {
                   <td className="px-4 py-2">
                     <a className="text-primary hover:underline" href={`tel:${i.phone}`}>{i.phone}</a>
                   </td>
-                  <td className="px-4 py-2"><ServiceLink name={i.service || serviceFromPath(i.source_path)} /></td>
+                  <td className="px-4 py-2"><ServiceLink name={i.service || serviceFromPath(i.source_path)} url={urlFromPath(i.source_path)} /></td>
                   <td className="px-4 py-2 text-xs text-muted-foreground">
                     {i.source_path ? (
                       <a
