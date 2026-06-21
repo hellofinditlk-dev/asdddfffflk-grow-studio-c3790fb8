@@ -88,3 +88,38 @@ export function sourceFromReferrer(ref: string | null | undefined): string {
     return "Direct";
   }
 }
+
+// Map a clean service name back to its canonical page URL on the site.
+const SERVICE_URL: Record<string, string> = {
+  "Home": "/",
+  "About": "/about",
+  "Contact": "/contact",
+  "Blog": "/blog",
+  "Careers": "/careers",
+  "SEO": "/seo-services",
+  "Google Ads": "/google-ads",
+  "Facebook Ads": "/facebook-ads",
+  "Instagram Marketing": "/instagram-marketing",
+  "TikTok Marketing": "/tiktok-marketing",
+  "LinkedIn Ads": "/linkedin-advertising",
+  "Social Media": "/social-media-management-sri-lanka",
+  "Influencer Marketing": "/influencer-marketing",
+  "Video Production": "/video-production",
+  "AI Video Production": "/ai-video-production",
+  "Graphic Design": "/graphic-design",
+  "AI Visibility": "/ai-visibility",
+  "Newspaper Advertising": "/newspaper-advertising-sri-lanka",
+  "TV Advertising": "/tv-advertising",
+  "Radio Advertising": "/radio-advertising",
+  "Event Management": "/event-management",
+  "Event Marketing": "/event-marketing",
+  "Wedding Planning": "/wedding-planning",
+  "Media Buying": "/media-buying-agencies",
+  "Advertising Pillar": "/advertising-in-sri-lanka",
+  "Industries": "/",
+  "Admin": "/admin/inquiries",
+};
+
+export function serviceUrl(service: string): string | null {
+  return SERVICE_URL[service] ?? null;
+}
