@@ -14,7 +14,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { serviceFromPath, sourceFromReferrer, cleanPath } from "@/lib/serviceFromPath";
+import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl } from "@/lib/serviceFromPath";
 
 interface Inquiry {
   id: string;
@@ -372,6 +372,22 @@ export default function AdminInquiries() {
 
   const palette = ["hsl(var(--primary))", "#f97316", "#10b981", "#3b82f6"];
 
+  const ServiceLink = ({ name, className = "" }: { name: string; className?: string }) => {
+    const url = serviceUrl(name);
+    if (!url) return <span className={className}>{name}</span>;
+    return (
+      <Link
+        to={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`text-primary hover:underline ${className}`}
+        title={`Open ${name} page`}
+      >
+        {name}
+      </Link>
+    );
+  };
+
   return (
     <div className="container mx-auto px-4 pt-28 pb-12 max-w-7xl">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
@@ -431,7 +447,7 @@ export default function AdminInquiries() {
         <DataTable
           headers={["Service", "Engagement", "CTA Clicks", "Leads", "Conv %"]}
           rows={serviceRows.slice(0, 12).map((r) => [
-            r.service,
+            <ServiceLink name={r.service} className="font-medium" />,
             fmtNum(r.views),
             fmtNum(r.ctaClicks),
             <span className="font-semibold text-foreground">{fmtNum(r.leads)}</span>,
@@ -469,7 +485,7 @@ export default function AdminInquiries() {
               <tbody>
                 {ctaHeatmap.map((r) => (
                   <tr key={r.service} className="border-t border-border">
-                    <td className="px-4 py-2 font-medium">{r.service}</td>
+                    <td className="px-4 py-2 font-medium"><ServiceLink name={r.service} /></td>
                     <td className="px-2 py-2">
                       <div className={`mx-auto w-14 py-1 text-center rounded ${heatCell(r.whatsapp, heatMax)}`}>{r.whatsapp}</div>
                     </td>
@@ -595,8 +611,21 @@ export default function AdminInquiries() {
                   <td className="px-4 py-2">
                     <a className="text-primary hover:underline" href={`tel:${i.phone}`}>{i.phone}</a>
                   </td>
-                  <td className="px-4 py-2">{i.service || serviceFromPath(i.source_path)}</td>
-                  <td className="px-4 py-2 text-xs text-muted-foreground">{cleanPath(i.source_path)}</td>
+                  <td className="px-4 py-2"><ServiceLink name={i.service || serviceFromPath(i.source_path)} /></td>
+                  <td className="px-4 py-2 text-xs text-muted-foreground">
+                    {i.source_path ? (
+                      <a
+                        href={cleanPath(i.source_path)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline hover:text-primary"
+                      >
+                        {cleanPath(i.source_path)}
+                      </a>
+                    ) : (
+                      cleanPath(i.source_path)
+                    )}
+                  </td>
                 </tr>
               ))}
               {(inquiries ?? []).length === 0 && (
