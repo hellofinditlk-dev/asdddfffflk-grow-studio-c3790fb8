@@ -385,6 +385,18 @@ const VacancyPage = () => {
               <div className="font-semibold mb-1">About Cypher Digital</div>
               <p className="text-sm text-muted-foreground">Meet the team, our story, and the brands we work with.</p>
             </Link>
+            {vacancy.internalLinks?.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="block p-5 rounded-xl bg-card border border-border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center gap-2 text-primary font-semibold mb-1">
+                  {link.label} <ArrowRight className="w-4 h-4" />
+                </div>
+                {link.desc && <p className="text-sm text-muted-foreground">{link.desc}</p>}
+              </Link>
+            ))}
           </div>
           <div>
             <p className="text-sm font-semibold mb-3">Other open roles:</p>
