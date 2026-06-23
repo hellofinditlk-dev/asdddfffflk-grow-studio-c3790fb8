@@ -56,7 +56,7 @@ const VacancyPage = () => {
       },
     },
     applicantLocationRequirements: { "@type": "Country", name: "Sri Lanka" },
-    directApply: true,
+    directApply: false,
     url: canonical,
   };
 
