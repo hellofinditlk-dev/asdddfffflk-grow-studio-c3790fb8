@@ -1139,6 +1139,148 @@ const SCHEMA_MAP: Record<string, object[]> = {
 
 const escapeJsonLd = (json: string) => json.replaceAll("</", "<\\/");
 
+// ---- Google for Jobs: server-side JobPosting JSON-LD ----
+type JobPostingData = {
+  title: string;
+  description: string;
+  employmentType: string | string[];
+  datePosted: string;
+  salaryMin: number;
+  salaryMax: number;
+};
+
+const JOB_POSTINGS: Record<string, JobPostingData> = {
+  "graphic-designer-jobs-sri-lanka": {
+    title: "Graphic Designer",
+    description: "Design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo. Responsibilities include social media designs, ad creatives, logos, brand identity and marketing collateral. Requirements: proficiency in Adobe Photoshop and Illustrator, strong portfolio in social media or branding work, and ability to handle multiple deadlines.",
+    employmentType: ["FULL_TIME", "PART_TIME"],
+    datePosted: "2026-05-25",
+    salaryMin: 45000,
+    salaryMax: 150000,
+  },
+  "digital-marketing-jobs-sri-lanka": {
+    title: "Digital Marketing Specialist",
+    description: "Plan and run Meta, Google and TikTok ad campaigns that generate real leads and measurable ROI for 800+ Sri Lankan brands at Cypher Digital, Colombo. Manage Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns; own lead, ROAS and CPL performance. Requirements: 2+ years digital marketing experience, hands-on Meta Ads and Google Ads, analytical mindset.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-05-25",
+    salaryMin: 50000,
+    salaryMax: 200000,
+  },
+  "digital-marketing-executive-jobs-sri-lanka": {
+    title: "Digital Marketing Executive",
+    description: "Execute Meta, Google and TikTok ad campaigns, manage social pages and report on lead-generation results for 800+ Sri Lankan brands at Cypher Digital, Colombo. Requirements: 1+ years agency or in-house experience, hands-on Meta/Google Ads, strong reporting skills.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-05-25",
+    salaryMin: 45000,
+    salaryMax: 120000,
+  },
+  "video-editor-jobs-sri-lanka": {
+    title: "Video Editor",
+    description: "Edit scroll-stopping Reels, TikToks, YouTube ads and brand films for 800+ Sri Lankan brands at Cypher Digital, Colombo. Requirements: proficiency in Premiere Pro / DaVinci Resolve / CapCut, strong portfolio of short-form social video, motion graphics a plus.",
+    employmentType: ["FULL_TIME", "CONTRACTOR"],
+    datePosted: "2026-05-25",
+    salaryMin: 45000,
+    salaryMax: 150000,
+  },
+  "marketing-internship-sri-lanka": {
+    title: "Marketing Intern",
+    description: "Hands-on, paid marketing internship in Colombo working alongside our team on live client campaigns for 800+ Sri Lankan brands. Learn social media, paid ads, content and design from senior marketers. Requirements: undergraduate or recent graduate, strong communication, eagerness to learn.",
+    employmentType: "INTERN",
+    datePosted: "2026-05-25",
+    salaryMin: 20000,
+    salaryMax: 40000,
+  },
+  "social-media-jobs-sri-lanka": {
+    title: "Social Media Manager",
+    description: "Plan content, run Facebook, Instagram and TikTok pages and grow engaged audiences for 800+ Sri Lankan brands at Cypher Digital, Colombo. Requirements: 2+ years social media management, strong copywriting, comfort with analytics, basic design sense.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-05-25",
+    salaryMin: 45000,
+    salaryMax: 180000,
+  },
+  "digital-marketing-manager-jobs-sri-lanka": {
+    title: "Digital Marketing Manager",
+    description: "Lead a team of performance marketers, strategists and creatives running Meta, Google and TikTok campaigns for 800+ Sri Lankan brands at Cypher Digital, Colombo. Requirements: 4+ years digital marketing with 1+ year managing a team, strong performance marketing background, agency experience preferred.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-05-25",
+    salaryMin: 120000,
+    salaryMax: 200000,
+  },
+  "sales-jobs-in-sri-lanka": {
+    title: "Sales Executive",
+    description: "Sell high-demand digital products (social media management, Facebook Ads, Google Ads, SEO, video production) to Sri Lankan businesses. Base LKR 60,000 with ability to earn LKR 150,000+/month with commissions. Requirements: 1+ years B2B sales, strong communication in English and Sinhala, target-driven mindset.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-05-25",
+    salaryMin: 60000,
+    salaryMax: 150000,
+  },
+  "sales-manager-jobs-sri-lanka": {
+    title: "Sales Manager",
+    description: "Lead a high-performing sales team selling in-demand digital products to Sri Lankan businesses. Base LKR 80,000/month guaranteed with strong additional earnings for top performers. Requirements: 4+ years B2B sales with 1+ year managing a team, strong leadership and pipeline management skills.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-06-12",
+    salaryMin: 80000,
+    salaryMax: 250000,
+  },
+  "business-development-executive-jobs-sri-lanka": {
+    title: "Business Development Executive",
+    description: "Sell high-demand digital products (Facebook Ads, Google Ads, SEO, social media management, video production) to Sri Lankan businesses and build a rewarding career at Cypher Digital, Colombo. Requirements: 1+ years B2B sales or business development, strong communication, target-driven mindset.",
+    employmentType: "FULL_TIME",
+    datePosted: "2026-06-23",
+    salaryMin: 60000,
+    salaryMax: 150000,
+  },
+};
+
+const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
+  const canonical = `https://cypherdigital.lk/careers/${slug}`;
+  const validThrough = (() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 90);
+    return d.toISOString().slice(0, 10);
+  })();
+  return {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: job.title,
+    description: job.description,
+    datePosted: job.datePosted,
+    validThrough,
+    identifier: { "@type": "PropertyValue", name: "Cypher Digital", value: slug },
+    employmentType: job.employmentType,
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "Cypher Digital",
+      sameAs: "https://cypherdigital.lk",
+      logo: "https://cypherdigital.lk/assets/logo-DJLYsmc6.png",
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Kotte",
+        addressLocality: "Colombo",
+        addressRegion: "Western Province",
+        postalCode: "10100",
+        addressCountry: "LK",
+      },
+    },
+    applicantLocationRequirements: { "@type": "Country", name: "Sri Lanka" },
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: "LKR",
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: job.salaryMin,
+        maxValue: job.salaryMax,
+        unitText: "MONTH",
+      },
+    },
+    directApply: false,
+    url: canonical,
+  };
+};
+
 export default async function handler(request: Request, context: any) {
   try {
   const url = new URL(request.url);
@@ -1220,6 +1362,17 @@ export default async function handler(request: Request, context: any) {
       .map((s) => `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(s))}</script>`)
       .join("\n  ");
     modified = modified.replace("</head>", `  ${blocks}\n  </head>`);
+  }
+
+  // Inject JobPosting JSON-LD for Google for Jobs (server-side, no JS required)
+  const careersMatch = path.match(/^\/careers\/([a-z0-9-]+)$/);
+  if (careersMatch) {
+    const job = JOB_POSTINGS[careersMatch[1]];
+    if (job) {
+      const schema = buildJobPostingSchema(careersMatch[1], job);
+      const block = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(schema))}</script>`;
+      modified = modified.replace("</head>", `  ${block}\n  </head>`);
+    }
   }
 
   const headers = new Headers(response.headers);
