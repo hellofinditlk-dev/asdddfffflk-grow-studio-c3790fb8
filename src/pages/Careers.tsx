@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MessageCircle, Briefcase, Users, Sparkles, MapPin, ArrowRight, TrendingUp, Megaphone, Search, Video, Palette, BarChart3, Award, Building2, Rocket, Briefcase as BriefcaseIcon, Target } from "lucide-react";
+import { MessageCircle, Briefcase, Users, Sparkles, MapPin, ArrowRight, TrendingUp, Megaphone, Search, Video, Palette, BarChart3, Award, Building2, Rocket, Briefcase as BriefcaseIcon, Target, Handshake } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
@@ -30,6 +30,7 @@ const salaryRows = [
   { role: "Digital Marketing Specialist", level: "2–5 years experience", salary: "LKR 80,000 – 200,000", type: "Full-time" },
   { role: "Paid Ads Manager (Meta + Google)", level: "3–6 years experience", salary: "LKR 120,000 – 220,000", type: "Full-time" },
   { role: "Digital Marketing Manager", level: "5+ years experience", salary: "LKR 150,000 – 280,000", type: "Full-time" },
+  { role: "Business Development Executive", level: "1–3 years experience", salary: "LKR 60,000 – 150,000", type: "Full-time" },
 ];
 
 const careerPath = [
@@ -40,6 +41,7 @@ const careerPath = [
 ];
 
 const roleDescriptions = [
+  { title: "Business Development Executive Jobs in Sri Lanka", desc: "Business Development Executives at Cypher Digital sell high-demand digital products — Facebook Ads, Google Ads, SEO, social media management, and video production — to Sri Lankan businesses. This is a consultative sales role with a guaranteed base of LKR 60,000 and the ability to earn LKR 150,000+ per month. Ideal for relationship-builders who want to grow into BD Manager and Sales Manager roles." },
   { title: "Social Media Marketing Jobs in Sri Lanka", desc: "Social media marketing executives at Cypher Digital plan, create and manage Facebook and Instagram content and community management for clients across Sri Lanka. Typical tasks include content calendar planning, caption writing, posting, inbox management and monthly performance reporting. Salaries range from LKR 65,000 to LKR 110,000 per month." },
   { title: "Paid Ads Specialist Jobs — Meta Ads & Google Ads Sri Lanka", desc: "Paid ads specialists manage Meta Ads (Facebook and Instagram advertising) and Google Ads budgets across Search, Display and YouTube for Sri Lankan brands. This is the highest-paying digital marketing job in Sri Lanka at the specialist level, with salaries of LKR 80,000–200,000 per month. Meta Blueprint or Google Ads certification is a strong advantage." },
   { title: "SEO Executive Jobs in Colombo, Sri Lanka", desc: "SEO executive roles involve on-page optimisation, keyword research, technical SEO audits, link building and local SEO for Sri Lankan business clients. SEO jobs in Colombo typically pay LKR 70,000 to LKR 120,000 per month. Knowledge of Google Search Console, Ahrefs or SEMrush is a strong advantage." },
