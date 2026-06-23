@@ -692,6 +692,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Digital marketing executive jobs in Sri Lanka at Cypher Digital, Colombo. Run Meta Ads, Google Ads & SEO campaigns for 800+ brands. Salary LKR 45K–120K/month. Apply in 60 seconds.",
     h1: "Digital Marketing Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
+  "/careers/business-development-executive-jobs-sri-lanka": {
+    title: "Business Development Executive Jobs in Sri Lanka 2026 | LKR 60K–150K | Cypher Digital",
+    description: "Business Development Executive jobs in Sri Lanka at Cypher Digital, Colombo. Sell digital marketing services to SMEs. Salary LKR 60K–150K/month + commissions. Apply via WhatsApp in 60 seconds.",
+    h1: "Business Development Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+  },
   "/careers/video-editor-jobs-sri-lanka": {
     title: "Video Editor Jobs in Sri Lanka 2026 | LKR 45K–150K | Cypher Digital",
     description: "Video editor jobs in Sri Lanka at Cypher Digital, Colombo. Edit Reels, TikToks, YouTube ads & brand films for 800+ brands. Salary LKR 45K–150K/month. Full-time & freelance. Apply now.",
