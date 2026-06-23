@@ -122,6 +122,7 @@ const jobPostingSchemas = vacancies.map((v) => ({
 }));
 
 const jobCategories = [
+  { icon: Handshake, title: "Business Development Executive Jobs in Sri Lanka", desc: "Sell high-demand digital products — Facebook Ads, Google Ads, SEO, social media and video production — to Sri Lankan businesses." },
   { icon: Megaphone, title: "Social Media Marketing Jobs in Sri Lanka", desc: "Plan and run Facebook, Instagram and TikTok campaigns for 800+ Sri Lankan brands." },
   { icon: BarChart3, title: "Paid Ads Specialist Jobs (Meta & Google Ads)", desc: "Manage Meta Ads, Google Ads and TikTok Ads budgets that drive real leads and ROI." },
   { icon: Search, title: "SEO Executive Jobs in Colombo", desc: "Grow organic search rankings for clients across Sri Lanka — local SEO, content and technical SEO." },
@@ -201,6 +202,7 @@ const salaryFactors = [
 ];
 
 const roleOptions = [
+  "Business Development Executive (LKR 60K–150K)",
   "Digital Marketing Specialist (LKR 50K–200K)",
   "Digital Marketing Executive (LKR 45K–120K)",
   "Digital Marketing Manager (LKR 120K–280K)",
