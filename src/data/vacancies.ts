@@ -1014,6 +1014,158 @@ export const vacancies: Vacancy[] = [
     whatsappCta: "Apply for Sales Manager",
     datePosted: "2026-06-12",
   },
+  {
+    slug: "business-development-executive-jobs-sri-lanka",
+    title: "Business Development Executive",
+    shortTitle: "Business Development Executive",
+    h1: "Business Development Executive Jobs in Sri Lanka — Join Cypher Digital",
+    metaTitle: "Business Development Executive Jobs in Sri Lanka 2026 | Cypher Digital",
+    metaDescription:
+      "Looking for business development executive jobs in Sri Lanka? Cypher Digital is hiring a BDE in Colombo to sell digital products — Facebook Ads, Google Ads, SEO & social media. Base LKR 60,000 + attractive earnings. Apply via WhatsApp.",
+    icon: Handshake,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the best business development executive jobs in Sri Lanka right now — sell high-demand digital products (Facebook Ads, Google Ads, SEO, social media management, video production) to Sri Lankan businesses and build a rewarding career at Cypher Digital, Colombo.",
+    salaryRange: { min: 60000, max: 150000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Looking for business development executive jobs in Sri Lanka? Cypher Digital is hiring a Business Development Executive (BDE) in Colombo for digital product sales. This is one of the top business development vacancies in Sri Lanka with a guaranteed base salary and strong earning potential.",
+    seoIntro: [
+      "Searching for the best business development executive jobs in Sri Lanka in 2026? Cypher Digital is hiring a Business Development Executive (BDE) in Colombo to sell high-demand digital products — Facebook Ads, Google Ads, SEO, social media management, and video production — to Sri Lankan businesses that are ready to grow online.",
+      "Business development executive jobs in Sri Lanka are growing fast — and digital products are the biggest opportunity right now. At Cypher Digital, a BDE is not a cold-caller. You are a digital consultant who helps Sri Lankan restaurants, real estate agencies, fashion brands, schools, clinics, and retailers understand how Facebook Ads, Google Ads, and SEO will directly grow their business.",
+      "You will be backed by 800+ client results across every major industry in Sri Lanka, and supported by one of the country's most integrated marketing groups — Cypher360. That means every conversation you have is backed by proof, not promises. Business development in digital is consultative, relationship-led, and genuinely high-earning for the right person.",
+    ],
+    salaryGuide: {
+      intro: [
+        "Business development executive salaries in Sri Lanka vary widely by industry, experience, and commission structure. B2B digital product sales roles in Colombo typically offer a base salary plus performance incentives, making this one of the most attractive business development jobs in Sri Lanka for motivated professionals.",
+        "At Cypher Digital, the BDE base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings can reach LKR 150,000 and above. Your earning potential is directly tied to the revenue you bring in, not just years of experience.",
+      ],
+      levels: [
+        { name: "BDE", exp: "1–3 years", salary: "LKR 60K–150K/mo" },
+        { name: "Senior BDE", exp: "2–4 years", salary: "LKR 100K–200K/mo" },
+        { name: "BD Manager", exp: "4–6 years", salary: "LKR 180K–300K/mo" },
+        { name: "Sales Manager", exp: "6+ years", salary: "LKR 250K–400K/mo" },
+      ],
+      note: "Cypher Digital BDE package: LKR 60,000 base + attractive performance earnings. Top performers regularly earn LKR 150,000+/month.",
+    },
+    softwareSkills: {
+      intro:
+        "The best business development executives in Sri Lanka combine relationship skills with lightweight digital tools. You do not need to be a tech expert, but comfort with these platforms will help you build pipeline, track leads, and close faster.",
+      items: [
+        { icon: "💬", name: "WhatsApp Business", desc: "Primary outreach and follow-up channel for Sri Lankan clients — fast, personal, and high-response." },
+        { icon: "💼", name: "LinkedIn Sales Navigator", desc: "Prospect corporate clients, decision-makers, and multi-location brands in Sri Lanka." },
+        { icon: "📊", name: "Google Sheets / Excel", desc: "Track leads, pipeline stages, revenue forecasts, and weekly activity reports." },
+        { icon: "🗂️", name: "CRM (HubSpot / Pipedrive)", desc: "Manage contacts, deals, and follow-ups so no opportunity slips through the cracks." },
+        { icon: "📈", name: "Meta Ads & Google Ads basics", desc: "Enough understanding to explain ROI, campaign types, and why clients should invest." },
+        { icon: "📄", name: "Google Slides / Canva", desc: "Build simple, clear client proposals and pitch decks that win deals." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "No sales portfolio yet? Here is how to build one fast for business development executive jobs in Sri Lanka — even if you have never sold digital products before.",
+      steps: [
+        "List 50 target Sri Lankan businesses in one industry (restaurants, real estate, salons, clinics) and research their current digital presence.",
+        "Create a short pitch deck showing how one digital product — e.g. Facebook Ads — would help a specific business get more leads.",
+        "Record a 2-minute Loom or WhatsApp video pitch explaining the proposal in Sinhala and English.",
+        "Practice objection handling with a friend: price, timing, and 'I already have someone'.",
+        "Apply to Cypher Digital's BDE role and use your practice pitch during the WhatsApp interview.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "BDE", salary: "LKR 60K–150K/mo", exp: "1–3 years" },
+        { title: "Senior BDE", salary: "LKR 100K–200K/mo", exp: "2–4 years" },
+        { title: "BD Manager", salary: "LKR 180K–300K/mo", exp: "4–6 years" },
+        { title: "Sales Manager", salary: "LKR 250K–400K/mo", exp: "6+ years" },
+        { title: "Head of Sales", salary: "LKR 400K–600K+/mo", exp: "8+ years" },
+      ],
+      note:
+        "At Cypher Digital, business development executives regularly advance to Senior BDE within 12 months based on revenue performance. The digital product suite and 800+ client proof points give you the credibility to close bigger deals faster than traditional sales roles in Sri Lanka.",
+    },
+    dayInLife: {
+      intro:
+        "What a real day looks like for a Business Development Executive at Cypher Digital — no vague job descriptions, just the actual work of selling digital products in Sri Lanka.",
+      items: [
+        { time: "8:30 AM", task: "Review overnight WhatsApp replies and LinkedIn connection requests — prioritise warm leads first." },
+        { time: "9:30 AM", task: "Team standup with the Sales Manager — review yesterday's pipeline movement and today's revenue targets." },
+        { time: "10:30 AM", task: "Discovery call with a Colombo restaurant owner about Facebook Ads and social media management." },
+        { time: "12:30 PM", task: "Follow up on yesterday's proposals via WhatsApp — answer questions and book decision-maker meetings." },
+        { time: "2:30 PM", task: "Research new prospects in real estate and education, then send personalised LinkedIn and WhatsApp outreach." },
+        { time: "4:00 PM", task: "Build a custom proposal in Google Slides for a multi-location retail brand interested in Google Ads and SEO." },
+        { time: "5:00 PM", task: "Update CRM pipeline, send the Sales Manager a summary, and plan tomorrow's highest-value follow-ups." },
+      ],
+    },
+    duties: [
+      "Identify and approach new business leads across Sri Lankan industries — restaurants, real estate, education, healthcare, fashion, FMCG, and more",
+      "Pitch and sell Cypher Digital's digital product suite: Facebook Ads, Google Ads, SEO, social media management, TikTok marketing, and video production",
+      "Build and manage a pipeline of warm and cold leads using WhatsApp, email, LinkedIn, and in-person networking",
+      "Conduct discovery meetings and present customised digital marketing proposals tailored to each client's business goals",
+      "Follow up persistently and professionally to convert proposals into signed clients",
+      "Maintain and grow relationships with existing clients to drive upsells and renewals",
+      "Collaborate with the digital delivery team to ensure a smooth handover after each sale",
+      "Track all activity in CRM and submit weekly pipeline reports to the Sales Manager",
+      "Consistently hit and exceed monthly revenue targets",
+    ],
+    requirements: [
+      "1–3 years of experience in business development, sales, or client acquisition in Sri Lanka",
+      "Strong understanding of or genuine curiosity about digital marketing products",
+      "Confident, persuasive communicator in Sinhala and English (Tamil is a plus)",
+      "Self-starter — you do not wait for leads to come to you, you go and find them",
+      "Ability to simplify complex digital services into clear, benefit-led language that business owners understand",
+      "Experience using WhatsApp, email, and LinkedIn for outreach and follow-up",
+      "A track record of meeting targets, even in a previous non-digital sales role",
+      "No formal degree required — we hire on results, communication, and commercial drive",
+    ],
+    perks: [
+      "Base salary LKR 60,000/month guaranteed — with ability to earn LKR 150,000+/month through performance",
+      "Sell digital products with proven ROI — 800+ Sri Lankan client results back every pitch you make",
+      "Clear career path from BDE to Senior BDE to Business Development Manager to Sales Manager",
+      "Fast, WhatsApp-led sales process — no 6-month procurement cycles or complicated sign-offs",
+      "Work inside Cypher360 — Sri Lanka's most integrated marketing group — for instant credibility in every meeting",
+      "Full product training and ongoing mentorship from senior sales and digital delivery leaders",
+    ],
+    whyJoin: [
+      { title: "Sell what Sri Lankan businesses actually want", body: "Digital ad spend in Sri Lanka is growing 40%+ year-on-year. You are entering the market at the right time with products that solve real business problems." },
+      { title: "Income in your own hands", body: "Unlike fixed-salary roles, your earnings grow with your closes. Top BDEs at Cypher Digital regularly take home LKR 150,000+ per month within their first year." },
+      { title: "Career velocity inside Cypher360", body: "Move from BDE to Senior BDE to BD Manager to Sales Manager — with training, mentorship, and a product suite that makes every promotion possible." },
+    ],
+    faqs: [
+      {
+        q: "Are there business development executive vacancies in Sri Lanka right now?",
+        a: "Yes — Cypher Digital is actively hiring a Business Development Executive at our Colombo office in 2026. We review all applications within 24 hours via WhatsApp at +94 70 177 2626.",
+      },
+      {
+        q: "What is the salary for business development executive jobs in Sri Lanka?",
+        a: "At Cypher Digital, the BDE base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings can reach LKR 150,000 and above. Your earning potential is directly tied to the revenue you bring in.",
+      },
+      {
+        q: "What digital products does a BDE sell at Cypher Digital?",
+        a: "You will sell Facebook and Instagram advertising, Google Ads, SEO services, social media management packages, TikTok marketing, video production, and graphic design retainers — all products in high demand from Sri Lankan businesses in 2026.",
+      },
+      {
+        q: "Do I need experience in digital marketing to apply for business development jobs at Cypher Digital?",
+        a: "Not deeply — but genuine interest in digital helps. Full product training is provided. What matters most is your ability to build relationships, communicate clearly, and close deals. If you have sold any B2B product or service in Sri Lanka, your skills transfer directly.",
+      },
+      {
+        q: "What is the difference between a Business Development Executive and a Sales Executive in Sri Lanka?",
+        a: "A BDE focuses on building relationships with new, often larger accounts — consultative selling with slightly longer sales cycles and higher deal values. A Sales Executive focuses on volume — a higher number of smaller accounts closed quickly. At Cypher Digital, both roles sell the same digital products and earn from the same attractive structure.",
+      },
+      {
+        q: "How do I apply for business development executive jobs in Sri Lanka at Cypher Digital?",
+        a: "Send your name and a brief note about your sales or business development background to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms, no long wait.",
+      },
+    ],
+    internalLinks: [
+      { label: "Sales Executive jobs in Sri Lanka", href: "/careers/sales-jobs-in-sri-lanka", desc: "Explore our Sales Executive vacancy for volume-focused digital product sales in Colombo." },
+      { label: "Sales Manager jobs in Sri Lanka", href: "/careers/sales-manager-jobs-sri-lanka", desc: "See the Sales Manager role if you already have team-leading and target-hitting experience." },
+      { label: "All digital marketing jobs in Sri Lanka", href: "/careers", desc: "Browse every open role at Cypher Digital — design, video, paid ads, SEO, and more." },
+      { label: "Digital marketing services", href: "/", desc: "See the full range of digital products you will be selling to Sri Lankan businesses." },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Business Development Executive position at Cypher Digital.",
+    whatsappCta: "Apply for Business Development Executive",
+    datePosted: "2026-06-23",
+  },
 ];
 
 export const getVacancyBySlug = (slug?: string) =>
