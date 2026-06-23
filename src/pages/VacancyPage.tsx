@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { MessageCircle, Briefcase, MapPin, CheckCircle2, Sparkles, ArrowLeft, Building2 } from "lucide-react";
+import { MessageCircle, Briefcase, MapPin, CheckCircle2, Sparkles, ArrowLeft, ArrowRight, Building2 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
