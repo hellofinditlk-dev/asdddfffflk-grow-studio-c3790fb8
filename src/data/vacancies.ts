@@ -23,6 +23,7 @@ export interface Vacancy {
   whyJoin?: { title: string; body: string }[];
   faqs?: { q: string; a: string }[];
   kwIntro?: string;
+  internalLinks?: { label: string; href: string; desc?: string }[];
   salaryGuide?: {
     intro: string[];
     levels: { name: string; exp: string; salary: string }[];
