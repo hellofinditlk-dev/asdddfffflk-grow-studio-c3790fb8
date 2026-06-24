@@ -190,7 +190,6 @@ const SocialMediaManagement = () => {
         "https://www.facebook.com/cypherdigital.lk",
         "https://www.instagram.com/cypherdigital.lk",
       ],
-      aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "127" },
     });
 
     addSchema({
