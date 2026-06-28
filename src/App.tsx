@@ -419,6 +419,7 @@ const App = () => (
               <Route path="/tv-advertising-sri-lanka" element={<TvAdvertising />} />
               <Route path="/newspaper-advertising-sri-lanka" element={<NewspaperAdvertising />} />
               <Route path="/radio-advertising-sri-lanka" element={<RadioAdvertising />} />
+              <Route path="/programmatic-advertising-sri-lanka" element={<ProgrammaticAdvertising />} />
               <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/brand-identity-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/company-profile-design-sri-lanka" element={<DesignSubService />} />
