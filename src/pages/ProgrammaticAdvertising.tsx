@@ -186,12 +186,35 @@ const ProgrammaticAdvertising = () => {
     "@type": "Product",
     name: "Programmatic Advertising Sri Lanka — Premium Private Marketplace (PMP)",
     description: "Sri Lanka's only Premium Private Marketplace for programmatic advertising. Guaranteed brand-safe inventory across FindIt.lk, Studyway.lk and YouJobs.lk.",
+    image: ["https://cypherdigital.lk/og-image.jpg"],
     brand: { "@type": "Brand", name: "Cypher Digital" },
     offers: [
-      { "@type": "Offer", name: "14-Day Starter PMP Package", price: "60000", priceCurrency: "LKR", availability: "https://schema.org/InStock" },
-      { "@type": "Offer", name: "30-Day Growth PMP Package", price: "110000", priceCurrency: "LKR", availability: "https://schema.org/InStock" },
-      { "@type": "Offer", name: "45-Day Brand PMP Package", price: "160000", priceCurrency: "LKR", availability: "https://schema.org/InStock" },
-    ],
+      { name: "14-Day Starter PMP Package", price: "60000" },
+      { name: "30-Day Growth PMP Package", price: "110000" },
+      { name: "45-Day Brand PMP Package", price: "160000" },
+    ].map((o) => ({
+      "@type": "Offer",
+      name: o.name,
+      price: o.price,
+      priceCurrency: "LKR",
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: "Cypher Digital" },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "LKR" },
+        shippingDestination: { "@type": "DefinedRegion", addressCountry: "LK" },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+          transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 2, unitCode: "DAY" },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "LK",
+        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+      },
+    })),
   };
 
   return (
