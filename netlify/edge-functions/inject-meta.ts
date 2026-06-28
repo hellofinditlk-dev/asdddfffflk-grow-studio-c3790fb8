@@ -10,9 +10,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Is Your Business Visible on ChatGPT & Gemini?",
   },
   "/programmatic-advertising-sri-lanka": {
-    title: "Programmatic Advertising Sri Lanka | #1 Direct Ad Network | Cypher Digital",
-    description: "Programmatic advertising Sri Lanka — skip ad exchanges and advertise directly on FindIt.lk, Studyway.lk and YouJobs.lk. Packages from LKR 60,000. Zero ad fraud. 100% local reach.",
-    h1: "Programmatic Advertising Sri Lanka — Done Smarter",
+    title: "Programmatic Advertising Sri Lanka | Cypher Digital Private Marketplace",
+    description: "Programmatic advertising Sri Lanka — Cypher Digital operates Sri Lanka's only Premium Private Marketplace (PMP) across FindIt.lk, Studyway.lk and YouJobs.lk. Guaranteed brand-safe inventory, zero ad fraud, 100% local reach. Packages from LKR 60,000.",
+    h1: "Programmatic Advertising Sri Lanka — Finally Done Right",
   },
   "/blog/creative-agency-sri-lanka": {
     title: "Creative Agency Sri Lanka (2026) | #1 Creative & Design Agency | Cypher Digital",
