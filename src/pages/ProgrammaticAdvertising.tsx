@@ -478,7 +478,7 @@ const ProgrammaticAdvertising = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3 text-center">Start your direct display campaign today</h2>
           <p className="text-muted-foreground text-center mb-8">Get a custom media plan across FindIt.lk, Studyway.lk and YouJobs.lk — live within 24 hours.</p>
-          <InquiryForm source="Programmatic Advertising Sri Lanka" />
+          <InquiryForm service="Programmatic Advertising Sri Lanka" />
         </div>
       </section>
     </>
