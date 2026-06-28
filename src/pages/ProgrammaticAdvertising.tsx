@@ -45,6 +45,12 @@ const platforms = [
   },
 ];
 
+const pkgPlatforms = [
+  { name: "FindIt.lk", url: "https://www.findit.lk/", desc: "No.1 offer finder in Sri Lanka — save money, save time, people-voted businesses" },
+  { name: "Studyway.lk", url: "https://www.studyway.lk/", desc: "No.1 education information hub in Sri Lanka" },
+  { name: "YouJobs.lk", url: "https://youjobs.lk/", desc: "Leading job website in Sri Lanka" },
+];
+
 const packages = [
   {
     dur: "14 Days — Starter",
@@ -342,8 +348,23 @@ const ProgrammaticAdvertising = () => {
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Most Popular</span>
                 )}
                 <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{pkg.dur}</div>
-                <div className="font-heading text-2xl font-extrabold mt-2">{pkg.price}<span className="text-xs font-normal text-muted-foreground"> + taxes</span></div>
+                <div className="font-heading text-2xl font-extrabold mt-2">{pkg.price}</div>
                 <div className="text-xs text-muted-foreground mt-1">{pkg.perDay}</div>
+                <div className="mt-4 space-y-2 border-t border-border pt-4">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Runs across</div>
+                  {pkgPlatforms.map((p) => (
+                    <a
+                      key={p.name}
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block rounded-lg border border-border bg-secondary/50 hover:border-primary hover:bg-primary/5 transition-colors p-2"
+                    >
+                      <div className="text-xs font-bold text-primary">{p.name} ↗</div>
+                      <div className="text-[11px] text-muted-foreground leading-snug">{p.desc}</div>
+                    </a>
+                  ))}
+                </div>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground flex-1">
                   {pkg.features.map((f) => (
                     <li key={f} className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />{f}</li>
