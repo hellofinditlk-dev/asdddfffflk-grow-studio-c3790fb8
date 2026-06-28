@@ -9,6 +9,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Get a free AI Visibility Check in Sri Lanka. See how visible your business is on ChatGPT, Gemini, Claude & Perplexity. Get your AI visibility score.",
     h1: "Is Your Business Visible on ChatGPT & Gemini?",
   },
+  "/programmatic-advertising-sri-lanka": {
+    title: "Programmatic Advertising Sri Lanka | #1 Direct Ad Network | Cypher Digital",
+    description: "Programmatic advertising Sri Lanka — skip ad exchanges and advertise directly on FindIt.lk, Studyway.lk and YouJobs.lk. Packages from LKR 60,000. Zero ad fraud. 100% local reach.",
+    h1: "Programmatic Advertising Sri Lanka — Done Smarter",
+  },
   "/blog/creative-agency-sri-lanka": {
     title: "Creative Agency Sri Lanka (2026) | #1 Creative & Design Agency | Cypher Digital",
     description: "Looking for a creative agency in Sri Lanka? Cypher Digital is Colombo's #1 creative agency offering logo design, brand identity, social media design, packaging, motion graphics & more. Free consultation today.",
