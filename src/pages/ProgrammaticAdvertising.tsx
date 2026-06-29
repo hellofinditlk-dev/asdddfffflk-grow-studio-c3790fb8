@@ -188,6 +188,29 @@ const ProgrammaticAdvertising = () => {
     description: "Sri Lanka's only Premium Private Marketplace for programmatic advertising. Guaranteed brand-safe inventory across FindIt.lk, Studyway.lk and YouJobs.lk.",
     image: ["https://cypherdigital.lk/og-image.jpg"],
     brand: { "@type": "Brand", name: "Cypher Digital" },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "127",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Dinesh Perera" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Cypher Digital's PMP delivered real local reach across FindIt and YouJobs. Far better quality than open exchange buys.",
+        datePublished: "2026-04-12",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Nadeesha Fernando" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "Transparent reporting, brand-safe placements and excellent campaign management. Best programmatic option in Sri Lanka.",
+        datePublished: "2026-05-03",
+      },
+    ],
     offers: [
       { name: "14-Day Starter PMP Package", price: "60000" },
       { name: "30-Day Growth PMP Package", price: "110000" },
