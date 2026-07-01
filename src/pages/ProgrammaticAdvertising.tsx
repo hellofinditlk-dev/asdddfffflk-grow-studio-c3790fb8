@@ -124,6 +124,30 @@ const benefits = [
   { icon: <Repeat className="w-5 h-5" />, t: "Cross-platform frequency", d: "One programmatic buy, three distinct editorial contexts. Your audience builds brand recall across classifieds, education and careers environments — wider contextual coverage than any single publisher can offer." },
 ];
 
+const volumePackages = [
+  {
+    name: "Starter",
+    price: "Rs. 48,000",
+    impressions: "10,000 impressions",
+    cpm: "Effective CPM Rs. 4,800",
+    popular: false,
+  },
+  {
+    name: "Growth",
+    price: "Rs. 225,000",
+    impressions: "50,000 impressions",
+    cpm: "Effective CPM Rs. 4,500",
+    popular: true,
+  },
+  {
+    name: "Pro",
+    price: "Rs. 400,000",
+    impressions: "100,000 impressions",
+    cpm: "Effective CPM Rs. 4,000",
+    popular: false,
+  },
+];
+
 const compareRows: Array<[string, string, string, string]> = [
   ["Sri Lanka premium inventory", "Very limited", "Negotiated", "3 owned top platforms"],
   ["Ad fraud / bot traffic", "High risk", "Reduced", "Zero — verified humans"],
@@ -166,6 +190,7 @@ const faqs = [
   { q: "What is programmatic advertising in Sri Lanka?", a: "Programmatic advertising in Sri Lanka is the automated, data-driven buying of digital ad placements. Cypher Digital operates Sri Lanka's only Premium Private Marketplace (PMP) — the highest tier of programmatic advertising — across FindIt.lk (No.1 offer finder), Studyway.lk (No.1 education hub) and YouJobs.lk (leading jobs portal). Our PMP delivers guaranteed brand-safe programmatic placements with 100% verified Sri Lankan audiences and zero ad fraud." },
   { q: "What is a Private Marketplace (PMP) in programmatic advertising?", a: "A Private Marketplace (PMP) is the premium tier of programmatic advertising — a curated, invitation-only network where publishers offer exclusive, guaranteed ad inventory to select advertisers. Unlike open exchanges where ads appear on unknown, unverified sites, a PMP guarantees brand-safe placements on premium publishers with transparent reporting and zero bot traffic. Cypher Digital's PMP is built on three of Sri Lanka's most visited and trusted local platforms." },
   { q: "How much does programmatic advertising cost in Sri Lanka?", a: "Cypher Digital's programmatic PMP packages start from LKR 60,000 for a 14-day campaign across FindIt.lk, Studyway.lk and YouJobs.lk. A 30-day Growth package costs LKR 110,000 (LKR 3,667 per day across all three platforms) and a 45-day Brand package costs LKR 160,000. Custom 60-day enterprise packages are available on request." },
+  { q: "What's the difference between Duration Packages and Volume Packages?", a: "Duration Packages guarantee premium placement across multiple banner slots on all three platforms for a fixed number of days — ideal for sustained brand visibility. Volume Packages guarantee a specific number of impressions on a single banner slot — ideal for advertisers who want a known, fixed reach number rather than a fixed campaign length. Both run on the same verified, brand-safe Cypher network. Volume Packages start from Rs. 48,000 for 10,000 impressions and go up to Rs. 400,000 for 100,000 impressions." },
   { q: "Why is programmatic advertising through a PMP better than open exchanges in Sri Lanka?", a: "Open programmatic exchanges in Sri Lanka have very limited premium local inventory, high ad fraud rates and opaque reporting. Exchange technology fees consume 30 to 50% of your media budget before a single Sri Lankan sees your ad. Cypher Digital's Private Marketplace eliminates every one of these problems — guaranteed premium placements, zero fraud, 100% of budget to media, transparent direct reporting and campaigns live within 24 hours." },
   { q: "Which platforms are in the Cypher Digital programmatic network?", a: "The Cypher Digital PMP includes FindIt.lk (Sri Lanka's No.1 offer finder — where people save money, save time and find people-voted businesses), Studyway.lk (Sri Lanka's No.1 education information hub for students, parents and professionals) and YouJobs.lk (Sri Lanka's leading job website connecting employers and active job seekers)." },
   { q: "How quickly can a programmatic campaign go live in Sri Lanka?", a: "Programmatic campaigns through the Cypher Digital PMP go live across all three platforms within 24 hours of creative approval. No DSP setup, no auction configuration and no technical complexity is required — significantly faster than any open programmatic exchange campaign in Sri Lanka." },
@@ -420,10 +445,31 @@ const ProgrammaticAdvertising = () => {
       <section id="packages" className="py-16 bg-secondary border-y border-border">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-xs font-bold uppercase tracking-wider text-primary mb-2">Programmatic PMP Packages</div>
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Choose your programmatic campaign duration</h2>
-          <p className="text-muted-foreground mb-10 max-w-3xl">
-            Every package gives you simultaneous programmatic display across all three PMP publishers. Transparent pricing, no exchange fees, no hidden costs.
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Two ways to run your programmatic campaign</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">
+            Choose the setup that matches your campaign goals — every option runs on the same brand-safe, verified Cypher network.
           </p>
+          <div className="grid md:grid-cols-2 gap-5 mb-10">
+            <div className="rounded-2xl border border-primary/40 bg-card p-6">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Option 1</div>
+              <h3 className="font-heading text-lg font-bold mb-2">Multi-Slot Network Campaign</h3>
+              <p className="text-sm text-muted-foreground mb-3">Best for brand visibility across the entire network. Your ad runs simultaneously across <strong>multiple banner slots on all 3 platforms</strong> for a fixed campaign duration. Priced by days.</p>
+              <a href="#duration-packages" className="text-sm font-semibold text-primary">→ See Duration Packages</a>
+            </div>
+            <div className="rounded-2xl border border-primary/40 bg-card p-6">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">Option 2</div>
+              <h3 className="font-heading text-lg font-bold mb-2">Single Banner Slot Campaign</h3>
+              <p className="text-sm text-muted-foreground mb-3">Best for a specific placement or a set volume of reach. Your ad runs on <strong>one banner slot</strong>, delivering a guaranteed number of impressions. Priced by impression volume.</p>
+              <a href="#volume-packages" className="text-sm font-semibold text-primary">→ See Volume Packages</a>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground italic mb-8">Not sure which fits your campaign? <a className="text-primary font-semibold" href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20a%20programmatic%20PMP%20package" target="_blank" rel="noopener noreferrer">Talk to a strategist</a> — we'll recommend the right setup for your goals and budget.</p>
+
+          <div id="duration-packages" className="mb-4 pt-2">
+            <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">Option 1 · Multi-Slot Network Campaign</div>
+            <h3 className="font-heading text-xl md:text-2xl font-bold mb-2">Duration Packages</h3>
+            <p className="text-sm text-muted-foreground mb-6 max-w-3xl">Every package gives you simultaneous programmatic display across all three PMP publishers. Transparent pricing, no exchange fees, no hidden costs.</p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {packages.map((pkg) => (
               <div key={pkg.dur} className={`relative rounded-2xl border p-6 bg-card flex flex-col ${pkg.popular ? "border-primary shadow-lg" : "border-border"}`}>
@@ -455,6 +501,36 @@ const ProgrammaticAdvertising = () => {
                 </ul>
                 <Button asChild className={`mt-5 ${pkg.popular ? "!bg-orange-500 hover:!bg-orange-600 !text-white !border-0" : ""}`} variant={pkg.popular ? "default" : "outline"}>
                   <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20the%20programmatic%20PMP%20package" target="_blank" rel="noopener noreferrer">Book This Package</a>
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <div id="volume-packages" className="mt-16 mb-4">
+            <div className="text-xs font-bold uppercase tracking-wider text-primary mb-1">Option 2 · Single Banner Slot Campaign</div>
+            <h3 className="font-heading text-xl md:text-2xl font-bold mb-2">Volume Packages</h3>
+            <p className="text-sm text-muted-foreground mb-2 max-w-3xl">Guaranteed impression delivery on a single banner slot. Same brand-safe, verified Cypher network — priced by reach, not duration.</p>
+            <p className="text-xs text-muted-foreground italic mb-6 max-w-3xl">Note: Volume Packages run across our standard inventory rotation on one banner slot until your guaranteed impression count is delivered.</p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-5">
+            {volumePackages.map((pkg) => (
+              <div key={pkg.name} className={`relative rounded-2xl border p-6 bg-card flex flex-col ${pkg.popular ? "border-primary shadow-lg" : "border-border"}`}>
+                {pkg.popular && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Most Popular</span>
+                )}
+                <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">{pkg.name}</div>
+                <div className="font-heading text-2xl font-extrabold mt-2">{pkg.price}</div>
+                <div className="text-sm text-primary font-semibold mt-1">{pkg.impressions}</div>
+                <div className="text-xs text-muted-foreground mt-1">{pkg.cpm}</div>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground flex-1 border-t border-border pt-4">
+                  <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />Guaranteed impression delivery</li>
+                  <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />Single banner slot placement</li>
+                  <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />Delivery across the full network</li>
+                  <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />Real-time performance reporting</li>
+                  <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />Zero ad fraud — verified PMP traffic</li>
+                </ul>
+                <Button asChild className={`mt-5 ${pkg.popular ? "!bg-orange-500 hover:!bg-orange-600 !text-white !border-0" : ""}`} variant={pkg.popular ? "default" : "outline"}>
+                  <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20the%20Volume%20PMP%20package" target="_blank" rel="noopener noreferrer">Start This Package</a>
                 </Button>
               </div>
             ))}
