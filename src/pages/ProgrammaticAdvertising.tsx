@@ -115,48 +115,6 @@ const packages = [
 const benefits = [
   { icon: <Target className="w-5 h-5" />, t: "Contextual targeting that actually works", d: "Each platform is a distinct intent signal. People on FindIt want the best deal. People on Studyway are choosing their future. People on YouJobs are building their career. Your programmatic message lands in the right mindset, every time." },
   { icon: <Shield className="w-5 h-5" />, t: "Guaranteed brand safety", d: "All three PMP publishers are owned, built and moderated by Cypher Digital. Your brand never appears next to harmful or unverified content — the defining advantage of a Private Marketplace over open programmatic exchanges." },
-];
-
-const volumePackages = [
-  {
-    name: "Starter",
-    price: "Rs. 48,000",
-    impressions: "10,000 impressions",
-    popular: false,
-    features: [
-      "10,000 guaranteed impressions",
-      "Effective CPM Rs. 4,800",
-      "Delivery across the full network",
-      "Real-time performance reporting",
-    ],
-  },
-  {
-    name: "Growth",
-    price: "Rs. 225,000",
-    impressions: "50,000 impressions",
-    popular: true,
-    features: [
-      "50,000 guaranteed impressions",
-      "Effective CPM Rs. 4,500",
-      "Delivery across the full network",
-      "Real-time performance reporting",
-    ],
-  },
-  {
-    name: "Pro",
-    price: "Rs. 400,000",
-    impressions: "100,000 impressions",
-    popular: false,
-    features: [
-      "100,000 guaranteed impressions",
-      "Effective CPM Rs. 4,000",
-      "Delivery across the full network",
-      "Real-time performance reporting",
-    ],
-  },
-];
-
-const _benefitsCont = [
   { icon: <Wallet className="w-5 h-5" />, t: "100% media budget efficiency", d: "Open programmatic exchanges take 30–50% in technology fees. In a Private Marketplace that fee disappears — every rupee reaches a real Sri Lankan user on a premium platform." },
   { icon: <BarChart3 className="w-5 h-5" />, t: "Verified, transparent reporting", d: "Impressions, clicks and engagement come directly from our owned platforms — not filtered through a third-party DSP attribution layer. You see exactly what happened, verified by the publisher." },
   { icon: <Handshake className="w-5 h-5" />, t: "Publisher-direct relationship", d: "A Private Marketplace gives you what no open programmatic exchange can — a real relationship with the publisher. Custom placements, flexible formats, editorial partnerships." },
@@ -164,6 +122,30 @@ const _benefitsCont = [
   { icon: <Globe2 className="w-5 h-5" />, t: "100% Sri Lankan audience", d: "Every user across all three PMP platforms is verified Sri Lankan. No wasted impressions on VPN users, international traffic or misclassified geo segments." },
   { icon: <Smartphone className="w-5 h-5" />, t: "Mobile-first programmatic", d: "Over 80% of our combined PMP traffic is mobile. Banners are placed and optimised for the devices Sri Lankan users actually use — not generic desktop-first exchange inventory." },
   { icon: <Repeat className="w-5 h-5" />, t: "Cross-platform frequency", d: "One programmatic buy, three distinct editorial contexts. Your audience builds brand recall across classifieds, education and careers environments — wider contextual coverage than any single publisher can offer." },
+];
+
+const volumePackages = [
+  {
+    name: "Starter",
+    price: "Rs. 48,000",
+    impressions: "10,000 impressions",
+    cpm: "Effective CPM Rs. 4,800",
+    popular: false,
+  },
+  {
+    name: "Growth",
+    price: "Rs. 225,000",
+    impressions: "50,000 impressions",
+    cpm: "Effective CPM Rs. 4,500",
+    popular: true,
+  },
+  {
+    name: "Pro",
+    price: "Rs. 400,000",
+    impressions: "100,000 impressions",
+    cpm: "Effective CPM Rs. 4,000",
+    popular: false,
+  },
 ];
 
 const compareRows: Array<[string, string, string, string]> = [
