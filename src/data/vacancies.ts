@@ -781,26 +781,88 @@ export const vacancies: Vacancy[] = [
   },
   {
     slug: "content-specialist-jobs-sri-lanka",
-    title: "Digital Content Specialist",
-    shortTitle: "Digital Content Specialist",
-    h1: "Digital Content Specialist Jobs in Sri Lanka — Apply Now at Cypher Digital",
-    metaTitle: "Digital Content Specialist Jobs in Sri Lanka 2026 | Content Specialist Colombo | Cypher Digital",
+    title: "Content Specialist",
+    shortTitle: "Content Specialist",
+    h1: "Content Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Content Specialist Jobs in Sri Lanka 2026 | LKR 60K–130K | Cypher Digital",
     metaDescription:
-      "Digital Content Specialist job in Sri Lanka at Cypher Digital, Colombo. Create content, captions, blogs & scripts for 800+ brands. Full-time role. Apply via WhatsApp.",
+      "Content Specialist jobs in Sri Lanka at Cypher Digital, Colombo. Write captions, blogs, ad copy & scripts for 800+ brands. Salary LKR 60,000–130,000/month. Apply via WhatsApp in 60 seconds.",
     icon: PenLine,
-    type: "Full-time",
-    employmentType: "FULL_TIME",
+    type: "Full-time / Part-time",
+    employmentType: ["FULL_TIME", "PART_TIME"],
     location: "Colombo, Sri Lanka",
     summary:
-      "One of the best content jobs in Sri Lanka — a full-time Digital Content Specialist role in Colombo where you plan, write and produce the content that powers social media, ads and SEO for 800+ Sri Lankan brands.",
-    salaryRange: { min: 50000, max: 80000, currency: "LKR", unit: "MONTH" },
+      "One of the most in-demand content jobs in Sri Lanka right now — write and produce the captions, blogs, ad copy and short-form video scripts that power social media, ads and SEO for 800+ Sri Lankan brands at Cypher Digital, Colombo.",
+    salaryRange: { min: 60000, max: 130000, currency: "LKR", unit: "MONTH" },
     kwIntro:
-      "Searching for digital content specialist jobs in Sri Lanka? Cypher Digital is hiring a full-time Content Specialist in Colombo — write captions, ad copy, blog articles and short-form scripts for 800+ Sri Lankan brands. Content creator jobs, content writer jobs and social media content roles in one seat.",
+      "Looking for content specialist jobs in Sri Lanka? Cypher Digital is actively hiring across content vacancies in Sri Lanka — from junior content writer jobs in Colombo to senior content strategist roles working on 800+ brand campaigns. Whether you specialise in social media captions, SEO blog writing, ad copy or short-form video scripts, there's a content job in Colombo here for you. Part-time, full-time and freelance content jobs in Sri Lanka available.",
     seoIntro: [
-      "Cypher Digital is hiring a Digital Content Specialist in Sri Lanka to own the content that our clients' audiences actually stop and read. If you're searching for a content specialist job in Colombo, a content creator role in Sri Lanka, or a social media content job near you, this is a chance to write and produce at scale inside a working agency.",
-      "As a Digital Content Specialist at Cypher Digital, you'll turn campaign strategy into scroll-stopping captions, blog articles, ad copy and short-form video scripts for brands across restaurants, fashion, education, real estate and healthcare. You'll work alongside designers, editors and paid-media specialists to make sure every piece of content is on-brand, on-strategy and built to perform.",
-      "This is a full-time role inside Cypher360 — the country's most integrated marketing group — with real ownership of content calendars from day one and room to grow into a senior content or strategy position.",
+      "Cypher Digital is hiring a Content Specialist in Sri Lanka to join our Colombo studio and own the content that our clients' audiences actually stop and read. If you're searching for content specialist jobs in Sri Lanka — or content writer and content creator jobs in general — with real brands, real budgets and real creative ownership, this is one of the best content vacancies in Colombo right now.",
+      "As our Content Specialist, you'll turn campaign strategy into scroll-stopping captions, SEO blog articles, ad copy and short-form video scripts for 800+ Sri Lankan brands across restaurants, fashion, education, real estate and healthcare. Your words go live on paid Meta and Google Ads campaigns and client social pages — not stuck in a drafts folder.",
+      "This isn't a one-off freelance gig. It's a full-time (or part-time) content career opportunity in Sri Lanka inside Cypher360 — the country's most integrated marketing group covering digital marketing, events and production.",
     ],
+    salaryGuide: {
+      intro: [
+        "Content specialist salaries in Sri Lanka vary by experience, writing quality, SEO ability and employer type. Agency content writers in Colombo earn differently from in-house corporate writers, and freelance writers working internationally via Upwork can earn several times the local agency rate. The figures below are approximate 2026 market estimates.",
+        "At Cypher Digital, we pay at the upper end of the Colombo agency market — LKR 60,000 to LKR 130,000 per month — based on your portfolio and demonstrated output, not years of experience alone. Strong SEO writing skills and a published content portfolio add LKR 15,000–40,000 to a starting offer.",
+      ],
+      levels: [
+        { name: "Intern", exp: "0–6 months", salary: "LKR 20K–40K/mo" },
+        { name: "Junior Content Writer", exp: "0–2 years", salary: "LKR 40K–70K/mo" },
+        { name: "Content Specialist (Mid)", exp: "2–4 years", salary: "LKR 70K–120K/mo" },
+        { name: "Senior Content Specialist", exp: "4–7 years", salary: "LKR 120K–180K/mo" },
+        { name: "Content Strategist / Lead", exp: "7+ years", salary: "LKR 180K–300K+/mo" },
+      ],
+      note: "Cypher Digital pays LKR 60,000–130,000/month based on portfolio quality and demonstrated output. Strong SEO writing skills and a published content portfolio add LKR 15,000–40,000 to a starting offer.",
+    },
+    softwareSkills: {
+      intro:
+        "The Sri Lankan agency market in 2026 expects content specialists to be comfortable with most of the tools below. For content jobs at digital marketing agencies in Colombo, writing quality and SEO awareness are the highest priority.",
+      items: [
+        { icon: "✍️", name: "Copywriting & Captions", desc: "Social posts, ad copy and brand voice — the core skill for every content job in Sri Lanka." },
+        { icon: "🔎", name: "SEO Writing", desc: "Blog articles, keywords, structure and readability. Essential for ranking client content on Google." },
+        { icon: "🎨", name: "Canva", desc: "Quick visual content and post layouts to accompany your captions and blog articles." },
+        { icon: "📅", name: "Meta Business Suite / Schedulers", desc: "Planning and publishing content calendars across Facebook, Instagram and LinkedIn." },
+        { icon: "🤖", name: "AI Writing Tools (ChatGPT, Claude)", desc: "Drafting, ideation and research — used responsibly alongside your own writing voice." },
+        { icon: "🎬", name: "Short-Form Video Scripting", desc: "Hooks and scripts for Reels and TikTok using CapCut and standard video briefs." },
+        { icon: "📊", name: "Basic Analytics (Meta Insights, GA4)", desc: "Measuring which content performs so you can double down on what works." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "The most common question from applicants for content jobs in Sri Lanka is: 'I don't have published work — how do I get a portfolio?' Here's the practical answer. These five steps build a strong portfolio fast, with or without paid client work.",
+      steps: [
+        "Write five sample pieces across formats — a set of social captions, one SEO blog article, an ad-copy set, a short-form video script, and an email newsletter. Show range, not just one skill.",
+        "Publish consistently on your own channels — a LinkedIn, Medium or personal blog with 10+ posts proves you can write and ship, not just talk about it.",
+        "Offer free or discounted content to 2–3 local small businesses — real briefs, real feedback and real published results you can point to.",
+        "Rewrite and improve existing Sri Lankan brand content — take a real brand's captions or blog and show a before-and-after with your reasoning.",
+        "Apply for Cypher Digital's Marketing Internship or a junior content role — working on 800+ brand campaigns builds a real portfolio faster than any other route.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Junior Content Writer", salary: "LKR 40K–70K/mo", exp: "0–2 years" },
+        { title: "Content Specialist (Mid)", salary: "LKR 70K–120K/mo", exp: "2–4 years" },
+        { title: "Senior Content Specialist", salary: "LKR 120K–180K/mo", exp: "4–7 years" },
+        { title: "Content Strategist / Lead", salary: "LKR 180K–300K/mo", exp: "7+ years" },
+        { title: "Head of Content / Content Director", salary: "LKR 280K–500K+/mo", exp: "10+ years" },
+      ],
+      note:
+        "At Cypher Digital, content specialists regularly advance one full level within 12–18 months. Writing for 800+ brands across restaurants, fashion, real estate, education and healthcare means you gain more diverse content experience in one year than most writers get in three years at a single-brand in-house role.",
+    },
+    dayInLife: {
+      intro:
+        "What the actual daily work looks like — no vague job descriptions, just the real experience of writing for 800+ Sri Lankan brands.",
+      items: [
+        { time: "9:00 AM", task: "Daily standup with the creative team: review live campaign performance and note any content changes based on overnight results." },
+        { time: "9:30 AM", task: "Write the week's social captions across 3–5 client brands, each with its own voice, audience and content themes." },
+        { time: "11:00 AM", task: "Draft ad copy variations for a Meta Ads campaign — multiple hooks and angles for the media buyer to A/B test." },
+        { time: "1:30 PM", task: "Write an SEO blog article for a client, researching keywords and structuring it for search and readability." },
+        { time: "3:00 PM", task: "Script a short-form video for a restaurant client's weekend promo and brief the video editor and designer." },
+        { time: "4:00 PM", task: "Revisions from client feedback: tighten messaging, keep brand consistency, hand off final copy." },
+        { time: "5:00 PM", task: "Plan tomorrow's content calendar and review performance data to refine next week's angles." },
+      ],
+    },
     duties: [
       "Plan and manage content calendars across multiple client brands",
       "Write captions, ad copy, blog articles and short-form video scripts",
@@ -820,53 +882,57 @@ export const vacancies: Vacancy[] = [
       "A portfolio or samples of published content",
     ],
     perks: [
-      "Ownership of content for real, recognisable Sri Lankan brands",
+      "Ownership of content for real, recognisable Sri Lankan brands — not sample copy that never ships",
       "Collaboration with a full creative team — designers, editors, strategists",
       "Exposure to Sri Lanka's most integrated marketing group — Cypher360",
       "Clear progression toward Senior Content Specialist or Content Strategist",
-      "A competitive full-time salary and a supportive studio culture",
-      "Continuous learning across social, SEO, paid media and video",
+      "Competitive salary benchmarked against top content jobs in Colombo",
+      "A supportive studio culture with flexible hours for part-timers",
     ],
     whyJoin: [
-      { title: "Real brands, real reach", body: "Your words go live for 800+ Sri Lankan brands across every major industry — not sample copy that never ships." },
-      { title: "A full creative team behind you", body: "Work shoulder-to-shoulder with designers, video editors and paid-media specialists so your content is produced properly, not left as text on a page." },
-      { title: "A clear path to senior content roles", body: "Strong performers grow into Senior Content Specialist and Content Strategist positions at Cypher Digital." },
+      { title: "Real brands, real reach", body: "Your words go live for 800+ Sri Lankan brands across every major industry — your portfolio grows fast." },
+      { title: "Content that's measured, not just written", body: "Your copy runs on Meta and Google Ads campaigns where performance is tracked. You'll learn how words affect real marketing ROI." },
+      { title: "Career growth inside Cypher360", body: "Move between social, SEO, scripting and strategy across our digital marketing, events and production arms." },
     ],
     faqs: [
       {
-        q: "Are you hiring a Digital Content Specialist in Sri Lanka right now?",
-        a: "Yes. Cypher Digital is actively hiring a full-time Digital Content Specialist in Colombo, Sri Lanka. Apply via WhatsApp at +94 70 177 2626 with your CV and portfolio.",
+        q: "What is the content specialist salary in Sri Lanka?",
+        a: "Content specialist salaries in Sri Lanka range from about LKR 40,000 at junior level to LKR 300,000+ for content strategists and leads in 2026. Mid-level content specialists earn roughly LKR 70,000–120,000 per month. At Cypher Digital, content specialists earn LKR 60,000–130,000 per month depending on portfolio quality and demonstrated output.",
       },
       {
-        q: "Is this a full-time role?",
-        a: "Yes, this is a full-time, on-site role based at our Colombo studio, with some flexibility for hybrid work depending on the project.",
+        q: "What does a content specialist do at an agency in Sri Lanka?",
+        a: "At a digital marketing agency in Sri Lanka like Cypher Digital, a content specialist plans content calendars, writes social media captions, ad copy for Meta and Google campaigns, SEO blog articles, email newsletters, and short-form video scripts, then tracks how each piece performs and refines based on the results. The role combines writing with performance marketing.",
       },
       {
-        q: "What experience do I need to apply?",
-        a: "We're looking for 1–2 or more years of experience in content creation, copywriting or social media, plus a portfolio or samples of published work.",
+        q: "What skills and tools do I need for content jobs in Sri Lanka?",
+        a: "The most in-demand skills for content jobs in Sri Lanka are strong copywriting, SEO writing (keywords, structure, readability), Canva for quick visuals, content scheduling tools like Meta Business Suite, responsible use of AI writing tools, and basic short-form video scripting. Writing quality and SEO awareness matter most.",
+      },
+      {
+        q: "Do I need a degree for content specialist jobs in Sri Lanka?",
+        a: "No degree is required for content jobs at Cypher Digital. We hire based on writing quality and a published portfolio. A strong body of published work — captions, blogs, scripts — is more valuable than a formal qualification, though journalism, marketing or communications qualifications are valued.",
+      },
+      {
+        q: "What is a junior content writer salary in Sri Lanka?",
+        a: "Junior content writer salaries in Sri Lanka typically range from LKR 40,000 to LKR 70,000 per month for 0–2 years experience. At Colombo agencies, juniors with a strong portfolio and SEO ability can start at the upper end, and salaries rise quickly with demonstrated performance.",
+      },
+      {
+        q: "Are there freelance content writing jobs in Sri Lanka?",
+        a: "Yes — Cypher Digital offers part-time and freelance content arrangements for the right candidates. Freelance writers in Sri Lanka charge per article, caption set or project, and experienced writers working across several clients or international platforms like Upwork can earn significantly more than local agency rates.",
       },
       {
         q: "Do I need to write in both English and Sinhala?",
         a: "Excellent English writing is essential. Strong Sinhala writing is a significant advantage, since many of our client brands publish in both languages.",
       },
       {
-        q: "What tools will I use?",
-        a: "You'll work with content scheduling tools, Canva and standard SEO and analytics tools. We'll support you with anything you haven't used before.",
+        q: "How do I build a content portfolio in Sri Lanka?",
+        a: "Write 5–10 sample pieces across formats (captions, a blog, ad copy, a video script, an email), publish consistently on LinkedIn, Medium or a personal blog, offer free work to a few local businesses for real published results, and rewrite existing brand content to show before-and-after. A portfolio of 10+ strong pieces beats a degree with no portfolio every time.",
       },
       {
-        q: "Where is the job located?",
-        a: "The role is based at our Colombo studio in Sri Lanka, with some flexibility for hybrid work.",
-      },
-      {
-        q: "Is there room to grow into a senior role?",
-        a: "Yes. Strong performers progress into Senior Content Specialist and Content Strategist positions within the Cypher360 group.",
-      },
-      {
-        q: "How do I apply for the Digital Content Specialist job?",
-        a: "Send your name, CV, portfolio or writing samples and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+        q: "How do I apply for this Content Specialist vacancy in Sri Lanka?",
+        a: "Send your name, portfolio link or writing samples, and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
       },
     ],
-    whatsappMessage: "Hi, I'm applying for the Digital Content Specialist role at Cypher Digital.",
+    whatsappMessage: "Hi, I'm applying for the Content Specialist role at Cypher Digital.",
     whatsappCta: "Apply on WhatsApp",
     datePosted: "2026-08-01",
   },

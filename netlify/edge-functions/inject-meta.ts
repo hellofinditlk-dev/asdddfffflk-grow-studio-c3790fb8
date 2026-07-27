@@ -718,9 +718,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Finance Internship in Sri Lanka — Apply Now at Cypher Digital",
   },
   "/careers/content-specialist-jobs-sri-lanka": {
-    title: "Digital Content Specialist Jobs in Sri Lanka 2026 | Content Specialist Colombo | Cypher Digital",
-    description: "Digital Content Specialist job in Sri Lanka at Cypher Digital, Colombo. Create content, captions, blogs & scripts for 800+ brands. Full-time role. Apply via WhatsApp.",
-    h1: "Digital Content Specialist Jobs in Sri Lanka — Apply Now at Cypher Digital",
+    title: "Content Specialist Jobs in Sri Lanka 2026 | LKR 60K–130K | Cypher Digital",
+    description: "Content Specialist jobs in Sri Lanka at Cypher Digital, Colombo. Write captions, blogs, ad copy & scripts for 800+ brands. Salary LKR 60,000–130,000/month. Apply via WhatsApp in 60 seconds.",
+    h1: "Content Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/blog/tv-advertising-companies-sri-lanka": {
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared 2025 | Cypher Digital",
@@ -1214,12 +1214,12 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     salaryMax: 40000,
   },
   "content-specialist-jobs-sri-lanka": {
-    title: "Digital Content Specialist",
-    description: "Full-time Digital Content Specialist role in Colombo, Sri Lanka. Plan content calendars, write captions, ad copy, blog articles and short-form video scripts for 800+ Sri Lankan brands and optimise content for SEO and engagement. Requirements: 1–2+ years in content creation, copywriting or social media, excellent English writing, portfolio of published work.",
-    employmentType: "FULL_TIME",
+    title: "Content Specialist",
+    description: "Content Specialist role (full-time or part-time) in Colombo, Sri Lanka. Plan content calendars, write captions, ad copy, SEO blog articles and short-form video scripts for 800+ Sri Lankan brands and optimise content for search and engagement. Requirements: 1–2+ years in content creation, copywriting or social media, excellent English writing, portfolio of published work.",
+    employmentType: ["FULL_TIME", "PART_TIME"],
     datePosted: "2026-08-01",
-    salaryMin: 50000,
-    salaryMax: 80000,
+    salaryMin: 60000,
+    salaryMax: 130000,
   },
   "social-media-jobs-sri-lanka": {
     title: "Social Media Manager",
