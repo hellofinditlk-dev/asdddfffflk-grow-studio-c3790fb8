@@ -1,4 +1,4 @@
-import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, type LucideIcon } from "lucide-react";
+import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, PenLine, type LucideIcon } from "lucide-react";
 
 export interface Vacancy {
   slug: string;
