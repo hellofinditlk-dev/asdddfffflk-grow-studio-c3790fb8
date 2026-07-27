@@ -780,6 +780,97 @@ export const vacancies: Vacancy[] = [
     datePosted: "2026-08-01",
   },
   {
+    slug: "digital-content-specialist-jobs-sri-lanka",
+    title: "Digital Content Specialist",
+    shortTitle: "Digital Content Specialist",
+    h1: "Digital Content Specialist Jobs in Sri Lanka — Apply Now at Cypher Digital",
+    metaTitle: "Digital Content Specialist Jobs in Sri Lanka 2026 | Content Specialist Colombo | Cypher Digital",
+    metaDescription:
+      "Digital Content Specialist job in Sri Lanka at Cypher Digital, Colombo. Create content, captions, blogs & scripts for 800+ brands. Full-time role. Apply via WhatsApp.",
+    icon: PenLine,
+    type: "Full-time",
+    employmentType: "FULL_TIME",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the best content jobs in Sri Lanka — a full-time Digital Content Specialist role in Colombo where you plan, write and produce the content that powers social media, ads and SEO for 800+ Sri Lankan brands.",
+    salaryRange: { min: 80000, max: 150000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Searching for digital content specialist jobs in Sri Lanka? Cypher Digital is hiring a full-time Content Specialist in Colombo — write captions, ad copy, blog articles and short-form scripts for 800+ Sri Lankan brands. Content creator jobs, content writer jobs and social media content roles in one seat.",
+    seoIntro: [
+      "Cypher Digital is hiring a Digital Content Specialist in Sri Lanka to own the content that our clients' audiences actually stop and read. If you're searching for a content specialist job in Colombo, a content creator role in Sri Lanka, or a social media content job near you, this is a chance to write and produce at scale inside a working agency.",
+      "As a Digital Content Specialist at Cypher Digital, you'll turn campaign strategy into scroll-stopping captions, blog articles, ad copy and short-form video scripts for brands across restaurants, fashion, education, real estate and healthcare. You'll work alongside designers, editors and paid-media specialists to make sure every piece of content is on-brand, on-strategy and built to perform.",
+      "This is a full-time role inside Cypher360 — the country's most integrated marketing group — with real ownership of content calendars from day one and room to grow into a senior content or strategy position.",
+    ],
+    duties: [
+      "Plan and manage content calendars across multiple client brands",
+      "Write captions, ad copy, blog articles and short-form video scripts",
+      "Adapt tone and messaging to each brand and platform (Facebook, Instagram, TikTok, LinkedIn)",
+      "Collaborate with designers and video editors on creative briefs",
+      "Optimise written content for SEO and engagement",
+      "Track content performance and refine based on results",
+      "Research trends, competitors and content angles for client industries",
+    ],
+    requirements: [
+      "1–2+ years of experience in content creation, copywriting or social media",
+      "Excellent writing skills in English; strong Sinhala writing is a major plus",
+      "A solid grasp of social media platforms and what performs on each",
+      "Basic SEO knowledge (keywords, structure, readability)",
+      "Comfortable using Canva and content scheduling tools",
+      "Organised, deadline-driven and able to manage multiple brands at once",
+      "A portfolio or samples of published content",
+    ],
+    perks: [
+      "Ownership of content for real, recognisable Sri Lankan brands",
+      "Collaboration with a full creative team — designers, editors, strategists",
+      "Exposure to Sri Lanka's most integrated marketing group — Cypher360",
+      "Clear progression toward Senior Content Specialist or Content Strategist",
+      "A competitive full-time salary and a supportive studio culture",
+      "Continuous learning across social, SEO, paid media and video",
+    ],
+    whyJoin: [
+      { title: "Real brands, real reach", body: "Your words go live for 800+ Sri Lankan brands across every major industry — not sample copy that never ships." },
+      { title: "A full creative team behind you", body: "Work shoulder-to-shoulder with designers, video editors and paid-media specialists so your content is produced properly, not left as text on a page." },
+      { title: "A clear path to senior content roles", body: "Strong performers grow into Senior Content Specialist and Content Strategist positions at Cypher Digital." },
+    ],
+    faqs: [
+      {
+        q: "Are you hiring a Digital Content Specialist in Sri Lanka right now?",
+        a: "Yes. Cypher Digital is actively hiring a full-time Digital Content Specialist in Colombo, Sri Lanka. Apply via WhatsApp at +94 70 177 2626 with your CV and portfolio.",
+      },
+      {
+        q: "Is this a full-time role?",
+        a: "Yes, this is a full-time, on-site role based at our Colombo studio, with some flexibility for hybrid work depending on the project.",
+      },
+      {
+        q: "What experience do I need to apply?",
+        a: "We're looking for 1–2 or more years of experience in content creation, copywriting or social media, plus a portfolio or samples of published work.",
+      },
+      {
+        q: "Do I need to write in both English and Sinhala?",
+        a: "Excellent English writing is essential. Strong Sinhala writing is a significant advantage, since many of our client brands publish in both languages.",
+      },
+      {
+        q: "What tools will I use?",
+        a: "You'll work with content scheduling tools, Canva and standard SEO and analytics tools. We'll support you with anything you haven't used before.",
+      },
+      {
+        q: "Where is the job located?",
+        a: "The role is based at our Colombo studio in Sri Lanka, with some flexibility for hybrid work.",
+      },
+      {
+        q: "Is there room to grow into a senior role?",
+        a: "Yes. Strong performers progress into Senior Content Specialist and Content Strategist positions within the Cypher360 group.",
+      },
+      {
+        q: "How do I apply for the Digital Content Specialist job?",
+        a: "Send your name, CV, portfolio or writing samples and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Digital Content Specialist role at Cypher Digital.",
+    whatsappCta: "Apply on WhatsApp",
+    datePosted: "2026-08-01",
+  },
+  {
     slug: "social-media-jobs-sri-lanka",
     title: "Social Media Manager",
     shortTitle: "Social Media Manager",
