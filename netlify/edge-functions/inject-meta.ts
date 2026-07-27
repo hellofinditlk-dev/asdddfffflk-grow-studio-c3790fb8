@@ -717,7 +717,7 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Apply for a paid finance internship in Sri Lanka. Cypher Digital is hiring a finance & accounts intern in Colombo — invoicing, reporting, reconciliations & budgeting. Apply via WhatsApp.",
     h1: "Finance Internship in Sri Lanka — Apply Now at Cypher Digital",
   },
-  "/careers/digital-content-specialist-jobs-sri-lanka": {
+  "/careers/content-specialist-jobs-sri-lanka": {
     title: "Digital Content Specialist Jobs in Sri Lanka 2026 | Content Specialist Colombo | Cypher Digital",
     description: "Digital Content Specialist job in Sri Lanka at Cypher Digital, Colombo. Create content, captions, blogs & scripts for 800+ brands. Full-time role. Apply via WhatsApp.",
     h1: "Digital Content Specialist Jobs in Sri Lanka — Apply Now at Cypher Digital",
@@ -1213,7 +1213,7 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     salaryMin: 20000,
     salaryMax: 40000,
   },
-  "digital-content-specialist-jobs-sri-lanka": {
+  "content-specialist-jobs-sri-lanka": {
     title: "Digital Content Specialist",
     description: "Full-time Digital Content Specialist role in Colombo, Sri Lanka. Plan content calendars, write captions, ad copy, blog articles and short-form video scripts for 800+ Sri Lankan brands and optimise content for SEO and engagement. Requirements: 1–2+ years in content creation, copywriting or social media, excellent English writing, portfolio of published work.",
     employmentType: "FULL_TIME",

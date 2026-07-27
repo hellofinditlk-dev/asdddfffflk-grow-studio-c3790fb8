@@ -780,7 +780,7 @@ export const vacancies: Vacancy[] = [
     datePosted: "2026-08-01",
   },
   {
-    slug: "digital-content-specialist-jobs-sri-lanka",
+    slug: "content-specialist-jobs-sri-lanka",
     title: "Digital Content Specialist",
     shortTitle: "Digital Content Specialist",
     h1: "Digital Content Specialist Jobs in Sri Lanka — Apply Now at Cypher Digital",
