@@ -1218,8 +1218,8 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     description: "Full-time Digital Content Specialist role in Colombo, Sri Lanka. Plan content calendars, write captions, ad copy, blog articles and short-form video scripts for 800+ Sri Lankan brands and optimise content for SEO and engagement. Requirements: 1–2+ years in content creation, copywriting or social media, excellent English writing, portfolio of published work.",
     employmentType: "FULL_TIME",
     datePosted: "2026-08-01",
-    salaryMin: 80000,
-    salaryMax: 150000,
+    salaryMin: 50000,
+    salaryMax: 80000,
   },
   "social-media-jobs-sri-lanka": {
     title: "Social Media Manager",

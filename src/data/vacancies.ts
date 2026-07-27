@@ -793,7 +793,7 @@ export const vacancies: Vacancy[] = [
     location: "Colombo, Sri Lanka",
     summary:
       "One of the best content jobs in Sri Lanka — a full-time Digital Content Specialist role in Colombo where you plan, write and produce the content that powers social media, ads and SEO for 800+ Sri Lankan brands.",
-    salaryRange: { min: 80000, max: 150000, currency: "LKR", unit: "MONTH" },
+    salaryRange: { min: 50000, max: 80000, currency: "LKR", unit: "MONTH" },
     kwIntro:
       "Searching for digital content specialist jobs in Sri Lanka? Cypher Digital is hiring a full-time Content Specialist in Colombo — write captions, ad copy, blog articles and short-form scripts for 800+ Sri Lankan brands. Content creator jobs, content writer jobs and social media content roles in one seat.",
     seoIntro: [
