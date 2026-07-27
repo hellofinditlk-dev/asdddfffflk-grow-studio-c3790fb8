@@ -1179,7 +1179,7 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     employmentType: "FULL_TIME",
     datePosted: "2026-05-25",
     salaryMin: 50000,
-    salaryMax: 200000,
+    salaryMax: 80000,
   },
   "digital-marketing-executive-jobs-sri-lanka": {
     title: "Digital Marketing Executive",
