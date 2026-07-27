@@ -1200,6 +1200,14 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     salaryMin: 20000,
     salaryMax: 40000,
   },
+  "finance-internship-sri-lanka": {
+    title: "Finance Intern",
+    description: "Paid finance internship in Colombo supporting the accounts team with client invoicing, monthly reporting, bank reconciliations and budget tracking across 800+ Sri Lankan client accounts. Structured 3–6 month placement inside Cypher360 with a path to a full-time finance role. Requirements: undergraduate, fresh graduate or CIMA/ACCA/AAT/CA part-qualified student, comfortable with Excel, strong attention to detail.",
+    employmentType: "INTERN",
+    datePosted: "2026-08-01",
+    salaryMin: 20000,
+    salaryMax: 40000,
+  },
   "social-media-jobs-sri-lanka": {
     title: "Social Media Manager",
     description: "Plan content, run Facebook, Instagram and TikTok pages and grow engaged audiences for 800+ Sri Lankan brands at Cypher Digital, Colombo. Requirements: 2+ years social media management, strong copywriting, comfort with analytics, basic design sense.",
