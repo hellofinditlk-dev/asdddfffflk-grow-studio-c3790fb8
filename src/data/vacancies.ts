@@ -1,4 +1,4 @@
-import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, type LucideIcon } from "lucide-react";
+import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, type LucideIcon } from "lucide-react";
 
 export interface Vacancy {
   slug: string;
@@ -683,6 +683,101 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Marketing Internship at Cypher Digital.",
     whatsappCta: "Apply for Internship",
     datePosted: "2026-05-25",
+  },
+  {
+    slug: "finance-internship-sri-lanka",
+    title: "Finance Intern",
+    shortTitle: "Finance Internship",
+    h1: "Finance Internship in Sri Lanka — Apply Now at Cypher Digital",
+    metaTitle: "Finance Internship in Sri Lanka 2026 | Accounting & Finance Intern Colombo",
+    metaDescription:
+      "Apply for a paid finance internship in Sri Lanka. Cypher Digital is hiring a finance & accounts intern in Colombo — invoicing, reporting, reconciliations & budgeting. Apply via WhatsApp.",
+    icon: Calculator,
+    type: "Internship (3–6 months)",
+    employmentType: "INTERN",
+    location: "Colombo, Sri Lanka",
+    summary:
+      "One of the best finance internships in Sri Lanka — a hands-on, paid internship in Colombo where you work alongside our accounts and operations team on real invoicing, reporting and reconciliation work for 800+ Sri Lankan client accounts.",
+    salaryRange: { min: 20000, max: 40000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Looking for a finance internship in Sri Lanka? Cypher Digital is hiring a Finance Intern in Colombo — a paid accounting internship for undergraduates, fresh graduates and CIMA/ACCA/AAT part-qualified students. Hands-on invoicing, reconciliations, and monthly reporting across 800+ Sri Lankan client accounts.",
+    seoIntro: [
+      "Cypher Digital is offering a Finance Internship in Sri Lanka for students and fresh graduates who want to build a real career in finance and accounting — not just push paper. If you're searching for a finance internship in Colombo, an accounting internship in Sri Lanka, or a CIMA/ACCA-friendly internship near you, this is one of the most hands-on placements in the country right now.",
+      "As a Finance Intern at Cypher Digital, you'll support the accounts team with live client billing, budget tracking and monthly reporting across a portfolio of 800+ Sri Lankan brands in restaurants, fashion, education, real estate and healthcare. You'll see how a fast-moving agency actually manages cash flow, reconciles ad spend and closes its books — the kind of practical experience a textbook can't give you.",
+      "This isn't a filing-and-photocopying internship. It's a structured 3–6 month finance internship in Sri Lanka inside Cypher360 — the country's most integrated marketing group — with a clear path to convert into a full-time finance role.",
+    ],
+    duties: [
+      "Assist with client invoicing, billing and payment follow-ups",
+      "Help maintain accounts payable and accounts receivable records",
+      "Support monthly financial reporting and bank reconciliations",
+      "Enter and organise data in accounting software (QuickBooks, Xero, or similar)",
+      "Reconcile advertising spend and client budgets against invoices",
+      "Assist with petty cash, expense tracking and payroll support",
+      "Learn how a real finance function plans, records and reports",
+    ],
+    requirements: [
+      "Currently studying finance, accounting, business or a related field (university degree, AAT, CIMA, ACCA or CA part-qualified all welcome)",
+      "Comfortable with Microsoft Excel or Google Sheets",
+      "Strong attention to detail and good numerical accuracy",
+      "Eager to learn and not afraid to take initiative",
+      "Familiarity with any accounting software is a plus",
+      "Good communication skills in English and Sinhala",
+      "Able to commit at least 3 days per week",
+    ],
+    perks: [
+      "Real work experience on live client accounts and reporting",
+      "Mentorship from experienced finance and operations professionals",
+      "Certificate of internship completion",
+      "Potential to convert to a full-time role based on performance",
+      "Exposure to Sri Lanka's most integrated marketing group — Cypher360",
+      "Monthly stipend — a paid finance internship in Sri Lanka, not unpaid",
+      "Flexible 3 days/week schedule designed around university timetables",
+    ],
+    whyJoin: [
+      { title: "Sri Lanka's most hands-on finance internship", body: "You'll work with real invoices, reconciliations and reports from week one — not just observe someone else's spreadsheet." },
+      { title: "Mentorship from experienced finance professionals", body: "Learn directly from the team that manages billing and cash flow across 800+ Sri Lankan client accounts." },
+      { title: "Convert to a full-time finance job", body: "Top-performing interns are offered full-time roles such as Accounts Executive or Finance Associate at Cypher Digital." },
+    ],
+    faqs: [
+      {
+        q: "Are you offering finance internships in Sri Lanka right now?",
+        a: "Yes. Cypher Digital is actively hiring a Finance Intern in Colombo, Sri Lanka for a 3–6 month placement. Apply via WhatsApp at +94 70 177 2626 with your CV or LinkedIn profile.",
+      },
+      {
+        q: "Is this a paid finance internship in Sri Lanka?",
+        a: "Yes — this is a paid internship. Stipends range between LKR 20,000 and LKR 40,000 per month based on hours committed and skills demonstrated.",
+      },
+      {
+        q: "Can university and CIMA/ACCA students apply for this finance internship?",
+        a: "Absolutely. The internship is designed for undergraduates, fresh graduates and part-qualified students studying finance, accounting or business (including AAT, CIMA, ACCA and CA). The 3-day-per-week schedule fits around university and class timetables.",
+      },
+      {
+        q: "Do I need accounting software experience to apply?",
+        a: "No. Familiarity with Excel, QuickBooks or Xero is a plus, but not required. We'll train you on the tools we use — attention to detail and a willingness to learn matter most.",
+      },
+      {
+        q: "Where is the finance internship located?",
+        a: "The internship is based at our Colombo studio in Sri Lanka, with some flexibility for hybrid work depending on the task.",
+      },
+      {
+        q: "How long is the finance internship?",
+        a: "Internships run between 3 and 6 months. Top performers are offered full-time finance jobs at Cypher Digital after the placement.",
+      },
+      {
+        q: "Do I get a certificate after completing the internship?",
+        a: "Yes. Every intern who completes the programme receives a Certificate of Internship Completion from Cypher Digital, plus a LinkedIn recommendation from your team lead.",
+      },
+      {
+        q: "How do I apply for the finance internship in Sri Lanka?",
+        a: "Send your name, university or professional body, CV (or LinkedIn) and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
+      },
+    ],
+    internalLinks: [
+      { label: "Marketing Internship", href: "/careers/marketing-internship-sri-lanka", desc: "Our other paid internship — social, ads and design across 800+ brands." },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Finance Internship at Cypher Digital.",
+    whatsappCta: "Apply for Internship",
+    datePosted: "2026-08-01",
   },
   {
     slug: "social-media-jobs-sri-lanka",

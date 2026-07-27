@@ -712,6 +712,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Apply for a digital marketing internship in Colombo, Sri Lanka. Gain real experience in social media, ads and design at Cypher Digital. Apply via WhatsApp.",
     h1: "Marketing Internship in Sri Lanka — Cypher Digital",
   },
+  "/careers/finance-internship-sri-lanka": {
+    title: "Finance Internship in Sri Lanka 2026 | Accounting & Finance Intern Colombo",
+    description: "Apply for a paid finance internship in Sri Lanka. Cypher Digital is hiring a finance & accounts intern in Colombo — invoicing, reporting, reconciliations & budgeting. Apply via WhatsApp.",
+    h1: "Finance Internship in Sri Lanka — Apply Now at Cypher Digital",
+  },
   "/blog/tv-advertising-companies-sri-lanka": {
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared 2025 | Cypher Digital",
     description: "Looking for TV advertising companies in Sri Lanka? Compare the top agencies for TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for your campaign in 2025.",
@@ -1192,6 +1197,14 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     description: "Hands-on, paid marketing internship in Colombo working alongside our team on live client campaigns for 800+ Sri Lankan brands. Learn social media, paid ads, content and design from senior marketers. Requirements: undergraduate or recent graduate, strong communication, eagerness to learn.",
     employmentType: "INTERN",
     datePosted: "2026-05-25",
+    salaryMin: 20000,
+    salaryMax: 40000,
+  },
+  "finance-internship-sri-lanka": {
+    title: "Finance Intern",
+    description: "Paid finance internship in Colombo supporting the accounts team with client invoicing, monthly reporting, bank reconciliations and budget tracking across 800+ Sri Lankan client accounts. Structured 3–6 month placement inside Cypher360 with a path to a full-time finance role. Requirements: undergraduate, fresh graduate or CIMA/ACCA/AAT/CA part-qualified student, comfortable with Excel, strong attention to detail.",
+    employmentType: "INTERN",
+    datePosted: "2026-08-01",
     salaryMin: 20000,
     salaryMax: 40000,
   },
