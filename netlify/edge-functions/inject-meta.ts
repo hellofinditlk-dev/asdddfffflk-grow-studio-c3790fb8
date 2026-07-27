@@ -712,6 +712,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Apply for a digital marketing internship in Colombo, Sri Lanka. Gain real experience in social media, ads and design at Cypher Digital. Apply via WhatsApp.",
     h1: "Marketing Internship in Sri Lanka — Cypher Digital",
   },
+  "/careers/finance-internship-sri-lanka": {
+    title: "Finance Internship in Sri Lanka 2026 | Accounting & Finance Intern Colombo",
+    description: "Apply for a paid finance internship in Sri Lanka. Cypher Digital is hiring a finance & accounts intern in Colombo — invoicing, reporting, reconciliations & budgeting. Apply via WhatsApp.",
+    h1: "Finance Internship in Sri Lanka — Apply Now at Cypher Digital",
+  },
   "/blog/tv-advertising-companies-sri-lanka": {
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared 2025 | Cypher Digital",
     description: "Looking for TV advertising companies in Sri Lanka? Compare the top agencies for TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for your campaign in 2025.",
