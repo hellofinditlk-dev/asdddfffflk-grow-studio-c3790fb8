@@ -723,9 +723,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Content Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/sales-jobs-in-sri-lanka": {
-    title: "Sales Executive Jobs in Sri Lanka 2026 | Cypher Digital",
-    description: "Sales Executive jobs in Sri Lanka — Cypher Digital is hiring in Colombo (2026). Sell digital marketing products. Base LKR 60,000, earn LKR 150,000+/month. Apply on WhatsApp.",
-    h1: "Sales Executive Jobs in Sri Lanka — Join Cypher Digital",
+    title: "Sales Executive Jobs in Sri Lanka 2026 | LKR 60K–150K | Cypher Digital",
+    description: "Sales Executive jobs in Sri Lanka 2026 — Cypher Digital is hiring in Colombo. Sell Facebook Ads, Google Ads, SEO & social media. Base LKR 60,000, earn LKR 150,000+/month. Apply via WhatsApp in 60 seconds.",
+    h1: "Sales Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/blog/tv-advertising-companies-sri-lanka": {
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared 2025 | Cypher Digital",
