@@ -714,8 +714,8 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
   },
   "/careers/internship-programme-sri-lanka": {
     title: "Internship Programme in Sri Lanka 2026 | Cypher Digital",
-    description: "The best internship programme in Sri Lanka. Start as an intern at Cypher Digital in Colombo, rotate through multiple departments, and grow to management trainee — guided, flexible, hands-on. No experience needed. Apply via WhatsApp.",
-    h1: "Internship Programme in Sri Lanka — From Intern to Management Trainee at Cypher Digital",
+    description: "The best all-round internship programme in Sri Lanka. Start as an intern at Cypher Digital in Colombo and learn the whole business — operations, sales and marketing — guided all the way to management trainee. No experience needed. Apply via WhatsApp.",
+    h1: "Internship Programme in Sri Lanka — Learn the Whole Business, From Intern to Management Trainee",
   },
   "/careers/finance-internship-sri-lanka": {
     title: "Finance Internship in Sri Lanka 2026 | Accounting & Finance Intern Colombo",
@@ -1217,7 +1217,7 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
   },
   "internship-programme-sri-lanka": {
     title: "Intern (Internship Programme)",
-    description: "Cypher Digital's Internship Programme in Colombo takes people with no experience and grows them from intern to management trainee. Interns rotate through multiple departments — social media, paid ads, design, content, video, SEO and client servicing — on live client campaigns, guided by a dedicated mentor. Career path: Intern → Management Trainee → Executive → Manager. Requirements: students, fresh graduates and career-starters. No degree or prior experience required. Good English and Sinhala communication, coachable, and ready to take initiative.",
+    description: "Cypher Digital's Internship Programme in Colombo takes people with no experience and grows them from intern to management trainee. Interns learn the whole business by rotating through three pillars — Operations, Sales and Marketing — on live client accounts, guided by a dedicated mentor. Ideal for anyone starting a career who wants to discover their strengths. Career path: Intern → Management Trainee → Executive → Manager. Requirements: students, fresh graduates and career-starters — especially anyone still figuring out their direction. No degree or prior experience required. Good English and Sinhala communication, coachable, and ready to take initiative.",
     employmentType: ["INTERN", "FULL_TIME"],
     datePosted: "2026-07-01",
     salaryMin: 20000,
