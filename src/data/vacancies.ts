@@ -1109,10 +1109,10 @@ export const vacancies: Vacancy[] = [
     slug: "sales-jobs-in-sri-lanka",
     title: "Sales Executive",
     shortTitle: "Sales Executive",
-    h1: "Sales Jobs in Sri Lanka — Join Cypher Digital",
-    metaTitle: "Sales Jobs in Sri Lanka 2026 | Cypher Digital Careers",
+    h1: "Sales Executive Jobs in Sri Lanka — Join Cypher Digital",
+    metaTitle: "Sales Executive Jobs in Sri Lanka 2026 | Cypher Digital",
     metaDescription:
-      "Looking for sales jobs in Sri Lanka? Cypher Digital is hiring Sales Executives in Colombo to sell digital products. Base salary LKR 60,000 — ability to earn LKR 150,000/month. Apply via WhatsApp.",
+      "Sales Executive jobs in Sri Lanka — Cypher Digital is hiring in Colombo (2026). Sell digital marketing products. Base LKR 60,000, earn LKR 150,000+/month. Apply on WhatsApp.",
     icon: Briefcase,
     type: "Full-time",
     employmentType: "FULL_TIME",
@@ -1121,7 +1121,7 @@ export const vacancies: Vacancy[] = [
       "One of the best sales jobs in Sri Lanka right now — sell high-demand digital products (social media management, Facebook Ads, Google Ads, SEO, video production) to Sri Lankan businesses. Base LKR 60,000 with ability to earn LKR 150,000+/month.",
     salaryRange: { min: 60000, max: 150000, currency: "LKR", unit: "MONTH" },
     kwIntro:
-      "Searching for sales jobs in Sri Lanka, sales executive vacancies in Sri Lanka, or sales jobs in Colombo? Cypher Digital is hiring Sales Executives in 2026 to sell digital products — social media management, Facebook Ads, Google Ads, SEO and video production — to Sri Lankan businesses ready to grow.",
+      "Quick facts — Role: Sales Executive · Location: Colombo · Base: LKR 60,000 · Earning potential: LKR 150,000+/month · Apply: WhatsApp +94 70 177 2626. Searching for sales executive jobs in Sri Lanka, sales executive vacancies in Sri Lanka, or sales jobs in Colombo? Cypher Digital is hiring Sales Executives in 2026 to sell digital products — social media management, Facebook Ads, Google Ads, SEO and video production — to Sri Lankan businesses ready to grow.",
     seoIntro: [
       "Searching for the best sales jobs in Sri Lanka in 2026? Cypher Digital is hiring Sales Executives in Colombo to sell high-demand digital products — social media management, Facebook Ads, Google Ads, SEO, and video production — to Sri Lankan businesses that are ready to grow.",
       "Sales jobs in Sri Lanka are shifting fast — and the biggest opportunity right now is in digital. At Cypher Digital, you'll be selling products every Sri Lankan business genuinely needs: Facebook advertising, Google Ads, SEO, social media management and video production. This is not cold-pitch selling — you're backed by 800+ client results across restaurants, real estate, fashion, education and FMCG.",
@@ -1183,7 +1183,7 @@ export const vacancies: Vacancy[] = [
     ],
     whatsappMessage: "Hi, I'm applying for the Sales Executive position at Cypher Digital.",
     whatsappCta: "Apply for Sales Executive",
-    datePosted: "2026-05-25",
+    datePosted: "2026-07-01",
   },
   {
     slug: "sales-manager-jobs-sri-lanka",
