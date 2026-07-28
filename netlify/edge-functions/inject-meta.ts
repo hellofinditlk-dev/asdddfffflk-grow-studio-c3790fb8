@@ -1215,6 +1215,14 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     salaryMin: 20000,
     salaryMax: 40000,
   },
+  "internship-programme-sri-lanka": {
+    title: "Intern (Internship Programme)",
+    description: "Cypher Digital's Internship Programme in Colombo takes people with no experience and grows them from intern to management trainee. Interns rotate through multiple departments — social media, paid ads, design, content, video, SEO and client servicing — on live client campaigns, guided by a dedicated mentor. Career path: Intern → Management Trainee → Executive → Manager. Requirements: students, fresh graduates and career-starters. No degree or prior experience required. Good English and Sinhala communication, coachable, and ready to take initiative.",
+    employmentType: ["INTERN", "FULL_TIME"],
+    datePosted: "2026-07-01",
+    salaryMin: 20000,
+    salaryMax: 40000,
+  },
   "finance-internship-sri-lanka": {
     title: "Finance Intern",
     description: "Paid finance internship in Colombo supporting the accounts team with client invoicing, monthly reporting, bank reconciliations and budget tracking across 800+ Sri Lankan client accounts. Structured 3–6 month placement inside Cypher360 with a path to a full-time finance role. Requirements: undergraduate, fresh graduate or CIMA/ACCA/AAT/CA part-qualified student, comfortable with Excel, strong attention to detail.",
