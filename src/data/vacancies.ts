@@ -604,10 +604,10 @@ export const vacancies: Vacancy[] = [
     slug: "marketing-internship-sri-lanka",
     title: "Marketing Intern",
     shortTitle: "Marketing Internship",
-    h1: "Marketing Internship in Sri Lanka — Apply Now at Cypher Digital",
-    metaTitle: "Marketing Internship in Sri Lanka 2026 | Digital Marketing Intern Colombo",
+    h1: "Marketing Internship in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Marketing Internship in Sri Lanka 2026 | Paid LKR 20K–40K | Cypher Digital",
     metaDescription:
-      "Apply for the best marketing internship in Sri Lanka. Cypher Digital is hiring digital marketing interns in Colombo — social media, Meta Ads, Google Ads, SEO & design. Apply via WhatsApp.",
+      "Paid marketing internship in Sri Lanka 2026. Cypher Digital is hiring digital marketing interns in Colombo — Meta Ads, Google Ads, social & design for 800+ brands. Stipend LKR 20K–40K. Apply via WhatsApp in 60 seconds.",
     icon: GraduationCap,
     type: "Internship (3–6 months)",
     employmentType: "INTERN",
@@ -615,11 +615,70 @@ export const vacancies: Vacancy[] = [
     summary:
       "One of the best marketing internships in Sri Lanka — a hands-on, paid internship in Colombo where you work alongside our team on live client campaigns for 800+ Sri Lankan brands.",
     salaryRange: { min: 20000, max: 40000, currency: "LKR", unit: "MONTH" },
+    kwIntro:
+      "Looking for a marketing internship in Sri Lanka? Cypher Digital is hiring a paid Marketing Intern in Colombo — hands-on Meta Ads, Google Ads, social media and design work across 800+ Sri Lankan brands. Open to undergraduates, fresh graduates, SLIM/CIM students and gap-year applicants. Stipend LKR 20,000–40,000/month, 3–6 months, flexible 3-days/week schedule, with a clear path to a full-time digital marketing job.",
     seoIntro: [
       "Cypher Digital is offering a Marketing Internship in Sri Lanka for students and fresh graduates who want to break into digital marketing the right way. If you're searching for a marketing internship in Colombo, a digital marketing internship in Sri Lanka, or a social media internship near you — this is one of the most hands-on internship opportunities in the country right now.",
       "As a Marketing Intern at Cypher Digital, you'll work on real Facebook, Instagram, TikTok and Google Ads campaigns for 800+ Sri Lankan brands across restaurants, fashion, education, real estate and healthcare. You'll learn how professional marketers plan, launch, optimise and report on paid campaigns — not just theory from a textbook.",
       "This isn't a coffee-fetching, photocopy-printing internship. It's a structured 3–6 month digital marketing internship in Sri Lanka inside Cypher360 — the country's most integrated marketing group — with a clear path to convert into a full-time role.",
     ],
+    salaryGuide: {
+      intro: [
+        "Marketing internship stipends in Sri Lanka in 2026 typically range from unpaid to LKR 45,000/month depending on the agency, the intern's skills, and the number of days committed. At Cypher Digital, every marketing internship is paid, with the stipend scaling based on experience and hours.",
+        "Below is a realistic guide to what marketing interns and junior marketers earn in Sri Lanka right now.",
+      ],
+      levels: [
+        { name: "Part-time Intern", exp: "3 days/week", salary: "LKR 20K–25K" },
+        { name: "Full-time Intern", exp: "5 days/week", salary: "LKR 30K–40K" },
+        { name: "Junior Marketer", exp: "Post-internship", salary: "LKR 50K–70K" },
+        { name: "Marketing Executive", exp: "1–2 years", salary: "LKR 70K–110K" },
+        { name: "Senior Marketer", exp: "3+ years", salary: "LKR 120K–200K+" },
+      ],
+      note: "Top-performing Cypher Digital interns are offered a full-time Digital Marketing Executive role at LKR 50K–80K/month immediately after the internship — no gap year, no second round.",
+    },
+    softwareSkills: {
+      intro: "You don't need to master these before applying — we train interns on the tools used daily inside Sri Lanka's top digital marketing agencies. Familiarity with any of them is a strong plus.",
+      items: [
+        { icon: "📘", name: "Meta Ads Manager", desc: "Launch and monitor Facebook and Instagram ads for real Sri Lankan brands." },
+        { icon: "🔍", name: "Google Ads", desc: "Learn Search, Display and YouTube campaigns hands-on with live budgets." },
+        { icon: "🎨", name: "Canva & Photoshop", desc: "Design ad creatives, stories and reels for client social pages." },
+        { icon: "🎬", name: "CapCut & Premiere", desc: "Edit short-form Reels and TikToks for restaurants, fashion and education brands." },
+        { icon: "📊", name: "Google Analytics 4", desc: "Track website visitors, leads and conversions for e-commerce clients." },
+        { icon: "📅", name: "Meta Business Suite", desc: "Schedule content, manage inboxes and pull page insights for client accounts." },
+      ],
+    },
+    portfolioSteps: {
+      intro: "You don't need a fancy CV to land a marketing internship in Sri Lanka — you need proof you can execute. Here's how to build a portfolio that gets you shortlisted at Cypher Digital.",
+      steps: [
+        "Pick 2–3 Sri Lankan brands you use daily (a café, a boutique, a tuition class) and rewrite their Instagram bio + last 3 captions.",
+        "Design 3 Instagram carousels or Reels covers in Canva for those brands — export them as JPGs into one PDF.",
+        "Launch one LKR 500 boost on your own or a friend's Facebook page and screenshot the reach and engagement report.",
+        "Write a 300-word LinkedIn post explaining what you learnt from that LKR 500 boost — this becomes proof you understand ads.",
+        "Put the PDF, screenshots and LinkedIn link into a Google Drive folder and share the link on WhatsApp when you apply.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Marketing Intern", salary: "LKR 20K–40K", exp: "0–6 months" },
+        { title: "Junior Executive", salary: "LKR 50K–70K", exp: "6–12 months" },
+        { title: "Marketing Executive", salary: "LKR 70K–110K", exp: "1–2 years" },
+        { title: "Senior Executive", salary: "LKR 120K–160K", exp: "3–4 years" },
+        { title: "Marketing Manager", salary: "LKR 180K–300K+", exp: "5+ years" },
+      ],
+      note: "A marketing internship in Sri Lanka is the fastest, most predictable route into a full digital marketing career. Interns who convert at Cypher Digital typically hit LKR 100K/month within 18–24 months of joining.",
+    },
+    dayInLife: {
+      intro: "Every day is different, but here's what a typical Wednesday looks like for a marketing intern at our Colombo studio.",
+      items: [
+        { time: "9:00 AM", task: "Daily stand-up with your team lead. Review yesterday's ad performance and what's shipping today." },
+        { time: "9:30 AM", task: "Pull ad reports from Meta Ads Manager and Google Ads for 3 client accounts — a restaurant, a boutique and a school." },
+        { time: "11:00 AM", task: "Design 4 Instagram story slides in Canva for a client campaign, using their brand kit." },
+        { time: "12:30 PM", task: "Lunch with the team — mostly interns and junior execs debating which Reel format actually converts." },
+        { time: "1:30 PM", task: "Sit in on a client call with your mentor and take notes on what the client wants next month." },
+        { time: "3:00 PM", task: "Help edit a 15-second TikTok for a food brand in CapCut and get feedback from the senior editor." },
+        { time: "5:00 PM", task: "Write your daily log — what you shipped, what you learnt, what you'd try differently tomorrow." },
+      ],
+    },
     duties: [
       "Assist with social media content scheduling and page management",
       "Support the team with graphic design tasks using Canva or Photoshop",
@@ -679,6 +738,40 @@ export const vacancies: Vacancy[] = [
         q: "How do I apply for the marketing internship in Sri Lanka?",
         a: "Send your name, university, CV (or LinkedIn) and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
       },
+      {
+        q: "What is the average stipend for a marketing internship in Sri Lanka?",
+        a: "Marketing internship stipends in Sri Lanka range from unpaid up to around LKR 45,000/month in 2026. At Cypher Digital, part-time interns earn LKR 20,000–25,000 (3 days/week) and full-time interns earn LKR 30,000–40,000 (5 days/week). Every internship here is paid.",
+      },
+      {
+        q: "Do I need experience to apply for a digital marketing internship?",
+        a: "No. This is an entry-level internship — you don't need prior agency experience. What we look for is a basic understanding of Instagram, TikTok and Facebook, comfort with Canva or any editing tool, and a willingness to learn Meta Ads and Google Ads on the job.",
+      },
+      {
+        q: "Can SLIM, CIM or IPM students apply for this marketing internship?",
+        a: "Yes. Students studying SLIM (Sri Lanka Institute of Marketing), CIM (Chartered Institute of Marketing), IPM, or any university marketing/business degree are strongly encouraged to apply. The internship counts toward your practical/industry training requirements.",
+      },
+      {
+        q: "Is this remote, hybrid or on-site?",
+        a: "The marketing internship is primarily on-site at our Colombo studio because you learn fastest by sitting next to senior marketers. We offer some hybrid flexibility once you've completed the first month of onboarding.",
+      },
+      {
+        q: "Can I convert this internship into a full-time digital marketing job?",
+        a: "Yes — and most of our top interns do. Around 70% of Cypher Digital marketing interns are offered a full-time Digital Marketing Executive role at LKR 50,000–80,000/month after the placement, based on performance during the 3–6 month programme.",
+      },
+      {
+        q: "What skills will I actually learn during the internship?",
+        a: "You'll learn Meta Ads Manager, Google Ads, Google Analytics 4, Canva/Photoshop, CapCut/Premiere, content planning, brief writing, campaign reporting and client communication — the exact stack used at every top digital marketing agency in Sri Lanka.",
+      },
+      {
+        q: "How competitive is it to get a marketing internship in Sri Lanka?",
+        a: "Reasonably competitive — the best paid internships in Colombo get 30–80 applicants per opening. The candidates who get shortlisted usually share a simple portfolio (a Canva PDF, a boosted post screenshot, or a LinkedIn write-up) instead of just a CV. See the portfolio-building steps above.",
+      },
+    ],
+    internalLinks: [
+      { label: "Digital Marketing Specialist", href: "/careers/digital-marketing-jobs-sri-lanka", desc: "The full-time role most of our top interns convert into after 3–6 months." },
+      { label: "Content Specialist", href: "/careers/content-specialist-jobs-sri-lanka", desc: "For interns who fall in love with captions, blogs and ad copy." },
+      { label: "Graphic Designer", href: "/careers/graphic-designer-jobs-sri-lanka", desc: "For design-leaning interns who want a full-time creative career." },
+      { label: "Finance Internship", href: "/careers/finance-internship-sri-lanka", desc: "Our other paid internship — accounts, invoicing and reporting." },
     ],
     whatsappMessage: "Hi, I'm applying for the Marketing Internship at Cypher Digital.",
     whatsappCta: "Apply for Internship",

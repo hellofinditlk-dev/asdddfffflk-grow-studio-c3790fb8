@@ -708,9 +708,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Video Editor Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/marketing-internship-sri-lanka": {
-    title: "Marketing Internship in Sri Lanka | Cypher Digital Careers",
-    description: "Apply for a digital marketing internship in Colombo, Sri Lanka. Gain real experience in social media, ads and design at Cypher Digital. Apply via WhatsApp.",
-    h1: "Marketing Internship in Sri Lanka — Cypher Digital",
+    title: "Marketing Internship in Sri Lanka 2026 | Paid LKR 20K–40K | Cypher Digital",
+    description: "Paid marketing internship in Sri Lanka 2026. Cypher Digital is hiring digital marketing interns in Colombo — Meta Ads, Google Ads, social & design for 800+ brands. Stipend LKR 20K–40K. Apply via WhatsApp in 60 seconds.",
+    h1: "Marketing Internship in Sri Lanka — Hiring Now at Cypher Digital",
   },
   "/careers/finance-internship-sri-lanka": {
     title: "Finance Internship in Sri Lanka 2026 | Accounting & Finance Intern Colombo",
