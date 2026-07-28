@@ -722,6 +722,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Content Specialist jobs in Sri Lanka at Cypher Digital, Colombo. Write captions, blogs, ad copy & scripts for 800+ brands. Salary LKR 60,000–130,000/month. Apply via WhatsApp in 60 seconds.",
     h1: "Content Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
+  "/careers/sales-jobs-in-sri-lanka": {
+    title: "Sales Executive Jobs in Sri Lanka 2026 | Cypher Digital",
+    description: "Sales Executive jobs in Sri Lanka — Cypher Digital is hiring in Colombo (2026). Sell digital marketing products. Base LKR 60,000, earn LKR 150,000+/month. Apply on WhatsApp.",
+    h1: "Sales Executive Jobs in Sri Lanka — Join Cypher Digital",
+  },
   "/blog/tv-advertising-companies-sri-lanka": {
     title: "TV Advertising Companies in Sri Lanka — Top Agencies Compared 2025 | Cypher Digital",
     description: "Looking for TV advertising companies in Sri Lanka? Compare the top agencies for TVC production, media buying and airtime booking on Hiru TV, Sirasa and Derana. Find the right partner for your campaign in 2025.",
@@ -1241,7 +1246,7 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
     title: "Sales Executive",
     description: "Sell high-demand digital products (social media management, Facebook Ads, Google Ads, SEO, video production) to Sri Lankan businesses. Base LKR 60,000 with ability to earn LKR 150,000+/month with commissions. Requirements: 1+ years B2B sales, strong communication in English and Sinhala, target-driven mindset.",
     employmentType: "FULL_TIME",
-    datePosted: "2026-05-25",
+    datePosted: "2026-07-01",
     salaryMin: 60000,
     salaryMax: 150000,
   },
