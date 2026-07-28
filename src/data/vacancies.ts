@@ -1109,10 +1109,10 @@ export const vacancies: Vacancy[] = [
     slug: "sales-jobs-in-sri-lanka",
     title: "Sales Executive",
     shortTitle: "Sales Executive",
-    h1: "Sales Executive Jobs in Sri Lanka — Join Cypher Digital",
-    metaTitle: "Sales Executive Jobs in Sri Lanka 2026 | Cypher Digital",
+    h1: "Sales Executive Jobs in Sri Lanka — Hiring Now at Cypher Digital",
+    metaTitle: "Sales Executive Jobs in Sri Lanka 2026 | LKR 60K–150K | Cypher Digital",
     metaDescription:
-      "Sales Executive jobs in Sri Lanka — Cypher Digital is hiring in Colombo (2026). Sell digital marketing products. Base LKR 60,000, earn LKR 150,000+/month. Apply on WhatsApp.",
+      "Sales Executive jobs in Sri Lanka 2026 — Cypher Digital is hiring in Colombo. Sell Facebook Ads, Google Ads, SEO & social media. Base LKR 60,000, earn LKR 150,000+/month. Apply on WhatsApp in 60 seconds.",
     icon: Briefcase,
     type: "Full-time",
     employmentType: "FULL_TIME",
@@ -1127,6 +1127,66 @@ export const vacancies: Vacancy[] = [
       "Sales jobs in Sri Lanka are shifting fast — and the biggest opportunity right now is in digital. At Cypher Digital, you'll be selling products every Sri Lankan business genuinely needs: Facebook advertising, Google Ads, SEO, social media management and video production. This is not cold-pitch selling — you're backed by 800+ client results across restaurants, real estate, fashion, education and FMCG.",
       "As part of Sri Lanka's most integrated marketing group — Cypher360 — we give our sales team the strongest product in the room. If you're looking for sales executive vacancies in Sri Lanka where your income genuinely reflects your effort, this is it.",
     ],
+    salaryGuide: {
+      intro: [
+        "Sales executive salaries in Sri Lanka vary widely by industry, product, and commission structure. Digital product sales roles in Colombo consistently pay above the market average because clients see fast ROI and deal sizes are meaningful.",
+        "At Cypher Digital, the Sales Executive base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings regularly reach LKR 150,000 and above. Your income is directly tied to what you close, not how long you've been in the industry.",
+      ],
+      levels: [
+        { name: "Sales Executive", exp: "0–2 years", salary: "LKR 60K–150K/mo" },
+        { name: "Senior Sales Executive", exp: "2–4 years", salary: "LKR 100K–200K/mo" },
+        { name: "Sales Team Lead", exp: "3–5 years", salary: "LKR 150K–250K/mo" },
+        { name: "Sales Manager", exp: "5+ years", salary: "LKR 250K–400K/mo" },
+      ],
+      note: "Cypher Digital Sales Executive package: LKR 60,000 base + attractive performance earnings. Top performers regularly earn LKR 150,000+/month within their first year.",
+    },
+    softwareSkills: {
+      intro:
+        "The best sales executives in Sri Lanka pair strong communication with a few lightweight digital tools. You don't need to be technical — just comfortable using these to run pipeline, follow up, and close.",
+      items: [
+        { icon: "💬", name: "WhatsApp Business", desc: "Primary channel for pitching and following up with Sri Lankan business owners — fast, personal, high response." },
+        { icon: "💼", name: "LinkedIn", desc: "Prospect decision-makers at Colombo companies, multi-location brands, and B2B accounts." },
+        { icon: "📊", name: "Google Sheets / Excel", desc: "Track leads, pipeline stages, and weekly revenue against target." },
+        { icon: "🗂️", name: "CRM (HubSpot / Pipedrive)", desc: "Log every deal, activity, and follow-up so nothing slips." },
+        { icon: "📈", name: "Meta Ads & Google Ads basics", desc: "Enough understanding to explain ROI, campaign types, and why the client should invest." },
+        { icon: "📄", name: "Canva / Google Slides", desc: "Build clean pitch decks and one-page proposals that close." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "No sales portfolio yet? Here's how to build one fast for sales executive jobs in Sri Lanka — even if you've never sold digital products before.",
+      steps: [
+        "Pick one industry — restaurants, salons, real estate, clinics — and list 30 Sri Lankan businesses with weak digital presence.",
+        "Build a simple 1-page proposal showing how Facebook Ads or Google Ads would grow one specific business.",
+        "Record a 90-second WhatsApp pitch in Sinhala and English explaining the offer.",
+        "Practice objection handling: price, timing, 'I already have someone doing it'.",
+        "Apply to Cypher Digital and use your pitch during the WhatsApp interview.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Sales Executive", salary: "LKR 60K–150K/mo", exp: "0–2 years" },
+        { title: "Senior Sales Executive", salary: "LKR 100K–200K/mo", exp: "2–4 years" },
+        { title: "Sales Team Lead", salary: "LKR 150K–250K/mo", exp: "3–5 years" },
+        { title: "Sales Manager", salary: "LKR 250K–400K/mo", exp: "5+ years" },
+        { title: "Head of Sales", salary: "LKR 400K–600K+/mo", exp: "8+ years" },
+      ],
+      note:
+        "At Cypher Digital, sales executives regularly promote to Senior within 12 months based on revenue delivered — not tenure. The digital product suite and 800+ client proof points make it faster to close bigger deals than in traditional Sri Lankan sales roles.",
+    },
+    dayInLife: {
+      intro:
+        "What a real day looks like for a Sales Executive at Cypher Digital — the actual work of selling digital products in Sri Lanka, not a vague JD.",
+      items: [
+        { time: "8:30 AM", task: "Review WhatsApp replies from yesterday's proposals — prioritise warm leads first." },
+        { time: "9:30 AM", task: "Team standup — go over pipeline movement and today's revenue target." },
+        { time: "10:30 AM", task: "Discovery call with a Colombo salon owner about social media management and Meta Ads." },
+        { time: "12:30 PM", task: "Follow up on open proposals via WhatsApp and lock decision-maker meetings for tomorrow." },
+        { time: "2:30 PM", task: "Prospect 20 new SMEs on LinkedIn and Google Maps, then send personalised outreach." },
+        { time: "4:00 PM", task: "Build a 1-page proposal in Canva for a multi-outlet restaurant interested in Google Ads." },
+        { time: "5:00 PM", task: "Update CRM, send the manager a pipeline summary, plan tomorrow's top 5 follow-ups." },
+      ],
+    },
     duties: [
       "Prospect and pitch digital marketing packages to SMEs, startups, and corporates across Sri Lanka",
       "Sell digital products including social media management, paid ads, SEO, and video production",
@@ -1180,6 +1240,28 @@ export const vacancies: Vacancy[] = [
         q: "How do I apply for sales jobs in Sri Lanka at Cypher Digital?",
         a: "Send your name and a brief note about your sales background to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms, no long wait.",
       },
+      {
+        q: "What is the average salary for a sales executive in Sri Lanka in 2026?",
+        a: "The average sales executive salary in Sri Lanka in 2026 ranges from LKR 40,000 to LKR 90,000 per month depending on industry, with digital and B2B roles paying the most. At Cypher Digital, the total package (base LKR 60,000 + performance earnings) regularly puts Sales Executives at LKR 150,000+/month within their first year.",
+      },
+      {
+        q: "Which industry pays the highest for sales executives in Sri Lanka?",
+        a: "Digital marketing, IT/SaaS, and financial services currently pay the highest for sales executives in Sri Lanka. Digital product sales — like Cypher Digital's role — pay above market because deal sizes are meaningful and clients see fast ROI, so commissions scale quickly.",
+      },
+      {
+        q: "What is the difference between a Sales Executive and a Business Development Executive?",
+        a: "A Sales Executive focuses on higher-volume, faster-cycle deals — closing more clients each month. A Business Development Executive works larger, more consultative accounts with longer cycles and higher deal values. At Cypher Digital, both roles sell the same digital products and earn from the same attractive structure.",
+      },
+      {
+        q: "Is a sales executive job a good career in Sri Lanka?",
+        a: "Yes — especially in digital. Digital ad spend in Sri Lanka is growing 40%+ year-on-year, so sales executives selling digital products are entering a rising market. The role builds transferable skills (prospecting, negotiation, pipeline management) and has a clear promotion path into Senior Sales Executive, Sales Manager, and Head of Sales.",
+      },
+    ],
+    internalLinks: [
+      { label: "Business Development Executive jobs in Sri Lanka", href: "/careers/business-development-executive-jobs-sri-lanka", desc: "Prefer larger, consultative accounts? See the BDE role at Cypher Digital." },
+      { label: "Sales Manager jobs in Sri Lanka", href: "/careers/sales-manager-jobs-sri-lanka", desc: "Already leading a team? Explore the Sales Manager vacancy in Colombo." },
+      { label: "All digital marketing jobs in Sri Lanka", href: "/careers", desc: "Browse every open role at Cypher Digital — design, video, paid ads, SEO, and more." },
+      { label: "Digital marketing services", href: "/", desc: "See the full range of digital products you'll be selling to Sri Lankan businesses." },
     ],
     whatsappMessage: "Hi, I'm applying for the Sales Executive position at Cypher Digital.",
     whatsappCta: "Apply for Sales Executive",
