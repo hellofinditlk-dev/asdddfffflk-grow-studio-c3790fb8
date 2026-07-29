@@ -28,7 +28,7 @@ const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }
     match: /social/,
     links: [
       { href: "/social-media-management-sri-lanka", label: "Social media management services" },
-      { href: "/social-media-advertising-sri-lanka", label: "Social media advertising" },
+      { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
     ],
   },
   {
@@ -41,14 +41,14 @@ const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }
   {
     match: /sales|business-development/,
     links: [
-      { href: "/digital-marketing-agency-sri-lanka", label: "Digital marketing agency services" },
+      { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
       { href: "/google-ads-sri-lanka", label: "Google Ads management" },
     ],
   },
   {
     match: /.*/,
     links: [
-      { href: "/digital-marketing-agency-sri-lanka", label: "Digital marketing services in Sri Lanka" },
+      { href: "/social-media-management-sri-lanka", label: "Social media management services" },
       { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
     ],
   },
