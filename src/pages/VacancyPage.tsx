@@ -60,6 +60,56 @@ const VacancyPage = () => {
     url: canonical,
   };
 
+  // ---- Enriched Google for Jobs fields ----
+  const isIntern = /intern/i.test(vacancy.slug) || /INTERN/.test(String(vacancy.employmentType));
+  const monthsExperience =
+    vacancy.monthsExperience ?? (isIntern ? 0 : 12);
+  const educationRequirement =
+    vacancy.educationRequirement ?? (isIntern ? "high school" : "bachelor degree");
+  const skills =
+    vacancy.skills ??
+    [
+      ...(vacancy.softwareSkills?.items.map((s) => s.name) ?? []),
+      ...vacancy.requirements,
+    ];
+
+  jobPostingSchema.responsibilities = vacancy.duties.join("; ");
+  jobPostingSchema.qualifications = vacancy.requirements.join("; ");
+  jobPostingSchema.skills = skills.join(", ");
+  jobPostingSchema.educationRequirements = {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: educationRequirement,
+  };
+  jobPostingSchema.experienceRequirements = {
+    "@type": "OccupationalExperienceRequirements",
+    monthsOfExperience: monthsExperience,
+  };
+  jobPostingSchema.experienceInPlaceOfEducation = true;
+  jobPostingSchema.industry = "Digital Marketing";
+  jobPostingSchema.occupationalCategory = vacancy.title;
+  jobPostingSchema.workHours = vacancy.type;
+  jobPostingSchema.jobLocationType = "TELECOMMUTE" === vacancy.location ? "TELECOMMUTE" : undefined;
+  if (!jobPostingSchema.jobLocationType) delete jobPostingSchema.jobLocationType;
+  if (vacancy.perks && vacancy.perks.length > 0) {
+    jobPostingSchema.jobBenefits = vacancy.perks.join("; ");
+  }
+  jobPostingSchema.applicantLocationRequirements = { "@type": "Country", name: "Sri Lanka" };
+  jobPostingSchema.employmentUnit = {
+    "@type": "Organization",
+    name: "Cypher Digital",
+  };
+  jobPostingSchema.applicationContact = {
+    "@type": "ContactPoint",
+    contactType: "Recruitment",
+    telephone: "+94701772626",
+    url: waUrl,
+  };
+  jobPostingSchema.potentialAction = {
+    "@type": "ApplyAction",
+    target: { "@type": "EntryPoint", urlTemplate: waUrl },
+    name: `Apply for ${vacancy.title} on WhatsApp`,
+  };
+
   if (vacancy.salaryRange) {
     jobPostingSchema.baseSalary = {
       "@type": "MonetaryAmount",
