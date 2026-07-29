@@ -223,7 +223,6 @@ faqs.push(
 );
 
 const salaryFactors = [
-
   { icon: MapPin, title: "City vs Province", desc: "Colombo salaries are 25–40% higher than equivalent roles in Kandy, Galle or Jaffna. Most agency jobs remain Colombo-based; remote roles are closing the gap for freelancers." },
   { icon: Award, title: "Certifications add LKR 20K–40K", desc: "Meta Blueprint, Google Ads, and HubSpot certifications each add LKR 20,000–40,000 per month over uncertified candidates at the same experience level." },
   { icon: Building2, title: "Agency vs In-House", desc: "Agency roles pay 15–25% less than in-house brand roles but offer far faster skill growth. Most of Sri Lanka's top digital marketers come from 2–3 years at an agency first." },
