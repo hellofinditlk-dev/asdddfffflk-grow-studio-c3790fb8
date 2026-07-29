@@ -94,7 +94,7 @@ const VacancyPage = () => {
   };
 
   return (
-    <div className="pt-16">
+    <div>
       <SEOHead title={vacancy.metaTitle} description={vacancy.metaDescription} canonical={canonical} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
