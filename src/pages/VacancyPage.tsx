@@ -71,6 +71,14 @@ const VacancyPage = () => {
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
 
+  const others = vacancies.filter((v) => v.slug !== vacancy.slug);
+  const family = FAMILIES.find((re) => re.test(vacancy.slug));
+  const similarRoles = (family ? others.filter((v) => family.test(v.slug)) : []).slice(0, 4);
+  const similarSlugs = new Set(similarRoles.map((v) => v.slug));
+  const otherRoles = others.filter((v) => !similarSlugs.has(v.slug));
+  const serviceLinks =
+    SERVICE_LINKS.find((s) => s.match.test(vacancy.slug))?.links ?? SERVICE_LINKS[SERVICE_LINKS.length - 1].links;
+
   // Rolling validThrough: always 90 days from today so evergreen vacancies never expire in Google for Jobs.
   const validThrough = (() => {
     const d = new Date();
