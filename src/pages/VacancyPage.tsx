@@ -4,9 +4,62 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { getVacancyBySlug } from "@/data/vacancies";
+import { getVacancyBySlug, vacancies } from "@/data/vacancies";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
+
+// Service pages related to each role family — keeps career pages linked into the money pages.
+const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }[] = [
+  {
+    match: /graphic|design/,
+    links: [
+      { href: "/graphic-design-sri-lanka", label: "Graphic design services in Sri Lanka" },
+      { href: "/social-media-management-sri-lanka", label: "Social media management" },
+    ],
+  },
+  {
+    match: /video/,
+    links: [
+      { href: "/video-production-sri-lanka", label: "Video production services" },
+      { href: "/social-media-management-sri-lanka", label: "Social media management" },
+    ],
+  },
+  {
+    match: /social/,
+    links: [
+      { href: "/social-media-management-sri-lanka", label: "Social media management services" },
+      { href: "/social-media-advertising-sri-lanka", label: "Social media advertising" },
+    ],
+  },
+  {
+    match: /content/,
+    links: [
+      { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+      { href: "/blog", label: "Cypher Digital blog" },
+    ],
+  },
+  {
+    match: /sales|business-development/,
+    links: [
+      { href: "/digital-marketing-agency-sri-lanka", label: "Digital marketing agency services" },
+      { href: "/google-ads-sri-lanka", label: "Google Ads management" },
+    ],
+  },
+  {
+    match: /.*/,
+    links: [
+      { href: "/digital-marketing-agency-sri-lanka", label: "Digital marketing services in Sri Lanka" },
+      { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+    ],
+  },
+];
+
+const FAMILIES: RegExp[] = [
+  /internship|intern/,
+  /sales|business-development/,
+  /graphic|video|content|design/,
+  /digital-marketing|social/,
+];
 
 const VacancyPage = () => {
   const { slug } = useParams();
