@@ -618,13 +618,61 @@ const Careers = () => (
       </div>
     </section>
 
+    {/* Full vacancy index — internal linking */}
+    <section className="py-16 lg:py-20 bg-secondary/20 border-y border-border">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3">All Job Vacancies in Sri Lanka — Full Index</h2>
+        <p className="text-muted-foreground mb-10 max-w-3xl">
+          Every open role at Cypher Digital in one place. Click any job title below to see the full job description, salary range, requirements and the WhatsApp apply link.
+        </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          {VACANCY_GROUPS.map((group) => {
+            const roles = vacancies.filter((v) => group.match.test(v.slug));
+            if (!roles.length) return null;
+            return (
+              <div key={group.heading}>
+                <h3 className="font-heading text-lg font-bold mb-3">{group.heading}</h3>
+                <ul className="space-y-2">
+                  {roles.map((v) => (
+                    <li key={v.slug}>
+                      <Link to={`/careers/${v.slug}`} className="text-sm text-primary hover:underline font-medium">
+                        {v.title}
+                      </Link>
+                      <span className="text-sm text-muted-foreground">
+                        {v.salaryRange
+                          ? ` — ${v.salaryRange.currency} ${(v.salaryRange.min / 1000).toFixed(0)}K–${(v.salaryRange.max / 1000).toFixed(0)}K/mo`
+                          : ` — ${v.type}`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+        <div className="mt-10 pt-8 border-t border-border">
+          <h3 className="font-heading text-lg font-bold mb-3">What our teams work on</h3>
+          <div className="flex flex-wrap gap-2">
+            {SERVICE_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                to={l.href}
+                className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* FAQs */}
     <section className="py-16 lg:py-20">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="font-heading text-2xl md:text-3xl font-bold mb-8 text-center">
           Digital Marketing Jobs in Sri Lanka — FAQs
         </h2>
-        <div />
         <div className="space-y-5">
           {faqs.map((f, i) => (
             <div key={i} className="p-5 rounded-xl bg-card border border-border">
