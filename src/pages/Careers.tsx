@@ -62,11 +62,41 @@ const careersSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  name: "Open digital marketing vacancies at Cypher Digital, Sri Lanka",
+  description:
+    "Complete list of open jobs at Cypher Digital in Colombo, Sri Lanka — digital marketing, paid ads, SEO, content, sales, design, video and internships.",
+  url: "https://cypherdigital.lk/careers",
+  numberOfItems: vacancies.length,
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
   itemListElement: vacancies.map((v, i) => ({
     "@type": "ListItem",
     position: i + 1,
     url: `https://cypherdigital.lk/careers/${v.slug}`,
     name: v.title,
+    item: {
+      "@type": "JobPosting",
+      title: v.title,
+      description: v.summary,
+      url: `https://cypherdigital.lk/careers/${v.slug}`,
+      datePosted: v.datePosted,
+      employmentType: v.employmentType,
+      hiringOrganization: {
+        "@type": "Organization",
+        name: "Cypher Digital",
+        sameAs: "https://cypherdigital.lk/",
+      },
+      jobLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Kotte",
+          addressLocality: "Colombo",
+          addressRegion: "Western Province",
+          postalCode: "10100",
+          addressCountry: { "@type": "Country", name: "LK" },
+        },
+      },
+    },
   })),
 };
 
@@ -221,6 +251,25 @@ const faqSchema = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
+
+// Grouped internal-link index — every vacancy reachable in one hop with keyword anchor text.
+const VACANCY_GROUPS: { heading: string; match: RegExp }[] = [
+  { heading: "Digital marketing & social media jobs", match: /digital-marketing|social/ },
+  { heading: "Creative jobs — design, video & content", match: /graphic|video|content/ },
+  { heading: "Sales & business development jobs", match: /sales|business-development/ },
+  { heading: "Internships in Sri Lanka", match: /intern/ },
+];
+
+const SERVICE_LINKS = [
+  { href: "/social-media-management-sri-lanka", label: "Social media management services" },
+  { href: "/google-ads-sri-lanka", label: "Google Ads management" },
+  { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+  { href: "/graphic-design-sri-lanka", label: "Graphic design services" },
+  { href: "/video-production-sri-lanka", label: "Video production services" },
+  { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
+  { href: "/about", label: "About Cypher Digital" },
+  { href: "/blog", label: "Marketing blog" },
+];
 
 const ApplyForm = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", role: "", portfolio: "", message: "" });
@@ -565,6 +614,55 @@ const Careers = () => (
               </Card>
             );
           })}
+        </div>
+      </div>
+    </section>
+
+    {/* Full vacancy index — internal linking */}
+    <section className="py-16 lg:py-20 bg-secondary/20 border-y border-border">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3">All Job Vacancies in Sri Lanka — Full Index</h2>
+        <p className="text-muted-foreground mb-10 max-w-3xl">
+          Every open role at Cypher Digital in one place. Click any job title below to see the full job description, salary range, requirements and the WhatsApp apply link.
+        </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          {VACANCY_GROUPS.map((group) => {
+            const roles = vacancies.filter((v) => group.match.test(v.slug));
+            if (!roles.length) return null;
+            return (
+              <div key={group.heading}>
+                <h3 className="font-heading text-lg font-bold mb-3">{group.heading}</h3>
+                <ul className="space-y-2">
+                  {roles.map((v) => (
+                    <li key={v.slug}>
+                      <Link to={`/careers/${v.slug}`} className="text-sm text-primary hover:underline font-medium">
+                        {v.title}
+                      </Link>
+                      <span className="text-sm text-muted-foreground">
+                        {v.salaryRange
+                          ? ` — ${v.salaryRange.currency} ${(v.salaryRange.min / 1000).toFixed(0)}K–${(v.salaryRange.max / 1000).toFixed(0)}K/mo`
+                          : ` — ${v.type}`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+        <div className="mt-10 pt-8 border-t border-border">
+          <h3 className="font-heading text-lg font-bold mb-3">What our teams work on</h3>
+          <div className="flex flex-wrap gap-2">
+            {SERVICE_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                to={l.href}
+                className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
