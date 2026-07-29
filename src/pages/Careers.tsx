@@ -624,6 +624,7 @@ const Careers = () => (
         <h2 className="font-heading text-2xl md:text-3xl font-bold mb-8 text-center">
           Digital Marketing Jobs in Sri Lanka — FAQs
         </h2>
+        <div />
         <div className="space-y-5">
           {faqs.map((f, i) => (
             <div key={i} className="p-5 rounded-xl bg-card border border-border">
