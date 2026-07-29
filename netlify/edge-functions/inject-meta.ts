@@ -1803,6 +1803,28 @@ export default async function handler(request: Request, context: any) {
 
   // Inject JobPosting JSON-LD for Google for Jobs (server-side, no JS required)
   const careersMatch = path.match(/^\/careers\/([a-z0-9-]+)$/);
+
+  // Careers index: ItemList of every open vacancy so crawlers can discover all
+  // job pages without executing JS.
+  if (path === "/careers") {
+    const itemList = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Open job vacancies at Cypher Digital, Sri Lanka",
+      url: "https://cypherdigital.lk/careers",
+      numberOfItems: Object.keys(JOB_POSTINGS).length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: Object.entries(JOB_POSTINGS).map(([slug, job], i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: `${job.title} Jobs in Sri Lanka`,
+        url: `https://cypherdigital.lk/careers/${slug}`,
+      })),
+    };
+    const itemListBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(itemList))}</script>`;
+    modified = modified.replace("</head>", `  ${itemListBlock}\n  </head>`);
+  }
+
   if (careersMatch) {
     const job = JOB_POSTINGS[careersMatch[1]];
     if (job) {
