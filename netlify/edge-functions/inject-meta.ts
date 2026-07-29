@@ -1823,6 +1823,18 @@ export default async function handler(request: Request, context: any) {
     };
     const itemListBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(itemList))}</script>`;
     modified = modified.replace("</head>", `  ${itemListBlock}\n  </head>`);
+    const careersBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
+        { "@type": "ListItem", position: 2, name: "Careers", item: "https://cypherdigital.lk/careers" },
+      ],
+    };
+    modified = modified.replace(
+      "</head>",
+      `  <script type="application/ld+json">${escapeJsonLd(JSON.stringify(careersBreadcrumb))}</script>\n  </head>`,
+    );
   }
 
   if (careersMatch) {
