@@ -4,9 +4,62 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { getVacancyBySlug } from "@/data/vacancies";
+import { getVacancyBySlug, vacancies } from "@/data/vacancies";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
+
+// Service pages related to each role family — keeps career pages linked into the money pages.
+const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }[] = [
+  {
+    match: /graphic|design/,
+    links: [
+      { href: "/graphic-design-sri-lanka", label: "Graphic design services in Sri Lanka" },
+      { href: "/social-media-management-sri-lanka", label: "Social media management" },
+    ],
+  },
+  {
+    match: /video/,
+    links: [
+      { href: "/video-production-sri-lanka", label: "Video production services" },
+      { href: "/social-media-management-sri-lanka", label: "Social media management" },
+    ],
+  },
+  {
+    match: /social/,
+    links: [
+      { href: "/social-media-management-sri-lanka", label: "Social media management services" },
+      { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
+    ],
+  },
+  {
+    match: /content/,
+    links: [
+      { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+      { href: "/blog", label: "Cypher Digital blog" },
+    ],
+  },
+  {
+    match: /sales|business-development/,
+    links: [
+      { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
+      { href: "/google-ads-sri-lanka", label: "Google Ads management" },
+    ],
+  },
+  {
+    match: /.*/,
+    links: [
+      { href: "/social-media-management-sri-lanka", label: "Social media management services" },
+      { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+    ],
+  },
+];
+
+const FAMILIES: RegExp[] = [
+  /internship|intern/,
+  /sales|business-development/,
+  /graphic|video|content|design/,
+  /digital-marketing|social/,
+];
 
 const VacancyPage = () => {
   const { slug } = useParams();
@@ -17,6 +70,14 @@ const VacancyPage = () => {
   const Icon = vacancy.icon;
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
+
+  const others = vacancies.filter((v) => v.slug !== vacancy.slug);
+  const family = FAMILIES.find((re) => re.test(vacancy.slug));
+  const similarRoles = (family ? others.filter((v) => family.test(v.slug)) : []).slice(0, 4);
+  const similarSlugs = new Set(similarRoles.map((v) => v.slug));
+  const otherRoles = others.filter((v) => !similarSlugs.has(v.slug));
+  const serviceLinks =
+    SERVICE_LINKS.find((s) => s.match.test(vacancy.slug))?.links ?? SERVICE_LINKS[SERVICE_LINKS.length - 1].links;
 
   // Rolling validThrough: always 90 days from today so evergreen vacancies never expire in Google for Jobs.
   const validThrough = (() => {
@@ -461,25 +522,53 @@ const VacancyPage = () => {
               </Link>
             ))}
           </div>
-          <div>
-            <p className="text-sm font-semibold mb-3">Other open roles:</p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { slug: "graphic-designer-jobs-sri-lanka", label: "Graphic Designer" },
-                { slug: "digital-marketing-jobs-sri-lanka", label: "Digital Marketing Specialist" },
-                { slug: "video-editor-jobs-sri-lanka", label: "Video Editor" },
-                { slug: "marketing-internship-sri-lanka", label: "Marketing Internship" },
-              ]
-                .filter((v) => v.slug !== vacancy.slug)
-                .map((v) => (
+          {similarRoles.length > 0 && (
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold mb-2">Similar jobs in Sri Lanka</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {similarRoles.map((v) => (
                   <Link
                     key={v.slug}
                     to={`/careers/${v.slug}`}
-                    className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                    className="block p-4 rounded-xl bg-card border border-border hover:border-primary transition-colors"
                   >
-                    {v.label}
+                    <div className="flex items-center gap-2 text-primary font-semibold mb-1">
+                      {v.shortTitle} jobs in Sri Lanka <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <p className="text-sm text-muted-foreground line-clamp-2">{v.metaDescription}</p>
                   </Link>
                 ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mb-8">
+            <h3 className="font-heading text-lg font-bold mb-3">What this team works on</h3>
+            <div className="flex flex-wrap gap-2">
+              {serviceLinks.map((l) => (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-lg font-bold mb-3">All open vacancies at Cypher Digital</h3>
+            <div className="flex flex-wrap gap-2">
+              {otherRoles.map((v) => (
+                <Link
+                  key={v.slug}
+                  to={`/careers/${v.slug}`}
+                  className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                >
+                  {v.shortTitle}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
