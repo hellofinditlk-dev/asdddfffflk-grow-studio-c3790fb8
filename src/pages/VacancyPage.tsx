@@ -514,25 +514,53 @@ const VacancyPage = () => {
               </Link>
             ))}
           </div>
-          <div>
-            <p className="text-sm font-semibold mb-3">Other open roles:</p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { slug: "graphic-designer-jobs-sri-lanka", label: "Graphic Designer" },
-                { slug: "digital-marketing-jobs-sri-lanka", label: "Digital Marketing Specialist" },
-                { slug: "video-editor-jobs-sri-lanka", label: "Video Editor" },
-                { slug: "marketing-internship-sri-lanka", label: "Marketing Internship" },
-              ]
-                .filter((v) => v.slug !== vacancy.slug)
-                .map((v) => (
+          {similarRoles.length > 0 && (
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold mb-2">Similar jobs in Sri Lanka</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {similarRoles.map((v) => (
                   <Link
                     key={v.slug}
                     to={`/careers/${v.slug}`}
-                    className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                    className="block p-4 rounded-xl bg-card border border-border hover:border-primary transition-colors"
                   >
-                    {v.label}
+                    <div className="flex items-center gap-2 text-primary font-semibold mb-1">
+                      {v.shortTitle} jobs in Sri Lanka <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <p className="text-sm text-muted-foreground line-clamp-2">{v.metaDescription}</p>
                   </Link>
                 ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mb-8">
+            <h3 className="font-heading text-lg font-bold mb-3">What this team works on</h3>
+            <div className="flex flex-wrap gap-2">
+              {serviceLinks.map((l) => (
+                <Link
+                  key={l.href}
+                  to={l.href}
+                  className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-lg font-bold mb-3">All open vacancies at Cypher Digital</h3>
+            <div className="flex flex-wrap gap-2">
+              {otherRoles.map((v) => (
+                <Link
+                  key={v.slug}
+                  to={`/careers/${v.slug}`}
+                  className="px-3 py-1.5 rounded-full bg-card border border-border text-sm hover:border-primary hover:text-primary transition-colors"
+                >
+                  {v.shortTitle}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
