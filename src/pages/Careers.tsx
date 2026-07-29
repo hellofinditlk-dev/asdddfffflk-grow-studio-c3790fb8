@@ -62,11 +62,41 @@ const careersSchema = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  name: "Open digital marketing vacancies at Cypher Digital, Sri Lanka",
+  description:
+    "Complete list of open jobs at Cypher Digital in Colombo, Sri Lanka — digital marketing, paid ads, SEO, content, sales, design, video and internships.",
+  url: "https://cypherdigital.lk/careers",
+  numberOfItems: vacancies.length,
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
   itemListElement: vacancies.map((v, i) => ({
     "@type": "ListItem",
     position: i + 1,
     url: `https://cypherdigital.lk/careers/${v.slug}`,
     name: v.title,
+    item: {
+      "@type": "JobPosting",
+      title: v.title,
+      description: v.summary,
+      url: `https://cypherdigital.lk/careers/${v.slug}`,
+      datePosted: v.datePosted,
+      employmentType: v.employmentType,
+      hiringOrganization: {
+        "@type": "Organization",
+        name: "Cypher Digital",
+        sameAs: "https://cypherdigital.lk/",
+      },
+      jobLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Kotte",
+          addressLocality: "Colombo",
+          addressRegion: "Western Province",
+          postalCode: "10100",
+          addressCountry: { "@type": "Country", name: "LK" },
+        },
+      },
+    },
   })),
 };
 
