@@ -232,7 +232,6 @@ const salaryFactors = [
 ];
 
 const roleOptions = [
-
   "Business Development Executive (LKR 60K–150K)",
   "Digital Marketing Specialist (LKR 50K–200K)",
   "Digital Marketing Executive (LKR 45K–120K)",
@@ -244,6 +243,8 @@ const roleOptions = [
 ];
 
 const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: faqs.map((f) => ({
