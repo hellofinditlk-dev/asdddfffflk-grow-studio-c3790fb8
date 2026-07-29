@@ -1285,6 +1285,357 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
   },
 };
 
+const VACANCY_FAQS: Record<string, { q: string; a: string }[]> = {
+  "graphic-designer-jobs-sri-lanka": [
+    {
+      "q": "What is the graphic designer salary in Sri Lanka?",
+      "a": "Graphic designer salaries in Sri Lanka range from LKR 23,000 at entry level to LKR 330,000+ for senior designers in 2026. The median is approximately LKR 90,000 per month. At Cypher Digital, graphic designers earn LKR 45,000–150,000 per month depending on portfolio quality and experience."
+    },
+    {
+      "q": "What software do I need for graphic designer jobs in Sri Lanka?",
+      "a": "The most in-demand design software for graphic designer jobs in Sri Lanka are Adobe Photoshop (photo editing, social posts), Adobe Illustrator (logos, vectors), Adobe InDesign (print layouts), Figma (UI/UX, collaboration), Canva Pro (fast social content) and After Effects (motion graphics). Proficiency in at least Photoshop, Illustrator and Canva is expected for most graphic design jobs in Colombo agencies."
+    },
+    {
+      "q": "Do I need a degree for graphic designer jobs in Sri Lanka?",
+      "a": "No degree is required for graphic designer jobs at Cypher Digital. We hire based on portfolio quality and demonstrated design skills. A strong portfolio showing social media design, logo work and brand identity projects is more valuable than a formal qualification. Diplomas from SLIDA, NIBM or university design courses are valued but not mandatory."
+    },
+    {
+      "q": "What is a junior graphic designer salary in Sri Lanka?",
+      "a": "Junior graphic designer salaries in Sri Lanka typically range from LKR 30,000 to LKR 65,000 per month for 0–2 years experience. At digital marketing agencies in Colombo, junior designers with strong portfolios can start at LKR 45,000–60,000. Salaries increase rapidly with demonstrated performance and client campaign results."
+    },
+    {
+      "q": "Are there freelance graphic design jobs in Sri Lanka?",
+      "a": "Yes — Cypher Digital offers part-time and freelance graphic design arrangements for the right candidates. Freelance graphic designers in Sri Lanka typically charge LKR 2,000–15,000 per design depending on complexity. Experienced freelancers working across 3–5 clients can earn LKR 150,000–400,000 per month. Platforms like Upwork, Fiverr and 99designs also connect Sri Lankan designers with international clients."
+    },
+    {
+      "q": "What does a graphic designer do at a digital marketing agency in Sri Lanka?",
+      "a": "At a digital marketing agency in Sri Lanka like Cypher Digital, graphic designers create social media posts for Facebook and Instagram, ad creatives for Meta Ads and Google Display campaigns, brand identity packages including logos and style guides, marketing materials like flyers and brochures, email newsletter designs, and video thumbnails for YouTube and TikTok. The role combines brand design with performance marketing creative."
+    }
+  ],
+  "digital-marketing-jobs-sri-lanka": [
+    {
+      "q": "Are you hiring Digital Marketing Specialists in Sri Lanka right now?",
+      "a": "Yes. Cypher Digital has an open Digital Marketing Specialist vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and campaign results."
+    },
+    {
+      "q": "What is the average salary for a Digital Marketing Specialist in Sri Lanka?",
+      "a": "Digital Marketing Specialist salaries in Sri Lanka typically range between LKR 50,000 and LKR 80,000 per month depending on experience, platform certifications (Meta Blueprint, Google Ads) and proven campaign ROI."
+    },
+    {
+      "q": "What does a Digital Marketing Specialist at Cypher Digital actually do?",
+      "a": "You'll plan and manage Facebook Ads, Instagram Ads, Google Ads, TikTok Ads and SEO campaigns, generate leads, track performance in Meta Ads Manager and Google Ads, manage client social pages and report on monthly performance."
+    },
+    {
+      "q": "Where is the Digital Marketing Specialist job located?",
+      "a": "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Most digital marketing specialists are expected on-site at least 3 days per week."
+    },
+    {
+      "q": "What experience do I need to apply?",
+      "a": "1–4 years of hands-on experience running paid ad campaigns (Meta Ads and/or Google Ads), an understanding of SEO and lead generation, and the ability to read campaign data. Meta Blueprint or Google Ads certification is a strong plus."
+    },
+    {
+      "q": "Do I need a marketing degree to apply for this digital marketing job in Sri Lanka?",
+      "a": "No degree required. We hire based on real campaign results — your ad accounts, your case studies, your ROI numbers matter far more than qualifications."
+    }
+  ],
+  "digital-marketing-executive-jobs-sri-lanka": [
+    {
+      "q": "What is the digital marketing executive salary in Sri Lanka?",
+      "a": "Digital marketing executive salaries in Sri Lanka range from LKR 45,000 at entry level to LKR 120,000 for experienced executives in 2026. Glassdoor data shows senior digital marketing executives earning LKR 52,500–106,667 per month. At Cypher Digital, digital marketing executives earn LKR 45,000–120,000 per month based on experience and certified platform skills. Meta Blueprint and Google Ads certifications each add LKR 10,000–25,000 to starting salary."
+    },
+    {
+      "q": "What does a digital marketing executive do in Sri Lanka?",
+      "a": "A digital marketing executive in Sri Lanka runs day-to-day online marketing operations: setting up and managing Meta Ads (Facebook and Instagram) and Google Ads campaigns, managing social media pages, scheduling content, monitoring campaign performance, pulling weekly and monthly reports, conducting keyword research for SEO and communicating with clients. At a digital agency in Colombo, executives manage multiple client accounts simultaneously — building broad experience faster than in-house roles."
+    },
+    {
+      "q": "What skills do I need for digital marketing executive jobs in Sri Lanka?",
+      "a": "Key skills for digital marketing executive jobs in Sri Lanka: Meta Ads Manager (Facebook and Instagram advertising), Google Ads (Search, Display, YouTube), Google Analytics 4 (GA4) for campaign reporting, basic SEO (on-page optimisation, keyword research), social media content scheduling (Meta Business Suite, Buffer, Hootsuite), copywriting for ad captions and social posts, and Excel or Google Sheets for reporting. Meta Blueprint and Google Ads certifications are the most valued formal credentials."
+    },
+    {
+      "q": "Do I need a degree for digital marketing executive jobs in Sri Lanka?",
+      "a": "No degree is required for digital marketing executive jobs at Cypher Digital. We hire based on demonstrated skills and campaign results. A Meta Blueprint certification, Google Ads certification, and evidence of running real campaigns (even for personal projects or small businesses) is more valuable than a marketing degree with no practical experience. Business, marketing or IT degrees from SLIIT, NSBM or universities are valued but not required."
+    },
+    {
+      "q": "What is the difference between a digital marketing executive and a digital marketing specialist in Sri Lanka?",
+      "a": "A digital marketing executive executes campaigns under direction — setting up ads, scheduling content, pulling reports, and optimising based on established strategy. A digital marketing specialist independently develops campaign strategy, owns budget allocation decisions, leads client communication and is accountable for campaign ROI. The executive role is the entry point that builds into specialist through 1–2 years of hands-on campaign management experience."
+    },
+    {
+      "q": "How do I get a digital marketing executive job in Sri Lanka with no experience?",
+      "a": "To get a digital marketing executive job in Sri Lanka with no experience: (1) Complete Meta Blueprint Foundation and Google Ads certifications — both free online. (2) Run a small ad campaign yourself — even LKR 2,000 on Facebook Ads for a personal project demonstrates real platform experience. (3) Build a personal brand or manage social media for a friend's business. (4) Apply for Cypher Digital's paid Marketing Internship (LKR 20,000–40,000/month) — interns work on live client campaigns from day one. (5) Transition from internship to executive role within 3–6 months of demonstrated performance."
+    }
+  ],
+  "video-editor-jobs-sri-lanka": [
+    {
+      "q": "What is the video editor salary in Sri Lanka?",
+      "a": "Video editor salaries in Sri Lanka range from LKR 45,000 at junior level to LKR 322,500+ for experienced editors in 2026 according to PayScale data. Early-career video editors earn a median of LKR 150,000 per month. At Cypher Digital, video editors earn LKR 45,000–150,000 per month depending on showreel quality and experience level."
+    },
+    {
+      "q": "What software do I need for video editor jobs in Sri Lanka?",
+      "a": "The most required software for video editor jobs at digital agencies in Sri Lanka: Adobe Premiere Pro (industry standard for social media and ad editing), DaVinci Resolve (colour grading and professional post-production), Adobe After Effects (motion graphics and animated titles), CapCut (short-form social media content, especially TikTok and Reels), and Final Cut Pro (Mac-based production teams). Proficiency in Premiere Pro and at least one short-form editing tool is expected for most agency video editor roles in Colombo."
+    },
+    {
+      "q": "Do I need a degree for video editor jobs in Sri Lanka?",
+      "a": "No degree is required for video editor jobs at Cypher Digital. We hire based on showreel quality and demonstrated editing skills. A showreel of 5–10 edited video projects — Reels, TikToks, brand films or ad content — is far more important than any formal qualification. Media and communications degrees from SLIDA, ICBT or universities are valued but not required."
+    },
+    {
+      "q": "Are there freelance video editing jobs in Sri Lanka?",
+      "a": "Yes — Cypher Digital offers freelance and part-time video editing arrangements for experienced editors. Freelance video editors in Sri Lanka typically charge LKR 3,000–25,000 per video depending on complexity and duration. Experienced freelancers working across multiple clients earn LKR 150,000–500,000 per month. International remote video editing work is also available through platforms including Upwork, Fiverr and Freelancer."
+    },
+    {
+      "q": "What does a video editor do at a digital marketing agency in Sri Lanka?",
+      "a": "At Cypher Digital, video editors produce: short-form social media content for Instagram Reels and TikTok (15–90 seconds), Meta Ads video creatives in multiple formats and aspect ratios, YouTube ad content (6-second bumpers, 15-second skippable, and long-form), brand films and corporate video productions, motion graphics and animated titles in After Effects, and video thumbnails for YouTube and social platforms. All content is performance-tested in live ad campaigns."
+    },
+    {
+      "q": "How do I build a video editing portfolio in Sri Lanka?",
+      "a": "To build a video editing showreel in Sri Lanka: (1) Edit 5–10 sample videos across different formats — a brand TVC, a Reel, a YouTube ad, and a talking-head interview edit. (2) Offer free editing to local businesses, YouTubers or content creators for real-world footage. (3) Upload your best work to YouTube as a showreel compilation or to Vimeo as a professional portfolio. (4) Edit trending content in CapCut or Premiere Pro to show social media format fluency. (5) Apply for Cypher Digital's internship to get live campaign footage and real performance data."
+    }
+  ],
+  "marketing-internship-sri-lanka": [
+    {
+      "q": "Are you offering marketing internships in Sri Lanka right now?",
+      "a": "Yes. Cypher Digital is actively hiring a Marketing Intern in Colombo, Sri Lanka for a 3–6 month placement. Apply via WhatsApp at +94 70 177 2626 with your CV or LinkedIn profile."
+    },
+    {
+      "q": "Is this a paid marketing internship in Sri Lanka?",
+      "a": "Yes — this is a paid internship. Stipends range between LKR 20,000 and LKR 40,000 per month based on hours committed and skills demonstrated."
+    },
+    {
+      "q": "Can university students apply for this digital marketing internship?",
+      "a": "Absolutely. The internship is designed for undergraduates and fresh graduates studying marketing, business, design, IT or related fields. The 3-day-per-week schedule fits around university timetables."
+    },
+    {
+      "q": "Where is the marketing internship located?",
+      "a": "The internship is based at our Colombo studio in Sri Lanka, with some flexibility for hybrid work depending on the project."
+    },
+    {
+      "q": "How long is the marketing internship?",
+      "a": "Internships run between 3 and 6 months. Top performers are offered full-time digital marketing jobs at Cypher Digital after the placement."
+    },
+    {
+      "q": "Do I get a certificate after completing the internship?",
+      "a": "Yes. Every intern who completes the programme receives a Certificate of Internship Completion from Cypher Digital, plus a LinkedIn recommendation from your team lead."
+    }
+  ],
+  "internship-programme-sri-lanka": [
+    {
+      "q": "What makes this the best internship programme in Sri Lanka?",
+      "a": "You learn the whole business — operations, sales and marketing — instead of one repetitive task. You rotate through every section with a dedicated mentor, and follow a clear pathway from intern to management trainee. It's the broadest, most challenging start to a career you can get in Sri Lanka."
+    },
+    {
+      "q": "Will I learn sales and operations too, or just marketing?",
+      "a": "All three. The programme is built around operations, sales and marketing, so you understand how a real company runs end to end. That whole-business exposure is exactly what prepares you for management trainee level."
+    },
+    {
+      "q": "I don't know what career I want yet — is this right for me?",
+      "a": "Yes — that's who it's for. By trying operations, sales and marketing hands-on, you discover your strengths and figure out your direction while building real experience, instead of guessing from the outside."
+    },
+    {
+      "q": "Do I need experience to apply for the internship?",
+      "a": "No. The programme is designed for people starting out with no experience. We train you from scratch through real, on-the-job work. Attitude and willingness to learn matter most."
+    },
+    {
+      "q": "Is the internship flexible for university students?",
+      "a": "Yes. The schedule is built around university timetables, and the learning path flexes to your strengths, with hybrid flexibility on some projects."
+    },
+    {
+      "q": "Is it a paid internship?",
+      "a": "Yes, this is a paid internship with a monthly stipend that grows as you move from intern to management trainee."
+    }
+  ],
+  "finance-internship-sri-lanka": [
+    {
+      "q": "Are you offering finance internships in Sri Lanka right now?",
+      "a": "Yes. Cypher Digital is actively hiring a Finance Intern in Colombo, Sri Lanka for a 3–6 month placement. Apply via WhatsApp at +94 70 177 2626 with your CV or LinkedIn profile."
+    },
+    {
+      "q": "Is this a paid finance internship in Sri Lanka?",
+      "a": "Yes — this is a paid internship. Stipends range between LKR 20,000 and LKR 40,000 per month based on hours committed and skills demonstrated."
+    },
+    {
+      "q": "Can university and CIMA/ACCA students apply for this finance internship?",
+      "a": "Absolutely. The internship is designed for undergraduates, fresh graduates and part-qualified students studying finance, accounting or business (including AAT, CIMA, ACCA and CA). The 3-day-per-week schedule fits around university and class timetables."
+    },
+    {
+      "q": "Do I need accounting software experience to apply?",
+      "a": "No. Familiarity with Excel, QuickBooks or Xero is a plus, but not required. We'll train you on the tools we use — attention to detail and a willingness to learn matter most."
+    },
+    {
+      "q": "Where is the finance internship located?",
+      "a": "The internship is based at our Colombo studio in Sri Lanka, with some flexibility for hybrid work depending on the task."
+    },
+    {
+      "q": "How long is the finance internship?",
+      "a": "Internships run between 3 and 6 months. Top performers are offered full-time finance jobs at Cypher Digital after the placement."
+    }
+  ],
+  "content-specialist-jobs-sri-lanka": [
+    {
+      "q": "What is the content specialist salary in Sri Lanka?",
+      "a": "Content specialist salaries in Sri Lanka range from about LKR 40,000 at junior level to LKR 300,000+ for content strategists and leads in 2026. Mid-level content specialists earn roughly LKR 70,000–120,000 per month. At Cypher Digital, content specialists earn LKR 60,000–130,000 per month depending on portfolio quality and demonstrated output."
+    },
+    {
+      "q": "What does a content specialist do at an agency in Sri Lanka?",
+      "a": "At a digital marketing agency in Sri Lanka like Cypher Digital, a content specialist plans content calendars, writes social media captions, ad copy for Meta and Google campaigns, SEO blog articles, email newsletters, and short-form video scripts, then tracks how each piece performs and refines based on the results. The role combines writing with performance marketing."
+    },
+    {
+      "q": "What skills and tools do I need for content jobs in Sri Lanka?",
+      "a": "The most in-demand skills for content jobs in Sri Lanka are strong copywriting, SEO writing (keywords, structure, readability), Canva for quick visuals, content scheduling tools like Meta Business Suite, responsible use of AI writing tools, and basic short-form video scripting. Writing quality and SEO awareness matter most."
+    },
+    {
+      "q": "Do I need a degree for content specialist jobs in Sri Lanka?",
+      "a": "No degree is required for content jobs at Cypher Digital. We hire based on writing quality and a published portfolio. A strong body of published work — captions, blogs, scripts — is more valuable than a formal qualification, though journalism, marketing or communications qualifications are valued."
+    },
+    {
+      "q": "What is a junior content writer salary in Sri Lanka?",
+      "a": "Junior content writer salaries in Sri Lanka typically range from LKR 40,000 to LKR 70,000 per month for 0–2 years experience. At Colombo agencies, juniors with a strong portfolio and SEO ability can start at the upper end, and salaries rise quickly with demonstrated performance."
+    },
+    {
+      "q": "Are there freelance content writing jobs in Sri Lanka?",
+      "a": "Yes — Cypher Digital offers part-time and freelance content arrangements for the right candidates. Freelance writers in Sri Lanka charge per article, caption set or project, and experienced writers working across several clients or international platforms like Upwork can earn significantly more than local agency rates."
+    }
+  ],
+  "social-media-jobs-sri-lanka": [
+    {
+      "q": "Are you hiring Social Media Managers in Sri Lanka right now?",
+      "a": "Yes. Cypher Digital has an open Social Media Manager vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and sample pages you've managed."
+    },
+    {
+      "q": "What is the average salary for a Social Media Manager in Sri Lanka?",
+      "a": "Social Media Manager salaries in Sri Lanka typically range between LKR 45,000 and LKR 180,000 per month depending on experience, the number of brand pages managed and proven engagement and growth results."
+    },
+    {
+      "q": "What does a Social Media Manager at Cypher Digital actually do?",
+      "a": "You'll plan content calendars, manage Facebook, Instagram, TikTok and LinkedIn pages, brief designers and editors, schedule posts, engage with followers, manage inboxes and report monthly on reach, engagement and growth."
+    },
+    {
+      "q": "Where is the Social Media Manager job located?",
+      "a": "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Most social media managers are expected on-site at least 3 days per week."
+    },
+    {
+      "q": "What experience do I need to apply for this social media job in Sri Lanka?",
+      "a": "1–3 years of hands-on social media management experience, comfort writing captions in English and Sinhala, and familiarity with Meta Business Suite or similar scheduling tools. Paid social experience is a strong plus."
+    },
+    {
+      "q": "Do I need a marketing degree to apply?",
+      "a": "No degree required. We hire based on real results — the brand pages you've managed, the growth and engagement you've driven and the content samples in your portfolio matter far more than qualifications."
+    }
+  ],
+  "digital-marketing-manager-jobs-sri-lanka": [
+    {
+      "q": "Are you hiring Digital Marketing Managers in Sri Lanka right now?",
+      "a": "Yes. Cypher Digital has an open Digital Marketing Manager vacancy in Colombo, Sri Lanka on a full-time basis. Apply directly via WhatsApp at +94 70 177 2626 with your CV and team/campaign results."
+    },
+    {
+      "q": "What is the average salary for a Digital Marketing Manager in Sri Lanka?",
+      "a": "Digital Marketing Manager salaries in Sri Lanka typically range between LKR 120,000 and LKR 200,000 per month depending on years of experience, team size managed, certifications and proven campaign ROI."
+    },
+    {
+      "q": "What does a Digital Marketing Manager at Cypher Digital actually do?",
+      "a": "You'll lead the performance team, plan integrated Meta, Google, TikTok and SEO strategies, own monthly performance across 800+ brand accounts, manage client relationships and mentor specialists and executives toward certifications."
+    },
+    {
+      "q": "Where is the Digital Marketing Manager job located?",
+      "a": "The role is based at our Colombo studio in Sri Lanka with hybrid flexibility. Managers are expected on-site at least 3 days per week for team and client reviews."
+    },
+    {
+      "q": "What experience do I need to apply for this digital marketing manager job in Sri Lanka?",
+      "a": "4–8 years of hands-on digital marketing experience with a proven track record managing Meta Ads and Google Ads budgets at scale, plus experience leading or mentoring a small team. Meta Blueprint or Google Ads certification is strongly preferred."
+    },
+    {
+      "q": "Do I need a marketing degree to apply?",
+      "a": "No degree required. We hire based on real results — the campaigns you've led, the budgets you've managed, the ROAS you've delivered and the teams you've grown matter far more than qualifications."
+    }
+  ],
+  "sales-jobs-in-sri-lanka": [
+    {
+      "q": "Are there sales executive vacancies in Sri Lanka available right now?",
+      "a": "Yes — Cypher Digital is actively hiring Sales Executives at our Colombo office in 2026. Applications are reviewed within 24 hours. Apply directly via WhatsApp at +94 70 177 2626."
+    },
+    {
+      "q": "What digital products will I be selling?",
+      "a": "You will sell Cypher Digital's full suite: Facebook and Instagram advertising, Google Ads, SEO services, social media management, TikTok marketing, graphic design retainers, and video production — all in high demand from Sri Lankan businesses in 2026."
+    },
+    {
+      "q": "What is the salary for sales jobs at Cypher Digital Sri Lanka?",
+      "a": "The base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings can reach LKR 150,000 and above. Your earning potential grows directly with your results."
+    },
+    {
+      "q": "Do I need a degree or digital marketing experience?",
+      "a": "No degree is required. We hire based on attitude, communication skills, and a track record of results. Basic familiarity with social media and digital advertising is helpful — full product training is provided."
+    },
+    {
+      "q": "How do I apply for sales jobs in Sri Lanka at Cypher Digital?",
+      "a": "Send your name and a brief note about your sales background to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms, no long wait."
+    },
+    {
+      "q": "What is the average salary for a sales executive in Sri Lanka in 2026?",
+      "a": "The average sales executive salary in Sri Lanka in 2026 ranges from LKR 40,000 to LKR 90,000 per month depending on industry, with digital and B2B roles paying the most. At Cypher Digital, the total package (base LKR 60,000 + performance earnings) regularly puts Sales Executives at LKR 150,000+/month within their first year."
+    }
+  ],
+  "sales-manager-jobs-sri-lanka": [
+    {
+      "q": "Are there sales manager vacancies in Sri Lanka right now?",
+      "a": "Yes — Cypher Digital is actively hiring a Sales Manager at our Colombo office in 2026. Apply via WhatsApp at +94 70 177 2626 and we will respond within 24 hours."
+    },
+    {
+      "q": "What is the salary for sales manager jobs in Sri Lanka?",
+      "a": "At Cypher Digital, the Sales Manager base salary is LKR 80,000/month, guaranteed. Total earnings grow significantly above base for managers who build and lead consistently high-performing teams."
+    },
+    {
+      "q": "What is an area sales manager in Sri Lanka?",
+      "a": "An Area Sales Manager oversees sales activity within a specific region of Sri Lanka such as Colombo, Kandy, or Galle. While Cypher Digital is currently only hiring for the Sales Manager role, candidates with area sales management backgrounds are very welcome to apply as this experience is highly relevant."
+    },
+    {
+      "q": "Do I need experience in digital marketing to apply?",
+      "a": "Not deeply — but an interest in digital products helps. We provide full product training. What matters most is a proven record of leading sales teams and hitting targets. If you can manage people and close deals, we want to talk."
+    },
+    {
+      "q": "How do I apply for sales manager jobs in Sri Lanka at Cypher Digital?",
+      "a": "Send your name, a brief note about your sales management background, and your CV to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms."
+    }
+  ],
+  "business-development-executive-jobs-sri-lanka": [
+    {
+      "q": "Are there business development executive vacancies in Sri Lanka right now?",
+      "a": "Yes — Cypher Digital is actively hiring a Business Development Executive at our Colombo office in 2026. We review all applications within 24 hours via WhatsApp at +94 70 177 2626."
+    },
+    {
+      "q": "What is the salary for business development executive jobs in Sri Lanka?",
+      "a": "At Cypher Digital, the BDE base salary is LKR 60,000 per month — guaranteed. With strong performance, total monthly earnings can reach LKR 150,000 and above. Your earning potential is directly tied to the revenue you bring in."
+    },
+    {
+      "q": "What digital products does a BDE sell at Cypher Digital?",
+      "a": "You will sell Facebook and Instagram advertising, Google Ads, SEO services, social media management packages, TikTok marketing, video production, and graphic design retainers — all products in high demand from Sri Lankan businesses in 2026."
+    },
+    {
+      "q": "Do I need experience in digital marketing to apply for business development jobs at Cypher Digital?",
+      "a": "Not deeply — but genuine interest in digital helps. Full product training is provided. What matters most is your ability to build relationships, communicate clearly, and close deals. If you have sold any B2B product or service in Sri Lanka, your skills transfer directly."
+    },
+    {
+      "q": "What is the difference between a Business Development Executive and a Sales Executive in Sri Lanka?",
+      "a": "A BDE focuses on building relationships with new, often larger accounts — consultative selling with slightly longer sales cycles and higher deal values. A Sales Executive focuses on volume — a higher number of smaller accounts closed quickly. At Cypher Digital, both roles sell the same digital products and earn from the same attractive structure."
+    },
+    {
+      "q": "How do I apply for business development executive jobs in Sri Lanka at Cypher Digital?",
+      "a": "Send your name and a brief note about your sales or business development background to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms, no long wait."
+    }
+  ]
+};
+
+const buildVacancyFaqSchema = (slug: string) => {
+  const faqs = VACANCY_FAQS[slug];
+  if (!faqs || faqs.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+};
+
 const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
   const canonical = `https://cypherdigital.lk/careers/${slug}`;
   const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(`Hi Cypher Digital, I'd like to apply for the ${job.title} role.`)}`;
@@ -1454,6 +1805,12 @@ export default async function handler(request: Request, context: any) {
       const schema = buildJobPostingSchema(careersMatch[1], job);
       const block = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(schema))}</script>`;
       modified = modified.replace("</head>", `  ${block}\n  </head>`);
+    }
+    // FAQPage JSON-LD for vacancy FAQs (server-side, no JS required)
+    const faqSchema = buildVacancyFaqSchema(careersMatch[1]);
+    if (faqSchema) {
+      const faqBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(faqSchema))}</script>`;
+      modified = modified.replace("</head>", `  ${faqBlock}\n  </head>`);
     }
   }
 
