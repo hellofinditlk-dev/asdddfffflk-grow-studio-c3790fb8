@@ -1823,6 +1823,18 @@ export default async function handler(request: Request, context: any) {
     };
     const itemListBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(itemList))}</script>`;
     modified = modified.replace("</head>", `  ${itemListBlock}\n  </head>`);
+    const careersBreadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
+        { "@type": "ListItem", position: 2, name: "Careers", item: "https://cypherdigital.lk/careers" },
+      ],
+    };
+    modified = modified.replace(
+      "</head>",
+      `  <script type="application/ld+json">${escapeJsonLd(JSON.stringify(careersBreadcrumb))}</script>\n  </head>`,
+    );
   }
 
   if (careersMatch) {
@@ -1838,6 +1850,25 @@ export default async function handler(request: Request, context: any) {
       const faqBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(faqSchema))}</script>`;
       modified = modified.replace("</head>", `  ${faqBlock}\n  </head>`);
     }
+    // BreadcrumbList JSON-LD: Home > Careers > Vacancy
+    const vacancySlug = careersMatch[1];
+    const vacancyJob = JOB_POSTINGS[vacancySlug];
+    const breadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
+        { "@type": "ListItem", position: 2, name: "Careers", item: "https://cypherdigital.lk/careers" },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: vacancyJob ? vacancyJob.title : "Vacancy",
+          item: `https://cypherdigital.lk/careers/${vacancySlug}`,
+        },
+      ],
+    };
+    const bcBlock = `<script type="application/ld+json">${escapeJsonLd(JSON.stringify(breadcrumb))}</script>`;
+    modified = modified.replace("</head>", `  ${bcBlock}\n  </head>`);
   }
 
   const headers = new Headers(response.headers);
