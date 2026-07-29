@@ -1172,6 +1172,10 @@ type JobPostingData = {
   datePosted: string;
   salaryMin: number;
   salaryMax: number;
+  skills?: string;
+  qualifications?: string;
+  responsibilities?: string;
+  benefits?: string;
 };
 
 const JOB_POSTINGS: Record<string, JobPostingData> = {
