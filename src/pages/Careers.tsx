@@ -245,14 +245,31 @@ const roleOptions = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   mainEntity: faqs.map((f) => ({
     "@type": "Question",
     name: f.q,
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
+
+// Grouped internal-link index — every vacancy reachable in one hop with keyword anchor text.
+const VACANCY_GROUPS: { heading: string; match: RegExp }[] = [
+  { heading: "Digital marketing & social media jobs", match: /digital-marketing|social/ },
+  { heading: "Creative jobs — design, video & content", match: /graphic|video|content/ },
+  { heading: "Sales & business development jobs", match: /sales|business-development/ },
+  { heading: "Internships in Sri Lanka", match: /intern/ },
+];
+
+const SERVICE_LINKS = [
+  { href: "/social-media-management-sri-lanka", label: "Social media management services" },
+  { href: "/google-ads-sri-lanka", label: "Google Ads management" },
+  { href: "/seo-services-sri-lanka", label: "SEO services in Sri Lanka" },
+  { href: "/graphic-design-sri-lanka", label: "Graphic design services" },
+  { href: "/video-production-sri-lanka", label: "Video production services" },
+  { href: "/advertising-in-sri-lanka", label: "Advertising in Sri Lanka" },
+  { href: "/about", label: "About Cypher Digital" },
+  { href: "/blog", label: "Marketing blog" },
+];
 
 const ApplyForm = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", role: "", portfolio: "", message: "" });
