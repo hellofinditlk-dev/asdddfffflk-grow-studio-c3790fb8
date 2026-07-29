@@ -42,6 +42,12 @@ export interface Vacancy {
     intro?: string;
     items: { time: string; task: string }[];
   };
+  /** Months of experience required (0 for interns). Used in JobPosting schema. */
+  monthsExperience?: number;
+  /** Google-friendly education level, e.g. "bachelor degree", "high school". */
+  educationRequirement?: string;
+  /** Explicit skills list for JobPosting schema. Falls back to software skills + requirements. */
+  skills?: string[];
 }
 
 export const vacancies: Vacancy[] = [
