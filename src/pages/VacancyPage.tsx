@@ -110,6 +110,15 @@ const VacancyPage = () => {
     name: `Apply for ${vacancy.title} on WhatsApp`,
   };
 
+  const lastUpdatedIso = vacancy.lastUpdated ?? vacancy.datePosted;
+  jobPostingSchema.dateModified = lastUpdatedIso;
+  const lastUpdatedLabel = new Date(`${lastUpdatedIso}T00:00:00Z`).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
   if (vacancy.salaryRange) {
     jobPostingSchema.baseSalary = {
       "@type": "MonetaryAmount",
