@@ -1636,6 +1636,9 @@ const buildVacancyFaqSchema = (slug: string) => {
   };
 };
 
+// Vacancy content freshness date — refresh monthly.
+const VACANCY_LAST_UPDATED = "2026-07-29";
+
 const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
   const canonical = `https://cypherdigital.lk/careers/${slug}`;
   const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(`Hi Cypher Digital, I'd like to apply for the ${job.title} role.`)}`;
@@ -1651,6 +1654,7 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
     title: job.title,
     description: job.description,
     datePosted: job.datePosted,
+    dateModified: VACANCY_LAST_UPDATED,
     validThrough,
     identifier: { "@type": "PropertyValue", name: "Cypher Digital", value: slug },
     employmentType: job.employmentType,

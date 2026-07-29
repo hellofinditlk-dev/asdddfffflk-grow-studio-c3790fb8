@@ -110,6 +110,15 @@ const VacancyPage = () => {
     name: `Apply for ${vacancy.title} on WhatsApp`,
   };
 
+  const lastUpdatedIso = vacancy.lastUpdated ?? vacancy.datePosted;
+  jobPostingSchema.dateModified = lastUpdatedIso;
+  const lastUpdatedLabel = new Date(`${lastUpdatedIso}T00:00:00Z`).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
   if (vacancy.salaryRange) {
     jobPostingSchema.baseSalary = {
       "@type": "MonetaryAmount",
@@ -163,6 +172,10 @@ const VacancyPage = () => {
             <span className="flex items-center gap-1.5"><Briefcase className="w-4 h-4" /> {vacancy.type}</span>
             <span className="flex items-center gap-1.5"><Building2 className="w-4 h-4" /> Cypher Digital</span>
           </div>
+          <p className="text-sm text-muted-foreground mb-6">
+            Last Updated:{" "}
+            <time dateTime={lastUpdatedIso} className="font-semibold text-foreground">{lastUpdatedLabel}</time>
+          </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">{vacancy.summary}</p>
           <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
             <a href={waUrl} target="_blank" rel="noopener noreferrer">
