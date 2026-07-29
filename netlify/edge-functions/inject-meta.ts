@@ -1283,6 +1283,8 @@ const JOB_POSTINGS: Record<string, JobPostingData> = {
 
 const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
   const canonical = `https://cypherdigital.lk/careers/${slug}`;
+  const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(`Hi Cypher Digital, I'd like to apply for the ${job.title} role.`)}`;
+  const isIntern = /intern/i.test(slug) || JSON.stringify(job.employmentType).includes("INTERN");
   const validThrough = (() => {
     const d = new Date();
     d.setDate(d.getDate() + 90);
@@ -1315,6 +1317,33 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
       },
     },
     applicantLocationRequirements: { "@type": "Country", name: "Sri Lanka" },
+    educationRequirements: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: isIntern ? "high school" : "bachelor degree",
+    },
+    experienceRequirements: {
+      "@type": "OccupationalExperienceRequirements",
+      monthsOfExperience: isIntern ? 0 : 12,
+    },
+    experienceInPlaceOfEducation: true,
+    industry: "Digital Marketing",
+    occupationalCategory: job.title,
+    skills: job.skills ?? job.description,
+    qualifications: job.qualifications ?? job.description,
+    responsibilities: job.responsibilities ?? job.description,
+    jobBenefits: job.benefits ??
+      "Work on live campaigns for 800+ Sri Lankan brands, mentorship from senior marketers, performance-based increments, and clear career progression at Cypher Digital.",
+    applicationContact: {
+      "@type": "ContactPoint",
+      contactType: "Recruitment",
+      telephone: "+94701772626",
+      url: waUrl,
+    },
+    potentialAction: {
+      "@type": "ApplyAction",
+      name: `Apply for ${job.title} on WhatsApp`,
+      target: { "@type": "EntryPoint", urlTemplate: waUrl },
+    },
     baseSalary: {
       "@type": "MonetaryAmount",
       currency: "LKR",
