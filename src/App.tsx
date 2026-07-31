@@ -203,6 +203,7 @@ const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminLeads = lazy(() => import("./pages/AdminLeads"));
 const AdminInquiries = lazy(() => import("./pages/AdminInquiries"));
 const AdminCallClicks = lazy(() => import("./pages/AdminCallClicks"));
+const AdminApplications = lazy(() => import("./pages/AdminApplications"));
 const ProgrammaticAdvertising = lazy(() => import("./pages/ProgrammaticAdvertising"));
 
 
@@ -450,6 +451,7 @@ const App = () => (
               <Route path="/admin/leads" element={<AdminLeads />} />
               <Route path="/admin/inquiries" element={<AdminInquiries />} />
               <Route path="/admin/call-clicks" element={<AdminCallClicks />} />
+              <Route path="/admin/applications" element={<AdminApplications />} />
               <Route path="/admin" element={<Navigate to="/admin/inquiries" replace />} />
 
               <Route path="/:slug" element={<IndustryPage />} />
