@@ -155,6 +155,51 @@ export type Database = {
         }
         Relationships: []
       }
+      job_applications: {
+        Row: {
+          created_at: string
+          email: string | null
+          experience: string | null
+          id: string
+          message: string | null
+          name: string
+          phone: string
+          portfolio_link: string | null
+          position_slug: string | null
+          position_title: string
+          referrer: string | null
+          source_path: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          experience?: string | null
+          id?: string
+          message?: string | null
+          name: string
+          phone: string
+          portfolio_link?: string | null
+          position_slug?: string | null
+          position_title: string
+          referrer?: string | null
+          source_path?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          experience?: string | null
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string
+          portfolio_link?: string | null
+          position_slug?: string | null
+          position_title?: string
+          referrer?: string | null
+          source_path?: string | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

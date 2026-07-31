@@ -145,6 +145,9 @@ export default function AdminLeads() {
           <Link to="/admin/inquiries">
             <Button variant="outline">Website Inquiries</Button>
           </Link>
+          <Link to="/admin/applications">
+            <Button variant="outline">Applications</Button>
+          </Link>
           <Button variant="outline" onClick={exportCSV} disabled={!leads?.length}>
             Export CSV
           </Button>

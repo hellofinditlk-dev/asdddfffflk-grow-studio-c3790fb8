@@ -5,6 +5,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getVacancyBySlug, vacancies } from "@/data/vacancies";
+import JobApplicationForm from "@/components/JobApplicationForm";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
 
@@ -450,6 +451,14 @@ const VacancyPage = () => {
                     <MessageCircle className="w-4 h-4 mr-2" /> {vacancy.whatsappCta}
                   </a>
                 </Button>
+              </div>
+
+              <div id="apply" className="mt-6 bg-card rounded-xl p-6 border border-border scroll-mt-24">
+                <h3 className="font-heading font-bold mb-1">Apply for this position</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Fill this in and we'll have your details on file — WhatsApp opens next so you can send your CV.
+                </p>
+                <JobApplicationForm positionTitle={vacancy.title} positionSlug={vacancy.slug} />
               </div>
             </CardContent>
           </Card>

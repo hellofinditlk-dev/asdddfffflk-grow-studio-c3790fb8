@@ -403,6 +403,7 @@ export default function AdminInquiries() {
         <div className="flex flex-wrap gap-2">
           <Link to="/admin/leads"><Button variant="outline" size="sm">AI Visibility</Button></Link>
           <Link to="/admin/call-clicks"><Button variant="outline" size="sm">Call Log</Button></Link>
+          <Link to="/admin/applications"><Button variant="outline" size="sm">Applications</Button></Link>
           <Button variant="outline" size="sm" onClick={handleLogout}>Sign Out</Button>
         </div>
       </div>

@@ -139,6 +139,7 @@ export default function AdminCallClicks() {
         <div className="flex gap-2">
           <Link to="/admin/inquiries"><Button variant="outline">Inquiries</Button></Link>
           <Link to="/admin/leads"><Button variant="outline">AI Visibility Leads</Button></Link>
+          <Link to="/admin/applications"><Button variant="outline">Applications</Button></Link>
           <Button onClick={exportCSV} disabled={!filtered.length}>Export CSV</Button>
           <Button onClick={handleLogout} variant="outline">Sign Out</Button>
         </div>
