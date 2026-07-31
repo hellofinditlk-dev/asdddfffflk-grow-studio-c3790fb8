@@ -1,0 +1,1 @@
+DELETE FROM public.job_applications WHERE name='Test Probe' AND phone='0700000000';
