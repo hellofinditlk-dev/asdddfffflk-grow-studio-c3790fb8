@@ -245,7 +245,7 @@ const VacancyPage = () => {
                 <Send className="w-5 h-5 mr-2" /> Apply for {vacancy.shortTitle}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="outline" className="text-black border-white hover:bg-white/90 hover:text-black">
               <a href={waUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" /> {vacancy.whatsappCta} on WhatsApp
               </a>
