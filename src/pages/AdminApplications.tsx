@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -308,8 +308,8 @@ export default function AdminApplications() {
                 {filtered.length === 0 ? (
                   <tr><td colSpan={9} className="px-4 py-10 text-center text-muted-foreground">No applications found.</td></tr>
                 ) : filtered.map((a) => (
-                  <>
-                    <tr key={a.id} className="border-t border-border">
+                  <Fragment key={a.id}>
+                    <tr className="border-t border-border">
                       <td className="px-4 py-3 whitespace-nowrap">{new Date(a.created_at).toLocaleString()}</td>
                       <td className="px-4 py-3 font-medium">{a.name}</td>
                       <td className="px-4 py-3">{a.position_title}</td>
@@ -329,7 +329,7 @@ export default function AdminApplications() {
                       </td>
                     </tr>
                     {expanded === a.id && (
-                      <tr key={`${a.id}-x`} className="border-t border-border bg-muted/30">
+                      <tr className="border-t border-border bg-muted/30">
                         <td colSpan={9} className="px-4 py-4 text-sm space-y-2">
                           <p><span className="text-muted-foreground">Message:</span> {a.message || "—"}</p>
                           <p className="font-mono text-xs"><span className="text-muted-foreground">Applied from:</span> {a.source_path || "—"}</p>
@@ -337,7 +337,7 @@ export default function AdminApplications() {
                         </td>
                       </tr>
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>
