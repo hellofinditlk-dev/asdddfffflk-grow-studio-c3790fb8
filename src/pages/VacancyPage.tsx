@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { MessageCircle, Briefcase, MapPin, CheckCircle2, Sparkles, ArrowLeft, ArrowRight, Building2 } from "lucide-react";
+import { MessageCircle, Briefcase, MapPin, CheckCircle2, Sparkles, ArrowLeft, ArrowRight, Building2, Send } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
@@ -239,11 +239,18 @@ const VacancyPage = () => {
             <time dateTime={lastUpdatedIso} className="font-semibold text-white">{lastUpdatedLabel}</time>
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">{vacancy.summary}</p>
-          <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
-            <a href={waUrl} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5 mr-2" /> {vacancy.whatsappCta} on WhatsApp
-            </a>
-          </Button>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
+              <a href="#apply">
+                <Send className="w-5 h-5 mr-2" /> Apply for {vacancy.shortTitle}
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a href={waUrl} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5 mr-2" /> {vacancy.whatsappCta} on WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -444,13 +451,20 @@ const VacancyPage = () => {
               <div className="bg-secondary/40 rounded-xl p-6 border border-border">
                 <h3 className="font-heading font-bold mb-2">How to Apply</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Send your name, portfolio link or experience summary, and a brief intro to <strong className="text-foreground">+94 70 177 2626</strong> on WhatsApp. We respond within 24 hours — no lengthy forms, no waiting.
+                  Fastest way: fill the short application form below and your details reach our hiring team instantly. Prefer WhatsApp? Message <strong className="text-foreground">+94 70 177 2626</strong> — we respond within 24 hours.
                 </p>
-                <Button asChild className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
-                  <a href={waUrl} target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="w-4 h-4 mr-2" /> {vacancy.whatsappCta}
-                  </a>
-                </Button>
+                <div className="flex flex-wrap gap-3">
+                  <Button asChild className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
+                    <a href="#apply">
+                      <Send className="w-4 h-4 mr-2" /> Apply for {vacancy.shortTitle}
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <a href={waUrl} target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="w-4 h-4 mr-2" /> {vacancy.whatsappCta}
+                    </a>
+                  </Button>
+                </div>
               </div>
 
               <div id="apply" className="mt-6 bg-card rounded-xl p-6 border border-border scroll-mt-24">
