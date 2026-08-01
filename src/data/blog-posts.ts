@@ -667,8 +667,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "social-media-campaign-ideas-sri-lanka",
-    title: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2025",
-    excerpt: "10 proven social media campaign ideas for Sri Lankan businesses — from Avurudu campaigns to flash sales, BTS series, cricket tie-ins, and influencer collaborations.",
+    title: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2026",
+    excerpt: "10 proven social media campaign ideas for Sri Lankan businesses in 2026 — Avurudu campaigns, flash sales, cricket tie-ins, influencer collabs — with step-by-step execution and KPIs.",
     date: "2026-05-05",
     keyword: "Social Media Management Sri Lanka",
   },

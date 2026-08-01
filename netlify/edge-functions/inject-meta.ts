@@ -968,9 +968,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Sinhala vs English: Which Language Should You Use for Social Media in Sri Lanka?",
   },
   "/blog/social-media-campaign-ideas-sri-lanka": {
-    title: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2025 | Cypher Digital",
-    description: "10 proven social media campaign ideas for Sri Lankan businesses — from Avurudu campaigns to flash sales, BTS series, cricket tie-ins, and influencer collaborations.",
-    h1: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2025",
+    title: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2026 | Cypher Digital",
+    description: "10 proven social media campaign ideas for Sri Lankan businesses in 2026 — Avurudu campaigns, flash sales, cricket tie-ins, influencer collabs — with step-by-step execution and KPIs.",
+    h1: "10 Social Media Campaign Ideas That Actually Work for Sri Lankan Businesses in 2026",
   },
   "/blog/social-media-management-cost-sri-lanka": {
     title: "How Much Does Social Media Management Cost in Sri Lanka? (2025 Pricing Guide) | Cypher Digital",
