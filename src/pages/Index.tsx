@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
+import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
@@ -922,6 +923,9 @@ const Index = () => (
         </div>
       </div>
     </section>
+
+    {/* OUR WORK / PORTFOLIO */}
+    <OurWorkSection />
 
     {/* CLIENT REVIEWS */}
     <section className="py-20">
