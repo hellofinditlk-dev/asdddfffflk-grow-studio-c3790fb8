@@ -28,12 +28,15 @@ import macChristmas from "@/assets/work/mac-christmas-wonderland.jpg.asset.json"
 import macVisa from "@/assets/work/mac-visa-services.jpg.asset.json";
 
 export const videos = [
-  { id: "K5iZaX8-QaE", title: "AI video production sample for a Sri Lankan brand" },
-  { id: "qKmgqf9IpUw", title: "Social media reel produced by Cypher Digital" },
-  { id: "n2nJ6gJqOtU", title: "Product promo video for a Sri Lankan business" },
-  { id: "2RHQ06uIEuA", title: "Short-form ad creative sample" },
-  { id: "vXoPdG-WYDs", title: "Brand storytelling video sample" },
-  { id: "LrBEZw9PPBo", title: "Campaign video sample by Cypher Digital" },
+  { id: "K5iZaX8-QaE", title: "AI video production sample for a Sri Lankan brand", category: "Production" as const },
+  { id: "qKmgqf9IpUw", title: "Social media reel produced by Cypher Digital", category: "Production" as const },
+  { id: "n2nJ6gJqOtU", title: "Product promo video for a Sri Lankan business", category: "Production" as const },
+  { id: "2RHQ06uIEuA", title: "Short-form ad creative sample", category: "Production" as const },
+  { id: "vXoPdG-WYDs", title: "Brand storytelling video sample", category: "Production" as const },
+  { id: "LrBEZw9PPBo", title: "Campaign video sample by Cypher Digital", category: "Production" as const },
+  { id: "oMxfgioWCdI", title: "Behind the scenes: John Keells campaign shoot", category: "Behind the scenes" as const },
+  { id: "QAZNN3J9JhI", title: "Behind the scenes: Mackinnons brand shoot", category: "Behind the scenes" as const },
+  { id: "WhZBrHbSOZQ", title: "Behind the scenes: lifestyle campaign shoot", category: "Behind the scenes" as const },
 ];
 
 export const creatives = [
