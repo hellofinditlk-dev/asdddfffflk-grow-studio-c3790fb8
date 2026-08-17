@@ -177,7 +177,7 @@ const AIVideoProduction = () => {
           {/* INTRO */}
           <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Why Video Now</div>
-            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 16, lineHeight: 1.2 }}>What Is AI Video Production — and Why Is It the Smartest Investment for Your Business in 2025?</h2>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 16, lineHeight: 1.2 }}>What Is AI Video Production — and Why Is It the Smartest Investment for Your Business in 2026?</h2>
             <div style={{ fontSize: 15, color: "#444", lineHeight: 1.75, display: "flex", flexDirection: "column", gap: 14 }}>
               <p>Video is the highest-performing content format on every platform Sri Lankan businesses use — Facebook, Instagram, TikTok, YouTube, and Google. But traditional video production in Sri Lanka is expensive, slow, and inaccessible for most small and medium businesses.</p>
               <p>AI video production changes this completely.</p>
