@@ -14,11 +14,9 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
   )}`;
 
   if (variant === "preview") {
-    const previewItems = [
-      ...videos.slice(0, 4).map((v) => ({ type: "video" as const, data: v })),
-      ...creatives.slice(0, 8).map((c) => ({ type: "creative" as const, data: c })),
-    ];
-    const rows = [previewItems.slice(0, 4), previewItems.slice(4, 8), previewItems.slice(8, 12)];
+    const behindTheScenes = videos.filter((v) => v.category === "Behind the scenes").slice(0, 3);
+    const production = videos.filter((v) => v.category === "Production").slice(0, 4);
+    const creativeRow = creatives.slice(0, 4);
 
     return (
       <section className="py-12 border-y border-border bg-secondary">
@@ -45,52 +43,94 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
           </div>
 
           {/* 3-row compact gallery */}
-          <div className="flex flex-col gap-3">
-            {rows.map((row, rowIndex) => (
-              <div key={rowIndex} className="grid grid-cols-4 gap-3">
-                {row.map((item) =>
-                  item.type === "video" ? (
-                    <Link
-                      key={item.data.id}
-                      to="/our-work"
-                      aria-label={item.data.title}
-                      className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
-                    >
-                      <img
-                        src={`https://i.ytimg.com/vi/${item.data.id}/hqdefault.jpg`}
-                        alt={item.data.title}
-                        loading="lazy"
-                        decoding="async"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center bg-black/25">
-                        <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
-                          <Play className="w-3.5 h-3.5 text-primary-foreground" />
-                        </span>
+          <div className="flex flex-col gap-4">
+            {/* Behind the scenes */}
+            <div>
+              <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
+                <Play className="w-3 h-3 text-primary" /> Behind the scenes
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+                {behindTheScenes.map((v) => (
+                  <Link
+                    key={v.id}
+                    to="/our-work"
+                    aria-label={v.title}
+                    className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
+                  >
+                    <img
+                      src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                      alt={v.title}
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute inset-0 flex items-center justify-center bg-black/25">
+                      <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
+                        <Play className="w-3.5 h-3.5 text-primary-foreground" />
                       </span>
-                    </Link>
-                  ) : (
-                    <Link
-                      key={item.data.src}
-                      to="/our-work"
-                      aria-label={item.data.alt}
-                      className="group aspect-square rounded-xl overflow-hidden border border-border bg-card"
-                    >
-                      <img
-                        src={item.data.src}
-                        alt={item.data.alt}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </Link>
-                  ),
-                )}
+                    </span>
+                  </Link>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Production videos */}
+            <div>
+              <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
+                <Play className="w-3 h-3 text-primary" /> Video &amp; reel production
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+                {production.map((v) => (
+                  <Link
+                    key={v.id}
+                    to="/our-work"
+                    aria-label={v.title}
+                    className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
+                  >
+                    <img
+                      src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                      alt={v.title}
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute inset-0 flex items-center justify-center bg-black/25">
+                      <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
+                        <Play className="w-3.5 h-3.5 text-primary-foreground" />
+                      </span>
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Campaign creatives */}
+            <div>
+              <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                Campaign creatives
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+                {creativeRow.map((c) => (
+                  <Link
+                    key={c.src}
+                    to="/our-work"
+                    aria-label={c.alt}
+                    className="group aspect-square rounded-xl overflow-hidden border border-border bg-card"
+                  >
+                    <img
+                      src={c.src}
+                      alt={c.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-4">
+          <div className="flex flex-wrap gap-2 mt-5">
             <a
               href={wa}
               target="_blank"
@@ -104,6 +144,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
       </section>
     );
   }
+
 
 
   return (
