@@ -14,6 +14,12 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
   )}`;
 
   if (variant === "preview") {
+    const previewItems = [
+      ...videos.slice(0, 4).map((v) => ({ type: "video" as const, data: v })),
+      ...creatives.slice(0, 8).map((c) => ({ type: "creative" as const, data: c })),
+    ];
+    const rows = [previewItems.slice(0, 4), previewItems.slice(4, 8), previewItems.slice(8, 12)];
+
     return (
       <section className="py-12 border-y border-border bg-secondary">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -38,44 +44,49 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             </div>
           </div>
 
-          {/* one compact horizontal rail: video thumbs + creatives */}
-          <div className="flex gap-3 overflow-x-auto pb-3 snap-x snap-mandatory [scrollbar-width:thin]">
-            {videos.slice(0, 4).map((v) => (
-              <Link
-                key={v.id}
-                to="/our-work"
-                aria-label={v.title}
-                className="group relative shrink-0 snap-start w-[104px] sm:w-[120px] aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
-              >
-                <img
-                  src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
-                  alt={v.title}
-                  loading="lazy"
-                  decoding="async"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <span className="absolute inset-0 flex items-center justify-center bg-black/25">
-                  <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
-                    <Play className="w-3.5 h-3.5 text-primary-foreground" />
-                  </span>
-                </span>
-              </Link>
-            ))}
-            {creatives.slice(0, 10).map((c) => (
-              <Link
-                key={c.src}
-                to="/our-work"
-                aria-label={c.alt}
-                className="group shrink-0 snap-start w-[104px] sm:w-[120px] aspect-square rounded-xl overflow-hidden border border-border bg-card"
-              >
-                <img
-                  src={c.src}
-                  alt={c.alt}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </Link>
+          {/* 3-row compact gallery */}
+          <div className="flex flex-col gap-3">
+            {rows.map((row, rowIndex) => (
+              <div key={rowIndex} className="grid grid-cols-4 gap-3">
+                {row.map((item) =>
+                  item.type === "video" ? (
+                    <Link
+                      key={item.data.id}
+                      to="/our-work"
+                      aria-label={item.data.title}
+                      className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
+                    >
+                      <img
+                        src={`https://i.ytimg.com/vi/${item.data.id}/hqdefault.jpg`}
+                        alt={item.data.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <span className="absolute inset-0 flex items-center justify-center bg-black/25">
+                        <span className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
+                          <Play className="w-3.5 h-3.5 text-primary-foreground" />
+                        </span>
+                      </span>
+                    </Link>
+                  ) : (
+                    <Link
+                      key={item.data.src}
+                      to="/our-work"
+                      aria-label={item.data.alt}
+                      className="group aspect-square rounded-xl overflow-hidden border border-border bg-card"
+                    >
+                      <img
+                        src={item.data.src}
+                        alt={item.data.alt}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </Link>
+                  ),
+                )}
+              </div>
             ))}
           </div>
 
@@ -93,6 +104,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
       </section>
     );
   }
+
 
   return (
     <section className="py-14 lg:py-16 bg-secondary">
