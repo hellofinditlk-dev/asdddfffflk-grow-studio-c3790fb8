@@ -50,7 +50,7 @@ const AIVideoProduction = () => {
 
   const comparison = [
     ["Turnaround", "48–72 hours", "2–4 weeks"],
-    ["Starting Cost", "LKR 15,000", "LKR 80,000+"],
+    ["Starting Cost", "LKR 18,000", "LKR 80,000+"],
     ["Script Writing", "Included", "Extra cost"],
     ["Revisions", "Included", "Charged per revision"],
     ["Language Options", "Sinhala, Tamil, English", "Depends on talent"],
@@ -76,7 +76,7 @@ const AIVideoProduction = () => {
   ];
 
   const faqs = [
-    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 15,000 for a short social media reel. Brand and promotional videos start from LKR 45,000. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
+    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 18,000 for a short social media reel. Brand and promotional videos start from LKR 54,000. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
     { q: "How long does AI video production take?", a: "Most projects are delivered within 48 hours of script approval. Complex brand films or multi-video packages take 3–5 business days. Rush delivery is available for time-sensitive campaigns." },
     { q: "Do you produce videos in Sinhala?", a: "Yes. We produce video content in Sinhala, Tamil, and English using AI voiceover technology and bilingual captioning. Sinhala-language videos are particularly effective for businesses targeting local audiences across Sri Lanka." },
     { q: "Can you produce video ads ready to run on Facebook and Google?", a: "Yes. Every video ad we produce is formatted specifically for the platform — including the correct aspect ratios, file formats, and length requirements for Facebook Ads, Google Display, YouTube pre-roll, and TikTok." },
@@ -104,7 +104,7 @@ const AIVideoProduction = () => {
     serviceType: "AI Video Production",
     areaServed: { "@type": "Country", name: "Sri Lanka" },
     description: "Professional AI video production services in Sri Lanka. Social media reels, brand films, ad creatives, product videos, and AI avatar videos for businesses in Colombo and across Sri Lanka.",
-    offers: { "@type": "AggregateOffer", lowPrice: "15000", highPrice: "200000", priceCurrency: "LKR" },
+    offers: { "@type": "AggregateOffer", lowPrice: "18000", highPrice: "200000", priceCurrency: "LKR" },
   };
 
   const faqSchema = {
@@ -121,7 +121,7 @@ const AIVideoProduction = () => {
     <>
       <SEOHead
         title="AI Video Production Sri Lanka | Cypher Digital"
-        description="Sri Lanka's #1 AI video production agency. Social reels, brand films & ad creatives from LKR 15,000. 48-hour delivery. Trusted by 500+ businesses. Free quote today."
+        description="Sri Lanka's #1 AI video production agency. Social reels, brand films & ad creatives from LKR 18,000. 48-hour delivery. Trusted by 500+ businesses. Free quote today."
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
