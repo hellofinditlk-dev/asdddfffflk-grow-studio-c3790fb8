@@ -25,7 +25,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
                 Real work we've delivered for Sri Lankan brands
               </h2>
               <p className="text-xs text-muted-foreground mt-1">
-                {videos.length} video samples · {creatives.length} campaign creatives · 200+ brands
+                Video samples, campaign creatives and brand work produced in-house.
               </p>
             </div>
             <div className="flex items-center gap-2">
