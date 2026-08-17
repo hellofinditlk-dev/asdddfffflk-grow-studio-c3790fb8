@@ -9,6 +9,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Get a free AI Visibility Check in Sri Lanka. See how visible your business is on ChatGPT, Gemini, Claude & Perplexity. Get your AI visibility score.",
     h1: "Is Your Business Visible on ChatGPT & Gemini?",
   },
+  "/our-work": {
+    title: "Our Work — Portfolio of a Sri Lankan Digital Marketing Agency",
+    description: "See Cypher Digital's portfolio: social media creatives, campaign designs and video production delivered for education, retail, travel and logistics brands in Sri Lanka.",
+    h1: "Our Work — Portfolio of Campaigns, Creatives & Videos",
+  },
   "/programmatic-advertising-sri-lanka": {
     title: "Programmatic Advertising Sri Lanka | Cypher Digital Private Marketplace",
     description: "Programmatic advertising Sri Lanka — Cypher Digital operates Sri Lanka's only Premium Private Marketplace (PMP) across FindIt.lk, Studyway.lk and YouJobs.lk. Guaranteed brand-safe inventory, zero ad fraud, 100% local reach. Packages from LKR 60,000.",
