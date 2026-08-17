@@ -43,7 +43,7 @@ const wa = `https://wa.me/94701772626?text=${encodeURIComponent(
 )}`;
 
 const OurWork = () => (
-  <div className="pt-16">
+  <>
     <SEOHead
       title="Our Work — Portfolio of a Sri Lankan Digital Marketing Agency"
       description="See Cypher Digital's portfolio: social media creatives, campaign designs and video production delivered for education, retail, travel and logistics brands in Sri Lanka."
@@ -52,12 +52,11 @@ const OurWork = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
 
+    <PageBreadcrumb items={[{ label: "Our Work" }]} />
+
     <section className="relative bg-[#030612] overflow-hidden py-16 lg:py-24">
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="container mx-auto px-4 relative z-10 max-w-4xl text-center">
-        <div className="flex justify-center mb-6">
-          <PageBreadcrumb items={[{ label: "Our Work" }]} />
-        </div>
         <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
           Our Work — Portfolio of Campaigns, Creatives &amp; Videos
         </h1>
@@ -110,7 +109,7 @@ const OurWork = () => (
         </div>
       </div>
     </section>
-  </div>
+  </>
 );
 
 export default OurWork;
