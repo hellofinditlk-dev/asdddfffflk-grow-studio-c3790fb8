@@ -19,16 +19,16 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
     const creativeRow = creatives.slice(0, 4);
 
     return (
-      <section className="py-12 border-y border-border bg-secondary">
+      <section className="py-9 md:py-12 border-y border-border bg-secondary">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* compact header row */}
-          <div className="flex flex-wrap items-end justify-between gap-3 mb-5">
+          <div className="flex flex-wrap items-end justify-between gap-2 mb-4 md:mb-5">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-1">Our Portfolio</p>
-              <h2 className="font-heading text-xl md:text-2xl font-extrabold text-foreground leading-tight">
+              <h2 className="font-heading text-lg sm:text-xl md:text-2xl font-extrabold text-foreground leading-snug">
                 Real work we've delivered for Sri Lankan brands
               </h2>
-              <p className="text-xs text-muted-foreground mt-1">
+              <p className="text-xs text-muted-foreground mt-1 max-w-md">
                 Video samples, campaign creatives and brand work produced in-house.
               </p>
             </div>
@@ -43,13 +43,13 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
           </div>
 
           {/* 3-row compact gallery */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:gap-5">
             {/* Behind the scenes */}
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
                 <Play className="w-3 h-3 text-primary" /> Behind the scenes
               </h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3">
                 {behindTheScenes.map((v) => (
                   <Link
                     key={v.id}
@@ -80,7 +80,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
                 <Play className="w-3 h-3 text-primary" /> AI Video &amp; reel production
               </h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 sm:grid-cols-4 gap-2 sm:gap-3">
                 {production.map((v) => (
                   <Link
                     key={v.id}
@@ -111,7 +111,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2">
                 Campaign creatives
               </h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+              <div className="grid grid-cols-4 sm:grid-cols-4 gap-2 sm:gap-3">
                 {creativeRow.map((c) => (
                   <Link
                     key={c.src}
@@ -137,7 +137,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
               href={wa}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 h-11 px-5 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
             >
               Get work like this on WhatsApp
             </a>
@@ -150,12 +150,12 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
 
 
   return (
-    <section className="py-14 lg:py-16 bg-secondary">
+    <section className="py-10 md:py-14 lg:py-16 bg-secondary">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* header */}
-        <div className="mb-8 md:mb-10">
+        <div className="mb-6 md:mb-10">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-2">Our Portfolio</p>
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-foreground leading-tight mb-2">
+          <h2 className="font-heading text-xl sm:text-2xl md:text-3xl font-extrabold text-foreground leading-snug mb-2">
             Real work we've delivered for Sri Lankan brands
           </h2>
           <p className="text-sm text-muted-foreground max-w-2xl">
@@ -164,14 +164,14 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
         </div>
 
         {/* Behind the scenes — highlighted row */}
-        <div className="mb-10">
+        <div className="mb-8 md:mb-10">
           <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3 flex items-center gap-2">
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary">
               <Play className="w-3 h-3" />
             </span>
             Behind the scenes
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
             {videos
               .filter((v) => v.category === "Behind the scenes")
               .map((v) => (
@@ -195,14 +195,14 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
         </div>
 
         {/* Production videos */}
-        <div className="mb-10">
+        <div className="mb-8 md:mb-10">
           <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3 flex items-center gap-2">
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary">
               <Play className="w-3 h-3" />
             </span>
             AI Video &amp; reel production
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3">
             {videos
               .filter((v) => v.category === "Production")
               .map((v) => (
@@ -227,11 +227,11 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
         </div>
 
         {/* Campaign creatives — 3-4 column grid */}
-        <div className="mb-10">
+        <div className="mb-8 md:mb-10">
           <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3">
             Campaign creatives &amp; designs
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3">
             {creatives.map((c) => (
               <figure
                 key={c.src}
@@ -257,7 +257,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             href={wa}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-11 px-6 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 h-11 px-6 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
           >
             Get work like this on WhatsApp
           </a>
