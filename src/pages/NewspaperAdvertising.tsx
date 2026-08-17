@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
@@ -557,6 +558,7 @@ const NewspaperAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="newspaper advertising" />
     </>
   );
 };

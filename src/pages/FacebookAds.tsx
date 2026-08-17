@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -820,6 +821,7 @@ const FacebookAds = () => {
         heading="More on Facebook & Paid Social Ads"
         intro="Strategy, targeting, and campaign tips for running profitable Facebook and Instagram ads in Sri Lanka."
       />
+      <OurWorkSection service="Facebook Ads management" />
     </div>
   );
 };

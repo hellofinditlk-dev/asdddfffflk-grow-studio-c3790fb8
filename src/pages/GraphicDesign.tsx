@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -787,6 +788,7 @@ const GraphicDesign = () => {
         heading="More on Design & Branding"
         intro="Logo, packaging, brand identity, and design best-practices for Sri Lankan businesses."
       />
+      <OurWorkSection service="graphic design" />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
@@ -604,6 +605,7 @@ const MediaBuyingAgencies = () => {
 
         <InquiryForm />
       </article>
+      <OurWorkSection service="media buying" />
     </>
   );
 };

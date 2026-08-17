@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
@@ -393,6 +394,7 @@ const InstagramMarketing = () => {
           <Link to="/linkedin-marketing-sri-lanka" className="text-primary hover:underline">LinkedIn marketing Sri Lanka</Link>
         </div>
       </div>
+      <OurWorkSection service="Instagram marketing" />
     </>
   );
 };

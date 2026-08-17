@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
@@ -621,6 +622,7 @@ const InfluencerMarketing = () => {
           <p>Contact us: <a href="tel:+94701772626" onClick={() => trackCallClick()}>+94 70 177 2626</a></p>
         </div>
       </noscript>
+      <OurWorkSection service="influencer marketing" />
     </div>
   );
 };

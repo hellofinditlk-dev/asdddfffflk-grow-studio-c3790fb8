@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -698,6 +699,7 @@ const VideoProduction = () => {
         heading="More on Video & Motion"
         intro="Strategy, formats, and production guides for video content that converts."
       />
+      <OurWorkSection service="video production" />
     </div>
   );
 };

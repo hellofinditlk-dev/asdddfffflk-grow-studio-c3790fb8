@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -944,6 +945,7 @@ const TikTokMarketing = () => {
         heading="More on TikTok & Short-Form Video"
         intro="Viral content tactics, ad strategies, and creator marketing for Sri Lankan brands on TikTok."
       />
+      <OurWorkSection service="TikTok marketing" />
     </div>
   );
 };

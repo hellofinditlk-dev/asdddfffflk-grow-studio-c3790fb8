@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -146,6 +147,7 @@ const EventMarketing = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="event marketing" />
     </div>
   );
 };

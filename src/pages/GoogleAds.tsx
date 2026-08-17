@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -1057,6 +1058,7 @@ const GoogleAds = () => {
         heading="More on Google Ads & Paid Search"
         intro="Search, display, YouTube and remarketing strategies that turn ad spend into customers."
       />
+      <OurWorkSection service="Google Ads management" />
     </div>
   );
 };

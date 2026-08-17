@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -900,6 +901,7 @@ const SocialMediaManagement = () => {
           </ul>
         </div>
       </section>
+      <OurWorkSection service="social media management" />
     </div>
   );
 };

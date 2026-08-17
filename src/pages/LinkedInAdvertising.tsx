@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
@@ -485,6 +486,7 @@ const LinkedInAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="LinkedIn advertising" />
     </>
   );
 };

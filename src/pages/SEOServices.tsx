@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -688,6 +689,7 @@ const SEOServices = () => {
         heading="More on SEO & Organic Growth"
         intro="Practical SEO guides, local search tactics, and content strategies for Sri Lankan businesses."
       />
+      <OurWorkSection service="SEO services" />
     </div>
   );
 };

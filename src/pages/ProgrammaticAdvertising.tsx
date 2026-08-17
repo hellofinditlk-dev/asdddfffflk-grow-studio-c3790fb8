@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
@@ -674,6 +675,7 @@ const ProgrammaticAdvertising = () => {
           <InquiryForm service="Programmatic Advertising Sri Lanka (PMP)" />
         </div>
       </section>
+      <OurWorkSection service="programmatic advertising" />
     </>
   );
 };
