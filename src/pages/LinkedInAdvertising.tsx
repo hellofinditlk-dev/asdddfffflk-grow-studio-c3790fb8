@@ -164,6 +164,7 @@ const LinkedInAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="LinkedIn advertising" />
 
       {/* WHY LINKEDIN */}
       <section className="py-20">
@@ -429,7 +430,6 @@ const LinkedInAdvertising = () => {
       </div>
 
       {/* Pair LinkedIn with Other Digital Services */}
-      <OurWorkSection service="LinkedIn advertising" />
       <section className="py-16 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Build a Full-Funnel B2B Strategy</div>

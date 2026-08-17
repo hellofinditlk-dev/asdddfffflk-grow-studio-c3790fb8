@@ -225,6 +225,7 @@ const SEOServices = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="SEO services" />
 
       {/* Snippet Bait Definition */}
 <AIVisibilityHighlightCard />
@@ -663,7 +664,6 @@ const SEOServices = () => {
       </section>
 
       {/* Advertising Guide CTA */}
-      <OurWorkSection service="SEO services" />
       <section className="py-16 bg-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-4">Complete Guide to Advertising in Sri Lanka</h2>

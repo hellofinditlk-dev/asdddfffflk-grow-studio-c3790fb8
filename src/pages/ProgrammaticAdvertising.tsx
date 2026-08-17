@@ -314,6 +314,7 @@ const ProgrammaticAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="programmatic advertising" />
 
       {/* Three tiers of programmatic */}
       <section className="py-16 bg-background">
@@ -668,7 +669,6 @@ const ProgrammaticAdvertising = () => {
       </section>
 
       {/* Inquiry */}
-      <OurWorkSection service="programmatic advertising" />
       <section className="py-16 bg-secondary border-t border-border">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3 text-center">Start programmatic advertising in Sri Lanka — the right way</h2>

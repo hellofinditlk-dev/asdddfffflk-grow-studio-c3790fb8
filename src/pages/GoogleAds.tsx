@@ -244,6 +244,7 @@ const GoogleAds = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="Google Ads management" />
 
       {/* Snippet Bait Definition */}
 <AIVisibilityHighlightCard />
@@ -1028,7 +1029,6 @@ const GoogleAds = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
-      <OurWorkSection service="Google Ads management" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">

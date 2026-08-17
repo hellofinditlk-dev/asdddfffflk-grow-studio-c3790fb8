@@ -222,6 +222,7 @@ const GraphicDesign = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="graphic design" />
 
       {/* Snippet Bait Definition */}
 <AIVisibilityHighlightCard />
@@ -758,7 +759,6 @@ const GraphicDesign = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
-      <OurWorkSection service="graphic design" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">

@@ -149,6 +149,7 @@ const InstagramMarketing = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="Instagram marketing" />
 
       {/* WHY INSTAGRAM */}
       <section className="py-20">
@@ -371,7 +372,6 @@ const InstagramMarketing = () => {
       </section>
 
       {/* CTA */}
-      <OurWorkSection service="Instagram marketing" />
       <section className="py-20 bg-gradient-to-br from-primary to-primary/70 text-primary-foreground text-center">
         <div className="container mx-auto px-4">
           <div className="text-xs uppercase tracking-widest opacity-70 mb-3">Get Started</div>
