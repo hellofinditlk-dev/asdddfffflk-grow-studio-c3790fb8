@@ -257,7 +257,6 @@ const VideoProduction = () => {
       </section>
 
       {/* Why Important */}
-      <OurWorkSection service="video production" />
       <section id="why-important" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -557,6 +556,7 @@ const VideoProduction = () => {
       </section>
 
       {/* Pricing */}
+      <OurWorkSection service="video production" />
       <section id="pricing" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

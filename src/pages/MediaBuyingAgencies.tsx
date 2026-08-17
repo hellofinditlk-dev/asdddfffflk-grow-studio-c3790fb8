@@ -120,7 +120,6 @@ const MediaBuyingAgencies = () => {
           </p>
         </section>
 
-      <OurWorkSection service="media buying" />
         <section>
           <h2 className="font-heading text-3xl font-bold mb-4">The Sri Lankan Media Landscape in 2025</h2>
           <h3 className="font-heading text-xl font-semibold mt-6 mb-3">Digital Media</h3>
@@ -478,6 +477,7 @@ const MediaBuyingAgencies = () => {
           </div>
         </section>
 
+      <OurWorkSection service="media buying" />
         <section>
           <h2 className="font-heading text-3xl font-bold mb-4">How to Choose the Best Media Buying Agency in Sri Lanka</h2>
           <div className="space-y-4">

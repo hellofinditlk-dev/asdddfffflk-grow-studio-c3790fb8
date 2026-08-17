@@ -390,7 +390,6 @@ const ProgrammaticAdvertising = () => {
       </section>
 
       {/* Stats band */}
-      <OurWorkSection service="programmatic advertising" />
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 max-w-5xl grid grid-cols-2 md:grid-cols-6 gap-3">
           {[
@@ -444,6 +443,7 @@ const ProgrammaticAdvertising = () => {
       </section>
 
       {/* Packages */}
+      <OurWorkSection service="programmatic advertising" />
       <section id="packages" className="py-16 bg-secondary border-y border-border">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-xs font-bold uppercase tracking-wider text-primary mb-2">Programmatic PMP Packages</div>

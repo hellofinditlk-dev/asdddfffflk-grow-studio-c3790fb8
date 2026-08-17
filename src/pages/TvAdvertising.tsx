@@ -201,7 +201,6 @@ const TvAdvertising = () => {
       </section>
 
       {/* Channels */}
-      <OurWorkSection service="TV advertising" />
       <section id="channels" className="py-14 border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">TV Channels</span>
@@ -359,6 +358,7 @@ const TvAdvertising = () => {
       </section>
 
       {/* When to use TV */}
+      <OurWorkSection service="TV advertising" />
       <section className="py-14 border-b border-border">
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Strategy</span>
