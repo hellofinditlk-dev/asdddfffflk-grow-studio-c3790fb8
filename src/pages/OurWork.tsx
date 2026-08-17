@@ -4,7 +4,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { videos, creatives } from "@/data/work-samples";
+
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
