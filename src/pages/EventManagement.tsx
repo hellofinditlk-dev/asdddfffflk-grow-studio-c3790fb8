@@ -335,6 +335,7 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="event management" />
 
       {/* Stats */}
       <section className="border-b border-border">
@@ -818,7 +819,6 @@ const EventManagement = () => {
       </section>
 
       {/* CTA + Form */}
-      <OurWorkSection service="event management" />
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

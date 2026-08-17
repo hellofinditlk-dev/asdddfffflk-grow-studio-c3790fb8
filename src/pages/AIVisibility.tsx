@@ -223,6 +223,7 @@ const AIVisibility = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="AI visibility optimisation" />
 
       {/* Free AI Visibility Checker */}
       <AIVisibilityChecker />
@@ -396,7 +397,6 @@ const AIVisibility = () => {
       </section>
 
       {/* Final CTA */}
-      <OurWorkSection service="AI visibility optimisation" />
       <section className="py-20 bg-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

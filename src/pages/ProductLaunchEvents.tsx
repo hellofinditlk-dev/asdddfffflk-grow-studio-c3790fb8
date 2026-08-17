@@ -69,6 +69,7 @@ const ProductLaunchEvents = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="a product launch event" />
 
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -122,7 +123,6 @@ const ProductLaunchEvents = () => {
         </div>
       </section>
 
-      <OurWorkSection service="a product launch event" />
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

@@ -168,6 +168,7 @@ const TvAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="TV advertising" />
 
       {/* Stats strip */}
       <section className="bg-primary text-primary-foreground">
@@ -548,7 +549,6 @@ const TvAdvertising = () => {
       </section>
 
       {/* Amplify TV with Digital Services */}
-      <OurWorkSection service="TV advertising" />
       <section className="py-14 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-4 max-w-6xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Amplify Your TV Campaign</span>
