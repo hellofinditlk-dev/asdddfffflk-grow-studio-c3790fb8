@@ -8,6 +8,16 @@ import revision from "@/assets/work/revision-copy.jpg.asset.json";
 import artboard from "@/assets/work/artboard-1.jpg.asset.json";
 import kensley from "@/assets/work/kensley-copyuy.jpg.asset.json";
 import hotel from "@/assets/work/hotel-art-work-copy.jpg.asset.json";
+import nisaco from "@/assets/work/5-postt.jpg.asset.json";
+import mba from "@/assets/work/mba-com-1000x1000-copy.jpg.asset.json";
+import careerReady from "@/assets/work/get-career-ready-while-studying.jpg.asset.json";
+import langCn from "@/assets/work/china-japan-post-02.jpg.asset.json";
+import safety from "@/assets/work/post-02.jpg.asset.json";
+import barista from "@/assets/work/barista-04.jpg.asset.json";
+import nibm from "@/assets/work/post-01-02.jpg.asset.json";
+import hospitality from "@/assets/work/hotel.jpg.asset.json";
+import logistics from "@/assets/work/post-01.jpg.asset.json";
+import langEs from "@/assets/work/spanish-korean-post.jpg.asset.json";
 
 const videos = [
   { id: "K5iZaX8-QaE", title: "AI video production sample for a Sri Lankan brand" },
@@ -28,6 +38,16 @@ const creatives = [
   { src: artboard.url, alt: "UK honours degree pathway campaign creative" },
   { src: kensley.url, alt: "Postgraduate diploma admissions creative" },
   { src: hotel.url, alt: "Boutique hotel room rates promotional creative" },
+  { src: nisaco.url, alt: "Shopping mall credit card offers campaign creative" },
+  { src: mba.url, alt: "London MBA admissions campaign creative" },
+  { src: careerReady.url, alt: "CIMA alongside degree student campaign creative" },
+  { src: langCn.url, alt: "Chinese and Japanese language course creative in Sinhala" },
+  { src: safety.url, alt: "Corporate workplace safety awareness creative" },
+  { src: barista.url, alt: "Barista skills course paid internship creative" },
+  { src: nibm.url, alt: "UK honours degree in Galle campus campaign creative" },
+  { src: hospitality.url, alt: "Hospitality and tourism diploma course creative" },
+  { src: logistics.url, alt: "Logistics and transportation sector brand creative" },
+  { src: langEs.url, alt: "Spanish and Korean language course creative" },
 ];
 
 interface OurWorkSectionProps {
