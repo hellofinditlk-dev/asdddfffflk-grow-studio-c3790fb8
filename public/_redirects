@@ -1,3 +1,6 @@
+# Lovable CDN assets (portfolio images, media) — proxy so they resolve on custom domain
+/__l5e/*                                          https://asdddfffflk-grow-studio.lovable.app/__l5e/:splat   200
+
 # Redirect index files to root (prevent duplicate content)
 /index.html                                       /             301!
 /index.php                                        /             301!
