@@ -314,7 +314,6 @@ const ProgrammaticAdvertising = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="programmatic advertising" />
 
       {/* Three tiers of programmatic */}
       <section className="py-16 bg-background">
@@ -391,6 +390,7 @@ const ProgrammaticAdvertising = () => {
       </section>
 
       {/* Stats band */}
+      <OurWorkSection service="programmatic advertising" />
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 max-w-5xl grid grid-cols-2 md:grid-cols-6 gap-3">
           {[

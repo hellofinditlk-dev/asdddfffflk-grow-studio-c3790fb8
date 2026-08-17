@@ -221,7 +221,6 @@ const VideoProduction = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="video production" />
 
       {/* Snippet Bait Definition */}
 <AIVisibilityHighlightCard />
@@ -258,6 +257,7 @@ const VideoProduction = () => {
       </section>
 
       {/* Why Important */}
+      <OurWorkSection service="video production" />
       <section id="why-important" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

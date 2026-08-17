@@ -228,7 +228,6 @@ const NewspaperAdvertising = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="newspaper advertising" />
 
       {/* Stats */}
       <section className="bg-primary text-primary-foreground">
@@ -264,6 +263,7 @@ const NewspaperAdvertising = () => {
       </section>
 
       {/* Newspapers */}
+      <OurWorkSection service="newspaper advertising" />
       <section id="newspapers" className="py-14 border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Publications</span>

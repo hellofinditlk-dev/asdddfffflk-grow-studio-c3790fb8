@@ -70,7 +70,6 @@ const WeddingPlanning = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="wedding planning" />
 
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -99,6 +98,7 @@ const WeddingPlanning = () => {
         </div>
       </section>
 
+      <OurWorkSection service="wedding planning" />
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-center mb-12">FAQ – Wedding Planning Sri Lanka</h2>

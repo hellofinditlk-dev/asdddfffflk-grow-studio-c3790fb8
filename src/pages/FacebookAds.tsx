@@ -233,7 +233,6 @@ const FacebookAds = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="Facebook Ads management" />
 
       {/* Snippet Bait Definition */}
 <AIVisibilityHighlightCard />
@@ -270,6 +269,7 @@ const FacebookAds = () => {
       </section>
 
       {/* Why Important */}
+      <OurWorkSection service="Facebook Ads management" />
       <section id="why-important" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
