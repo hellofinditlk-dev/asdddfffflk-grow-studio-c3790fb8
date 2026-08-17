@@ -97,49 +97,105 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
   return (
     <section className="py-14 lg:py-16 bg-secondary">
       <div className="container mx-auto px-4 max-w-6xl">
-        <h2 className="font-heading text-xl md:text-2xl font-extrabold text-foreground mb-2 flex items-center gap-2">
-          <Play className="w-4 h-4 text-primary" /> Video &amp; Reel Production
-        </h2>
-        <p className="text-sm text-muted-foreground mb-5">Short-form video and reels produced in-house.</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 mb-12">
-          {videos.map((v) => (
-            <div key={v.id} className="rounded-xl overflow-hidden border border-border bg-card">
-              <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-                <iframe
-                  src={`https://www.youtube.com/embed/${v.id}`}
-                  title={v.title}
-                  className="absolute inset-0 w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          ))}
+        {/* header */}
+        <div className="mb-8 md:mb-10">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-2">Our Portfolio</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-foreground leading-tight mb-2">
+            Real work we've delivered for Sri Lankan brands
+          </h2>
+          <p className="text-sm text-muted-foreground max-w-2xl">
+            Video production, reels, campaign creatives and behind-the-scenes content for education, retail, travel, logistics and hospitality.
+          </p>
         </div>
 
-        <h2 className="font-heading text-xl md:text-2xl font-extrabold text-foreground mb-2">
-          Campaign Creatives &amp; Designs
-        </h2>
-        <p className="text-sm text-muted-foreground mb-5">Hover any design to see the campaign it belongs to.</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3">
-          {creatives.map((c) => (
-            <figure
-              key={c.src}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card aspect-square"
-            >
-              <img
-                src={c.src}
-                alt={c.alt}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500"
-              />
-              <figcaption className="absolute inset-x-0 bottom-0 p-2 text-[10px] leading-snug text-white bg-gradient-to-t from-black/85 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {c.alt}
-              </figcaption>
-            </figure>
-          ))}
+        {/* Behind the scenes — highlighted row */}
+        <div className="mb-10">
+          <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3 flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary">
+              <Play className="w-3 h-3" />
+            </span>
+            Behind the scenes
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {videos
+              .filter((v) => v.category === "Behind the scenes")
+              .map((v) => (
+                <div
+                  key={v.id}
+                  className="rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+                >
+                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${v.id}`}
+                      title={v.title}
+                      className="absolute inset-0 w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="px-3 py-2 text-xs font-medium text-foreground truncate">{v.title}</p>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Production videos */}
+        <div className="mb-10">
+          <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3 flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary">
+              <Play className="w-3 h-3" />
+            </span>
+            Video &amp; reel production
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {videos
+              .filter((v) => v.category === "Production")
+              .map((v) => (
+                <div
+                  key={v.id}
+                  className="rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+                >
+                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${v.id}`}
+                      title={v.title}
+                      className="absolute inset-0 w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="px-3 py-2 text-[11px] font-medium text-foreground truncate">{v.title}</p>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Campaign creatives — 3-4 column grid */}
+        <div className="mb-10">
+          <h3 className="font-heading text-base md:text-lg font-bold text-foreground mb-3">
+            Campaign creatives &amp; designs
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {creatives.map((c) => (
+              <figure
+                key={c.src}
+                className="group relative overflow-hidden rounded-xl border border-border bg-card aspect-square shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+              >
+                <img
+                  src={c.src}
+                  alt={c.alt}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 p-2.5 text-[11px] leading-snug text-white bg-gradient-to-t from-black/85 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {c.alt}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
 
         <div className="mt-8">
