@@ -49,7 +49,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
                 <Play className="w-3 h-3 text-primary" /> Behind the scenes
               </h3>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3">
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 md:gap-4 items-stretch">
                 {behindTheScenes.map((v) => (
                   <Link
                     key={v.id}
@@ -171,15 +171,15 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             </span>
             Behind the scenes
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4 items-stretch">
             {videos
               .filter((v) => v.category === "Behind the scenes")
               .map((v) => (
                 <div
                   key={v.id}
-                  className="rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+                  className="h-full flex flex-col rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
                 >
-                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                  <div className="relative w-full aspect-[9/16]">
                     <iframe
                       src={`https://www.youtube.com/embed/${v.id}`}
                       title={v.title}
@@ -202,15 +202,15 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             </span>
             AI Video &amp; reel production
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 items-stretch">
             {videos
               .filter((v) => v.category === "Production")
               .map((v) => (
                 <div
                   key={v.id}
-                  className="rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+                  className="h-full flex flex-col rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
                 >
-                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                  <div className="relative w-full aspect-[9/16]">
                     <iframe
                       src={`https://www.youtube.com/embed/${v.id}`}
                       title={v.title}
@@ -220,7 +220,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
                       loading="lazy"
                     />
                   </div>
-                  <p className="px-3 py-2 text-[11px] font-medium text-foreground truncate">{v.title}</p>
+                  <p className="mt-auto px-3 py-2 text-[11px] font-medium text-foreground truncate">{v.title}</p>
                 </div>
               ))}
           </div>
