@@ -206,7 +206,41 @@ const AIVideoProduction = () => {
             </div>
           </section>
 
+          {/* OUR WORK */}
+          <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Our Work</div>
+            <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Work Samples</h2>
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Real videos produced for Sri Lankan businesses — watch the quality before you decide.</p>
+            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+              {[
+                { id: "K5iZaX8-QaE", title: "AI Video Production Sample 1" },
+                { id: "qKmgqf9IpUw", title: "AI Video Production Sample 2" },
+                { id: "n2nJ6gJqOtU", title: "AI Video Production Sample 3" },
+                { id: "2RHQ06uIEuA", title: "AI Video Production Sample 4" },
+                { id: "vXoPdG-WYDs", title: "AI Video Production Sample 5" },
+                { id: "LrBEZw9PPBo", title: "AI Video Production Sample 6" },
+              ].map((video) => (
+                <div key={video.id} style={{ borderRadius: 10, overflow: "hidden", border: "0.5px solid rgba(0,0,0,0.09)", background: "#fff" }}>
+                  <div style={{ position: "relative", paddingBottom: "177.78%", height: 0, background: "#000" }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${video.id}`}
+                      title={video.title}
+                      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign: "center", marginTop: 28 }}>
+              <a href={waBase + encodeURIComponent("Hi, I saw your AI video work samples and want a similar video for my business")} target="_blank" rel="noreferrer" className="btn-primary">Get a Video Like This →</a>
+            </div>
+          </section>
+
           {/* AI PROCESS */}
+
           <section style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ background: "#0a0a0a", borderRadius: 14, padding: "36px 32px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: -50, right: -50, width: 200, height: 200, borderRadius: "50%", border: "36px solid rgba(255,107,43,0.12)", pointerEvents: "none" }} />
