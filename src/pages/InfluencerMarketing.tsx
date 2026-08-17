@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
@@ -13,7 +14,6 @@ import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
-import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "10x", label: "Avg Engagement Lift" },

@@ -1,3 +1,4 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -5,7 +6,6 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, MessageCircle, Megaphone, Zap } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
-import OurWorkSection from "@/components/OurWorkSection";
 
 const services = [
   "Pre-event social media campaigns",

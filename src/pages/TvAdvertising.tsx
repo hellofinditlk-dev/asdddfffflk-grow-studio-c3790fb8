@@ -1,10 +1,10 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone, Tv, Clock, BarChart3 } from "lucide-react";
-import OurWorkSection from "@/components/OurWorkSection";
 
 const channels = [
   { name: "Hiru TV", owner: "Asia Broadcasting Corporation · Rayynor Silva Holdings", badge: "#1 Rated", top: true, desc: "Sri Lanka's first and only digital HD television channel. Hiru TV consistently ranks among the highest-rated channels for drama, news, and entertainment. Launched in 2012, it features DVB-T2 digital quality and covers all island. Commands exceptional viewer loyalty among Sinhala-speaking audiences aged 18–55.", tags: ["Sinhala", "HD Digital", "All Island", "Drama · News"] },

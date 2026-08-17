@@ -1,10 +1,10 @@
+import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Card } from "@/components/ui/card";
 import { Instagram, Users, Smartphone, Film, ShoppingBag, MessageCircle, Camera, Clock, Target, Store, Check, X } from "lucide-react";
-import OurWorkSection from "@/components/OurWorkSection";
 
 const WA = "https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Instagram%20marketing%20in%20Sri%20Lanka";
 
