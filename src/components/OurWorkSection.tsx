@@ -77,7 +77,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             {/* Production videos */}
             <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1.5">
-                <Play className="w-3 h-3 text-primary" /> Video &amp; reel production
+                <Play className="w-3 h-3 text-primary" /> AI Video &amp; reel production
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
                 {production.map((v) => (
@@ -199,7 +199,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary">
               <Play className="w-3 h-3" />
             </span>
-            Video &amp; reel production
+            AI Video &amp; reel production
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {videos
