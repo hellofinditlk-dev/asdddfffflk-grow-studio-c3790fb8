@@ -171,15 +171,15 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             </span>
             Behind the scenes
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4 items-stretch">
             {videos
               .filter((v) => v.category === "Behind the scenes")
               .map((v) => (
                 <div
                   key={v.id}
-                  className="rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
+                  className="h-full flex flex-col rounded-xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300"
                 >
-                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+                  <div className="relative w-full aspect-[9/16]">
                     <iframe
                       src={`https://www.youtube.com/embed/${v.id}`}
                       title={v.title}
