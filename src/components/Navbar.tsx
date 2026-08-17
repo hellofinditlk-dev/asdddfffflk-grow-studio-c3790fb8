@@ -100,7 +100,19 @@ const Navbar = () => {
             )}
           </div>
 
+          <Link
+            to="/our-work"
+            className={`text-sm font-medium px-3 py-2 rounded-lg transition-colors ${
+              location.pathname === "/our-work"
+                ? "text-primary bg-primary/5"
+                : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+            }`}
+          >
+            Our Work
+          </Link>
+
           <a
+
             href="tel:+94701772626"
             onClick={() => trackCallClick()}
             className="ml-3 inline-flex items-center gap-1.5 h-9 px-3 rounded-lg border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/5 transition-colors"
