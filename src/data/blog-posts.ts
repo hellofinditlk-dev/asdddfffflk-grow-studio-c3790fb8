@@ -1085,4 +1085,25 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-02",
     keyword: "ai video production sri lanka",
   },
+  {
+    slug: "video-production-cost-sri-lanka",
+    title: "How Much Does Video Production Cost in Sri Lanka? (2026 Price Guide)",
+    excerpt: "A clear 2026 breakdown of video production costs in Sri Lanka — from social reels to TV commercials — and how AI production is changing the numbers.",
+    date: "2026-08-17",
+    keyword: "ai video production sri lanka",
+  },
+  {
+    slug: "social-media-reels-sri-lanka",
+    title: "How to Make Social Media Reels That Convert (Sri Lanka Guide)",
+    excerpt: "A practical guide for Sri Lankan businesses on making Facebook, Instagram and TikTok reels that stop the scroll and drive real results.",
+    date: "2026-08-17",
+    keyword: "ai video production sri lanka",
+  },
+  {
+    slug: "ai-avatar-videos-sri-lanka",
+    title: "AI Avatar Videos in Sinhala & Tamil: A Guide for Sri Lankan Brands",
+    excerpt: "What AI avatar videos are, where they work best, and why Sinhala and Tamil presenter videos are a smart, low-cost option for Sri Lankan businesses.",
+    date: "2026-08-17",
+    keyword: "ai video production sri lanka",
+  },
 ];
