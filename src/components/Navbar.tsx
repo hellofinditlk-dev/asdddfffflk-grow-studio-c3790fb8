@@ -8,7 +8,6 @@ import { industries } from "@/data/industries";
 import { trackCallClick } from "@/lib/trackCallClick";
 
 const navLinks = [
-  { label: "Home", path: "/" },
   { label: "Social Media", path: "/social-media-management-sri-lanka" },
   { label: "Facebook Ads", path: "/facebook-ads-sri-lanka" },
   { label: "Google Ads", path: "/google-ads-sri-lanka" },
@@ -16,6 +15,7 @@ const navLinks = [
   { label: "TikTok", path: "/tiktok-marketing-sri-lanka" },
   { label: "AI Visibility", path: "/ai-visibility-sri-lanka" },
 ];
+
 
 const industryItems = industries.map((i) => ({
   label: i.shortName,
