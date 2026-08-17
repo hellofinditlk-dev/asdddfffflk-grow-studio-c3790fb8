@@ -208,7 +208,6 @@ const InfluencerMarketing = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="influencer marketing" />
 
       {/* Snippet Bait Definition */}
       <section id="what-is" className="py-14 bg-primary/5 border-b border-border scroll-mt-20">
@@ -243,6 +242,7 @@ const InfluencerMarketing = () => {
       </section>
 
       {/* Why Influencer Marketing Works */}
+      <OurWorkSection service="influencer marketing" />
       <section id="why-works" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

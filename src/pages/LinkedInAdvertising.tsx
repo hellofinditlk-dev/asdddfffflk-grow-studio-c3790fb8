@@ -164,7 +164,6 @@ const LinkedInAdvertising = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="LinkedIn advertising" />
 
       {/* WHY LINKEDIN */}
       <section className="py-20">
@@ -226,6 +225,7 @@ const LinkedInAdvertising = () => {
       </section>
 
       {/* AD FORMATS */}
+      <OurWorkSection service="LinkedIn advertising" />
       <section className="py-20 bg-foreground text-background">
         <div className="container mx-auto px-4">
           <div className="text-xs uppercase tracking-widest text-primary-foreground font-semibold mb-3">LinkedIn Ad Formats</div>

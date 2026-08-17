@@ -86,7 +86,6 @@ const MediaBuyingAgencies = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="media buying" />
 
       <article className="container mx-auto px-4 max-w-4xl py-16 space-y-14">
         <section>
@@ -121,6 +120,7 @@ const MediaBuyingAgencies = () => {
           </p>
         </section>
 
+      <OurWorkSection service="media buying" />
         <section>
           <h2 className="font-heading text-3xl font-bold mb-4">The Sri Lankan Media Landscape in 2025</h2>
           <h3 className="font-heading text-xl font-semibold mt-6 mb-3">Digital Media</h3>

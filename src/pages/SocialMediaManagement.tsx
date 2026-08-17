@@ -254,7 +254,6 @@ const SocialMediaManagement = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="social media management" />
 
       {/* Stats Bar */}
 <AIVisibilityHighlightCard />
@@ -288,6 +287,7 @@ const SocialMediaManagement = () => {
       </section>
 
       {/* Snippet Bait + TOC */}
+      <OurWorkSection service="social media management" />
       <section className="py-16 lg:py-20" id="what-is">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

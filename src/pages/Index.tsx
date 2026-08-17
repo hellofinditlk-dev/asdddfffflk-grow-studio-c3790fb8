@@ -461,7 +461,6 @@ const Index = () => (
       </div>
     </section>
 
-    <OurWorkSection />
 
     {/* WHY CHOOSE US */}
     <section className="py-24 lg:py-32 bg-secondary relative overflow-hidden">
@@ -519,6 +518,7 @@ const Index = () => (
     </section>
 
     {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
+    <OurWorkSection />
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">

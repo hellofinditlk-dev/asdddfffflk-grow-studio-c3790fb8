@@ -149,7 +149,6 @@ const InstagramMarketing = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="Instagram marketing" />
 
       {/* WHY INSTAGRAM */}
       <section className="py-20">
@@ -211,6 +210,7 @@ const InstagramMarketing = () => {
       </section>
 
       {/* CONTENT FORMATS */}
+      <OurWorkSection service="Instagram marketing" />
       <section className="py-20 bg-foreground text-background">
         <div className="container mx-auto px-4">
           <div className="text-xs uppercase tracking-widest text-primary-foreground font-semibold mb-3">Instagram Content Formats</div>
