@@ -189,7 +189,6 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
                       loading="lazy"
                     />
                   </div>
-                  <p className="px-3 py-2 text-xs font-medium text-foreground truncate">{v.title}</p>
                 </div>
               ))}
           </div>
