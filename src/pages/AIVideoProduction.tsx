@@ -165,7 +165,7 @@ const AIVideoProduction = () => {
               <a href="#packages" className="btn-secondary">View Packages</a>
             </div>
             <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
-              {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 15K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
+              {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 18K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
                 <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
                   <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
                   <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{lbl}</div>
