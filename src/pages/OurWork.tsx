@@ -64,18 +64,6 @@ const OurWork = () => (
           Every design and video on this page was produced in-house for real Sri Lankan brands across education,
           retail, travel, hospitality and logistics. This is the standard you get when you work with us.
         </p>
-        <div className="grid grid-cols-3 gap-3 max-w-xl mx-auto mb-8">
-          {[
-            { k: `${creatives.length}+`, v: "Creatives" },
-            { k: `${videos.length}+`, v: "Videos & reels" },
-            { k: "200+", v: "Brands" },
-          ].map((s) => (
-            <div key={s.v} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-              <div className="font-heading text-2xl font-extrabold text-white leading-none">{s.k}</div>
-              <div className="text-[11px] text-white/60 mt-1">{s.v}</div>
-            </div>
-          ))}
-        </div>
         <Button
           asChild
           size="lg"
