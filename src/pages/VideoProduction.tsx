@@ -14,6 +14,7 @@ import {
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "100+", label: "Videos Produced" },
@@ -698,6 +699,7 @@ const VideoProduction = () => {
         heading="More on Video & Motion"
         intro="Strategy, formats, and production guides for video content that converts."
       />
+      <OurWorkSection service="video production" />
     </div>
   );
 };

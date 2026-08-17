@@ -14,6 +14,7 @@ import {
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "500+", label: "Designs Delivered" },
@@ -787,6 +788,7 @@ const GraphicDesign = () => {
         heading="More on Design & Branding"
         intro="Logo, packaging, brand identity, and design best-practices for Sri Lankan businesses."
       />
+      <OurWorkSection service="graphic design" />
     </div>
   );
 };

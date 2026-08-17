@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const AIVideoProduction = () => {
   const [, setHoveredCard] = useState<number | null>(null);
@@ -436,6 +437,7 @@ const AIVideoProduction = () => {
           </section>
         </div>
       </div>
+      <OurWorkSection service="AI video production" />
     </>
   );
 };

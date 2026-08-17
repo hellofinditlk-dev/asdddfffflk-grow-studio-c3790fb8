@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Phone, Newspaper, MessageCircle } from "lucide-react";
+import OurWorkSection from "@/components/OurWorkSection";
 
 type Paper = { name: string; owner: string; freq: string; top?: boolean; lang: "English" | "Sinhala" | "Tamil"; desc: string; circ: string };
 
@@ -557,6 +558,7 @@ const NewspaperAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="newspaper advertising" />
     </>
   );
 };

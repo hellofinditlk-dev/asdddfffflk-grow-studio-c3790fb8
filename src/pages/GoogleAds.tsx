@@ -13,6 +13,7 @@ import {
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "5x", label: "Avg ROAS" },
@@ -1057,6 +1058,7 @@ const GoogleAds = () => {
         heading="More on Google Ads & Paid Search"
         intro="Search, display, YouTube and remarketing strategies that turn ad spend into customers."
       />
+      <OurWorkSection service="Google Ads management" />
     </div>
   );
 };

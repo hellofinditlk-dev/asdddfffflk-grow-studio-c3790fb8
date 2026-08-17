@@ -14,6 +14,7 @@ import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "5x", label: "Avg Reach Increase" },
@@ -944,6 +945,7 @@ const TikTokMarketing = () => {
         heading="More on TikTok & Short-Form Video"
         intro="Viral content tactics, ad strategies, and creator marketing for Sri Lankan brands on TikTok."
       />
+      <OurWorkSection service="TikTok marketing" />
     </div>
   );
 };

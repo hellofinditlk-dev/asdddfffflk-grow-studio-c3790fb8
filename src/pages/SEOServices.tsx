@@ -14,6 +14,7 @@ import {
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "50+", label: "Websites Optimized" },
@@ -688,6 +689,7 @@ const SEOServices = () => {
         heading="More on SEO & Organic Growth"
         intro="Practical SEO guides, local search tactics, and content strategies for Sri Lankan businesses."
       />
+      <OurWorkSection service="SEO services" />
     </div>
   );
 };

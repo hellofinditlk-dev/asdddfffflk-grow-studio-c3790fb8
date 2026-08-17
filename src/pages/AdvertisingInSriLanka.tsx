@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Phone, ArrowRight, TrendingUp, Megaphone } from "lucide-react";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const channels = [
   { tone: "primary", icon: "📱", name: "Facebook & Instagram Ads", cost: "From LKR 5,000/mo · CPC LKR 10–90", desc: "Sri Lanka's #1 digital channel with 8M+ Facebook users. Unmatched targeting by age, location, income, interest, language. Best for lead gen, ecommerce, local SMEs and brand campaigns. Sinhala and Tamil supported.", tags: ["8M+ reach", "Precise targeting", "Lead gen"], link: "/facebook-ads-sri-lanka", linkLabel: "Facebook Ads in Sri Lanka" },
@@ -663,6 +664,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="advertising services" />
     </>
   );
 };

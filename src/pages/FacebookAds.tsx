@@ -13,6 +13,7 @@ import {
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "3x", label: "Avg Lead Increase" },
@@ -820,6 +821,7 @@ const FacebookAds = () => {
         heading="More on Facebook & Paid Social Ads"
         intro="Strategy, targeting, and campaign tips for running profitable Facebook and Instagram ads in Sri Lanka."
       />
+      <OurWorkSection service="Facebook Ads management" />
     </div>
   );
 };

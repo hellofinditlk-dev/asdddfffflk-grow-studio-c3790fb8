@@ -4,6 +4,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import {
+import OurWorkSection from "@/components/OurWorkSection";
   CheckCircle2,
   Shield,
   Target,
@@ -674,6 +675,7 @@ const ProgrammaticAdvertising = () => {
           <InquiryForm service="Programmatic Advertising Sri Lanka (PMP)" />
         </div>
       </section>
+      <OurWorkSection service="programmatic advertising" />
     </>
   );
 };

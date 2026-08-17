@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, MessageCircle, Briefcase, Users, Award, Target, BarChart3, Zap } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const services = [
   "Conferences and seminars",
@@ -169,6 +170,7 @@ const CorporateEventManagement = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="corporate event management" />
     </div>
   );
 };

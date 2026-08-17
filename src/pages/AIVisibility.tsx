@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import AIVisibilityChecker from "@/components/AIVisibilityChecker";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const WA_AUDIT = "https://wa.me/94701772626?text=Hi,%20I%20want%20a%20free%20AI%20visibility%20audit";
 const WA_QUOTE = "https://wa.me/94701772626?text=Hi,%20I%20want%20a%20custom%20AI%20visibility%20quote";
@@ -416,6 +417,7 @@ const AIVisibility = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="AI visibility optimisation" />
     </div>
   );
 };

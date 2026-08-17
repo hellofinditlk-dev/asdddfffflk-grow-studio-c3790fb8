@@ -13,6 +13,7 @@ import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "10x", label: "Avg Engagement Lift" },
@@ -621,6 +622,7 @@ const InfluencerMarketing = () => {
           <p>Contact us: <a href="tel:+94701772626" onClick={() => trackCallClick()}>+94 70 177 2626</a></p>
         </div>
       </noscript>
+      <OurWorkSection service="influencer marketing" />
     </div>
   );
 };

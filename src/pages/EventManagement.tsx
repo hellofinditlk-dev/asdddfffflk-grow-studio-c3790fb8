@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "100+", label: "Events Delivered" },
@@ -855,6 +856,7 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="event management" />
     </div>
   );
 };

@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const stats = [
   { value: "30+", label: "Pages Managed" },
@@ -900,6 +901,7 @@ const SocialMediaManagement = () => {
           </ul>
         </div>
       </section>
+      <OurWorkSection service="social media management" />
     </div>
   );
 };

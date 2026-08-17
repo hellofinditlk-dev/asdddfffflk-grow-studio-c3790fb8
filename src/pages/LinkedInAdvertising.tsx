@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Card } from "@/components/ui/card";
 import { Linkedin, Users, Target, Briefcase, Globe, TrendingUp, FileText, UserCheck, Rocket, BarChart3, Check, X } from "lucide-react";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const WA = "https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20know%20more%20about%20LinkedIn%20marketing%20in%20Sri%20Lanka";
 
@@ -485,6 +486,7 @@ const LinkedInAdvertising = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="LinkedIn advertising" />
     </>
   );
 };

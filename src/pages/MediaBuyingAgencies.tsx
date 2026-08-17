@@ -4,6 +4,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Target, BarChart3, Layers, Megaphone, TrendingUp, Phone } from "lucide-react";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const services = [
   { name: "Facebook & Instagram Media Buying", desc: "Targeted paid campaigns for leads, awareness, and conversions." },
@@ -604,6 +605,7 @@ const MediaBuyingAgencies = () => {
 
         <InquiryForm />
       </article>
+      <OurWorkSection service="media buying" />
     </>
   );
 };

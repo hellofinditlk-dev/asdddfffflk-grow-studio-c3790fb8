@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, MessageCircle, Megaphone, Zap } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const services = [
   "Pre-event social media campaigns",
@@ -146,6 +147,7 @@ const EventMarketing = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="event marketing" />
     </div>
   );
 };

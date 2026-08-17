@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, MessageCircle, Heart, Zap } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import OurWorkSection from "@/components/OurWorkSection";
 
 const services = [
   "Full wedding planning and coordination",
@@ -146,6 +147,7 @@ const WeddingPlanning = () => {
           </div>
         </div>
       </section>
+      <OurWorkSection service="wedding planning" />
     </div>
   );
 };
