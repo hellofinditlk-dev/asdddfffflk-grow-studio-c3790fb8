@@ -18,6 +18,15 @@ import nibm from "@/assets/work/post-01-02.jpg.asset.json";
 import hospitality from "@/assets/work/hotel.jpg.asset.json";
 import logistics from "@/assets/work/post-01.jpg.asset.json";
 import langEs from "@/assets/work/spanish-korean-post.jpg.asset.json";
+import jkFathers from "@/assets/work/jk-fathers-day.jpg.asset.json";
+import jkLandSeaAir from "@/assets/work/jk-connecting-land-sea-air.jpg.asset.json";
+import jkAviation from "@/assets/work/jk-airlines-aviation.jpg.asset.json";
+import jkJourneys from "@/assets/work/jk-thousands-journeys.jpg.asset.json";
+import jkOneSector from "@/assets/work/jk-one-sector.jpg.asset.json";
+import macBuddhagaya from "@/assets/work/mac-buddhagaya-tour.jpg.asset.json";
+import macQantas from "@/assets/work/mac-qantas-australia.jpg.asset.json";
+import macChristmas from "@/assets/work/mac-christmas-wonderland.jpg.asset.json";
+import macVisa from "@/assets/work/mac-visa-services.jpg.asset.json";
 
 const videos = [
   { id: "K5iZaX8-QaE", title: "AI video production sample for a Sri Lankan brand" },
@@ -48,6 +57,15 @@ const creatives = [
   { src: hospitality.url, alt: "Hospitality and tourism diploma course creative" },
   { src: logistics.url, alt: "Logistics and transportation sector brand creative" },
   { src: langEs.url, alt: "Spanish and Korean language course creative" },
+  { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
+  { src: jkLandSeaAir.url, alt: "Connecting land, sea and air corporate infographic creative" },
+  { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
+  { src: jkAviation.url, alt: "Airlines and aviation brand awareness creative" },
+  { src: jkFathers.url, alt: "Father's Day corporate greeting creative for transportation sector" },
+  { src: macQantas.url, alt: "Australia airfare promotion creative with destination fares" },
+  { src: macChristmas.url, alt: "European Christmas group tour package creative" },
+  { src: macBuddhagaya.url, alt: "Buddhagaya pilgrimage group tour creative in Sinhala" },
+  { src: macVisa.url, alt: "Visa services promotional leaflet creative" },
 ];
 
 interface OurWorkSectionProps {
