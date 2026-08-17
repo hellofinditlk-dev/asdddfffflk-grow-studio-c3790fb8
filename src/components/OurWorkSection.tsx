@@ -58,7 +58,8 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
                     className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
                   >
                     <img
-                      src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                      src={`https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg`}
+                      onError={(e) => { const t = e.currentTarget; if (!t.dataset.fb) { t.dataset.fb = "1"; t.src = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`; } }}
                       alt={v.title}
                       loading="lazy"
                       decoding="async"
@@ -88,7 +89,8 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
                     className="group relative aspect-[9/16] rounded-xl overflow-hidden border border-border bg-card"
                   >
                     <img
-                      src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                      src={`https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg`}
+                      onError={(e) => { const t = e.currentTarget; if (!t.dataset.fb) { t.dataset.fb = "1"; t.src = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`; } }}
                       alt={v.title}
                       loading="lazy"
                       decoding="async"

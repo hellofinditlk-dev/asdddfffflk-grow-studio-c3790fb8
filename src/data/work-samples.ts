@@ -40,6 +40,10 @@ export const videos = [
 ];
 
 export const creatives = [
+  { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
+  { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
+  { src: macBuddhagaya.url, alt: "Buddhagaya pilgrimage group tour creative in Sinhala" },
+  { src: macChristmas.url, alt: "European Christmas group tour package creative" },
   { src: post4.url, alt: "Retail mall weekend shopping social media creative" },
   { src: post6.url, alt: "Furniture and home decor promotional creative" },
   { src: cima.url, alt: "CIMA course registration campaign creative" },
@@ -59,14 +63,10 @@ export const creatives = [
   { src: hospitality.url, alt: "Hospitality and tourism diploma course creative" },
   { src: logistics.url, alt: "Logistics and transportation sector brand creative" },
   { src: langEs.url, alt: "Spanish and Korean language course creative" },
-  { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
   { src: jkLandSeaAir.url, alt: "Connecting land, sea and air corporate infographic creative" },
-  { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
   { src: jkAviation.url, alt: "Airlines and aviation brand awareness creative" },
   { src: jkFathers.url, alt: "Father's Day corporate greeting creative for transportation sector" },
   { src: macQantas.url, alt: "Australia airfare promotion creative with destination fares" },
-  { src: macChristmas.url, alt: "European Christmas group tour package creative" },
-  { src: macBuddhagaya.url, alt: "Buddhagaya pilgrimage group tour creative in Sinhala" },
   { src: macVisa.url, alt: "Visa services promotional leaflet creative" },
 ];
 
