@@ -123,6 +123,7 @@ const WeddingPlanning = () => {
         </div>
       </section>
 
+      <OurWorkSection service="wedding planning" />
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -147,7 +148,6 @@ const WeddingPlanning = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="wedding planning" />
     </div>
   );
 };

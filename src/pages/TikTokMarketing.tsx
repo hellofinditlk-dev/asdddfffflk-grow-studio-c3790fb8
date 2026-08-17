@@ -915,6 +915,7 @@ const TikTokMarketing = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
+      <OurWorkSection service="TikTok marketing" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -945,7 +946,6 @@ const TikTokMarketing = () => {
         heading="More on TikTok & Short-Form Video"
         intro="Viral content tactics, ad strategies, and creator marketing for Sri Lankan brands on TikTok."
       />
-      <OurWorkSection service="TikTok marketing" />
     </div>
   );
 };

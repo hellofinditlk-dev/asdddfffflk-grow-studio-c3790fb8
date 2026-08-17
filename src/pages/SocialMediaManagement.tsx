@@ -888,6 +888,7 @@ const SocialMediaManagement = () => {
         heading="More on Social Media Marketing"
         intro="Platform strategies, posting schedules, and content tactics for Sri Lankan brands on Facebook, Instagram and TikTok."
       />
+      <OurWorkSection service="social media management" />
       <section className="py-16 bg-card border-t border-border">
         <div className="container mx-auto px-4 max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Related reading</p>
@@ -901,7 +902,6 @@ const SocialMediaManagement = () => {
           </ul>
         </div>
       </section>
-      <OurWorkSection service="social media management" />
     </div>
   );
 };

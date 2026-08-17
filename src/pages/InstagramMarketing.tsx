@@ -371,6 +371,7 @@ const InstagramMarketing = () => {
       </section>
 
       {/* CTA */}
+      <OurWorkSection service="Instagram marketing" />
       <section className="py-20 bg-gradient-to-br from-primary to-primary/70 text-primary-foreground text-center">
         <div className="container mx-auto px-4">
           <div className="text-xs uppercase tracking-widest opacity-70 mb-3">Get Started</div>
@@ -394,7 +395,6 @@ const InstagramMarketing = () => {
           <Link to="/linkedin-marketing-sri-lanka" className="text-primary hover:underline">LinkedIn marketing Sri Lanka</Link>
         </div>
       </div>
-      <OurWorkSection service="Instagram marketing" />
     </>
   );
 };
