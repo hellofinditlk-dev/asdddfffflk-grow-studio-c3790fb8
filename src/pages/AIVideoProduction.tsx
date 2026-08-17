@@ -23,8 +23,8 @@ const AIVideoProduction = () => {
   ];
 
   const packages = [
-    { name: "Starter", sub: "Short-form social content", price: "From LKR 15,000", features: ["1 × 30-second social reel", "AI script writing", "Subtitles / captions", "Licensed background music", "1 format export (9:16)", "2 rounds of revisions"], featured: false },
-    { name: "Growth", sub: "Brand + social content pack", price: "From LKR 45,000", features: ["1 × 60–90 sec brand video", "3 × social media reels", "AI voiceover (Sinhala or English)", "Motion graphics & lower-thirds", "3 format exports (9:16, 1:1, 16:9)", "3 rounds of revisions"], featured: true },
+    { name: "Starter", sub: "Short-form social content", price: "From LKR 18,000", features: ["1 × 30-second social reel", "AI script writing", "Subtitles / captions", "Licensed background music", "1 format export (9:16)", "2 rounds of revisions"], featured: false },
+    { name: "Growth", sub: "Brand + social content pack", price: "From LKR 54,000", features: ["1 × 60–90 sec brand video", "3 × social media reels", "AI voiceover (Sinhala or English)", "Motion graphics & lower-thirds", "3 format exports (9:16, 1:1, 16:9)", "3 rounds of revisions"], featured: true },
     { name: "Enterprise", sub: "Full video production suite", price: "Custom quote", features: ["Multi-video campaign packages", "AI avatar presenter videos", "Dedicated editor & account manager", "On-site filming (Colombo & surrounds)", "TV commercial production", "Unlimited revisions"], featured: false },
   ];
 
