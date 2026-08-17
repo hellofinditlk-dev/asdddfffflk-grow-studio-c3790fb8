@@ -450,6 +450,7 @@ const RadioAdvertising = () => {
       </section>
 
       {/* Related Advertising Guides */}
+      <OurWorkSection service="radio advertising" />
       <section className="py-14 border-t border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">Related Advertising Guides — Sri Lanka</h2>
@@ -474,7 +475,6 @@ const RadioAdvertising = () => {
           </div>
         </div>
       </section>
-      <OurWorkSection service="radio advertising" />
     </>
   );
 };

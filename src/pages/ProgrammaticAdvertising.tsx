@@ -668,6 +668,7 @@ const ProgrammaticAdvertising = () => {
       </section>
 
       {/* Inquiry */}
+      <OurWorkSection service="programmatic advertising" />
       <section className="py-16 bg-secondary border-t border-border">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3 text-center">Start programmatic advertising in Sri Lanka — the right way</h2>
@@ -675,7 +676,6 @@ const ProgrammaticAdvertising = () => {
           <InquiryForm service="Programmatic Advertising Sri Lanka (PMP)" />
         </div>
       </section>
-      <OurWorkSection service="programmatic advertising" />
     </>
   );
 };

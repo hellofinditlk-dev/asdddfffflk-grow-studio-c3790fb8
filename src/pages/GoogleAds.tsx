@@ -1028,6 +1028,7 @@ const GoogleAds = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
+      <OurWorkSection service="Google Ads management" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -1058,7 +1059,6 @@ const GoogleAds = () => {
         heading="More on Google Ads & Paid Search"
         intro="Search, display, YouTube and remarketing strategies that turn ad spend into customers."
       />
-      <OurWorkSection service="Google Ads management" />
     </div>
   );
 };

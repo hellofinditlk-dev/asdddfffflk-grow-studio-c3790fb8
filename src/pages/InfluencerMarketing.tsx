@@ -580,6 +580,7 @@ const InfluencerMarketing = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
+      <OurWorkSection service="influencer marketing" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -622,7 +623,6 @@ const InfluencerMarketing = () => {
           <p>Contact us: <a href="tel:+94701772626" onClick={() => trackCallClick()}>+94 70 177 2626</a></p>
         </div>
       </noscript>
-      <OurWorkSection service="influencer marketing" />
     </div>
   );
 };

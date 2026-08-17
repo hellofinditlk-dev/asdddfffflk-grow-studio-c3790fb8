@@ -791,6 +791,7 @@ const FacebookAds = () => {
       </section>
 
       {/* CTA + Inquiry Form */}
+      <OurWorkSection service="Facebook Ads management" />
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -821,7 +822,6 @@ const FacebookAds = () => {
         heading="More on Facebook & Paid Social Ads"
         intro="Strategy, targeting, and campaign tips for running profitable Facebook and Instagram ads in Sri Lanka."
       />
-      <OurWorkSection service="Facebook Ads management" />
     </div>
   );
 };

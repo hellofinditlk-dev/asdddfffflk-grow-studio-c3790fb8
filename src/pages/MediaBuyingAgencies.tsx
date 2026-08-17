@@ -588,6 +588,7 @@ const MediaBuyingAgencies = () => {
           </div>
         </section>
 
+      <OurWorkSection service="media buying" />
         <section>
           <h2 className="font-heading text-2xl font-bold mb-4">Related Advertising Guides &amp; Services</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
@@ -605,7 +606,6 @@ const MediaBuyingAgencies = () => {
 
         <InquiryForm />
       </article>
-      <OurWorkSection service="media buying" />
     </>
   );
 };
