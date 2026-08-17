@@ -36,6 +36,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
           logistics and hospitality brands. See the quality before you decide.
         </p>
 
+        {variant === "preview" && (
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {[
             { k: `${videos.length}+`, v: "Video & reel samples" },
@@ -48,6 +49,7 @@ const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: 
             </div>
           ))}
         </div>
+        )}
 
         <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
           <Play className="w-4 h-4 text-primary" /> Video &amp; Reel Production
