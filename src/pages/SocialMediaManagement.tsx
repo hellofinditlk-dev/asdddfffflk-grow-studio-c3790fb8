@@ -287,7 +287,6 @@ const SocialMediaManagement = () => {
       </section>
 
       {/* Snippet Bait + TOC */}
-      <OurWorkSection service="social media management" />
       <section className="py-16 lg:py-20" id="what-is">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -686,6 +685,7 @@ const SocialMediaManagement = () => {
       </section>
 
       {/* Pricing */}
+      <OurWorkSection service="social media management" />
       <section className="py-20 lg:py-28 bg-secondary" id="pricing">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">

@@ -269,7 +269,6 @@ const FacebookAds = () => {
       </section>
 
       {/* Why Important */}
-      <OurWorkSection service="Facebook Ads management" />
       <section id="why-important" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -625,6 +624,7 @@ const FacebookAds = () => {
       </section>
 
       {/* Pricing */}
+      <OurWorkSection service="Facebook Ads management" />
       <section id="pricing" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

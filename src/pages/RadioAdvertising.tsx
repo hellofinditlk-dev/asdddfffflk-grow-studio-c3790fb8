@@ -192,7 +192,6 @@ const RadioAdvertising = () => {
       </section>
 
       {/* Stations */}
-      <OurWorkSection service="radio advertising" />
       <section id="stations" className="py-14 border-b border-border">
         <div className="container mx-auto px-4 max-w-5xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Radio Stations</span>
@@ -319,6 +318,7 @@ const RadioAdvertising = () => {
       </section>
 
       {/* Jingles */}
+      <OurWorkSection service="radio advertising" />
       <section className="py-14 border-b border-border">
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Jingles</span>

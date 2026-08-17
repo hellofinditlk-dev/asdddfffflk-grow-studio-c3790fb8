@@ -190,7 +190,6 @@ const AdvertisingInSriLanka = () => {
       </section>
 
       {/* AUDIENCE */}
-      <OurWorkSection service="advertising services" />
       <section id="audience" className="container mx-auto px-4 max-w-5xl py-12 scroll-mt-20 border-t">
         <div className="inline-block px-2.5 py-1 bg-primary text-primary-foreground text-[10px] font-bold tracking-widest uppercase rounded mb-3">Digital Audience Data</div>
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-5">Sri Lanka's Digital Audience — <span className="text-primary">Key 2025 Data</span></h2>
@@ -387,6 +386,7 @@ const AdvertisingInSriLanka = () => {
       </section>
 
       {/* COSTS */}
+      <OurWorkSection service="advertising services" />
       <section id="costs" className="container mx-auto px-4 max-w-5xl py-12 scroll-mt-20 border-t">
         <div className="inline-block px-2.5 py-1 bg-primary text-primary-foreground text-[10px] font-bold tracking-widest uppercase rounded mb-3">Advertising Costs</div>
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-5">Complete Advertising Cost Guide — <span className="text-primary">Sri Lanka 2026</span></h2>

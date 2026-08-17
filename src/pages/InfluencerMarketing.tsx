@@ -242,7 +242,6 @@ const InfluencerMarketing = () => {
       </section>
 
       {/* Why Influencer Marketing Works */}
-      <OurWorkSection service="influencer marketing" />
       <section id="why-works" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -461,6 +460,7 @@ const InfluencerMarketing = () => {
       </section>
 
       {/* Pricing */}
+      <OurWorkSection service="influencer marketing" />
       <section id="pricing" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

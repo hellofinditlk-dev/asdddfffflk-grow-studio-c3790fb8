@@ -258,7 +258,6 @@ const GraphicDesign = () => {
       </section>
 
       {/* Why Important */}
-      <OurWorkSection service="graphic design" />
       <section id="why-important" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -662,6 +661,7 @@ const GraphicDesign = () => {
       </section>
 
       {/* Pricing */}
+      <OurWorkSection service="graphic design" />
       <section id="pricing" className="py-16 bg-secondary scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
