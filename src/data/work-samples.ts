@@ -40,7 +40,7 @@ export const videos = [
 ];
 
 export const creatives = [
-  { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
+  { src: south.url, alt: "University campus launch campaign creative" },
   { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
   { src: macChristmas.url, alt: "European Christmas group tour package creative" },
   { src: macQantas.url, alt: "Australia airfare promotion creative with destination fares" },
@@ -48,7 +48,7 @@ export const creatives = [
   { src: post6.url, alt: "Furniture and home decor promotional creative" },
   { src: cima.url, alt: "CIMA course registration campaign creative" },
   { src: meedhood.url, alt: "Kitchen accessories delivery platform campaign creative" },
-  { src: south.url, alt: "University campus launch campaign creative" },
+  { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
   { src: revision.url, alt: "CIMA revision class lecturer panel creative" },
   { src: artboard.url, alt: "UK honours degree pathway campaign creative" },
   { src: kensley.url, alt: "Postgraduate diploma admissions creative" },
