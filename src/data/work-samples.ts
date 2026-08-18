@@ -41,7 +41,7 @@ export const videos = [
 
 export const creatives = [
   { src: south.url, alt: "University campus launch campaign creative" },
-  { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
+  { src: jkLandSeaAir.url, alt: "Connecting land, sea and air corporate infographic creative" },
   { src: macChristmas.url, alt: "European Christmas group tour package creative" },
   { src: macQantas.url, alt: "Australia airfare promotion creative with destination fares" },
   { src: post4.url, alt: "Retail mall weekend shopping social media creative" },
@@ -49,6 +49,7 @@ export const creatives = [
   { src: cima.url, alt: "CIMA course registration campaign creative" },
   { src: meedhood.url, alt: "Kitchen accessories delivery platform campaign creative" },
   { src: jkJourneys.url, alt: "Transportation sector core pillars social media creative" },
+  { src: jkOneSector.url, alt: "Transportation sector brand campaign creative for ports, air and logistics" },
   { src: revision.url, alt: "CIMA revision class lecturer panel creative" },
   { src: artboard.url, alt: "UK honours degree pathway campaign creative" },
   { src: kensley.url, alt: "Postgraduate diploma admissions creative" },
@@ -63,7 +64,6 @@ export const creatives = [
   { src: hospitality.url, alt: "Hospitality and tourism diploma course creative" },
   { src: logistics.url, alt: "Logistics and transportation sector brand creative" },
   { src: langEs.url, alt: "Spanish and Korean language course creative" },
-  { src: jkLandSeaAir.url, alt: "Connecting land, sea and air corporate infographic creative" },
   { src: jkAviation.url, alt: "Airlines and aviation brand awareness creative" },
   { src: jkFathers.url, alt: "Father's Day corporate greeting creative for transportation sector" },
   { src: macBuddhagaya.url, alt: "Buddhagaya pilgrimage group tour creative in Sinhala" },
