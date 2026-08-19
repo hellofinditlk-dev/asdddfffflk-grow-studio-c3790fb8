@@ -517,8 +517,9 @@ const Index = () => (
       </div>
     </section>
 
-    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
+    {/* OUR WORK */}
     <OurWorkSection />
+    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
     {/* TRANSPARENT PRICING */}
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
