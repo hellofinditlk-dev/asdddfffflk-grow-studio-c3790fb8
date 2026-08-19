@@ -355,7 +355,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-
     {/* STATS — 4-up tinted glass cards */}
     <section className="relative bg-[#030612] pb-20 lg:pb-28">
       <div className="container mx-auto px-4 lg:px-8">
@@ -387,9 +386,7 @@ const Index = () => (
         </div>
       </div>
     </section>
-
     <AIVisibilityHighlightCard />
-
     {/* ABOUT */}
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
@@ -420,7 +417,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-
     {/* SERVICES */}
     <section className="pb-24 lg:pb-32">
       <div className="container mx-auto px-4">
@@ -469,8 +465,62 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-
+    {/* OUR WORK */}
+    <OurWorkSection />
+    {/* CASE STUDIES — REAL NUMBERS */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Case Studies</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Results for Sri Lankan Businesses</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Real numbers from real clients. Not vanity metrics — actual leads, sales, and revenue growth.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                industry: "Restaurant — Colombo 5", duration: "3 months",
+                stats: [{v: "5x", l: "Bookings"}, {v: "LKR 18", l: "Cost / lead"}, {v: "+340%", l: "Revenue"}],
+                summary: "Combined Facebook & Instagram ads with weekly food reels. Fully booked weekends within 8 weeks.",
+              },
+              {
+                industry: "Real Estate — Western Province", duration: "6 months",
+                stats: [{v: "150+", l: "Leads/mo"}, {v: "12", l: "Closed deals"}, {v: "8x", l: "ROAS"}],
+                summary: "Facebook lead-gen ads + Google Search ads targeting investors. Closed 12 deals in 6 months.",
+              },
+              {
+                industry: "Aesthetic Clinic — Nugegoda", duration: "4 months",
+                stats: [{v: "3 wks", l: "Wait time"}, {v: "LKR 320", l: "Cost / booking"}, {v: "+220%", l: "Inquiries"}],
+                summary: "Instagram-first strategy with before/after reels + targeted local ads. Fully booked 3 weeks ahead.",
+              },
+            ].map((c, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-card-hover transition-all">
+                <div className="p-6 pb-4">
+                  <h3 className="font-heading text-base font-bold">{c.industry}</h3>
+                  <p className="text-xs text-muted-foreground">{c.duration} campaign</p>
+                </div>
+                <div className="grid grid-cols-3 border-t border-border">
+                  {c.stats.map((s, j) => (
+                    <div key={j} className={`text-center py-4 ${j < 2 ? "border-r border-border" : ""}`}>
+                      <div className="font-heading text-xl font-extrabold text-primary leading-none">{s.v}</div>
+                      <div className="text-[10px] text-muted-foreground uppercase tracking-wide mt-1">{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="p-6 pt-4 border-t border-border">
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.summary}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/blog/digital-marketing-results-case-studies-sri-lanka" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline">
+              See full case study breakdown <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
     {/* WHY CHOOSE US */}
     <section className="py-24 lg:py-32 bg-secondary relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
@@ -495,40 +545,42 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-    {/* PROCESS */}
-    <section className="py-24 lg:py-32 relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-[100px]" />
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Process</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-            How Our Digital Marketing Agency in Sri Lanka Works
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Client Reviews</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+            What our clients say about our digital marketing results
           </h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">From strategy to results in 5 clear steps</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {process.map((p, i) => (
-            <div key={i} className="text-center group relative">
-              {/* Connector line */}
-              {i < process.length - 1 && (
-                <div className="hidden lg:block absolute top-7 left-[calc(50%+32px)] w-[calc(100%-64px)] h-px bg-gradient-to-r from-primary/20 to-border" />
-              )}
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary font-heading font-bold text-sm flex items-center justify-center mx-auto mb-4 group-hover:from-primary group-hover:to-[hsl(280,80%,65%)] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_8px_24px_hsl(252_65%_55%/0.3)] transition-all duration-300 relative z-10">
-                {p.icon}
-              </div>
-              <span className="text-[10px] font-bold text-primary/50 uppercase tracking-widest">Step {p.step}</span>
-              <h3 className="font-heading text-sm font-bold mb-1.5 mt-1">{p.title}</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">{p.desc}</p>
+          <div className="flex items-center gap-4 mb-10">
+            <div className="font-heading text-5xl font-extrabold text-foreground leading-none">5.0</div>
+            <div>
+              <div className="text-2xl text-[hsl(45,95%,55%)] tracking-widest leading-none">★★★★★</div>
+              <div className="text-xs text-muted-foreground mt-1">Based on 47 client reviews</div>
             </div>
-          ))}
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              { quote: "Cypher Digital transformed our restaurant's online presence. Within 3 months we went from 20 covers per night to fully booked every weekend. Their social media work is exceptional.", initials: "RC", name: "Restaurant Client", location: "Colombo 3, Sri Lanka", color: "from-[hsl(252,65%,55%)] to-[hsl(280,80%,65%)]" },
+              { quote: "We were getting 20 leads per month from traditional marketing. After 2 months with Cypher Digital's Facebook Ads, we're getting 150+ qualified leads every month. The ROI is incredible.", initials: "RE", name: "Real Estate Developer", location: "Western Province, Sri Lanka", color: "from-[hsl(280,80%,65%)] to-[hsl(320,70%,60%)]" },
+              { quote: "Professional, responsive, and results-focused. Our clinic went from empty appointment slots to being fully booked 3 weeks in advance. Highly recommend Cypher Digital to any healthcare business.", initials: "HC", name: "Healthcare Client", location: "Nugegoda, Sri Lanka", color: "from-[hsl(220,80%,55%)] to-[hsl(200,90%,55%)]" },
+            ].map((r, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
+                <div className="text-lg text-[hsl(45,95%,55%)] tracking-wider mb-3">★★★★★</div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5">"{r.quote}"</p>
+                <div className="flex items-center gap-3">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${r.color} flex items-center justify-center text-white text-xs font-bold`}>{r.initials}</div>
+                  <div>
+                    <div className="text-sm font-semibold text-foreground">{r.name}</div>
+                    <div className="text-xs text-muted-foreground">{r.location}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
-
-    {/* OUR WORK */}
-    <OurWorkSection />
-    
     {/* TRANSPARENT PRICING */}
     <section id="pricing" className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
@@ -585,175 +637,34 @@ const Index = () => (
         </p>
       </div>
     </section>
-
-    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
-    <section className="py-24 lg:py-32">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">What is Digital Marketing</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-5">What is Digital Marketing in Sri Lanka?</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Digital marketing in Sri Lanka means promoting your business through online channels — Facebook, Instagram, Google Search, YouTube, TikTok, and email — to reach customers in Colombo, Kandy, Galle, Negombo, Jaffna, and across the island.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Unlike traditional advertising, digital marketing is <strong className="text-foreground font-semibold">measurable, targeted, and affordable</strong>. You see exactly how many people viewed your ad, clicked, messaged you, and bought — and you only pay to reach the right audience.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              At Cypher Digital, we combine <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO</Link> into one strategy that drives real leads for Sri Lankan SMEs.
-            </p>
-          </div>
-          <div className="bg-card border border-border rounded-2xl p-7 md:p-9">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-5">Sri Lanka Digital Landscape</p>
-            {[
-              { num: "10.9M", text: "internet users in Sri Lanka — over 50% of the population online" },
-              { num: "8.5M", text: "active social media users, with Facebook and Instagram leading" },
-              { num: "7.2M", text: "TikTok users in Sri Lanka — the fastest growing platform" },
-              { num: "82%", text: "of Sri Lankan consumers research online before buying offline" },
-              { num: "6.5h", text: "average daily time spent online by Sri Lankan adults" },
-            ].map((s, i) => (
-              <div key={i} className="flex gap-4 py-4 border-b border-border last:border-b-0">
-                <div className="font-heading text-2xl font-extrabold text-primary min-w-[80px]">{s.num}</div>
-                <div className="text-sm text-muted-foreground leading-relaxed">{s.text}</div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-10 text-[11px] leading-relaxed text-white/30 max-w-4xl">
-            Cypher Digital delivers <Link to="/social-media-management-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns, <Link to="/facebook-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">facebook ads Sri Lanka</Link> management, <Link to="/google-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">google ads Sri Lanka</Link> services, <Link to="/seo-services-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">SEO services Sri Lanka</Link>, <Link to="/tiktok-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">tiktok marketing Sri Lanka</Link>, <Link to="/instagram-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">instagram marketing Sri Lanka</Link>, <Link to="/linkedin-advertising-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">linkedin marketing Sri Lanka</Link>, <Link to="/video-production-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">video production Sri Lanka</Link>, <Link to="/graphic-design-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">graphic design Sri Lanka</Link>, <Link to="/influencer-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">influencer marketing Sri Lanka</Link>, <Link to="/media-buying-agencies-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">media buying agencies Sri Lanka</Link>, and a complete <Link to="/advertising-in-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">advertising in Sri Lanka</Link> guide for SMEs nationwide.
-          </p>
+    <section className="py-24 lg:py-32 relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-[100px]" />
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Process</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
+            How Our Digital Marketing Agency in Sri Lanka Works
+          </h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">From strategy to results in 5 clear steps</p>
         </div>
-      </div>
-    </section>
-
-    {/* AGENCY VS FREELANCER COMPARISON */}
-    <section className="py-24 lg:py-32 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Agency vs Freelancer</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Agency vs Freelancer in Sri Lanka</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Which is right for your business? Here's an honest side-by-side comparison.</p>
-          </div>
-          <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-card">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-foreground text-white">
-                    <th className="text-left p-4 font-semibold">Factor</th>
-                    <th className="text-left p-4 font-semibold">Agency (Cypher Digital)</th>
-                    <th className="text-left p-4 font-semibold">Freelancer</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Team size", "10+ specialists (strategy, design, ads, video)", "1 person doing everything"],
-                    ["Range of services", "Full-service: social, ads, SEO, video, design", "Usually 1–2 skills only"],
-                    ["Accountability", "Contracts, SLAs, monthly reports", "No formal agreement"],
-                    ["Availability", "Always reachable — team backup", "Single point of failure"],
-                    ["Tools & software", "Premium tools included (LKR 50k+ value)", "Often free tools only"],
-                    ["Monthly cost", "LKR 40,000 – 200,000", "LKR 15,000 – 60,000"],
-                    ["Best for", "Businesses serious about growth", "Tiny budgets, one-off tasks"],
-                  ].map(([label, agency, freelancer], i) => (
-                    <tr key={i} className="border-t border-border hover:bg-secondary/50 transition-colors">
-                      <td className="p-4 font-semibold text-foreground">{label}</td>
-                      <td className="p-4 text-muted-foreground">{agency}</td>
-                      <td className="p-4 text-muted-foreground">{freelancer}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          {process.map((p, i) => (
+            <div key={i} className="text-center group relative">
+              {/* Connector line */}
+              {i < process.length - 1 && (
+                <div className="hidden lg:block absolute top-7 left-[calc(50%+32px)] w-[calc(100%-64px)] h-px bg-gradient-to-r from-primary/20 to-border" />
+              )}
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary font-heading font-bold text-sm flex items-center justify-center mx-auto mb-4 group-hover:from-primary group-hover:to-[hsl(280,80%,65%)] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_8px_24px_hsl(252_65%_55%/0.3)] transition-all duration-300 relative z-10">
+                {p.icon}
+              </div>
+              <span className="text-[10px] font-bold text-primary/50 uppercase tracking-widest">Step {p.step}</span>
+              <h3 className="font-heading text-sm font-bold mb-1.5 mt-1">{p.title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">{p.desc}</p>
             </div>
-          </div>
-          <p className="text-center text-sm text-muted-foreground mt-6">
-            Want a deeper comparison? Read our full <Link to="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" className="text-primary font-semibold hover:underline">agency vs freelancer guide</Link>.
-          </p>
+          ))}
         </div>
       </div>
     </section>
-
-
-    {/* RESULTS TIMELINE */}
-    <section className="py-24 lg:py-32 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Realistic Timeline</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">How Long Does Digital Marketing Take to Show Results?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Here's what to honestly expect month-by-month with a serious digital marketing strategy in Sri Lanka.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              { m: "Month 1", t: "Setup & Launch", d: "Strategy, account setup, content creation, first ads live. Early data starts flowing in." },
-              { m: "Month 2–3", t: "First Wins", d: "Ads optimised, first leads from paid. Social engagement growing. SEO foundation built." },
-              { m: "Month 4–6", t: "Compound Growth", d: "Predictable lead flow from ads. SEO rankings climbing. Cost per lead dropping 30–50%." },
-              { m: "Month 6–12", t: "Scale Phase", d: "Strong ROI, organic traffic surge, brand recognition. Ready to scale ad spend." },
-            ].map((p, i) => (
-              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
-                <span className="text-xs font-bold text-primary uppercase tracking-widest">{p.m}</span>
-                <h3 className="font-heading text-lg font-bold mt-2 mb-2">{p.t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{p.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* CASE STUDIES — REAL NUMBERS */}
-    <section className="py-24 lg:py-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Case Studies</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Results for Sri Lankan Businesses</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Real numbers from real clients. Not vanity metrics — actual leads, sales, and revenue growth.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                industry: "Restaurant — Colombo 5", duration: "3 months",
-                stats: [{v: "5x", l: "Bookings"}, {v: "LKR 18", l: "Cost / lead"}, {v: "+340%", l: "Revenue"}],
-                summary: "Combined Facebook & Instagram ads with weekly food reels. Fully booked weekends within 8 weeks.",
-              },
-              {
-                industry: "Real Estate — Western Province", duration: "6 months",
-                stats: [{v: "150+", l: "Leads/mo"}, {v: "12", l: "Closed deals"}, {v: "8x", l: "ROAS"}],
-                summary: "Facebook lead-gen ads + Google Search ads targeting investors. Closed 12 deals in 6 months.",
-              },
-              {
-                industry: "Aesthetic Clinic — Nugegoda", duration: "4 months",
-                stats: [{v: "3 wks", l: "Wait time"}, {v: "LKR 320", l: "Cost / booking"}, {v: "+220%", l: "Inquiries"}],
-                summary: "Instagram-first strategy with before/after reels + targeted local ads. Fully booked 3 weeks ahead.",
-              },
-            ].map((c, i) => (
-              <div key={i} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-card-hover transition-all">
-                <div className="p-6 pb-4">
-                  <h3 className="font-heading text-base font-bold">{c.industry}</h3>
-                  <p className="text-xs text-muted-foreground">{c.duration} campaign</p>
-                </div>
-                <div className="grid grid-cols-3 border-t border-border">
-                  {c.stats.map((s, j) => (
-                    <div key={j} className={`text-center py-4 ${j < 2 ? "border-r border-border" : ""}`}>
-                      <div className="font-heading text-xl font-extrabold text-primary leading-none">{s.v}</div>
-                      <div className="text-[10px] text-muted-foreground uppercase tracking-wide mt-1">{s.l}</div>
-                    </div>
-                  ))}
-                </div>
-                <div className="p-6 pt-4 border-t border-border">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.summary}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link to="/blog/digital-marketing-results-case-studies-sri-lanka" className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline">
-              See full case study breakdown <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-
     {/* DIGITAL ADVERTISING IN SRI LANKA */}
     <section className="py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4">
@@ -903,11 +814,115 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-    {/* FINAL CTA + FORM */}
-    {/* FAQ */}
-    {/* RELATED READING — internal linking */}
-    {/* COLOMBO BASED */}
+    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">What is Digital Marketing</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-5">What is Digital Marketing in Sri Lanka?</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Digital marketing in Sri Lanka means promoting your business through online channels — Facebook, Instagram, Google Search, YouTube, TikTok, and email — to reach customers in Colombo, Kandy, Galle, Negombo, Jaffna, and across the island.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Unlike traditional advertising, digital marketing is <strong className="text-foreground font-semibold">measurable, targeted, and affordable</strong>. You see exactly how many people viewed your ad, clicked, messaged you, and bought — and you only pay to reach the right audience.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              At Cypher Digital, we combine <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Ads</Link>, <Link to="/google-ads-sri-lanka" className="text-primary font-semibold hover:underline">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary font-semibold hover:underline">SEO</Link> into one strategy that drives real leads for Sri Lankan SMEs.
+            </p>
+          </div>
+          <div className="bg-card border border-border rounded-2xl p-7 md:p-9">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-5">Sri Lanka Digital Landscape</p>
+            {[
+              { num: "10.9M", text: "internet users in Sri Lanka — over 50% of the population online" },
+              { num: "8.5M", text: "active social media users, with Facebook and Instagram leading" },
+              { num: "7.2M", text: "TikTok users in Sri Lanka — the fastest growing platform" },
+              { num: "82%", text: "of Sri Lankan consumers research online before buying offline" },
+              { num: "6.5h", text: "average daily time spent online by Sri Lankan adults" },
+            ].map((s, i) => (
+              <div key={i} className="flex gap-4 py-4 border-b border-border last:border-b-0">
+                <div className="font-heading text-2xl font-extrabold text-primary min-w-[80px]">{s.num}</div>
+                <div className="text-sm text-muted-foreground leading-relaxed">{s.text}</div>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 text-[11px] leading-relaxed text-white/30 max-w-4xl">
+            Cypher Digital delivers <Link to="/social-media-management-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns, <Link to="/facebook-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">facebook ads Sri Lanka</Link> management, <Link to="/google-ads-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">google ads Sri Lanka</Link> services, <Link to="/seo-services-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">SEO services Sri Lanka</Link>, <Link to="/tiktok-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">tiktok marketing Sri Lanka</Link>, <Link to="/instagram-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">instagram marketing Sri Lanka</Link>, <Link to="/linkedin-advertising-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">linkedin marketing Sri Lanka</Link>, <Link to="/video-production-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">video production Sri Lanka</Link>, <Link to="/graphic-design-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">graphic design Sri Lanka</Link>, <Link to="/influencer-marketing-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">influencer marketing Sri Lanka</Link>, <Link to="/media-buying-agencies-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">media buying agencies Sri Lanka</Link>, and a complete <Link to="/advertising-in-sri-lanka" className="text-white/40 hover:text-white/70 underline-offset-2 hover:underline">advertising in Sri Lanka</Link> guide for SMEs nationwide.
+          </p>
+        </div>
+      </div>
+    </section>
+    {/* AGENCY VS FREELANCER COMPARISON */}
+    <section className="py-24 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Agency vs Freelancer</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Agency vs Freelancer in Sri Lanka</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Which is right for your business? Here's an honest side-by-side comparison.</p>
+          </div>
+          <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-card">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-foreground text-white">
+                    <th className="text-left p-4 font-semibold">Factor</th>
+                    <th className="text-left p-4 font-semibold">Agency (Cypher Digital)</th>
+                    <th className="text-left p-4 font-semibold">Freelancer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Team size", "10+ specialists (strategy, design, ads, video)", "1 person doing everything"],
+                    ["Range of services", "Full-service: social, ads, SEO, video, design", "Usually 1–2 skills only"],
+                    ["Accountability", "Contracts, SLAs, monthly reports", "No formal agreement"],
+                    ["Availability", "Always reachable — team backup", "Single point of failure"],
+                    ["Tools & software", "Premium tools included (LKR 50k+ value)", "Often free tools only"],
+                    ["Monthly cost", "LKR 40,000 – 200,000", "LKR 15,000 – 60,000"],
+                    ["Best for", "Businesses serious about growth", "Tiny budgets, one-off tasks"],
+                  ].map(([label, agency, freelancer], i) => (
+                    <tr key={i} className="border-t border-border hover:bg-secondary/50 transition-colors">
+                      <td className="p-4 font-semibold text-foreground">{label}</td>
+                      <td className="p-4 text-muted-foreground">{agency}</td>
+                      <td className="p-4 text-muted-foreground">{freelancer}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            Want a deeper comparison? Read our full <Link to="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" className="text-primary font-semibold hover:underline">agency vs freelancer guide</Link>.
+          </p>
+        </div>
+      </div>
+    </section>
+    {/* RESULTS TIMELINE */}
+    <section className="py-24 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Realistic Timeline</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">How Long Does Digital Marketing Take to Show Results?</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Here's what to honestly expect month-by-month with a serious digital marketing strategy in Sri Lanka.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { m: "Month 1", t: "Setup & Launch", d: "Strategy, account setup, content creation, first ads live. Early data starts flowing in." },
+              { m: "Month 2–3", t: "First Wins", d: "Ads optimised, first leads from paid. Social engagement growing. SEO foundation built." },
+              { m: "Month 4–6", t: "Compound Growth", d: "Predictable lead flow from ads. SEO rankings climbing. Cost per lead dropping 30–50%." },
+              { m: "Month 6–12", t: "Scale Phase", d: "Strong ROI, organic traffic surge, brand recognition. Ready to scale ad spend." },
+            ].map((p, i) => (
+              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
+                <span className="text-xs font-bold text-primary uppercase tracking-widest">{p.m}</span>
+                <h3 className="font-heading text-lg font-bold mt-2 mb-2">{p.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
@@ -937,47 +952,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-    {/* OUR WORK / PORTFOLIO */}
-
-    {/* CLIENT REVIEWS */}
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Client Reviews</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-foreground mb-6">
-            What our clients say about our digital marketing results
-          </h2>
-          <div className="flex items-center gap-4 mb-10">
-            <div className="font-heading text-5xl font-extrabold text-foreground leading-none">5.0</div>
-            <div>
-              <div className="text-2xl text-[hsl(45,95%,55%)] tracking-widest leading-none">★★★★★</div>
-              <div className="text-xs text-muted-foreground mt-1">Based on 47 client reviews</div>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-3 gap-5">
-            {[
-              { quote: "Cypher Digital transformed our restaurant's online presence. Within 3 months we went from 20 covers per night to fully booked every weekend. Their social media work is exceptional.", initials: "RC", name: "Restaurant Client", location: "Colombo 3, Sri Lanka", color: "from-[hsl(252,65%,55%)] to-[hsl(280,80%,65%)]" },
-              { quote: "We were getting 20 leads per month from traditional marketing. After 2 months with Cypher Digital's Facebook Ads, we're getting 150+ qualified leads every month. The ROI is incredible.", initials: "RE", name: "Real Estate Developer", location: "Western Province, Sri Lanka", color: "from-[hsl(280,80%,65%)] to-[hsl(320,70%,60%)]" },
-              { quote: "Professional, responsive, and results-focused. Our clinic went from empty appointment slots to being fully booked 3 weeks in advance. Highly recommend Cypher Digital to any healthcare business.", initials: "HC", name: "Healthcare Client", location: "Nugegoda, Sri Lanka", color: "from-[hsl(220,80%,55%)] to-[hsl(200,90%,55%)]" },
-            ].map((r, i) => (
-              <div key={i} className="bg-card border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-card transition-all">
-                <div className="text-lg text-[hsl(45,95%,55%)] tracking-wider mb-3">★★★★★</div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">"{r.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${r.color} flex items-center justify-center text-white text-xs font-bold`}>{r.initials}</div>
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">{r.name}</div>
-                    <div className="text-xs text-muted-foreground">{r.location}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section className="py-16 bg-card border-t border-border">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
@@ -1020,8 +994,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-    {/* INTERNAL LINKS BAR — all service pages */}
     <section className="py-16 bg-foreground text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
@@ -1053,7 +1025,6 @@ const Index = () => (
         </div>
       </div>
     </section>
-
     <section className="relative py-24 lg:py-32 bg-foreground text-white overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[120px] -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-[hsl(280,80%,65%)]/10 rounded-full blur-[100px]" />
