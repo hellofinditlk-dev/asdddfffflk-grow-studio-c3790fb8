@@ -292,14 +292,14 @@ const Index = () => (
               </a>
             </div>
 
-            <button
+            <Button
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-white transition-colors"
-              type="button"
+              size="lg"
+              className="mt-6 bg-white text-[#030612] hover:bg-white/90 font-bold rounded-2xl px-8 py-5 h-auto shadow-[0_10px_30px_-10px_rgba(255,255,255,0.3)] transition-all active:scale-95"
             >
-              <span className="underline underline-offset-4">View pricing</span>
-              <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-            </button>
+              View pricing
+              <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+            </Button>
 
             {/* Trust markers */}
             <div className="mt-12">
