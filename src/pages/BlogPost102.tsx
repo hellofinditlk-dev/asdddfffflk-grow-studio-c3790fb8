@@ -32,7 +32,7 @@ const BlogPost102 = () => (
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Transparent social media packages — Sri Lanka pricing</h2>
             <p><strong className="text-foreground">Starter — LKR 35,000/month.</strong> 1 platform (Facebook or Instagram), 12 posts/month, custom graphic design, English captions, scheduling, monthly analytics. No paid ads or video.</p>
-            <p><strong className="text-foreground">Growth — LKR 65,000/month.</strong> Facebook + Instagram, 20 posts/month, bilingual captions (English + Sinhala), community management, 4 Reels per month, and <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook Ads</Link> management up to LKR 30K ad spend. Most popular package.</p>
+            <p><strong className="text-foreground">Growth — LKR 65,000/month.</strong> Facebook + Instagram, 16 posts + 4 Reels per month, bilingual captions (English + Sinhala), community management, and <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Facebook Ads</Link> management up to LKR 30K ad spend. Most popular package.</p>
             <p><strong className="text-foreground">Pro — LKR 120,000/month.</strong> Facebook + Instagram + TikTok, 30 posts/month, premium design and video, 8 Reels/TikTok videos, full ads management, weekly reports.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">What every package should include</h2>
@@ -78,7 +78,7 @@ const BlogPost102 = () => (
                 <p className="text-xs text-muted-foreground mb-3">Established SMEs ready to scale reach and generate leads.</p>
                 <ul className="text-xs text-muted-foreground space-y-1.5">
                   <li>✓ Facebook + Instagram</li>
-                  <li>✓ 16 posts/month + 4 Reels</li>
+                  <li>✓ 16 posts/month + 4 Reels (edited from provided or stock footage)</li>
                   <li>✓ Bilingual captions (EN + Sinhala)</li>
                   <li>✓ Community mgmt (comments + DMs)</li>
                   <li>✓ <Link to="/facebook-ads-sri-lanka" className="text-primary underline">Facebook Ads</Link> mgmt (up to LKR 30K)</li>
@@ -94,6 +94,7 @@ const BlogPost102 = () => (
                 <ul className="text-xs text-muted-foreground space-y-1.5">
                   <li>✓ Facebook + Instagram + TikTok</li>
                   <li>✓ 30 posts/month + 8 Reels/TikTok videos</li>
+                  <li>✓ 1 on-location shoot per month included</li>
                   <li>✓ Premium design + motion graphics</li>
                   <li>✓ Bilingual captions + seasonal campaigns</li>
                   <li>✓ Full community mgmt (comments, DMs, reviews)</li>
