@@ -35,6 +35,7 @@ const Footer = () => (
             <Link to="/google-ads-sri-lanka" className="hover:text-foreground transition-colors">Google Ads</Link>
             <Link to="/video-production-sri-lanka" className="hover:text-foreground transition-colors">Video Production</Link>
             <Link to="/ai-video-production-sri-lanka" className="hover:text-foreground transition-colors">AI Video Production</Link>
+            <Link to="/reel-creation-sri-lanka" className="hover:text-foreground transition-colors">Reel Creation</Link>
             <Link to="/seo-services-sri-lanka" className="hover:text-foreground transition-colors">SEO Services</Link>
             <Link to="/graphic-design-sri-lanka" className="hover:text-foreground transition-colors">Graphic Design</Link>
             <Link to="/tiktok-marketing-sri-lanka" className="hover:text-foreground transition-colors">TikTok Marketing</Link>
