@@ -174,7 +174,7 @@ const ReelCreation = () => (
                 </div>
               ))}
             </div>
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-[#0b1220] border border-white/15 rounded-full px-4 py-2 shadow-xl">
+            <div className="mt-5 mx-auto w-fit flex items-center gap-2 bg-[#0b1220] border border-white/15 rounded-full px-4 py-2 shadow-xl">
               <span className="w-2 h-2 rounded-full bg-[hsl(25,95%,53%)] animate-pulse" />
               <span className="text-[11px] font-semibold text-white uppercase tracking-wider">Filmed on-location · Edited in-house</span>
             </div>
