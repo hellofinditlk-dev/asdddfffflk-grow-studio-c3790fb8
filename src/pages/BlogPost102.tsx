@@ -78,7 +78,7 @@ const BlogPost102 = () => (
                 <p className="text-xs text-muted-foreground mb-3">Established SMEs ready to scale reach and generate leads.</p>
                 <ul className="text-xs text-muted-foreground space-y-1.5">
                   <li>✓ Facebook + Instagram</li>
-                  <li>✓ 16 posts/month + 4 Reels</li>
+                  <li>✓ 16 posts/month + 4 Reels (edited from provided or stock footage)</li>
                   <li>✓ Bilingual captions (EN + Sinhala)</li>
                   <li>✓ Community mgmt (comments + DMs)</li>
                   <li>✓ <Link to="/facebook-ads-sri-lanka" className="text-primary underline">Facebook Ads</Link> mgmt (up to LKR 30K)</li>
@@ -94,6 +94,7 @@ const BlogPost102 = () => (
                 <ul className="text-xs text-muted-foreground space-y-1.5">
                   <li>✓ Facebook + Instagram + TikTok</li>
                   <li>✓ 30 posts/month + 8 Reels/TikTok videos</li>
+                  <li>✓ 1 on-location shoot per month included</li>
                   <li>✓ Premium design + motion graphics</li>
                   <li>✓ Bilingual captions + seasonal campaigns</li>
                   <li>✓ Full community mgmt (comments, DMs, reviews)</li>
