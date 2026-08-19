@@ -519,6 +519,62 @@ const Index = () => (
 
     {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
     <OurWorkSection />
+    {/* TRANSPARENT PRICING */}
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Prices in Sri Lanka</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent monthly packages. No hidden fees. No long-term lock-in.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            {
+              name: "Starter", price: "LKR 40,000", note: "/month",
+              desc: "Perfect for small businesses starting out.",
+              features: ["1 platform (FB or IG)", "12 posts per month", "Basic ad management", "Monthly report", "WhatsApp support"],
+              featured: false,
+            },
+            {
+              name: "Growth", price: "LKR 95,000", note: "/month",
+              desc: "Our most popular package for growing SMEs.",
+              features: ["FB + IG + TikTok", "20 posts + 8 reels", "Facebook & Google Ads", "Basic SEO included", "Bi-weekly reports", "Dedicated account manager"],
+              featured: true,
+            },
+            {
+              name: "Pro", price: "LKR 180,000", note: "/month",
+              desc: "Full-service for serious scale-ups.",
+              features: ["All platforms managed", "30+ posts + video content", "Multi-channel ads", "Full SEO + content", "Weekly reports", "Strategy calls every 2 weeks"],
+              featured: false,
+            },
+          ].map((p, i) => (
+            <div key={i} className={`relative rounded-2xl p-7 md:p-8 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-primary bg-primary/5 shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
+              {p.featured && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+              )}
+              <h3 className="font-heading text-xl font-extrabold mb-2">{p.name}</h3>
+              <p className="text-xs text-muted-foreground mb-5">{p.desc}</p>
+              <div className="font-heading text-3xl font-extrabold text-primary mb-1">{p.price}<span className="text-sm font-medium text-muted-foreground">{p.note}</span></div>
+              <p className="text-xs text-muted-foreground mb-6">Ad budget billed separately</p>
+              <ul className="space-y-2 mb-7">
+                {p.features.map((f, j) => (
+                  <li key={j} className="flex gap-2 text-sm text-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-semibold py-3 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] transition-colors">
+                Get Custom Quote
+              </a>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          Need something custom? <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.
+        </p>
+      </div>
+    </section>
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
@@ -603,62 +659,6 @@ const Index = () => (
       </div>
     </section>
 
-    {/* TRANSPARENT PRICING */}
-    <section className="py-24 lg:py-32">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Prices in Sri Lanka</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent monthly packages. No hidden fees. No long-term lock-in.</p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            {
-              name: "Starter", price: "LKR 40,000", note: "/month",
-              desc: "Perfect for small businesses starting out.",
-              features: ["1 platform (FB or IG)", "12 posts per month", "Basic ad management", "Monthly report", "WhatsApp support"],
-              featured: false,
-            },
-            {
-              name: "Growth", price: "LKR 95,000", note: "/month",
-              desc: "Our most popular package for growing SMEs.",
-              features: ["FB + IG + TikTok", "20 posts + 8 reels", "Facebook & Google Ads", "Basic SEO included", "Bi-weekly reports", "Dedicated account manager"],
-              featured: true,
-            },
-            {
-              name: "Pro", price: "LKR 180,000", note: "/month",
-              desc: "Full-service for serious scale-ups.",
-              features: ["All platforms managed", "30+ posts + video content", "Multi-channel ads", "Full SEO + content", "Weekly reports", "Strategy calls every 2 weeks"],
-              featured: false,
-            },
-          ].map((p, i) => (
-            <div key={i} className={`relative rounded-2xl p-7 md:p-8 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-primary bg-primary/5 shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
-              {p.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
-              )}
-              <h3 className="font-heading text-xl font-extrabold mb-2">{p.name}</h3>
-              <p className="text-xs text-muted-foreground mb-5">{p.desc}</p>
-              <div className="font-heading text-3xl font-extrabold text-primary mb-1">{p.price}<span className="text-sm font-medium text-muted-foreground">{p.note}</span></div>
-              <p className="text-xs text-muted-foreground mb-6">Ad budget billed separately</p>
-              <ul className="space-y-2 mb-7">
-                {p.features.map((f, j) => (
-                  <li key={j} className="flex gap-2 text-sm text-foreground">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-semibold py-3 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] transition-colors">
-                Get Custom Quote
-              </a>
-            </div>
-          ))}
-        </div>
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          Need something custom? <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.
-        </p>
-      </div>
-    </section>
 
     {/* RESULTS TIMELINE */}
     <section className="py-24 lg:py-32 bg-secondary">
