@@ -120,76 +120,104 @@ const ReelCreation = () => (
     <PageBreadcrumb items={[{ label: "Reel Creation Sri Lanka" }]} />
 
     {/* HERO */}
-    <section className="relative bg-[#030612] overflow-hidden py-14 md:py-20">
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/25 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute -bottom-32 right-0 w-96 h-96 bg-[hsl(25,95%,53%)]/20 blur-[130px] rounded-full pointer-events-none" />
+    <section className="relative bg-[#FBF8F3] overflow-hidden py-14 md:py-20 border-b border-[#E4DCCD]">
       <div className="container mx-auto px-4 relative z-10 max-w-6xl">
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
+        <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-14 items-center">
           <div>
-            <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-primary mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] animate-pulse" />
+            <p className="inline-flex items-center gap-2 font-mono text-[11px] md:text-xs uppercase tracking-[0.18em] text-[#FF4438] mb-4">
+              <span className="relative flex h-[7px] w-[7px]">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-[#FF4438] opacity-60 animate-ping" />
+                <span className="relative inline-flex h-[7px] w-[7px] rounded-full bg-[#FF4438]" />
+              </span>
               On-location reel creation · Sri Lanka
             </p>
-            <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
-              Reel Creation in Sri Lanka — We Bring the Camera, You Get Scroll-Stopping Reels
+            <h1 className="font-heading text-[2.1rem] leading-[1.05] md:text-5xl lg:text-[3.9rem] font-extrabold tracking-[-0.02em] text-[#14203B] mb-5">
+              Reel Creation in Sri Lanka — We Bring the Camera, You Get{" "}
+              <span className="text-[#FF4438]">Scroll-Stopping Reels</span>
             </h1>
-            <p className="text-white/70 leading-relaxed mb-7 max-w-xl">
+            <p className="text-[#243450] text-base md:text-lg leading-relaxed mb-7 max-w-[32em]">
               Our team comes to your location anywhere in Sri Lanka, films on-site, and fully edits every reel — ready to post.
               Shot vertical for Instagram Reels, TikTok and Facebook Reels.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] rounded-xl h-12 px-7 font-semibold border-none">
-                <a href={wa("Hi, I want to book an on-location reel shoot in Sri Lanka")} target="_blank" rel="noopener noreferrer">Book a Shoot on WhatsApp</a>
-              </Button>
+            <div className="flex flex-wrap gap-3.5 items-center">
+              <a
+                href={wa("Hi, I want to book an on-location reel shoot in Sri Lanka")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 h-[52px] px-7 rounded-full bg-[#FF4438] !text-white text-[15px] font-semibold shadow-[0_10px_26px_-8px_rgba(255,68,56,0.55)] hover:-translate-y-0.5 transition-transform border-none"
+              >
+                Book a Shoot on WhatsApp <ArrowRight className="w-4 h-4" />
+              </a>
               <a
                 href="#reel-pricing"
-                className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-white/30 bg-white/5 text-white text-sm font-semibold hover:bg-white/15 transition-colors"
+                className="inline-flex items-center justify-center h-[52px] px-7 rounded-full border-[1.5px] border-[#14203B] text-[#14203B] text-[15px] font-semibold hover:bg-[#14203B] hover:text-[#FBF8F3] transition-colors"
               >
                 See pricing
               </a>
             </div>
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7 pt-6 border-t border-white/10">
-              <span className="font-heading text-2xl font-extrabold text-white">LKR 25,000</span>
-              <span className="text-xs text-white/60">per reel · filmed &amp; fully edited · free filming within Colombo</span>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7">
+              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">LKR 25,000</span>
+              <span className="font-mono text-[13px] text-[#6A7385]">per reel · filmed &amp; edited · free within Colombo</span>
             </div>
           </div>
 
-          {/* hero visuals — real shoot footage */}
-          <div className="relative">
-            <div className="grid grid-cols-3 gap-3 md:gap-4">
-              {["oMxfgioWCdI", "QAZNN3J9JhI", "WhZBrHbSOZQ"].map((id, i) => (
-                <div
-                  key={id}
-                  className={`relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/15 shadow-2xl ${i === 1 ? "-translate-y-4 md:-translate-y-6" : "translate-y-2"}`}
-                >
-                  <img
-                    src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
-                    onError={(e) => { const t = e.currentTarget; if (!t.dataset.fb) { t.dataset.fb = "1"; t.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; } }}
-                    alt="Behind the scenes of a Cypher Digital reel shoot in Sri Lanka"
-                    loading="eager"
-                    decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <span className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          {/* REEL STAGE — signature phone stack */}
+          <div className="relative flex justify-center items-center min-h-[400px] md:min-h-[440px]">
+            {/* back reels */}
+            <div className="absolute top-8 right-2 md:right-4 w-[170px] md:w-[190px] aspect-[9/16] rounded-[22px] rotate-[9deg] bg-gradient-to-br from-[#243450] to-[#141f38] opacity-85 shadow-[0_24px_44px_-22px_rgba(20,32,59,0.5)]" />
+            <div className="absolute bottom-6 left-0 md:left-2 w-[150px] md:w-[170px] aspect-[9/16] rounded-[20px] -rotate-[11deg] bg-gradient-to-br from-[#2b3d5c] to-[#1a2740] opacity-60" />
+            {/* main reel */}
+            <div className="relative z-10 w-[216px] md:w-[236px] aspect-[9/16] rounded-[26px] border-[6px] border-[#0e1729] bg-[#0e1729] overflow-hidden shadow-[0_30px_60px_-20px_rgba(20,32,59,0.55)]">
+              <img
+                src="https://i.ytimg.com/vi/oMxfgioWCdI/maxresdefault.jpg"
+                onError={(e) => { const t = e.currentTarget; if (!t.dataset.fb) { t.dataset.fb = "1"; t.src = "https://i.ytimg.com/vi/oMxfgioWCdI/hqdefault.jpg"; } }}
+                alt="Behind the scenes of a Cypher Digital on-location reel shoot in Sri Lanka"
+                loading="eager"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <span className="absolute inset-0 bg-[radial-gradient(120%_80%_at_30%_15%,rgba(47,107,255,0.35),transparent_55%),radial-gradient(120%_80%_at_80%_90%,rgba(255,68,56,0.45),transparent_55%)]" />
+              <span className="absolute inset-0 bg-gradient-to-t from-[#0e1729]/80 via-transparent to-[#0e1729]/40" />
+              <div className="absolute inset-0 p-4 flex flex-col justify-between text-white">
+                <div className="flex justify-between items-center font-mono text-[11px] opacity-90">
+                  <span className="inline-flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-[#FF4438] animate-pulse" /> REC
+                  </span>
+                  <span>0:07 / 0:15</span>
                 </div>
-              ))}
+                <div className="absolute right-3 bottom-[74px] flex flex-col gap-4 items-center">
+                  {[0, 1, 2].map((i) => (
+                    <span key={i} className="w-[34px] h-[34px] rounded-full bg-white/15 block" />
+                  ))}
+                </div>
+                <div>
+                  <div className="font-heading font-extrabold text-xl leading-tight">On-site.<br />Fully edited.</div>
+                  <div className="text-[11px] opacity-80 mt-1">@yourbrand · Colombo 🇱🇰</div>
+                </div>
+              </div>
             </div>
-            <div className="mt-5 mx-auto w-fit flex items-center gap-2 bg-[#0b1220] border border-white/15 rounded-full px-4 py-2 shadow-xl">
-              <span className="w-2 h-2 rounded-full bg-[hsl(25,95%,53%)] animate-pulse" />
-              <span className="text-[11px] font-semibold text-white uppercase tracking-wider">Filmed on-location · Edited in-house</span>
+            {/* float badges */}
+            <div className="absolute top-4 left-0 md:-left-2 z-20 flex items-center gap-2 bg-[#FBF8F3] border border-[#E4DCCD] rounded-[14px] px-3.5 py-2.5 text-[13px] font-semibold text-[#14203B] shadow-[0_12px_28px_-14px_rgba(20,32,59,0.4)]">
+              🎬 <span>One visit</span>
+            </div>
+            <div className="absolute bottom-8 right-0 md:-right-3 z-20 flex items-center gap-2 bg-[#FBF8F3] border border-[#E4DCCD] rounded-[14px] px-3.5 py-2.5 text-[13px] font-semibold text-[#14203B] shadow-[0_12px_28px_-14px_rgba(20,32,59,0.4)]">
+              <span className="font-mono text-[15px] text-[#FF4438]">4×</span> reels a month
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-12 md:mt-14 pt-5 border-t border-white/10 text-xs text-white/60">
-          {["Instagram Reels", "TikTok", "Facebook Reels", "Sinhala or English captions", "4 reels from one visit"].map((t) => (
-            <span key={t} className="inline-flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" /> {t}
-            </span>
-          ))}
         </div>
       </div>
     </section>
+
+    {/* STRIP */}
+    <div className="bg-[#14203B] text-[#FBF8F3] py-5">
+      <div className="container mx-auto px-4 max-w-6xl flex flex-wrap justify-center gap-x-10 gap-y-2 text-sm font-medium">
+        {["Instagram Reels", "TikTok", "Facebook Reels", "Filmed on-location", "Edited in-house"].map((t) => (
+          <span key={t} className="inline-flex items-center gap-2.5 opacity-90">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FF4438]" /> {t}
+          </span>
+        ))}
+      </div>
+    </div>
 
     {/* INTRO */}
     <section className="py-12 md:py-16">
