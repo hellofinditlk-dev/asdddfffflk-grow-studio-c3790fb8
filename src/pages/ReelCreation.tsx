@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, MapPin } from "lucide-react";
+import { ArrowRight, ArrowDown, CheckCircle2, MapPin } from "lucide-react";
 
 const wa = (msg: string) => `https://wa.me/94701772626?text=${encodeURIComponent(msg)}`;
 
