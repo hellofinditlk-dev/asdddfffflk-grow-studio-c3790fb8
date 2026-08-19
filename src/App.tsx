@@ -209,6 +209,7 @@ const AdminCallClicks = lazy(() => import("./pages/AdminCallClicks"));
 const AdminApplications = lazy(() => import("./pages/AdminApplications"));
 const ProgrammaticAdvertising = lazy(() => import("./pages/ProgrammaticAdvertising"));
 const OurWork = lazy(() => import("./pages/OurWork"));
+const ReelCreation = lazy(() => import("./pages/ReelCreation"));
 
 
 const queryClient = new QueryClient();
@@ -429,6 +430,7 @@ const App = () => (
               <Route path="/radio-advertising-sri-lanka" element={<RadioAdvertising />} />
               <Route path="/programmatic-advertising-sri-lanka" element={<ProgrammaticAdvertising />} />
               <Route path="/our-work" element={<OurWork />} />
+              <Route path="/reel-creation-sri-lanka" element={<ReelCreation />} />
               <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/brand-identity-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/company-profile-design-sri-lanka" element={<DesignSubService />} />

@@ -413,7 +413,7 @@ const AIVideoProduction = () => {
               <a href="/facebook-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Facebook advertising</a>,{" "}
               <a href="/google-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Google Ads</a>,{" "}
               <a href="/graphic-design-sri-lanka" style={{ color: "#FF6B2B" }}>graphic design</a>, and{" "}
-              <a href="/tiktok-marketing-sri-lanka" style={{ color: "#FF6B2B" }}>TikTok marketing</a> for a full-funnel campaign.
+              <a href="/tiktok-marketing-sri-lanka" style={{ color: "#FF6B2B" }}>TikTok marketing</a> for a full-funnel campaign. Need a real camera on-site? Book <a href="/reel-creation-sri-lanka" style={{ color: "#FF6B2B" }}>on-location reel creation in Sri Lanka</a> from LKR 25,000 per reel.
             </p>
           </section>
 
