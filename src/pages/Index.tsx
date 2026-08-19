@@ -519,7 +519,7 @@ const Index = () => (
 
     {/* OUR WORK */}
     <OurWorkSection />
-    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
+    
     {/* TRANSPARENT PRICING */}
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
@@ -576,6 +576,8 @@ const Index = () => (
         </p>
       </div>
     </section>
+
+    {/* WHAT IS DIGITAL MARKETING + SRI LANKA MARKET STATS */}
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
