@@ -163,6 +163,13 @@ const ReelCreation = () => (
               <span className="font-heading text-[26px] font-extrabold text-[#14203B]">LKR 25,000</span>
               <span className="font-mono text-[13px] text-[#6A7385]">per reel · filmed &amp; edited · free within Colombo</span>
             </div>
+            <button
+              onClick={scrollToPricing}
+              className="inline-flex items-center gap-2 mt-5 text-[13px] font-semibold text-[#14203B] hover:text-[#FF4438] transition-colors"
+              aria-label="Scroll to pricing"
+            >
+              Scroll to pricing <ArrowDown className="w-4 h-4" />
+            </button>
           </div>
 
           {/* REEL STAGE — signature phone stack */}
