@@ -121,23 +121,72 @@ const ReelCreation = () => (
 
     {/* HERO */}
     <section className="relative bg-[#030612] overflow-hidden py-14 md:py-20">
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="container mx-auto px-4 relative z-10 max-w-4xl">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-4">On-location reel creation · Sri Lanka</p>
-        <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
-          Reel Creation in Sri Lanka — We Bring the Camera, You Get Scroll-Stopping Reels
-        </h1>
-        <p className="text-white/70 leading-relaxed mb-6 max-w-2xl">
-          Our team comes to your location anywhere in Sri Lanka, films on-site, and fully edits every reel — ready to post.
-          Shot vertical for Instagram Reels, TikTok and Facebook Reels. From LKR 25,000 per reel, filmed and edited, free within Colombo.
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] rounded-xl h-12 px-7 font-semibold border-none">
-            <a href={wa("Hi, I want to book an on-location reel shoot in Sri Lanka")} target="_blank" rel="noopener noreferrer">Book a Shoot on WhatsApp</a>
-          </Button>
-          <Button asChild size="lg" variant="outline" className="rounded-xl h-12 px-7 font-semibold border-white/30 text-white hover:bg-white/10">
-            <a href="#reel-pricing">See pricing</a>
-          </Button>
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/25 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute -bottom-32 right-0 w-96 h-96 bg-[hsl(25,95%,53%)]/20 blur-[130px] rounded-full pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10 max-w-6xl">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-primary mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] animate-pulse" />
+              On-location reel creation · Sri Lanka
+            </p>
+            <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5">
+              Reel Creation in Sri Lanka — We Bring the Camera, You Get Scroll-Stopping Reels
+            </h1>
+            <p className="text-white/70 leading-relaxed mb-7 max-w-xl">
+              Our team comes to your location anywhere in Sri Lanka, films on-site, and fully edits every reel — ready to post.
+              Shot vertical for Instagram Reels, TikTok and Facebook Reels.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] rounded-xl h-12 px-7 font-semibold border-none">
+                <a href={wa("Hi, I want to book an on-location reel shoot in Sri Lanka")} target="_blank" rel="noopener noreferrer">Book a Shoot on WhatsApp</a>
+              </Button>
+              <a
+                href="#reel-pricing"
+                className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-white/30 bg-white/5 text-white text-sm font-semibold hover:bg-white/15 transition-colors"
+              >
+                See pricing
+              </a>
+            </div>
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7 pt-6 border-t border-white/10">
+              <span className="font-heading text-2xl font-extrabold text-white">LKR 25,000</span>
+              <span className="text-xs text-white/60">per reel · filmed &amp; fully edited · free filming within Colombo</span>
+            </div>
+          </div>
+
+          {/* hero visuals — real shoot footage */}
+          <div className="relative">
+            <div className="grid grid-cols-3 gap-3 md:gap-4">
+              {["oMxfgioWCdI", "QAZNN3J9JhI", "WhZBrHbSOZQ"].map((id, i) => (
+                <div
+                  key={id}
+                  className={`relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/15 shadow-2xl ${i === 1 ? "-translate-y-4 md:-translate-y-6" : "translate-y-2"}`}
+                >
+                  <img
+                    src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+                    onError={(e) => { const t = e.currentTarget; if (!t.dataset.fb) { t.dataset.fb = "1"; t.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`; } }}
+                    alt="Behind the scenes of a Cypher Digital reel shoot in Sri Lanka"
+                    loading="eager"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <span className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 mx-auto w-fit flex items-center gap-2 bg-[#0b1220] border border-white/15 rounded-full px-4 py-2 shadow-xl">
+              <span className="w-2 h-2 rounded-full bg-[hsl(25,95%,53%)] animate-pulse" />
+              <span className="text-[11px] font-semibold text-white uppercase tracking-wider">Filmed on-location · Edited in-house</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-12 md:mt-14 pt-5 border-t border-white/10 text-xs text-white/60">
+          {["Instagram Reels", "TikTok", "Facebook Reels", "Sinhala or English captions", "4 reels from one visit"].map((t) => (
+            <span key={t} className="inline-flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" /> {t}
+            </span>
+          ))}
         </div>
       </div>
     </section>
