@@ -6,7 +6,7 @@ import {
   BarChart3, Users, Lightbulb, Rocket, FileText, TrendingUp,
   Phone, ArrowUpRight, Palette, Globe, Eye, MousePointerClick,
   MapPin, ShoppingBag, GraduationCap, Building2, Sparkles, Zap, Star,
-  Play, ChevronRight
+  Play, ChevronRight, ArrowDown
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
@@ -292,6 +292,15 @@ const Index = () => (
               </a>
             </div>
 
+            <button
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-white transition-colors"
+              type="button"
+            >
+              <span className="underline underline-offset-4">View pricing</span>
+              <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+            </button>
+
             {/* Trust markers */}
             <div className="mt-12">
               <p className="text-[10px] text-slate-500 uppercase tracking-widest mb-3 font-bold">We Advertise On</p>
@@ -521,7 +530,7 @@ const Index = () => (
     <OurWorkSection />
     
     {/* TRANSPARENT PRICING */}
-    <section className="py-24 lg:py-32">
+    <section id="pricing" className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
