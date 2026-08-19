@@ -106,6 +106,10 @@ const breadcrumbSchema = {
   ],
 };
 
+const scrollToPricing = () => {
+  document.getElementById('reel-pricing')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 const ReelCreation = () => (
   <>
     <SEOHead
