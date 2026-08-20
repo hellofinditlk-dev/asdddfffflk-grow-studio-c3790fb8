@@ -179,7 +179,7 @@ const ReelCreation = () => (
               </a>
             </div>
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7">
-              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 15,000</span>
+              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 18,000</span>
               <span className="font-mono text-[13px] text-[#6A7385]">AI character videos · professional shoots from LKR 25,000</span>
             </div>
 
@@ -267,8 +267,8 @@ const ReelCreation = () => (
             many clients combine both.
           </p>
           <p>
-            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 15,000 for 1 minute.
-            Rates are based on duration, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
+            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 18,000 for a 15–30 second reel.
+            Rates are based on format, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
             <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>,{" "}
             <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing</Link> and{" "}
             <Link to="/tiktok-marketing-sri-lanka" className="text-primary font-semibold hover:underline">TikTok marketing</Link> plans.
