@@ -22,10 +22,16 @@ const AIVideoProduction = () => {
     { num: "05", title: "Delivery & Formatting", desc: "Final video delivered in 9:16, 1:1, and 16:9 — typically within 48 hours of brief approval." },
   ];
 
-  const packages = [
-    { name: "Starter", sub: "Short-form social content", price: "From LKR 18,000", features: ["1 × 30-second social reel", "AI script writing", "Subtitles / captions", "Licensed background music", "1 format export (9:16)", "2 rounds of revisions"], featured: false },
-    { name: "Growth", sub: "Brand + social content pack", price: "From LKR 54,000", features: ["1 × 60–90 sec brand video", "3 × social media reels", "AI voiceover (Sinhala or English)", "Motion graphics & lower-thirds", "3 format exports (9:16, 1:1, 16:9)", "3 rounds of revisions"], featured: true },
-    { name: "Enterprise", sub: "Full video production suite", price: "Custom quote", features: ["Multi-video campaign packages", "AI avatar presenter videos", "Dedicated editor & account manager", "On-site filming (Colombo & surrounds)", "TV commercial production", "Unlimited revisions"], featured: false },
+  const oneOffPackages = [
+    { name: "Quick Reel", sub: "One-off 15–30 second reel", price: "LKR 18,000", perVideo: null, features: ["1 × 15–30 sec reel", "Captions", "Licensed music", "2 revisions", "9:16 format export"], featured: false },
+    { name: "Pro Reel", sub: "One-off 60 sec reel/ad", price: "LKR 30,000", perVideo: null, features: ["1 × 60 sec reel/ad", "Voiceover", "Motion graphics", "3 revisions", "All format exports"], featured: true },
+    { name: "Brand Video", sub: "One-off 90 sec brand film", price: "LKR 45,000", perVideo: null, features: ["1 × 90 sec brand film", "All formats (9:16, 1:1, 16:9)", "3 revisions", "Script & voiceover", "Motion graphics"], featured: false },
+  ];
+
+  const monthlyPackages = [
+    { name: "Starter", sub: "4 × 30-sec reels per month", price: "LKR 60,000/month", perVideo: "~LKR 15,000 per video", features: ["4 × 30-sec reels/month", "Captions & music", "2 revisions per reel", "Consistent brand style", "Monthly content calendar"], featured: false },
+    { name: "Growth", sub: "8 reels + 1 brand video per month", price: "LKR 110,000/month", perVideo: "~LKR 11,000 per video", features: ["8 × 30-sec reels/month", "1 × 90-sec brand video/month", "Voiceover & motion graphics", "3 revisions per video", "Priority 48-hour delivery"], featured: true },
+    { name: "Pro", sub: "12 reels + 2 brand videos per month", price: "LKR 160,000/month", perVideo: "~LKR 9,500 per video", features: ["12 × 30-sec reels/month", "2 × 90-sec brand videos/month", "AI avatar & voiceover options", "Unlimited revisions", "Dedicated account manager"], featured: false },
   ];
 
   const whyUs = [
@@ -76,7 +82,7 @@ const AIVideoProduction = () => {
   ];
 
   const faqs = [
-    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 18,000 for a short social media reel. Brand and promotional videos start from LKR 54,000. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
+    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 18,000 for a single Quick Reel. One-off packages range from LKR 18,000 to LKR 45,000. Monthly recurring content packages start at LKR 60,000/month and go up to LKR 160,000/month, with per-video rates as low as LKR 9,500. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
     { q: "How long does AI video production take?", a: "Most projects are delivered within 48 hours of script approval. Complex brand films or multi-video packages take 3–5 business days. Rush delivery is available for time-sensitive campaigns." },
     { q: "Do you produce videos in Sinhala?", a: "Yes. We produce video content in Sinhala, Tamil, and English using AI voiceover technology and bilingual captioning. Sinhala-language videos are particularly effective for businesses targeting local audiences across Sri Lanka." },
     { q: "Can you produce video ads ready to run on Facebook and Google?", a: "Yes. Every video ad we produce is formatted specifically for the platform — including the correct aspect ratios, file formats, and length requirements for Facebook Ads, Google Display, YouTube pre-roll, and TikTok." },
@@ -104,7 +110,7 @@ const AIVideoProduction = () => {
     serviceType: "AI Video Production",
     areaServed: { "@type": "Country", name: "Sri Lanka" },
     description: "Professional AI video production services in Sri Lanka. Social media reels, brand films, ad creatives, product videos, and AI avatar videos for businesses in Colombo and across Sri Lanka.",
-    offers: { "@type": "AggregateOffer", lowPrice: "18000", highPrice: "200000", priceCurrency: "LKR" },
+    offers: { "@type": "AggregateOffer", lowPrice: "18000", highPrice: "160000", priceCurrency: "LKR" },
   };
 
   const faqSchema = {
@@ -265,35 +271,74 @@ const AIVideoProduction = () => {
           <section id="packages" style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Pricing</div>
             <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Packages & Pricing in Sri Lanka</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Transparent, fixed-price packages designed for Sri Lankan businesses. All packages include scripting, editing, music, captions & revisions.</p>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-              {packages.map((p) => (
-                <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
-                  {p.featured && (
-                    <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Most Popular</div>
-                  )}
-                  <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
-                  <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
-                  <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 18 }}>{p.price}</div>
-                  <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
-                    {p.features.map((f) => (
-                      <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
-                        <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} video package`)}
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
-                  >
-                    Get Started
-                  </a>
-                </div>
-              ))}
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Transparent, fixed-price packages designed for Sri Lankan businesses. Choose a one-off project or a recurring monthly content plan.</p>
+
+            <div style={{ marginBottom: 36 }}>
+              <h3 className="syne" style={{ fontWeight: 700, fontSize: 18, marginBottom: 16 }}>One-off video packages</h3>
+              <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+                {oneOffPackages.map((p) => (
+                  <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
+                    {p.featured && (
+                      <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Most Popular</div>
+                    )}
+                    <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
+                    <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
+                    <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 18 }}>{p.price}</div>
+                    <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
+                      {p.features.map((f) => (
+                        <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
+                          <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} AI video package`)}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p style={{ fontSize: 13, color: "#666", marginTop: 20, textAlign: "center" }}>Not sure which package is right for you? WhatsApp us on <a href={waBase + encodeURIComponent("Hi, I need help choosing an AI video package")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", fontWeight: 600 }}>+94 70 177 2626</a> and we'll recommend the best option for your budget and goals.</p>
+
+            <div>
+              <h3 className="syne" style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>Monthly content packages <span style={{ color: "#FF6B2B", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.5px" }}>Recurring — best value</span></h3>
+              <p style={{ fontSize: 13, color: "#666", marginBottom: 16 }}>Lock in a lower per-video rate and keep your brand visible every week.</p>
+              <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+                {monthlyPackages.map((p) => (
+                  <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
+                    {p.featured && (
+                      <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Best Value</div>
+                    )}
+                    <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
+                    <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
+                    <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 2 }}>{p.price}</div>
+                    {p.perVideo && (
+                      <div style={{ fontSize: 12, color: "#22c55e", fontWeight: 600, marginBottom: 16 }}>{p.perVideo}</div>
+                    )}
+                    <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
+                      {p.features.map((f) => (
+                        <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
+                          <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} monthly AI video package`)}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <p style={{ fontSize: 13, color: "#666", marginTop: 28, textAlign: "center" }}>Not sure which package is right for you? WhatsApp us on <a href={waBase + encodeURIComponent("Hi, I need help choosing an AI video package")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", fontWeight: 600 }}>+94 70 177 2626</a> and we'll recommend the best option for your budget and goals.</p>
           </section>
 
           {/* WHY US */}
