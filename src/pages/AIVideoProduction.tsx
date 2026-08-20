@@ -82,7 +82,7 @@ const AIVideoProduction = () => {
   ];
 
   const faqs = [
-    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 18,000 for a short social media reel. Brand and promotional videos start from LKR 54,000. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
+    { q: "How much does AI video production cost in Sri Lanka?", a: "AI video production at Cypher Digital starts from LKR 18,000 for a single Quick Reel. One-off packages range from LKR 18,000 to LKR 45,000. Monthly recurring content packages start at LKR 60,000/month and go up to LKR 160,000/month, with per-video rates as low as LKR 9,500. Enterprise packages with multiple videos and on-site filming are custom-quoted. All prices are in Sri Lankan rupees with no hidden fees." },
     { q: "How long does AI video production take?", a: "Most projects are delivered within 48 hours of script approval. Complex brand films or multi-video packages take 3–5 business days. Rush delivery is available for time-sensitive campaigns." },
     { q: "Do you produce videos in Sinhala?", a: "Yes. We produce video content in Sinhala, Tamil, and English using AI voiceover technology and bilingual captioning. Sinhala-language videos are particularly effective for businesses targeting local audiences across Sri Lanka." },
     { q: "Can you produce video ads ready to run on Facebook and Google?", a: "Yes. Every video ad we produce is formatted specifically for the platform — including the correct aspect ratios, file formats, and length requirements for Facebook Ads, Google Display, YouTube pre-roll, and TikTok." },
@@ -110,7 +110,7 @@ const AIVideoProduction = () => {
     serviceType: "AI Video Production",
     areaServed: { "@type": "Country", name: "Sri Lanka" },
     description: "Professional AI video production services in Sri Lanka. Social media reels, brand films, ad creatives, product videos, and AI avatar videos for businesses in Colombo and across Sri Lanka.",
-    offers: { "@type": "AggregateOffer", lowPrice: "18000", highPrice: "200000", priceCurrency: "LKR" },
+    offers: { "@type": "AggregateOffer", lowPrice: "18000", highPrice: "160000", priceCurrency: "LKR" },
   };
 
   const faqSchema = {
