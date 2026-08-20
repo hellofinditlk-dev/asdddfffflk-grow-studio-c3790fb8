@@ -56,12 +56,6 @@ const aiCharacterPackageIncludes = [
 ];
 
 
-const travel = [
-  { area: "Within Colombo", note: "All Colombo city locations", fee: "Free" },
-  { area: "Greater Colombo", note: "Gampaha, Kalutara, Negombo, Panadura", fee: "+LKR 6,000" },
-  { area: "Regional", note: "Kandy, Galle, Kurunegala, Ratnapura", fee: "+LKR 12,000" },
-  { area: "Outstation", note: "Jaffna, Trincomalee, deep south", fee: "Quoted" },
-];
 
 
 const included = [
@@ -85,17 +79,18 @@ const related = [
 ];
 
 const faqs = [
-  { q: "How much does social media reel creation cost in Sri Lanka?", a: "On-location reels are priced per visit, from LKR 25,000 for one filmed and fully edited reel. The more you book in one visit, the less each costs — 3 reels LKR 60,000, 4 reels LKR 75,000, 6 reels LKR 105,000. Filming within Colombo is free; a travel fee applies elsewhere (Greater Colombo +LKR 6,000, regional +LKR 12,000, outstation quoted)." },
-  { q: "Do you come to our location to film the reels?", a: "Yes — this is a fully on-location service. Our team comes to your business, shop, restaurant, hotel, event or chosen spot anywhere in Sri Lanka, films on-site, and edits everything afterwards. You don't need a studio or any equipment of your own." },
-  { q: "What kinds of reels do you create?", a: "Product reels, brand-story reels, founder and team clips, customer testimonials, behind-the-scenes footage, event coverage, food and restaurant reels, hotel and property walkthroughs, and promotional videos — all shot vertical for Instagram Reels, TikTok and Facebook Reels." },
+  { q: "How much does video production cost in Sri Lanka?", a: "Professional video shoots start at LKR 25,000 for a 1-minute video, LKR 35,000 for 1–3 minutes, and LKR 40,000 onwards for 5 minutes or longer. Full AI character videos start at LKR 15,000 for 1 minute, LKR 25,000 for 1–4 minutes, and LKR 30,000 onwards for 5 minutes or longer. Final pricing depends on concept, production requirements, locations, talent, equipment, and other project requirements." },
+  { q: "Do you come to our location to film the reels?", a: "Yes — for professional video shoots our team comes to your business, shop, restaurant, hotel, event or chosen spot anywhere in Sri Lanka, films on-site, and edits everything afterwards. You don't need a studio or any equipment of your own. AI character videos are produced digitally without an on-site visit." },
+  { q: "What kinds of reels do you create?", a: "Product reels, brand-story reels, founder and team clips, customer testimonials, behind-the-scenes footage, event coverage, food and restaurant reels, hotel and property walkthroughs, and promotional videos — all shot vertical for Instagram Reels, TikTok and Facebook Reels. We also create AI character videos for brands that want digital avatars and voice-overs." },
   { q: "Which areas in Sri Lanka do you cover?", a: "We film nationwide. Colombo shoots are free of travel charges. We also cover Greater Colombo (Gampaha, Kalutara, Negombo, Panadura), regional cities (Kandy, Galle, Kurunegala, Ratnapura), and outstation locations like Jaffna and Trincomalee, with a travel fee by distance." },
   { q: "Is filming really free within Colombo?", a: "Yes. There's no travel fee for shoots within Colombo. Outside Colombo we add a flat fee by distance: Greater Colombo +LKR 6,000, regional areas +LKR 12,000, and outstation locations quoted per trip." },
-  { q: "How long does it take to get the edited reels?", a: "Edited reels are usually delivered within a few days of the shoot. We handle cuts, transitions, colour, music and on-screen captions, and send each reel ready to post." },
-  { q: "Can one visit cover a whole month of content?", a: "That's exactly the idea. A single shoot can produce four or more reels — enough to post consistently for a month. It's the most cost-effective way to book, and it means one trip instead of several." },
+  { q: "How long does it take to get the edited videos?", a: "Edited videos are usually delivered within a few days of the shoot or script approval. We handle cuts, transitions, colour, music and on-screen captions, and send each video ready to post." },
+  { q: "Can one shoot cover a whole month of content?", a: "Yes. A single on-location shoot can produce multiple reels — enough to post consistently for a month. It's the most cost-effective way to book, and it means one trip instead of several." },
   { q: "Do you write captions in Sinhala?", a: "Yes. On-screen captions can be in Sinhala, English, or both — written by native writers so your reels connect with a local Sri Lankan audience." },
-  { q: "How many revisions do I get?", a: "Up to 2 rounds of revisions per reel are included. If you need more after that, extra edits are charged per revision." },
-  { q: "Can I add reel creation to a monthly package?", a: "Yes. On-location reels can be booked as a one-off shoot or added on top of any Cypher Digital social media management package for ongoing monthly content." },
+  { q: "How many revisions do I get?", a: "Up to 2 rounds of revisions per video are included. If you need more after that, extra edits are charged per revision." },
+  { q: "Can I add video production to a monthly package?", a: "Yes. Video production and AI character videos can be booked as one-off projects or added on top of any Cypher Digital social media management package for ongoing monthly content." },
 ];
+
 
 const serviceSchema = {
   "@context": "https://schema.org",
