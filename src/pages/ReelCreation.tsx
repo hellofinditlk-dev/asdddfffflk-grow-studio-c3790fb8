@@ -27,20 +27,36 @@ const steps = [
   { num: "03 / Deliver", title: "Edited & ready", desc: "We cut, caption and colour each reel, then send them ready to post. Up to 2 revisions included." },
 ];
 
-const pricing = [
-  { reels: "1 reel", total: "LKR 25,000", each: "25,000 each", popular: false },
-  { reels: "2 reels", total: "LKR 45,000", each: "22,500 each", popular: false },
-  { reels: "3 reels", total: "LKR 60,000", each: "20,000 each", popular: false },
-  { reels: "4 reels", total: "LKR 75,000", each: "18,750 each", popular: true },
-  { reels: "6 reels", total: "LKR 105,000", each: "17,500 each", popular: false },
+const videoPricing = [
+  { duration: "1 Minute", price: "LKR 25,000", includes: "Concept Development, Script Writing, Video Crew & Editing" },
+  { duration: "1 – 3 Minutes", price: "LKR 35,000", includes: "Concept Development, Script Writing, Video Crew & Editing" },
+  { duration: "5 Minutes & Above", price: "LKR 40,000 onwards", includes: "Concept Development, Script Writing, Video Crew & Editing" },
 ];
 
-const travel = [
-  { area: "Within Colombo", note: "All Colombo city locations", fee: "Free" },
-  { area: "Greater Colombo", note: "Gampaha, Kalutara, Negombo, Panadura", fee: "+LKR 6,000" },
-  { area: "Regional", note: "Kandy, Galle, Kurunegala, Ratnapura", fee: "+LKR 12,000" },
-  { area: "Outstation", note: "Jaffna, Trincomalee, deep south", fee: "Quoted" },
+const aiCharacterPricing = [
+  { duration: "1 Minute", price: "LKR 15,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "1 – 4 Minutes", price: "LKR 25,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "5 Minutes & Above", price: "LKR 30,000 onwards", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
 ];
+
+const videoPackageIncludes = [
+  "Concept Development",
+  "Script Writing",
+  "Professional Video Crew",
+  "Video Shooting",
+  "Professional Video Editing",
+];
+
+const aiCharacterPackageIncludes = [
+  "AI Character Creation",
+  "AI Voice-over",
+  "Script/Content Integration",
+  "AI Video Production",
+  "Video Editing",
+];
+
+
+
 
 const included = [
   { icon: "📍", title: "On-site filming", desc: "We travel to your location and shoot — no studio booking needed." },
@@ -63,22 +79,23 @@ const related = [
 ];
 
 const faqs = [
-  { q: "How much does social media reel creation cost in Sri Lanka?", a: "On-location reels are priced per visit, from LKR 25,000 for one filmed and fully edited reel. The more you book in one visit, the less each costs — 3 reels LKR 60,000, 4 reels LKR 75,000, 6 reels LKR 105,000. Filming within Colombo is free; a travel fee applies elsewhere (Greater Colombo +LKR 6,000, regional +LKR 12,000, outstation quoted)." },
-  { q: "Do you come to our location to film the reels?", a: "Yes — this is a fully on-location service. Our team comes to your business, shop, restaurant, hotel, event or chosen spot anywhere in Sri Lanka, films on-site, and edits everything afterwards. You don't need a studio or any equipment of your own." },
-  { q: "What kinds of reels do you create?", a: "Product reels, brand-story reels, founder and team clips, customer testimonials, behind-the-scenes footage, event coverage, food and restaurant reels, hotel and property walkthroughs, and promotional videos — all shot vertical for Instagram Reels, TikTok and Facebook Reels." },
+  { q: "How much does video production cost in Sri Lanka?", a: "Professional video shoots start at LKR 25,000 for a 1-minute video, LKR 35,000 for 1–3 minutes, and LKR 40,000 onwards for 5 minutes or longer. Full AI character videos start at LKR 15,000 for 1 minute, LKR 25,000 for 1–4 minutes, and LKR 30,000 onwards for 5 minutes or longer. Final pricing depends on concept, production requirements, locations, talent, equipment, and other project requirements." },
+  { q: "Do you come to our location to film the reels?", a: "Yes — for professional video shoots our team comes to your business, shop, restaurant, hotel, event or chosen spot anywhere in Sri Lanka, films on-site, and edits everything afterwards. You don't need a studio or any equipment of your own. AI character videos are produced digitally without an on-site visit." },
+  { q: "What kinds of reels do you create?", a: "Product reels, brand-story reels, founder and team clips, customer testimonials, behind-the-scenes footage, event coverage, food and restaurant reels, hotel and property walkthroughs, and promotional videos — all shot vertical for Instagram Reels, TikTok and Facebook Reels. We also create AI character videos for brands that want digital avatars and voice-overs." },
   { q: "Which areas in Sri Lanka do you cover?", a: "We film nationwide. Colombo shoots are free of travel charges. We also cover Greater Colombo (Gampaha, Kalutara, Negombo, Panadura), regional cities (Kandy, Galle, Kurunegala, Ratnapura), and outstation locations like Jaffna and Trincomalee, with a travel fee by distance." },
   { q: "Is filming really free within Colombo?", a: "Yes. There's no travel fee for shoots within Colombo. Outside Colombo we add a flat fee by distance: Greater Colombo +LKR 6,000, regional areas +LKR 12,000, and outstation locations quoted per trip." },
-  { q: "How long does it take to get the edited reels?", a: "Edited reels are usually delivered within a few days of the shoot. We handle cuts, transitions, colour, music and on-screen captions, and send each reel ready to post." },
-  { q: "Can one visit cover a whole month of content?", a: "That's exactly the idea. A single shoot can produce four or more reels — enough to post consistently for a month. It's the most cost-effective way to book, and it means one trip instead of several." },
+  { q: "How long does it take to get the edited videos?", a: "Edited videos are usually delivered within a few days of the shoot or script approval. We handle cuts, transitions, colour, music and on-screen captions, and send each video ready to post." },
+  { q: "Can one shoot cover a whole month of content?", a: "Yes. A single on-location shoot can produce multiple reels — enough to post consistently for a month. It's the most cost-effective way to book, and it means one trip instead of several." },
   { q: "Do you write captions in Sinhala?", a: "Yes. On-screen captions can be in Sinhala, English, or both — written by native writers so your reels connect with a local Sri Lankan audience." },
-  { q: "How many revisions do I get?", a: "Up to 2 rounds of revisions per reel are included. If you need more after that, extra edits are charged per revision." },
-  { q: "Can I add reel creation to a monthly package?", a: "Yes. On-location reels can be booked as a one-off shoot or added on top of any Cypher Digital social media management package for ongoing monthly content." },
+  { q: "How many revisions do I get?", a: "Up to 2 rounds of revisions per video are included. If you need more after that, extra edits are charged per revision." },
+  { q: "Can I add video production to a monthly package?", a: "Yes. Video production and AI character videos can be booked as one-off projects or added on top of any Cypher Digital social media management package for ongoing monthly content." },
 ];
+
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "On-Location Social Media Reel Creation",
+  serviceType: "On-Location Social Media Reel Creation and AI Character Videos",
   provider: {
     "@type": "LocalBusiness",
     name: "Cypher Digital",
@@ -88,8 +105,9 @@ const serviceSchema = {
     url: "https://cypherdigital.lk/",
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
-  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "25000", highPrice: "105000", offerCount: "5" },
+  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "15000", highPrice: "40000", offerCount: "6" },
 };
+
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -113,10 +131,11 @@ const scrollToPricing = () => {
 const ReelCreation = () => (
   <>
     <SEOHead
-      title="Reel Creation Sri Lanka | On-Location Shoots from LKR 25,000"
-      description="On-location social media reel creation in Sri Lanka. We come to you, film on-site and fully edit Instagram, TikTok & Facebook Reels — from LKR 25,000 per visit, free filming within Colombo."
+      title="Reel Creation Sri Lanka | Video Production from LKR 15,000"
+      description="Professional video shoots and AI character videos in Sri Lanka. On-location crew filming, script-to-edit delivery, and AI avatar production — from LKR 15,000."
       canonical="https://cypherdigital.lk/reel-creation-sri-lanka"
     />
+
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -160,9 +179,10 @@ const ReelCreation = () => (
               </a>
             </div>
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7">
-              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">LKR 25,000</span>
-              <span className="font-mono text-[13px] text-[#6A7385]">per reel · filmed &amp; edited · free within Colombo</span>
+              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 15,000</span>
+              <span className="font-mono text-[13px] text-[#6A7385]">AI character videos · professional shoots from LKR 25,000</span>
             </div>
+
             <button
               onClick={scrollToPricing}
               className="inline-flex items-center gap-2 mt-5 text-[13px] font-semibold text-[#14203B] hover:text-[#FF4438] transition-colors"
@@ -233,11 +253,11 @@ const ReelCreation = () => (
     {/* INTRO */}
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">On-location reel creation in Sri Lanka</h2>
+        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Reel and video creation in Sri Lanka</h2>
         <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
           <p>
             Short-form video is how Sri Lankan brands get discovered in 2026 — and the reels that actually perform are shot on location, not pulled from stock.
-            Cypher Digital is a Colombo-based video and social team creating on-location reels for businesses across Sri Lanka. We come to you, film real footage
+            Cypher Digital is a Colombo-based video and social team creating on-location reels and videos for businesses across Sri Lanka. We come to you, film real footage
             of your product, space, food, team or event, and hand back fully edited vertical videos ready for Instagram Reels, TikTok and Facebook Reels.
           </p>
           <p>
@@ -247,12 +267,13 @@ const ReelCreation = () => (
             many clients combine both.
           </p>
           <p>
-            Pricing is simple and public. One filmed-and-edited reel starts at LKR 25,000, and the more you shoot in a single visit, the lower the cost per reel.
-            Filming anywhere within Colombo is free of travel charges. Reels also plug straight into our{" "}
+            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 15,000 for 1 minute.
+            Rates are based on duration, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
             <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>,{" "}
             <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing</Link> and{" "}
             <Link to="/tiktok-marketing-sri-lanka" className="text-primary font-semibold hover:underline">TikTok marketing</Link> plans.
           </p>
+
         </div>
       </div>
     </section>
@@ -299,62 +320,82 @@ const ReelCreation = () => (
 
     {/* PRICING */}
     <section id="reel-pricing" className="py-12 md:py-16 bg-secondary border-y border-border scroll-mt-24">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-2">Transparent pricing</p>
-        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-3">Priced per visit — the more reels, the less each one costs</h2>
+        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-3">Real video production rates in Sri Lanka</h2>
         <p className="text-sm text-muted-foreground max-w-2xl mb-8">
-          Every reel is filmed on-site and fully edited. Book more in a single visit and your price per reel drops, because it's one trip for us.
+          Two clear options: on-location professional video shoots with our crew, or full AI character videos built from script to final edit. Final pricing may vary depending on the concept, production requirements, locations, talent, equipment, and other project requirements.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-5">
           <div className="bg-card border border-border rounded-2xl overflow-hidden">
-            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-              <span>Reels per visit</span><span>Filmed + edited</span>
+            <div className="px-5 py-4 border-b border-border bg-muted/40">
+              <h3 className="font-heading text-lg font-bold">Professional Video Shoot</h3>
+              <p className="text-xs text-muted-foreground mt-1">On-location crew, filming & editing</p>
             </div>
-            {pricing.map((p) => (
-              <div key={p.reels} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
-                <span className="text-sm font-semibold flex items-center gap-2">
-                  {p.reels}
-                  {p.popular && <span className="text-[10px] font-bold uppercase tracking-wider bg-[hsl(25,95%,53%)] !text-white px-2 py-0.5 rounded-full">Popular</span>}
-                </span>
+            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+              <span>Duration</span><span>Price</span>
+            </div>
+            {videoPricing.map((p) => (
+              <div key={p.duration} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
+                <span className="text-sm font-semibold">{p.duration}</span>
                 <span className="text-right">
-                  <span className="block font-heading text-base font-extrabold">{p.total}</span>
-                  <span className="block text-[11px] text-muted-foreground">{p.each}</span>
+                  <span className="block font-heading text-base font-extrabold">{p.price}</span>
+                  <span className="block text-[11px] text-muted-foreground">{p.includes}</span>
                 </span>
               </div>
             ))}
+            <div className="px-5 py-4 border-t border-border bg-muted/20">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">Package includes</p>
+              <ul className="grid grid-cols-2 gap-1.5 text-sm text-muted-foreground">
+                {videoPackageIncludes.map((item) => (
+                  <li key={item} className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-primary" /> {item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="bg-card border border-border rounded-2xl overflow-hidden">
-            <div className="px-5 py-3 border-b border-border text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">Travel</div>
-            {travel.map((t) => (
-              <div key={t.area} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border">
-                <span>
-                  <span className="block text-sm font-semibold">{t.area}</span>
-                  <span className="block text-[11px] text-muted-foreground">{t.note}</span>
+            <div className="px-5 py-4 border-b border-border bg-muted/40">
+              <h3 className="font-heading text-lg font-bold">Full AI Character Videos</h3>
+              <p className="text-xs text-muted-foreground mt-1">AI avatar, voice-over & production</p>
+            </div>
+            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+              <span>Duration</span><span>Price</span>
+            </div>
+            {aiCharacterPricing.map((p) => (
+              <div key={p.duration} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
+                <span className="text-sm font-semibold">{p.duration}</span>
+                <span className="text-right">
+                  <span className="block font-heading text-base font-extrabold">{p.price}</span>
+                  <span className="block text-[11px] text-muted-foreground">{p.includes}</span>
                 </span>
-                <span className="text-sm font-bold text-primary whitespace-nowrap">{t.fee}</span>
               </div>
             ))}
-            <div className="px-5 py-4 text-sm text-muted-foreground">
-              <strong className="text-foreground">Example quote:</strong> 4 reels in Galle = LKR 75,000 + LKR 12,000 travel = <strong className="text-foreground">LKR 87,000</strong>.
-              <span className="block mt-2 text-[11px]">Minimum booking LKR 25,000 · up to 2 revisions per reel · one visit, many reels.</span>
+            <div className="px-5 py-4 border-t border-border bg-muted/20">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">Package includes</p>
+              <ul className="grid grid-cols-2 gap-1.5 text-sm text-muted-foreground">
+                {aiCharacterPackageIncludes.map((item) => (
+                  <li key={item} className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-primary" /> {item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
 
         <div className="mt-6">
           <a
-            href={wa("Hi, I want a quote for on-location reel creation. My location is: ")}
+            href={wa("Hi, I want a quote for video production. My project is: ")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full sm:w-auto justify-center items-center gap-2 h-12 px-6 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
           >
-            Get my reel shoot quote on WhatsApp
+            Get my video quote on WhatsApp
           </a>
         </div>
       </div>
     </section>
+
 
     {/* INCLUDED */}
     <section className="py-12 md:py-16">
