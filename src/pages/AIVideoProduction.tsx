@@ -22,10 +22,16 @@ const AIVideoProduction = () => {
     { num: "05", title: "Delivery & Formatting", desc: "Final video delivered in 9:16, 1:1, and 16:9 — typically within 48 hours of brief approval." },
   ];
 
-  const packages = [
-    { name: "Starter", sub: "Short-form social content", price: "From LKR 18,000", features: ["1 × 30-second social reel", "AI script writing", "Subtitles / captions", "Licensed background music", "1 format export (9:16)", "2 rounds of revisions"], featured: false },
-    { name: "Growth", sub: "Brand + social content pack", price: "From LKR 54,000", features: ["1 × 60–90 sec brand video", "3 × social media reels", "AI voiceover (Sinhala or English)", "Motion graphics & lower-thirds", "3 format exports (9:16, 1:1, 16:9)", "3 rounds of revisions"], featured: true },
-    { name: "Enterprise", sub: "Full video production suite", price: "Custom quote", features: ["Multi-video campaign packages", "AI avatar presenter videos", "Dedicated editor & account manager", "On-site filming (Colombo & surrounds)", "TV commercial production", "Unlimited revisions"], featured: false },
+  const oneOffPackages = [
+    { name: "Quick Reel", sub: "One-off 15–30 second reel", price: "LKR 18,000", perVideo: null, features: ["1 × 15–30 sec reel", "Captions", "Licensed music", "2 revisions", "9:16 format export"], featured: false },
+    { name: "Pro Reel", sub: "One-off 60 sec reel/ad", price: "LKR 30,000", perVideo: null, features: ["1 × 60 sec reel/ad", "Voiceover", "Motion graphics", "3 revisions", "All format exports"], featured: true },
+    { name: "Brand Video", sub: "One-off 90 sec brand film", price: "LKR 45,000", perVideo: null, features: ["1 × 90 sec brand film", "All formats (9:16, 1:1, 16:9)", "3 revisions", "Script & voiceover", "Motion graphics"], featured: false },
+  ];
+
+  const monthlyPackages = [
+    { name: "Starter", sub: "4 × 30-sec reels per month", price: "LKR 60,000/month", perVideo: "~LKR 15,000 per video", features: ["4 × 30-sec reels/month", "Captions & music", "2 revisions per reel", "Consistent brand style", "Monthly content calendar"], featured: false },
+    { name: "Growth", sub: "8 reels + 1 brand video per month", price: "LKR 110,000/month", perVideo: "~LKR 11,000 per video", features: ["8 × 30-sec reels/month", "1 × 90-sec brand video/month", "Voiceover & motion graphics", "3 revisions per video", "Priority 48-hour delivery"], featured: true },
+    { name: "Pro", sub: "12 reels + 2 brand videos per month", price: "LKR 160,000/month", perVideo: "~LKR 9,500 per video", features: ["12 × 30-sec reels/month", "2 × 90-sec brand videos/month", "AI avatar & voiceover options", "Unlimited revisions", "Dedicated account manager"], featured: false },
   ];
 
   const whyUs = [
