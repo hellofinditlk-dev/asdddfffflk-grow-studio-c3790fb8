@@ -95,7 +95,7 @@ const faqs = [
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "On-Location Social Media Reel Creation",
+  serviceType: "On-Location Social Media Reel Creation and AI Character Videos",
   provider: {
     "@type": "LocalBusiness",
     name: "Cypher Digital",
@@ -105,8 +105,9 @@ const serviceSchema = {
     url: "https://cypherdigital.lk/",
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
-  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "25000", highPrice: "105000", offerCount: "5" },
+  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "15000", highPrice: "40000", offerCount: "6" },
 };
+
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -130,10 +131,11 @@ const scrollToPricing = () => {
 const ReelCreation = () => (
   <>
     <SEOHead
-      title="Reel Creation Sri Lanka | On-Location Shoots from LKR 25,000"
-      description="On-location social media reel creation in Sri Lanka. We come to you, film on-site and fully edit Instagram, TikTok & Facebook Reels — from LKR 25,000 per visit, free filming within Colombo."
+      title="Reel Creation Sri Lanka | Video Production from LKR 15,000"
+      description="Professional video shoots and AI character videos in Sri Lanka. On-location crew filming, script-to-edit delivery, and AI avatar production — from LKR 15,000."
       canonical="https://cypherdigital.lk/reel-creation-sri-lanka"
     />
+
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -177,9 +179,10 @@ const ReelCreation = () => (
               </a>
             </div>
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7">
-              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">LKR 25,000</span>
-              <span className="font-mono text-[13px] text-[#6A7385]">per reel · filmed &amp; edited · free within Colombo</span>
+              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 15,000</span>
+              <span className="font-mono text-[13px] text-[#6A7385]">AI character videos · professional shoots from LKR 25,000</span>
             </div>
+
             <button
               onClick={scrollToPricing}
               className="inline-flex items-center gap-2 mt-5 text-[13px] font-semibold text-[#14203B] hover:text-[#FF4438] transition-colors"
@@ -250,11 +253,11 @@ const ReelCreation = () => (
     {/* INTRO */}
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">On-location reel creation in Sri Lanka</h2>
+        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Reel and video creation in Sri Lanka</h2>
         <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
           <p>
             Short-form video is how Sri Lankan brands get discovered in 2026 — and the reels that actually perform are shot on location, not pulled from stock.
-            Cypher Digital is a Colombo-based video and social team creating on-location reels for businesses across Sri Lanka. We come to you, film real footage
+            Cypher Digital is a Colombo-based video and social team creating on-location reels and videos for businesses across Sri Lanka. We come to you, film real footage
             of your product, space, food, team or event, and hand back fully edited vertical videos ready for Instagram Reels, TikTok and Facebook Reels.
           </p>
           <p>
@@ -264,12 +267,13 @@ const ReelCreation = () => (
             many clients combine both.
           </p>
           <p>
-            Pricing is simple and public. One filmed-and-edited reel starts at LKR 25,000, and the more you shoot in a single visit, the lower the cost per reel.
-            Filming anywhere within Colombo is free of travel charges. Reels also plug straight into our{" "}
+            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 15,000 for 1 minute.
+            Rates are based on duration, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
             <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>,{" "}
             <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing</Link> and{" "}
             <Link to="/tiktok-marketing-sri-lanka" className="text-primary font-semibold hover:underline">TikTok marketing</Link> plans.
           </p>
+
         </div>
       </div>
     </section>
