@@ -320,62 +320,82 @@ const ReelCreation = () => (
 
     {/* PRICING */}
     <section id="reel-pricing" className="py-12 md:py-16 bg-secondary border-y border-border scroll-mt-24">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-primary mb-2">Transparent pricing</p>
-        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-3">Priced per visit — the more reels, the less each one costs</h2>
+        <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-3">Real video production rates in Sri Lanka</h2>
         <p className="text-sm text-muted-foreground max-w-2xl mb-8">
-          Every reel is filmed on-site and fully edited. Book more in a single visit and your price per reel drops, because it's one trip for us.
+          Two clear options: on-location professional video shoots with our crew, or full AI character videos built from script to final edit. Final pricing may vary depending on the concept, production requirements, locations, talent, equipment, and other project requirements.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-5">
           <div className="bg-card border border-border rounded-2xl overflow-hidden">
-            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-              <span>Reels per visit</span><span>Filmed + edited</span>
+            <div className="px-5 py-4 border-b border-border bg-muted/40">
+              <h3 className="font-heading text-lg font-bold">Professional Video Shoot</h3>
+              <p className="text-xs text-muted-foreground mt-1">On-location crew, filming & editing</p>
             </div>
-            {pricing.map((p) => (
-              <div key={p.reels} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
-                <span className="text-sm font-semibold flex items-center gap-2">
-                  {p.reels}
-                  {p.popular && <span className="text-[10px] font-bold uppercase tracking-wider bg-[hsl(25,95%,53%)] !text-white px-2 py-0.5 rounded-full">Popular</span>}
-                </span>
+            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+              <span>Duration</span><span>Price</span>
+            </div>
+            {videoPricing.map((p) => (
+              <div key={p.duration} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
+                <span className="text-sm font-semibold">{p.duration}</span>
                 <span className="text-right">
-                  <span className="block font-heading text-base font-extrabold">{p.total}</span>
-                  <span className="block text-[11px] text-muted-foreground">{p.each}</span>
+                  <span className="block font-heading text-base font-extrabold">{p.price}</span>
+                  <span className="block text-[11px] text-muted-foreground">{p.includes}</span>
                 </span>
               </div>
             ))}
+            <div className="px-5 py-4 border-t border-border bg-muted/20">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">Package includes</p>
+              <ul className="grid grid-cols-2 gap-1.5 text-sm text-muted-foreground">
+                {videoPackageIncludes.map((item) => (
+                  <li key={item} className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-primary" /> {item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="bg-card border border-border rounded-2xl overflow-hidden">
-            <div className="px-5 py-3 border-b border-border text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">Travel</div>
-            {travel.map((t) => (
-              <div key={t.area} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border">
-                <span>
-                  <span className="block text-sm font-semibold">{t.area}</span>
-                  <span className="block text-[11px] text-muted-foreground">{t.note}</span>
+            <div className="px-5 py-4 border-b border-border bg-muted/40">
+              <h3 className="font-heading text-lg font-bold">Full AI Character Videos</h3>
+              <p className="text-xs text-muted-foreground mt-1">AI avatar, voice-over & production</p>
+            </div>
+            <div className="px-5 py-3 border-b border-border flex justify-between text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+              <span>Duration</span><span>Price</span>
+            </div>
+            {aiCharacterPricing.map((p) => (
+              <div key={p.duration} className="flex items-center justify-between gap-3 px-5 py-4 border-b border-border last:border-0">
+                <span className="text-sm font-semibold">{p.duration}</span>
+                <span className="text-right">
+                  <span className="block font-heading text-base font-extrabold">{p.price}</span>
+                  <span className="block text-[11px] text-muted-foreground">{p.includes}</span>
                 </span>
-                <span className="text-sm font-bold text-primary whitespace-nowrap">{t.fee}</span>
               </div>
             ))}
-            <div className="px-5 py-4 text-sm text-muted-foreground">
-              <strong className="text-foreground">Example quote:</strong> 4 reels in Galle = LKR 75,000 + LKR 12,000 travel = <strong className="text-foreground">LKR 87,000</strong>.
-              <span className="block mt-2 text-[11px]">Minimum booking LKR 25,000 · up to 2 revisions per reel · one visit, many reels.</span>
+            <div className="px-5 py-4 border-t border-border bg-muted/20">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">Package includes</p>
+              <ul className="grid grid-cols-2 gap-1.5 text-sm text-muted-foreground">
+                {aiCharacterPackageIncludes.map((item) => (
+                  <li key={item} className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-primary" /> {item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
 
         <div className="mt-6">
           <a
-            href={wa("Hi, I want a quote for on-location reel creation. My location is: ")}
+            href={wa("Hi, I want a quote for video production. My project is: ")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full sm:w-auto justify-center items-center gap-2 h-12 px-6 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm font-semibold border-none transition-colors"
           >
-            Get my reel shoot quote on WhatsApp
+            Get my video quote on WhatsApp
           </a>
         </div>
       </div>
     </section>
+
 
     {/* INCLUDED */}
     <section className="py-12 md:py-16">
