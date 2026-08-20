@@ -27,13 +27,34 @@ const steps = [
   { num: "03 / Deliver", title: "Edited & ready", desc: "We cut, caption and colour each reel, then send them ready to post. Up to 2 revisions included." },
 ];
 
-const pricing = [
-  { reels: "1 reel", total: "LKR 25,000", each: "25,000 each", popular: false },
-  { reels: "2 reels", total: "LKR 45,000", each: "22,500 each", popular: false },
-  { reels: "3 reels", total: "LKR 60,000", each: "20,000 each", popular: false },
-  { reels: "4 reels", total: "LKR 75,000", each: "18,750 each", popular: true },
-  { reels: "6 reels", total: "LKR 105,000", each: "17,500 each", popular: false },
+const videoPricing = [
+  { duration: "1 Minute", price: "LKR 25,000", includes: "Concept Development, Script Writing, Video Crew & Editing" },
+  { duration: "1 – 3 Minutes", price: "LKR 35,000", includes: "Concept Development, Script Writing, Video Crew & Editing" },
+  { duration: "5 Minutes & Above", price: "LKR 40,000 onwards", includes: "Concept Development, Script Writing, Video Crew & Editing" },
 ];
+
+const aiCharacterPricing = [
+  { duration: "1 Minute", price: "LKR 15,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "1 – 4 Minutes", price: "LKR 25,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "5 Minutes & Above", price: "LKR 30,000 onwards", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+];
+
+const videoPackageIncludes = [
+  "Concept Development",
+  "Script Writing",
+  "Professional Video Crew",
+  "Video Shooting",
+  "Professional Video Editing",
+];
+
+const aiCharacterPackageIncludes = [
+  "AI Character Creation",
+  "AI Voice-over",
+  "Script/Content Integration",
+  "AI Video Production",
+  "Video Editing",
+];
+
 
 const travel = [
   { area: "Within Colombo", note: "All Colombo city locations", fee: "Free" },
