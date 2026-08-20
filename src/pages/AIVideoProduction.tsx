@@ -271,35 +271,74 @@ const AIVideoProduction = () => {
           <section id="packages" style={{ padding: "48px 0", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Pricing</div>
             <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Packages & Pricing in Sri Lanka</h2>
-            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Transparent, fixed-price packages designed for Sri Lankan businesses. All packages include scripting, editing, music, captions & revisions.</p>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-              {packages.map((p) => (
-                <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
-                  {p.featured && (
-                    <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Most Popular</div>
-                  )}
-                  <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
-                  <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
-                  <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 18 }}>{p.price}</div>
-                  <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
-                    {p.features.map((f) => (
-                      <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
-                        <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} video package`)}
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
-                  >
-                    Get Started
-                  </a>
-                </div>
-              ))}
+            <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Transparent, fixed-price packages designed for Sri Lankan businesses. Choose a one-off project or a recurring monthly content plan.</p>
+
+            <div style={{ marginBottom: 36 }}>
+              <h3 className="syne" style={{ fontWeight: 700, fontSize: 18, marginBottom: 16 }}>One-off video packages</h3>
+              <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+                {oneOffPackages.map((p) => (
+                  <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
+                    {p.featured && (
+                      <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Most Popular</div>
+                    )}
+                    <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
+                    <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
+                    <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 18 }}>{p.price}</div>
+                    <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
+                      {p.features.map((f) => (
+                        <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
+                          <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} AI video package`)}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p style={{ fontSize: 13, color: "#666", marginTop: 20, textAlign: "center" }}>Not sure which package is right for you? WhatsApp us on <a href={waBase + encodeURIComponent("Hi, I need help choosing an AI video package")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", fontWeight: 600 }}>+94 70 177 2626</a> and we'll recommend the best option for your budget and goals.</p>
+
+            <div>
+              <h3 className="syne" style={{ fontWeight: 700, fontSize: 18, marginBottom: 6 }}>Monthly content packages <span style={{ color: "#FF6B2B", fontSize: 12, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.5px" }}>Recurring — best value</span></h3>
+              <p style={{ fontSize: 13, color: "#666", marginBottom: 16 }}>Lock in a lower per-video rate and keep your brand visible every week.</p>
+              <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+                {monthlyPackages.map((p) => (
+                  <div key={p.name} className={`pkg-card${p.featured ? " featured" : ""}`}>
+                    {p.featured && (
+                      <div style={{ position: "absolute", top: -11, left: "50%", transform: "translateX(-50%)", background: "#FF6B2B", color: "#fff", fontSize: 10, fontWeight: 700, padding: "4px 14px", borderRadius: 10, whiteSpace: "nowrap" }}>Best Value</div>
+                    )}
+                    <h3 className="syne" style={{ fontWeight: 700, fontSize: 15, margin: 0, marginBottom: 3 }}>{p.name}</h3>
+                    <div style={{ fontSize: 11, color: "#999", marginBottom: 4 }}>{p.sub}</div>
+                    <div className="syne" style={{ fontWeight: 800, fontSize: 22, marginBottom: 2 }}>{p.price}</div>
+                    {p.perVideo && (
+                      <div style={{ fontSize: 12, color: "#22c55e", fontWeight: 600, marginBottom: 16 }}>{p.perVideo}</div>
+                    )}
+                    <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8, padding: 0, margin: 0 }}>
+                      {p.features.map((f) => (
+                        <li key={f} style={{ fontSize: 13, color: "#555", display: "flex", alignItems: "center", gap: 7 }}>
+                          <span style={{ color: "#22c55e", fontSize: 14 }}>✓</span> {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={waBase + encodeURIComponent(`Hi, I'm interested in the ${p.name} monthly AI video package`)}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ marginTop: 20, display: "block", textAlign: "center", padding: "10px", borderRadius: 8, background: p.featured ? "#FF6B2B" : "transparent", color: p.featured ? "#fff" : "#FF6B2B", border: p.featured ? "none" : "1px solid rgba(255,107,43,0.4)", fontSize: 13, fontWeight: 600, textDecoration: "none" }}
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <p style={{ fontSize: 13, color: "#666", marginTop: 28, textAlign: "center" }}>Not sure which package is right for you? WhatsApp us on <a href={waBase + encodeURIComponent("Hi, I need help choosing an AI video package")} target="_blank" rel="noreferrer" style={{ color: "#FF6B2B", fontWeight: 600 }}>+94 70 177 2626</a> and we'll recommend the best option for your budget and goals.</p>
           </section>
 
           {/* WHY US */}
