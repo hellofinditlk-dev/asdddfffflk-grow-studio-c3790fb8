@@ -34,9 +34,9 @@ const videoPricing = [
 ];
 
 const aiCharacterPricing = [
-  { duration: "1 Minute", price: "LKR 15,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
-  { duration: "1 – 4 Minutes", price: "LKR 25,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
-  { duration: "5 Minutes & Above", price: "LKR 30,000 onwards", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "15–30 sec reel", price: "LKR 18,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "60 sec reel/ad", price: "LKR 30,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
+  { duration: "90 sec brand video", price: "LKR 45,000", includes: "AI Character Creation, AI Voice-over, Video Production & Editing" },
 ];
 
 const videoPackageIncludes = [
@@ -79,7 +79,7 @@ const related = [
 ];
 
 const faqs = [
-  { q: "How much does video production cost in Sri Lanka?", a: "Professional video shoots start at LKR 25,000 for a 1-minute video, LKR 35,000 for 1–3 minutes, and LKR 40,000 onwards for 5 minutes or longer. Full AI character videos start at LKR 15,000 for 1 minute, LKR 25,000 for 1–4 minutes, and LKR 30,000 onwards for 5 minutes or longer. Final pricing depends on concept, production requirements, locations, talent, equipment, and other project requirements." },
+  { q: "How much does video production cost in Sri Lanka?", a: "Professional video shoots start at LKR 25,000 for a 1-minute video, LKR 35,000 for 1–3 minutes, and LKR 40,000 onwards for 5 minutes or longer. Full AI character videos start at LKR 18,000 for a 15–30 second reel, LKR 30,000 for a 60 second reel/ad, and LKR 45,000 for a 90 second brand video. Final pricing depends on concept, production requirements, locations, talent, equipment, and other project requirements." },
   { q: "Do you come to our location to film the reels?", a: "Yes — for professional video shoots our team comes to your business, shop, restaurant, hotel, event or chosen spot anywhere in Sri Lanka, films on-site, and edits everything afterwards. You don't need a studio or any equipment of your own. AI character videos are produced digitally without an on-site visit." },
   { q: "What kinds of reels do you create?", a: "Product reels, brand-story reels, founder and team clips, customer testimonials, behind-the-scenes footage, event coverage, food and restaurant reels, hotel and property walkthroughs, and promotional videos — all shot vertical for Instagram Reels, TikTok and Facebook Reels. We also create AI character videos for brands that want digital avatars and voice-overs." },
   { q: "Which areas in Sri Lanka do you cover?", a: "We film nationwide. Colombo shoots are free of travel charges. We also cover Greater Colombo (Gampaha, Kalutara, Negombo, Panadura), regional cities (Kandy, Galle, Kurunegala, Ratnapura), and outstation locations like Jaffna and Trincomalee, with a travel fee by distance." },
@@ -105,7 +105,7 @@ const serviceSchema = {
     url: "https://cypherdigital.lk/",
   },
   areaServed: { "@type": "Country", name: "Sri Lanka" },
-  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "15000", highPrice: "40000", offerCount: "6" },
+  offers: { "@type": "AggregateOffer", priceCurrency: "LKR", lowPrice: "18000", highPrice: "40000", offerCount: "6" },
 };
 
 
@@ -179,7 +179,7 @@ const ReelCreation = () => (
               </a>
             </div>
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mt-7">
-              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 15,000</span>
+              <span className="font-heading text-[26px] font-extrabold text-[#14203B]">From LKR 18,000</span>
               <span className="font-mono text-[13px] text-[#6A7385]">AI character videos · professional shoots from LKR 25,000</span>
             </div>
 
@@ -267,8 +267,8 @@ const ReelCreation = () => (
             many clients combine both.
           </p>
           <p>
-            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 15,000 for 1 minute.
-            Rates are based on duration, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
+            Pricing is simple and public. Professional video shoots start at LKR 25,000 for a 1-minute video, and full AI character videos start at LKR 18,000 for a 15–30 second reel.
+            Rates are based on format, so you know exactly what you pay before you book. Reels also plug straight into our{" "}
             <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management</Link>,{" "}
             <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing</Link> and{" "}
             <Link to="/tiktok-marketing-sri-lanka" className="text-primary font-semibold hover:underline">TikTok marketing</Link> plans.
