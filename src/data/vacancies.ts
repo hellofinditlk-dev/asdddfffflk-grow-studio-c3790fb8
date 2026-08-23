@@ -1729,7 +1729,155 @@ export const vacancies: Vacancy[] = [
     datePosted: "2026-06-23",
     lastUpdated: "2026-07-29",
   },
+  {
+    slug: "mobile-content-creator-jobs-sri-lanka",
+    title: "Mobile Content Creator",
+    shortTitle: "Mobile Content Creator",
+    h1: "Mobile Content Creator Jobs in Sri Lanka — Shoot, Edit & Post for 800+ Brands",
+    metaTitle: "Mobile Content Creator Jobs in Sri Lanka 2026 | LKR 45K–120K | Cypher Digital",
+    metaDescription:
+      "Hiring a Mobile Content Creator in Colombo, Sri Lanka. Shoot, edit and post Reels, TikToks & short-form video for 800+ brands on a smartphone — no pro camera, no graphic design needed. LKR 45K–120K/month. Apply on WhatsApp.",
+    icon: Film,
+    type: "Full-time / Part-time / Freelance",
+    employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
+    location: "Colombo, Sri Lanka",
+    summary:
+      "Go out to client locations, shoot Reels and TikToks on a phone, edit them and get them posted for 800+ Sri Lankan brands. One person, the whole content flow — behind the camera. No pro gear, no graphic design, no need to be an influencer.",
+    salaryRange: { min: 45000, max: 120000, currency: "LKR", unit: "MONTH" },
+    monthsExperience: 0,
+    educationRequirement: "no requirements",
+    skills: [
+      "Smartphone videography",
+      "Reels & TikTok content creation",
+      "CapCut editing",
+      "Premiere Pro / DaVinci Resolve",
+      "Short-form video editing",
+      "Social media publishing",
+      "Meta Ads Manager (plus)",
+      "Google Ads basics (plus)",
+    ],
+    kwIntro:
+      "Looking for mobile content creator jobs in Sri Lanka? Cypher Digital is hiring a phone-first content creator in Colombo to shoot, edit and post Reels, TikToks and short-form video for 800+ Sri Lankan brands. Full-time, part-time and freelance content creator jobs in Colombo available — no professional camera and no graphic design required.",
+    seoIntro: [
+      "Cypher Digital is hiring a Mobile Content Creator in Sri Lanka to own the whole content flow for our clients. You'll travel to client locations across Colombo, shoot Reels, TikToks, short-form videos and photos on a smartphone, edit that footage into finished content, and help post it to Facebook, Instagram and TikTok.",
+      "This is a behind-the-camera role. You film content for our clients' brands — you don't need to be an on-camera influencer or the face of the videos. No professional camera equipment is required, and graphic design is not part of this role; our design team handles graphics. We just need someone who can go out, get the shot, cut it, and get it live.",
+      "Value addition: if you also know your way around Meta (Facebook & Instagram) and Google advertising — posting and boosting ads — that's a big plus and helps you grow faster here.",
+    ],
+    salaryGuide: {
+      intro: [
+        "Mobile content creator salaries in Sri Lanka depend far more on your portfolio than on your qualifications. Creators who can both film cleanly on a phone and cut fast in CapCut or Premiere Pro sit at the top of the market range in Colombo.",
+        "At Cypher Digital the role pays LKR 45,000–120,000 per month, with full-time, part-time and freelance arrangements available. A page or reel showing real content raises your starting offer more than any certificate — and being comfortable posting or boosting on Meta and Google lifts you toward the top of the range.",
+      ],
+      levels: [
+        { name: "Mobile Content Creator", exp: "0–18 months", salary: "LKR 45K–120K/mo" },
+        { name: "Senior Content Creator", exp: "1.5–3 years", salary: "LKR 90K–160K/mo" },
+        { name: "Content Lead / Producer", exp: "3+ years", salary: "LKR 150K–250K/mo" },
+      ],
+      note: "No degree needed. We hire on your portfolio and your eye for content. If you already shoot, edit and post Reels or TikToks — even for your own page — that counts as experience.",
+    },
+    softwareSkills: {
+      intro:
+        "This is a phone-first role. You don't need a professional camera or design software — you need to shoot well on a smartphone and cut short-form video fast.",
+      items: [
+        { icon: "📱", name: "Smartphone camera", desc: "Framing, light and movement on a phone — the primary tool for every shoot you go on." },
+        { icon: "✂️", name: "CapCut", desc: "Fast Reels and TikTok edits, captions, trending audio and transitions. The daily workhorse." },
+        { icon: "🎞️", name: "Premiere Pro / DaVinci Resolve", desc: "For longer or more polished cuts when a client campaign needs it." },
+        { icon: "📲", name: "VN / InShot", desc: "Quick mobile edits on location so content can go live the same day." },
+        { icon: "📤", name: "Meta Business Suite", desc: "Scheduling and publishing finished content to Facebook and Instagram pages." },
+        { icon: "📈", name: "Meta Ads Manager", desc: "Posting and boosting ads — a strong value addition that lifts your pay and growth." },
+      ],
+    },
+    portfolioSteps: {
+      intro:
+        "No formal experience? Here's how to build a content portfolio that gets you hired for mobile content creator jobs in Sri Lanka — all on a phone.",
+      steps: [
+        "Shoot and edit 5 short Reels for local businesses you already visit — a café, a salon, a clothing shop, a gym, a restaurant.",
+        "Post them on your own Instagram or TikTok so we can see the finished, published result — not just raw files.",
+        "Show variety: one food shoot, one product shoot, one behind-the-scenes, one people/lifestyle piece, one trend-based edit.",
+        "Keep the cuts tight — 15 to 30 seconds, captions on, hook in the first 2 seconds.",
+        "Send us the link on WhatsApp with the role you want. A personal page counts as a portfolio.",
+      ],
+    },
+    careerPath: {
+      steps: [
+        { title: "Mobile Content Creator", salary: "LKR 45K–120K/mo", exp: "0–18 months" },
+        { title: "Senior Content Creator", salary: "LKR 90K–160K/mo", exp: "1.5–3 years" },
+        { title: "Content Lead / Producer", salary: "LKR 150K–250K/mo", exp: "3+ years" },
+      ],
+      note:
+        "With live campaigns for 800+ brands, our creators get more real shooting, editing and posting reps in a year than most get in three. Strong creators regularly move up a level within 12–18 months.",
+    },
+    dayInLife: {
+      intro: "What the job actually looks like — filming, cutting and publishing real content for real Sri Lankan brands.",
+      items: [
+        { time: "9:00 AM", task: "Check the shoot schedule and content calendar — confirm locations, shot lists and client briefs for the day." },
+        { time: "10:00 AM", task: "Go on location to a client business in Colombo — restaurant, salon, showroom, hotel or fashion store — and film short-form video on a phone." },
+        { time: "12:00 PM", task: "Capture behind-the-scenes, product, food and lifestyle photos that feed social pages and ad campaigns." },
+        { time: "2:00 PM", task: "Edit the footage into finished Reels, TikToks and short-form videos in CapCut or Premiere Pro." },
+        { time: "4:00 PM", task: "Get finished content live on Facebook, Instagram and TikTok — captions, hashtags, correct formats." },
+        { time: "5:00 PM", task: "Boost a top-performing post on Meta Ads and review yesterday's content performance with the social team." },
+      ],
+    },
+    duties: [
+      "Travel to client businesses across Colombo and film Reels, TikToks and short-form video on a smartphone",
+      "Capture behind-the-scenes, product, food and lifestyle photos for social pages and ad campaigns",
+      "Edit your own footage into finished short-form content in CapCut, Premiere Pro or similar",
+      "Publish finished content to Facebook, Instagram and TikTok in the right formats",
+      "Direct people and subjects on the spot to get usable, natural footage",
+      "Keep up with Reels and TikTok trends, formats and audio so content stays relevant",
+      "Work to each client's brand tone and content calendar alongside the social media team",
+      "Optionally post and boost Meta ads — a welcome value addition, not a requirement",
+    ],
+    requirements: [
+      "Strong smartphone photo and video skills — framing, light and movement",
+      "Ability to edit short-form video (CapCut, VN, InShot, Premiere Pro or DaVinci Resolve)",
+      "Willingness to travel to client locations — this is core to the job",
+      "Confidence directing people and subjects on the spot",
+      "A real feel for Reels and TikTok formats and trends",
+      "Nice to have: comfortable posting and publishing to Facebook, Instagram and TikTok",
+      "Nice to have: your own gimbal, mini tripod or clip-on mic",
+      "Nice to have: own transport or a driving licence",
+      "Nice to have: Meta Ads Manager, Facebook & Instagram ads or Google Ads basics",
+      "No degree needed and no graphic design required — our designers handle that",
+    ],
+    perks: [
+      "LKR 45,000–120,000/month with full-time, part-time or freelance arrangements",
+      "Phone-first role — no professional camera equipment needed",
+      "Shoot for 800+ brands across restaurants, fashion, hotels and real estate — variety that builds your eye fast",
+      "Your work ships: what you shoot, edit and post goes live on real pages and paid campaigns in days, not months",
+      "Part of Cypher360 — Sri Lanka's most integrated marketing group",
+      "WhatsApp-based hiring, reply within 24 hours",
+    ],
+    whyJoin: [
+      { title: "800+ brands, real shoots", body: "Real shoots across restaurants, fashion, hotels, real estate and more — the variety builds your eye faster than any single-brand role." },
+      { title: "Your work ships", body: "What you shoot, edit and post goes live on real pages and paid campaigns in days, not months." },
+      { title: "Fast growth", body: "Creators regularly move up a level within 12–18 months on the sheer volume of campaigns we run." },
+    ],
+    faqs: [
+      { q: "What does a Mobile Content Creator do at Cypher Digital?", a: "You travel to client businesses across Colombo, shoot Reels, TikToks, short-form videos and photos on a smartphone, edit that footage into finished content, and help post it to social media. You own each piece from filming to final cut to publishing." },
+      { q: "Do I need graphic design skills?", a: "No. Graphic design is not part of this role — our design team handles graphics. Your focus is shooting, editing and getting content posted." },
+      { q: "Is knowing Meta or Google Ads useful for this role?", a: "Yes — it's a strong value addition. If you can post and boost ads on Facebook and Instagram, and know your way around Meta Ads Manager or Google Ads, that's a big plus. It's not required to start, but it helps you earn more and grow faster." },
+      { q: "Do I have to appear in the videos or be an influencer?", a: "No. This is a behind-the-camera role. You film content for our clients' businesses — you don't need to be an on-camera influencer or the face of the videos." },
+      { q: "How is this different from the Video Editor role?", a: "The Video Editor role is desk-based editing — cutting footage that has already been captured. The Mobile Content Creator role is for someone who goes out on location to film the footage, edits it, and gets it posted end to end." },
+      { q: "Do I need a professional camera to apply?", a: "No. This is a phone-first role. A good smartphone camera, a strong eye and the confidence to capture great content on location are what matter most." },
+      { q: "What is the salary for a Mobile Content Creator in Sri Lanka?", a: "At Cypher Digital the role pays LKR 45,000–120,000 per month depending on your portfolio, shooting and editing skill, and extras like Meta ads know-how. Full-time, part-time and freelance arrangements are available." },
+      { q: "Do I need experience or a degree?", a: "No degree required. We hire on your portfolio and your eye for content. If you already shoot, edit and post Reels or TikTok — even for your own page — that counts as experience. Freshers and students can apply." },
+      { q: "How do I apply for the Mobile Content Creator job?", a: "Send your name, a link to your content (Instagram, TikTok or a portfolio) and the role you want to +94 70 177 2626 on WhatsApp, or use the form on this page. We reply within 24 hours." },
+    ],
+    internalLinks: [
+      { label: "Video Editor jobs in Sri Lanka", href: "/careers/video-editor-jobs-sri-lanka", desc: "A desk-based editing role — cut footage that's already captured into finished videos and ads." },
+      { label: "Content Specialist jobs in Sri Lanka", href: "/careers/content-specialist-jobs-sri-lanka", desc: "If writing and content strategy is more your thing than shooting." },
+      { label: "Social media jobs in Sri Lanka", href: "/careers/social-media-jobs-sri-lanka", desc: "Manage the pages your content goes live on." },
+      { label: "All open roles at Cypher Digital", href: "/careers", desc: "Browse every vacancy — design, video, paid ads, sales and more." },
+      { label: "Reel creation in Sri Lanka", href: "/reel-creation-sri-lanka", desc: "See the kind of Reels and short-form content you'd be producing for clients." },
+    ],
+    whatsappMessage: "Hi, I'm applying for the Mobile Content Creator position at Cypher Digital. Here is a link to my content:",
+    whatsappCta: "Apply for Mobile Content Creator",
+    datePosted: "2026-08-23",
+    lastUpdated: "2026-08-23",
+  },
 ];
+
 
 export const getVacancyBySlug = (slug?: string) =>
   vacancies.find((v) => v.slug === slug);

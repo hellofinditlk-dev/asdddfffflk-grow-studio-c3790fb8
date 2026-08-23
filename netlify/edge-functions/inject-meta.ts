@@ -732,6 +732,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Content Specialist jobs in Sri Lanka at Cypher Digital, Colombo. Write captions, blogs, ad copy & scripts for 800+ brands. Salary LKR 60,000–130,000/month. Apply via WhatsApp in 60 seconds.",
     h1: "Content Specialist Jobs in Sri Lanka — Hiring Now at Cypher Digital",
   },
+  "/careers/mobile-content-creator-jobs-sri-lanka": {
+    title: "Mobile Content Creator Jobs in Sri Lanka 2026 | LKR 45K–120K | Cypher Digital",
+    description: "Hiring a Mobile Content Creator in Colombo, Sri Lanka. Shoot, edit and post Reels, TikToks & short-form video for 800+ brands on a smartphone — no pro camera, no graphic design needed. LKR 45K–120K/month. Apply on WhatsApp.",
+    h1: "Mobile Content Creator Jobs in Sri Lanka — Shoot, Edit & Post for 800+ Brands",
+  },
   "/careers/sales-jobs-in-sri-lanka": {
     title: "Sales Executive Jobs in Sri Lanka 2026 | LKR 60K–150K | Cypher Digital",
     description: "Sales Executive jobs in Sri Lanka 2026 — Cypher Digital is hiring in Colombo. Sell Facebook Ads, Google Ads, SEO & social media. Base LKR 60,000, earn LKR 150,000+/month. Apply via WhatsApp in 60 seconds.",
