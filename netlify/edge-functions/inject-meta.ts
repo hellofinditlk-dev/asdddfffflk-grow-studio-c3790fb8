@@ -64,6 +64,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "AI-powered video production in Sri Lanka. AI avatars, product videos, Reels, TikToks & ad creatives in Sinhala, Tamil & English from LKR 15,000. 48hr turnaround by Cypher Digital.",
     h1: "AI Video Production Sri Lanka – AI Avatars, Reels & Ads That Convert",
   },
+  "/reel-creation-sri-lanka": {
+    title: "Reel Creation Sri Lanka (2026) | Instagram & TikTok Reels from LKR 18,000 | Cypher Digital",
+    description: "Professional reel creation in Sri Lanka. Instagram Reels, TikToks, shoots, editing, captions & AI character videos from LKR 18,000. Monthly content packages by Cypher Digital.",
+    h1: "Reel Creation Sri Lanka – Scroll-Stopping Reels That Convert",
+  },
   "/seo-services-sri-lanka": {
     title: "SEO Sri Lanka (2026) | SEO Services Sri Lanka | On-Page & Off-Page SEO from LKR 25,000 | Cypher Digital",
     description: "Professional SEO services in Sri Lanka. On-page optimization, technical SEO, link building, content marketing & local SEO from LKR 25,000/month. Rank #1 on Google with Cypher Digital.",
