@@ -203,7 +203,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Graphic Designer position at Cypher Digital.",
     whatsappCta: "Apply for Graphic Designer",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "digital-marketing-jobs-sri-lanka",
@@ -285,7 +285,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Digital Marketing Specialist position at Cypher Digital.",
     whatsappCta: "Apply for Digital Marketing Specialist",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "digital-marketing-executive-jobs-sri-lanka",
@@ -448,7 +448,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Digital Marketing Executive position at Cypher Digital.",
     whatsappCta: "Apply for Digital Marketing Executive",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "video-editor-jobs-sri-lanka",
@@ -610,7 +610,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Video Editor position at Cypher Digital.",
     whatsappCta: "Apply for Video Editor",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "marketing-internship-sri-lanka",
@@ -788,7 +788,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Marketing Internship at Cypher Digital.",
     whatsappCta: "Apply for Internship",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "internship-programme-sri-lanka",
@@ -904,7 +904,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Internship Programme at Cypher Digital.",
     whatsappCta: "Apply for Internship Programme",
     datePosted: "2026-07-01",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "finance-internship-sri-lanka",
@@ -1000,7 +1000,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Finance Internship at Cypher Digital.",
     whatsappCta: "Apply for Internship",
     datePosted: "2026-08-01",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "content-specialist-jobs-sri-lanka",
@@ -1158,7 +1158,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Content Specialist role at Cypher Digital.",
     whatsappCta: "Apply on WhatsApp",
     datePosted: "2026-08-01",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "social-media-jobs-sri-lanka",
@@ -1243,7 +1243,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Social Media Manager position at Cypher Digital.",
     whatsappCta: "Apply for Social Media Manager",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "digital-marketing-manager-jobs-sri-lanka",
@@ -1329,7 +1329,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Digital Marketing Manager position at Cypher Digital.",
     whatsappCta: "Apply for Digital Marketing Manager",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "sales-jobs-in-sri-lanka",
@@ -1492,7 +1492,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Sales Executive position at Cypher Digital.",
     whatsappCta: "Apply for Sales Executive",
     datePosted: "2026-07-01",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "sales-manager-jobs-sri-lanka",
@@ -1574,7 +1574,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Sales Manager position at Cypher Digital.",
     whatsappCta: "Apply for Sales Manager",
     datePosted: "2026-06-12",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "business-development-executive-jobs-sri-lanka",
@@ -1727,7 +1727,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Business Development Executive position at Cypher Digital.",
     whatsappCta: "Apply for Business Development Executive",
     datePosted: "2026-06-23",
-    lastUpdated: "2026-07-29",
+    lastUpdated: "2026-08-24",
   },
   {
     slug: "mobile-content-creator-jobs-sri-lanka",
@@ -1874,7 +1874,7 @@ export const vacancies: Vacancy[] = [
     whatsappMessage: "Hi, I'm applying for the Mobile Content Creator position at Cypher Digital. Here is a link to my content:",
     whatsappCta: "Apply for Mobile Content Creator",
     datePosted: "2026-08-23",
-    lastUpdated: "2026-08-23",
+    lastUpdated: "2026-08-24",
   },
 ];
 
