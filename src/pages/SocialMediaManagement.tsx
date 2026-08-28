@@ -1,5 +1,6 @@
 import ExtraReachBadge, { WebAdsFeatureLine, webAdsFeatureText } from "@/components/ExtraReachBadge";
 import OurWorkSection from "@/components/OurWorkSection";
+import PayOnlyForBoostBanner from "@/components/PayOnlyForBoostBanner";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
