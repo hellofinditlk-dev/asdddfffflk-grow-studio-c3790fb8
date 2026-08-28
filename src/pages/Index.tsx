@@ -14,6 +14,7 @@ import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
 import PayOnlyForBoostBanner from "@/components/PayOnlyForBoostBanner";
+import PaybackCard from "@/components/PaybackCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
@@ -691,6 +692,11 @@ const Index = () => (
               </div>
             ))}
           </div>
+
+          <div className="mt-10">
+            <PaybackCard />
+          </div>
+
 
           <p className="text-center text-sm text-muted-foreground mt-8">
             Need paid ads, SEO or a custom mix? <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.

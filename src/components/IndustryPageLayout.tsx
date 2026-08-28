@@ -1,6 +1,7 @@
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
+import PaybackCard from "@/components/PaybackCard";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -314,6 +315,9 @@ const IndustryPageLayout = ({ data }: Props) => {
                 </Button>
               </div>
             ))}
+          </div>
+          <div className="mt-10">
+            <PaybackCard />
           </div>
           <p className="text-center text-xs text-muted-foreground mt-8">
             Need a custom plan? <Link to="/social-media-management-sri-lanka" className="text-primary font-medium hover:underline">See full social media management packages</Link> or message us on WhatsApp for a tailored quote.

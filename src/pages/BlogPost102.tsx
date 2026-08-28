@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
+import PaybackCard from "@/components/PaybackCard";
 
 const packages = [
   {
@@ -196,6 +197,10 @@ const BlogPost102 = () => (
                   <a href={`https://wa.me/94701772626?text=${p.msg}`} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block w-full text-center bg-[#f97316] text-white px-4 py-2 rounded-md font-semibold text-xs hover:opacity-90">Enquire — {p.name} →</a>
                 </div>
               ))}
+            </div>
+
+            <div className="not-prose my-6">
+              <PaybackCard />
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-10 mb-3">Package comparison at a glance</h2>
