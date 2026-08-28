@@ -14,6 +14,7 @@ import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
 import PayOnlyForBoostBanner from "@/components/PayOnlyForBoostBanner";
+import PaybackCard from "@/components/PaybackCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
