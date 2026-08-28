@@ -50,8 +50,8 @@ const processSteps = [
 ];
 
 const flexiblePoints = [
-  "Affordable monthly packages starting from LKR 60,000",
-  "Choose 12, 16, or 20+ posts per month",
+  "Affordable monthly packages starting from LKR 85,000",
+  "Choose 12, 15, 20, or unlimited posts per month",
   "No annual contracts — flexible month-to-month plans",
   "Add-on services like reels or LinkedIn at low cost",
   "Save up to 70% compared to hiring an in-house social media manager",
@@ -69,25 +69,25 @@ const faqs = [
   { q: "What is social media marketing?", a: "Social media marketing involves promoting businesses through platforms like Facebook, Instagram, TikTok, and LinkedIn to increase brand awareness, generate leads, and drive sales." },
   { q: "Why is social media marketing important in Sri Lanka?", a: "Because millions of Sri Lankans are active daily on social media platforms. It's the most cost-effective way for businesses to reach, engage, and convert their target audience." },
   { q: "Which social media platform is best for my business?", a: "It depends on your business type. B2C brands typically do best on Instagram and Facebook, while B2B companies benefit from LinkedIn. TikTok is ideal for reaching younger audiences with viral content." },
-  { q: "How many posts do you create per month?", a: "Our standard packages include 12–20 posts per month depending on the plan. This includes a mix of graphics, carousels, stories, and reels to keep your audience engaged." },
+  { q: "How many posts do you create per month?", a: "Our packages include 12 to unlimited posts per month depending on the plan (12 on Basic, 15 on Silver, 20 on Gold, unlimited on Platinum). This includes a mix of graphics, carousels, stories, and reels to keep your audience engaged." },
   { q: "Do you handle customer messages and comments?", a: "Yes! Inbox and comment management is included. We respond to customer queries professionally and escalate important messages to you immediately." },
-  { q: "Which platforms do you manage?", a: "We primarily manage Facebook and Instagram pages. We can also manage LinkedIn, TikTok, and Google Business Profile as add-on services." },
+  { q: "Which platforms do you manage?", a: "We manage Facebook and Instagram on every package, with TikTok reels cross-posting included from Basic upward. LinkedIn cross-posting is built into the Gold and Platinum packages, and Google Business Profile management is available as an add-on." },
   { q: "Can I approve posts before they go live?", a: "Absolutely. We share a monthly content calendar for your approval before publishing. You'll always have final say on what gets posted." },
   { q: "Do you create video content too?", a: "Yes, our packages include Reels and Story content. For more advanced video production like promotional videos, check our Video Production service." },
   { q: "How long does it take to see results?", a: "Organic social media growth typically shows meaningful results within 2–3 months. Paid social media advertising delivers immediate traffic and conversions from day one." },
-  { q: "Is social media management affordable for small businesses?", a: "Yes! Our packages are specifically designed for Sri Lankan small businesses and startups. You get professional content, scheduling, and community management at a fraction of the cost of a full-time hire — starting from LKR 60,000/month." },
+  { q: "Is social media management affordable for small businesses?", a: "Yes! Our packages are specifically designed for Sri Lankan small businesses and startups. You get professional content, scheduling, and community management at a fraction of the cost of a full-time hire — starting from LKR 85,000/month." },
   { q: "What is the best social media marketing agency in Sri Lanka?", a: "Cypher Digital is a leading social media marketing agency in Sri Lanka providing ROI-driven strategies, professional content creation, community management, and performance-based advertising tailored for Sri Lankan businesses." },
   { q: "What does a Social Media Management Sri Lanka package include?", a: "Our Social Media Management Sri Lanka packages include content strategy, monthly content calendars, professional graphic and video creation, post scheduling, hashtag research, community engagement, inbox & comment management, monthly performance reports, and ongoing optimization across Facebook, Instagram, and TikTok." },
-  { q: "How much does Social Media Management Sri Lanka cost?", a: "Social Media Management Sri Lanka pricing starts from LKR 60,000/month for our Starter package, LKR 120,000/month for Growth, and LKR 200,000+/month for Pro plans. Each plan scales content volume, ad management, and reporting depth based on your business goals." },
+  { q: "How much does Social Media Management Sri Lanka cost?", a: "Social Media Management Sri Lanka pricing is LKR 85,000/month for Basic, LKR 100,000/month for Silver, LKR 150,000/month for Gold, and LKR 250,000/month for Platinum. Each plan scales content volume, ad management, and reporting depth based on your business goals." },
   { q: "Why choose Cypher Digital for Social Media Management Sri Lanka?", a: "Cypher Digital is one of the highest-rated agencies for Social Media Management Sri Lanka — offering no long-term contracts, fast 48-hour content delivery, dedicated account managers, transparent monthly reporting, and proven results across 200+ Sri Lankan SMEs in salons, real estate, healthcare, education, and e-commerce." },
   { q: "Do I need Social Media Management Sri Lanka if I already run Facebook Ads?", a: "Yes. Social Media Management Sri Lanka and Facebook Ads work best together. Organic management builds trust, social proof, and brand authority — which dramatically improves the conversion rate of your paid ads. Pages with active, professional content typically see 30–50% better ad performance." },
   { q: "Can you handle Social Media Management Sri Lanka in Sinhala and Tamil?", a: "Absolutely. Our Social Media Management Sri Lanka team creates fully localized content in Sinhala, Tamil, and English to maximize reach and engagement across all demographics in Sri Lanka." },
-  { q: "What social media marketing packages do you offer in Sri Lanka?", a: "Cypher Digital offers three social media marketing packages in Sri Lanka. The Starter package (LKR 60,000/month) covers Facebook and Instagram with 12 posts per month. The Growth package (LKR 90,000–100,000/month) includes 16 posts plus 4 Reels per month — our most popular social media marketing package. The Pro package (LKR 120,000+/month) includes 20+ posts and 6 Reels across Facebook, Instagram, and TikTok with a paid ad campaign included. All social media marketing packages come with no annual contracts and no hidden fees." },
+  { q: "What social media marketing packages do you offer in Sri Lanka?", a: "Cypher Digital offers four social media marketing packages in Sri Lanka. Basic (LKR 85,000/month) covers Facebook and Instagram with 12 posts and 3 stock-footage reels. Silver (LKR 100,000/month) — our most popular package — includes 15 posts and 3 reels filmed on a 4-hour location shoot, plus one email campaign to a 350,000 corporate database. Gold (LKR 150,000/month) adds LinkedIn cross-posting, 20 posts and two email campaigns. Platinum (LKR 250,000/month) covers Facebook, Instagram, LinkedIn and TikTok with unlimited posts, 8 reels from an 8-hour shoot and four email campaigns. Every package includes special day posts, Facebook cover design, TikTok cross-posting, web ads publishing on Findit.lk and StudyWay.lk, story sharing and monthly reports. All social media marketing packages come with no annual contracts and no hidden fees." },
   { q: "What does social media marketing in Sri Lanka include?", a: "Professional social media marketing in Sri Lanka covers content strategy, custom graphic design, caption writing in Sinhala and English, post scheduling, Reels production, community management, paid advertising on Facebook, Instagram and TikTok, and detailed monthly performance reports. At Cypher Digital, our social media marketing Sri Lanka services are fully managed so you can focus on running your business while we grow your online presence." },
-  { q: "What is the best social media marketing strategy for Sri Lankan businesses?", a: "The most effective social media marketing strategy for Sri Lankan businesses combines consistent organic content including Reels, active community management with fast response times, and targeted paid advertising on Facebook and Instagram. Facebook leads with 8.75 million Sri Lankan users while Instagram Reels and TikTok deliver the highest organic reach for audiences under 40. Cypher Digital builds custom social media marketing strategies tailored to each client's industry, audience, and budget." },
+  { q: "What is the best social media marketing strategy for Sri Lankan businesses?", a: "The most effective social media marketing strategy for Sri Lankan businesses combines consistent organic content including Reels, active community management with fast response times, and targeted paid advertising on Facebook and Instagram. Facebook leads with 8.75 million Sri Lankan users while Instagram Reels and TikTok deliver the highest organic reach for audiences under 40. Packages start at LKR 85,000/month (Basic) and scale to LKR 250,000/month (Platinum). Cypher Digital builds custom social media marketing strategies tailored to each client's industry, audience, and budget." },
   { q: "Why choose Cypher Digital as your social media marketing company in Sri Lanka?", a: "Cypher Digital is one of Sri Lanka's most results-focused social media marketing companies, managing 30+ business pages across Colombo, Kandy, Galle, Negombo, Maharagama, and beyond. Unlike freelancers, we operate as a full team of strategists, designers, copywriters, and ad specialists. We offer flexible month-to-month pricing with no lock-in contracts and focus on real results — leads from your inbox, real follower growth, and real revenue." },
   { q: "What is the best social media marketing Sri Lanka agency?", a: "Cypher Digital is widely rated as the best social media marketing Sri Lanka agency — combining strategy, design, copywriting, paid ads and analytics under one roof. Our social media marketing Sri Lanka team has delivered measurable ROI for 200+ SMEs across Colombo, Kandy, Galle, Negombo and Jaffna with no lock-in contracts and transparent monthly reporting." },
-  { q: "How much does social media marketing Sri Lanka cost?", a: "Social media marketing Sri Lanka pricing at Cypher Digital starts from LKR 60,000/month (Starter), LKR 90,000–120,000/month (Growth), and LKR 200,000+/month (Pro). All social media marketing Sri Lanka packages include content creation, scheduling, community management and monthly reporting — with optional paid ad management for businesses that want faster growth." },
+  { q: "How much does social media marketing Sri Lanka cost?", a: "Social media marketing Sri Lanka pricing at Cypher Digital is LKR 85,000/month (Basic), LKR 100,000/month (Silver), LKR 150,000/month (Gold) and LKR 250,000/month (Platinum). All social media marketing Sri Lanka packages include content creation, scheduling, community management and monthly reporting — with optional paid ad management for businesses that want faster growth." },
   { q: "Why choose Cypher Digital for social media marketing Sri Lanka?", a: "Choose Cypher Digital for social media marketing Sri Lanka because we deliver real business outcomes — not vanity metrics. You get a dedicated account manager, full-stack creative team, Sinhala + Tamil + English content, paid ad expertise on Facebook, Instagram & TikTok, transparent reporting, and flexible month-to-month plans designed specifically for Sri Lankan SMEs." },
 ];
 
@@ -171,7 +171,7 @@ const SocialMediaManagement = () => {
       image: "https://cypherdigital.lk/og-image.jpg",
       url: "https://cypherdigital.lk/social-media-management-sri-lanka",
       telephone: "+94701772626",
-      priceRange: "LKR 60,000 - LKR 200,000+",
+      priceRange: "LKR 85,000 - LKR 250,000",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Colombo",
@@ -197,7 +197,7 @@ const SocialMediaManagement = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Social Media Management Sri Lanka | Cypher Digital",
-      description: "Expert Social Media Management Sri Lanka — page management, content, community engagement & marketing services from LKR 60,000/month.",
+      description: "Expert Social Media Management Sri Lanka — page management, content, community engagement & marketing services from LKR 85,000/month.",
       url: "https://cypherdigital.lk/social-media-management-sri-lanka",
       dateModified: "2026-03-19",
       publisher: { "@type": "Organization", name: "Cypher Digital", url: "https://cypherdigital.lk" },
@@ -698,17 +698,19 @@ const SocialMediaManagement = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-5 mb-10">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
               {[
-                { name: "Starter", posts: "12 Posts / Month", desc: "Facebook & Instagram — Perfect for small businesses getting started", features: ["Facebook & Instagram management","Custom graphic design","Monthly content calendar","Caption copywriting","Hashtag strategy","Basic monthly report"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Starter%20package" },
-                { name: "Growth", posts: "16 Posts + 4 Reels / Month", desc: "Best for growing brands that want real results", features: ["Facebook & Instagram management","4 Reels / short-form videos","Story creation (weekly)","Inbox & comment management","Competitor analysis","Detailed monthly analytics report","Dedicated account manager"], featured: true, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Growth%20package" },
-                { name: "Pro", posts: "20+ Posts + 6 Reels / Month", desc: "Facebook, Instagram & TikTok — Full-service for serious growth", features: ["Facebook, Instagram & TikTok","6 Reels / TikTok videos","Daily story management","Facebook or Instagram Ad campaign","Full inbox management (daily)","Advanced analytics & ROI report","Dedicated strategist + designer","Monthly strategy call"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Pro%20package" },
+                { name: "Basic", price: "LKR 85,000", posts: "12 Posts / Month", desc: "Facebook & Instagram — Perfect for small businesses getting started", features: ["12 Social Media Posts","3 Reel Creations (stock footage, 45 sec)","Special Day Post Creation","Facebook Cover Image Creation","Cross-posting on TikTok","Web Ads Publishing (Findit.lk / StudyWay.lk)","Story Post Sharing","Reports Sharing"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Basic%20package%20(LKR%2085%2C000)" },
+                { name: "Silver", price: "LKR 100,000", posts: "15 Posts / Month", desc: "Facebook & Instagram — For growing brands that want real content", features: ["15 Social Media Posts","3 Reel Creations (4-hr location shoot, editing, posting, 45 sec)","Special Day Post Creation","Facebook Cover Image Creation","TikTok Reels Cross-Posting","Web Ads Publishing (Findit.lk / StudyWay.lk)","One Email Campaign — 350,000 Corporate Database","Story Post Sharing","Report Sharing"], featured: true, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Silver%20package%20(LKR%20100%2C000)" },
+                { name: "Gold", price: "LKR 150,000", posts: "20 Posts / Month", desc: "Facebook, Instagram & LinkedIn — Full-service for serious growth", features: ["20 Social Media Posts","3 Reel Creations (4-hr location shoot, editing, posting, 45 sec)","Special Day Post Creation","Facebook Cover Image Creation","Cross-posting on LinkedIn","TikTok Reels Cross-Posting","Web Ads Publishing (Findit.lk / StudyWay.lk)","Two Email Campaigns — 350,000 Corporate Database","Story Post Sharing","Report Sharing"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Gold%20package%20(LKR%20150%2C000)" },
+                { name: "Platinum", price: "LKR 250,000", posts: "Unlimited Posts / Month", desc: "Facebook, Instagram, LinkedIn & TikTok — Full-scale management", features: ["Unlimited Social Media Posts","8 Reel Creations (8-hr location shoot, editing, posting, 45 sec)","Special Day Post Creation","Facebook Cover Image Creation","Cross-posting on Meta and LinkedIn","TikTok Reels Cross-Posting + Strategy","Web Ads Publishing (Findit.lk / StudyWay.lk)","Four Email Campaigns — 350,000 Corporate Database","Story Post Sharing","Report Sharing"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Platinum%20package%20(LKR%20250%2C000)" },
               ].map((pkg, i) => (
-                <div key={i} className={`relative bg-card border rounded-2xl p-6 flex flex-col ${pkg.featured ? "border-[hsl(25,95%,53%)] shadow-card scale-[1.02]" : "border-border"}`}>
+                <div key={i} className={`relative bg-card border rounded-2xl p-6 flex flex-col ${pkg.featured ? "border-[hsl(25,95%,53%)] shadow-card lg:scale-[1.02]" : "border-border"}`}>
                   {pkg.featured && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[hsl(25,95%,53%)] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Most Popular</span>
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[hsl(25,95%,53%)] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full whitespace-nowrap">Most Popular</span>
                   )}
                   <h3 className="font-heading text-xl font-extrabold mb-1">{pkg.name}</h3>
+                  <p className="font-heading text-2xl font-extrabold text-foreground mb-1">{pkg.price}<span className="text-xs font-semibold text-muted-foreground">/month</span></p>
                   <p className="text-sm font-semibold text-primary mb-1">{pkg.posts}</p>
                   <p className="text-xs text-muted-foreground mb-5">{pkg.desc}</p>
                   <ul className="space-y-2 mb-6 flex-1">
@@ -720,10 +722,37 @@ const SocialMediaManagement = () => {
                     ))}
                   </ul>
                   <Button asChild className={`w-full font-semibold rounded-xl h-11 ${pkg.featured ? "bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] border-none" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}>
-                    <a href={`https://wa.me/94701772626?text=${pkg.msg}%20%E2%80%94%20can%20you%20send%20me%20the%20pricing%3F`} target="_blank" rel="noopener noreferrer">Get Pricing →</a>
+                    <a href={`https://wa.me/94701772626?text=${pkg.msg}%20%E2%80%94%20can%20you%20send%20me%20the%20details%3F`} target="_blank" rel="noopener noreferrer">Get Started →</a>
                   </Button>
                 </div>
               ))}
+            </div>
+
+            {/* Video creation add-ons */}
+            <div className="bg-card border border-border rounded-2xl p-6 mb-6">
+              <h3 className="font-heading text-lg md:text-xl font-extrabold mb-2">Video Creation Add-Ons</h3>
+              <p className="text-sm text-muted-foreground mb-5 max-w-3xl">Need extra reels or landscape video content beyond your package? Add them on individually — and unlike most agencies, we can also get your business listed and advertised on Findit.lk and StudyWay.lk as part of the package.</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border bg-secondary">
+                      <th className="text-left p-3 font-semibold">Service</th>
+                      <th className="text-left p-3 font-semibold text-[hsl(25,95%,53%)]">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["45-second Reel Video Creation", "LKR 30,000 + travel cost"],
+                      ["Landscape Video Creation", "LKR 40,000+ + travel cost"],
+                    ].map((row, i) => (
+                      <tr key={i} className="border-b border-border last:border-0">
+                        <td className="p-3">{row[0]}</td>
+                        <td className="p-3 font-semibold">{row[1]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-6 text-center">
