@@ -701,6 +701,7 @@ const SocialMediaManagement = () => {
             </div>
 
             <ExtraReachBadge />
+            <PayOnlyForBoostBanner />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
               {[

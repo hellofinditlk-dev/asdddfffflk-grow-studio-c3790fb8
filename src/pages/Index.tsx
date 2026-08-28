@@ -664,6 +664,7 @@ const Index = () => (
         </div>
 
         <div className="max-w-6xl mx-auto">
+          <PayOnlyForBoostBanner />
           <ExtraReachBadge />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
