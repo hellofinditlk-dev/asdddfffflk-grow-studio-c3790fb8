@@ -1,3 +1,4 @@
+import ExtraReachBadge, { WebAdsFeatureLine, webAdsFeatureText } from "@/components/ExtraReachBadge";
 import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
@@ -698,6 +699,8 @@ const SocialMediaManagement = () => {
               </p>
             </div>
 
+            <ExtraReachBadge />
+
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
               {[
                 { name: "Basic", price: "LKR 85,000", posts: "12 Posts / Month", desc: "Facebook & Instagram — Perfect for small businesses getting started", features: ["12 Social Media Posts","3 Reel Creations (stock footage, 45 sec)","Special Day Post Creation","Facebook Cover Image Creation","Cross-posting on TikTok","Web Ads Publishing (Findit.lk / StudyWay.lk)","Story Post Sharing","Reports Sharing"], featured: false, msg: "Hi%2C%20I%20am%20interested%20in%20the%20Basic%20package%20(LKR%2085%2C000)" },
@@ -715,9 +718,9 @@ const SocialMediaManagement = () => {
                   <p className="text-xs text-muted-foreground mb-5">{pkg.desc}</p>
                   <ul className="space-y-2 mb-6 flex-1">
                     {pkg.features.map((f, j) => (
-                      <li key={j} className="flex items-start gap-2 text-xs">
+                      <li key={j} className={`flex items-start gap-2 text-xs ${f === webAdsFeatureText ? "bg-primary/10 border border-primary/25 rounded-lg p-2 -mx-1 font-semibold" : ""}`}>
                         <CheckCircle className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                        <span>{f}</span>
+                        <span>{f === webAdsFeatureText ? <WebAdsFeatureLine /> : f}</span>
                       </li>
                     ))}
                   </ul>
