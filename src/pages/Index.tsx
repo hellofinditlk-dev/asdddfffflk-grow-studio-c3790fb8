@@ -12,6 +12,7 @@ import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
 import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
+import ExtraReachBadge from "@/components/ExtraReachBadge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
@@ -116,6 +117,77 @@ const whyUs = [
   { icon: <Users className="w-5 h-5" />, text: "Creative content team", detail: "In-house designers, writers & video editors" },
   { icon: <FileText className="w-5 h-5" />, text: "Transparent reporting", detail: "Clear monthly reports with actionable insights" },
   { icon: <Rocket className="w-5 h-5" />, text: "Affordable packages", detail: "Enterprise-quality at SME-friendly pricing" },
+];
+
+const homePackages = [
+  {
+    name: "Basic",
+    price: "LKR 85,000",
+    posts: "12 posts / month",
+    desc: "Facebook & Instagram — small businesses building a professional presence.",
+    features: [
+      "12 social media posts (graphics + carousels)",
+      "3 reel creations (stock footage, 45 sec)",
+      "Special day post creation",
+      "Facebook cover image design",
+      "TikTok reels cross-posting",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story post sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Basic%20social%20media%20marketing%20package%20(LKR%2085%2C000)",
+  },
+  {
+    name: "Silver",
+    price: "LKR 100,000",
+    posts: "15 posts / month",
+    desc: "Most popular — growing brands that want original filmed content.",
+    features: [
+      "15 social media posts",
+      "3 reels filmed on a 4-hour location shoot (45 sec)",
+      "Special day posts + Facebook cover design",
+      "TikTok reels cross-posting",
+      "1 email campaign — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: true,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Silver%20social%20media%20marketing%20package%20(LKR%20100%2C000)",
+  },
+  {
+    name: "Gold",
+    price: "LKR 150,000",
+    posts: "20 posts / month",
+    desc: "Facebook, Instagram & LinkedIn — full-service for serious growth.",
+    features: [
+      "20 social media posts",
+      "3 reels filmed on a 4-hour location shoot (45 sec)",
+      "LinkedIn + TikTok cross-posting",
+      "Special day posts + Facebook cover design",
+      "2 email campaigns — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Gold%20social%20media%20marketing%20package%20(LKR%20150%2C000)",
+  },
+  {
+    name: "Platinum",
+    price: "LKR 250,000",
+    posts: "Unlimited posts / month",
+    desc: "Facebook, Instagram, LinkedIn & TikTok — full-scale management.",
+    features: [
+      "Unlimited social media posts",
+      "8 reels filmed on an 8-hour location shoot (45 sec)",
+      "Meta + LinkedIn cross-posting",
+      "TikTok cross-posting + strategy",
+      "4 email campaigns — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Platinum%20social%20media%20marketing%20package%20(LKR%20250%2C000)",
+  },
 ];
 
 const process = [
