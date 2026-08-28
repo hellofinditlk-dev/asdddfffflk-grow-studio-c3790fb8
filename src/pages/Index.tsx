@@ -13,6 +13,7 @@ import SEOHead from "@/components/SEOHead";
 import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
+import PayOnlyForBoostBanner from "@/components/PayOnlyForBoostBanner";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
@@ -663,6 +664,7 @@ const Index = () => (
         </div>
 
         <div className="max-w-6xl mx-auto">
+          <PayOnlyForBoostBanner />
           <ExtraReachBadge />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
