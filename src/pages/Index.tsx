@@ -12,6 +12,7 @@ import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
 import OurWorkSection from "@/components/OurWorkSection";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
+import ExtraReachBadge from "@/components/ExtraReachBadge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import mascotDefault from "@/assets/mascot-default.jpeg";
 import mascotSocial from "@/assets/mascot-social.jpeg";
@@ -116,6 +117,77 @@ const whyUs = [
   { icon: <Users className="w-5 h-5" />, text: "Creative content team", detail: "In-house designers, writers & video editors" },
   { icon: <FileText className="w-5 h-5" />, text: "Transparent reporting", detail: "Clear monthly reports with actionable insights" },
   { icon: <Rocket className="w-5 h-5" />, text: "Affordable packages", detail: "Enterprise-quality at SME-friendly pricing" },
+];
+
+const homePackages = [
+  {
+    name: "Basic",
+    price: "LKR 85,000",
+    posts: "12 posts / month",
+    desc: "Facebook & Instagram — small businesses building a professional presence.",
+    features: [
+      "12 social media posts (graphics + carousels)",
+      "3 reel creations (stock footage, 45 sec)",
+      "Special day post creation",
+      "Facebook cover image design",
+      "TikTok reels cross-posting",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story post sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Basic%20social%20media%20marketing%20package%20(LKR%2085%2C000)",
+  },
+  {
+    name: "Silver",
+    price: "LKR 100,000",
+    posts: "15 posts / month",
+    desc: "Most popular — growing brands that want original filmed content.",
+    features: [
+      "15 social media posts",
+      "3 reels filmed on a 4-hour location shoot (45 sec)",
+      "Special day posts + Facebook cover design",
+      "TikTok reels cross-posting",
+      "1 email campaign — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: true,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Silver%20social%20media%20marketing%20package%20(LKR%20100%2C000)",
+  },
+  {
+    name: "Gold",
+    price: "LKR 150,000",
+    posts: "20 posts / month",
+    desc: "Facebook, Instagram & LinkedIn — full-service for serious growth.",
+    features: [
+      "20 social media posts",
+      "3 reels filmed on a 4-hour location shoot (45 sec)",
+      "LinkedIn + TikTok cross-posting",
+      "Special day posts + Facebook cover design",
+      "2 email campaigns — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Gold%20social%20media%20marketing%20package%20(LKR%20150%2C000)",
+  },
+  {
+    name: "Platinum",
+    price: "LKR 250,000",
+    posts: "Unlimited posts / month",
+    desc: "Facebook, Instagram, LinkedIn & TikTok — full-scale management.",
+    features: [
+      "Unlimited social media posts",
+      "8 reels filmed on an 8-hour location shoot (45 sec)",
+      "Meta + LinkedIn cross-posting",
+      "TikTok cross-posting + strategy",
+      "4 email campaigns — 350,000 corporate database",
+      "Web ads publishing (Findit.lk / StudyWay.lk)",
+      "Story sharing + monthly report",
+    ],
+    featured: false,
+    msg: "Hi%2C%20I%20am%20interested%20in%20the%20Platinum%20social%20media%20marketing%20package%20(LKR%20250%2C000)",
+  },
 ];
 
 const process = [
@@ -584,57 +656,44 @@ const Index = () => (
     {/* TRANSPARENT PRICING */}
     <section id="pricing" className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 max-w-2xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Pricing</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Digital Marketing Prices in Sri Lanka</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Transparent monthly packages. No hidden fees. No long-term lock-in.</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">Social Media Marketing Packages in Sri Lanka</h2>
+          <p className="text-muted-foreground">Transparent monthly packages starting at LKR 85,000. No hidden fees. No long-term lock-in.</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            {
-              name: "Starter", price: "LKR 40,000", note: "/month",
-              desc: "Perfect for small businesses starting out.",
-              features: ["1 platform (FB or IG)", "12 posts per month", "Basic ad management", "Monthly report", "WhatsApp support"],
-              featured: false,
-            },
-            {
-              name: "Growth", price: "LKR 95,000", note: "/month",
-              desc: "Our most popular package for growing SMEs.",
-              features: ["FB + IG + TikTok", "20 posts + 8 reels", "Facebook & Google Ads", "Basic SEO included", "Bi-weekly reports", "Dedicated account manager"],
-              featured: true,
-            },
-            {
-              name: "Pro", price: "LKR 180,000", note: "/month",
-              desc: "Full-service for serious scale-ups.",
-              features: ["All platforms managed", "30+ posts + video content", "Multi-channel ads", "Full SEO + content", "Weekly reports", "Strategy calls every 2 weeks"],
-              featured: false,
-            },
-          ].map((p, i) => (
-            <div key={i} className={`relative rounded-2xl p-7 md:p-8 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-primary bg-primary/5 shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
-              {p.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
-              )}
-              <h3 className="font-heading text-xl font-extrabold mb-2">{p.name}</h3>
-              <p className="text-xs text-muted-foreground mb-5">{p.desc}</p>
-              <div className="font-heading text-3xl font-extrabold text-primary mb-1">{p.price}<span className="text-sm font-medium text-muted-foreground">{p.note}</span></div>
-              <p className="text-xs text-muted-foreground mb-6">Ad budget billed separately</p>
-              <ul className="space-y-2 mb-7">
-                {p.features.map((f, j) => (
-                  <li key={j} className="flex gap-2 text-sm text-foreground">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="block text-center text-sm font-semibold py-3 rounded-xl bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] transition-colors">
-                Get Custom Quote
-              </a>
-            </div>
-          ))}
+
+        <div className="max-w-6xl mx-auto">
+          <ExtraReachBadge />
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {homePackages.map((p) => (
+              <div key={p.name} className={`relative rounded-2xl p-6 md:p-7 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-[#f97316] bg-card shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
+                {p.featured && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#f97316] text-white text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap uppercase tracking-wider">Most Popular</span>
+                )}
+                <div className="text-[11px] font-bold tracking-wider uppercase text-[#f97316] mb-1">{p.name}</div>
+                <div className="font-heading text-2xl md:text-3xl font-extrabold text-foreground mb-1">{p.price}<span className="text-xs font-medium text-muted-foreground"> /month</span></div>
+                <div className="text-xs font-semibold text-foreground mb-3">{p.posts}</div>
+                <p className="text-xs text-muted-foreground mb-4 leading-relaxed">{p.desc}</p>
+                <ul className="space-y-1.5 mb-6">
+                  {p.features.map((f, j) => (
+                    <li key={j} className="flex gap-2 text-xs text-foreground">
+                      <CheckCircle className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href={`https://wa.me/94701772626?text=${p.msg}`} target="_blank" rel="noopener noreferrer" className={`block text-center text-xs font-bold py-3 rounded-xl transition-colors ${p.featured ? "bg-[#f97316] !text-white hover:bg-[#f97316]/90" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}>
+                  Enquire — {p.name}
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-muted-foreground mt-8">
+            Need paid ads, SEO or a custom mix? <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20custom%20quote" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.
+          </p>
         </div>
-        <p className="text-center text-sm text-muted-foreground mt-8">
-          Need something custom? <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Message us on WhatsApp</a> for a tailored quote.
-        </p>
       </div>
     </section>
     <section className="py-24 lg:py-32 relative overflow-hidden">
