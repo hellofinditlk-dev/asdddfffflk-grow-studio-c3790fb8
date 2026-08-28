@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
+import ExtraReachBadge from "@/components/ExtraReachBadge";
 
 const packages = [
   {
@@ -174,6 +175,9 @@ const BlogPost102 = () => (
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Social media marketing packages &amp; pricing — Sri Lanka 2026</h2>
             <p>These are the live <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline">social media advertising Sri Lanka</Link> packages from Cypher Digital. Every deliverable is listed — no vague promises, no hidden fees, no annual lock-in.</p>
 
+            <div className="not-prose my-6">
+              <ExtraReachBadge />
+            </div>
             <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
               {packages.map((p) => (
                 <div key={p.name} className={`rounded-xl p-5 relative bg-card ${p.featured ? "border-2 border-[#f97316]" : "border border-border"}`}>
