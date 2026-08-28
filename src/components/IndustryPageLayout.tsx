@@ -18,6 +18,37 @@ const allServices = [
   { name: "Video Production", path: "/video-production-sri-lanka", keyword: "Video Production Sri Lanka" },
 ];
 
+const pricingPackages = [
+  {
+    name: "Basic",
+    price: "LKR 85,000",
+    period: "/month",
+    features: ["12 posts + 4 Reels per month", "2 platforms managed (Facebook + Instagram)", "Ad boosting management included", "Monthly performance report"],
+    popular: false,
+  },
+  {
+    name: "Silver",
+    price: "LKR 100,000",
+    period: "/month",
+    features: ["16 posts + 6 Reels per month", "1 on-location shoot per month", "Ad campaigns on Facebook + Instagram", "WhatsApp Business support"],
+    popular: true,
+  },
+  {
+    name: "Gold",
+    price: "LKR 150,000",
+    period: "/month",
+    features: ["20 posts + 8 Reels per month", "2 on-location shoots per month", "Google Ads + Meta Ads management", "Email campaign once a month"],
+    popular: false,
+  },
+  {
+    name: "Platinum",
+    price: "LKR 250,000",
+    period: "/month",
+    features: ["30 posts + 12 Reels per month", "Weekly on-location shoots", "Full-funnel ads (Meta + Google + TikTok)", "Dedicated account manager"],
+    popular: false,
+  },
+];
+
 const trustPoints = [
   { icon: <Shield className="w-5 h-5" />, title: "No Lock-in Contracts", desc: "Flexible monthly plans with no long-term commitments." },
   { icon: <BarChart3 className="w-5 h-5" />, title: "Transparent Reporting", desc: "Detailed monthly reports so you always know your ROI." },
