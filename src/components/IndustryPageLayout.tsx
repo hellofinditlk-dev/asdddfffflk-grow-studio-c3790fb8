@@ -1,5 +1,6 @@
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
+import ExtraReachBadge from "@/components/ExtraReachBadge";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -277,6 +278,9 @@ const IndustryPageLayout = ({ data }: Props) => {
             <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
               Clear monthly packages for {data.shortName.toLowerCase()} businesses in Sri Lanka — no hidden fees, no lock-in contracts.
             </p>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <ExtraReachBadge />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pricingPackages.map((pkg) => (
