@@ -268,6 +268,55 @@ const IndustryPageLayout = ({ data }: Props) => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section className="py-20 lg:py-28 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Transparent Pricing</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.shortName} Digital Marketing Packages & Prices</h2>
+            <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+              Clear monthly packages for {data.shortName.toLowerCase()} businesses in Sri Lanka — no hidden fees, no lock-in contracts.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {pricingPackages.map((pkg) => (
+              <div key={pkg.name} className={`relative bg-card border rounded-2xl p-6 flex flex-col ${pkg.popular ? "border-primary shadow-card" : "border-border"}`}>
+                {pkg.popular && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                    Most Popular
+                  </span>
+                )}
+                <h3 className="font-heading text-lg font-bold mb-1">{pkg.name}</h3>
+                <div className="mb-5">
+                  <span className="font-heading text-2xl font-extrabold text-foreground">{pkg.price}</span>
+                  <span className="text-xs text-muted-foreground">{pkg.period}</span>
+                </div>
+                <ul className="space-y-2.5 mb-6 flex-1">
+                  {pkg.features.map((f, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <span className="text-xs leading-relaxed">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild size="sm" className="w-full bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none rounded-lg h-10 text-xs">
+                  <a
+                    href={`https://wa.me/94701772626?text=${encodeURIComponent(`Hi, I'm interested in the ${pkg.name} package (${pkg.price}/month) for my ${data.shortName.toLowerCase()} business`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get {pkg.name}
+                  </a>
+                </Button>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xs text-muted-foreground mt-8">
+            Need a custom plan? <Link to="/social-media-management-sri-lanka" className="text-primary font-medium hover:underline">See full social media management packages</Link> or message us on WhatsApp for a tailored quote.
+          </p>
+        </div>
+      </section>
+
       {/* Strategy Section (optional) */}
       {data.strategy && (
         <section className="py-20 lg:py-28 bg-secondary">
