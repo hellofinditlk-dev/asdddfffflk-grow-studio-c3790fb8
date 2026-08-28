@@ -1,6 +1,7 @@
 import ExtraReachBadge, { WebAdsFeatureLine, webAdsFeatureText } from "@/components/ExtraReachBadge";
 import OurWorkSection from "@/components/OurWorkSection";
 import PayOnlyForBoostBanner from "@/components/PayOnlyForBoostBanner";
+import PaybackCard from "@/components/PaybackCard";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
@@ -731,6 +732,10 @@ const SocialMediaManagement = () => {
                   </Button>
                 </div>
               ))}
+            </div>
+
+            <div className="mb-10">
+              <PaybackCard />
             </div>
 
             {/* Video creation add-ons */}
