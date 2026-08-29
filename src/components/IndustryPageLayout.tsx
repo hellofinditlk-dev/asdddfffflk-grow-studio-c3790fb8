@@ -149,12 +149,12 @@ const IndustryPageLayout = ({ data }: Props) => {
             <p className="text-lg text-white/50 leading-relaxed mb-8">{data.intro}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${waNumber}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">
                   Book a Free Consultation
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${waNumber}?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote`} target="_blank" rel="noopener noreferrer">
                   Get a Free Quote
                 </a>
               </Button>
