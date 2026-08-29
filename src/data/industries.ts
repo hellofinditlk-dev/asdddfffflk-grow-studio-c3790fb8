@@ -2157,6 +2157,150 @@ export const industries: IndustryData[] = [
       "description": "SEO, social media marketing, Google Ads and lead generation for banks, insurance, fintech, and financial advisory firms in Sri Lanka."
     },
   },
+  {
+    slug: "b2b-digital-marketing-sri-lanka",
+    shortName: "B2B",
+    seoTitle: "B2B Digital Marketing Sri Lanka | B2B Lead Generation Agency",
+    metaDescription: "Generate qualified business leads with B2B digital marketing, LinkedIn marketing, SEO, and paid advertising campaigns for Sri Lankan companies selling to other businesses.",
+    h1: "Digital Marketing for B2B Companies in Sri Lanka",
+    intro: "B2B buying decisions in Sri Lanka — from manufacturers and distributors to software vendors, industrial suppliers, and professional services firms — are made by procurement teams and decision-makers who research vendors extensively online before ever picking up the phone. Cypher Digital helps manufacturers, exporters, distributors, SaaS companies, and B2B service providers in Sri Lanka and Colombo generate qualified business leads through SEO, LinkedIn marketing, content marketing, and targeted paid advertising campaigns.",
+    servicesHeading: "B2B Marketing Services",
+    services: [
+      "B2B lead generation ad campaigns",
+      "Company & product explainer videos",
+      "Google Ads for high-intent business searches",
+      "Service, product & case study landing pages",
+      "LinkedIn marketing for corporate visibility",
+    ],
+    ctaHeading: "Generate More Qualified Business Leads",
+    ctaDescription: "Our targeted campaigns reach procurement managers, business owners, and decision-makers actively searching for suppliers and service providers in Sri Lanka. A strong digital strategy puts your company in front of the right buyers earlier in a longer sales cycle.",
+    ctaButtonText: "Get Business Leads",
+    whatsappNumber: "94771437707",
+    formFields: [
+      { name: "name", placeholder: "Your Name *", required: true },
+      { name: "email", placeholder: "Email Address", type: "email" },
+      { name: "phone", placeholder: "Phone Number *", type: "tel", required: true },
+      { name: "companyName", placeholder: "Company Name" },
+      { name: "industryType", placeholder: "Industry (Manufacturing, SaaS, Distribution, etc.)" },
+      { name: "message", placeholder: "Tell us about your B2B marketing needs..." },
+    ],
+    challengesHeading: "Why Digital Marketing is Important for B2B Companies",
+    challengesIntro: "B2B buyers now do most of their vendor research online, comparing suppliers, reading case studies, and checking company credibility long before requesting a quote. A strong digital presence puts your company in front of decision-makers earlier in their buying process, when they're still shortlisting vendors.",
+    challengesList: [
+      "Increased visibility with decision-makers",
+      "High-quality, sales-ready business leads",
+      "Shorter sales cycles",
+      "Stronger corporate credibility",
+      "Better client engagement and retention",
+    ],
+    challengesOutro: "Digital marketing allows B2B companies to reach procurement managers, business owners, and decision-makers with the right message at the right stage of a longer, more considered buying journey.",
+    strategy: {
+      heading: "Our B2B Marketing Strategy",
+      description: "Cypher Digital uses credibility-driven strategies to help B2B companies in Sri Lanka generate qualified leads and shorten their sales cycles.",
+      subsections: [
+        {
+          h3: "B2B Lead Generation Strategies",
+          paragraphs: [
+            "Generating sales-ready, decision-maker leads is the most important goal for B2B marketing.",
+          ],
+          bullets: [
+            "Targeted LinkedIn & Facebook Ads",
+            "Google Search advertising for high-intent B2B keywords",
+            "Case study, product & service landing pages",
+            "Lead capture and enquiry forms",
+            "Retargeting campaigns for warm business prospects",
+          ],
+        },
+        {
+          h3: "LinkedIn & Social Media Marketing for B2B",
+          paragraphs: [
+            "LinkedIn is where B2B decision-makers spend their professional time, making it essential for building corporate credibility and generating enquiries.",
+          ],
+          bullets: [
+            "Company page management and growth",
+            "Thought-leadership and industry insight posts",
+            "Case study and client success content",
+            "Product and capability showcase content",
+            "Employee advocacy and founder branding",
+          ],
+        },
+        {
+          h3: "SEO for B2B Websites",
+          paragraphs: [
+            "Search engine optimization helps manufacturers, distributors, and B2B service providers rank on Google when procurement teams search for terms like 'industrial suppliers Sri Lanka', 'B2B software Sri Lanka', 'wholesale distributors Colombo', and 'export company Sri Lanka'.",
+          ],
+          bullets: [
+            "Keyword research for procurement & buyer-intent terms",
+            "Service and product page optimization",
+            "Technical SEO improvements",
+            "Case study and whitepaper content marketing",
+          ],
+        },
+      ],
+    },
+    videoContentHeading: "B2B Video Marketing",
+    videoContentIntro: "Video helps B2B buyers understand complex products, processes, and capabilities faster than text alone — building the confidence needed to move a longer sales cycle forward.",
+    videoContentList: [
+      "Company and facility introduction videos",
+      "Product and process explainer videos",
+      "Client testimonial and case study videos",
+      "Trade show and exhibition highlight videos",
+      "Founder and leadership thought-leadership videos",
+    ],
+    videoContentOutro: "High-quality video content builds credibility with procurement teams and shortens the trust-building phase of a typical B2B sales cycle.",
+    benefitsHeading: "Challenges B2B Companies Face",
+    benefitsIntro: "Many B2B companies struggle with marketing because they rely only on referrals and trade shows, with little to no digital presence to support a longer, more considered sales cycle.",
+    benefitsList: [
+      "Low website traffic and organic visibility",
+      "Limited visibility with decision-makers",
+      "Difficulty generating qualified business leads",
+      "Long, unpredictable sales cycles",
+      "Over-reliance on referrals and trade shows",
+    ],
+    benefitsOutro: "Digital marketing helps solve these challenges by keeping your company visible and credible throughout the entire B2B buying journey.",
+    whyChooseHeading: "Why Choose Cypher Digital for B2B Marketing",
+    whyChooseIntro: "Cypher Digital provides customized digital marketing strategies designed specifically for B2B companies in Sri Lanka.",
+    whyChooseList: [
+      "Targeted decision-maker marketing campaigns",
+      "Credibility-focused content production",
+      "Data-driven marketing strategies",
+      "Measurable qualified lead generation results",
+      "Experience with B2B and industrial marketing in Sri Lanka",
+    ],
+    bottomCtaHeading: "Generate More Business Leads with Cypher Digital",
+    bottomCtaText: [
+      "If you want to increase qualified enquiries and grow your B2B company, Cypher Digital can help.",
+      "Our B2B marketing specialists create customized strategies designed to build credibility, generate leads, and shorten your sales cycle.",
+      "Contact Cypher Digital today for a free B2B marketing consultation.",
+    ],
+    industryLinksHeading: "Digital Marketing Services for Multiple Industries",
+    industryLinksIntro: "In addition to B2B marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
+    faqs: [
+      { q: "What is B2B digital marketing?", a: "B2B digital marketing involves promoting products and services to other businesses online through SEO, LinkedIn marketing, content marketing, and paid advertising campaigns aimed at procurement teams and decision-makers." },
+      { q: "How is B2B marketing different from B2C marketing?", a: "B2B marketing targets business decision-makers rather than individual consumers, usually involves longer sales cycles, higher-value deals, and relies more on credibility, case studies, and platforms like LinkedIn and Google Search." },
+      { q: "Which platform is best for B2B marketing in Sri Lanka?", a: "LinkedIn, Google Search, and email marketing are among the most effective channels for reaching business decision-makers, with Facebook also useful for SME-to-SME visibility." },
+      { q: "How long does SEO take for a B2B website?", a: "SEO typically takes 3–6 months to generate consistent organic traffic and qualified business leads, depending on competition for procurement-related keywords." },
+      { q: "Can you help generate leads for exporters and manufacturers?", a: "Yes, we build lead generation campaigns and landing pages tailored to manufacturers, exporters, distributors, and industrial suppliers targeting both local and international buyers." },
+    ],
+    locationsHeading: "Target Locations in Sri Lanka",
+    locationsList: ["Colombo", "Kandy", "Galle", "Negombo", "Jaffna", "Kurunegala", "Anuradhapura", "Matara", "Batticaloa", "Ratnapura"],
+    serviceSchema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "B2B Digital Marketing Sri Lanka",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cypher Digital",
+        "url": "https://cypherdigital.lk"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "serviceType": "B2B Digital Marketing",
+      "description": "B2B lead generation, LinkedIn marketing, SEO, and paid advertising for manufacturers, exporters, distributors, and B2B service providers in Sri Lanka."
+    },
+  },
 ];
 
 export const industryNavItems = industries.map((i) => ({
