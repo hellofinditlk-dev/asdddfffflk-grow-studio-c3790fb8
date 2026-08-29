@@ -315,6 +315,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Generate qualified business leads with B2B digital marketing, LinkedIn marketing, SEO, and paid advertising campaigns for Sri Lankan companies selling to other businesses.",
     h1: "Digital Marketing for B2B Companies in Sri Lanka",
   },
+  "/home-services-construction-digital-marketing-sri-lanka": {
+    title: "Home Services & Construction Digital Marketing Sri Lanka | Contractor & Solar Marketing Agency",
+    description: "Generate qualified leads for construction companies, contractors, renovation firms, interior designers, and solar installers with home services digital marketing, SEO, and paid advertising in Sri Lanka.",
+    h1: "Digital Marketing for Home Services & Construction Companies in Sri Lanka",
+  },
   // Blog posts
   "/blog/why-social-media-management-important-businesses-sri-lanka": {
     title: "Why Social Media Management is Important for Businesses in Sri Lanka",
