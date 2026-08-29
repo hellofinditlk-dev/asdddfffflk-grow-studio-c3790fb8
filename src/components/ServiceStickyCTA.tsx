@@ -11,11 +11,11 @@ const SERVICE_ROUTE_PATTERNS = [
   /^\/product-launch-events/,
 ];
 
-const CUSTOM_NUMBER_PAGES = [
-  "/automotive-digital-marketing-sri-lanka",
-  "/education-marketing-agency-sri-lanka",
-  "/real-estate-digital-marketing-sri-lanka",
-];
+const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
+  "/automotive-digital-marketing-sri-lanka": "94760317477",
+  "/education-marketing-agency-sri-lanka": "94760317477",
+  "/real-estate-digital-marketing-sri-lanka": "94771437707",
+};
 
 const isServiceRoute = (pathname: string) => {
   if (pathname === "/") return false;
@@ -28,7 +28,7 @@ const ServiceStickyCTA = () => {
   const { pathname } = useLocation();
   if (!isServiceRoute(pathname)) return null;
 
-  const number = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+  const number = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
   const waHref = `https://wa.me/${number}?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20%26%20quote`;
   const telHref = `tel:+94${number.slice(2)}`;
   const displayNumber = `+94 ${number.slice(2, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;

@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const CUSTOM_NUMBER_PAGES = [
-  "/automotive-digital-marketing-sri-lanka",
-  "/education-marketing-agency-sri-lanka",
-  "/real-estate-digital-marketing-sri-lanka",
-];
+const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
+  "/automotive-digital-marketing-sri-lanka": "94760317477",
+  "/education-marketing-agency-sri-lanka": "94760317477",
+  "/real-estate-digital-marketing-sri-lanka": "94771437707",
+};
 
 /** Exclusive "payback" value-prop card — shows that Cypher reinvests the
  *  management fee as free publicity on Findit.lk & StudyWay.lk. */
 const PaybackCard = () => {
   const { pathname } = useLocation();
-  const waNumber = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+  const waNumber = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
 
   const textRef = useRef<HTMLSpanElement>(null);
   const [decoded, setDecoded] = useState(false);

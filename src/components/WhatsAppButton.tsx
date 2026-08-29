@@ -2,15 +2,15 @@ import mascotHeadset from "@/assets/mascot-headset.jpeg";
 import { MessageCircle } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
-const CUSTOM_NUMBER_PAGES = [
-  "/automotive-digital-marketing-sri-lanka",
-  "/education-marketing-agency-sri-lanka",
-  "/real-estate-digital-marketing-sri-lanka",
-];
+const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
+  "/automotive-digital-marketing-sri-lanka": "94760317477",
+  "/education-marketing-agency-sri-lanka": "94760317477",
+  "/real-estate-digital-marketing-sri-lanka": "94771437707",
+};
 
 const WhatsAppButton = () => {
   const { pathname } = useLocation();
-  const number = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+  const number = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
 
   return (
     <a
