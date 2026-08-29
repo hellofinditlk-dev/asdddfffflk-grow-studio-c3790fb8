@@ -300,6 +300,16 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Increase online sales with ecommerce marketing strategies including SEO, Facebook ads, Google Shopping, product videos, and retargeting campaigns in Sri Lanka.",
     h1: "Ecommerce Digital Marketing Services in Sri Lanka",
   },
+  "/healthcare-digital-marketing-sri-lanka": {
+    title: "Healthcare Digital Marketing Sri Lanka | Medical & Hospital Marketing Agency",
+    description: "Generate qualified patient leads for hospitals, clinics, dental practices, and healthcare providers with healthcare digital marketing, SEO, and paid advertising in Sri Lanka.",
+    h1: "Digital Marketing for Healthcare Providers in Sri Lanka",
+  },
+  "/finance-digital-marketing-sri-lanka": {
+    title: "Finance Digital Marketing Sri Lanka | Financial Services Marketing Agency",
+    description: "Generate qualified leads for banks, insurance, fintech, and financial advisory firms with finance digital marketing, SEO, and paid advertising in Sri Lanka.",
+    h1: "Digital Marketing for Financial Services Companies in Sri Lanka",
+  },
   // Blog posts
   "/blog/why-social-media-management-important-businesses-sri-lanka": {
     title: "Why Social Media Management is Important for Businesses in Sri Lanka",
