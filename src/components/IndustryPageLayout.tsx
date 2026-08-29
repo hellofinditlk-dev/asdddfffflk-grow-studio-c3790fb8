@@ -71,6 +71,7 @@ interface Props {
 const IndustryPageLayout = ({ data }: Props) => {
   const canonical = `https://cypherdigital.lk/${data.slug}`;
   const otherIndustries = industries.filter((i) => i.slug !== data.slug);
+  const waNumber = data.whatsappNumber || "94701772626";
 
   const faqSchema = {
     "@context": "https://schema.org",
