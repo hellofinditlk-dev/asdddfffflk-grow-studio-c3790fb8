@@ -111,6 +111,10 @@
 /automotive-digital-marketing-sri-lanka           /index.html   200
 /small-business-digital-marketing-sri-lanka       /index.html   200
 /ecommerce-digital-marketing-sri-lanka            /index.html   200
+/healthcare-digital-marketing-sri-lanka           /index.html   200
+/finance-digital-marketing-sri-lanka              /index.html   200
+/b2b-digital-marketing-sri-lanka                  /index.html   200
+
 
 # Catch-all: serve index.html but with 404 status for unknown routes
 /*    /index.html   404
