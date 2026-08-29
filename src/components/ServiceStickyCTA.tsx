@@ -11,6 +11,11 @@ const SERVICE_ROUTE_PATTERNS = [
   /^\/product-launch-events/,
 ];
 
+const CUSTOM_NUMBER_PAGES = [
+  "/automotive-digital-marketing-sri-lanka",
+  "/education-marketing-agency-sri-lanka",
+];
+
 const isServiceRoute = (pathname: string) => {
   if (pathname === "/") return false;
   if (pathname.startsWith("/blog")) return false;
@@ -18,13 +23,14 @@ const isServiceRoute = (pathname: string) => {
   return SERVICE_ROUTE_PATTERNS.some((re) => re.test(pathname));
 };
 
-const WA_HREF =
-  "https://wa.me/94701772626?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20%26%20quote";
-const TEL_HREF = "tel:+94701772626";
-
 const ServiceStickyCTA = () => {
   const { pathname } = useLocation();
   if (!isServiceRoute(pathname)) return null;
+
+  const number = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+  const waHref = `https://wa.me/${number}?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20%26%20quote`;
+  const telHref = `tel:+94${number.slice(2)}`;
+  const displayNumber = `+94 ${number.slice(2, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;
 
   return (
     <section className="bg-secondary/40 border-t border-border py-12 md:py-16" aria-label="Talk to us">
@@ -63,7 +69,7 @@ const ServiceStickyCTA = () => {
                 <p className="text-xs text-muted-foreground">Trusted by SMEs across Colombo, Kandy, Galle, Negombo, Jaffna and beyond.</p>
               </div>
               <a
-                href={WA_HREF}
+                href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] !text-white px-5 h-12 text-sm font-bold shadow-md hover:opacity-90 transition-opacity border-none"
@@ -71,10 +77,10 @@ const ServiceStickyCTA = () => {
                 <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
               </a>
               <a
-                href={TEL_HREF}
+                href={telHref}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[hsl(25,95%,53%)] !text-white px-5 h-12 text-sm font-bold shadow-md hover:bg-[hsl(25,95%,45%)] transition-colors border-none"
               >
-                <Phone className="h-4 w-4" /> Call +94 70 177 2626
+                <Phone className="h-4 w-4" /> Call {displayNumber}
               </a>
             </div>
           </div>

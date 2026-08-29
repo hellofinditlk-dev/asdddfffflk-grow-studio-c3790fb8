@@ -1,8 +1,17 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
+
+const CUSTOM_NUMBER_PAGES = [
+  "/automotive-digital-marketing-sri-lanka",
+  "/education-marketing-agency-sri-lanka",
+];
 
 /** Exclusive "payback" value-prop card — shows that Cypher reinvests the
  *  management fee as free publicity on Findit.lk & StudyWay.lk. */
 const PaybackCard = () => {
+  const { pathname } = useLocation();
+  const waNumber = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+
   const textRef = useRef<HTMLSpanElement>(null);
   const [decoded, setDecoded] = useState(false);
 
@@ -171,7 +180,7 @@ const PaybackCard = () => {
             Social Media Management package — no add-on cost.
           </p>
           <a
-            href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20the%20free%20Findit.lk%20%2F%20StudyWay.lk%20publicity%20on%20my%20package"
+            href={`https://wa.me/${waNumber}?text=Hi%2C%20I%20want%20to%20get%20the%20free%20Findit.lk%20%2F%20StudyWay.lk%20publicity%20on%20my%20package`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[hsl(25,95%,53%)] text-white font-extrabold text-sm px-6 py-3.5 whitespace-nowrap transition-all hover:-translate-y-0.5 hover:shadow-lg"

@@ -25,6 +25,8 @@ export interface IndustryData {
   ctaButtonText: string;
   formFields: IndustryFormField[];
   faqs: { q: string; a: string }[];
+  /** Optional page-specific WhatsApp number (defaults to main business number) */
+  whatsappNumber?: string;
   /** Optional extended SEO content sections */
   challengesHeading?: string;
   challengesIntro?: string;
@@ -1194,6 +1196,7 @@ export const industries: IndustryData[] = [
     ctaHeading: "Increase Student Enrollments",
     ctaDescription: "Our education marketing campaigns target students and parents actively searching for courses and tuition classes in Sri Lanka. Digital marketing tools such as social media, SEO, and well-designed websites play a major role in influencing students when selecting universities or courses.",
     ctaButtonText: "Increase Student Enrollments",
+    whatsappNumber: "94760317477",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
       { name: "email", placeholder: "Email Address", type: "email" },
@@ -1515,6 +1518,7 @@ export const industries: IndustryData[] = [
     ctaHeading: "Sell More Vehicles Online",
     ctaDescription: "Our automotive marketing campaigns target serious car buyers and generate high-quality leads for your dealership. Studies show that car buyers spend more than 13 hours researching vehicles online before contacting a dealership.",
     ctaButtonText: "Get More Car Leads",
+    whatsappNumber: "94760317477",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
       { name: "email", placeholder: "Email Address", type: "email" },
