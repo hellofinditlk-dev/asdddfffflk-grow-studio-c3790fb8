@@ -1196,6 +1196,7 @@ export const industries: IndustryData[] = [
     ctaHeading: "Increase Student Enrollments",
     ctaDescription: "Our education marketing campaigns target students and parents actively searching for courses and tuition classes in Sri Lanka. Digital marketing tools such as social media, SEO, and well-designed websites play a major role in influencing students when selecting universities or courses.",
     ctaButtonText: "Increase Student Enrollments",
+    whatsappNumber: "94760317477",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
       { name: "email", placeholder: "Email Address", type: "email" },
