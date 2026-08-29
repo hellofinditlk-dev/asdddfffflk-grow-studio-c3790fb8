@@ -14,6 +14,7 @@ const SERVICE_ROUTE_PATTERNS = [
 const CUSTOM_NUMBER_PAGES = [
   "/automotive-digital-marketing-sri-lanka",
   "/education-marketing-agency-sri-lanka",
+  "/real-estate-digital-marketing-sri-lanka",
 ];
 
 const isServiceRoute = (pathname: string) => {

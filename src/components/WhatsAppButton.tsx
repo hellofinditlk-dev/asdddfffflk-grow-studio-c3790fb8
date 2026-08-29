@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 const CUSTOM_NUMBER_PAGES = [
   "/automotive-digital-marketing-sri-lanka",
   "/education-marketing-agency-sri-lanka",
+  "/real-estate-digital-marketing-sri-lanka",
 ];
 
 const WhatsAppButton = () => {
