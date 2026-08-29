@@ -67,6 +67,7 @@ const Footer = () => (
             <Link to="/ecommerce-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Ecommerce</Link>
             <Link to="/healthcare-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Healthcare</Link>
             <Link to="/finance-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Finance</Link>
+            <Link to="/b2b-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">B2B Marketing</Link>
           </div>
         </div>
 

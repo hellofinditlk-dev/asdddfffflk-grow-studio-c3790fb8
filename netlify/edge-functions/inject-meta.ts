@@ -310,6 +310,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Generate qualified leads for banks, insurance, fintech, and financial advisory firms with finance digital marketing, SEO, and paid advertising in Sri Lanka.",
     h1: "Digital Marketing for Financial Services Companies in Sri Lanka",
   },
+  "/b2b-digital-marketing-sri-lanka": {
+    title: "B2B Digital Marketing Sri Lanka | B2B Lead Generation Agency",
+    description: "Generate qualified business leads with B2B digital marketing, LinkedIn marketing, SEO, and paid advertising campaigns for Sri Lankan companies selling to other businesses.",
+    h1: "Digital Marketing for B2B Companies in Sri Lanka",
+  },
   // Blog posts
   "/blog/why-social-media-management-important-businesses-sri-lanka": {
     title: "Why Social Media Management is Important for Businesses in Sri Lanka",
