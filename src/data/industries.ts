@@ -1070,6 +1070,7 @@ export const industries: IndustryData[] = [
     ctaHeading: "Generate More Property Leads",
     ctaDescription: "Our targeted campaigns reach serious property buyers and investors looking for real estate in Sri Lanka. Modern buyers start their property search online, and having a strong digital presence ensures that your real estate listings reach the right audience at the right time.",
     ctaButtonText: "Get Property Leads",
+    whatsappNumber: "94771437707",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
       { name: "email", placeholder: "Email Address", type: "email" },

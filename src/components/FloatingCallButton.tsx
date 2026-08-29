@@ -1,14 +1,15 @@
 import { Phone } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
-const CUSTOM_NUMBER_PAGES = [
-  "/automotive-digital-marketing-sri-lanka",
-  "/education-marketing-agency-sri-lanka",
-];
+const PAGE_PHONE_NUMBERS: Record<string, string> = {
+  "/automotive-digital-marketing-sri-lanka": "94760317477",
+  "/education-marketing-agency-sri-lanka": "94760317477",
+  "/real-estate-digital-marketing-sri-lanka": "94771437707",
+};
 
 const FloatingCallButton = () => {
   const { pathname } = useLocation();
-  const number = CUSTOM_NUMBER_PAGES.includes(pathname) ? "94760317477" : "94701772626";
+  const number = PAGE_PHONE_NUMBERS[pathname] || "94701772626";
 
   return (
     <a
