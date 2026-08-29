@@ -1518,6 +1518,7 @@ export const industries: IndustryData[] = [
     ctaHeading: "Sell More Vehicles Online",
     ctaDescription: "Our automotive marketing campaigns target serious car buyers and generate high-quality leads for your dealership. Studies show that car buyers spend more than 13 hours researching vehicles online before contacting a dealership.",
     ctaButtonText: "Get More Car Leads",
+    whatsappNumber: "94760317477",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
       { name: "email", placeholder: "Email Address", type: "email" },
