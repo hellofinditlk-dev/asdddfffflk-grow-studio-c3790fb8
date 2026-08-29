@@ -613,10 +613,10 @@ const IndustryPageLayout = ({ data }: Props) => {
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Got questions? Let's chat — no pressure, just results!</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-                      <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
+                      <a href={`https://wa.me/${waNumber}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                      <a href={`https://wa.me/${waNumber}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
                     </Button>
                   </div>
                 </div>
