@@ -331,6 +331,7 @@ export const industries: IndustryData[] = [
       { q: "How much does hotel digital marketing cost in Sri Lanka?", a: "Our hotel marketing packages start from affordable monthly plans tailored to your property size, location, and goals. Contact us for a custom quote based on your specific needs." },
       { q: "What platforms are best for hotel marketing in Sri Lanka?", a: "The most effective platforms include Google Search for SEO and ads, Instagram and TikTok for visual content, Facebook for targeted advertising, and email for guest retention." },
     ],
+    whatsappNumber: "94771976351",
   },
   {
     slug: "travel-agency-digital-marketing-sri-lanka",
@@ -627,6 +628,7 @@ export const industries: IndustryData[] = [
       { q: "What platforms are best for travel agency marketing?", a: "Google Search, Instagram, Facebook, TikTok, and YouTube are the most effective platforms for reaching both local and international travelers." },
       { q: "How much does travel agency digital marketing cost?", a: "Our travel marketing packages start from affordable monthly plans tailored to your agency size, target markets, and goals. Contact us for a custom quote." },
     ],
+    whatsappNumber: "94771976351",
   },
   {
     slug: "fashion-brand-digital-marketing-sri-lanka",
