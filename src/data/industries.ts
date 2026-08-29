@@ -2301,6 +2301,177 @@ export const industries: IndustryData[] = [
       "description": "B2B lead generation, LinkedIn marketing, SEO, and paid advertising for manufacturers, exporters, distributors, and B2B service providers in Sri Lanka."
     },
   },
+  {
+    slug: "home-services-construction-digital-marketing-sri-lanka",
+    shortName: "Home Services & Construction",
+    seoTitle: "Home Services & Construction Digital Marketing Sri Lanka | Contractor & Solar Marketing Agency",
+    metaDescription: "Generate qualified leads for construction companies, contractors, renovation firms, interior designers, and solar installers with home services digital marketing, SEO, and paid advertising in Sri Lanka.",
+    h1: "Digital Marketing for Home Services & Construction Companies in Sri Lanka",
+    intro: "Construction firms, contractors, renovation specialists, interior designers, and solar installation companies all compete for the same high-value, high-intent homeowners and property developers researching projects online. Cypher Digital helps construction companies, general contractors, renovation firms, interior designers, and solar panel installers in Sri Lanka and Colombo generate qualified project leads through SEO, social media marketing, video marketing, and paid advertising campaigns.",
+    servicesHeading: "Home Services & Construction Marketing Services",
+    services: [
+      "Project and quote request lead generation ads",
+      "Before/after and project showcase videos",
+      "Google Ads for renovation, construction & solar searches",
+      "Service and project-type landing pages",
+      "Social media marketing for completed projects",
+    ],
+    ctaHeading: "Generate More Project Leads",
+    ctaDescription: "Our targeted campaigns reach homeowners, property developers, and businesses actively searching for contractors, renovation services, and solar installation in Sri Lanka. A strong digital presence ensures your services reach serious buyers at the exact moment they're ready to get a quote.",
+    ctaButtonText: "Get Project Leads",
+    whatsappNumber: "94760317477",
+    formFields: [
+      { name: "name", placeholder: "Your Name *", required: true },
+      { name: "email", placeholder: "Email Address", type: "email" },
+      { name: "phone", placeholder: "Phone Number *", type: "tel", required: true },
+      { name: "companyName", placeholder: "Company Name" },
+      { name: "industryType", placeholder: "Category (Construction, Solar, Renovation, Interior Design, etc.)" },
+      { name: "message", placeholder: "Tell us about your project marketing needs..." },
+    ],
+    challengesHeading: "Why Digital Marketing is Important for Home Services & Construction",
+    challengesIntro: "Homeowners and property developers now research contractors, renovation companies, and solar installers online long before requesting a quote — comparing portfolios, reviews, and pricing on Google and social media. A strong digital presence puts your company in front of serious buyers earlier in a long, high-value decision process.",
+    challengesList: [
+      "Increased online visibility",
+      "High-quality, project-ready leads",
+      "Faster quote requests and conversions",
+      "Stronger brand credibility and trust",
+      "Better customer engagement",
+    ],
+    challengesOutro: "Digital marketing allows home services and construction companies to showcase completed projects to a wider, more targeted audience and generate qualified leads more efficiently.",
+    strategy: {
+      heading: "Our Home Services & Construction Marketing Strategy",
+      description: "Cypher Digital uses trust and portfolio-driven strategies to help construction, contracting, renovation, and solar companies in Sri Lanka generate leads and close more projects.",
+      subsections: [
+        {
+          h3: "Home Services & Construction Lead Generation Strategies",
+          paragraphs: [
+            "Generating high-quality, quote-ready leads is the most important goal for home services and construction marketing.",
+          ],
+          bullets: [
+            "Targeted Facebook & Instagram Ads",
+            "Google Search advertising for high-intent project keywords",
+            "Project-type and service landing pages",
+            "Free quote / site visit lead forms",
+            "Retargeting campaigns for warm prospects",
+          ],
+        },
+        {
+          h3: "Social Media Marketing for Home Services & Construction",
+          paragraphs: [
+            "Social media is one of the most effective ways to showcase completed projects and build trust with future clients through visible, verifiable work.",
+          ],
+          bullets: [
+            "Before/after project transformation content",
+            "Construction progress and site update reels",
+            "Solar installation showcase content",
+            "Client testimonial content",
+            "Portfolio and completed project highlights",
+          ],
+        },
+        {
+          h3: "SEO for Home Services & Construction Websites",
+          paragraphs: [
+            "Search engine optimization helps contractors, renovation firms, and solar installers rank on Google when potential customers search for terms like 'construction company Sri Lanka', 'house renovation Colombo', 'solar panel installation Sri Lanka', and 'interior designer Colombo'.",
+          ],
+          bullets: [
+            "Keyword research for project & service intent terms",
+            "Service and project-type page optimization",
+            "Technical SEO improvements",
+            "Portfolio and case study content marketing",
+          ],
+        },
+      ],
+    },
+    videoContentHeading: "Home Services & Construction Video Marketing",
+    videoContentIntro: "Video is one of the most effective ways to showcase project quality and craftsmanship online. Before/after transformations and project walkthroughs give potential clients the confidence to request a quote.",
+    videoContentList: [
+      "Before/after project transformation videos",
+      "Construction and renovation progress videos",
+      "Solar installation process videos",
+      "Client testimonial videos",
+      "Drone project overview videos",
+    ],
+    videoContentOutro: "High-quality video content increases engagement and improves quote requests by letting your work speak for itself.",
+    benefitsHeading: "Challenges Home Services & Construction Companies Face",
+    benefitsIntro: "Many construction, renovation, and solar companies struggle with marketing because they rely only on referrals and site signage, with little digital presence to reach new customers actively searching online.",
+    benefitsList: [
+      "Low website traffic",
+      "Limited online visibility",
+      "Difficulty generating quote-ready leads",
+      "High competition among contractors and installers",
+      "Over-reliance on word-of-mouth referrals",
+    ],
+    benefitsOutro: "Digital marketing helps solve these challenges by targeting homeowners and property developers actively searching for services online and showcasing your completed work.",
+    whyChooseHeading: "Why Choose Cypher Digital for Home Services & Construction Marketing",
+    whyChooseIntro: "Cypher Digital provides customized digital marketing strategies designed specifically for construction, contracting, renovation, and solar companies in Sri Lanka.",
+    whyChooseList: [
+      "Targeted project lead generation campaigns",
+      "Portfolio and trust-focused content production",
+      "Data-driven marketing strategies",
+      "Measurable quote request results",
+      "Experience with construction, renovation & solar advertising in Sri Lanka",
+    ],
+    extraSections: [
+      {
+        heading: "Home Services & Construction Categories We Serve",
+        intro: "Cypher Digital builds tailored marketing campaigns for every category within the home services and construction space — each with its own buyer behavior, keywords, and content style.",
+      },
+      {
+        heading: "Solar Panel Installation Marketing",
+        intro: "Lead generation for solar installers targeting homeowners and businesses searching for 'solar panel installation Sri Lanka', 'net metering', and 'reduce electricity bill'. Focus on ROI calculators, payback-period messaging, and before/after installation content.",
+      },
+      {
+        heading: "General Construction & Contractor Marketing",
+        intro: "Lead generation for construction companies and general contractors targeting property owners and developers searching for 'construction company Sri Lanka' and 'house builders Colombo'. Focus on portfolio showcases, project timelines, and trust-building content.",
+      },
+      {
+        heading: "Home Renovation Marketing",
+        intro: "Lead generation for renovation and remodeling specialists targeting homeowners searching for 'house renovation Colombo' and 'kitchen renovation Sri Lanka'. Focus on before/after transformations and budget-tier packages.",
+      },
+      {
+        heading: "Interior Design Marketing",
+        intro: "Lead generation for interior designers and design-build firms targeting homeowners and businesses searching for 'interior designer Colombo' and 'office interior design Sri Lanka'. Focus on visual portfolio content and style-led social media.",
+      },
+      {
+        heading: "Electrical, Plumbing & Home Repair Marketing",
+        intro: "Lead generation for electricians, plumbers, and general home repair services targeting urgent, high-intent local searches such as 'electrician near me' and 'plumber Colombo'. Focus on fast response messaging and Google Business Profile optimization.",
+      },
+    ],
+    bottomCtaHeading: "Generate More Project Leads with Cypher Digital",
+    bottomCtaText: [
+      "If you want to increase quote requests and grow your construction, renovation, or solar business, Cypher Digital can help.",
+      "Our home services marketing specialists create customized strategies designed to showcase your work, generate leads, and increase project bookings.",
+      "Contact Cypher Digital today for a free home services & construction marketing consultation.",
+    ],
+    industryLinksHeading: "Digital Marketing Services for Multiple Industries",
+    industryLinksIntro: "In addition to home services & construction marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
+    faqs: [
+      { q: "What is home services & construction digital marketing?", a: "It involves promoting construction, contracting, renovation, interior design, and solar installation services online through SEO, social media marketing, video marketing, and paid advertising campaigns." },
+      { q: "How can digital marketing generate leads for contractors and solar installers?", a: "Digital marketing helps home services companies reach homeowners and developers actively searching for construction, renovation, or solar services online, increasing quote requests and project inquiries." },
+      { q: "Which platform is best for construction and solar marketing?", a: "Facebook, Instagram, and Google Search are among the most effective platforms, since before/after visuals and project showcases perform especially well on visual platforms." },
+      { q: "How long does SEO take for a construction or solar website?", a: "SEO typically takes 3-6 months to generate consistent organic traffic and leads depending on local competition." },
+      { q: "Do you cover solar panel installers specifically, or just general construction?", a: "Yes, we work with general contractors, renovation firms, interior designers, solar installation companies, and home repair specialists (electricians, plumbers) — each with campaigns tailored to their specific project types and customer search behavior." },
+      { q: "Do you build separate campaigns for each category, like solar vs. general construction?", a: "Yes. While all these businesses share this page, each category gets its own keyword targeting, ad creative, and landing page messaging — a solar installer's campaign focuses on ROI and payback period, while a renovation firm's focuses on before/after transformations." },
+    ],
+    locationsHeading: "Target Locations in Sri Lanka",
+    locationsList: ["Colombo", "Kandy", "Galle", "Negombo", "Jaffna", "Kurunegala", "Anuradhapura", "Matara", "Batticaloa", "Ratnapura"],
+    serviceSchema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Home Services & Construction Digital Marketing Sri Lanka",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cypher Digital",
+        "url": "https://cypherdigital.lk"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "serviceType": "Home Services & Construction Digital Marketing",
+      "description": "Lead generation, SEO, social media marketing, and paid advertising for construction companies, contractors, renovation firms, interior designers, and solar installers in Sri Lanka."
+    },
+  },
 ];
 
 export const industryNavItems = industries.map((i) => ({
