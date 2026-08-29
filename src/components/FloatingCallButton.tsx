@@ -5,6 +5,8 @@ const PAGE_PHONE_NUMBERS: Record<string, string> = {
   "/automotive-digital-marketing-sri-lanka": "94760317477",
   "/education-marketing-agency-sri-lanka": "94760317477",
   "/real-estate-digital-marketing-sri-lanka": "94771437707",
+  "/healthcare-digital-marketing-sri-lanka": "94771437707",
+  "/finance-digital-marketing-sri-lanka": "94771437707",
 };
 
 const FloatingCallButton = () => {
