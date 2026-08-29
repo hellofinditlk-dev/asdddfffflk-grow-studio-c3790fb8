@@ -25,6 +25,8 @@ export interface IndustryData {
   ctaButtonText: string;
   formFields: IndustryFormField[];
   faqs: { q: string; a: string }[];
+  /** Optional page-specific WhatsApp number (defaults to main business number) */
+  whatsappNumber?: string;
   /** Optional extended SEO content sections */
   challengesHeading?: string;
   challengesIntro?: string;
