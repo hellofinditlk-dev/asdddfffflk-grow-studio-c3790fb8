@@ -307,7 +307,7 @@ const IndustryPageLayout = ({ data }: Props) => {
                 </ul>
                 <Button asChild size="sm" className="w-full bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none rounded-lg h-10 text-xs">
                   <a
-                    href={`https://wa.me/94701772626?text=${encodeURIComponent(`Hi, I'm interested in the ${pkg.name} package (${pkg.price}/month) for my ${data.shortName.toLowerCase()} business`)}`}
+                    href={`https://wa.me/${waNumber}?text=${encodeURIComponent(`Hi, I'm interested in the ${pkg.name} package (${pkg.price}/month) for my ${data.shortName.toLowerCase()} business`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
