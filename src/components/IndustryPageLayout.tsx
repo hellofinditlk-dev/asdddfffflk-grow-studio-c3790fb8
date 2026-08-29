@@ -92,7 +92,7 @@ const IndustryPageLayout = ({ data }: Props) => {
     name: "Cypher Digital",
     description: data.metaDescription,
     url: canonical,
-    telephone: "+94701772626",
+    telephone: `+94${waNumber.slice(2)}`,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Colombo",
