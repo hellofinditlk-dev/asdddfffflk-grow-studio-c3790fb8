@@ -1,21 +1,8 @@
 import { Phone } from "lucide-react";
-import { useLocation } from "react-router-dom";
-
-const PAGE_PHONE_NUMBERS: Record<string, string> = {
-  "/automotive-digital-marketing-sri-lanka": "94760317477",
-  "/education-marketing-agency-sri-lanka": "94760317477",
-  "/real-estate-digital-marketing-sri-lanka": "94771437707",
-  "/healthcare-digital-marketing-sri-lanka": "94771437707",
-  "/finance-digital-marketing-sri-lanka": "94771437707",
-  "/b2b-digital-marketing-sri-lanka": "94771437707",
-  "/hotel-digital-marketing-sri-lanka": "94771976351",
-  "/travel-agency-digital-marketing-sri-lanka": "94771976351",
-  "/home-services-construction-digital-marketing-sri-lanka": "94760317477",
-};
+import { useWhatsappNumber } from "@/lib/whatsapp";
 
 const FloatingCallButton = () => {
-  const { pathname } = useLocation();
-  const number = PAGE_PHONE_NUMBERS[pathname] || "94701772626";
+  const number = useWhatsappNumber();
 
   return (
     <a

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 import { videos, creatives } from "@/data/work-samples";
 
 interface OurWorkSectionProps {
@@ -9,7 +10,8 @@ interface OurWorkSectionProps {
 }
 
 const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: OurWorkSectionProps) => {
-  const wa = `https://wa.me/94701772626?text=${encodeURIComponent(
+  const number = useWhatsappNumber();
+  const wa = `https://wa.me/${number}?text=${encodeURIComponent(
     `Hi, I saw your work samples and I need ${service} for my business`,
   )}`;
 

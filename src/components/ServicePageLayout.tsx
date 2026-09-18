@@ -2,8 +2,9 @@ import { ReactNode } from "react";
 import { CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 
 interface ServicePageLayoutProps {
@@ -65,6 +66,7 @@ const ServicePageLayout = ({
   canonical,
 }: ServicePageLayoutProps) => {
   const displayStats = stats || defaultStats;
+  const WA = useWhatsappNumber();
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -117,12 +119,12 @@ const ServicePageLayout = ({
             <p className="text-lg text-white/50 leading-relaxed mb-8">{description}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${WA}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">
                   Book a Free Consultation
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${WA}?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote`} target="_blank" rel="noopener noreferrer">
                   Get a Free Quote
                 </a>
               </Button>
@@ -328,10 +330,10 @@ const ServicePageLayout = ({
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Don't be shy — say hi! We'd love to hear about your goals.</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-                      <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
+                      <a href={`https://wa.me/${WA}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                      <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
                     </Button>
                   </div>
                 </div>

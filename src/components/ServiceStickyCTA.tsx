@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 import { MessageCircle, Phone, Sparkles, Star, CheckCircle } from "lucide-react";
 
 const SERVICE_ROUTE_PATTERNS = [
@@ -11,17 +12,6 @@ const SERVICE_ROUTE_PATTERNS = [
   /^\/product-launch-events/,
 ];
 
-const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
-  "/automotive-digital-marketing-sri-lanka": "94760317477",
-  "/education-marketing-agency-sri-lanka": "94760317477",
-  "/real-estate-digital-marketing-sri-lanka": "94771437707",
-  "/healthcare-digital-marketing-sri-lanka": "94771437707",
-  "/finance-digital-marketing-sri-lanka": "94771437707",
-  "/b2b-digital-marketing-sri-lanka": "94771437707",
-  "/hotel-digital-marketing-sri-lanka": "94771976351",
-  "/travel-agency-digital-marketing-sri-lanka": "94771976351",
-  "/home-services-construction-digital-marketing-sri-lanka": "94760317477",
-};
 
 const isServiceRoute = (pathname: string) => {
   if (pathname === "/") return false;
@@ -34,7 +24,7 @@ const ServiceStickyCTA = () => {
   const { pathname } = useLocation();
   if (!isServiceRoute(pathname)) return null;
 
-  const number = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
+  const number = useWhatsappNumber();
   const waHref = `https://wa.me/${number}?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20%26%20quote`;
   const telHref = `tel:+94${number.slice(2)}`;
   const displayNumber = `+94 ${number.slice(2, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;

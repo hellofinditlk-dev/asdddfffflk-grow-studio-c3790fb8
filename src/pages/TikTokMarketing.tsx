@@ -215,7 +215,7 @@ const TikTokMarketing = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20TikTok%20strategy%20session" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20a%20free%20TikTok%20strategy%20session" target="_blank" rel="noopener noreferrer">
                   Get a Free Strategy Session
                 </a>
               </Button>

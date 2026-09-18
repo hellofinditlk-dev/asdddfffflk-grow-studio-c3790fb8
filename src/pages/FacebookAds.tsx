@@ -214,7 +214,7 @@ const FacebookAds = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation%20for%20Facebook%20Ads" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation%20for%20Facebook%20Ads" target="_blank" rel="noopener noreferrer">
                   Book a Free Consultation
                 </a>
               </Button>
@@ -410,7 +410,7 @@ const FacebookAds = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-xl mx-auto">
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-bold text-sm px-7 h-13 rounded-xl border-none shadow-[0_0_32px_hsl(25_95%_53%/0.4)] hover:shadow-[0_0_48px_hsl(25_95%_53%/0.6)] transition-all flex-1">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20my%20FREE%20Facebook%20Ads%20audit" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20my%20FREE%20Facebook%20Ads%20audit" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" /> Claim Free Audit on WhatsApp
                 </a>
               </Button>
