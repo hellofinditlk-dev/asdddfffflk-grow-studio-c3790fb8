@@ -30,6 +30,7 @@ const BlogPost51 = () => (
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Remarketing on Facebook and Instagram</h2>
             <p><Link to="/facebook-ads-sri-lanka" className="text-primary font-semibold hover:underline">Facebook remarketing</Link> is managed through Custom Audiences in Meta Business Manager.</p>
+            <p>Businesses that want this planned and managed can use our dedicated <Link to="/facebook-retargeting-sri-lanka" className="text-primary font-semibold hover:underline">Facebook retargeting service in Sri Lanka</Link>, including audience windows, exclusions, consent checks and follow-up creative.</p>
             <p><strong>For website visitors:</strong> Show a different offer than what they saw originally — testimonial or special offer.<br /><strong>For video viewers (75%+):</strong> Direct response with WhatsApp CTA.<br /><strong>For cart abandoners:</strong> Exact product viewed + small discount or free shipping.<br /><strong>For lead form openers:</strong> "Still interested? Message us on WhatsApp."</p>
             <p>Budget: LKR 10,000–20,000/month is sufficient since audiences are smaller but much warmer.</p>
 
@@ -52,6 +53,7 @@ const BlogPost51 = () => (
               {[
                 { label: "Complete Guide to Facebook Ads", path: "/blog/complete-guide-facebook-ads-businesses-sri-lanka", desc: "Lead-gen on Facebook." },
                 { label: "Facebook Campaign Strategy Guide", path: "/blog/facebook-campaign-strategy-guide-sri-lankan-brands", desc: "Plan winning campaigns." },
+                { label: "Facebook Retargeting Service", path: "/facebook-retargeting-sri-lanka", desc: "Audience, tracking and follow-up campaign management." },
                 { label: "How to Run Instagram Ads Sri Lanka", path: "/blog/how-to-run-instagram-ads-sri-lanka", desc: "Step-by-step setup." },
                 { label: "How Google Ads Helps Get High-Intent Customers", path: "/blog/how-google-ads-helps-businesses-high-intent-customers", desc: "Search intent + retargeting." },
                 { label: "PPC Advertising Explained", path: "/blog/ppc-advertising-explained-sri-lankan-businesses", desc: "PPC basics." },

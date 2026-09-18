@@ -41,6 +41,7 @@ const BlogPost138 = () => (
             <p>Weekdays: 7–9 AM (morning commute), 12–1 PM (lunch break) and 7–9 PM (evening). Weekends: 9–11 AM works well for lifestyle and food businesses. Test these slots for two weeks and double down on the ones that get the most reach for your specific page.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">When you should hire a professional</h2>
             <p>If you are spending more than 5 hours per week on your Facebook page and still not seeing results, it is time to consider professional <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media management Sri Lanka</Link> support. A managed page typically costs less per month than what business owners lose in time and missed leads from inconsistent posting.</p>
+            <p>For setup, calendars, publishing, inbox handling, reviews and reporting, see our dedicated <Link to="/facebook-page-management-sri-lanka" className="text-primary font-semibold hover:underline">Facebook Page management service</Link>.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-10">Frequently Asked Questions</h2>
             <h3 className="font-heading text-base font-bold text-foreground mt-6">How many times a week should I post on Facebook for my Sri Lankan business?</h3>
@@ -65,6 +66,10 @@ const BlogPost138 = () => (
               <Link to="/facebook-ads-sri-lanka" className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                 <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Facebook Ads Sri Lanka</h3>
                 <p className="text-xs text-muted-foreground">Lead-gen campaigns that convert page visitors into customers.</p>
+              </Link>
+              <Link to="/facebook-page-management-sri-lanka" className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
+                <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Facebook Page Management</h3>
+                <p className="text-xs text-muted-foreground">Professional setup, publishing, community handling and reporting.</p>
               </Link>
               <Link to="/graphic-design-sri-lanka" className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                 <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Graphic Design Sri Lanka</h3>
