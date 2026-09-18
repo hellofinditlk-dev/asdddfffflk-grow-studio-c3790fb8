@@ -243,12 +243,12 @@ const SocialMediaManagement = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20strategy%20call%20for%20social%20media%20marketing" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20a%20free%20strategy%20call%20for%20social%20media%20marketing" target="_blank" rel="noopener noreferrer">
                   Get a Free Strategy Call
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20see%20your%20social%20media%20packages" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20to%20see%20your%20social%20media%20packages" target="_blank" rel="noopener noreferrer">
                   See Our Packages
                 </a>
               </Button>
@@ -386,7 +386,7 @@ const SocialMediaManagement = () => {
                 <p className="text-sm text-white/55">No commitment. We'll tell you exactly what's holding your social media back.</p>
               </div>
               <Button asChild className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold rounded-xl h-12 px-6 border-none whitespace-nowrap">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20social%20media%20audit" target="_blank" rel="noopener noreferrer">Get Free Audit →</a>
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20a%20free%20social%20media%20audit" target="_blank" rel="noopener noreferrer">Get Free Audit →</a>
               </Button>
             </div>
           </div>
@@ -763,7 +763,7 @@ const SocialMediaManagement = () => {
                     ))}
                   </ul>
                   <Button asChild className={`w-full font-semibold rounded-xl h-11 ${pkg.featured ? "bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] border-none" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}>
-                    <a href={`https://wa.me/94701772626?text=${pkg.msg}%20%E2%80%94%20can%20you%20send%20me%20the%20details%3F`} target="_blank" rel="noopener noreferrer">Get Started →</a>
+                    <a href={`https://wa.me/94760317477?text=${pkg.msg}%20%E2%80%94%20can%20you%20send%20me%20the%20details%3F`} target="_blank" rel="noopener noreferrer">Get Started →</a>
                   </Button>
                 </div>
               ))}
@@ -803,7 +803,7 @@ const SocialMediaManagement = () => {
             <div className="bg-card border border-border rounded-2xl p-6 text-center">
               <p className="text-sm text-muted-foreground">Not sure which package is right for you? <strong className="text-foreground">Chat with us on WhatsApp</strong> — we'll recommend the best plan for your budget and goals in 5 minutes.</p>
               <Button asChild className="mt-4 bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold rounded-xl h-11 px-6 border-none">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20social%20media%20package%20for%20my%20business" target="_blank" rel="noopener noreferrer">Help Me Choose a Package →</a>
+                <a href="https://wa.me/94760317477?text=Hi%2C%20I%20need%20help%20choosing%20the%20right%20social%20media%20package%20for%20my%20business" target="_blank" rel="noopener noreferrer">Help Me Choose a Package →</a>
               </Button>
             </div>
 
@@ -846,7 +846,7 @@ const SocialMediaManagement = () => {
               </div>
               <div className="text-center mt-8">
                 <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold rounded-xl h-12 px-8 border-none">
-                  <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20compare%20Cypher%20Digital%20packages%20for%20my%20business" target="_blank" rel="noopener noreferrer">Find the Right Plan for My Business →</a>
+                  <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20to%20compare%20Cypher%20Digital%20packages%20for%20my%20business" target="_blank" rel="noopener noreferrer">Find the Right Plan for My Business →</a>
                 </Button>
               </div>
             </div>
@@ -940,10 +940,10 @@ const SocialMediaManagement = () => {
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Don't be shy — say hi! We'd love to hear about your goals.</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold rounded-xl h-11 px-6 border-none">
-                      <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation%20for%20social%20media%20marketing" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
+                      <a href="https://wa.me/94760317477?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation%20for%20social%20media%20marketing" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                      <a href="https://wa.me/94760317477" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
                     </Button>
                   </div>
                 </div>

@@ -124,7 +124,7 @@ const sections: ClusterSection[] = [
                 className="w-full bg-[hsl(25,95%,53%)] !text-white font-semibold hover:bg-[hsl(25,95%,45%)] border-none rounded-xl"
               >
                 <a
-                  href={`https://wa.me/94701772626?text=${encodeURIComponent(
+                  href={`https://wa.me/94760317477?text=${encodeURIComponent(
                     `Hi, I'm interested in the ${p.name} social media package (${p.price}/month).`,
                   )}`}
                   target="_blank"

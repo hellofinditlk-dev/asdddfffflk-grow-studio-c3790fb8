@@ -61,6 +61,7 @@ const SocialClusterLayout = ({
   finalCtaLead,
   formService,
 }: SocialClusterLayoutProps) => {
+  const WA = useWhatsappNumber();
   const waHref = `https://wa.me/${WA}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const serviceSchema = {

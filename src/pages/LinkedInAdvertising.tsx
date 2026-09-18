@@ -6,7 +6,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Card } from "@/components/ui/card";
 import { Linkedin, Users, Target, Briefcase, Globe, TrendingUp, FileText, UserCheck, Rocket, BarChart3, Check, X } from "lucide-react";
 
-const WA = "https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20know%20more%20about%20LinkedIn%20marketing%20in%20Sri%20Lanka";
+const WA = "https://wa.me/94760317477?text=Hi%2C%20I%20want%20to%20know%20more%20about%20LinkedIn%20marketing%20in%20Sri%20Lanka";
 
 const stats = [
   { icon: Users, num: "1.2M+", desc: "LinkedIn users in Sri Lanka — predominantly professionals aged 25–45" },
@@ -325,7 +325,7 @@ const LinkedInAdvertising = () => {
                     </li>
                   ))}
                 </ul>
-                <a href={`https://wa.me/94701772626?text=${p.cta}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 rounded-lg bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none">Get Started</a>
+                <a href={`https://wa.me/94760317477?text=${p.cta}`} target="_blank" rel="noopener noreferrer" className="block w-full text-center px-6 py-3 rounded-lg bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] font-semibold border-none">Get Started</a>
               </Card>
             ))}
           </div>
