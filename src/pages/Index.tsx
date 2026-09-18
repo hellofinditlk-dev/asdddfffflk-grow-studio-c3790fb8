@@ -127,6 +127,7 @@ const heroServices = services.filter((service) =>
     "SEO Services",
     "AI Visibility",
     "Video Production",
+    "AI Video Production",
     "Graphic Design",
   ].includes(service.title),
 );
