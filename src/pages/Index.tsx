@@ -112,6 +112,17 @@ const services = [
   },
 ];
 
+const heroServices = services.filter((service) =>
+  [
+    "Social Media Marketing",
+    "Google Ads",
+    "SEO Services",
+    "AI Visibility",
+    "Video Production",
+    "Graphic Design",
+  ].includes(service.title),
+);
+
 const whyUs = [
   { icon: <Lightbulb className="w-5 h-5" />, text: "Strategy-first campaigns", detail: "Data-backed strategies tailored to your market" },
   { icon: <TrendingUp className="w-5 h-5" />, text: "Lead generation focused", detail: "Every campaign optimized for real business results" },
@@ -320,110 +331,74 @@ const Index = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-    {/* HERO */}
-    {/* HERO — Immersive Glass */}
-    <section className="relative bg-[#030612] overflow-hidden py-20 lg:py-28">
-      {/* Background glow effects */}
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 -right-24 w-80 h-80 bg-[hsl(25,95%,53%)]/10 blur-[100px] rounded-full pointer-events-none" />
-
+    {/* HERO — animated service tile network */}
+    <section className="hero-stage relative overflow-hidden py-16 lg:py-24">
+      <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-          {/* LEFT — copy */}
+        <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-12 lg:gap-10 items-center max-w-7xl mx-auto">
           <div className="relative z-10 animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-              <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_hsl(252_65%_55%/0.8)]" />
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">Premier Digital Agency • Sri Lanka</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-7">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span className="text-primary text-xs font-bold uppercase">Premier Digital Agency • Sri Lanka</span>
             </div>
 
-            <h1 className="font-heading text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold leading-[0.95] tracking-tight text-white mb-8">
+            <h1 className="font-heading text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[0.96] text-hero-foreground mb-7">
               Digital <br />
-              <span className="text-primary">Marketing</span> <br />
-              Agency <span className="text-white/70 font-bold text-4xl md:text-5xl lg:text-6xl">in Sri Lanka</span>
+              <span className="gradient-text">Marketing</span> <br />
+              Agency <span className="text-hero-muted font-bold text-4xl md:text-5xl lg:text-[3.4rem]">in Sri Lanka</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed mb-10">
-              We empower brands across <span className="text-white font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook</Link> & <Link to="/google-ads-sri-lanka" className="text-primary hover:underline font-semibold">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
+            <p className="text-lg md:text-xl text-hero-muted max-w-xl leading-relaxed mb-9">
+              We empower brands across <span className="text-hero-foreground font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook</Link> & <Link to="/google-ads-sri-lanka" className="text-primary hover:underline font-semibold">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative px-8 py-5 bg-[hsl(25,95%,53%)] hover:bg-[hsl(25,95%,48%)] !text-white font-bold rounded-2xl transition-all overflow-hidden flex items-center justify-center gap-3 shadow-[0_20px_40px_-10px_hsl(25_95%_53%/0.4)] hover:shadow-[0_25px_50px_-12px_hsl(25_95%_53%/0.55)] active:scale-95"
-              >
-                <span className="relative z-10">Get a Free Quote</span>
-                <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group px-8 py-5 bg-white/5 hover:bg-white/10 text-white font-bold rounded-2xl border border-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-md active:scale-95"
-              >
-                Book a Consultation
-              </a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button asChild size="lg" className="h-14 rounded-lg bg-cta text-cta-foreground hover:bg-cta/90 px-7 font-bold shadow-cta">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
+                  Get a Free Quote <ArrowRight className="w-5 h-5" />
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="h-14 rounded-lg border-hero-foreground/20 bg-hero-foreground/5 text-hero-foreground hover:bg-hero-foreground/10 hover:text-hero-foreground px-7 font-bold">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
+                  Book a Consultation
+                </a>
+              </Button>
+              <Button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} size="lg" variant="ghost" className="h-14 rounded-lg text-hero-foreground hover:bg-hero-foreground/10 hover:text-hero-foreground px-5 font-bold">
+                View pricing <ArrowDown className="w-5 h-5" />
+              </Button>
             </div>
 
-            <Button
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              size="lg"
-              className="mt-6 bg-white text-[#030612] hover:bg-white/90 font-bold rounded-2xl px-8 py-5 h-auto shadow-[0_10px_30px_-10px_rgba(255,255,255,0.3)] transition-all active:scale-95"
-            >
-              View pricing
-              <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
-            </Button>
-
-            {/* Trust markers */}
-            <div className="mt-12">
-              <p className="text-[10px] text-slate-500 uppercase tracking-widest mb-3 font-bold">We Advertise On</p>
-              <div className="flex flex-wrap items-center gap-2.5">
+            <div className="mt-9">
+              <p className="text-[10px] text-hero-muted uppercase mb-3 font-bold">We Advertise On</p>
+              <div className="flex flex-wrap items-center gap-2">
                 {trustedLogos.map((name) => (
-                  <span key={name} className="text-xs font-semibold text-slate-400 border border-white/10 bg-white/[0.02] px-3 py-1.5 rounded-lg backdrop-blur-sm">{name}</span>
+                  <span key={name} className="text-xs font-semibold text-hero-muted border border-hero-foreground/10 bg-hero-foreground/[0.03] px-3 py-1.5 rounded-md">{name}</span>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* RIGHT — Mascot composition */}
-          <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <div className="relative aspect-square w-full max-w-lg mx-auto">
-              {/* Glass frame */}
-              <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-slate-900/40 backdrop-blur-3xl overflow-hidden shadow-2xl ring-1 ring-white/20">
-                <img
-                  src={mascotDefault}
-                  alt="Cypher Digital mascot — Sri Lanka digital marketing agency"
-                  className="w-full h-full object-cover"
-                />
-
-                {/* Floating Badge: Rating */}
-                <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-5 rounded-3xl shadow-2xl flex items-center gap-3 md:gap-4 hover:scale-105 transition-transform">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-yellow-500/20 flex items-center justify-center text-yellow-400">
-                    <Star className="w-5 h-5 md:w-6 md:h-6 fill-current" />
-                  </div>
-                  <div>
-                    <p className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Client Satisfaction</p>
-                    <p className="text-xl md:text-2xl font-black text-white leading-tight">5.0 ★</p>
-                  </div>
-                </div>
-
-                {/* Floating Badge: ROI */}
-                <div className="absolute bottom-6 left-6 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-5 rounded-3xl shadow-2xl flex items-center gap-3 md:gap-4 hover:scale-105 transition-transform">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-                    <TrendingUp className="w-5 h-5 md:w-6 md:h-6" />
-                  </div>
-                  <div>
-                    <p className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">Performance</p>
-                    <p className="text-xl md:text-2xl font-black text-white leading-tight">+340% <span className="text-emerald-400 text-sm">ROI</span></p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Small detail mascot avatar */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full border-[6px] border-[#030612] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-2 ring-white/10">
-                <img src={mascotGlasses} alt="Cypher Digital mascot avatar" className="w-full h-full object-cover" />
-              </div>
+          <div className="relative min-h-[540px] lg:min-h-[620px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
+            <div className="hero-orbit absolute inset-[9%] rounded-full border border-primary/20 pointer-events-none" />
+            <div className="absolute inset-0 grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-2">
+              {heroServices.map((service, index) => (
+                <Link
+                  key={service.title}
+                  to={service.link}
+                  className={`hero-service-tile group relative min-h-[146px] p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"}`}
+                  style={{ animationDelay: `${index * -0.55}s` }}
+                >
+                  <span className="inline-flex w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    {service.icon}
+                  </span>
+                  <h2 className="font-heading text-base md:text-lg font-bold text-hero-foreground mb-1.5">{service.title}</h2>
+                  <p className="text-xs md:text-sm text-hero-muted leading-relaxed line-clamp-2">{service.desc}</p>
+                  <ArrowUpRight className="absolute right-4 top-4 w-4 h-4 text-hero-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                </Link>
+              ))}
+            </div>
+            <div className="hero-core absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 px-5 py-3 border border-primary/40 bg-hero/95 shadow-hero-core pointer-events-none">
+              <span className="font-heading text-base md:text-xl font-extrabold text-hero-foreground whitespace-nowrap">CYPHER<span className="text-primary"> DIGITAL</span></span>
             </div>
           </div>
         </div>
