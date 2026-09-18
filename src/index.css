@@ -39,6 +39,9 @@
     --hero-bg: 220 20% 12%;
     --hero-foreground: 0 0% 100%;
     --hero-muted: 220 15% 70%;
+    --hero-panel: 226 37% 10%;
+    --cta: 25 95% 53%;
+    --cta-foreground: 0 0% 100%;
 
     --section-dark: 220 20% 12%;
     --section-dark-foreground: 0 0% 98%;
@@ -132,6 +135,36 @@
     background-clip: text;
     animation: gradient-shift 4s ease-in-out infinite;
   }
+
+  .hero-stage {
+    background: radial-gradient(circle at 72% 45%, hsl(var(--primary) / 0.18), transparent 31%), hsl(var(--hero-bg));
+  }
+
+  .hero-grid-lines {
+    background-image: linear-gradient(hsl(var(--hero-foreground) / 0.025) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--hero-foreground) / 0.025) 1px, transparent 1px);
+    background-size: 52px 52px;
+    mask-image: linear-gradient(to bottom, black, transparent 92%);
+  }
+
+  .hero-service-tile {
+    border-radius: 8px;
+    background: linear-gradient(145deg, hsl(var(--hero-panel) / 0.94), hsl(var(--hero-bg) / 0.86));
+    box-shadow: 0 18px 45px hsl(var(--hero-bg) / 0.45), inset 0 1px hsl(var(--hero-foreground) / 0.06);
+    backdrop-filter: blur(18px);
+  }
+
+  .hero-service-tile:hover {
+    border-color: hsl(var(--primary) / 0.7);
+    box-shadow: 0 22px 54px hsl(var(--primary) / 0.18), inset 0 1px hsl(var(--hero-foreground) / 0.1);
+  }
+
+  .hero-orbit {
+    box-shadow: 0 0 70px hsl(var(--primary) / 0.16), inset 0 0 70px hsl(var(--primary) / 0.08);
+    animation: hero-orbit 18s linear infinite;
+  }
+
+  .hero-float-a { animation: hero-float-a 6s ease-in-out infinite; }
+  .hero-float-b { animation: hero-float-b 7s ease-in-out infinite; }
 }
 
 @keyframes gradient-shift {
@@ -147,4 +180,26 @@
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@keyframes hero-float-a {
+  0%, 100% { transform: translateY(0) rotate(-0.5deg); }
+  50% { transform: translateY(-9px) rotate(0.5deg); }
+}
+
+@keyframes hero-float-b {
+  0%, 100% { transform: translateY(-5px) rotate(0.5deg); }
+  50% { transform: translateY(7px) rotate(-0.5deg); }
+}
+
+@keyframes hero-orbit {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float-a,
+  .hero-float-b,
+  .hero-orbit {
+    animation: none;
+  }
 }
