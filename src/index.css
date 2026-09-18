@@ -235,16 +235,20 @@
   .site-editorial section.bg-secondary\/50 {
     background-color: hsl(var(--editorial-tint));
     background-image:
-      linear-gradient(hsl(var(--editorial-line) / 0.025) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--editorial-line) / 0.025) 1px, transparent 1px);
+      linear-gradient(hsl(var(--editorial-line) / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--editorial-line) / 0.04) 1px, transparent 1px);
     background-size: 56px 56px;
+  }
+
+  .site-editorial section + section {
+    border-top: 1px solid hsl(var(--editorial-line) / 0.055);
   }
 
   .site-editorial section:not(.bg-foreground):not(.section-dark) h2 {
     width: fit-content;
     max-width: 100%;
     margin-inline: auto;
-    background-image: linear-gradient(transparent 78%, hsl(var(--hero-highlight) / 0.42) 78%);
+    background-image: linear-gradient(transparent 76%, hsl(var(--hero-highlight) / 0.55) 76%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -256,7 +260,7 @@
 
   .site-editorial :is(a, article, details, div).bg-card.border {
     border-radius: 8px;
-    box-shadow: 3px 4px 0 hsl(var(--editorial-shadow) / 0.055);
+    box-shadow: 4px 5px 0 hsl(var(--editorial-shadow) / 0.075);
   }
 
   .site-editorial :is(a, article).bg-card.border,
@@ -267,7 +271,19 @@
   .site-editorial :is(a, article).bg-card.border:hover,
   .site-editorial .group.bg-card.border:hover {
     transform: translateY(-2px);
-    box-shadow: 5px 6px 0 hsl(var(--primary) / 0.1);
+    box-shadow: 6px 7px 0 hsl(var(--primary) / 0.13);
+  }
+
+  .site-editorial :is(a, button).bg-primary,
+  .site-editorial :is(a, button).bg-cta {
+    box-shadow: 3px 3px 0 hsl(var(--editorial-line) / 0.16);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .site-editorial :is(a, button).bg-primary:hover,
+  .site-editorial :is(a, button).bg-cta:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 hsl(var(--editorial-line) / 0.18);
   }
 
   .site-editorial section:not(.bg-foreground):not(.section-dark) p.uppercase.text-primary::before {
