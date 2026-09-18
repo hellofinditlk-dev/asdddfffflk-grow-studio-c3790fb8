@@ -23,7 +23,7 @@ const ServiceStickyCTA = () => {
   const { pathname } = useLocation();
   if (!isServiceRoute(pathname)) return null;
 
-  const number = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
+  const number = useWhatsappNumber();
   const waHref = `https://wa.me/${number}?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20%26%20quote`;
   const telHref = `tel:+94${number.slice(2)}`;
   const displayNumber = `+94 ${number.slice(2, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;
