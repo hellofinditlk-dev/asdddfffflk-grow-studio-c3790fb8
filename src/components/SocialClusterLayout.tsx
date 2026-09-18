@@ -185,7 +185,7 @@ const SocialClusterLayout = ({
                       </a>
                     </Button>
                     <Button asChild variant="outline" className="h-11 px-6 rounded-xl">
-                      <a href="tel:+94701772626">
+                      <a href={`tel:+94${WA.slice(2)}`}>
                         <Phone className="w-4 h-4 mr-2" /> Call +94 70 177 2626
                       </a>
                     </Button>
