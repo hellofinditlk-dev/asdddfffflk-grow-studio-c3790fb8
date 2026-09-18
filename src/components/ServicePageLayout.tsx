@@ -66,6 +66,7 @@ const ServicePageLayout = ({
   canonical,
 }: ServicePageLayoutProps) => {
   const displayStats = stats || defaultStats;
+  const WA = useWhatsappNumber();
 
   const serviceSchema = {
     "@context": "https://schema.org",
