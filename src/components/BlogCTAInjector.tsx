@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation } from "react-router-dom";
 import RotatingCTA from "./RotatingCTA";
+import BlogInternalLinks from "./BlogInternalLinks";
 
 /**
  * Auto-injects rotating CTAs into blog post pages without editing each post:
@@ -14,6 +15,8 @@ const BlogCTAInjector = () => {
   const { pathname } = useLocation();
   const [endHost, setEndHost] = useState<HTMLElement | null>(null);
   const [sideHost, setSideHost] = useState<HTMLElement | null>(null);
+  const [linkHost, setLinkHost] = useState<HTMLElement | null>(null);
+  const slug = pathname.replace(/^\/blog\//, "").replace(/\/$/, "");
 
   const isBlogPost = /^\/blog\/[^/]+\/?$/.test(pathname);
 
@@ -21,11 +24,13 @@ const BlogCTAInjector = () => {
     if (!isBlogPost) {
       setEndHost(null);
       setSideHost(null);
+      setLinkHost(null);
       return;
     }
 
     let endEl: HTMLDivElement | null = null;
     let sideEl: HTMLDivElement | null = null;
+    let linkEl: HTMLDivElement | null = null;
     let cancelled = false;
 
     const tryMount = () => {
@@ -49,6 +54,14 @@ const BlogCTAInjector = () => {
           article.appendChild(endEl);
         }
         setEndHost(endEl);
+      }
+
+      // ---- Internal link block host (sits above the end CTA) ----
+      if (!linkEl && endEl?.parentNode) {
+        linkEl = document.createElement("div");
+        linkEl.setAttribute("data-blog-internal-links", "");
+        endEl.parentNode.insertBefore(linkEl, endEl);
+        setLinkHost(linkEl);
       }
 
       // ---- Sticky sidebar host (lg+) ----
@@ -77,6 +90,7 @@ const BlogCTAInjector = () => {
         window.clearTimeout(timeout);
         endEl?.remove();
         sideEl?.remove();
+        linkEl?.remove();
       };
     }
 
@@ -84,6 +98,7 @@ const BlogCTAInjector = () => {
       cancelled = true;
       endEl?.remove();
       sideEl?.remove();
+      linkEl?.remove();
     };
   }, [pathname, isBlogPost]);
 
@@ -91,6 +106,7 @@ const BlogCTAInjector = () => {
 
   return (
     <>
+      {linkHost && createPortal(<BlogInternalLinks slug={slug} />, linkHost)}
       {endHost && createPortal(<RotatingCTA placement="inline" />, endHost)}
       {sideHost && createPortal(<RotatingCTA placement="sidebar" />, sideHost)}
     </>
