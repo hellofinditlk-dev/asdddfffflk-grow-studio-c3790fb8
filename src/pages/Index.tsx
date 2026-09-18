@@ -397,9 +397,6 @@ const Index = () => (
                 </Link>
               ))}
             </div>
-            <div className="hero-core absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 px-5 py-3 border border-primary/40 bg-hero/95 shadow-hero-core pointer-events-none">
-              <span className="font-heading text-base md:text-xl font-extrabold text-hero-foreground whitespace-nowrap">CYPHER<span className="text-primary"> DIGITAL</span></span>
-            </div>
           </div>
         </div>
       </div>
