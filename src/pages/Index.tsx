@@ -395,7 +395,7 @@ const Index = () => (
             </div>
           </div>
 
-          <div className="relative min-h-[510px] lg:min-h-[590px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
+          <div className="relative min-h-[510px] lg:min-h-[660px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="hero-tile-accent hero-tile-accent-star" aria-hidden="true">✦</div>
             <div className="hero-tile-accent hero-tile-accent-dot" aria-hidden="true" />
             <div className="absolute inset-0 grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-0">
