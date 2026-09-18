@@ -6,7 +6,7 @@ import {
   BarChart3, Users, Lightbulb, Rocket, FileText, TrendingUp,
   Phone, ArrowUpRight, Palette, Globe, Eye, MousePointerClick,
   MapPin, ShoppingBag, GraduationCap, Building2, Sparkles, Zap, Star,
-  Play, ChevronRight, ArrowDown
+  Play, ChevronRight, ArrowDown, Clapperboard
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
@@ -69,6 +69,14 @@ const services = [
     items: ["Promo videos", "Reels & short videos", "Brand videos", "Ad creatives", "Product videos"],
     link: "/video-production-sri-lanka",
     gradient: "from-[hsl(270,70%,55%)] to-[hsl(252,65%,55%)]",
+  },
+  {
+    icon: <Clapperboard className="w-5 h-5" />,
+    title: "AI Video Production",
+    desc: "AI-generated video ads and reels that look premium at a fraction of the cost.",
+    items: ["AI video ads", "Product & brand videos", "AI reels & shorts", "Script-to-video", "Fast turnaround"],
+    link: "/ai-video-production-sri-lanka",
+    gradient: "from-[hsl(258,85%,60%)] to-[hsl(190,85%,50%)]",
   },
   {
     icon: <Rocket className="w-5 h-5" />,
@@ -1057,6 +1065,7 @@ const Index = () => (
               { label: "Instagram Marketing", to: "/instagram-marketing-sri-lanka" },
               { label: "LinkedIn Marketing", to: "/linkedin-advertising-sri-lanka" },
               { label: "Video Production", to: "/video-production-sri-lanka" },
+              { label: "AI Video Production", to: "/ai-video-production-sri-lanka" },
               { label: "Graphic Design", to: "/graphic-design-sri-lanka" },
               { label: "Influencer Marketing", to: "/influencer-marketing-sri-lanka" },
               { label: "TV Advertising", to: "/tv-advertising-sri-lanka" },
