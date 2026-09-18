@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 import { videos, creatives } from "@/data/work-samples";
 
 interface OurWorkSectionProps {
