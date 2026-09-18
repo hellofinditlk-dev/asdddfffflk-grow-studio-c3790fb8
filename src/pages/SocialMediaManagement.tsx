@@ -701,6 +701,11 @@ const SocialMediaManagement = () => {
             {[
               { label: "Social Media Advertising", path: "/social-media-advertising-sri-lanka", desc: "Paid campaigns on Facebook, Instagram, TikTok and LinkedIn — targeting, creative, funnels and the metrics we manage to." },
               { label: "Social Media Campaigns", path: "/social-media-campaigns-sri-lanka", desc: "How we plan launches, festival offers, intake drives and event pushes, with sample campaign frameworks." },
+              { label: "Social Media Strategy", path: "/social-media-strategy-sri-lanka", desc: "Objectives, audience research, platform choice, content themes and budget structure — written as a plan." },
+              { label: "Content Creation", path: "/social-media-content-creation-sri-lanka", desc: "Shoots, posts, carousels, reels and multilingual copy planned on a monthly calendar." },
+              { label: "Lead Generation", path: "/social-media-lead-generation-sri-lanka", desc: "Lead ads, click-to-WhatsApp campaigns, qualification and follow-up that turns enquiries into customers." },
+              { label: "Social Media Audit", path: "/social-media-audit-sri-lanka", desc: "A structured review of your pages, content, ad spend and enquiry path, with a prioritised fix list." },
+              { label: "Social Media Consultant", path: "/social-media-consultant-sri-lanka", desc: "Direction, ad account structure and training for businesses with their own marketing team." },
               { label: "Packages & Pricing", path: "/social-media-marketing-packages-sri-lanka", desc: "Every package inclusion, add-on prices, and a plain explanation of agency fee versus ad spend." },
               { label: "Facebook Ads", path: "/facebook-ads-sri-lanka", desc: "Lead generation, retargeting and conversion campaigns on Facebook and Instagram." },
               { label: "Instagram Marketing", path: "/instagram-marketing-sri-lanka", desc: "Reels, Stories and Instagram ads for visual and lifestyle brands." },
