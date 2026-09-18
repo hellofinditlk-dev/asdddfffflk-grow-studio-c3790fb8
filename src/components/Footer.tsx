@@ -33,6 +33,11 @@ const Footer = () => (
             <Link to="/social-media-advertising-sri-lanka" className="hover:text-foreground transition-colors">Social Media Advertising</Link>
             <Link to="/social-media-campaigns-sri-lanka" className="hover:text-foreground transition-colors">Social Media Campaigns</Link>
             <Link to="/social-media-marketing-packages-sri-lanka" className="hover:text-foreground transition-colors">Social Media Packages</Link>
+            <Link to="/social-media-strategy-sri-lanka" className="hover:text-foreground transition-colors">Social Media Strategy</Link>
+            <Link to="/social-media-content-creation-sri-lanka" className="hover:text-foreground transition-colors">Social Media Content Creation</Link>
+            <Link to="/social-media-lead-generation-sri-lanka" className="hover:text-foreground transition-colors">Social Media Lead Generation</Link>
+            <Link to="/social-media-audit-sri-lanka" className="hover:text-foreground transition-colors">Social Media Audit</Link>
+            <Link to="/social-media-consultant-sri-lanka" className="hover:text-foreground transition-colors">Social Media Consultant</Link>
             <Link to="/ai-visibility-sri-lanka" className="hover:text-foreground transition-colors">AI Visibility</Link>
             <Link to="/facebook-ads-sri-lanka" className="hover:text-foreground transition-colors">Facebook Advertising</Link>
             <Link to="/google-ads-sri-lanka" className="hover:text-foreground transition-colors">Google Ads</Link>

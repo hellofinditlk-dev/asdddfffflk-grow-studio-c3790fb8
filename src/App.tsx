@@ -213,6 +213,11 @@ const ReelCreation = lazy(() => import("./pages/ReelCreation"));
 const SocialMediaAdvertising = lazy(() => import("./pages/SocialMediaAdvertising"));
 const SocialMediaCampaigns = lazy(() => import("./pages/SocialMediaCampaigns"));
 const SocialMediaPackages = lazy(() => import("./pages/SocialMediaPackages"));
+const SocialMediaStrategy = lazy(() => import("./pages/SocialMediaStrategy"));
+const SocialMediaContentCreation = lazy(() => import("./pages/SocialMediaContentCreation"));
+const SocialMediaLeadGeneration = lazy(() => import("./pages/SocialMediaLeadGeneration"));
+const SocialMediaAudit = lazy(() => import("./pages/SocialMediaAudit"));
+const SocialMediaConsultant = lazy(() => import("./pages/SocialMediaConsultant"));
 
 
 const queryClient = new QueryClient();
@@ -437,6 +442,11 @@ const App = () => (
               <Route path="/social-media-advertising-sri-lanka" element={<SocialMediaAdvertising />} />
               <Route path="/social-media-campaigns-sri-lanka" element={<SocialMediaCampaigns />} />
               <Route path="/social-media-marketing-packages-sri-lanka" element={<SocialMediaPackages />} />
+              <Route path="/social-media-strategy-sri-lanka" element={<SocialMediaStrategy />} />
+              <Route path="/social-media-content-creation-sri-lanka" element={<SocialMediaContentCreation />} />
+              <Route path="/social-media-lead-generation-sri-lanka" element={<SocialMediaLeadGeneration />} />
+              <Route path="/social-media-audit-sri-lanka" element={<SocialMediaAudit />} />
+              <Route path="/social-media-consultant-sri-lanka" element={<SocialMediaConsultant />} />
               <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/brand-identity-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/company-profile-design-sri-lanka" element={<DesignSubService />} />

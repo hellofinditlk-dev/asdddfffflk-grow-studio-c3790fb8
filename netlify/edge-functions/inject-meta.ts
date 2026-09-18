@@ -79,6 +79,31 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Social media marketing packages in Sri Lanka from LKR 85,000/month. Posts, reels, location shoots, community management, ad management and reporting — with ad spend quoted separately.",
     h1: "Social Media Marketing Packages in Sri Lanka",
   },
+  "/social-media-strategy-sri-lanka": {
+    title: "Social Media Strategy Sri Lanka | Strategy Agency & Planning | Cypher Digital",
+    description: "Social media strategy services in Sri Lanka — objectives, audience research, platform selection, content themes, paid media structure and measurement, written as a plan your team can execute.",
+    h1: "Social Media Strategy in Sri Lanka",
+  },
+  "/social-media-content-creation-sri-lanka": {
+    title: "Social Media Content Creation Sri Lanka | Posts, Reels & Copy | Cypher Digital",
+    description: "Social media content creation in Sri Lanka — location shoots, graphic posts, carousels, reels, stories, ad creatives and Sinhala, Tamil and English copywriting, planned in a monthly calendar.",
+    h1: "Social Media Content Creation in Sri Lanka",
+  },
+  "/social-media-lead-generation-sri-lanka": {
+    title: "Social Media Lead Generation Sri Lanka | Facebook & WhatsApp Leads | Cypher Digital",
+    description: "Social media lead generation in Sri Lanka — Facebook and Instagram lead ads, click-to-WhatsApp campaigns, landing pages, qualification, follow-up and cost per qualified lead reporting.",
+    h1: "Social Media Lead Generation in Sri Lanka",
+  },
+  "/social-media-audit-sri-lanka": {
+    title: "Social Media Audit Sri Lanka | Page, Content & Ad Account Review | Cypher Digital",
+    description: "Request a social media audit in Sri Lanka — a structured review of your Facebook, Instagram, TikTok and LinkedIn setup, content, branding, engagement, ad spend and lead path, with a prioritised fix list.",
+    h1: "Social Media Audit in Sri Lanka",
+  },
+  "/social-media-consultant-sri-lanka": {
+    title: "Social Media Consultant Sri Lanka | Strategy, Ads & Team Training | Cypher Digital",
+    description: "Social media consultant in Sri Lanka — audits, strategy, ad account structure, content standards, lead process advice and in-house team training for businesses with their own marketing staff.",
+    h1: "Social Media Consultant in Sri Lanka",
+  },
   "/reel-creation-sri-lanka": {
     title: "Reel Creation Sri Lanka (2026) | Instagram & TikTok Reels from LKR 18,000 | Cypher Digital",
     description: "Professional reel creation in Sri Lanka. Instagram Reels, TikToks, shoots, editing, captions & AI character videos from LKR 18,000. Monthly content packages by Cypher Digital.",
