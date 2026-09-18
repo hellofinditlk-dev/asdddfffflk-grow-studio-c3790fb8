@@ -1,0 +1,1 @@
+- [ ] Redesign homepage hero: keep “Marketing that actually gets you” fixed; animate Paid, Remembered, Seen, Booked.
