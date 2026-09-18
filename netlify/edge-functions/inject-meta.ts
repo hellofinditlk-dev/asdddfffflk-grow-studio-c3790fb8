@@ -64,6 +64,21 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "AI-powered video production in Sri Lanka. AI avatars, product videos, Reels, TikToks & ad creatives in Sinhala, Tamil & English from LKR 15,000. 48hr turnaround by Cypher Digital.",
     h1: "AI Video Production Sri Lanka – AI Avatars, Reels & Ads That Convert",
   },
+  "/social-media-advertising-sri-lanka": {
+    title: "Social Media Advertising Sri Lanka | Paid Social Agency | Cypher Digital",
+    description: "Social media advertising in Sri Lanka — Facebook, Instagram, TikTok and LinkedIn ad campaigns built for leads and sales. Targeting, creative, retargeting and transparent reporting.",
+    h1: "Social Media Advertising in Sri Lanka",
+  },
+  "/social-media-campaigns-sri-lanka": {
+    title: "Social Media Campaigns Sri Lanka | Campaign Planning & Management | Cypher Digital",
+    description: "Social media campaigns in Sri Lanka — launches, promotions, seasonal and lead generation campaigns planned, produced and run end to end with clear objectives and honest reporting.",
+    h1: "Social Media Campaigns in Sri Lanka",
+  },
+  "/social-media-marketing-packages-sri-lanka": {
+    title: "Social Media Marketing Packages Sri Lanka | Prices from LKR 85,000 | Cypher Digital",
+    description: "Social media marketing packages in Sri Lanka from LKR 85,000/month. Posts, reels, location shoots, community management, ad management and reporting — with ad spend quoted separately.",
+    h1: "Social Media Marketing Packages in Sri Lanka",
+  },
   "/reel-creation-sri-lanka": {
     title: "Reel Creation Sri Lanka (2026) | Instagram & TikTok Reels from LKR 18,000 | Cypher Digital",
     description: "Professional reel creation in Sri Lanka. Instagram Reels, TikToks, shoots, editing, captions & AI character videos from LKR 18,000. Monthly content packages by Cypher Digital.",

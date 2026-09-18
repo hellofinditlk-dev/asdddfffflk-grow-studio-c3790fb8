@@ -687,6 +687,41 @@ const SocialMediaManagement = () => {
         </div>
       </section>
 
+      {/* Social media cluster links */}
+      <section className="py-16 lg:py-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-8">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Go Deeper</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Every part of social media, explained in detail</h2>
+            <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
+              This page is the overview. Each area below has its own guide covering strategy, execution and what it costs.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { label: "Social Media Advertising", path: "/social-media-advertising-sri-lanka", desc: "Paid campaigns on Facebook, Instagram, TikTok and LinkedIn — targeting, creative, funnels and the metrics we manage to." },
+              { label: "Social Media Campaigns", path: "/social-media-campaigns-sri-lanka", desc: "How we plan launches, festival offers, intake drives and event pushes, with sample campaign frameworks." },
+              { label: "Packages & Pricing", path: "/social-media-marketing-packages-sri-lanka", desc: "Every package inclusion, add-on prices, and a plain explanation of agency fee versus ad spend." },
+              { label: "Facebook Ads", path: "/facebook-ads-sri-lanka", desc: "Lead generation, retargeting and conversion campaigns on Facebook and Instagram." },
+              { label: "Instagram Marketing", path: "/instagram-marketing-sri-lanka", desc: "Reels, Stories and Instagram ads for visual and lifestyle brands." },
+              { label: "TikTok Marketing", path: "/tiktok-marketing-sri-lanka", desc: "Native short-form content and TikTok Ads for younger Sri Lankan audiences." },
+              { label: "LinkedIn Marketing", path: "/linkedin-marketing-sri-lanka", desc: "B2B content and targeting by job title, industry and seniority." },
+              { label: "Reel Creation", path: "/reel-creation-sri-lanka", desc: "Vertical video production, shoots and editing from LKR 18,000 per reel." },
+              { label: "Our Work", path: "/our-work", desc: "Creatives, reels and campaign work produced for Sri Lankan brands." },
+            ].map((l) => (
+              <Link
+                key={l.path}
+                to={l.path}
+                className="rounded-xl border border-border bg-card p-5 hover:border-primary/40 hover:shadow-sm transition-all"
+              >
+                <p className="font-semibold text-sm mb-1">{l.label}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <OurWorkSection service="social media management" />
       <section className="py-20 lg:py-28 bg-secondary" id="pricing">

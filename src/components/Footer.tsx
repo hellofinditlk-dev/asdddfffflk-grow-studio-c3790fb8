@@ -29,7 +29,10 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm font-bold mb-4">Services</h4>
           <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
-            <Link to="/social-media-management-sri-lanka" className="hover:text-foreground transition-colors">Social Media Management</Link>
+            <Link to="/social-media-management-sri-lanka" className="hover:text-foreground transition-colors">Social Media Marketing</Link>
+            <Link to="/social-media-advertising-sri-lanka" className="hover:text-foreground transition-colors">Social Media Advertising</Link>
+            <Link to="/social-media-campaigns-sri-lanka" className="hover:text-foreground transition-colors">Social Media Campaigns</Link>
+            <Link to="/social-media-marketing-packages-sri-lanka" className="hover:text-foreground transition-colors">Social Media Packages</Link>
             <Link to="/ai-visibility-sri-lanka" className="hover:text-foreground transition-colors">AI Visibility</Link>
             <Link to="/facebook-ads-sri-lanka" className="hover:text-foreground transition-colors">Facebook Advertising</Link>
             <Link to="/google-ads-sri-lanka" className="hover:text-foreground transition-colors">Google Ads</Link>
