@@ -2,8 +2,9 @@ import { ReactNode } from "react";
 import { CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 
 interface ServicePageLayoutProps {
