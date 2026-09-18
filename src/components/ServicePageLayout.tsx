@@ -333,7 +333,7 @@ const ServicePageLayout = ({
                       <a href={`https://wa.me/${WA}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href={`https://wa.me/${WA}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                      <a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
                     </Button>
                   </div>
                 </div>
