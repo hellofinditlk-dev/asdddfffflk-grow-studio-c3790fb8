@@ -40,7 +40,7 @@ interface SocialClusterLayoutProps {
   formService: string;
 }
 
-const WA = "94701772626";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 
 const SocialClusterLayout = ({
   metaTitle,

@@ -5,8 +5,7 @@ import { useWhatsappNumber } from "@/lib/whatsapp";
 /** Exclusive "payback" value-prop card — shows that Cypher reinvests the
  *  management fee as free publicity on Findit.lk & StudyWay.lk. */
 const PaybackCard = () => {
-  const { pathname } = useLocation();
-  const waNumber = PAGE_WHATSAPP_NUMBERS[pathname] || "94701772626";
+  const waNumber = useWhatsappNumber();
 
   const textRef = useRef<HTMLSpanElement>(null);
   const [decoded, setDecoded] = useState(false);
