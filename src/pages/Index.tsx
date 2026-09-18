@@ -403,7 +403,7 @@ const Index = () => (
                 <Link
                   key={service.title}
                   to={service.link}
-                  className={`hero-service-tile group relative min-h-[146px] p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"}`}
+                  className={`hero-service-tile group relative min-h-[146px] p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"} ${index === heroServices.length - 1 && heroServices.length % 2 === 1 ? "col-span-2 sm:translate-x-0" : ""}`}
                   style={{ animationDelay: `${index * -0.55}s` }}
                 >
                   <span className="inline-flex w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
