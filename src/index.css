@@ -42,6 +42,9 @@
     --hero-panel: 0 0% 100%;
     --hero-highlight: 211 29% 63%;
     --hero-lime: 78 92% 58%;
+    --editorial-tint: 252 45% 97%;
+    --editorial-line: 236 24% 15%;
+    --editorial-shadow: 236 24% 15%;
     --cta: 25 95% 53%;
     --cta-foreground: 0 0% 100%;
 
@@ -220,6 +223,58 @@
 
   .hero-float-a { animation: hero-float-a 6s ease-in-out infinite; }
   .hero-float-b { animation: hero-float-b 7s ease-in-out infinite; }
+
+  /* A restrained echo of the homepage editorial style across public pages. */
+  .site-editorial {
+    overflow: clip;
+  }
+
+  .site-editorial section.bg-secondary,
+  .site-editorial section.bg-secondary\/30,
+  .site-editorial section.bg-secondary\/40,
+  .site-editorial section.bg-secondary\/50 {
+    background-color: hsl(var(--editorial-tint));
+    background-image:
+      linear-gradient(hsl(var(--editorial-line) / 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--editorial-line) / 0.025) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .site-editorial section:not(.bg-foreground):not(.section-dark) h2 {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+    background-image: linear-gradient(transparent 78%, hsl(var(--hero-highlight) / 0.42) 78%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .site-editorial section:not(.bg-foreground):not(.section-dark) :is(.text-left, .items-start) h2,
+  .site-editorial section:not(.bg-foreground):not(.section-dark) div:not(.text-center) > h2:first-child {
+    margin-inline: 0;
+  }
+
+  .site-editorial :is(a, article, details, div).bg-card.border {
+    border-radius: 8px;
+    box-shadow: 3px 4px 0 hsl(var(--editorial-shadow) / 0.055);
+  }
+
+  .site-editorial :is(a, article).bg-card.border,
+  .site-editorial .group.bg-card.border {
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .site-editorial :is(a, article).bg-card.border:hover,
+  .site-editorial .group.bg-card.border:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 6px 0 hsl(var(--primary) / 0.1);
+  }
+
+  .site-editorial section:not(.bg-foreground):not(.section-dark) p.uppercase.text-primary::before {
+    content: "✦";
+    margin-right: 0.45rem;
+    color: hsl(var(--cta));
+  }
 }
 
 @keyframes gradient-shift {
@@ -265,5 +320,10 @@
   .hero-orbit,
   .hero-word-track {
     animation: none;
+  }
+
+  .site-editorial :is(a, article).bg-card.border:hover,
+  .site-editorial .group.bg-card.border:hover {
+    transform: none;
   }
 }

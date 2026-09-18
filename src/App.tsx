@@ -244,6 +244,13 @@ const PageLoader = () => (
   </div>
 );
 
+const SiteShell = ({ children }: { children: React.ReactNode }) => {
+  const { pathname } = useLocation();
+  const isAdmin = pathname.startsWith("/admin");
+
+  return <main className={isAdmin ? undefined : "site-editorial"}>{children}</main>;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -254,7 +261,7 @@ const App = () => (
         <TrailingSlashRedirect />
         <CtaClickTracker />
         <Navbar />
-        <main>
+        <SiteShell>
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />
@@ -485,7 +492,7 @@ const App = () => (
             </Routes>
           </Suspense>
           <ServiceStickyCTA />
-        </main>
+        </SiteShell>
         <Footer />
         <WhatsAppButton />
         <FloatingCallButton />
