@@ -244,6 +244,58 @@
     border-top: 1px solid hsl(var(--editorial-line) / 0.055);
   }
 
+  /* A stronger editorial echo in public page heroes, without changing their layout. */
+  .site-editorial section:has(h1):not(.hero-stage) {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .site-editorial section:has(h1):not(.hero-stage)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(hsl(var(--hero-highlight) / 0.065) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--hero-highlight) / 0.065) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, hsl(var(--foreground)) 0%, transparent 92%);
+  }
+
+  .site-editorial section:has(h1):not(.hero-stage)::after {
+    content: "✦";
+    position: absolute;
+    right: clamp(1.25rem, 5vw, 5rem);
+    top: clamp(1.5rem, 4vw, 3.5rem);
+    z-index: -1;
+    color: hsl(var(--hero-lime));
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1;
+    -webkit-text-stroke: 1px hsl(var(--editorial-line) / 0.45);
+    transform: rotate(12deg);
+    opacity: 0.8;
+  }
+
+  .site-editorial section:has(h1):not(.hero-stage) h1 {
+    width: fit-content;
+    max-width: 100%;
+    text-wrap: balance;
+    text-shadow: 3px 3px 0 hsl(var(--primary) / 0.14);
+  }
+
+  .site-editorial section:has(h1):not(.hero-stage) h1::after {
+    content: "";
+    display: block;
+    width: clamp(4rem, 16vw, 9rem);
+    height: 0.32rem;
+    margin: 0.45rem auto 0;
+    background: hsl(var(--hero-highlight));
+    box-shadow: 0.65rem 0.35rem 0 hsl(var(--hero-lime));
+    transform: rotate(-1deg);
+  }
+
   .site-editorial section:not(.bg-foreground):not(.section-dark) h2 {
     width: fit-content;
     max-width: 100%;
@@ -290,6 +342,18 @@
     content: "✦";
     margin-right: 0.45rem;
     color: hsl(var(--cta));
+  }
+
+  @media (max-width: 767px) {
+    .site-editorial section:has(h1):not(.hero-stage)::after {
+      right: 1rem;
+      top: 1rem;
+      opacity: 0.55;
+    }
+
+    .site-editorial section:has(h1):not(.hero-stage) h1 {
+      text-shadow: 2px 2px 0 hsl(var(--primary) / 0.12);
+    }
   }
 }
 
