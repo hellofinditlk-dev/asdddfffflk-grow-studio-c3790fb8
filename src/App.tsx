@@ -210,6 +210,9 @@ const AdminApplications = lazy(() => import("./pages/AdminApplications"));
 const ProgrammaticAdvertising = lazy(() => import("./pages/ProgrammaticAdvertising"));
 const OurWork = lazy(() => import("./pages/OurWork"));
 const ReelCreation = lazy(() => import("./pages/ReelCreation"));
+const SocialMediaAdvertising = lazy(() => import("./pages/SocialMediaAdvertising"));
+const SocialMediaCampaigns = lazy(() => import("./pages/SocialMediaCampaigns"));
+const SocialMediaPackages = lazy(() => import("./pages/SocialMediaPackages"));
 
 
 const queryClient = new QueryClient();
@@ -431,6 +434,9 @@ const App = () => (
               <Route path="/programmatic-advertising-sri-lanka" element={<ProgrammaticAdvertising />} />
               <Route path="/our-work" element={<OurWork />} />
               <Route path="/reel-creation-sri-lanka" element={<ReelCreation />} />
+              <Route path="/social-media-advertising-sri-lanka" element={<SocialMediaAdvertising />} />
+              <Route path="/social-media-campaigns-sri-lanka" element={<SocialMediaCampaigns />} />
+              <Route path="/social-media-marketing-packages-sri-lanka" element={<SocialMediaPackages />} />
               <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/brand-identity-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/company-profile-design-sri-lanka" element={<DesignSubService />} />
