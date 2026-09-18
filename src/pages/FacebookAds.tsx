@@ -9,17 +9,17 @@ import {
   Target, CheckCircle, BarChart3, Users, TrendingUp, Zap, Shield, Clock,
   Smartphone, Eye, Globe, Layers, MousePointerClick, Brain,
   MessageCircle, Video, Share2, Heart, MapPin, Megaphone, DollarSign,
-  ArrowRight, PieChart, Award, ThumbsUp
+  ArrowRight, PieChart
 } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const stats = [
-  { value: "3x", label: "Avg Lead Increase" },
-  { value: "40%", label: "Lower CPA" },
-  { value: "200+", label: "Campaigns Managed" },
-  { value: "98%", label: "Client Retention" },
+  { value: "Plan", label: "Objective and audience" },
+  { value: "Build", label: "Creative and tracking" },
+  { value: "Test", label: "Offers and audiences" },
+  { value: "Report", label: "Qualified outcomes" },
 ];
 
 const features = [
@@ -55,7 +55,7 @@ const flexiblePoints = [
   "Start with as low as LKR 25,000/month ad spend",
   "No long-term contracts — cancel anytime",
   "Scale your budget up or down based on performance",
-  "Pay only for results, not promises",
+  "Clear separation between management fees and Meta ad spend",
   "Custom packages for startups & small businesses",
   "Free campaign audit for existing advertisers",
 ];
@@ -63,7 +63,7 @@ const flexiblePoints = [
 const trustPoints = [
   { icon: <Shield className="w-5 h-5" />, title: "No Lock-in Contracts", desc: "Flexible monthly plans with no long-term commitments." },
   { icon: <BarChart3 className="w-5 h-5" />, title: "Transparent Reporting", desc: "Detailed monthly reports so you always know your ROI." },
-  { icon: <Clock className="w-5 h-5" />, title: "Fast Turnaround", desc: "Campaigns go live within 48 hours of approval." },
+  { icon: <Clock className="w-5 h-5" />, title: "Planned Launch", desc: "Campaigns launch after creative, tracking and approvals are ready." },
   { icon: <Users className="w-5 h-5" />, title: "Dedicated Manager", desc: "A single point of contact for all your campaign needs." },
 ];
 
@@ -170,10 +170,9 @@ const FacebookAds = () => {
       image: "https://cypherdigital.lk/og-image.jpg",
       url: "https://cypherdigital.lk/facebook-ads-sri-lanka",
       telephone: "+94701772626",
-      priceRange: "LKR 25,000 - LKR 250,000",
+      priceRange: "LKR 25,000",
       address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "127" },
     });
 
     return () => { scripts.forEach((s) => s.remove()); };
@@ -424,12 +423,38 @@ const FacebookAds = () => {
                 <Shield className="w-3.5 h-3.5 text-primary" /> No lock-in contracts
               </div>
               <div className="flex items-center gap-1.5 text-xs text-white/60">
-                <Clock className="w-3.5 h-3.5 text-primary" /> Reply within 30 min
+                <Clock className="w-3.5 h-3.5 text-primary" /> Working-day response
               </div>
               <div className="flex items-center gap-1.5 text-xs text-white/60">
-                <Users className="w-3.5 h-3.5 text-primary" /> 200+ SL businesses helped
+                <Users className="w-3.5 h-3.5 text-primary" /> Sri Lanka-focused planning
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Facebook topic cluster */}
+      <section className="py-16 bg-background border-y border-border">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-8">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Facebook Guides & Services</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold">Plan each part of your Facebook marketing</h2>
+            <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">Use the hub for managed campaigns, then go deeper into the decision your business needs to make next.</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { label: "Facebook Marketing Strategy", path: "/blog/facebook-campaign-strategy-guide-sri-lankan-brands", desc: "Objectives, audiences, funnel stages and a practical campaign plan." },
+              { label: "Facebook Advertising Cost", path: "/facebook-ads-cost-sri-lanka", desc: "Meta spend, management, creative and budget controls explained separately." },
+              { label: "Facebook Lead Generation", path: "/social-media-lead-generation-sri-lanka", desc: "Lead forms, WhatsApp, qualification, response and reporting." },
+              { label: "Facebook Retargeting", path: "/facebook-retargeting-sri-lanka", desc: "Relevant follow-up for visitors, engagers, viewers and warm leads." },
+              { label: "Facebook Ad Creative", path: "/facebook-ad-design-sri-lanka", desc: "Placement-ready campaign visuals and useful test variations." },
+              { label: "Facebook Page Management", path: "/facebook-page-management-sri-lanka", desc: "Setup, content, publishing, community handling and reporting." },
+            ].map((item) => (
+              <Link key={item.path} to={item.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/30 transition-colors">
+                <h3 className="font-heading text-sm font-bold mb-1">{item.label}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -762,35 +787,6 @@ const FacebookAds = () => {
         </div>
       </section>
 
-      {/* Results / Proof */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Real Results from Real Sri Lankan Businesses</h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">Here's what data-driven Facebook marketing in Sri Lanka actually delivers when done right.</p>
-            <div className="grid sm:grid-cols-3 gap-5 mb-10">
-              {[
-                { icon: <Award className="w-5 h-5" />, metric: "412 leads / month", label: "Real estate client in Colombo — at LKR 180 cost per lead." },
-                { icon: <TrendingUp className="w-5 h-5" />, metric: "6.2x ROAS", label: "E-commerce brand in Sri Lanka after 90 days of optimised campaigns." },
-                { icon: <ThumbsUp className="w-5 h-5" />, metric: "+38,000 followers", label: "Beauty salon group across Colombo & Kandy in 8 months." },
-              ].map((item, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-6 text-center">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mx-auto mb-3">{item.icon}</div>
-                  <div className="font-heading text-lg font-extrabold text-foreground mb-2">{item.metric}</div>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{item.label}</p>
-                </div>
-              ))}
-            </div>
-            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8">
-              <p className="text-sm md:text-base text-foreground leading-relaxed italic text-center">
-                "Cypher Digital transformed our Facebook advertising. Within 60 days, our cost per lead dropped by 47% and bookings doubled. Their team understands the Sri Lankan market like no other agency we've worked with."
-              </p>
-              <p className="text-xs text-muted-foreground text-center mt-4">— Marketing Director, Hospitality Brand, Colombo</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA + Inquiry Form */}
       <section id="inquiry-form" className="py-20 bg-foreground scroll-mt-20">
         <div className="container mx-auto px-4">
@@ -803,7 +799,7 @@ const FacebookAds = () => {
                 Stop wasting budget on campaigns that don't convert. Partner with Cypher Digital for data-driven Facebook advertising that delivers real leads and sales.
               </p>
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8">
-                {["Free Campaign Audit", "No Lock-in Contracts", "Results in 7 Days"].map((item) => (
+                {["Free Campaign Audit", "No Lock-in Contracts", "Clear Monthly Reporting"].map((item) => (
                   <span key={item} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-xs text-white/80 font-medium">
                     <CheckCircle className="w-3 h-3 text-primary" /> {item}
                   </span>

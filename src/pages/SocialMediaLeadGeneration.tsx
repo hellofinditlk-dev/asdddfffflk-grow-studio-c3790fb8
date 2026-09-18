@@ -240,6 +240,10 @@ const sections: ClusterSection[] = [
           payment plans, location, warranty, proof of previous work, or a deadline. Roughly a third of a lead budget in
           warm audiences is a sensible starting point, adjusted by how much traffic the cold campaigns generate.
         </p>
+          <p>
+            Our <L to="/facebook-retargeting-sri-lanka">Facebook retargeting service</L> covers audience windows,
+            exclusions, consent, follow-up creative and conversion checks in detail.
+          </p>
       </>
     ),
   },
@@ -328,6 +332,8 @@ const relatedLinks = [
   { label: "Social Media Marketing", path: "/social-media-management-sri-lanka", desc: "Our main social media marketing and management service." },
   { label: "Social Media Advertising", path: "/social-media-advertising-sri-lanka", desc: "The paid campaigns behind lead generation." },
   { label: "Facebook Ads", path: "/facebook-ads-sri-lanka", desc: "Facebook lead ads, targeting and retargeting." },
+  { label: "Facebook Retargeting", path: "/facebook-retargeting-sri-lanka", desc: "Recover warm visitors and leads with a relevant next message." },
+  { label: "Facebook Ad Creative", path: "/facebook-ad-design-sri-lanka", desc: "Placement-ready creative variations for lead campaigns." },
   { label: "Social Media Campaigns", path: "/social-media-campaigns-sri-lanka", desc: "Campaign objectives, phasing and offers." },
   { label: "Social Media Strategy", path: "/social-media-strategy-sri-lanka", desc: "The plan that decides objectives and budget split." },
   { label: "Social Media Audit", path: "/social-media-audit-sri-lanka", desc: "Find where enquiries are being lost today." },

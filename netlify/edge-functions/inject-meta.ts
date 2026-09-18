@@ -49,6 +49,21 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Professional Facebook marketing services in Sri Lanka. Lead generation, retargeting & conversion campaigns. Data-driven Facebook Ads from LKR 25,000/month. Get results with Cypher Digital.",
     h1: "Facebook Marketing Sri Lanka – High-Performance Facebook Ads That Drive Results",
   },
+  "/facebook-ads-cost-sri-lanka": {
+    title: "Facebook Advertising Cost Sri Lanka | Ad Spend & Fees | Cypher Digital",
+    description: "Understand Facebook advertising cost in Sri Lanka: Meta ad spend, LKR 25,000 standalone management fee, creative costs, budget planning and ways to reduce waste.",
+    h1: "Facebook Advertising Cost in Sri Lanka",
+  },
+  "/facebook-retargeting-sri-lanka": {
+    title: "Facebook Retargeting Sri Lanka | Meta Remarketing Campaigns | Cypher Digital",
+    description: "Facebook retargeting in Sri Lanka for website visitors, video viewers, page engagers, form openers and warm leads — with tracking, consent, creative and reporting.",
+    h1: "Facebook Retargeting in Sri Lanka",
+  },
+  "/facebook-page-management-sri-lanka": {
+    title: "Facebook Page Management Sri Lanka | Content & Community | Cypher Digital",
+    description: "Facebook Page management in Sri Lanka: setup, content calendars, publishing, Messenger and comment handling, reviews, reporting and support for paid campaigns.",
+    h1: "Facebook Page Management in Sri Lanka",
+  },
   "/google-ads-sri-lanka": {
     title: "Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital",
     description: "Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs.",
@@ -140,9 +155,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Social Media Design Sri Lanka – Scroll-Stopping Designs for Every Platform",
   },
   "/facebook-ad-design-sri-lanka": {
-    title: "Facebook Ad Design Sri Lanka | High-Converting Ads",
-    description: "Engaging Facebook ad creatives designed to increase clicks and conversions.",
-    h1: "Facebook Ad Design Sri Lanka – High-Converting Ad Creatives That Drive Results",
+    title: "Facebook Ad Creative Sri Lanka | Facebook Ad Design | Cypher Digital",
+    description: "Facebook ad creative services in Sri Lanka for feed, Stories, Reels and carousel campaigns, with clear offers, placement-ready formats and test variations.",
+    h1: "Facebook Ad Creative & Design Sri Lanka",
   },
   "/instagram-post-design-sri-lanka": {
     title: "Instagram Post Design Sri Lanka | Creative Visuals",

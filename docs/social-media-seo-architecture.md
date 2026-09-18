@@ -74,3 +74,18 @@ No changes to `/social-media-management-sri-lanka` beyond adding five internal l
 ### Not created in this phase (deliberate)
 - No cost/pricing article — existing `/blog/social-media-management-cost-sri-lanka` and the packages page already own that intent.
 - Facebook cluster (Phase 2), measurement articles (Phase 3) and industry social pages (Phase 4) remain pending, in that order.
+
+## Phase 2 — Facebook authority cluster (added 2026-09-18)
+
+Audit decision: six requested topics resolved to three new commercial pages and three strengthened existing URLs. No redirects or duplicate intent pages were added.
+
+| Topic owner | Search intent | Action | Parent / authority flow | Cannibalisation control |
+|---|---|---|---|---|
+| `/blog/facebook-campaign-strategy-guide-sri-lankan-brands` | Facebook marketing strategy, informational | UPDATE existing article | Links to protected pillar and Facebook Ads hub | Kept established URL; no new strategy URL |
+| `/facebook-ads-cost-sri-lanka` | Facebook advertising cost, commercial | CREATE | Child of Facebook Ads hub; links to packages and lead generation | Separates platform spend, LKR 25,000 management and creative |
+| `/social-media-lead-generation-sri-lanka` | Facebook and WhatsApp lead generation, commercial | STRENGTHEN existing page | Supports protected pillar and Facebook Ads hub | No competing `/facebook-lead-generation-sri-lanka` |
+| `/facebook-retargeting-sri-lanka` | Facebook retargeting service, commercial | CREATE | Child of Facebook Ads hub; receives link from broad remarketing article | Broad `/blog/remarketing-retargeting-ads-sri-lanka` remains educational across platforms |
+| `/facebook-ad-design-sri-lanka` | Facebook ad creative/design, commercial | STRENGTHEN existing page | Links conceptually to Facebook Ads and campaign articles | No competing creative URL |
+| `/facebook-page-management-sri-lanka` | Facebook Page management service, commercial | CREATE | Supports protected pillar; receives link from existing page-management article | Informational blog remains separate and unchanged in URL |
+
+All Phase 2 paths are linked from `/social-media-management-sri-lanka` and `/facebook-ads-sri-lanka`. The protected pillar address remains unchanged. The three new commercial paths have self-referencing canonicals, Service and BreadcrumbList schema, FAQs visible on-page, lead forms, WhatsApp/call CTAs, sitemap entries, 200 routing rules and server-rendered metadata.
