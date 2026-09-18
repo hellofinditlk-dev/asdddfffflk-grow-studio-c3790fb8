@@ -133,7 +133,7 @@ const SocialClusterLayout = ({
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white font-semibold hover:bg-[hsl(25,95%,45%)] h-12 px-7 rounded-xl border-none">
                 <a href={waHref} target="_blank" rel="noopener noreferrer">Get a Free Social Media Strategy</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-12 px-7 rounded-xl border-white/25 text-white hover:bg-white/10">
+              <Button asChild size="lg" className="h-12 px-7 rounded-xl bg-white !text-foreground font-semibold hover:bg-white/90 border-none">
                 <Link to="/social-media-marketing-packages-sri-lanka">View Packages</Link>
               </Button>
             </div>
@@ -248,7 +248,7 @@ const SocialClusterLayout = ({
                     <MessageCircle className="w-4 h-4 mr-2" /> WhatsApp Us
                   </a>
                 </Button>
-                <Button asChild variant="outline" className="h-11 px-6 rounded-xl border-white/25 text-white hover:bg-white/10">
+                <Button asChild className="h-11 px-6 rounded-xl bg-white !text-foreground font-semibold hover:bg-white/90 border-none">
                   <Link to="/social-media-management-sri-lanka">Social Media Marketing Overview</Link>
                 </Button>
               </div>
