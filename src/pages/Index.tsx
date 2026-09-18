@@ -331,21 +331,29 @@ const Index = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-    {/* HERO — animated service tile network */}
-    <section className="hero-stage relative overflow-hidden py-16 lg:py-24">
+    {/* HERO — editorial outcome headline with animated service tile network */}
+    <section className="hero-stage relative overflow-hidden py-12 lg:py-20">
       <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-12 lg:gap-10 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-[1.08fr_0.92fr] gap-12 lg:gap-14 items-center max-w-7xl mx-auto">
           <div className="relative z-10 animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-7">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-primary text-xs font-bold uppercase">Premier Digital Agency • Sri Lanka</span>
             </div>
 
-            <h1 className="font-heading text-5xl md:text-7xl lg:text-[5rem] font-extrabold leading-[0.96] text-hero-foreground mb-7">
-              Digital <br />
-              <span className="gradient-text">Marketing</span> <br />
-              Agency <span className="text-hero-muted font-bold text-4xl md:text-5xl lg:text-[3.4rem]">in Sri Lanka</span>
+            <h1 className="font-heading text-[clamp(2.8rem,6vw,5.2rem)] font-extrabold leading-[0.94] text-hero-foreground mb-7">
+              <span className="hero-headline-mark">Marketing that actually</span>
+              <span className="hero-headline-mark mt-2">gets you</span>
+              <span className="hero-word-window mt-3" aria-label="Paid, Remembered, Seen, Booked">
+                <span className="hero-word-track" aria-hidden="true">
+                  <span>Paid</span>
+                  <span>Remembered</span>
+                  <span>Seen</span>
+                  <span>Booked</span>
+                  <span>Paid</span>
+                </span>
+              </span>
             </h1>
 
             <p className="text-lg md:text-xl text-hero-muted max-w-xl leading-relaxed mb-9">
@@ -358,12 +366,12 @@ const Index = () => (
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="h-14 rounded-lg border-hero-foreground/20 bg-hero-foreground/5 text-hero-foreground hover:bg-hero-foreground/10 hover:text-hero-foreground px-7 font-bold">
+              <Button asChild size="lg" variant="outline" className="h-14 rounded-lg border-hero-foreground/20 bg-background text-hero-foreground hover:bg-secondary hover:text-hero-foreground px-7 font-bold">
                 <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
                   Book a Consultation
                 </a>
               </Button>
-              <Button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} size="lg" variant="ghost" className="h-14 rounded-lg text-hero-foreground hover:bg-hero-foreground/10 hover:text-hero-foreground px-5 font-bold">
+              <Button onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })} size="lg" variant="ghost" className="h-14 rounded-lg text-hero-foreground hover:bg-secondary hover:text-hero-foreground px-5 font-bold">
                 View pricing <ArrowDown className="w-5 h-5" />
               </Button>
             </div>
@@ -372,15 +380,16 @@ const Index = () => (
               <p className="text-[10px] text-hero-muted uppercase mb-3 font-bold">We Advertise On</p>
               <div className="flex flex-wrap items-center gap-2">
                 {trustedLogos.map((name) => (
-                  <span key={name} className="text-xs font-semibold text-hero-muted border border-hero-foreground/10 bg-hero-foreground/[0.03] px-3 py-1.5 rounded-md">{name}</span>
+                  <span key={name} className="text-xs font-semibold text-hero-muted border border-hero-foreground/10 bg-background px-3 py-1.5 rounded-md">{name}</span>
                 ))}
               </div>
             </div>
           </div>
 
-          <div className="relative min-h-[540px] lg:min-h-[620px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            <div className="hero-orbit absolute inset-[9%] rounded-full border border-primary/20 pointer-events-none" />
-            <div className="absolute inset-0 grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-2">
+          <div className="relative min-h-[510px] lg:min-h-[590px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
+            <div className="hero-tile-accent hero-tile-accent-star" aria-hidden="true">✦</div>
+            <div className="hero-tile-accent hero-tile-accent-dot" aria-hidden="true" />
+            <div className="absolute inset-0 grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-0">
               {heroServices.map((service, index) => (
                 <Link
                   key={service.title}
