@@ -10,7 +10,8 @@ interface OurWorkSectionProps {
 }
 
 const OurWorkSection = ({ service = "digital marketing", variant = "preview" }: OurWorkSectionProps) => {
-  const wa = `https://wa.me/94701772626?text=${encodeURIComponent(
+  const number = useWhatsappNumber();
+  const wa = `https://wa.me/${number}?text=${encodeURIComponent(
     `Hi, I saw your work samples and I need ${service} for my business`,
   )}`;
 
