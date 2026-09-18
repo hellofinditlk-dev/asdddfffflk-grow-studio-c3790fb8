@@ -52,3 +52,25 @@ All new pages support it. No page created at `/social-media-marketing-sri-lanka`
 ## Monitoring after publish
 
 Record before/after for `/social-media-management-sri-lanka`: clicks, impressions, CTR, average position, top queries. Submit the updated sitemap and request indexing for the three new URLs. Do not stack further major changes on the pillar until two to four weeks of data are available.
+
+## Phase 1 — Core commercial pages (added 2026-09-18)
+
+Audit first: all 216 existing routes and 46 social/Facebook articles were checked.
+None of the five URLs below existed in equivalent form, so each is a genuine gap, not a duplicate.
+
+| URL | Primary keyword | Intent | Type | Status | Words | Parent | Internal links out | Canonical | Schema | CTA | Cannibalisation risk |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| /social-media-strategy-sri-lanka | social media strategy Sri Lanka | Commercial, planning buyer | Commercial support | New | ~2,450 | Pillar | pillar, advertising, campaigns, packages, content creation, lead gen, audit, platform pages | self | Service, BreadcrumbList | Free strategy, WhatsApp, call, form | None — no existing strategy page or equivalent article |
+| /social-media-content-creation-sri-lanka | social media content creation Sri Lanka | Production buyer | Commercial support | New | ~2,190 | Pillar | pillar, design, reel creation, AI video, advertising, packages, campaigns, strategy | self | Service, BreadcrumbList | Free strategy, WhatsApp, call, form | Low — /social-media-design-sri-lanka covers design only, linked not duplicated |
+| /social-media-lead-generation-sri-lanka | social media lead generation Sri Lanka | Lead-gen buyer | Commercial support | New | ~2,270 | Pillar | pillar, advertising, Facebook Ads, campaigns, strategy, audit, LinkedIn, packages | self | Service, BreadcrumbList | Free strategy, WhatsApp, call, form | Low — /blog/lead-generation-strategies-sri-lanka-2026 is informational and broader |
+| /social-media-audit-sri-lanka | social media audit Sri Lanka | Lead-gen / audit request | Commercial support | New | ~2,050 | Pillar | pillar, strategy, consultant, advertising, lead gen, content creation, Facebook Ads, packages | self | Service, BreadcrumbList | Request an audit, WhatsApp, call, form | None |
+| /social-media-consultant-sri-lanka | social media consultant Sri Lanka | Advisory buyer | Commercial support | New | ~2,060 | Pillar | pillar, audit, strategy, advertising, lead gen, content creation, platform pages, packages | self | Service, BreadcrumbList | Free consultation, WhatsApp, call, form | Low — agency-intent articles kept, consultant vs agency comparison is distinct |
+
+Technical state for all five: lazy routes in `src/App.tsx`, 200 rules in `public/_redirects`, `public/sitemap.xml` entries (priority 0.9),
+title/description/H1 in `netlify/edge-functions/inject-meta.ts`, Navbar Social Media dropdown, Footer services column,
+and cards in the pillar's "Go Deeper" grid (no orphan pages). No fabricated prices, results, clients, ratings or reviews.
+No changes to `/social-media-management-sri-lanka` beyond adding five internal links.
+
+### Not created in this phase (deliberate)
+- No cost/pricing article — existing `/blog/social-media-management-cost-sri-lanka` and the packages page already own that intent.
+- Facebook cluster (Phase 2), measurement articles (Phase 3) and industry social pages (Phase 4) remain pending, in that order.
