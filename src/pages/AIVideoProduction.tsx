@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import aiVideoPromotion from "@/assets/cypher-ai-video-promotion.mp4.asset.json";
+import aiVideoPoster from "@/assets/cypher-ai-video-poster.jpg.asset.json";
 
 const AIVideoProduction = () => {
   const [, setHoveredCard] = useState<number | null>(null);
@@ -196,6 +197,8 @@ const AIVideoProduction = () => {
                   loop
                   playsInline
                   preload="metadata"
+                  poster={aiVideoPoster.url}
+                  controls
                   aria-label="Cypher Digital AI video production commercial"
                 />
                 <div className="hero-video-label">Cypher Digital AI Production</div>
