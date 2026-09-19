@@ -149,24 +149,48 @@ const AIVideoProduction = () => {
           .aivp .sample-thumb { border-radius: 8px; background: #f5f4f0; aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border: 0.5px solid rgba(0,0,0,0.09); }
           .aivp .play-btn { width: 36px; height: 36px; background: rgba(255,107,43,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #fff; }
           .aivp .wa-btn { background: #25D366; color: #fff; padding: 12px 22px; border-radius: 8px; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
-           .aivp .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr); gap: 44px; align-items: center; }
+           .aivp .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr); grid-template-areas: "copy video" "stats video"; column-gap: 44px; row-gap: 32px; align-items: center; }
+           .aivp .hero-copy { grid-area: copy; }
+           .aivp .hero-stats { grid-area: stats; }
            .aivp .hero-video-shell { position: relative; width: min(100%, 320px); justify-self: end; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 12px; background: #0a0a0a; box-shadow: 0 20px 50px rgba(0,0,0,0.18); }
+           .aivp .hero-video-shell { grid-area: video; }
            .aivp .hero-video-shell video { width: 100%; height: 100%; object-fit: cover; display: block; }
            .aivp .hero-video-label { position: absolute; left: 12px; bottom: 12px; z-index: 1; padding: 6px 10px; border-radius: 6px; background: rgba(10,10,10,0.72); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; backdrop-filter: blur(8px); }
           @media (max-width: 768px) {
+             .aivp-page-shell { padding: 64px 16px 0 !important; }
+             .aivp > section { padding-top: 36px !important; padding-bottom: 36px !important; }
+             .aivp > section:first-child { padding-top: 24px !important; }
             .aivp .grid-3 { grid-template-columns: 1fr !important; }
             .aivp .grid-2 { grid-template-columns: 1fr !important; }
-            .aivp h1.hero { font-size: 36px !important; }
-             .aivp .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-             .aivp .hero-video-shell { justify-self: center; width: min(100%, 340px); }
+             .aivp h1.hero { font-size: 36px !important; line-height: 1.08 !important; }
+             .aivp h2 { font-size: 25px !important; }
+             .aivp .hero-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "copy" "video" "stats"; gap: 28px; }
+             .aivp .hero-video-shell { justify-self: center; width: min(76vw, 280px); box-shadow: 0 14px 34px rgba(0,0,0,0.16); }
+             .aivp .hero-actions { display: grid !important; grid-template-columns: 1fr 1fr; gap: 10px !important; margin-bottom: 0 !important; }
+             .aivp .hero-actions a { min-height: 48px; width: 100%; padding: 11px 10px; justify-content: center; text-align: center; }
+             .aivp .hero-stats { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+             .aivp .hero-stats > div { min-height: 104px; display: flex; flex-direction: column; justify-content: center; }
+             .aivp .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
+             .aivp .comparison-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+             .aivp .comparison-scroll table { min-width: 620px; }
+             .aivp .pkg-card { padding: 22px 18px; }
+             .aivp .pkg-card a { min-height: 48px; display: flex !important; align-items: center; justify-content: center; }
+             .aivp .final-cta { padding: 32px 18px !important; }
+             .aivp .final-cta-actions { display: grid !important; grid-template-columns: 1fr; }
+             .aivp .final-cta-actions a { min-height: 48px; justify-content: center; }
+           }
+           @media (max-width: 380px) {
+             .aivp h1.hero { font-size: 33px !important; }
+             .aivp .hero-actions { grid-template-columns: 1fr; }
+             .aivp .hero-video-shell { width: min(78vw, 260px); }
           }
         `}</style>
 
-        <div className="aivp" style={{ maxWidth: 960, margin: "0 auto", padding: "80px 24px 0" }}>
+        <div className="aivp aivp-page-shell" style={{ maxWidth: 960, margin: "0 auto", padding: "80px 24px 0" }}>
           {/* HERO */}
           <section style={{ padding: "40px 0 48px", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
             <div className="hero-grid">
-              <div>
+              <div className="hero-copy">
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,107,43,0.08)", border: "0.5px solid rgba(255,107,43,0.25)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: "#FF6B2B", letterSpacing: "0.6px", textTransform: "uppercase", marginBottom: 22 }}>
                   ✦ Sri Lanka's #1 AI Video Production Agency
                 </div>
@@ -176,17 +200,9 @@ const AIVideoProduction = () => {
                 <p style={{ fontSize: 16, color: "#555", lineHeight: 1.65, maxWidth: 520, marginBottom: 32 }}>
                   Cinematic brand videos, social media reels, and high-converting ad creatives — produced with the latest AI tools and delivered in 48 hours. Trusted by 500+ businesses across Colombo and Sri Lanka.
                 </p>
-                <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
+                <div className="hero-actions" style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
                   <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">Get a Free Quote →</a>
                   <a href="#packages" className="btn-secondary">View Packages</a>
-                </div>
-                <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
-                  {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 18K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
-                    <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
-                      <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
-                      <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{lbl}</div>
-                    </div>
-                  ))}
                 </div>
               </div>
               <div className="hero-video-shell">
@@ -202,6 +218,14 @@ const AIVideoProduction = () => {
                   aria-label="Cypher Digital AI video production commercial"
                 />
                 <div className="hero-video-label">Cypher Digital AI Production</div>
+              </div>
+              <div className="hero-stats" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
+                {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 18K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
+                  <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
+                    <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
+                    <div style={{ fontSize: 12, color: "#888", marginTop: 3 }}>{lbl}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </section>
@@ -243,7 +267,7 @@ const AIVideoProduction = () => {
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Our Work</div>
             <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production Work Samples</h2>
             <p style={{ fontSize: 14, color: "#666", marginBottom: 32 }}>Real videos produced for Sri Lankan businesses — watch the quality before you decide.</p>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+            <div className="grid-3 work-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
               {[
                 { id: "K5iZaX8-QaE", title: "AI Video Production Sample 1" },
                 { id: "qKmgqf9IpUw", title: "AI Video Production Sample 2" },
@@ -404,7 +428,7 @@ const AIVideoProduction = () => {
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Comparison</div>
             <h2 className="syne" style={{ fontWeight: 700, fontSize: 28, marginBottom: 6, lineHeight: 1.2 }}>AI Video Production vs Traditional Video Production in Sri Lanka</h2>
             <p style={{ fontSize: 14, color: "#666", marginBottom: 24 }}>AI video production doesn't mean lower quality — it means smarter production.</p>
-            <div style={{ border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "auto" }}>
+            <div className="comparison-scroll" style={{ border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
                 <thead>
                   <tr style={{ background: "#f5f4f0" }}>
@@ -490,10 +514,10 @@ const AIVideoProduction = () => {
 
           {/* CTA */}
           <section style={{ padding: "48px 0 64px" }}>
-            <div style={{ background: "#FF6B2B", borderRadius: 14, padding: "44px 32px", textAlign: "center" }}>
+            <div className="final-cta" style={{ background: "#FF6B2B", borderRadius: 14, padding: "44px 32px", textAlign: "center" }}>
               <h2 className="syne" style={{ fontWeight: 800, fontSize: 30, color: "#fff", marginBottom: 10 }}>Ready to Create Your First AI Video in Sri Lanka?</h2>
               <p style={{ fontSize: 14, color: "rgba(255,255,255,0.92)", maxWidth: 560, margin: "0 auto 24px", lineHeight: 1.6 }}>Join 500+ businesses across Sri Lanka that trust Cypher Digital to produce their video content. Get a free consultation and fixed-price quote — no commitment required.</p>
-              <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginBottom: 22 }}>
+              <div className="final-cta-actions" style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginBottom: 22 }}>
                 <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production in Sri Lanka")} target="_blank" rel="noreferrer" className="wa-btn">💬 WhatsApp Us Now</a>
                 <a href="tel:+94701772626" style={{ background: "rgba(255,255,255,0.18)", color: "#fff", padding: "12px 22px", borderRadius: 8, fontSize: 14, fontWeight: 700, textDecoration: "none", border: "1px solid rgba(255,255,255,0.35)" }}>📞 Call +94 70 177 2626</a>
               </div>
