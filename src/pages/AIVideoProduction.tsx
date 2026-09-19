@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
+import aiVideoPromotion from "@/assets/cypher-ai-video-promotion.mp4.asset.json";
 
 const AIVideoProduction = () => {
   const [, setHoveredCard] = useState<number | null>(null);
@@ -147,36 +148,58 @@ const AIVideoProduction = () => {
           .aivp .sample-thumb { border-radius: 8px; background: #f5f4f0; aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border: 0.5px solid rgba(0,0,0,0.09); }
           .aivp .play-btn { width: 36px; height: 36px; background: rgba(255,107,43,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #fff; }
           .aivp .wa-btn { background: #25D366; color: #fff; padding: 12px 22px; border-radius: 8px; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+           .aivp .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr); gap: 44px; align-items: center; }
+           .aivp .hero-video-shell { position: relative; width: min(100%, 320px); justify-self: end; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 12px; background: #0a0a0a; box-shadow: 0 20px 50px rgba(0,0,0,0.18); }
+           .aivp .hero-video-shell video { width: 100%; height: 100%; object-fit: cover; display: block; }
+           .aivp .hero-video-label { position: absolute; left: 12px; bottom: 12px; z-index: 1; padding: 6px 10px; border-radius: 6px; background: rgba(10,10,10,0.72); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; backdrop-filter: blur(8px); }
           @media (max-width: 768px) {
             .aivp .grid-3 { grid-template-columns: 1fr !important; }
             .aivp .grid-2 { grid-template-columns: 1fr !important; }
             .aivp h1.hero { font-size: 36px !important; }
+             .aivp .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+             .aivp .hero-video-shell { justify-self: center; width: min(100%, 340px); }
           }
         `}</style>
 
         <div className="aivp" style={{ maxWidth: 960, margin: "0 auto", padding: "80px 24px 0" }}>
           {/* HERO */}
           <section style={{ padding: "40px 0 48px", borderBottom: "0.5px solid rgba(0,0,0,0.09)" }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,107,43,0.08)", border: "0.5px solid rgba(255,107,43,0.25)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: "#FF6B2B", letterSpacing: "0.6px", textTransform: "uppercase", marginBottom: 22 }}>
-              ✦ Sri Lanka's #1 AI Video Production Agency
-            </div>
-            <h1 className="syne hero" style={{ fontWeight: 800, fontSize: 52, lineHeight: 1.04, letterSpacing: "-1.5px", marginBottom: 18, maxWidth: 620 }}>
-              AI Video Production<br />in <span style={{ color: "#FF6B2B" }}>Sri Lanka</span>
-            </h1>
-            <p style={{ fontSize: 16, color: "#555", lineHeight: 1.65, maxWidth: 520, marginBottom: 32 }}>
-              Cinematic brand videos, social media reels, and high-converting ad creatives — produced with the latest AI tools and delivered in 48 hours. Trusted by 500+ businesses across Colombo and Sri Lanka.
-            </p>
-            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
-              <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">Get a Free Quote →</a>
-              <a href="#packages" className="btn-secondary">View Packages</a>
-            </div>
-            <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
-              {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 18K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
-                <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
-                  <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
-                  <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{lbl}</div>
+            <div className="hero-grid">
+              <div>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(255,107,43,0.08)", border: "0.5px solid rgba(255,107,43,0.25)", borderRadius: 20, padding: "5px 14px", fontSize: 11, fontWeight: 700, color: "#FF6B2B", letterSpacing: "0.6px", textTransform: "uppercase", marginBottom: 22 }}>
+                  ✦ Sri Lanka's #1 AI Video Production Agency
                 </div>
-              ))}
+                <h1 className="syne hero" style={{ fontWeight: 800, fontSize: 52, lineHeight: 1.04, letterSpacing: "-1.5px", marginBottom: 18, maxWidth: 620 }}>
+                  AI Video Production<br />in <span style={{ color: "#FF6B2B" }}>Sri Lanka</span>
+                </h1>
+                <p style={{ fontSize: 16, color: "#555", lineHeight: 1.65, maxWidth: 520, marginBottom: 32 }}>
+                  Cinematic brand videos, social media reels, and high-converting ad creatives — produced with the latest AI tools and delivered in 48 hours. Trusted by 500+ businesses across Colombo and Sri Lanka.
+                </p>
+                <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
+                  <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">Get a Free Quote →</a>
+                  <a href="#packages" className="btn-secondary">View Packages</a>
+                </div>
+                <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "rgba(0,0,0,0.09)", border: "0.5px solid rgba(0,0,0,0.09)", borderRadius: 10, overflow: "hidden", maxWidth: 620 }}>
+                  {[["500+", "Videos Produced"], ["48 hrs", "Avg Delivery"], ["LKR 18K", "Starting From"], ["5.0 ★", "Client Rating"]].map(([num, lbl]) => (
+                    <div key={lbl} style={{ background: "#fff", padding: "18px 12px", textAlign: "center" }}>
+                      <div className="syne" style={{ fontWeight: 800, fontSize: 24 }}>{num}</div>
+                      <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>{lbl}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="hero-video-shell">
+                <video
+                  src={aiVideoPromotion.url}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="Cypher Digital AI video production commercial"
+                />
+                <div className="hero-video-label">Cypher Digital AI Production</div>
+              </div>
             </div>
           </section>
 
