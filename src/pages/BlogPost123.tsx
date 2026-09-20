@@ -88,6 +88,8 @@ better rates, better placements, and better audience targeting than most
 businesses can achieve independently.</p>
 ` }} />
 
+          <p className="mt-8 text-sm text-muted-foreground">For the automated side of media buying, read our guide to <Link to="/blog/what-is-programmatic-advertising-sri-lanka" className="text-primary font-semibold hover:underline">programmatic advertising for Sri Lankan businesses</Link>.</p>
+
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-5 not-prose mt-10">
             <p className="text-foreground font-semibold mb-2">Talk to Cypher Digital</p>
             <p className="text-sm text-muted-foreground mb-3">Get a free strategy call with Sri Lanka&apos;s results-driven digital marketing agency.</p>

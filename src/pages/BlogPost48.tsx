@@ -93,6 +93,7 @@ const BlogPost48 = () => (
               ))}
             </div>
           </div>
+  <p className="mt-8 text-sm text-muted-foreground">Creator partnerships work especially well for style brands — see <Link to="/blog/how-fashion-brands-grow-digital-marketing-sri-lanka" className="text-primary font-semibold hover:underline">how fashion brands in Sri Lanka grow with digital marketing</Link>.</p>
         </div>
       </div>
     </article>

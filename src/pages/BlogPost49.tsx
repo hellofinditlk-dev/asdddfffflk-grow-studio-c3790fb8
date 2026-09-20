@@ -73,6 +73,7 @@ const BlogPost49 = () => (
               ))}
             </div>
           </div>
+  <p className="mt-8 text-sm text-muted-foreground">Before building the wider system, start with the mark itself — here is <Link to="/blog/why-strong-logo-foundation-brand" className="text-primary font-semibold hover:underline">why a strong logo is the foundation of every brand</Link>.</p>
         </div>
       </div>
     </article>

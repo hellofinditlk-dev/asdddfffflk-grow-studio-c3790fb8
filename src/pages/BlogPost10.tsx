@@ -55,6 +55,7 @@ const BlogPost10 = () => (
               ))}
             </div>
           </div>
+  <p className="mt-8 text-sm text-muted-foreground">Your visual identity begins with one element — read <Link to="/blog/why-strong-logo-foundation-brand" className="text-primary font-semibold hover:underline">why a strong logo is the foundation of every successful brand</Link>.</p>
         </div>
       </div>
     </article>
