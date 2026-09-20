@@ -1106,4 +1106,25 @@ export const blogPosts: BlogPost[] = [
     date: "2026-08-17",
     keyword: "ai video production sri lanka",
   },
+  {
+    slug: "what-is-programmatic-advertising-sri-lanka",
+    title: "What Is Programmatic Advertising and How Does It Work for Sri Lankan Businesses?",
+    excerpt: "How real-time automated ad buying works, what you can target, and where programmatic fits in a Sri Lankan media plan. Cypher Digital.",
+    date: "2026-09-20",
+    keyword: "programmatic advertising sri lanka",
+  },
+  {
+    slug: "why-strong-logo-foundation-brand",
+    title: "Why a Strong Logo Is the Foundation of Every Successful Brand",
+    excerpt: "Why your logo shapes first impressions, what makes a mark work in print and on mobile, and how it connects to a full brand identity.",
+    date: "2026-09-20",
+    keyword: "logo design sri lanka",
+  },
+  {
+    slug: "how-fashion-brands-grow-digital-marketing-sri-lanka",
+    title: "How Fashion Brands in Sri Lanka Can Grow With Digital Marketing",
+    excerpt: "A practical growth guide for Sri Lankan clothing labels and boutiques — platforms, reels, creators and turning attention into orders.",
+    date: "2026-09-20",
+    keyword: "fashion brand digital marketing sri lanka",
+  },
 ];
