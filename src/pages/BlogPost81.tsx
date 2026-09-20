@@ -54,6 +54,7 @@ const BlogPost81 = () => (
             <p>Cypher Digital manages campaigns across Facebook, Instagram, Google, TikTok, and YouTube for Sri Lankan SMEs. <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20online%20advertising%20consultation" className="text-primary font-semibold hover:underline">📞 Free consultation on WhatsApp →</a> or visit our <Link to="/contact" className="text-primary underline">contact page</Link>.</p>
           </div>
           <div className="mt-10 text-center"><Link to="/blog" className="text-primary font-semibold underline">← Back to Blog</Link></div>
+  <p className="mt-8 text-sm text-muted-foreground">To understand how automated ad buying works across the wider web, see <Link to="/blog/what-is-programmatic-advertising-sri-lanka" className="text-primary font-semibold hover:underline">what programmatic advertising is and how it works in Sri Lanka</Link>.</p>
         </div>
       </div>
     </article>

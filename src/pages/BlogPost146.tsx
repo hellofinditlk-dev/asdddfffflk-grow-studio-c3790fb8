@@ -48,6 +48,8 @@ const BlogPost146 = () => (
             <h3 className="font-heading text-base font-bold text-foreground mt-6">Should I run Instagram ads or focus on organic growth?</h3>
             <p>Do both — organic Reels build trust and discovery, while Instagram ads accelerate reach and drive leads from the same content.</p>
 
+            <p>Selling clothing or accessories? See our guide on <Link to="/blog/how-fashion-brands-grow-digital-marketing-sri-lanka" className="text-primary font-semibold hover:underline">how fashion brands in Sri Lanka grow with digital marketing</Link>.</p>
+
             <div className="bg-card border border-border rounded-xl p-6 mt-10">
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">Talk to Cypher Digital</h3>
               <p className="text-sm mb-4">Get expert help with <Link to="/instagram-marketing-sri-lanka" className="text-primary font-semibold hover:underline">Instagram marketing Sri Lanka</Link> from one of Colombo's most-trusted digital marketing agencies. Free strategy call on WhatsApp.</p>
