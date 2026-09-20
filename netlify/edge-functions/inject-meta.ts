@@ -19,6 +19,21 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Programmatic advertising Sri Lanka — Cypher Digital operates Sri Lanka's only Premium Private Marketplace (PMP) across FindIt.lk, Studyway.lk and YouJobs.lk. Guaranteed brand-safe inventory, zero ad fraud, 100% local reach. Packages from LKR 60,000.",
     h1: "Programmatic Advertising Sri Lanka — Finally Done Right",
   },
+  "/blog/what-is-programmatic-advertising-sri-lanka": {
+    title: "What Is Programmatic Advertising and How Does It Work in Sri Lanka?",
+    description: "A clear guide to programmatic advertising for Sri Lankan businesses — how real-time bidding works, what you can target, and when it is worth using.",
+    h1: "What Is Programmatic Advertising and How Does It Work for Sri Lankan Businesses?",
+  },
+  "/blog/why-strong-logo-foundation-brand": {
+    title: "Why a Strong Logo Is the Foundation of Every Successful Brand",
+    description: "Why your logo shapes first impressions, what makes a mark work, and how it connects to a complete brand identity for Sri Lankan businesses.",
+    h1: "Why a Strong Logo Is the Foundation of Every Successful Brand",
+  },
+  "/blog/how-fashion-brands-grow-digital-marketing-sri-lanka": {
+    title: "How Fashion Brands in Sri Lanka Can Grow With Digital Marketing",
+    description: "A practical growth guide for Sri Lankan clothing labels, boutiques and accessory brands — platforms, content, creators and turning attention into sales.",
+    h1: "How Fashion Brands in Sri Lanka Can Grow With Digital Marketing",
+  },
   "/blog/creative-agency-sri-lanka": {
     title: "Creative Agency Sri Lanka (2026) | #1 Creative & Design Agency | Cypher Digital",
     description: "Looking for a creative agency in Sri Lanka? Cypher Digital is Colombo's #1 creative agency offering logo design, brand identity, social media design, packaging, motion graphics & more. Free consultation today.",
