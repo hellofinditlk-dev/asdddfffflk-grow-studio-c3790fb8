@@ -42,6 +42,39 @@ const SOCIAL_PILLAR: LinkTarget = {
 
 export const LINK_CLUSTERS: LinkCluster[] = [
   {
+    id: "fashion",
+    match: ["fashion", "clothing", "boutique", "apparel"],
+    heading: "Fashion marketing services mentioned in this guide",
+    intro: "If you would like this handled for your label, these are the services behind the guide above.",
+    pillar: {
+      to: "/fashion-brand-digital-marketing-sri-lanka",
+      anchors: [
+        "fashion brand digital marketing in Sri Lanka",
+        "digital marketing for fashion brands",
+        "our fashion brand marketing service",
+      ],
+      note: "Content, campaigns and creator partnerships built around your collections.",
+    },
+    services: [
+      {
+        to: "/instagram-marketing-sri-lanka",
+        anchors: ["Instagram marketing in Sri Lanka", "Instagram marketing services", "Instagram growth and content"],
+        note: "The main discovery platform for style-led brands.",
+      },
+      {
+        to: "/reel-creation-sri-lanka",
+        anchors: ["reel creation in Sri Lanka", "reel production service", "short-form video for your brand"],
+        note: "Try-ons, styling clips and new-arrival reveals produced monthly.",
+      },
+      {
+        to: "/influencer-marketing-sri-lanka",
+        anchors: ["influencer marketing in Sri Lanka", "creator partnerships", "influencer campaign management"],
+        note: "Matched creators, briefs, approvals and performance tracking.",
+      },
+      SOCIAL_PILLAR,
+    ],
+  },
+  {
     id: "facebook",
     match: ["facebook", "meta-ads", "messenger"],
     heading: "Facebook marketing services we provide",
