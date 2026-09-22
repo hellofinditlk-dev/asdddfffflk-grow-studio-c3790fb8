@@ -1,4 +1,6 @@
+import { Fragment } from "react";
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
+import FinditProsDirectory from "@/components/FinditProsDirectory";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
 import PaybackCard from "@/components/PaybackCard";
