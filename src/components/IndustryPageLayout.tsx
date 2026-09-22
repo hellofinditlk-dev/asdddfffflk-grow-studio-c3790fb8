@@ -1,4 +1,6 @@
+import { Fragment } from "react";
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
+import FinditProsDirectory from "@/components/FinditProsDirectory";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
 import ExtraReachBadge from "@/components/ExtraReachBadge";
 import PaybackCard from "@/components/PaybackCard";
@@ -421,7 +423,8 @@ const IndustryPageLayout = ({ data }: Props) => {
 
       {/* Extra Deep-Content Sections (optional) */}
       {data.extraSections && data.extraSections.map((section, i) => (
-        <section key={i} className={`py-20 lg:py-28 ${i % 2 === 0 ? '' : 'bg-secondary'}`}>
+        <Fragment key={i}>
+        <section className={`py-20 lg:py-28 ${i % 2 === 0 ? '' : 'bg-secondary'}`}>
           <div className="container mx-auto px-4 max-w-3xl">
             <div className="text-center mb-12">
               <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{section.heading}</h2>
@@ -444,6 +447,10 @@ const IndustryPageLayout = ({ data }: Props) => {
             )}
           </div>
         </section>
+        {i === 0 && data.slug === "home-services-construction-digital-marketing-sri-lanka" && (
+          <FinditProsDirectory />
+        )}
+        </Fragment>
       ))}
 
       {/* Locations Section (optional) */}
