@@ -445,6 +445,10 @@ const IndustryPageLayout = ({ data }: Props) => {
             )}
           </div>
         </section>
+        {i === 0 && data.slug === "home-services-construction-digital-marketing-sri-lanka" && (
+          <FinditProsDirectory />
+        )}
+        </Fragment>
       ))}
 
       {/* Locations Section (optional) */}
