@@ -70,6 +70,10 @@ const BlogPost139 = () => (
                 <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Instagram Marketing Sri Lanka</h3>
                 <p className="text-xs text-muted-foreground">Extend campaigns to Instagram for free.</p>
               </Link>
+              <Link to="/blog/how-salons-spas-attract-clients-online-sri-lanka" className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
+                <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Salons &amp; Spas: Attract Clients Online</h3>
+                <p className="text-xs text-muted-foreground">Local campaigns that fill appointment slots.</p>
+              </Link>
               <Link to="/blog/google-ads-vs-facebook-ads-sri-lanka" className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                 <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">Google Ads vs Facebook Ads</h3>
                 <p className="text-xs text-muted-foreground">Which channel converts better?</p>

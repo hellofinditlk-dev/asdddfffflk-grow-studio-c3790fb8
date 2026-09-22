@@ -76,6 +76,7 @@ const BlogPost92 = () => (
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Summary</h2>
             <p>Lead generation in Sri Lanka works best when multiple channels work together — <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline">social media marketing in Sri Lanka</Link>, Google Ads, SEO, and WhatsApp funnels each play a different role in moving a prospect from awareness to enquiry. Explore the full range of <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link> options to understand which channels are right for your industry and budget.</p>
+            <p>Industry specifics matter too — see our guide to <Link to="/blog/digital-marketing-car-dealerships-sri-lanka" className="text-primary font-semibold hover:underline">digital marketing for car dealerships in Sri Lanka</Link> and how <Link to="/blog/how-salons-spas-attract-clients-online-sri-lanka" className="text-primary font-semibold hover:underline">salons and spas attract clients online</Link>.</p>
           </div>
         </div>
       </div>

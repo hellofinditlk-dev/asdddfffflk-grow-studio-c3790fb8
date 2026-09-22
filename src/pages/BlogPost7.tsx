@@ -49,6 +49,7 @@ const BlogPost7 = () => (
                 { label: "SEO Services Sri Lanka", path: "/seo-services-sri-lanka", desc: "Rank higher on Google with on-page & off-page SEO." },
                 { label: "Facebook Ads Sri Lanka", path: "/facebook-ads-sri-lanka", desc: "High-performing ad campaigns for lead generation." },
                 { label: "Video Production Sri Lanka", path: "/video-production-sri-lanka", desc: "Professional video content for YouTube ads and more." },
+                { label: "Marketing for Car Dealerships in Sri Lanka", path: "/blog/digital-marketing-car-dealerships-sri-lanka", desc: "How auto businesses win buyers online." },
               ].map((s) => (
                 <Link key={s.path} to={s.path} className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group">
                   <h3 className="font-heading text-sm font-bold mb-1 group-hover:text-primary transition-colors">{s.label}</h3>
