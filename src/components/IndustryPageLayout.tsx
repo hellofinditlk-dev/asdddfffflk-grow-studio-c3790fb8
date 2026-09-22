@@ -421,7 +421,8 @@ const IndustryPageLayout = ({ data }: Props) => {
 
       {/* Extra Deep-Content Sections (optional) */}
       {data.extraSections && data.extraSections.map((section, i) => (
-        <section key={i} className={`py-20 lg:py-28 ${i % 2 === 0 ? '' : 'bg-secondary'}`}>
+        <Fragment key={i}>
+        <section className={`py-20 lg:py-28 ${i % 2 === 0 ? '' : 'bg-secondary'}`}>
           <div className="container mx-auto px-4 max-w-3xl">
             <div className="text-center mb-12">
               <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{section.heading}</h2>
