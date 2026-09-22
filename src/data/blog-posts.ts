@@ -1127,4 +1127,18 @@ export const blogPosts: BlogPost[] = [
     date: "2026-09-20",
     keyword: "fashion brand digital marketing sri lanka",
   },
+  {
+    slug: "how-salons-spas-attract-clients-online-sri-lanka",
+    title: "How Salons and Spas in Sri Lanka Can Attract More Clients Online",
+    excerpt: "Local campaigns, before-and-after content, reviews and fast replies that turn followers into booked appointments.",
+    date: "2026-09-22",
+    keyword: "beauty salon digital marketing sri lanka",
+  },
+  {
+    slug: "digital-marketing-car-dealerships-sri-lanka",
+    title: "Digital Marketing for Car Dealerships and Auto Businesses in Sri Lanka",
+    excerpt: "How dealerships, importers and service centres win vehicle buyers online with search, social and video.",
+    date: "2026-09-22",
+    keyword: "automotive digital marketing sri lanka",
+  },
 ];

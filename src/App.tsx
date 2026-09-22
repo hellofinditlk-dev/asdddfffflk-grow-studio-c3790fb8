@@ -195,6 +195,8 @@ const BlogPost155 = lazy(() => import("./pages/BlogPost155"));
 const BlogPost156 = lazy(() => import("./pages/BlogPost156"));
 const BlogPost157 = lazy(() => import("./pages/BlogPost157"));
 const BlogPost158 = lazy(() => import("./pages/BlogPost158"));
+const BlogPost159 = lazy(() => import("./pages/BlogPost159"));
+const BlogPost160 = lazy(() => import("./pages/BlogPost160"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const MediaBuyingAgencies = lazy(() => import("./pages/MediaBuyingAgencies"));
 const TvAdvertising = lazy(() => import("./pages/TvAdvertising"));
@@ -440,6 +442,8 @@ const App = () => (
               <Route path="/blog/what-is-programmatic-advertising-sri-lanka" element={<BlogPost156 />} />
               <Route path="/blog/why-strong-logo-foundation-brand" element={<BlogPost157 />} />
               <Route path="/blog/how-fashion-brands-grow-digital-marketing-sri-lanka" element={<BlogPost158 />} />
+              <Route path="/blog/how-salons-spas-attract-clients-online-sri-lanka" element={<BlogPost159 />} />
+              <Route path="/blog/digital-marketing-car-dealerships-sri-lanka" element={<BlogPost160 />} />
               <Route path="/blog/creative-agency-sri-lanka" element={<BlogCreativeAgency />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
