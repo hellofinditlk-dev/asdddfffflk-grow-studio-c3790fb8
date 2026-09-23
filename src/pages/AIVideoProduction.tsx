@@ -198,7 +198,7 @@ const AIVideoProduction = () => {
                   AI Video Production<br />in <span style={{ color: "#FF6B2B" }}>Sri Lanka</span>
                 </h1>
                 <p style={{ fontSize: 16, color: "#555", lineHeight: 1.65, maxWidth: 520, marginBottom: 32 }}>
-                  Cinematic AI brand videos, AI social media reels, AI avatar presenters, and high-converting AI video ads in Sinhala, Tamil, and English, delivered in 48 hours. Sri Lanka's trusted AI video production agency for 500+ businesses across Colombo and the island.
+                  Sri Lanka's leading AI video production agency for AI brand videos, AI-generated social media reels, AI video ads, and AI avatar videos in Sinhala, Tamil, and English. We create cinematic AI commercials, AI product videos, and TikTok and Instagram AI reels for businesses across Colombo and Sri Lanka, delivered in 48 hours from just LKR 18,000. Rated 5.0★ and trusted by 500+ businesses.
                 </p>
                 <div className="hero-actions" style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
                   <a href={waBase + encodeURIComponent("Hi, I want a free quote for AI video production")} target="_blank" rel="noreferrer" className="btn-primary">Get a Free Quote →</a>
