@@ -103,6 +103,7 @@ const Footer = () => (
             <Link to="/careers" className="hover:text-foreground transition-colors">Digital Marketing Jobs in Sri Lanka</Link>
             <Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link>
             <Link to="/advertising-in-sri-lanka" className="hover:text-foreground transition-colors">Advertising Sri Lanka</Link>
+            <Link to="/lead-follow-up-services-sri-lanka" className="hover:text-foreground transition-colors">Lead Follow-Up Services</Link>
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
           </div>
         </div>
