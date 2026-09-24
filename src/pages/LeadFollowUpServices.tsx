@@ -388,7 +388,7 @@ const LeadFollowUpServices = () => (
       <H2>We Help You Understand the Status of Every Lead</H2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6">
         {statuses.map(({ icon: Icon, title, text, tone }) => (
-          <div key={title} className="rounded-xl border border-border bg-card p-5 shadow-sm">
+          <div key={title} className="rounded-xl border border-border bg-card p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
             <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold mb-3 ${tone}`}><Icon className="w-3.5 h-3.5" />{title}</span>
             <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
           </div>
@@ -467,7 +467,7 @@ const LeadFollowUpServices = () => (
       <Eyebrow>Marketing funnel</Eyebrow>
       <H2>Connect Your Marketing With Your Sales Team</H2>
       <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">Your advertising campaign should not end when someone submits an enquiry. Lead follow-up connects your marketing activity with the next stage of the customer journey.</p>
-      <Flow steps={["Digital Advertising", "Lead Generation", "Lead Follow-Up", "Prospect Qualification", "Customer Feedback", "Sales Team Follow-Up", "Sales Opportunity"]} />
+      <Flow highlight={2} steps={["Digital Advertising", "Lead Generation", "Lead Follow-Up", "Prospect Qualification", "Customer Feedback", "Sales Team Follow-Up", "Sales Opportunity"]} />
       <p className="text-muted-foreground leading-relaxed max-w-3xl mt-6">
         Cypher Digital can help businesses connect their digital marketing activities with structured lead follow-up and prospect qualification — whether leads come from <L to="/facebook-ads-sri-lanka">generating leads through Facebook advertising</L>, <L to="/google-ads-sri-lanka">Google Ads search campaigns</L> or broader <L to="/social-media-management-sri-lanka">social media marketing</L>.
       </p>
