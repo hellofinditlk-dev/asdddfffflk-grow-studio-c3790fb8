@@ -79,6 +79,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Facebook Page management in Sri Lanka: setup, content calendars, publishing, Messenger and comment handling, reviews, reporting and support for paid campaigns.",
     h1: "Facebook Page Management in Sri Lanka",
   },
+  "/call-center-outsourcing-sri-lanka": {
+    title: "Call Center Outsourcing Sri Lanka | Lead Calling & Sales Follow-Up — Cypher Digital",
+    description: "Call center outsourcing in Sri Lanka for lead calling & sales follow-up. We call your Facebook & Google leads and deliver a clean Excel list. Call 077 143 7707.",
+    h1: "Call Center Outsourcing in Sri Lanka",
+  },
   "/google-ads-sri-lanka": {
     title: "Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital",
     description: "Expert Google Ads management in Sri Lanka. Search, Display, YouTube & Shopping Ads with proven 5x ROAS. Data-driven PPC campaigns from LKR 50,000/month. Free audit — results in 24 hrs.",
