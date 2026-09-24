@@ -45,7 +45,11 @@ export const callCenterThemeCss = `
 @media (prefers-reduced-motion:reduce){.ccx .collage::before,.ccx .gdot,.ccx .chip .k::before{animation:none}}
 `;
 export const callCenterThemeFix = `
-.ccx *{font-family:inherit}
+.ccx *{font-family:var(--font-body)!important}
+.ccx h1,.ccx h2,.ccx h3,.ccx h3 *,.ccx .btn,.ccx .k,.ccx .no,.ccx .fstage b,.ccx .th{font-family:var(--font-heading)!important}
+.ccx .fstage.leak,.ccx .fstage.leak *{color:hsl(var(--cta))!important}
+.ccx .ic{background:hsl(var(--primary) / .1)!important;color:hsl(var(--primary))!important}
+.ccx .card.dark .ic,.ccx .feat .ic{background:hsl(var(--primary-foreground) / .2)!important;color:hsl(var(--primary-foreground))!important}
 .ccx h1,.ccx h2,.ccx h3,.ccx .btn,.ccx .eyebrow,.ccx .k,.ccx .tag,.ccx .title,.ccx .amt{font-family:var(--font-heading)}
 .ccx .hero{padding-top:110px}
 .ccx .marquee span{color:hsl(var(--primary-foreground));opacity:.95}
