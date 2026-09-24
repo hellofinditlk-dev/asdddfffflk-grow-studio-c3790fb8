@@ -133,7 +133,7 @@ const steps = [
 const statuses = [
   { icon: ThumbsUp, title: "Interested", text: "The prospect has expressed interest and may require further sales follow-up.", tone: "bg-primary text-white" },
   { icon: UserCheck, title: "Potential Customer", text: "The prospect has a relevant requirement and may be suitable for your product or service.", tone: "bg-primary/10 text-primary" },
-  { icon: Info, title: "Needs More Information", text: "The prospect wants additional information before making a decision.", tone: "bg-accent/15 text-accent" },
+  { icon: Info, title: "Needs More Information", text: "The prospect wants additional information before making a decision.", tone: "bg-accent/20 text-accent border border-accent/50" },
   { icon: Clock, title: "Follow Up Later", text: "The prospect may be interested but is not ready to proceed immediately.", tone: "bg-muted text-muted-foreground" },
   { icon: XCircle, title: "Not Interested", text: "The prospect does not currently have a requirement or interest.", tone: "bg-muted text-muted-foreground" },
   { icon: PhoneOff, title: "No Answer / Invalid Contact", text: "The prospect could not be reached or the contact information may require verification.", tone: "bg-muted text-muted-foreground" },
@@ -275,7 +275,7 @@ const LeadFollowUpServices = () => (
                 <div className="flex flex-wrap gap-1.5 pl-12">
                   <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Interested</span>
                   <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Potential customer</span>
-                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-accent/15 text-accent">Needs more information</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-accent/20 text-accent border border-accent/50">Needs more information</span>
                   <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-muted text-muted-foreground">Follow up later</span>
                 </div>
               </li>
