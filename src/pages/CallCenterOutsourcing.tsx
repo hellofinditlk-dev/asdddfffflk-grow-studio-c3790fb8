@@ -43,7 +43,7 @@ const CallCenterOutsourcing = () => {
         description="Call center outsourcing in Sri Lanka for lead calling & sales follow-up. We call your Facebook & Google leads, verify who answered, and deliver a clean Excel list. Call 077 143 7707."
         canonical="https://cypherdigital.lk/call-center-outsourcing-sri-lanka"
       />
-      <style>{callCenterCss}</style>
+      <style>{`@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap");.ccx .hero{padding-top:96px}.ccx b,.ccx h3,.ccx strong{font-family:inherit}` + callCenterCss}</style>
       <div ref={ref} className="ccx" dangerouslySetInnerHTML={{ __html: callCenterHtml }} />
     </>
   );
