@@ -83,17 +83,17 @@ const Cta = ({ label, variant = "primary" }: { label: string; variant?: "primary
   </Button>
 );
 
-const Flow = ({ steps, vertical }: { steps: string[]; vertical?: boolean }) => (
+const Flow = ({ steps, vertical, highlight }: { steps: string[]; vertical?: boolean; highlight?: number }) => (
   <div className={`flex ${vertical ? "flex-col" : "flex-col md:flex-row md:flex-wrap"} items-stretch md:items-center gap-2`}>
     {steps.map((s, i) => (
       <div key={s} className={`flex ${vertical ? "flex-col" : "flex-col md:flex-row"} items-center gap-2`}>
-        <div className="rounded-lg border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground shadow-sm text-center w-full md:w-auto">
-          <span className="text-primary mr-1.5">{String(i + 1).padStart(2, "0")}</span>{s}
+        <div className={`rounded-lg px-4 py-3 text-sm font-semibold text-center w-full md:w-auto shadow-sm border ${highlight === i ? "bg-primary text-white border-primary shadow-md shadow-primary/25" : "border-border bg-card text-foreground"}`}>
+          <span className={highlight === i ? "text-white/70 mr-1.5" : "text-primary mr-1.5"}>{String(i + 1).padStart(2, "0")}</span>{s}
         </div>
         {i < steps.length - 1 && (
           <>
             <ArrowDown className={`w-4 h-4 text-primary ${vertical ? "" : "md:hidden"}`} />
-            {!vertical && <ArrowRight className="w-4 h-4 text-primary hidden md:block" />}
+            {!vertical && <ArrowRight className={`w-4 h-4 hidden md:block ${highlight === i ? "text-primary" : "text-primary/60"}`} />}
           </>
         )}
       </div>
@@ -131,10 +131,10 @@ const steps = [
 ];
 
 const statuses = [
-  { icon: ThumbsUp, title: "Interested", text: "The prospect has expressed interest and may require further sales follow-up.", tone: "bg-primary/10 text-primary" },
+  { icon: ThumbsUp, title: "Interested", text: "The prospect has expressed interest and may require further sales follow-up.", tone: "bg-primary text-white" },
   { icon: UserCheck, title: "Potential Customer", text: "The prospect has a relevant requirement and may be suitable for your product or service.", tone: "bg-primary/10 text-primary" },
-  { icon: Info, title: "Needs More Information", text: "The prospect wants additional information before making a decision.", tone: "bg-accent/15 text-accent" },
-  { icon: Clock, title: "Follow Up Later", text: "The prospect may be interested but is not ready to proceed immediately.", tone: "bg-accent/15 text-accent" },
+  { icon: Info, title: "Needs More Information", text: "The prospect wants additional information before making a decision.", tone: "bg-accent/20 text-accent border border-accent/50" },
+  { icon: Clock, title: "Follow Up Later", text: "The prospect may be interested but is not ready to proceed immediately.", tone: "bg-muted text-muted-foreground" },
   { icon: XCircle, title: "Not Interested", text: "The prospect does not currently have a requirement or interest.", tone: "bg-muted text-muted-foreground" },
   { icon: PhoneOff, title: "No Answer / Invalid Contact", text: "The prospect could not be reached or the contact information may require verification.", tone: "bg-muted text-muted-foreground" },
 ];
@@ -222,7 +222,8 @@ const LeadFollowUpServices = () => (
 
     {/* Hero */}
     <section className="relative overflow-hidden bg-background py-14 md:py-20 border-b border-border">
-      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
+      <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_bottom_right,hsl(252,65%,96%),transparent_55%)]" aria-hidden="true" />
+      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[1.05fr_1fr] gap-10 items-center relative">
         <div>
           <Eyebrow>Lead Follow-Up · Prospect Qualification</Eyebrow>
           <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-foreground leading-tight mb-4">Lead Follow-Up Services in Sri Lanka</h1>
@@ -241,9 +242,45 @@ const LeadFollowUpServices = () => (
             </Button>
           </div>
         </div>
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">From enquiry to opportunity</p>
-          <Flow vertical steps={["Lead Generated", "First Call", "Requirement Understanding", "Lead Qualification", "Customer Feedback", "Sales Follow-Up"]} />
+        <div className="relative">
+          <div className="absolute -inset-3 rounded-3xl bg-primary/5 blur-xl pointer-events-none" aria-hidden="true" />
+          <div className="relative rounded-2xl border border-border bg-card p-6 shadow-xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">From enquiry to opportunity</p>
+            <ol className="space-y-2">
+              <li className="rounded-xl border border-dashed border-border bg-secondary/50 px-4 py-3.5">
+                <div className="flex items-center gap-3">
+                  <span className="w-9 h-9 rounded-lg bg-secondary text-foreground/70 flex items-center justify-center shrink-0"><Database className="w-5 h-5" /></span>
+                  <div>
+                    <p className="text-sm font-bold text-foreground">01 · Your lead list</p>
+                    <p className="text-xs text-muted-foreground">Enquiries from your campaigns, waiting for a first call.</p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex justify-center"><ArrowDown className="w-4 h-4 text-primary" /></li>
+              <li className="rounded-xl bg-primary px-4 py-3.5 shadow-md shadow-primary/25">
+                <div className="flex items-center gap-3">
+                  <span className="w-9 h-9 rounded-lg bg-white/15 text-white flex items-center justify-center shrink-0"><PhoneOutgoing className="w-5 h-5" /></span>
+                  <div>
+                    <p className="text-sm font-bold text-white">02 · We make the first call</p>
+                    <p className="text-xs text-white/75">Requirement understanding, qualification questions and customer feedback.</p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex justify-center"><ArrowDown className="w-4 h-4 text-primary" /></li>
+              <li className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3.5">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <span className="w-9 h-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0"><UserCheck className="w-5 h-5" /></span>
+                  <p className="text-sm font-bold text-foreground">03 · Your sales team gets the opportunity</p>
+                </div>
+                <div className="flex flex-wrap gap-1.5 pl-12">
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Interested</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Potential customer</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-accent/20 text-accent border border-accent/50">Needs more information</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-muted text-muted-foreground">Follow up later</span>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
@@ -285,7 +322,7 @@ const LeadFollowUpServices = () => (
       <H2>How Our Lead Follow-Up Service Works</H2>
       <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6">
         {steps.map(({ icon: Icon, t, c }, i) => (
-          <li key={t} className="relative rounded-xl border border-border bg-card p-5 shadow-sm">
+          <li key={t} className={`relative rounded-xl border bg-card p-5 transition-all hover:-translate-y-0.5 ${i === 5 ? "border-primary/50 shadow-md shadow-primary/10 hover:shadow-lg" : "border-border shadow-sm hover:shadow-md"}`}>
             <span className="absolute top-4 right-4 font-heading text-3xl font-extrabold text-primary/15">{i + 1}</span>
             <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center mb-3"><Icon className="w-5 h-5" /></div>
             <h3 className="font-heading font-bold text-foreground mb-1.5">Step {i + 1}: {t}</h3>
@@ -295,6 +332,7 @@ const LeadFollowUpServices = () => (
                 <span className="font-semibold text-foreground">Sources:</span> Facebook campaigns, Google Ads, website enquiries, landing pages, WhatsApp, email campaigns, events, promotions, previous enquiries, existing databases.
               </p>
             )}
+            {i === 5 && <span className="absolute inset-x-0 top-0 h-1 rounded-t-xl bg-primary" aria-hidden="true" />}
           </li>
         ))}
       </ol>
@@ -314,18 +352,33 @@ const LeadFollowUpServices = () => (
             <span className="flex items-center gap-2 text-sm font-semibold"><FileSpreadsheet className="w-4 h-4" /> Lead follow-up report</span>
             <span className="text-[10px] uppercase tracking-widest opacity-80">Sample</span>
           </div>
-          <dl className="divide-y divide-border text-sm">
-            {[["Prospect", "John"], ["Call Status", "Answered"], ["Interest", "Interested"], ["Requirement", "Product / Service"], ["Feedback", "Wants additional information"], ["Next Step", "Sales team to follow up"]].map(([k, v]) => (
-              <div key={k} className="grid grid-cols-[130px_1fr] px-5 py-3">
-                <dt className="text-muted-foreground">{k}</dt>
-                <dd className="font-semibold text-foreground">
-                  {k === "Interest" ? <span className="rounded-full bg-primary/10 text-primary px-2.5 py-0.5 text-xs">{v}</span>
-                    : k === "Next Step" ? <span className="text-accent">{v}</span> : v}
-                </dd>
-              </div>
-            ))}
-          </dl>
-          <figcaption className="px-5 py-3 text-xs text-muted-foreground bg-secondary/60">Example only — fields are agreed per campaign.</figcaption>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="text-[10px] uppercase tracking-wider text-muted-foreground border-b border-border bg-secondary/50">
+                  <th className="px-4 py-2.5 font-semibold">Prospect</th>
+                  <th className="px-4 py-2.5 font-semibold">Call status</th>
+                  <th className="px-4 py-2.5 font-semibold">Interest</th>
+                  <th className="px-4 py-2.5 font-semibold">Next step</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {[
+                  { name: "John", status: "Answered", tone: "bg-primary/10 text-primary", interest: "Interested", step: "Sales team to follow up", strong: true },
+                  { name: "Kamala", status: "Answered", tone: "bg-accent/20 text-accent border border-accent/50", interest: "Needs more information", step: "Send details, call again" },
+                  { name: "Ruwan", status: "No answer", tone: "bg-muted text-muted-foreground", interest: "Unknown", step: "Retry at a later time" },
+                ].map((r) => (
+                  <tr key={r.name} className={r.strong ? "bg-primary/[0.04]" : ""}>
+                    <td className="px-4 py-3 font-semibold text-foreground">{r.name}</td>
+                    <td className="px-4 py-3 text-muted-foreground">{r.status}</td>
+                    <td className="px-4 py-3"><span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold whitespace-nowrap ${r.tone}`}>{r.interest}</span></td>
+                    <td className="px-4 py-3 text-foreground/80">{r.step}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <figcaption className="px-5 py-3 text-xs text-muted-foreground bg-secondary/60">Example only — fields and statuses are agreed per campaign.</figcaption>
         </figure>
       </div>
     </Section>
@@ -335,7 +388,7 @@ const LeadFollowUpServices = () => (
       <H2>We Help You Understand the Status of Every Lead</H2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6">
         {statuses.map(({ icon: Icon, title, text, tone }) => (
-          <div key={title} className="rounded-xl border border-border bg-card p-5 shadow-sm">
+          <div key={title} className="rounded-xl border border-border bg-card p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
             <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold mb-3 ${tone}`}><Icon className="w-3.5 h-3.5" />{title}</span>
             <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
           </div>
@@ -394,12 +447,15 @@ const LeadFollowUpServices = () => (
       <H2>Give Your Sales Team Better Follow-Up Information</H2>
       <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">Your sales team does not need to start every conversation from zero. After the initial follow-up process, they can receive useful information about the prospect.</p>
       <div className="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-center">
-        <div className="rounded-xl border border-border bg-card p-6">
+        <div className="rounded-xl border border-dashed border-border bg-secondary/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">Instead of</p>
-          <p className="font-heading text-lg font-bold text-foreground">"Here are 500 leads. Call everyone."</p>
+          <p className="font-heading text-lg font-bold text-foreground/70">"Here are 500 leads. Call everyone."</p>
         </div>
-        <ArrowRight className="w-6 h-6 text-accent mx-auto rotate-90 md:rotate-0" />
-        <div className="rounded-xl border-2 border-primary bg-card p-6 shadow-md">
+        <div className="flex md:flex-col items-center justify-center gap-1 text-primary">
+          <ArrowRight className="w-6 h-6 rotate-90 md:rotate-0" />
+          <span className="hidden md:inline text-[10px] font-bold uppercase tracking-widest">Cypher</span>
+        </div>
+        <div className="rounded-xl border-2 border-primary bg-primary/5 p-6 shadow-md shadow-primary/10">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Your sales team receives</p>
           <p className="text-foreground leading-relaxed">"These prospects answered, these prospects showed interest, these prospects need more information, these prospects want a follow-up later, and these prospects are not currently interested."</p>
         </div>
@@ -411,7 +467,7 @@ const LeadFollowUpServices = () => (
       <Eyebrow>Marketing funnel</Eyebrow>
       <H2>Connect Your Marketing With Your Sales Team</H2>
       <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">Your advertising campaign should not end when someone submits an enquiry. Lead follow-up connects your marketing activity with the next stage of the customer journey.</p>
-      <Flow steps={["Digital Advertising", "Lead Generation", "Lead Follow-Up", "Prospect Qualification", "Customer Feedback", "Sales Team Follow-Up", "Sales Opportunity"]} />
+      <Flow highlight={2} steps={["Digital Advertising", "Lead Generation", "Lead Follow-Up", "Prospect Qualification", "Customer Feedback", "Sales Team Follow-Up", "Sales Opportunity"]} />
       <p className="text-muted-foreground leading-relaxed max-w-3xl mt-6">
         Cypher Digital can help businesses connect their digital marketing activities with structured lead follow-up and prospect qualification — whether leads come from <L to="/facebook-ads-sri-lanka">generating leads through Facebook advertising</L>, <L to="/google-ads-sri-lanka">Google Ads search campaigns</L> or broader <L to="/social-media-management-sri-lanka">social media marketing</L>.
       </p>
@@ -490,8 +546,8 @@ const LeadFollowUpServices = () => (
       </div>
     </Section>
 
-    <Section id="contact">
-      <div className="grid lg:grid-cols-2 gap-10 items-start">
+    <section id="contact" className="py-14 md:py-20 bg-[linear-gradient(to_bottom,hsl(252,65%,97%),hsl(252,65%,93%))]">
+      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-10 items-start">
         <div>
           <H2>Don't Let Your Leads Go Cold</H2>
           <div className="space-y-3 text-muted-foreground leading-relaxed mb-6">
@@ -509,7 +565,7 @@ const LeadFollowUpServices = () => (
         </div>
         <LeadForm />
       </div>
-    </Section>
+    </section>
   </div>
 );
 
