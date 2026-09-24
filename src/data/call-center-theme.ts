@@ -56,3 +56,17 @@ export const callCenterThemeFix = `
 .ccx .pl,.ccx .tag,.ccx .tags span{background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:100px}
 .ccx .tag{color:hsl(var(--primary));background:hsl(var(--primary) / .08);border-color:hsl(var(--primary) / .2);padding:6px 14px}
 `;
+export const callCenterPosCss = `
+.ccx .ccx-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:28px;counter-reset:s}
+.ccx .ccx-fstep{position:relative;background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:16px;padding:18px 16px;box-shadow:0 10px 30px -20px hsl(var(--foreground) / .2)}
+.ccx .ccx-fstep span{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:hsl(var(--primary));color:hsl(var(--primary-foreground));font-weight:700;font-size:13px;margin-bottom:10px}
+.ccx .ccx-fstep b{display:block;font-size:15px;line-height:1.3;color:hsl(var(--foreground))}
+.ccx .ccx-fstep:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:hsl(var(--cta));font-weight:700;z-index:1}
+.ccx .ccx-svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.ccx .ccx-sv{background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:16px;padding:20px}
+.ccx .ccx-sv h3{font-size:17px;margin-bottom:8px;color:hsl(var(--foreground))}
+.ccx .ccx-sv p{font-size:14.5px;color:hsl(var(--muted-foreground))}
+.ccx .ccx-pos a u{color:hsl(var(--primary))}
+@media (max-width:900px){.ccx .ccx-flow{grid-template-columns:repeat(2,1fr)}.ccx .ccx-svc{grid-template-columns:1fr 1fr}.ccx .ccx-fstep::after{display:none}}
+@media (max-width:560px){.ccx .ccx-svc{grid-template-columns:1fr}}
+`;
