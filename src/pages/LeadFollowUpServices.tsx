@@ -365,7 +365,7 @@ const LeadFollowUpServices = () => (
               <tbody className="divide-y divide-border">
                 {[
                   { name: "John", status: "Answered", tone: "bg-primary/10 text-primary", interest: "Interested", step: "Sales team to follow up", strong: true },
-                  { name: "Kamala", status: "Answered", tone: "bg-accent/15 text-accent", interest: "Needs more information", step: "Send details, call again" },
+                  { name: "Kamala", status: "Answered", tone: "bg-accent/20 text-accent border border-accent/50", interest: "Needs more information", step: "Send details, call again" },
                   { name: "Ruwan", status: "No answer", tone: "bg-muted text-muted-foreground", interest: "Unknown", step: "Retry at a later time" },
                 ].map((r) => (
                   <tr key={r.name} className={r.strong ? "bg-primary/[0.04]" : ""}>
