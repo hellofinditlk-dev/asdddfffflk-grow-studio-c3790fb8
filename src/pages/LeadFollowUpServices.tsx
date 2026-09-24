@@ -565,7 +565,7 @@ const LeadFollowUpServices = () => (
         </div>
         <LeadForm />
       </div>
-    </Section>
+    </section>
   </div>
 );
 
