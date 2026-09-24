@@ -5,6 +5,7 @@ const DEFAULT_WHATSAPP = "94701772626";
 /** Exact-match overrides (industry pages with dedicated lines). */
 const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
   "/real-estate-digital-marketing-sri-lanka": "94771437707",
+  "/lead-follow-up-services-sri-lanka": "94771437707",
   "/healthcare-digital-marketing-sri-lanka": "94771437707",
   "/finance-digital-marketing-sri-lanka": "94771437707",
   "/b2b-digital-marketing-sri-lanka": "94771437707",
