@@ -546,8 +546,8 @@ const LeadFollowUpServices = () => (
       </div>
     </Section>
 
-    <Section id="contact">
-      <div className="grid lg:grid-cols-2 gap-10 items-start">
+    <section id="contact" className="py-14 md:py-20 bg-[linear-gradient(to_bottom,hsl(252,65%,97%),hsl(252,65%,93%))]">
+      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-10 items-start">
         <div>
           <H2>Don't Let Your Leads Go Cold</H2>
           <div className="space-y-3 text-muted-foreground leading-relaxed mb-6">
