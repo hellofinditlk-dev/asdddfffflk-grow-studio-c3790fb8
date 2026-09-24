@@ -222,7 +222,8 @@ const LeadFollowUpServices = () => (
 
     {/* Hero */}
     <section className="relative overflow-hidden bg-background py-14 md:py-20 border-b border-border">
-      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
+      <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_bottom_right,hsl(252,65%,96%),transparent_55%)]" aria-hidden="true" />
+      <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[1.05fr_1fr] gap-10 items-center relative">
         <div>
           <Eyebrow>Lead Follow-Up · Prospect Qualification</Eyebrow>
           <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-foreground leading-tight mb-4">Lead Follow-Up Services in Sri Lanka</h1>
@@ -241,9 +242,45 @@ const LeadFollowUpServices = () => (
             </Button>
           </div>
         </div>
-        <div className="rounded-2xl border border-border bg-card p-6 shadow-xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">From enquiry to opportunity</p>
-          <Flow vertical steps={["Lead Generated", "First Call", "Requirement Understanding", "Lead Qualification", "Customer Feedback", "Sales Follow-Up"]} />
+        <div className="relative">
+          <div className="absolute -inset-3 rounded-3xl bg-primary/5 blur-xl pointer-events-none" aria-hidden="true" />
+          <div className="relative rounded-2xl border border-border bg-card p-6 shadow-xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">From enquiry to opportunity</p>
+            <ol className="space-y-2">
+              <li className="rounded-xl border border-dashed border-border bg-secondary/50 px-4 py-3.5">
+                <div className="flex items-center gap-3">
+                  <span className="w-9 h-9 rounded-lg bg-secondary text-foreground/70 flex items-center justify-center shrink-0"><Database className="w-5 h-5" /></span>
+                  <div>
+                    <p className="text-sm font-bold text-foreground">01 · Your lead list</p>
+                    <p className="text-xs text-muted-foreground">Enquiries from your campaigns, waiting for a first call.</p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex justify-center"><ArrowDown className="w-4 h-4 text-primary" /></li>
+              <li className="rounded-xl bg-primary px-4 py-3.5 shadow-md shadow-primary/25">
+                <div className="flex items-center gap-3">
+                  <span className="w-9 h-9 rounded-lg bg-white/15 text-white flex items-center justify-center shrink-0"><PhoneOutgoing className="w-5 h-5" /></span>
+                  <div>
+                    <p className="text-sm font-bold text-white">02 · We make the first call</p>
+                    <p className="text-xs text-white/75">Requirement understanding, qualification questions and customer feedback.</p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex justify-center"><ArrowDown className="w-4 h-4 text-primary" /></li>
+              <li className="rounded-xl border border-primary/30 bg-primary/5 px-4 py-3.5">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <span className="w-9 h-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0"><UserCheck className="w-5 h-5" /></span>
+                  <p className="text-sm font-bold text-foreground">03 · Your sales team gets the opportunity</p>
+                </div>
+                <div className="flex flex-wrap gap-1.5 pl-12">
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Interested</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-primary/10 text-primary">Potential customer</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-accent/15 text-accent">Needs more information</span>
+                  <span className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold bg-muted text-muted-foreground">Follow up later</span>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
