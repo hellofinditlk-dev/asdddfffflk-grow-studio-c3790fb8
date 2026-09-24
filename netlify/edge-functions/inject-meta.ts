@@ -80,9 +80,9 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Facebook Page Management in Sri Lanka",
   },
   "/call-center-outsourcing-sri-lanka": {
-    title: "Call Center Outsourcing Sri Lanka | Cypher Digital",
-    description: "Call center outsourcing in Sri Lanka for lead calling & sales follow-up. We call your leads, verify who answered & send a clean Excel list. Free quote today.",
-    h1: "Lead Follow-Up & Outbound Calling Services in Sri Lanka",
+    title: "Call Center Outsourcing Sri Lanka | Outbound & Lead Follow-Up",
+    description: "Call center outsourcing in Sri Lanka for outbound calling, lead follow-up, qualification and sales support, with clear Excel reporting for your team.",
+    h1: "Call Center Outsourcing Services in Sri Lanka",
   },
   "/google-ads-sri-lanka": {
     title: "Google Ads Sri Lanka (2026) | PPC Advertising & Google Marketing | Cypher Digital",

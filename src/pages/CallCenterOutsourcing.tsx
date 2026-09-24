@@ -40,8 +40,8 @@ const CallCenterOutsourcing = () => {
   return (
     <>
       <SEOHead
-        title="Call Center Outsourcing Sri Lanka | Cypher Digital"
-        description="Call center outsourcing in Sri Lanka for lead calling & sales follow-up. We call your leads, verify who answered & send a clean Excel list. Free quote today."
+        title="Call Center Outsourcing Sri Lanka | Outbound & Lead Follow-Up"
+        description="Call center outsourcing in Sri Lanka for outbound calling, lead follow-up, qualification and sales support, with clear Excel reporting for your team."
         canonical="https://cypherdigital.lk/call-center-outsourcing-sri-lanka"
       />
       <style>{`.ccx .hero{padding-top:96px}.ccx b,.ccx h3,.ccx strong{font-family:inherit}` + callCenterCss + callCenterThemeCss + callCenterThemeFix + callCenterPosCss + callCenterVisCss}</style>
