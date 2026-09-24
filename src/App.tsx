@@ -224,7 +224,7 @@ const SocialMediaLeadGeneration = lazy(() => import("./pages/SocialMediaLeadGene
 const SocialMediaAudit = lazy(() => import("./pages/SocialMediaAudit"));
 const SocialMediaConsultant = lazy(() => import("./pages/SocialMediaConsultant"));
 const FacebookPhaseTwo = lazy(() => import("./pages/FacebookPhaseTwo"));
-const CallCenterOutsourcing = lazy(() => import("./pages/CallCenterOutsourcing"));
+
 
 
 const queryClient = new QueryClient();
@@ -466,8 +466,8 @@ const App = () => (
               <Route path="/social-media-lead-generation-sri-lanka" element={<SocialMediaLeadGeneration />} />
               <Route path="/social-media-audit-sri-lanka" element={<SocialMediaAudit />} />
               <Route path="/social-media-consultant-sri-lanka" element={<SocialMediaConsultant />} />
-              <Route path="/call-center-outsourcing-sri-lanka" element={<CallCenterOutsourcing />} />
               <Route path="/facebook-ads-cost-sri-lanka" element={<FacebookPhaseTwo />} />
+
               <Route path="/facebook-retargeting-sri-lanka" element={<FacebookPhaseTwo />} />
               <Route path="/facebook-page-management-sri-lanka" element={<FacebookPhaseTwo />} />
               <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
