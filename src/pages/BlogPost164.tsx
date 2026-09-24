@@ -38,7 +38,7 @@ const BlogPost164 = () => (
     <UL items={[
       <><A to="/facebook-ads-sri-lanka">Facebook Ads</A> and Instagram lead forms</>,
       <><A to="/google-ads-sri-lanka">Google Ads</A></>,
-      <><A to="/seo-sri-lanka">SEO</A> and website enquiries</>,
+      <><A to="/seo-services-sri-lanka">SEO</A> and website enquiries</>,
       <><A to="/social-media-management-sri-lanka">Social media marketing</A></>,
       "Email marketing",
       "SMS marketing",
