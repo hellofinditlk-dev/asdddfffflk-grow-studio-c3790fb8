@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import SEOHead from "@/components/SEOHead";
 import { callCenterCss, callCenterHtml } from "@/data/call-center-page";
+import { callCenterThemeCss } from "@/data/call-center-theme";
 import schema from "@/data/call-center-schema.json";
 
 const PHONE = "94771437707";
@@ -43,7 +44,7 @@ const CallCenterOutsourcing = () => {
         description="Call center outsourcing in Sri Lanka for lead calling & sales follow-up. We call your leads, verify who answered & send a clean Excel list. Free quote today."
         canonical="https://cypherdigital.lk/call-center-outsourcing-sri-lanka"
       />
-      <style>{`@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap");.ccx .hero{padding-top:96px}.ccx b,.ccx h3,.ccx strong{font-family:inherit}` + callCenterCss}</style>
+      <style>{`.ccx .hero{padding-top:96px}.ccx b,.ccx h3,.ccx strong{font-family:inherit}` + callCenterCss + callCenterThemeCss}</style>
       <div ref={ref} className="ccx" dangerouslySetInnerHTML={{ __html: callCenterHtml }} />
     </>
   );
