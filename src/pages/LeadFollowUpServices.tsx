@@ -83,17 +83,17 @@ const Cta = ({ label, variant = "primary" }: { label: string; variant?: "primary
   </Button>
 );
 
-const Flow = ({ steps, vertical }: { steps: string[]; vertical?: boolean }) => (
+const Flow = ({ steps, vertical, highlight }: { steps: string[]; vertical?: boolean; highlight?: number }) => (
   <div className={`flex ${vertical ? "flex-col" : "flex-col md:flex-row md:flex-wrap"} items-stretch md:items-center gap-2`}>
     {steps.map((s, i) => (
       <div key={s} className={`flex ${vertical ? "flex-col" : "flex-col md:flex-row"} items-center gap-2`}>
-        <div className="rounded-lg border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground shadow-sm text-center w-full md:w-auto">
-          <span className="text-primary mr-1.5">{String(i + 1).padStart(2, "0")}</span>{s}
+        <div className={`rounded-lg px-4 py-3 text-sm font-semibold text-center w-full md:w-auto shadow-sm border ${highlight === i ? "bg-primary text-white border-primary shadow-md shadow-primary/25" : "border-border bg-card text-foreground"}`}>
+          <span className={highlight === i ? "text-white/70 mr-1.5" : "text-primary mr-1.5"}>{String(i + 1).padStart(2, "0")}</span>{s}
         </div>
         {i < steps.length - 1 && (
           <>
             <ArrowDown className={`w-4 h-4 text-primary ${vertical ? "" : "md:hidden"}`} />
-            {!vertical && <ArrowRight className="w-4 h-4 text-primary hidden md:block" />}
+            {!vertical && <ArrowRight className={`w-4 h-4 hidden md:block ${highlight === i ? "text-primary" : "text-primary/60"}`} />}
           </>
         )}
       </div>
@@ -447,12 +447,15 @@ const LeadFollowUpServices = () => (
       <H2>Give Your Sales Team Better Follow-Up Information</H2>
       <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">Your sales team does not need to start every conversation from zero. After the initial follow-up process, they can receive useful information about the prospect.</p>
       <div className="grid md:grid-cols-[1fr_auto_1fr] gap-4 items-center">
-        <div className="rounded-xl border border-border bg-card p-6">
+        <div className="rounded-xl border border-dashed border-border bg-secondary/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">Instead of</p>
-          <p className="font-heading text-lg font-bold text-foreground">"Here are 500 leads. Call everyone."</p>
+          <p className="font-heading text-lg font-bold text-foreground/70">"Here are 500 leads. Call everyone."</p>
         </div>
-        <ArrowRight className="w-6 h-6 text-accent mx-auto rotate-90 md:rotate-0" />
-        <div className="rounded-xl border-2 border-primary bg-card p-6 shadow-md">
+        <div className="flex md:flex-col items-center justify-center gap-1 text-primary">
+          <ArrowRight className="w-6 h-6 rotate-90 md:rotate-0" />
+          <span className="hidden md:inline text-[10px] font-bold uppercase tracking-widest">Cypher</span>
+        </div>
+        <div className="rounded-xl border-2 border-primary bg-primary/5 p-6 shadow-md shadow-primary/10">
           <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Your sales team receives</p>
           <p className="text-foreground leading-relaxed">"These prospects answered, these prospects showed interest, these prospects need more information, these prospects want a follow-up later, and these prospects are not currently interested."</p>
         </div>
