@@ -131,10 +131,10 @@ const steps = [
 ];
 
 const statuses = [
-  { icon: ThumbsUp, title: "Interested", text: "The prospect has expressed interest and may require further sales follow-up.", tone: "bg-primary/10 text-primary" },
+  { icon: ThumbsUp, title: "Interested", text: "The prospect has expressed interest and may require further sales follow-up.", tone: "bg-primary text-white" },
   { icon: UserCheck, title: "Potential Customer", text: "The prospect has a relevant requirement and may be suitable for your product or service.", tone: "bg-primary/10 text-primary" },
   { icon: Info, title: "Needs More Information", text: "The prospect wants additional information before making a decision.", tone: "bg-accent/15 text-accent" },
-  { icon: Clock, title: "Follow Up Later", text: "The prospect may be interested but is not ready to proceed immediately.", tone: "bg-accent/15 text-accent" },
+  { icon: Clock, title: "Follow Up Later", text: "The prospect may be interested but is not ready to proceed immediately.", tone: "bg-muted text-muted-foreground" },
   { icon: XCircle, title: "Not Interested", text: "The prospect does not currently have a requirement or interest.", tone: "bg-muted text-muted-foreground" },
   { icon: PhoneOff, title: "No Answer / Invalid Contact", text: "The prospect could not be reached or the contact information may require verification.", tone: "bg-muted text-muted-foreground" },
 ];
@@ -322,7 +322,7 @@ const LeadFollowUpServices = () => (
       <H2>How Our Lead Follow-Up Service Works</H2>
       <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6">
         {steps.map(({ icon: Icon, t, c }, i) => (
-          <li key={t} className="relative rounded-xl border border-border bg-card p-5 shadow-sm">
+          <li key={t} className={`relative rounded-xl border bg-card p-5 transition-all hover:-translate-y-0.5 ${i === 5 ? "border-primary/50 shadow-md shadow-primary/10 hover:shadow-lg" : "border-border shadow-sm hover:shadow-md"}`}>
             <span className="absolute top-4 right-4 font-heading text-3xl font-extrabold text-primary/15">{i + 1}</span>
             <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center mb-3"><Icon className="w-5 h-5" /></div>
             <h3 className="font-heading font-bold text-foreground mb-1.5">Step {i + 1}: {t}</h3>
@@ -332,6 +332,7 @@ const LeadFollowUpServices = () => (
                 <span className="font-semibold text-foreground">Sources:</span> Facebook campaigns, Google Ads, website enquiries, landing pages, WhatsApp, email campaigns, events, promotions, previous enquiries, existing databases.
               </p>
             )}
+            {i === 5 && <span className="absolute inset-x-0 top-0 h-1 rounded-t-xl bg-primary" aria-hidden="true" />}
           </li>
         ))}
       </ol>
