@@ -52,7 +52,7 @@ export const callCenterThemeFix = `
 .ccx .card.dark .ic,.ccx .feat .ic{background:hsl(var(--primary-foreground) / .2)!important;color:hsl(var(--primary-foreground))!important}
 .ccx h1,.ccx h2,.ccx h3,.ccx .btn,.ccx .eyebrow,.ccx .k,.ccx .tag,.ccx .title,.ccx .amt{font-family:var(--font-heading)}
 .ccx .hero{padding-top:110px}
-.ccx .marquee span{color:hsl(var(--primary-foreground));opacity:.95}
+.ccx .marquee span,.ccx .marquee .track *{color:hsl(var(--primary-foreground))!important;-webkit-text-fill-color:hsl(var(--primary-foreground));opacity:1}.ccx .marquee i{color:hsl(var(--cta))!important;-webkit-text-fill-color:hsl(var(--cta))}
 .ccx .pl,.ccx .tag,.ccx .tags span{background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:100px}
 .ccx .tag{color:hsl(var(--primary));background:hsl(var(--primary) / .08);border-color:hsl(var(--primary) / .2);padding:6px 14px}
 `;
