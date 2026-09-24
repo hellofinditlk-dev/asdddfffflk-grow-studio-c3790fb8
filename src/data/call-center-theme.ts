@@ -44,3 +44,11 @@ export const callCenterThemeCss = `
 @keyframes ccxRing{0%,100%{box-shadow:0 0 0 14px hsl(var(--primary) / .12),0 0 0 30px hsl(var(--primary) / .06)}50%{box-shadow:0 0 0 20px hsl(var(--primary) / .08),0 0 0 42px hsl(var(--primary) / .03)}}
 @media (prefers-reduced-motion:reduce){.ccx .collage::before,.ccx .gdot,.ccx .chip .k::before{animation:none}}
 `;
+export const callCenterThemeFix = `
+.ccx *{font-family:inherit}
+.ccx h1,.ccx h2,.ccx h3,.ccx .btn,.ccx .eyebrow,.ccx .k,.ccx .tag,.ccx .title,.ccx .amt{font-family:var(--font-heading)}
+.ccx .hero{padding-top:110px}
+.ccx .marquee span{color:hsl(var(--primary-foreground));opacity:.95}
+.ccx .pl,.ccx .tag,.ccx .tags span{background:hsl(var(--card));border:1px solid hsl(var(--border));border-radius:100px}
+.ccx .tag{color:hsl(var(--primary));background:hsl(var(--primary) / .08);border-color:hsl(var(--primary) / .2);padding:6px 14px}
+`;
