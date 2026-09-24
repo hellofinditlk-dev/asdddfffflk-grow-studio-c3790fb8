@@ -78,7 +78,7 @@ const H2 = ({ children }: { children: ReactNode }) => (
 
 const Cta = ({ label, variant = "primary" }: { label: string; variant?: "primary" | "outline" }) => (
   <Button asChild size="lg" variant={variant === "outline" ? "outline" : "default"}
-    className={variant === "primary" ? "bg-accent hover:bg-accent/90 text-accent-foreground border-0 min-h-12" : "min-h-12"}>
+    className={variant === "primary" ? "bg-[hsl(25,95%,53%)] hover:bg-[hsl(25,95%,45%)] !text-white font-semibold border-none min-h-12" : "min-h-12"}>
     <a href={WA_START} target="_blank" rel="noopener noreferrer">{label} <ArrowRight className="w-4 h-4 ml-1" /></a>
   </Button>
 );
@@ -201,7 +201,7 @@ const LeadForm = () => {
       </div>
       <input maxLength={100} placeholder="Where do your leads come from? (e.g. Facebook, website)" aria-label="Lead source" className={input} value={f.source} onChange={set("source")} />
       <textarea maxLength={500} rows={3} placeholder="What would you like to find out from your prospects?" aria-label="Campaign notes" className={input} value={f.message} onChange={set("message")} />
-      <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground border-0 min-h-12">
+      <Button type="submit" size="lg" className="w-full bg-[hsl(25,95%,53%)] hover:bg-[hsl(25,95%,45%)] !text-white font-semibold border-none min-h-12">
         Send via WhatsApp <MessageCircle className="w-4 h-4 ml-1" />
       </Button>
     </form>
