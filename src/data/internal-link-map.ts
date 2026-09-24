@@ -40,7 +40,42 @@ const SOCIAL_PILLAR: LinkTarget = {
   note: "Our main social media service — strategy, content, publishing and reporting.",
 };
 
+const LEAD_GENERATION_PILLAR: LinkTarget = {
+  to: "/lead-generation-campaigns-sri-lanka",
+  anchors: [
+    "lead generation campaigns in Sri Lanka",
+    "multichannel lead generation campaigns",
+    "lead generation services for Sri Lankan businesses",
+    "digital campaigns built around enquiries",
+  ],
+  note: "Multichannel campaigns connecting audience, offer, enquiry route, qualification and sales follow-up.",
+};
+
 export const LINK_CLUSTERS: LinkCluster[] = [
+  {
+    id: "lead-generation",
+    match: ["lead-generation-campaign", "generate-leads", "marketing-leads"],
+    heading: "Lead generation services mentioned in this guide",
+    intro: "Build the complete path from campaign planning and enquiry capture through to qualification and follow-up.",
+    pillar: LEAD_GENERATION_PILLAR,
+    services: [
+      {
+        to: "/lead-follow-up-services-sri-lanka",
+        anchors: ["lead follow-up services", "lead qualification and follow-up", "structured prospect follow-up"],
+        note: "First contact, requirement understanding, qualification, feedback and sales handover.",
+      },
+      {
+        to: "/social-media-lead-generation-sri-lanka",
+        anchors: ["social media lead generation", "Facebook and Instagram lead campaigns", "paid social lead generation"],
+        note: "Lead forms, WhatsApp enquiries, landing pages and retargeting through social platforms.",
+      },
+      {
+        to: "/google-ads-sri-lanka",
+        anchors: ["Google Ads lead generation", "Google Search campaigns", "paid search lead generation"],
+        note: "Reach people actively searching for relevant products and services.",
+      },
+    ],
+  },
   {
     id: "fashion",
     match: ["fashion", "clothing", "boutique", "apparel"],

@@ -529,6 +529,7 @@ const LeadFollowUpServices = () => (
         ))}
       </div>
       <p className="font-heading text-lg font-bold text-foreground mt-6">Lead generation creates the opportunity. Lead follow-up helps your business understand what to do with that opportunity.</p>
+      <p className="text-muted-foreground mt-3">Need the first stage as well? Our <L to="/lead-generation-campaigns-sri-lanka">lead generation campaigns in Sri Lanka</L> connect the audience, offer, advertising channel and enquiry route before this follow-up process begins.</p>
       <p className="text-sm text-muted-foreground mt-2">Related: <L to="/seo-services-sri-lanka">SEO services</L> · <L to="/social-media-campaigns-sri-lanka">social media campaigns</L> · <L to="/">Cypher Digital's digital marketing services</L></p>
       <p className="text-sm text-muted-foreground mt-2">Guides: <L to="/blog/what-is-lead-follow-up">what is lead follow-up</L> · <L to="/blog/how-to-qualify-leads">how to qualify leads</L> · <L to="/blog/how-to-follow-up-facebook-leads">following up Facebook leads</L> · <L to="/blog/why-marketing-leads-are-not-converting">why leads don't convert</L> · <L to="/blog/lead-generation-vs-lead-qualification-vs-lead-follow-up">lead generation vs qualification</L></p>
     </Section>

@@ -8,3 +8,4 @@
 - [x] Publish first 3 articles from the 10-article brief (programmatic, logo, fashion) with two-way internal linking.
 - [x] Publish articles 4 and 5 (salons & spas, car dealerships) with two-way internal linking.
 - [x] Upgrade the existing call-center outsourcing page with accurate educational coverage, comparisons, pricing factors, industries and aligned search metadata.
+- [x] Build the multichannel Lead Generation Campaigns service page and connect it to lead follow-up and channel-specific services.
