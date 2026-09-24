@@ -351,18 +351,33 @@ const LeadFollowUpServices = () => (
             <span className="flex items-center gap-2 text-sm font-semibold"><FileSpreadsheet className="w-4 h-4" /> Lead follow-up report</span>
             <span className="text-[10px] uppercase tracking-widest opacity-80">Sample</span>
           </div>
-          <dl className="divide-y divide-border text-sm">
-            {[["Prospect", "John"], ["Call Status", "Answered"], ["Interest", "Interested"], ["Requirement", "Product / Service"], ["Feedback", "Wants additional information"], ["Next Step", "Sales team to follow up"]].map(([k, v]) => (
-              <div key={k} className="grid grid-cols-[130px_1fr] px-5 py-3">
-                <dt className="text-muted-foreground">{k}</dt>
-                <dd className="font-semibold text-foreground">
-                  {k === "Interest" ? <span className="rounded-full bg-primary/10 text-primary px-2.5 py-0.5 text-xs">{v}</span>
-                    : k === "Next Step" ? <span className="text-accent">{v}</span> : v}
-                </dd>
-              </div>
-            ))}
-          </dl>
-          <figcaption className="px-5 py-3 text-xs text-muted-foreground bg-secondary/60">Example only — fields are agreed per campaign.</figcaption>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left">
+              <thead>
+                <tr className="text-[10px] uppercase tracking-wider text-muted-foreground border-b border-border bg-secondary/50">
+                  <th className="px-4 py-2.5 font-semibold">Prospect</th>
+                  <th className="px-4 py-2.5 font-semibold">Call status</th>
+                  <th className="px-4 py-2.5 font-semibold">Interest</th>
+                  <th className="px-4 py-2.5 font-semibold">Next step</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {[
+                  { name: "John", status: "Answered", tone: "bg-primary/10 text-primary", interest: "Interested", step: "Sales team to follow up", strong: true },
+                  { name: "Kamala", status: "Answered", tone: "bg-accent/15 text-accent", interest: "Needs more information", step: "Send details, call again" },
+                  { name: "Ruwan", status: "No answer", tone: "bg-muted text-muted-foreground", interest: "Unknown", step: "Retry at a later time" },
+                ].map((r) => (
+                  <tr key={r.name} className={r.strong ? "bg-primary/[0.04]" : ""}>
+                    <td className="px-4 py-3 font-semibold text-foreground">{r.name}</td>
+                    <td className="px-4 py-3 text-muted-foreground">{r.status}</td>
+                    <td className="px-4 py-3"><span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold whitespace-nowrap ${r.tone}`}>{r.interest}</span></td>
+                    <td className="px-4 py-3 text-foreground/80">{r.step}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <figcaption className="px-5 py-3 text-xs text-muted-foreground bg-secondary/60">Example only — fields and statuses are agreed per campaign.</figcaption>
         </figure>
       </div>
     </Section>
