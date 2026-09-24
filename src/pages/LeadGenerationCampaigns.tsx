@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowDown, ArrowRight, BarChart3, BriefcaseBusiness, Building2, Car, CheckCircle2,
-  CircleDollarSign, ClipboardCheck, Facebook, FileText, GraduationCap, HeartPulse, Hotel,
+  ClipboardCheck, Facebook, GraduationCap, HeartPulse, Hotel,
   Instagram, Landmark, LayoutTemplate, Linkedin, MessageCircle, MousePointerClick, Phone,
-  RefreshCw, Search, Send, ShoppingBag, Sparkles, Target, TrendingUp, UserCheck, Users,
+  RefreshCw, Search, ShoppingBag, Sparkles, Target, TrendingUp, UserCheck, Users,
   Video, Wrench,
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
