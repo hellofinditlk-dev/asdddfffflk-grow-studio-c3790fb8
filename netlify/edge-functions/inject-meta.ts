@@ -139,6 +139,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Lead generation campaigns in Sri Lanka using Facebook, Instagram, Google, TikTok, LinkedIn, WhatsApp and landing pages to generate relevant business enquiries.",
     h1: "Lead Generation Campaigns in Sri Lanka",
   },
+  "/call-center-outsourcing-sri-lanka": {
+    title: "Call Center Outsourcing Sri Lanka | First-Call & Feedback Service | Cypher Digital",
+    description: "We make the first call to your leads, understand what they need and send you clear feedback, so your sales team can focus on converting. Call center outsourcing in Sri Lanka.",
+    h1: "We make the first call. Your sales team closes the deal.",
+  },
   "/social-media-consultant-sri-lanka": {
     title: "Social Media Consultant Sri Lanka | Strategy, Ads & Team Training | Cypher Digital",
     description: "Social media consultant in Sri Lanka — audits, strategy, ad account structure, content standards, lead process advice and in-house team training for businesses with their own marketing staff.",
