@@ -129,6 +129,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Request a social media audit in Sri Lanka — a structured review of your Facebook, Instagram, TikTok and LinkedIn setup, content, branding, engagement, ad spend and lead path, with a prioritised fix list.",
     h1: "Social Media Audit in Sri Lanka",
   },
+  "/blog/gen-c-marketing-agency-sri-lanka": {
+    title: "Gen C Marketing Agency Sri Lanka | Cypher Digital",
+    description: "Cypher Digital is a Gen C marketing agency in Sri Lanka. Reach connected consumers with TikTok, Instagram, creators and AI search. Free consultation.",
+    h1: "Gen C Marketing Agency in Sri Lanka: How to Win the Connected Generation in 2026",
+  },
   "/lead-follow-up-services-sri-lanka": {
     title: "Lead Follow-Up Services Sri Lanka | Lead Qualification | Cypher Digital",
     description: "Lead follow-up services in Sri Lanka. We contact your prospects, understand their requirements, collect customer feedback and identify opportunities for your sales team.",

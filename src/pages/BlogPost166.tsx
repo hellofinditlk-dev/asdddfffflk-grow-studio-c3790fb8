@@ -210,7 +210,7 @@ const BlogPost166 = () => (
             <ul className="list-disc pl-6 space-y-1">
               <li><Link to="/blog/social-media-marketing-packages" className={L}>Social media marketing packages explained</Link></li>
               <li><Link to="/blog/freelancer-vs-digital-marketing-agency-sri-lanka" className={L}>Freelancer vs digital marketing agency in Sri Lanka</Link></li>
-              <li><Link to="/blog/fashion-brand-digital-marketing-sri-lanka" className={L}>Digital marketing for fashion brands</Link></li>
+              <li><Link to="/blog/how-fashion-brands-grow-digital-marketing-sri-lanka" className={L}>Digital marketing for fashion brands</Link></li>
             </ul>
             <p className="text-xs">Sources: DataReportal Digital 2026 Sri Lanka; Daily Mirror (2025); NapoleonCat (2026); Kadence and Everything PR on Gen C.</p>
           </div>
