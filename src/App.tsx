@@ -459,7 +459,7 @@ const App = () => (
               <Route path="/blog/how-to-follow-up-facebook-leads" element={<BlogPost163 />} />
               <Route path="/blog/lead-generation-vs-lead-qualification-vs-lead-follow-up" element={<BlogPost164 />} />
               <Route path="/blog/how-to-qualify-leads" element={<BlogPost165 />} />
-              <Route path="/blog/gen-c-marketing-agency-sri-lanka" element={<BlogPost166 />} />
+              <Route path="/blog/gen-z-marketing-agency-sri-lanka" element={<BlogPost166 />} />
               <Route path="/blog/creative-agency-sri-lanka" element={<BlogCreativeAgency />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />

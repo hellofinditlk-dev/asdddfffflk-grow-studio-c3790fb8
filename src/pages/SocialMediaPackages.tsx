@@ -404,8 +404,8 @@ const sections: ClusterSection[] = [
             freelancer versus agency
           </Link>
           . If your customers are mostly mobile-first, video-watching buyers, read how a{" "}
-          <Link to="/blog/gen-c-marketing-agency-sri-lanka" className="text-primary hover:underline">
-            Gen C marketing agency in Sri Lanka
+          <Link to="/blog/gen-z-marketing-agency-sri-lanka" className="text-primary hover:underline">
+            Gen Z marketing agency in Sri Lanka
           </Link>{" "}
           plans packages around short video, creators and AI search.
         </p>

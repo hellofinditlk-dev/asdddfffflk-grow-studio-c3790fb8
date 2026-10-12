@@ -1177,10 +1177,10 @@ export const blogPosts: BlogPost[] = [
     keyword: "how to qualify leads",
   },
   {
-    slug: "gen-c-marketing-agency-sri-lanka",
-    title: "Gen C Marketing Agency in Sri Lanka: How to Win the Connected Generation in 2026",
-    excerpt: "Who Gen C is, why connected consumers matter in Sri Lanka, and the 7 strategies a Gen C marketing agency uses.",
+    slug: "gen-z-marketing-agency-sri-lanka",
+    title: "Gen Z Marketing Agency in Sri Lanka: How to Reach Generation Z in 2026",
+    excerpt: "Who Gen Z is, why young Sri Lankan buyers matter, and the 7 strategies a Gen Z marketing agency uses.",
     date: "2026-10-12",
-    keyword: "gen c marketing agency sri lanka",
+    keyword: "gen z marketing agency sri lanka",
   },
 ];
