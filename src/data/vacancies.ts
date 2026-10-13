@@ -199,11 +199,35 @@ export const vacancies: Vacancy[] = [
         q: "How do I apply for this Graphic Designer vacancy in Sri Lanka?",
         a: "Send your name, portfolio link (Behance, Dribbble, Drive or Instagram) and a short intro to +94 70 177 2626 on WhatsApp. We respond within 24 hours — no lengthy forms.",
       },
+      {
+        q: "Is this graphic designer vacancy open to juniors?",
+        a: "Yes, we hire juniors and experienced designers based on portfolio.",
+      },
+      {
+        q: "Do I need a degree to apply?",
+        a: "No. We hire on portfolio and skills; diplomas are valued but not required.",
+      },
+      {
+        q: "What software should I know?",
+        a: "Photoshop and Illustrator; Canva, After Effects and Figma are a plus.",
+      },
+      {
+        q: "Is this role full-time or part-time?",
+        a: "Both are available, with flexible hours for part-timers.",
+      },
+      {
+        q: "Where is the job located?",
+        a: "Our team is in Colombo. The role is office-based with some remote flexibility where it makes sense.",
+      },
+      {
+        q: "How do I apply and how fast will you reply?",
+        a: "Send your name, portfolio link and a short intro on WhatsApp (+94 70 177 2626) or the form below. We reply within 24 hours.",
+      },
     ],
     whatsappMessage: "Hi, I'm applying for the Graphic Designer position at Cypher Digital.",
     whatsappCta: "Apply for Graphic Designer",
     datePosted: "2026-05-25",
-    lastUpdated: "2026-08-24",
+    lastUpdated: "2026-10-13",
   },
   {
     slug: "digital-marketing-jobs-sri-lanka",
