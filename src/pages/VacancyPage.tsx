@@ -517,6 +517,26 @@ const VacancyPage = () => {
         </section>
       )}
 
+      {vacancy.slug === "graphic-designer-jobs-sri-lanka" && (
+        <section className="py-12 border-t border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="font-heading text-xl font-bold mb-2">Graphic designer career guides</h2>
+            <p className="text-sm text-muted-foreground mb-6">Read these before you apply for this graphic designer job in Sri Lanka.</p>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { href: "/blog/graphic-designer-day-in-life-sri-lanka", label: "A day in the life of an agency graphic designer" },
+                { href: "/blog/graphic-design-portfolio-tips-sri-lanka", label: "Portfolio tips: what Sri Lankan agencies look for" },
+                { href: "/blog/graphic-designer-jobs-sri-lanka-guide", label: "Graphic designer salary and skills guide 2026" },
+              ].map((g) => (
+                <Link key={g.href} to={g.href} className="block p-5 rounded-xl bg-card border border-border hover:border-primary transition-colors font-semibold text-sm">
+                  {g.label} <ArrowRight className="inline w-3 h-3" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Internal links */}
       <section className="py-12 bg-secondary/30 border-t border-border">
         <div className="container mx-auto px-4 max-w-4xl">

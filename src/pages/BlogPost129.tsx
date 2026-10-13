@@ -34,6 +34,8 @@ const RELATED = [
   { href: "/blog/digital-marketing-salary-sri-lanka-2026", label: "Digital marketing salary guide 2026" },
   { href: "/blog/how-to-get-digital-marketing-job-sri-lanka", label: "How to get a digital marketing job in Sri Lanka" },
   { href: "/blog/digital-marketing-portfolio-sri-lanka", label: "How to build a portfolio with no experience" },
+  { href: "/blog/graphic-designer-day-in-life-sri-lanka", label: "A day in the life of a graphic designer in Sri Lanka" },
+  { href: "/blog/graphic-design-portfolio-tips-sri-lanka", label: "Graphic design portfolio tips for Sri Lanka" },
   { href: "/blog/video-editor-jobs-sri-lanka", label: "Video editor jobs in Sri Lanka guide" },
 ];
 
