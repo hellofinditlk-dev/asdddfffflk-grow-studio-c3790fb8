@@ -1183,4 +1183,18 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-12",
     keyword: "gen z marketing agency sri lanka",
   },
+  {
+    slug: "graphic-designer-day-in-life-sri-lanka",
+    title: "A Day in the Life of a Graphic Designer at a Sri Lankan Agency",
+    excerpt: "Briefs, tools, revisions and reels: what an agency graphic designer in Colombo really does all day.",
+    date: "2026-10-13",
+    keyword: "graphic designer jobs sri lanka",
+  },
+  {
+    slug: "graphic-design-portfolio-tips-sri-lanka",
+    title: "Graphic Design Portfolio Tips: What Sri Lankan Agencies Look For",
+    excerpt: "What we check in the first 30 seconds, how many pieces to show, common mistakes and a checklist before you apply.",
+    date: "2026-10-13",
+    keyword: "graphic design portfolio sri lanka",
+  },
 ];

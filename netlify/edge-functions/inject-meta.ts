@@ -129,6 +129,16 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     description: "Request a social media audit in Sri Lanka — a structured review of your Facebook, Instagram, TikTok and LinkedIn setup, content, branding, engagement, ad spend and lead path, with a prioritised fix list.",
     h1: "Social Media Audit in Sri Lanka",
   },
+  "/blog/graphic-designer-day-in-life-sri-lanka": {
+    title: "A Day in the Life of a Graphic Designer in Sri Lanka | Cypher Digital",
+    description: "What a graphic designer really does all day at a Colombo digital agency: briefs, tools, revisions, reels and the skills you need. See our open designer role.",
+    h1: "A Day in the Life of a Graphic Designer at a Sri Lankan Agency",
+  },
+  "/blog/graphic-design-portfolio-tips-sri-lanka": {
+    title: "Graphic Design Portfolio Tips for Sri Lanka (2026) | Cypher Digital",
+    description: "How a Colombo agency reviews designer portfolios: what we check first, how many pieces to show, common mistakes and a checklist before you apply.",
+    h1: "Graphic Design Portfolio Tips: What Sri Lankan Agencies Look For",
+  },
   "/blog/gen-z-marketing-agency-sri-lanka": {
     title: "Gen Z Marketing Agency Sri Lanka | Cypher Digital",
     description: "Cypher Digital is a Gen Z marketing agency in Sri Lanka. Reach Generation Z with TikTok, Instagram Reels, creators and AI search. Free consultation.",
