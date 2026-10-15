@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import shareAsset from '@/assets/white-label-partners-share.jpg.asset.json';
 
 export const WHITE_LABEL_TITLE = 'White Label Design Services for Agencies | Done-for-You Creatives';
 export const WHITE_LABEL_DESCRIPTION = 'Done-for-you social posts, carousels, ad creatives and reels for agencies, delivered unbranded so you can resell them under your own brand. 48-hour drafts. Any country.';
@@ -15,9 +16,14 @@ export default function WhiteLabelHead() {
       ['property', 'og:description', WHITE_LABEL_DESCRIPTION],
       ['property', 'og:type', 'website'],
       ['property', 'og:url', 'https://cypherdigital.lk/white-label-design'],
+      ['property', 'og:image', `https://asdddfffflk-grow-studio.lovable.app${shareAsset.url}`],
+      ['property', 'og:image:width', '1200'],
+      ['property', 'og:image:height', '630'],
+      ['property', 'og:image:alt', 'Cypher Partners white-label creative portfolio'],
       ['name', 'twitter:title', WHITE_LABEL_TITLE],
       ['name', 'twitter:description', WHITE_LABEL_DESCRIPTION],
       ['name', 'twitter:card', 'summary_large_image'],
+      ['name', 'twitter:image', `https://asdddfffflk-grow-studio.lovable.app${shareAsset.url}`],
     ];
     for (const [attribute, key, value] of values) {
       const existing = document.head.querySelector(`meta[${attribute}="${key}"]`);
