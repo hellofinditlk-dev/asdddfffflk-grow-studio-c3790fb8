@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getVacancyBySlug, vacancies } from "@/data/vacancies";
 import JobApplicationForm from "@/components/JobApplicationForm";
+import ProjectVacancyDetails from "@/components/ProjectVacancyDetails";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
 
 // Service pages related to each role family — keeps career pages linked into the money pages.
 const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }[] = [
+  { match: /call-center/, links: [{ href: "/lead-follow-up-services-sri-lanka", label: "Lead follow-up services" }, { href: "/lead-generation-campaigns-sri-lanka", label: "Lead generation campaigns" }] },
   {
     match: /graphic|design/,
     links: [
@@ -93,7 +95,7 @@ const VacancyPage = () => {
     title: vacancy.title,
     description: `${vacancy.summary} Responsibilities: ${vacancy.duties.join("; ")}. Requirements: ${vacancy.requirements.join("; ")}.`,
     datePosted: vacancy.datePosted,
-    validThrough,
+    validThrough: vacancy.validThrough ?? validThrough,
     identifier: {
       "@type": "PropertyValue",
       name: "Cypher Digital",
@@ -150,7 +152,8 @@ const VacancyPage = () => {
   jobPostingSchema.industry = "Digital Marketing";
   jobPostingSchema.occupationalCategory = vacancy.title;
   jobPostingSchema.workHours = vacancy.type;
-  jobPostingSchema.jobLocationType = "TELECOMMUTE" === vacancy.location ? "TELECOMMUTE" : undefined;
+  jobPostingSchema.jobLocationType = vacancy.remote || "TELECOMMUTE" === vacancy.location ? "TELECOMMUTE" : undefined;
+  if (vacancy.remote) delete jobPostingSchema.jobLocation;
   if (!jobPostingSchema.jobLocationType) delete jobPostingSchema.jobLocationType;
   if (vacancy.perks && vacancy.perks.length > 0) {
     jobPostingSchema.jobBenefits = vacancy.perks.join("; ");
@@ -279,6 +282,8 @@ const VacancyPage = () => {
           </div>
         </section>
       )}
+
+      {vacancy.projectDetails && <ProjectVacancyDetails details={vacancy.projectDetails} />}
 
       {/* Salary guide */}
       {vacancy.salaryGuide && (
