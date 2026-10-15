@@ -1,10 +1,23 @@
 import { Button } from '@/components/ui/button';
 import WhiteLabelGallery from '@/components/WhiteLabelGallery';
 import WhiteLabelHead from '@/components/WhiteLabelHead';
+import WhiteLabelInquiryForm from '@/components/WhiteLabelInquiryForm';
+import CtaClickTracker from '@/components/CtaClickTracker';
+import { whiteLabelGallery } from '@/data/white-label-gallery';
+import { trackCtaClick } from '@/lib/trackCtaClick';
+import { MessageCircle, ArrowRight, Check } from 'lucide-react';
+import { useState } from 'react';
 import '@/styles/white-label-design.css';
 
 export default function WhiteLabelDesign() {
-  return <><WhiteLabelHead />
+  const [inspiration, setInspiration] = useState('');
+  const whatsapp = `https://wa.me/94701772626?text=${encodeURIComponent('Hi Cypher Partners, I run an agency and would like to discuss white-label design services and free samples.')}`;
+  const enquire = (reference: string) => {
+    setInspiration(reference);
+    void trackCtaClick({ ctaType: 'quote', ctaLabel: `Enquire: ${reference}`, placement: 'White label · Portfolio', href: '#sample' });
+    document.getElementById('sample')?.scrollIntoView({ behavior: 'smooth' });
+  };
+  return <><WhiteLabelHead /><CtaClickTracker />
 <div className="white-label-page wl-93">
 <header className=" wl-0">
 <nav aria-label="Main" className=" wl-1">
@@ -13,21 +26,27 @@ export default function WhiteLabelDesign() {
 <a className=" wl-5" href="#single">Per creative</a>
 <a className=" wl-5" href="#packages">Packages</a>
 <a className=" wl-5" href="#how">How it works</a>
+<a className=" wl-5" href="#work">Our work</a>
 <a className=" wl-5" href="#faq">FAQ</a>
 <Button asChild className="wl-button"><a className=" wl-6" href="#sample">Get free samples</a></Button>
 </div>
 </nav>
 </header>
 <section className=" wl-7">
+<div className="wl-hero-art" aria-hidden="true">{whiteLabelGallery.slice(0, 6).map(item => <img key={item.src} src={item.src} alt="" />)}</div>
 <div className=" wl-8">
 <div className=" wl-9">White-label design studio for agencies</div>
-<h1 className=" wl-10">Done-for-you creatives, under your brand.</h1>
+<h1 className=" wl-10">Done-for-you creatives,<br /><span>under your brand.</span></h1>
 <p className=" wl-11">Social posts, carousels, ad creatives and reels from an in-house team that has designed for 800+ brands. Ready to post, unbranded, from $16 a creative. You resell them as your own, in any country.</p>
 <div className=" wl-12">
 <Button asChild className="wl-button"><a className=" wl-13" href="#sample">Get 3 free creatives</a></Button>
 <Button asChild className="wl-button"><a className=" wl-14" href="#packages">See packages</a></Button>
+<Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Hero"><MessageCircle size={18} /> Talk on WhatsApp</a></Button>
 </div>
+<div className="wl-hero-promises"><span><Check size={16} /> NDA & unbranded delivery</span><span><Check size={16} /> USD wholesale pricing</span><span><Check size={16} /> Any country</span></div>
 </div>
+</section>
+<section className="wl-delivery-band">
 <div className=" wl-15">
 <div className=" wl-16">Every creative includes</div>
 <div className=" wl-17">
@@ -176,11 +195,12 @@ export default function WhiteLabelDesign() {
 </div>
 </div>
 </section>
-<section className=" wl-71">
+<section className=" wl-71" id="work">
+<div className="wl-9">Your next creative partner</div>
 <h2 className=" wl-25">Work from our studio</h2>
-<p className=" wl-72">Social posts, campaign creatives, reels and AI video our team has produced.</p>
-<WhiteLabelGallery />
-<p className=" wl-75"><a href="https://cypherdigital.lk/our-work">See more of our work</a></p>
+<p className=" wl-72">Explore English-language social posts and campaign creatives from our studio. Choose a design direction for your next client brief.</p>
+<WhiteLabelGallery onEnquire={enquire} />
+<div className="wl-portfolio-end"><p>Your client’s brand. Your agency’s name. Our creative team.</p><Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Portfolio"><MessageCircle size={18} /> Discuss your client’s creatives</a></Button></div>
 </section>
 <section className=" wl-76" id="sample">
 <div className=" wl-77">
@@ -189,8 +209,8 @@ export default function WhiteLabelDesign() {
 <p className=" wl-80">Send a client's brand guide. We'll design 3 posts or ad creatives within 48 hours, unbranded and free. If you like them, order by the piece or pick a package.</p>
 </div>
 <div className=" wl-81">
-<Button asChild className="wl-button"><a className=" wl-82" href="mailto:info@cypherdigital.lk?subject=Free%20white-label%20creatives">Email us for free samples</a></Button>
-<Button asChild className="wl-button"><a className=" wl-83" href="https://wa.me/94701772626?text=Hi%2C%20I%27d%20like%20free%20white-label%20design%20samples">WhatsApp +94 70 177 2626</a></Button>
+<WhiteLabelInquiryForm inspiration={inspiration} />
+<Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Free samples"><MessageCircle size={18} /> Prefer to chat? WhatsApp our team</a></Button>
 </div>
 </div>
 </section>
@@ -208,9 +228,10 @@ export default function WhiteLabelDesign() {
 <footer className=" wl-90">
 <div className=" wl-91">
 <div><strong className=" wl-92">Cypher Partners</strong> — the white-label division of <a href="https://cypherdigital.lk/">Cypher Digital</a>, Colombo, Sri Lanka</div>
-<div>info@cypherdigital.lk · +94 70 177 2626</div>
+<div><a href="mailto:hello.cypherdigital@gmail.com" data-cta-placement="White label · Footer">hello.cypherdigital@gmail.com</a> · +94 70 177 2626</div>
 </div>
 </footer>
+<Button asChild className="wl-button wl-whatsapp wl-mobile-chat"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Mobile chat"><MessageCircle size={18} /> Chat about your agency</a></Button>
 </div>
 </>;
 }
