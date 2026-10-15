@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { CalendarDays, Play, UserRound, ShieldCheck, Star, ArrowUpRight } from 'lucide-react';
+import { ShieldCheck, Star } from 'lucide-react';
 import { siStripe, siPaypal, siWise, siSlack, siTrello, siFigma, siCanva, siAdobe } from 'simple-icons';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { partnerMedia, partnerPackages, partnerRates, partnerMoney, partnerProfit, type PartnerCurrency } from '@/data/white-label-partners';
+import { partnerPackages, partnerRates, partnerMoney, partnerProfit, type PartnerCurrency } from '@/data/white-label-partners';
 
 export function PartnerCurrencyPicker({ currency, onChange }: { currency: PartnerCurrency; onChange: (value: PartnerCurrency) => void }) {
   return <div className="wl-currency"><label htmlFor="partner-currency">Display currency</label><select id="partner-currency" value={currency} onChange={e => onChange(e.target.value as PartnerCurrency)}>{Object.keys(partnerRates).map(code => <option key={code}>{code}</option>)}</select><p>GBP, EUR & AUD are indicative estimates, not live rates. Invoiced in USD.</p></div>;
