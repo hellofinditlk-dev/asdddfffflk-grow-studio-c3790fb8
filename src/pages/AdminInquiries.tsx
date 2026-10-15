@@ -65,6 +65,7 @@ export default function AdminInquiries() {
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [range, setRange] = useState<Range>("today");
+  const [audience, setAudience] = useState('all');
 
   useEffect(() => {
     const init = async () => {
@@ -416,6 +417,22 @@ export default function AdminInquiries() {
         </TabsList>
       </Tabs>
 
+      <Tabs value={audience} onValueChange={setAudience} className="mb-6">
+        <TabsList className="h-auto flex-wrap">
+          <TabsTrigger value="all">All enquiries</TabsTrigger>
+          <TabsTrigger value="public">Main website</TabsTrigger>
+          <TabsTrigger value="white-label">White-label agencies</TabsTrigger>
+        </TabsList>
+      </Tabs>
+
+      <Section title="White-label agency activity" sub={`Direct-only partner page · ${rangeLabel}`}>
+        <div className="grid grid-cols-2 gap-4 p-5">
+          <div><p className="text-sm text-muted-foreground">CTA clicks</p><p className="text-2xl font-bold">{periodCtas.filter(c => cleanPath(c.source_path) === '/white-label-design').length}</p></div>
+          <div><p className="text-sm text-muted-foreground">Agency briefs</p><p className="text-2xl font-bold">{periodInq.filter(i => cleanPath(i.source_path) === '/white-label-design').length}</p></div>
+        </div>
+        <DataTable headers={['CTA', 'Placement', 'Date']} rows={periodCtas.filter(c => cleanPath(c.source_path) === '/white-label-design').slice(0, 20).map(c => [c.cta_label || CTA_TYPE_LABEL[c.cta_type] || c.cta_type, c.placement || 'White label', new Date(c.created_at).toLocaleString()])} empty="No white-label CTA clicks in this period." />
+      </Section>
+
       {/* KPI cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         <KPI label={`CTA Clicks · ${rangeLabel}`} value={fmtNum(totalCtaClicks)} accent="primary" />
@@ -611,7 +628,19 @@ export default function AdminInquiries() {
                   <td className="px-4 py-2 whitespace-nowrap text-muted-foreground">
                     {new Date(i.created_at).toLocaleString()}
                   </td>
-                  <td className="px-4 py-2 font-medium">{i.name}</td>
+                  <td className="px-4 py-2 font-medium">{i.name}
+                    {cleanPath(i.source_path) === '/white-label-design' && <details className="mt-2 text-xs font-normal max-w-sm">
+                      <summary className="cursor-pointer text-primary">Agency brief</summary>
+                      <div className="space-y-2 pt-2 break-words">
+                        <p><strong>Agency:</strong> {String(i.extra?.agency || '—')}</p>
+                        <p><strong>Country:</strong> {String(i.extra?.country || '—')}</p>
+                        <p><strong>Email:</strong> {i.email || '—'}</p>
+                        <p><strong>Request:</strong> {String(i.extra?.requirement || '—')}</p>
+                        {i.extra?.inspiration && <p><strong>Work reference:</strong> {String(i.extra.inspiration)}</p>}
+                        <p className="whitespace-pre-wrap">{i.message}</p>
+                      </div>
+                    </details>}
+                  </td>
                   <td className="px-4 py-2">
                     <a className="text-primary hover:underline" href={`tel:${i.phone}`}>{i.phone}</a>
                   </td>
