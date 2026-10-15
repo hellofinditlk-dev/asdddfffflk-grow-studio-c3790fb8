@@ -255,6 +255,5 @@
   .white-label-page .wl-profit-results output { font-size: 30px; }
   .white-label-page .wl-team-grid { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
   .white-label-page .wl-booking-placeholder .wl-button { margin-left: 0; }
-  .white-label-page .wl-mobile-samples { display: block; position: fixed; bottom: max(12px, env(safe-area-inset-bottom)); left: 16px; right: 16px; z-index: 40; box-shadow: var(--wl-shadow); }
-  .white-label-page .wl-mobile-samples a { display: flex; width: 100%; justify-content: center; gap: 12px; }
+  .white-label-page .wl-mobile-samples { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 16px 24px; min-height: 56px; border-radius: 8px; color: var(--wl-white); background: var(--wl-accent); position: fixed; bottom: max(12px, env(safe-area-inset-bottom)); left: 16px; right: 16px; z-index: 40; box-shadow: var(--wl-shadow); font-weight: 600; }
 }
