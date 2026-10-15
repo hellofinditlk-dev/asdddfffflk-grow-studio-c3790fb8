@@ -1857,6 +1857,25 @@ export default async function handler(request: Request, context: any) {
   try {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/$/, "") || "/";
+  // This direct-only partner page deliberately bypasses public-site SEO injection.
+  if (path === "/white-label-design") {
+    const response = await context.next();
+    if (!(response.headers.get("content-type") || "").includes("text/html")) return response;
+    const title = "White Label Design Services for Agencies | Done-for-You Creatives";
+    const description = "Done-for-you social posts, carousels, ad creatives and reels for agencies, delivered unbranded so you can resell them under your own brand. 48-hour drafts. Any country.";
+    const html = (await response.text())
+      .replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`)
+      .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${description}" />`)
+      .replace(/<meta\s+(?:name|property)="(?:robots|og:title|og:description|og:url|twitter:title|twitter:description)"[^>]*>/gi, "")
+      .replace(/<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, "")
+      .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "")
+      .replace("</head>", `<meta name="robots" content="noindex, nofollow" />\n<meta property="og:title" content="${title}" />\n<meta property="og:description" content="${description}" />\n<meta property="og:url" content="https://cypherdigital.lk/white-label-design" />\n<meta name="twitter:title" content="${title}" />\n<meta name="twitter:description" content="${description}" />\n</head>`);
+    const headers = new Headers(response.headers);
+    headers.set("X-Robots-Tag", "noindex, nofollow");
+    headers.delete("content-length");
+    headers.delete("etag");
+    return new Response(html, { status: response.status, headers });
+  }
   const meta = META_MAP[path];
 
   if (!meta) {
