@@ -14,4 +14,4 @@
 - [x] Enhance white-label page: portfolio mockups, currencies, profit calculator, sample form, trust row, mobile CTA and share metadata.
 - [x] Remove the team and partner-call sections from the direct-only white-label page.
 - [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.
-- [ ] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
+- [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.

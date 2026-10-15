@@ -232,6 +232,7 @@ const salaryFactors = [
 ];
 
 const roleOptions = [
+  "Work From Home Call Center Executive (Part-time / Project-based)",
   "Business Development Executive (LKR 60K–150K)",
   "Digital Marketing Specialist (LKR 50K–200K)",
   "Digital Marketing Executive (LKR 45K–120K)",
