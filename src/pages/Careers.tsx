@@ -74,7 +74,7 @@ const itemListSchema = {
     url: `https://cypherdigital.lk/careers/${v.slug}`,
     name: v.title,
     item: {
-      "@type": "JobPosting",
+      "@type": v.remote ? "WebPage" : "JobPosting",
       title: v.title,
       description: v.summary,
       url: `https://cypherdigital.lk/careers/${v.slug}`,
@@ -85,7 +85,7 @@ const itemListSchema = {
         name: "Cypher Digital",
         sameAs: "https://cypherdigital.lk/",
       },
-      jobLocation: {
+      jobLocation: v.remote ? undefined : {
         "@type": "Place",
         address: {
           "@type": "PostalAddress",
@@ -108,7 +108,7 @@ const rollingValidThrough = (() => {
   return d.toISOString().slice(0, 10);
 })();
 
-const jobPostingSchemas = vacancies.map((v) => ({
+const jobPostingSchemas = vacancies.filter((v) => !v.remote).map((v) => ({
   "@context": "https://schema.org",
   "@type": "JobPosting",
   title: v.title,
