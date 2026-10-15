@@ -11,3 +11,6 @@
 - [x] Build the multichannel Lead Generation Campaigns service page and connect it to lead follow-up and channel-specific services.
 - [x] Create the isolated /white-label-design page with supplied design, route-only noindex and a work image gallery.
 - [x] Improve the international agency page with English-only work, WhatsApp actions, stored enquiries and distinct admin tracking.
+- [x] Enhance white-label page: portfolio mockups, currencies, profit calculator, sample form, trust row, mobile CTA and share metadata.
+- [ ] Activate founder video/team photos and Calendly booking; waiting for owner media, identities and Calendly URL.
+- [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.

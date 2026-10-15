@@ -3,12 +3,14 @@ import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors';
 import { z } from 'npm:zod@3';
 
 const schema = z.object({
-  name: z.string().trim().min(2).max(100),
+  name: z.string().trim().min(2).max(100).optional(),
   agency: z.string().trim().min(2).max(150),
   country: z.string().trim().min(2).max(80),
   email: z.string().trim().email().max(255),
-  phone: z.string().trim().min(7).max(30).regex(/^[+\d\s().-]+$/),
-  requirement: z.string().trim().min(2).max(100),
+  phone: z.string().trim().min(7).max(30).regex(/^[+\d\s().-]+$/).optional(),
+  requirement: z.string().trim().min(2).max(100).optional(),
+  website: z.string().trim().url().max(500).refine(value => /^https?:\/\//i.test(value)).optional(),
+  monthly_volume: z.number().int().min(1).max(10000).optional(),
   message: z.string().trim().min(10).max(2000),
   inspiration: z.string().max(200).optional(),
   website_check: z.string().max(0).optional(),
@@ -31,13 +33,19 @@ Deno.serve(async req => {
     const key = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
     if (!url || !key) return respond({ error: 'Enquiries are temporarily unavailable.' }, 503);
     const db = createClient(url, key);
+    // Per-contact cooldown prevents repeated submissions without storing IP addresses.
+    const { data: recent, error: lookupError } = await db.from('inquiries').select('id').eq('email', data.email)
+      .eq('service', 'White Label Design · Agency Partners').gte('created_at', new Date(Date.now() - 60000).toISOString()).limit(1);
+    if (lookupError) return respond({ error: 'Enquiries are temporarily unavailable.' }, 503);
+    if (recent?.length) return respond({ error: 'Please wait a minute before sending another brief.' }, 429);
     const sourcePath = data.source_path?.startsWith('/white-label-design?') ? data.source_path : '/white-label-design';
     const { error } = await db.from('inquiries').insert({
-      name: data.name, email: data.email, phone: data.phone,
+      name: data.name || data.agency, email: data.email, phone: data.phone || '',
       service: 'White Label Design · Agency Partners', source_path: sourcePath,
       message: data.message,
       extra: { channel: 'white-label', agency: data.agency, country: data.country,
-        requirement: data.requirement, inspiration: data.inspiration || null,
+        requirement: data.requirement || 'Free sample creatives', website: data.website || null,
+        monthly_volume: data.monthly_volume || null, inspiration: data.inspiration || null,
         referrer: data.referrer || null, cta: 'Agency brief form', placement: 'White label · Free samples' },
     });
     if (error) return respond({ error: 'Could not save your brief. Please try again.' }, 500);

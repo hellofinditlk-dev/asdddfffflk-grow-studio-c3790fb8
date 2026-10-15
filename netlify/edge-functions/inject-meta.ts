@@ -1863,13 +1863,14 @@ export default async function handler(request: Request, context: any) {
     if (!(response.headers.get("content-type") || "").includes("text/html")) return response;
     const title = "White Label Design Services for Agencies | Done-for-You Creatives";
     const description = "Done-for-you social posts, carousels, ad creatives and reels for agencies, delivered unbranded so you can resell them under your own brand. 48-hour drafts. Any country.";
+    const shareImage = "https://asdddfffflk-grow-studio.lovable.app/__l5e/assets-v1/61b2c8d6-076d-4425-952a-5bed6fa0c9f1/white-label-partners-share.jpg";
     const html = (await response.text())
       .replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`)
       .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${description}" />`)
-      .replace(/<meta\s+(?:name|property)="(?:robots|og:title|og:description|og:url|twitter:title|twitter:description)"[^>]*>/gi, "")
+      .replace(/<meta\s+(?:name|property)="(?:robots|og:title|og:description|og:url|og:type|og:image(?::[^\"]+)?|twitter:title|twitter:description|twitter:image|twitter:card)"[^>]*>/gi, "")
       .replace(/<script\b[^>]*type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, "")
       .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, "")
-      .replace("</head>", `<meta name="robots" content="noindex, nofollow" />\n<meta property="og:title" content="${title}" />\n<meta property="og:description" content="${description}" />\n<meta property="og:url" content="https://cypherdigital.lk/white-label-design" />\n<meta name="twitter:title" content="${title}" />\n<meta name="twitter:description" content="${description}" />\n</head>`);
+      .replace("</head>", `<meta name="robots" content="noindex, nofollow" />\n<meta property="og:title" content="${title}" />\n<meta property="og:description" content="${description}" />\n<meta property="og:type" content="website" />\n<meta property="og:url" content="https://cypherdigital.lk/white-label-design" />\n<meta property="og:image" content="${shareImage}" />\n<meta property="og:image:width" content="1200" />\n<meta property="og:image:height" content="630" />\n<meta name="twitter:title" content="${title}" />\n<meta name="twitter:description" content="${description}" />\n<meta name="twitter:card" content="summary_large_image" />\n<meta name="twitter:image" content="${shareImage}" />\n</head>`);
     const headers = new Headers(response.headers);
     headers.set("X-Robots-Tag", "noindex, nofollow");
     headers.delete("content-length");

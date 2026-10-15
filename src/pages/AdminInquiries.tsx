@@ -639,6 +639,8 @@ export default function AdminInquiries() {
                       <div className="space-y-2 pt-2 break-words">
                         <p><strong>Agency:</strong> {String(i.extra?.agency || '—')}</p>
                         <p><strong>Country:</strong> {String(i.extra?.country || '—')}</p>
+                        <p><strong>Website:</strong> {String(i.extra?.website || '—')}</p>
+                        <p><strong>Creatives / month:</strong> {String(i.extra?.monthly_volume || '—')}</p>
                         <p><strong>Email:</strong> {i.email || '—'}</p>
                         <p><strong>Request:</strong> {String(i.extra?.requirement || '—')}</p>
                         {i.extra?.inspiration && <p><strong>Work reference:</strong> {String(i.extra.inspiration)}</p>}
