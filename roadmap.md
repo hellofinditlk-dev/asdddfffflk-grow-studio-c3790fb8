@@ -10,4 +10,4 @@
 - [x] Upgrade the existing call-center outsourcing page with accurate educational coverage, comparisons, pricing factors, industries and aligned search metadata.
 - [x] Build the multichannel Lead Generation Campaigns service page and connect it to lead follow-up and channel-specific services.
 - [x] Create the isolated /white-label-design page with supplied design, route-only noindex and a work image gallery.
-- [ ] Improve the international agency page with English-only work, WhatsApp actions, stored enquiries and distinct admin tracking.
+- [x] Improve the international agency page with English-only work, WhatsApp actions, stored enquiries and distinct admin tracking.

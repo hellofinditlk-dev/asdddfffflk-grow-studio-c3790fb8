@@ -10,7 +10,7 @@ const selection = [
   { index: 12, category: 'Education' }, { index: 13, category: 'Travel' },
   { index: 15, category: 'Education' }, { index: 16, category: 'Education' },
   { index: 18, category: 'Corporate' }, { index: 20, category: 'Education' },
-  { index: 26, category: 'Corporate' }, { index: 28, category: 'Travel' },
+  { index: 24, category: 'Corporate' }, { index: 27, category: 'Travel' },
 ];
 
 export const whiteLabelGallery = selection.flatMap(({ index, category }) => {
