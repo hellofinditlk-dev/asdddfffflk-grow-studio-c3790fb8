@@ -22,7 +22,7 @@ export default function WhiteLabelDesign() {
 <div className="white-label-page wl-93">
 <header className=" wl-0">
 <nav aria-label="Main" className=" wl-1">
-<div className=" wl-2"><img src={logo} alt="Cypher Digital logo" className="wl-logo" />Cypher <span className=" wl-3">Partners</span></div>
+<div className=" wl-2"><img src={logo} alt="Cypher Digital logo" className="wl-logo" /><span className=" wl-3">Partners</span></div>
 <div className=" wl-4">
 <a className=" wl-5" href="#single">Per creative</a>
 <a className=" wl-5" href="#packages">Packages</a>
