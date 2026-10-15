@@ -9,7 +9,7 @@ import { MessageCircle, ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
 import logo from '@/assets/logo.png';
 import { partnerMoney, type PartnerCurrency } from '@/data/white-label-partners';
-import { PartnerCurrencyPicker, PartnerGuarantee, PartnerProfitCalculator, PartnerTrustRow, PartnerTeam, PartnerBooking } from '@/components/WhiteLabelPartnerSections';
+import { PartnerCurrencyPicker, PartnerGuarantee, PartnerProfitCalculator, PartnerTrustRow } from '@/components/WhiteLabelPartnerSections';
 import '@/styles/white-label-design.css';
 
 export default function WhiteLabelDesign() {
@@ -224,7 +224,6 @@ export default function WhiteLabelDesign() {
 </div>
 </div>
 </section>
-<PartnerTeam />
 <section className=" wl-71" id="work">
 <div className="wl-9">Your next creative partner</div>
 <h2 className=" wl-25">Work from our studio</h2>
@@ -244,7 +243,6 @@ export default function WhiteLabelDesign() {
 </div>
 </div>
 </section>
-<PartnerBooking />
 <section className=" wl-84" id="faq">
 <h2 className=" wl-85">Questions agencies ask</h2>
 <div className=" wl-86">

@@ -2,5 +2,5 @@
 - Keep white-label gallery images in a dedicated source dataset backed by asset pointers; accept replacement images through the project editing workflow so updates are shared by all visitors.
 - Apply standalone noindex metadata both in route lifecycle cleanup and the Netlify HTML response, so it never leaks onto public routes.
 - Store agency briefs through the white-label-inquiry function in the existing inquiries table with a white-label channel marker; mount the existing CTA tracker only once in the isolated page so admin attribution remains distinct without duplicate events.
-- Keep partner currencies, package calculator inputs and owner media configuration in a dedicated partner dataset; derive currency displays from USD so pricing and estimated margins stay consistent.
-- Render owner media, bookings, reviews and guarantee terms as explicit pending states until supplied; never embed unrelated third-party calendars or fabricate trust evidence.
+- Keep partner currencies and package calculator inputs in a dedicated partner dataset; derive currency displays from USD so pricing and estimated margins stay consistent.
+- Keep the isolated partner page free of team, founder-video and external calendar sections until the owner supplies those assets; render reviews and guarantee terms as explicit pending states until supplied, and never fabricate trust evidence.
