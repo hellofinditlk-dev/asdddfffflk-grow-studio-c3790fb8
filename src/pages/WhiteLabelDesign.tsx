@@ -41,7 +41,7 @@ export default function WhiteLabelDesign() {
 
 <div className=" wl-8">
 <div className=" wl-9">White-label design studio for agencies</div>
-<h1 className=" wl-10">Your creative team,<br className="wl-h1-br" /><span>without the hiring.</span></h1>
+<h1 className=" wl-10">Your creative team,<br className="wl-h1-br" />{" "}<span>without the hiring.</span></h1>
 <p className=" wl-11">Done-for-you social posts, ad creatives and reels, delivered unbranded in 48 hours. You resell them as your own.</p>
 <div className=" wl-12">
 <Button asChild className="wl-button"><a className=" wl-13" href="#sample">Get 3 free creatives</a></Button>
