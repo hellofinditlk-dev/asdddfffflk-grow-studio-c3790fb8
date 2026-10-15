@@ -8,10 +8,14 @@ import { trackCtaClick } from '@/lib/trackCtaClick';
 import { MessageCircle, ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
 import logo from '@/assets/logo.png';
+import { partnerMoney, type PartnerCurrency } from '@/data/white-label-partners';
+import { PartnerCurrencyPicker, PartnerGuarantee, PartnerProfitCalculator, PartnerTrustRow, PartnerTeam, PartnerBooking } from '@/components/WhiteLabelPartnerSections';
 import '@/styles/white-label-design.css';
 
 export default function WhiteLabelDesign() {
   const [inspiration, setInspiration] = useState('');
+  const [currency, setCurrency] = useState<PartnerCurrency>('USD');
+  const money = (price: number, decimals = 0) => partnerMoney(price, currency, decimals);
   const whatsapp = `https://wa.me/94701772626?text=${encodeURIComponent('Hi Cypher Partners, I run an agency and would like to discuss white-label design services and free samples.')}`;
   const enquire = (reference: string) => {
     setInspiration(reference);
@@ -34,7 +38,7 @@ export default function WhiteLabelDesign() {
 </nav>
 </header>
 <section className=" wl-7">
-<div className="wl-hero-art" aria-hidden="true">{whiteLabelGallery.slice(0, 6).map(item => <img key={item.src} src={item.src} alt="" />)}</div>
+
 <div className=" wl-8">
 <div className=" wl-9">White-label design studio for agencies</div>
 <h1 className=" wl-10">Done-for-you creatives,<br /><span>under your brand.</span></h1>
@@ -46,7 +50,9 @@ export default function WhiteLabelDesign() {
 </div>
 <div className="wl-hero-promises"><span><Check size={16} /> NDA & unbranded delivery</span><span><Check size={16} /> USD wholesale pricing</span><span><Check size={16} /> Fluent English team</span><span><Check size={16} /> Dedicated account manager</span><span><Check size={16} /> Any country</span></div>
 </div>
+<div className="wl-feed-grid" aria-label="Studio portfolio in feed mockups">{whiteLabelGallery.slice(0, 9).map((item, index) => <div className="wl-feed-mockup" key={item.src}><div className="wl-feed-top"><span className="wl-feed-avatar" />Your client’s brand<span>···</span></div><img src={item.src} alt={item.alt || `Agency creative ${index + 1}`} /><div className="wl-feed-bottom">♡ &nbsp; ◇ &nbsp; ↗ <span>▱</span></div></div>)}</div>
 </section>
+<PartnerTrustRow />
 <section className="wl-delivery-band">
 <div className=" wl-15">
 <div className=" wl-16">Every creative includes</div>
@@ -68,7 +74,7 @@ export default function WhiteLabelDesign() {
 </div>
 </section>
 <section className=" wl-24" id="single">
-<h2 className=" wl-25">Price per creative</h2>
+<div className="wl-pricing-top"><h2 className=" wl-25">Price per creative</h2><PartnerCurrencyPicker currency={currency} onChange={setCurrency} /></div><PartnerGuarantee />
 <p className=" wl-26">Order one at a time, no contract. Wholesale prices in USD; most partners resell at 2–3x.</p>
 <div className=" wl-27">
 <table className=" wl-28">
@@ -80,16 +86,16 @@ export default function WhiteLabelDesign() {
 </tr>
 </thead>
 <tbody>
-<tr className=" wl-32"><td className=" wl-30">Social media post</td><td className=" wl-33">1 static design, 1:1 or 4:5, with caption</td><td className=" wl-34">$16</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Story or banner</td><td className=" wl-33">1 design, 9:16 or web banner size</td><td className=" wl-34">$20</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Carousel</td><td className=" wl-33">Up to 5 slides, one story across them</td><td className=" wl-34">$60</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Ad creative set</td><td className=" wl-33">1 concept in 1:1, 4:5 and 9:16 for Meta and Google</td><td className=" wl-34">$45</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Reel edit</td><td className=" wl-33">Up to 30 sec from your footage, captions, music</td><td className=" wl-34">$45</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Motion reel</td><td className=" wl-33">Up to 60 sec, motion graphics, stock footage</td><td className=" wl-34">$75</td></tr>
-<tr className=" wl-32"><td className=" wl-30">AI video reel</td><td className=" wl-33">15–30 sec, AI character, voice-over and script</td><td className=" wl-34">$75</td></tr>
-<tr className=" wl-32"><td className=" wl-30">AI video ad</td><td className=" wl-33">60 sec, AI character, voice-over and script</td><td className=" wl-34">$125</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Flyer or poster</td><td className=" wl-33">Print-ready A4/A3 or digital</td><td className=" wl-34">$40</td></tr>
-<tr className=" wl-32"><td className=" wl-30">Logo design</td><td className=" wl-33">3 concepts, final files and colour variants</td><td className=" wl-34">$150</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Social media post</td><td className=" wl-33">1 static design, 1:1 or 4:5, with caption</td><td className=" wl-34">{money(16)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Story or banner</td><td className=" wl-33">1 design, 9:16 or web banner size</td><td className=" wl-34">{money(20)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Carousel</td><td className=" wl-33">Up to 5 slides, one story across them</td><td className=" wl-34">{money(60)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Ad creative set</td><td className=" wl-33">1 concept in 1:1, 4:5 and 9:16 for Meta and Google</td><td className=" wl-34">{money(45)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Reel edit</td><td className=" wl-33">Up to 30 sec from your footage, captions, music</td><td className=" wl-34">{money(45)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Motion reel</td><td className=" wl-33">Up to 60 sec, motion graphics, stock footage</td><td className=" wl-34">{money(75)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">AI video reel</td><td className=" wl-33">15–30 sec, AI character, voice-over and script</td><td className=" wl-34">{money(75)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">AI video ad</td><td className=" wl-33">60 sec, AI character, voice-over and script</td><td className=" wl-34">{money(125)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Flyer or poster</td><td className=" wl-33">Print-ready A4/A3 or digital</td><td className=" wl-34">{money(40)}</td></tr>
+<tr className=" wl-32"><td className=" wl-30">Logo design</td><td className=" wl-33">3 concepts, final files and colour variants</td><td className=" wl-34">{money(150)}</td></tr>
 </tbody>
 </table>
 </div>
@@ -102,20 +108,20 @@ export default function WhiteLabelDesign() {
 <div className=" wl-39">
 <div className=" wl-40">
 <div className=" wl-41">Posts 12</div>
-<div><span className=" wl-42">$179</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$14.92 per post</div>
+<div><span className=" wl-42">{money(179)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(14.92, 2)} per post</div>
 <ul className=" wl-44"><li>12 posts, incl. up to 2 carousels</li><li>Captions and hashtags</li><li>Monthly content calendar</li></ul>
 </div>
 <div className=" wl-45">
 <div className=" wl-46"><span className=" wl-41">Posts 20</span><span className=" wl-47">Most resold</span></div>
-<div><span className=" wl-42">$289</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$14.45 per post</div>
+<div><span className=" wl-42">{money(289)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(14.45, 2)} per post</div>
 <ul className=" wl-44"><li>20 posts, incl. up to 4 carousels</li><li>4 stories</li><li>Captions and content calendar</li></ul>
 </div>
 <div className=" wl-40">
 <div className=" wl-41">Posts 30</div>
-<div><span className=" wl-42">$419</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$13.97 per post</div>
+<div><span className=" wl-42">{money(419)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(13.97, 2)} per post</div>
 <ul className=" wl-44"><li>30 posts, incl. up to 6 carousels</li><li>8 stories</li><li>Captions and content calendar</li></ul>
 </div>
 </div>
@@ -123,20 +129,20 @@ export default function WhiteLabelDesign() {
 <div className=" wl-39">
 <div className=" wl-40">
 <div className=" wl-41">Reels 4</div>
-<div><span className=" wl-42">$159</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$39.75 per reel</div>
+<div><span className=" wl-42">{money(159)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(39.75, 2)} per reel</div>
 <ul className=" wl-44"><li>4 reels up to 30 sec</li><li>Captions, music, hooks</li><li>Cover image for each</li></ul>
 </div>
 <div className=" wl-45">
 <div className=" wl-46"><span className=" wl-41">Reels 8</span><span className=" wl-47">Best value</span></div>
-<div><span className=" wl-42">$299</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$37.38 per reel</div>
+<div><span className=" wl-42">{money(299)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(37.38, 2)} per reel</div>
 <ul className=" wl-44"><li>8 reels up to 30 sec</li><li>2 can be motion or AI reels</li><li>Captions, music, covers</li></ul>
 </div>
 <div className=" wl-40">
 <div className=" wl-41">Reels 12</div>
-<div><span className=" wl-42">$449</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$37.42 per reel</div>
+<div><span className=" wl-42">{money(449)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(37.42, 2)} per reel</div>
 <ul className=" wl-44"><li>12 reels up to 60 sec</li><li>4 can be motion or AI reels</li><li>Captions, music, covers</li></ul>
 </div>
 </div>
@@ -144,20 +150,20 @@ export default function WhiteLabelDesign() {
 <div className=" wl-39">
 <div className=" wl-40">
 <div className=" wl-41">Creatives 10</div>
-<div><span className=" wl-42">$379</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$37.90 per creative set</div>
+<div><span className=" wl-42">{money(379)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(37.90, 2)} per creative set</div>
 <ul className=" wl-44"><li>10 ad concepts, 3 sizes each</li><li>Headline and copy variants</li><li>Ready for Meta and Google</li></ul>
 </div>
 <div className=" wl-45">
 <div className=" wl-46"><span className=" wl-41">Creatives 25</span><span className=" wl-47">For ad testing</span></div>
-<div><span className=" wl-42">$899</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$35.96 per creative set</div>
+<div><span className=" wl-42">{money(899)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(35.96, 2)} per creative set</div>
 <ul className=" wl-44"><li>25 ad concepts, 3 sizes each</li><li>Up to 5 can be video ads</li><li>Copy variants for A/B tests</li></ul>
 </div>
 <div className=" wl-40">
 <div className=" wl-41">Creatives 50</div>
-<div><span className=" wl-42">$1,649</span><span className=" wl-43"> /month</span></div>
-<div className=" wl-23">$32.98 per creative set</div>
+<div><span className=" wl-42">{money(1649)}</span><span className=" wl-43"> /month</span></div>
+<div className=" wl-23">{money(32.98, 2)} per creative set</div>
 <ul className=" wl-44"><li>50 ad concepts, 3 sizes each</li><li>Up to 10 can be video ads</li><li>Split across several of your clients</li></ul>
 </div>
 </div>
@@ -168,12 +174,13 @@ export default function WhiteLabelDesign() {
 <p className=" wl-52">Unlimited requests across every client, one active request at a time, most delivered in 1–2 business days. Posts, ads, flyers, decks, banners.</p>
 </div>
 <div className=" wl-53">
-<div><span className=" wl-54">$800</span><span className=" wl-55"> /month</span></div>
-<div className=" wl-56">Two active requests: $1,199 /month</div>
+<div><span className=" wl-54">{money(800)}</span><span className=" wl-55"> /month</span></div>
+<div className=" wl-56">Two active requests: {money(1199)} /month</div>
 <Button asChild className="wl-button"><a className=" wl-57" href="#sample">Start with a free sample</a></Button>
 </div>
 </div>
 </section>
+<PartnerProfitCalculator currency={currency} />
 <section className=" wl-36" id="add-ons">
 <h2 className=" wl-25">Also available on request</h2>
 <p className=" wl-37">Alongside the creatives, our team can run your client's day-to-day channels under your agency's name. Ask for any of these when you send your brief and we'll quote per client based on scope.</p>
@@ -217,6 +224,7 @@ export default function WhiteLabelDesign() {
 </div>
 </div>
 </section>
+<PartnerTeam />
 <section className=" wl-71" id="work">
 <div className="wl-9">Your next creative partner</div>
 <h2 className=" wl-25">Work from our studio</h2>
@@ -232,10 +240,11 @@ export default function WhiteLabelDesign() {
 </div>
 <div className=" wl-81">
 <WhiteLabelInquiryForm inspiration={inspiration} />
-<Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Free samples"><MessageCircle size={18} /> Prefer to chat? WhatsApp our team</a></Button>
+<Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Free samples"><MessageCircle size={18} /> Or talk on WhatsApp</a></Button>
 </div>
 </div>
 </section>
+<PartnerBooking />
 <section className=" wl-84" id="faq">
 <h2 className=" wl-85">Questions agencies ask</h2>
 <div className=" wl-86">
@@ -253,7 +262,7 @@ export default function WhiteLabelDesign() {
 <div><a href="mailto:hello.cypherdigital@gmail.com" data-cta-placement="White label · Footer">hello.cypherdigital@gmail.com</a> · +94 70 177 2626</div>
 </div>
 </footer>
-<Button asChild className="wl-button wl-whatsapp wl-mobile-chat"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Mobile chat"><MessageCircle size={18} /> Chat about your agency</a></Button>
+<Button asChild className="wl-button wl-mobile-samples"><a className="wl-13" href="#sample" data-cta-placement="White label · Mobile samples">Get 3 free creatives<ArrowRight size={18} /></a></Button>
 </div>
 </>;
 }
