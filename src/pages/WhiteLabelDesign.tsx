@@ -8,6 +8,7 @@ import { trackCtaClick } from '@/lib/trackCtaClick';
 import { MessageCircle, ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
 import logo from '@/assets/logo.png';
+import flag from '@/assets/sri-lanka-flag.svg';
 import { partnerMoney, type PartnerCurrency } from '@/data/white-label-partners';
 import { PartnerCurrencyPicker, PartnerGuarantee, PartnerProfitCalculator, PartnerTrustRow } from '@/components/WhiteLabelPartnerSections';
 import '@/styles/white-label-design.css';
@@ -49,6 +50,7 @@ export default function WhiteLabelDesign() {
 <Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Hero"><MessageCircle size={18} /> Talk on WhatsApp</a></Button>
 </div>
 <div className="wl-hero-promises"><span><Check size={16} /> NDA & unbranded delivery</span><span><Check size={16} /> USD wholesale pricing</span><span><Check size={16} /> Fluent English team</span><span><Check size={16} /> Dedicated account manager</span><span><Check size={16} /> Any country</span></div>
+<div className="wl-origin"><img src={flag} alt="Flag of Sri Lanka" className="wl-flag" width={30} height={15} /><span>In-house creative studio in Colombo, <strong>Sri Lanka</strong></span></div>
 </div>
 <div className="wl-feed-grid" aria-label="Studio portfolio in feed mockups">{whiteLabelGallery.slice(0, 9).map((item, index) => <div className="wl-feed-mockup" key={item.src}><div className="wl-feed-top"><span className="wl-feed-avatar" />Your client’s brand<span>···</span></div><img src={item.src} alt={item.alt || `Agency creative ${index + 1}`} /><div className="wl-feed-bottom">♡ &nbsp; ◇ &nbsp; ↗ <span>▱</span></div></div>)}</div>
 </section>
@@ -256,7 +258,7 @@ export default function WhiteLabelDesign() {
 </section>
 <footer className=" wl-90">
 <div className=" wl-91">
-<div><strong className=" wl-92">Cypher Partners</strong> — the white-label division of <a href="https://cypherdigital.lk/">Cypher Digital</a>, Colombo, Sri Lanka</div>
+<div><strong className=" wl-92">Cypher Partners</strong> — the white-label division of <a href="https://cypherdigital.lk/">Cypher Digital</a>, Colombo, Sri Lanka <img src={flag} alt="Flag of Sri Lanka" className="wl-flag" width={26} height={13} /></div>
 <div><a href="mailto:hello.cypherdigital@gmail.com" data-cta-placement="White label · Footer">hello.cypherdigital@gmail.com</a> · +94 70 177 2626</div>
 </div>
 </footer>
