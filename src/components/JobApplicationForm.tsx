@@ -76,7 +76,7 @@ const JobApplicationForm = ({ positionTitle, positionSlug }: JobApplicationFormP
         onChange={(e) => setForm({ ...form, message: e.target.value })} className="bg-background/60" />
       <Button type="submit" disabled={submitting}
         className="w-full bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
-        <Send className="w-4 h-4 mr-2" /> {submitting ? "Submitting..." : `Apply for ${positionTitle}`}
+        <Send className="w-4 h-4 mr-2 shrink-0" /> {submitting ? "Submitting..." : positionSlug === "work-from-home-call-center-jobs-sri-lanka" ? "Apply for this role" : `Apply for ${positionTitle}`}
       </Button>
       <p className="text-xs text-muted-foreground">
         Applying for <strong className="text-foreground">{positionTitle}</strong>. We reply within 24 hours on WhatsApp.
