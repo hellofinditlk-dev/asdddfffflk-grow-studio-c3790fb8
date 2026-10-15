@@ -8,6 +8,7 @@ const EXACT: Record<string, string> = {
   "/contact": "Contact",
   "/blog": "Blog",
   "/careers": "Careers",
+  "/white-label-design": "White Label Design · Agency Partners",
 };
 
 const FIRST_SEGMENT: Record<string, string> = {
@@ -119,6 +120,7 @@ const SERVICE_URL: Record<string, string> = {
   "Contact": "/contact",
   "Blog": "/blog",
   "Careers": "/careers",
+  "White Label Design · Agency Partners": "/white-label-design",
   "SEO": "/seo-services",
   "Google Ads": "/google-ads",
   "Facebook Ads": "/facebook-ads",
