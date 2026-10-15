@@ -119,12 +119,17 @@ export default function AdminInquiries() {
     return { rangeStart: start, rangeDays: days };
   }, [range]);
 
+  const matchesAudience = (row: { source_path: string | null }) => audience === 'all' ||
+    (audience === 'white-label' ? cleanPath(row.source_path) === '/white-label-design' : cleanPath(row.source_path) !== '/white-label-design');
+  const scopedInquiries = useMemo(() => (inquiries ?? []).filter(matchesAudience), [inquiries, audience]);
+  const scopedCalls = useMemo(() => (callClicks ?? []).filter(matchesAudience), [callClicks, audience]);
+  const scopedCtas = useMemo(() => (ctaClicks ?? []).filter(matchesAudience), [ctaClicks, audience]);
   const inRange = <T extends { created_at: string }>(arr: T[] | null) =>
     (arr ?? []).filter((r) => new Date(r.created_at) >= rangeStart);
 
-  const periodInq = useMemo(() => inRange(inquiries), [inquiries, rangeStart]);
-  const periodCalls = useMemo(() => inRange(callClicks), [callClicks, rangeStart]);
-  const periodCtas = useMemo(() => inRange(ctaClicks), [ctaClicks, rangeStart]);
+  const periodInq = useMemo(() => inRange(scopedInquiries), [scopedInquiries, rangeStart]);
+  const periodCalls = useMemo(() => inRange(scopedCalls), [scopedCalls, rangeStart]);
+  const periodCtas = useMemo(() => inRange(scopedCtas), [scopedCtas, rangeStart]);
 
   // ---------------- KPIs ----------------
   const totalCtaClicks = periodCtas.length + periodCalls.length;
@@ -179,11 +184,11 @@ export default function AdminInquiries() {
       if (at >= s7) r.d7 += 1;
       if (at >= sot) r.today += 1;
     };
-    (ctaClicks ?? []).forEach((c) => bump(c.cta_type, new Date(c.created_at)));
-    (callClicks ?? []).forEach((c) => bump("call", new Date(c.created_at)));
-    (inquiries ?? []).forEach((i) => bump("form", new Date(i.created_at)));
+    scopedCtas.forEach((c) => bump(c.cta_type, new Date(c.created_at)));
+    scopedCalls.forEach((c) => bump("call", new Date(c.created_at)));
+    scopedInquiries.forEach((i) => bump("form", new Date(i.created_at)));
     return Array.from(buckets.values()).sort((a, b) => b.d30 - a.d30);
-  }, [ctaClicks, callClicks, inquiries]);
+  }, [scopedCtas, scopedCalls, scopedInquiries]);
 
   // ---------------- CTA Heatmap (top services × CTA type) ----------------
   type Heat = { service: string; url: string | null; whatsapp: number; call: number; form: number; total: number };
@@ -295,9 +300,9 @@ export default function AdminInquiries() {
       const s = serviceFromPath(p);
       tally.set(s, (tally.get(s) ?? 0) + 1);
     };
-    (ctaClicks ?? []).forEach((c) => bump(c.source_path, c.created_at));
-    (callClicks ?? []).forEach((c) => bump(c.source_path, c.created_at));
-    (inquiries ?? []).forEach((i) => bump(i.source_path, i.created_at));
+    scopedCtas.forEach((c) => bump(c.source_path, c.created_at));
+    scopedCalls.forEach((c) => bump(c.source_path, c.created_at));
+    scopedInquiries.forEach((i) => bump(i.source_path, i.created_at));
     const topServices = Array.from(tally.entries())
       .sort((a, b) => b[1] - a[1])
       .slice(0, 4)
@@ -317,11 +322,11 @@ export default function AdminInquiries() {
       if (idx === undefined) return;
       series[idx][s] = (series[idx][s] ?? 0) + 1;
     };
-    (ctaClicks ?? []).forEach((c) => tick(c.source_path, c.created_at));
-    (callClicks ?? []).forEach((c) => tick(c.source_path, c.created_at));
-    (inquiries ?? []).forEach((i) => tick(i.source_path, i.created_at));
+    scopedCtas.forEach((c) => tick(c.source_path, c.created_at));
+    scopedCalls.forEach((c) => tick(c.source_path, c.created_at));
+    scopedInquiries.forEach((i) => tick(i.source_path, i.created_at));
     return { series, services: topServices };
-  }, [ctaClicks, callClicks, inquiries]);
+  }, [scopedCtas, scopedCalls, scopedInquiries]);
 
   // ---------------- Funnel ----------------
   const funnel = useMemo(() => {
@@ -623,7 +628,7 @@ export default function AdminInquiries() {
               </tr>
             </thead>
             <tbody>
-              {(inquiries ?? []).slice(0, 25).map((i) => (
+              {scopedInquiries.slice(0, 25).map((i) => (
                 <tr key={i.id} className="border-t border-border">
                   <td className="px-4 py-2 whitespace-nowrap text-muted-foreground">
                     {new Date(i.created_at).toLocaleString()}
@@ -661,7 +666,7 @@ export default function AdminInquiries() {
                   </td>
                 </tr>
               ))}
-              {(inquiries ?? []).length === 0 && (
+              {scopedInquiries.length === 0 && (
                 <tr><td colSpan={5} className="px-4 py-6 text-center text-muted-foreground">No inquiries yet.</td></tr>
               )}
             </tbody>
