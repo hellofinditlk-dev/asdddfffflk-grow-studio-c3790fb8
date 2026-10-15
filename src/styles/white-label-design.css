@@ -179,3 +179,8 @@
   .white-label-page *, .white-label-page *::before { transition: none !important; animation: none !important; }
   html:has(.white-label-page) { scroll-behavior: auto; }
 }
+.white-label-page .wl-logo { height: 30px; width: auto; border-radius: 6px; }
+.white-label-page .wl-2 { display: inline-flex; align-items: center; gap: 10px; }
+@media (max-width: 767px) {
+  .white-label-page .wl-logo { height: 26px; }
+}

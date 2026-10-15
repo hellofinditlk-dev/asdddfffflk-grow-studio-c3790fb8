@@ -7,6 +7,7 @@ import { whiteLabelGallery } from '@/data/white-label-gallery';
 import { trackCtaClick } from '@/lib/trackCtaClick';
 import { MessageCircle, ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
+import logo from '@/assets/logo.png';
 import '@/styles/white-label-design.css';
 
 export default function WhiteLabelDesign() {
@@ -21,7 +22,7 @@ export default function WhiteLabelDesign() {
 <div className="white-label-page wl-93">
 <header className=" wl-0">
 <nav aria-label="Main" className=" wl-1">
-<div className=" wl-2">Cypher <span className=" wl-3">Partners</span></div>
+<div className=" wl-2"><img src={logo} alt="Cypher Digital logo" className="wl-logo" /><span className=" wl-3">Partners</span></div>
 <div className=" wl-4">
 <a className=" wl-5" href="#single">Per creative</a>
 <a className=" wl-5" href="#packages">Packages</a>
@@ -43,7 +44,7 @@ export default function WhiteLabelDesign() {
 <Button asChild className="wl-button"><a className=" wl-14" href="#packages">See packages</a></Button>
 <Button asChild className="wl-button wl-whatsapp"><a href={whatsapp} target="_blank" rel="noopener noreferrer" data-cta-placement="White label · Hero"><MessageCircle size={18} /> Talk on WhatsApp</a></Button>
 </div>
-<div className="wl-hero-promises"><span><Check size={16} /> NDA & unbranded delivery</span><span><Check size={16} /> USD wholesale pricing</span><span><Check size={16} /> Any country</span></div>
+<div className="wl-hero-promises"><span><Check size={16} /> NDA & unbranded delivery</span><span><Check size={16} /> USD wholesale pricing</span><span><Check size={16} /> Fluent English team</span><span><Check size={16} /> Dedicated account manager</span><span><Check size={16} /> Any country</span></div>
 </div>
 </section>
 <section className="wl-delivery-band">
@@ -173,6 +174,25 @@ export default function WhiteLabelDesign() {
 </div>
 </div>
 </section>
+<section className=" wl-36" id="add-ons">
+<h2 className=" wl-25">Also available on request</h2>
+<p className=" wl-37">Alongside the creatives, our team can run your client's day-to-day channels under your agency's name. Ask for any of these when you send your brief and we'll quote per client based on scope.</p>
+<div className=" wl-39">
+<div className=" wl-40">
+<div className=" wl-41">Social media management</div>
+<ul className=" wl-44"><li>Content calendars, posting and scheduling</li><li>Comment and message handling</li><li>Monthly reporting for your client</li></ul>
+</div>
+<div className=" wl-40">
+<div className=" wl-41">Google Ads management</div>
+<ul className=" wl-44"><li>Search, display and YouTube campaigns</li><li>Budgets, keywords and ongoing optimisation</li><li>Performance reports in your name</li></ul>
+</div>
+<div className=" wl-40">
+<div className=" wl-41">Facebook page management</div>
+<ul className=" wl-44"><li>Page setup, upkeep and branding</li><li>Posts, replies and inbox handling</li><li>Insights summaries each month</li></ul>
+</div>
+</div>
+<p className=" wl-35">Not sure what your client needs? <a href="#sample">Send the brief</a> and we'll suggest the right mix.</p>
+</section>
 <section className=" wl-58" id="how">
 <h2 className=" wl-25">How it works</h2>
 <p className=" wl-59">You keep the client relationship. We work in the background. Your client only ever sees your agency.</p>
@@ -192,6 +212,8 @@ export default function WhiteLabelDesign() {
 <div className=" wl-69"><h3 className=" wl-70">Strict confidentiality</h3><p className=" wl-52">NDA before day one. We never name your clients, never show their work in our portfolio, never contact them.</p></div>
 <div className=" wl-69"><h3 className=" wl-70">On-time, every time</h3><p className=" wl-52">48-hour drafts, a named account lead, and a backup designer on every account so work never stalls.</p></div>
 <div className=" wl-69"><h3 className=" wl-70">Any country, any time zone</h3><p className=" wl-52">We work to your hours with async updates in your Slack, Teams or email, wherever your agency is.</p></div>
+<div className=" wl-69"><h3 className=" wl-70">Fluent English, every time</h3><p className=" wl-52">Captions, ad copy, decks and client updates are written in clear, natural English — ready to send to your clients as they are.</p></div>
+<div className=" wl-69"><h3 className=" wl-70">Your dedicated account manager</h3><p className=" wl-52">One named contact owns your briefs end to end, so you never repeat yourself or chase status updates.</p></div>
 </div>
 </div>
 </section>
