@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getVacancyBySlug, vacancies } from "@/data/vacancies";
 import JobApplicationForm from "@/components/JobApplicationForm";
+import ProjectVacancyDetails from "@/components/ProjectVacancyDetails";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
 
 // Service pages related to each role family — keeps career pages linked into the money pages.
 const SERVICE_LINKS: { match: RegExp; links: { href: string; label: string }[] }[] = [
+  { match: /call-center/, links: [{ href: "/lead-follow-up-services-sri-lanka", label: "Lead follow-up services" }, { href: "/lead-generation-campaigns-sri-lanka", label: "Lead generation campaigns" }] },
   {
     match: /graphic|design/,
     links: [
@@ -93,7 +95,7 @@ const VacancyPage = () => {
     title: vacancy.title,
     description: `${vacancy.summary} Responsibilities: ${vacancy.duties.join("; ")}. Requirements: ${vacancy.requirements.join("; ")}.`,
     datePosted: vacancy.datePosted,
-    validThrough,
+    validThrough: vacancy.validThrough ?? validThrough,
     identifier: {
       "@type": "PropertyValue",
       name: "Cypher Digital",
@@ -150,7 +152,8 @@ const VacancyPage = () => {
   jobPostingSchema.industry = "Digital Marketing";
   jobPostingSchema.occupationalCategory = vacancy.title;
   jobPostingSchema.workHours = vacancy.type;
-  jobPostingSchema.jobLocationType = "TELECOMMUTE" === vacancy.location ? "TELECOMMUTE" : undefined;
+  jobPostingSchema.jobLocationType = vacancy.remote || "TELECOMMUTE" === vacancy.location ? "TELECOMMUTE" : undefined;
+  if (vacancy.remote) delete jobPostingSchema.jobLocation;
   if (!jobPostingSchema.jobLocationType) delete jobPostingSchema.jobLocationType;
   if (vacancy.perks && vacancy.perks.length > 0) {
     jobPostingSchema.jobBenefits = vacancy.perks.join("; ");
@@ -225,7 +228,7 @@ const VacancyPage = () => {
       <PageBreadcrumb items={[{ label: "Careers", href: "/careers" }, { label: vacancy.shortTitle }]} />
 
       {/* Hero */}
-      <section className="section-dark py-16 lg:py-24">
+      <section className={vacancy.remote ? "py-16 lg:py-24 bg-secondary/30" : "section-dark py-16 lg:py-24"}>
         <div className="container mx-auto px-4 max-w-4xl animate-fade-up">
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Open Vacancy</p>
           <h1 className="font-heading text-3xl md:text-5xl font-bold mb-6 leading-tight">{vacancy.h1}</h1>
@@ -234,18 +237,18 @@ const VacancyPage = () => {
             <span className="flex items-center gap-1.5"><Briefcase className="w-4 h-4" /> {vacancy.type}</span>
             <span className="flex items-center gap-1.5"><Building2 className="w-4 h-4" /> Cypher Digital</span>
           </div>
-          <p className="text-sm text-white/80 mb-6">
+          <p className={vacancy.remote ? "text-sm text-muted-foreground mb-6" : "text-sm text-white/80 mb-6"}>
             Last Updated:{" "}
-            <time dateTime={lastUpdatedIso} className="font-semibold text-white">{lastUpdatedLabel}</time>
+            <time dateTime={lastUpdatedIso} className={vacancy.remote ? "font-semibold text-foreground" : "font-semibold text-white"}>{lastUpdatedLabel}</time>
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">{vacancy.summary}</p>
           <div className="flex flex-wrap gap-3">
-            <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
+            <Button asChild size="lg" className="bg-cta hover:bg-cta/90 text-cta-foreground border-0 max-w-full">
               <a href="#apply">
-                <Send className="w-5 h-5 mr-2" /> Apply for {vacancy.shortTitle}
+                <Send className="w-5 h-5 mr-2 shrink-0" /> {vacancy.remote ? "Apply for this role" : `Apply for ${vacancy.shortTitle}`}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-black border-white hover:bg-white/90 hover:text-black">
+            <Button asChild size="lg" variant="outline" className={vacancy.remote ? "bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground border-0" : "text-black border-white hover:bg-white/90 hover:text-black"}>
               <a href={waUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" /> {vacancy.whatsappCta} on WhatsApp
               </a>
@@ -279,6 +282,8 @@ const VacancyPage = () => {
           </div>
         </section>
       )}
+
+      {vacancy.projectDetails && <ProjectVacancyDetails details={vacancy.projectDetails} />}
 
       {/* Salary guide */}
       {vacancy.salaryGuide && (
@@ -456,7 +461,7 @@ const VacancyPage = () => {
                 <div className="flex flex-wrap gap-3">
                   <Button asChild className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
                     <a href="#apply">
-                      <Send className="w-4 h-4 mr-2" /> Apply for {vacancy.shortTitle}
+                      <Send className="w-4 h-4 mr-2" /> {vacancy.remote ? "Apply for this role" : `Apply for ${vacancy.shortTitle}`}
                     </a>
                   </Button>
                   <Button asChild variant="outline">

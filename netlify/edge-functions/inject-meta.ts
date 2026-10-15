@@ -807,6 +807,11 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "How digital marketing grew 5 Sri Lankan businesses — real results and case studies",
   },
   // Careers
+  "/careers/work-from-home-call-center-jobs-sri-lanka": {
+    title: "Work From Home Call Center Jobs Sri Lanka | Part-Time Lead Follow-Up — Cypher Digital",
+    description: "Part-time, work-from-home call center jobs in Sri Lanka. Call leads for client campaigns, choose your projects and get paid per project. Apply on WhatsApp.",
+    h1: "Work From Home Call Center Executive — Lead Follow-Up",
+  },
   "/careers": {
     title: "Digital Marketing Jobs in Sri Lanka | Careers at Cypher Digital",
     description: "Join Cypher Digital — Sri Lanka's top digital marketing agency. View open vacancies for Graphic Designer, Digital Marketing Specialist, Video Editor and Marketing Intern in Colombo.",
@@ -1305,8 +1310,13 @@ type JobPostingData = {
   description: string;
   employmentType: string | string[];
   datePosted: string;
-  salaryMin: number;
-  salaryMax: number;
+  salaryMin?: number;
+  salaryMax?: number;
+  remote?: boolean;
+  validThrough?: string;
+  lastUpdated?: string;
+  monthsExperience?: number;
+  educationRequirement?: string;
   skills?: string;
   qualifications?: string;
   responsibilities?: string;
@@ -1314,6 +1324,21 @@ type JobPostingData = {
 };
 
 const JOB_POSTINGS: Record<string, JobPostingData> = {
+  "work-from-home-call-center-jobs-sri-lanka": {
+    title: "Work From Home Call Center Executive — Lead Follow-Up (Part-Time)",
+    description: "Part-time, project-based work-from-home role across Sri Lanka. Call campaign leads using supplied scripts, ask qualification questions, record call outcomes in Google Sheets and submit accurate reports by the project deadline. Paid per completed project, not monthly. Flexible within agreed calling hours. Sinhala, Tamil or English speakers aged 18+ welcome; no experience required and training provided. Requires a reliable phone, internet and quiet calling space. Rates, call costs and payment terms must be confirmed before accepting a project. No registration, training fee or deposit.",
+    employmentType: ["PART_TIME", "CONTRACTOR"],
+    datePosted: "2026-10-15",
+    lastUpdated: "2026-10-15",
+    validThrough: "2027-01-31T23:59:00+05:30",
+    remote: true,
+    monthsExperience: 0,
+    educationRequirement: "No formal qualification required",
+    skills: "Clear speaking in Sinhala, Tamil or English; lead qualification; Google Sheets; accurate call reporting",
+    qualifications: "18 years or older; reliable phone, internet and quiet calling space; reliability and availability within agreed calling hours. No experience required.",
+    responsibilities: "Call supplied leads; ask agreed questions; record outcomes and next steps; submit accurate reports by the deadline; protect confidential customer data.",
+    benefits: "Work from home across Sri Lanka; flexible project selection; onboarding, scripts, lead lists and coordinator support.",
+  },
   "graphic-designer-jobs-sri-lanka": {
     title: "Graphic Designer",
     description: "Design social media creatives, brand identities and marketing collateral for 800+ Sri Lankan brands at Cypher Digital, Colombo. Responsibilities include social media designs, ad creatives, logos, brand identity and marketing collateral. Requirements: proficiency in Adobe Photoshop and Illustrator, strong portfolio in social media or branding work, and ability to handle multiple deadlines.",
@@ -1789,8 +1814,8 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
     title: job.title,
     description: job.description,
     datePosted: job.datePosted,
-    dateModified: VACANCY_LAST_UPDATED,
-    validThrough,
+    dateModified: job.lastUpdated ?? VACANCY_LAST_UPDATED,
+    validThrough: job.validThrough ?? validThrough,
     identifier: { "@type": "PropertyValue", name: "Cypher Digital", value: slug },
     employmentType: job.employmentType,
     hiringOrganization: {
@@ -1799,7 +1824,7 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
       sameAs: "https://cypherdigital.lk",
       logo: "https://cypherdigital.lk/assets/logo-DJLYsmc6.png",
     },
-    jobLocation: {
+    jobLocation: job.remote ? undefined : {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
@@ -1810,14 +1835,15 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
         addressCountry: "LK",
       },
     },
+    jobLocationType: job.remote ? "TELECOMMUTE" : undefined,
     applicantLocationRequirements: { "@type": "Country", name: "Sri Lanka" },
     educationRequirements: {
       "@type": "EducationalOccupationalCredential",
-      credentialCategory: isIntern ? "high school" : "bachelor degree",
+      credentialCategory: job.educationRequirement ?? (isIntern ? "high school" : "bachelor degree"),
     },
     experienceRequirements: {
       "@type": "OccupationalExperienceRequirements",
-      monthsOfExperience: isIntern ? 0 : 12,
+      monthsOfExperience: job.monthsExperience ?? (isIntern ? 0 : 12),
     },
     experienceInPlaceOfEducation: true,
     industry: "Digital Marketing",
@@ -1838,7 +1864,7 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
       name: `Apply for ${job.title} on WhatsApp`,
       target: { "@type": "EntryPoint", urlTemplate: waUrl },
     },
-    baseSalary: {
+    baseSalary: job.salaryMin !== undefined && job.salaryMax !== undefined ? {
       "@type": "MonetaryAmount",
       currency: "LKR",
       value: {
@@ -1847,8 +1873,8 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
         maxValue: job.salaryMax,
         unitText: "MONTH",
       },
-    },
-    directApply: false,
+    } : undefined,
+    directApply: job.remote ? true : false,
     url: canonical,
   };
 };

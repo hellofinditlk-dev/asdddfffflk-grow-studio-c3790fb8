@@ -4,3 +4,4 @@
 - Store agency briefs through the white-label-inquiry function in the existing inquiries table with a white-label channel marker; mount the existing CTA tracker only once in the isolated page so admin attribution remains distinct without duplicate events.
 - Keep partner currencies and package calculator inputs in a dedicated partner dataset; derive currency displays from USD so pricing and estimated margins stay consistent.
 - Keep the isolated partner page free of team, founder-video and external calendar sections until the owner supplies those assets; render reviews and guarantee terms as explicit pending states until supplied, and never fabricate trust evidence.
+- Keep vacancies in the shared Careers dataset; use explicit remote, expiry and project-detail fields so project-based roles avoid office and salary assumptions in their detail pages and search metadata.

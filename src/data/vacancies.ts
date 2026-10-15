@@ -1,4 +1,4 @@
-import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, PenLine, type LucideIcon } from "lucide-react";
+import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, PenLine, Headset, type LucideIcon } from "lucide-react";
 
 export interface Vacancy {
   slug: string;
@@ -18,6 +18,14 @@ export interface Vacancy {
   whatsappMessage: string;
   whatsappCta: string;
   datePosted: string;
+  validThrough?: string;
+  remote?: boolean;
+  projectDetails?: {
+    workflow: { title: string; body: string }[];
+    pay: string[];
+    confidentiality: string[];
+    selection: { title: string; body: string }[];
+  };
   salaryRange?: { min: number; max: number; currency: string; unit: "MONTH" | "YEAR" | "HOUR" };
   seoIntro?: string[];
   whyJoin?: { title: string; body: string }[];
@@ -53,6 +61,80 @@ export interface Vacancy {
 }
 
 export const vacancies: Vacancy[] = [
+  {
+    slug: "work-from-home-call-center-jobs-sri-lanka",
+    title: "Work From Home Call Center Executive — Lead Follow-Up (Part-Time)",
+    shortTitle: "Work From Home Call Center Executive",
+    h1: "Work From Home Call Center Executive — Lead Follow-Up",
+    metaTitle: "Work From Home Call Center Jobs Sri Lanka | Part-Time Lead Follow-Up — Cypher Digital",
+    metaDescription: "Part-time, work-from-home call center jobs in Sri Lanka. Call leads for client campaigns, choose your projects and get paid per project. Apply on WhatsApp.",
+    icon: Headset,
+    type: "Part-time · Project-based",
+    employmentType: ["PART_TIME", "CONTRACTOR"],
+    location: "From home, anywhere in Sri Lanka",
+    remote: true,
+    summary: "Make follow-up calls for our clients' marketing campaigns from your own home. Choose the projects you take, work the hours that suit you within agreed calling hours, and get paid for every project you complete.",
+    datePosted: "2026-10-15",
+    lastUpdated: "2026-10-15",
+    validThrough: "2027-01-31T23:59:00+05:30",
+    monthsExperience: 0,
+    educationRequirement: "No formal qualification required",
+    skills: ["Clear speaking in Sinhala, Tamil or English", "Lead qualification", "Google Sheets", "Accurate call reporting"],
+    seoIntro: [
+      "Businesses run ads on Facebook, Google and other channels, and people send enquiries. Your job is to make the first friendly call to those people, find out what they need, and record it clearly so the client's sales team knows who to follow up with. This is not hard selling: you're there to have a conversation and record what you learn.",
+      "This islandwide, work-from-home role suits university students, school leavers aged 18 or older, parents, homemakers and people looking for extra income alongside another job. Calling or customer service experience is welcome, but clear speaking and reliability matter more. We train you before your first project.",
+    ],
+    duties: [
+      "Call each person on the project lead list using the supplied script and questions.",
+      "Ask what they need, how interested they are and when they plan to decide.",
+      "Record interested, needs more information, callback, not interested or no answer in the shared sheet.",
+      "Log requirements, questions and next steps accurately for the client's sales team.",
+      "Complete the agreed list by the project deadline and submit your report for a quality check.",
+    ],
+    requirements: [
+      "Clear, polite speaking voice in Sinhala, Tamil or English; two or more languages are a plus.",
+      "A reliable mobile phone for calls and a smartphone or laptop with internet for Google Sheets.",
+      "A quiet place to call without background noise.",
+      "Availability within the calling hours and deadline agreed for each project.",
+      "Reliability: finish the work you accept, on time.",
+      "18 years or older.",
+    ],
+    perks: ["Short onboarding and training before your first project.", "Call scripts, qualification questions and lead lists supplied.", "A coordinator and WhatsApp group for questions during your project.", "Flexible project selection and work from home across Sri Lanka."],
+    whatsappMessage: "Hi Cypher Digital, I'd like to apply for the Work From Home Call Center Executive role.\n\nName: \nDistrict: \nLanguages: \nHours available per week: \nPrevious calling experience: ",
+    whatsappCta: "Apply",
+    projectDetails: {
+      workflow: [
+        { title: "Get the brief", body: "We share the client, offer, script, qualification questions, lead count and deadline. You decide whether to take the project." },
+        { title: "Make the calls", body: "Call from home at times that suit you, within the calling hours set for the project." },
+        { title: "Log every outcome", body: "Update the shared report as you go: call status, interest level, requirement, questions and next step." },
+        { title: "Quality check", body: "Our team reviews your report and checks that the information is accurate and complete." },
+        { title: "Get paid", body: "Once the project is approved, you are paid for the work completed under the agreed project terms." },
+      ],
+      pay: [
+        "You are paid per completed project, not a fixed monthly salary. The rate is shared in the brief before you accept the work.",
+        "Rates vary with the number of leads, qualification questions and language. The brief sets out the scope and deadline.",
+        "The exact rate, any bonus, payment timing and method, and who covers call costs are not specified in this vacancy. Ask our coordinator to confirm these before accepting a project.",
+      ],
+      confidentiality: ["Use lead details only for the assigned project; never share them, save them to personal contacts or use them for anything else.", "Delete project lead lists and records from your devices when the project ends.", "Never contact leads outside the project or for personal reasons.", "Call only within agreed hours and respect anyone who asks not to be called again.", "Every caller signs a confidentiality agreement."],
+      selection: [
+        { title: "Apply on WhatsApp", body: "Send your full name, district, languages, available hours per week and any calling or customer service experience." },
+        { title: "Send a voice note", body: "We send a sample script. Record it as a voice note so we can hear how you sound on a call." },
+        { title: "Quick team call", body: "A 10-minute conversation to explain the projects and answer your questions." },
+        { title: "Training and paid trial", body: "Complete training and a small paid trial project. Further projects depend on availability and your quality check." },
+      ],
+    },
+    faqs: [
+      { q: "Do I have to pay anything to join?", a: "No. Cypher Digital never charges a registration fee, training fee or deposit. If anyone asks for money in our name, it is not us." },
+      { q: "Is this a full-time job?", a: "No. This is a part-time, project-based role. You take projects when you are available. There is no fixed monthly salary; you are paid per completed project." },
+      { q: "Can I do this from outside Colombo?", a: "Yes. The role is 100% from home, anywhere in Sri Lanka." },
+      { q: "How many hours do I need to work?", a: "It depends on the projects you accept. Each brief tells you the number of leads, calling hours and deadline so you can plan your time." },
+      { q: "Is this a sales job?", a: "You start the conversation and record what the person needs. The client's own sales team handles selling afterwards." },
+      { q: "Who pays for the phone calls?", a: "Call-cost arrangements have not been specified in this vacancy. Ask our coordinator to confirm who covers them before accepting a project." },
+      { q: "When and how do I get paid?", a: "Payment is project-based after approval. Exact timing, payment method and rates must be confirmed with our coordinator before you accept the project." },
+      { q: "Do I need experience?", a: "No. Clear speaking, reliability and a quiet place to work matter more. We train you before your first project." },
+    ],
+    internalLinks: [{ label: "Lead follow-up services in Sri Lanka", href: "/lead-follow-up-services-sri-lanka", desc: "See the client service your calls support." }],
+  },
   {
     slug: "graphic-designer-jobs-sri-lanka",
     title: "Graphic Designer",
