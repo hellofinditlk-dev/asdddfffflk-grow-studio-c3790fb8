@@ -1873,7 +1873,6 @@ const buildJobPostingSchema = (slug: string, job: JobPostingData) => {
         maxValue: job.salaryMax,
         unitText: "MONTH",
       },
-    },
     } : undefined,
     directApply: job.remote ? true : false,
     url: canonical,
