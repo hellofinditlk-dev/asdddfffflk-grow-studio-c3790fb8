@@ -115,3 +115,67 @@
 @media (prefers-reduced-motion: no-preference) {
   html:has(.white-label-page) { scroll-behavior: smooth; }
 }
+
+/* Portfolio-led partner presentation, isolated from public-site sections. */
+.white-label-page .wl-7 { position: relative; isolation: isolate; max-width: none; display: block; background: var(--wl-dark); color: var(--wl-white); padding: 88px max(24px, calc((100% - 1152px) / 2)) 80px; overflow: hidden; }
+.white-label-page .wl-8 { position: relative; z-index: 2; max-width: 720px; }
+.white-label-page .wl-hero-art { position: absolute; inset: -40px -80px -40px 40%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; transform: rotate(-8deg); z-index: -2; }
+.white-label-page .wl-hero-art img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.white-label-page .wl-7::after { content: ''; position: absolute; inset: 0; background: var(--wl-hero-overlay); z-index: -1; }
+.white-label-page .wl-10 { font-size: 64px; line-height: 1.08; }
+.white-label-page .wl-10 span, .white-label-page .wl-7 .wl-9 { color: var(--wl-highlight); }
+.white-label-page .wl-11 { color: var(--wl-light-copy); max-width: 620px; }
+.white-label-page .wl-7 .wl-14 { border-color: var(--wl-dim); color: var(--wl-white); }
+.white-label-page .wl-hero-promises { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 14px; color: var(--wl-dark-copy); margin-top: 12px; }
+.white-label-page .wl-hero-promises span { display: inline-flex; gap: 6px; align-items: center; }
+.white-label-page .wl-delivery-band { background: var(--wl-dark); border-top: 1px solid var(--wl-panel); }
+.white-label-page .wl-15 { max-width: 1200px; margin: auto; border-radius: 0; padding: 28px 24px; }
+.white-label-page .wl-17 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.white-label-page .wl-18 { border-radius: 8px; }
+.white-label-page .wl-whatsapp { display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 15px 20px; min-height: 48px; border: 0; border-radius: 8px; background: var(--wl-whatsapp); color: var(--wl-white); font-weight: 600; text-decoration: none; }
+.white-label-page .wl-whatsapp:hover { background: var(--wl-whatsapp-hover); color: var(--wl-white); }
+.white-label-page :is(.wl-40,.wl-45,.wl-61) { border-radius: 8px; transition: transform .2s, box-shadow .2s; }
+.white-label-page :is(.wl-40,.wl-45):hover { transform: translateY(-4px); box-shadow: var(--wl-shadow); }
+.white-label-page .wl-gallery-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.white-label-page .wl-filter { border-radius: 4px; color: var(--wl-copy); background: var(--wl-muted); }
+.white-label-page .wl-filter[aria-pressed=true] { color: var(--wl-white); background: var(--wl-accent); }
+.white-label-page .wl-portfolio-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 20px; }
+.white-label-page .wl-work-card { min-width: 0; }
+.white-label-page .wl-gallery-item { display: block; transition: transform .25s; }
+.white-label-page .wl-gallery-item:hover { transform: translateY(-4px); }
+.white-label-page .wl-work-caption { padding-top: 12px; }
+.white-label-page .wl-work-caption span { font-size: 13px; text-transform: uppercase; color: var(--wl-secondary); }
+.white-label-page .wl-work-enquire { display: flex; width: 100%; height: auto; min-height: 44px; justify-content: space-between; white-space: normal; text-align: left; padding: 6px 0; color: var(--wl-accent); gap: 8px; }
+.white-label-page .wl-portfolio-end { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid var(--wl-border); margin-top: 32px; padding-top: 24px; }
+.white-label-page .wl-77 { border-radius: 0; align-items: start; gap: 40px; }
+.white-label-page .wl-inquiry-form { display: flex; flex-direction: column; gap: 16px; }
+.white-label-page .wl-inquiry-form h3 { font-size: 24px; }
+.white-label-page .wl-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.white-label-page .wl-inquiry-form label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500; }
+.white-label-page .wl-inquiry-form :is(input,textarea,select) { width: 100%; min-height: 44px; border: 1px solid var(--wl-border); background: var(--wl-white); color: var(--wl-ink); border-radius: 6px; padding: 10px 12px; font: inherit; }
+.white-label-page .wl-inquiry-form input::placeholder, .white-label-page .wl-inquiry-form textarea::placeholder { color: var(--wl-secondary); }
+.white-label-page .wl-inquiry-form textarea { min-height: 110px; }
+.white-label-page .wl-inquiry-form .wl-13 { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--wl-white); color: var(--wl-accent); }
+.white-label-page .wl-form-success { display: flex; flex-direction: column; gap: 18px; }
+.white-label-page .wl-reference { font-size: 14px; color: var(--wl-light-copy); }
+.white-label-page .wl-mobile-chat { display: none; }
+.wl-gallery-dialog { font-family: 'IBM Plex Sans', sans-serif; }
+@media(max-width: 767px) {
+  .white-label-page .wl-7 { padding: 48px 24px 56px; }
+  .white-label-page .wl-10 { font-size: 40px; }
+  .white-label-page .wl-11 { font-size: 18px; }
+  .white-label-page .wl-hero-art { inset: 0 -180px 0 15%; opacity: .45; }
+  .white-label-page .wl-17 { grid-template-columns: 1fr 1fr; }
+  .white-label-page .wl-portfolio-grid { grid-template-columns: 1fr 1fr; gap: 24px 12px; }
+  .white-label-page .wl-work-enquire { font-size: 13px; }
+  .white-label-page .wl-portfolio-end { flex-direction: column; align-items: start; }
+  .white-label-page .wl-77 { padding: 28px 20px; }
+  .white-label-page .wl-fields { grid-template-columns: 1fr; }
+  .white-label-page .wl-4 { gap: 12px 18px; }
+  .white-label-page .wl-mobile-chat { display: flex; position: fixed; bottom: 12px; left: 16px; right: 16px; z-index: 40; box-shadow: var(--wl-shadow); }
+  .white-label-page .wl-90 { padding-bottom: 76px; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .white-label-page *, .white-label-page *::before { transition: none !important; animation: none !important; }
+  html:has(.white-label-page) { scroll-behavior: auto; }
+}

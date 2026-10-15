@@ -18,6 +18,10 @@
   --wl-secondary: #4A5261;
   --wl-highlight: #9DB5FF;
   --wl-light-copy: #E8EDFF;
+  --wl-whatsapp: #127848;
+  --wl-whatsapp-hover: #0D5C36;
+  --wl-shadow: 0 20px 50px #0F16261A;
+  --wl-hero-overlay: linear-gradient(90deg, #0F1626F5 0%, #0F1626E8 45%, #0F162650 100%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');

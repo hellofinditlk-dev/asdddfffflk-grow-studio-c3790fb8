@@ -65,6 +65,7 @@ export default function AdminInquiries() {
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [range, setRange] = useState<Range>("today");
+  const [audience, setAudience] = useState('all');
 
   useEffect(() => {
     const init = async () => {
@@ -118,12 +119,17 @@ export default function AdminInquiries() {
     return { rangeStart: start, rangeDays: days };
   }, [range]);
 
+  const matchesAudience = (row: { source_path: string | null }) => audience === 'all' ||
+    (audience === 'white-label' ? cleanPath(row.source_path) === '/white-label-design' : cleanPath(row.source_path) !== '/white-label-design');
+  const scopedInquiries = useMemo(() => (inquiries ?? []).filter(matchesAudience), [inquiries, audience]);
+  const scopedCalls = useMemo(() => (callClicks ?? []).filter(matchesAudience), [callClicks, audience]);
+  const scopedCtas = useMemo(() => (ctaClicks ?? []).filter(matchesAudience), [ctaClicks, audience]);
   const inRange = <T extends { created_at: string }>(arr: T[] | null) =>
     (arr ?? []).filter((r) => new Date(r.created_at) >= rangeStart);
 
-  const periodInq = useMemo(() => inRange(inquiries), [inquiries, rangeStart]);
-  const periodCalls = useMemo(() => inRange(callClicks), [callClicks, rangeStart]);
-  const periodCtas = useMemo(() => inRange(ctaClicks), [ctaClicks, rangeStart]);
+  const periodInq = useMemo(() => inRange(scopedInquiries), [scopedInquiries, rangeStart]);
+  const periodCalls = useMemo(() => inRange(scopedCalls), [scopedCalls, rangeStart]);
+  const periodCtas = useMemo(() => inRange(scopedCtas), [scopedCtas, rangeStart]);
 
   // ---------------- KPIs ----------------
   const totalCtaClicks = periodCtas.length + periodCalls.length;
@@ -178,11 +184,11 @@ export default function AdminInquiries() {
       if (at >= s7) r.d7 += 1;
       if (at >= sot) r.today += 1;
     };
-    (ctaClicks ?? []).forEach((c) => bump(c.cta_type, new Date(c.created_at)));
-    (callClicks ?? []).forEach((c) => bump("call", new Date(c.created_at)));
-    (inquiries ?? []).forEach((i) => bump("form", new Date(i.created_at)));
+    scopedCtas.forEach((c) => bump(c.cta_type, new Date(c.created_at)));
+    scopedCalls.forEach((c) => bump("call", new Date(c.created_at)));
+    scopedInquiries.forEach((i) => bump("form", new Date(i.created_at)));
     return Array.from(buckets.values()).sort((a, b) => b.d30 - a.d30);
-  }, [ctaClicks, callClicks, inquiries]);
+  }, [scopedCtas, scopedCalls, scopedInquiries]);
 
   // ---------------- CTA Heatmap (top services × CTA type) ----------------
   type Heat = { service: string; url: string | null; whatsapp: number; call: number; form: number; total: number };
@@ -294,9 +300,9 @@ export default function AdminInquiries() {
       const s = serviceFromPath(p);
       tally.set(s, (tally.get(s) ?? 0) + 1);
     };
-    (ctaClicks ?? []).forEach((c) => bump(c.source_path, c.created_at));
-    (callClicks ?? []).forEach((c) => bump(c.source_path, c.created_at));
-    (inquiries ?? []).forEach((i) => bump(i.source_path, i.created_at));
+    scopedCtas.forEach((c) => bump(c.source_path, c.created_at));
+    scopedCalls.forEach((c) => bump(c.source_path, c.created_at));
+    scopedInquiries.forEach((i) => bump(i.source_path, i.created_at));
     const topServices = Array.from(tally.entries())
       .sort((a, b) => b[1] - a[1])
       .slice(0, 4)
@@ -316,11 +322,11 @@ export default function AdminInquiries() {
       if (idx === undefined) return;
       series[idx][s] = (series[idx][s] ?? 0) + 1;
     };
-    (ctaClicks ?? []).forEach((c) => tick(c.source_path, c.created_at));
-    (callClicks ?? []).forEach((c) => tick(c.source_path, c.created_at));
-    (inquiries ?? []).forEach((i) => tick(i.source_path, i.created_at));
+    scopedCtas.forEach((c) => tick(c.source_path, c.created_at));
+    scopedCalls.forEach((c) => tick(c.source_path, c.created_at));
+    scopedInquiries.forEach((i) => tick(i.source_path, i.created_at));
     return { series, services: topServices };
-  }, [ctaClicks, callClicks, inquiries]);
+  }, [scopedCtas, scopedCalls, scopedInquiries]);
 
   // ---------------- Funnel ----------------
   const funnel = useMemo(() => {
@@ -415,6 +421,22 @@ export default function AdminInquiries() {
           <TabsTrigger value="30d">Last 30 Days</TabsTrigger>
         </TabsList>
       </Tabs>
+
+      <Tabs value={audience} onValueChange={setAudience} className="mb-6">
+        <TabsList className="h-auto flex-wrap">
+          <TabsTrigger value="all">All enquiries</TabsTrigger>
+          <TabsTrigger value="public">Main website</TabsTrigger>
+          <TabsTrigger value="white-label">White-label agencies</TabsTrigger>
+        </TabsList>
+      </Tabs>
+
+      <Section title="White-label agency activity" sub={`Direct-only partner page · ${rangeLabel}`}>
+        <div className="grid grid-cols-2 gap-4 p-5">
+          <div><p className="text-sm text-muted-foreground">CTA clicks</p><p className="text-2xl font-bold">{periodCtas.filter(c => cleanPath(c.source_path) === '/white-label-design').length}</p></div>
+          <div><p className="text-sm text-muted-foreground">Agency briefs</p><p className="text-2xl font-bold">{periodInq.filter(i => cleanPath(i.source_path) === '/white-label-design').length}</p></div>
+        </div>
+        <DataTable headers={['CTA', 'Placement', 'Date']} rows={periodCtas.filter(c => cleanPath(c.source_path) === '/white-label-design').slice(0, 20).map(c => [c.cta_label || CTA_TYPE_LABEL[c.cta_type] || c.cta_type, c.placement || 'White label', new Date(c.created_at).toLocaleString()])} empty="No white-label CTA clicks in this period." />
+      </Section>
 
       {/* KPI cards */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
@@ -606,12 +628,24 @@ export default function AdminInquiries() {
               </tr>
             </thead>
             <tbody>
-              {(inquiries ?? []).slice(0, 25).map((i) => (
+              {scopedInquiries.slice(0, 25).map((i) => (
                 <tr key={i.id} className="border-t border-border">
                   <td className="px-4 py-2 whitespace-nowrap text-muted-foreground">
                     {new Date(i.created_at).toLocaleString()}
                   </td>
-                  <td className="px-4 py-2 font-medium">{i.name}</td>
+                  <td className="px-4 py-2 font-medium">{i.name}
+                    {cleanPath(i.source_path) === '/white-label-design' && <details className="mt-2 text-xs font-normal max-w-sm">
+                      <summary className="cursor-pointer text-primary">Agency brief</summary>
+                      <div className="space-y-2 pt-2 break-words">
+                        <p><strong>Agency:</strong> {String(i.extra?.agency || '—')}</p>
+                        <p><strong>Country:</strong> {String(i.extra?.country || '—')}</p>
+                        <p><strong>Email:</strong> {i.email || '—'}</p>
+                        <p><strong>Request:</strong> {String(i.extra?.requirement || '—')}</p>
+                        {i.extra?.inspiration && <p><strong>Work reference:</strong> {String(i.extra.inspiration)}</p>}
+                        <p className="whitespace-pre-wrap">{i.message}</p>
+                      </div>
+                    </details>}
+                  </td>
                   <td className="px-4 py-2">
                     <a className="text-primary hover:underline" href={`tel:${i.phone}`}>{i.phone}</a>
                   </td>
@@ -632,7 +666,7 @@ export default function AdminInquiries() {
                   </td>
                 </tr>
               ))}
-              {(inquiries ?? []).length === 0 && (
+              {scopedInquiries.length === 0 && (
                 <tr><td colSpan={5} className="px-4 py-6 text-center text-muted-foreground">No inquiries yet.</td></tr>
               )}
             </tbody>

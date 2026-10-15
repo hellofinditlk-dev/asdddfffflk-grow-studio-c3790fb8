@@ -1,23 +1,22 @@
-import barista from '@/assets/work/barista-04.jpg.asset.json';
-import hotel from '@/assets/work/hotel-art-work-copy.jpg.asset.json';
-import education from '@/assets/work/get-career-ready-while-studying.jpg.asset.json';
-import language from '@/assets/work/china-japan-post-02.jpg.asset.json';
-import delivery from '@/assets/work/meedhood-copy.jpg.asset.json';
-import retail from '@/assets/work/4-post.jpg.asset.json';
-import hospitality from '@/assets/work/hotel.jpg.asset.json';
-import aiVideo from '@/assets/cypher-ai-video-poster.jpg.asset.json';
+import { creatives } from '@/data/work-samples';
 
-// Replace or extend these asset pointers when the owner supplies gallery uploads.
-export const whiteLabelGallery = [
-  { src: barista.url, alt: 'Barista course social media creative' },
-  { src: hotel.url, alt: 'Boutique hotel promotional artwork' },
-  { src: education.url, alt: 'Education campaign social post' },
-  { src: language.url, alt: 'Language course campaign creative' },
-  { src: delivery.url, alt: 'Delivery platform promotional post' },
-  { src: retail.url, alt: 'Retail shopping campaign creative' },
-  { src: hospitality.url, alt: 'Hospitality course promotional artwork' },
-  { src: aiVideo.url, alt: 'AI video advertisement still' },
-].map(image => ({
+// Visually reviewed English-only examples. Keep this selection separate from the public portfolio.
+const selection = [
+  { index: 1, category: 'Corporate' }, { index: 25, category: 'Corporate' },
+  { index: 2, category: 'Travel' }, { index: 3, category: 'Travel' },
+  { index: 4, category: 'Retail' }, { index: 6, category: 'Education' },
+  { index: 8, category: 'Corporate' }, { index: 9, category: 'Corporate' },
+  { index: 10, category: 'Education' }, { index: 11, category: 'Education' },
+  { index: 12, category: 'Education' }, { index: 13, category: 'Travel' },
+  { index: 15, category: 'Education' }, { index: 16, category: 'Education' },
+  { index: 18, category: 'Corporate' }, { index: 20, category: 'Education' },
+  { index: 24, category: 'Corporate' }, { index: 27, category: 'Travel' },
+];
+
+export const whiteLabelGallery = selection.flatMap(({ index, category }) => {
+  const image = creatives[index];
+  return image ? [{ ...image, category }] : [];
+}).map(image => ({
   ...image,
   // Local Vite does not serve the hosting asset proxy; production keeps relative CDN pointers.
   src: import.meta.env.DEV ? `https://asdddfffflk-grow-studio.lovable.app${image.src}` : image.src,
