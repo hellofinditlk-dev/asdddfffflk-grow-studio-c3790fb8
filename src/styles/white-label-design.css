@@ -229,7 +229,8 @@
   .white-label-page .wl-feed-top { font-size: 10px; }
 }
 @media (max-width: 767px) {
-  .white-label-page .wl-10 { font-size: 40px; }
+  .white-label-page .wl-10 { font-size: 34px; line-height: 1.12; }
+  .white-label-page .wl-h1-br { display: none; }
   .white-label-page .wl-feed-grid { gap: 8px; }
   .white-label-page .wl-feed-top { font-size: 7px; padding: 6px 4px; gap: 3px; }
   .white-label-page .wl-feed-avatar { width: 8px; height: 8px; }
