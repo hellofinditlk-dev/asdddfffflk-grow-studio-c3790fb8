@@ -9,6 +9,10 @@
 # Homepage
 /                                                 /index.html   200
 
+# Direct-only partner page; intentionally excluded from the sitemap
+/white-label-design                               /index.html   200
+/white-label-design/                              /index.html   200
+
 # Service pages
 /social-media-management-sri-lanka                /index.html   200
 /facebook-ads-sri-lanka                           /index.html   200

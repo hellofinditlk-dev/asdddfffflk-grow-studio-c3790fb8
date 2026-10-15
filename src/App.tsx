@@ -21,6 +21,7 @@ const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
 const VideoProduction = lazy(() => import("./pages/VideoProduction"));
 const AIVideoProduction = lazy(() => import("./pages/AIVideoProduction"));
+const WhiteLabelDesign = lazy(() => import("./pages/WhiteLabelDesign"));
 const SEOServices = lazy(() => import("./pages/SEOServices"));
 const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
 const TikTokMarketing = lazy(() => import("./pages/TikTokMarketing"));
@@ -269,14 +270,14 @@ const SiteShell = ({ children }: { children: React.ReactNode }) => {
   return <main className={isAdmin ? undefined : "site-editorial"}>{children}</main>;
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <TrailingSlashRedirect />
+const AppContent = () => {
+  const { pathname } = useLocation();
+  if (pathname.replace(/\/+$/, "") === "/white-label-design") {
+    return <Suspense fallback={<PageLoader />}><WhiteLabelDesign /></Suspense>;
+  }
+  return <>
+        <Toaster />
+        <Sonner />
         <CtaClickTracker />
         <Navbar />
         <SiteShell>
@@ -535,6 +536,16 @@ const App = () => (
         <WhatsAppButton />
         <FloatingCallButton />
         <BlogCTAInjector />
+  </>;
+};
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <TrailingSlashRedirect />
+        <AppContent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

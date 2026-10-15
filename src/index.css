@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Standalone partner-page palette; no public-site tokens are overridden. */
+:root {
+  --wl-white: #FFFFFF;
+  --wl-ink: #111418;
+  --wl-accent: #1B45C4;
+  --wl-accent-hover: #12308C;
+  --wl-dark: #0F1626;
+  --wl-border: #E3E6EB;
+  --wl-copy: #3C4350;
+  --wl-dim: #A9B4C8;
+  --wl-panel: #1A2336;
+  --wl-dark-copy: #C3CCDB;
+  --wl-muted: #F3F5F8;
+  --wl-secondary: #4A5261;
+  --wl-highlight: #9DB5FF;
+  --wl-light-copy: #E8EDFF;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 @layer base {
