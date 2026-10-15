@@ -21,14 +21,3 @@ export function partnerProfit(resale: number, costUsd: number, currency: Partner
   const monthly = resale - costUsd * partnerRates[currency];
   return { monthly, yearly: monthly * 12 };
 }
-// Owner-provided URLs only; leave empty until real media and booking details are supplied.
-export const partnerMedia = {
-  founderVideoUrl: '',
-  calendlyUrl: '',
-  team: [
-    { name: '', role: 'Founder', photo: '' },
-    { name: '', role: 'Dedicated account manager', photo: '' },
-    { name: '', role: 'Creative designer', photo: '' },
-    { name: '', role: 'Motion & video editor', photo: '' },
-  ],
-};
