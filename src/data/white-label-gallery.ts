@@ -17,4 +17,8 @@ export const whiteLabelGallery = [
   { src: retail.url, alt: 'Retail shopping campaign creative' },
   { src: hospitality.url, alt: 'Hospitality course promotional artwork' },
   { src: aiVideo.url, alt: 'AI video advertisement still' },
-];
+].map(image => ({
+  ...image,
+  // Local Vite does not serve the hosting asset proxy; production keeps relative CDN pointers.
+  src: import.meta.env.DEV ? `https://asdddfffflk-grow-studio.lovable.app${image.src}` : image.src,
+}));

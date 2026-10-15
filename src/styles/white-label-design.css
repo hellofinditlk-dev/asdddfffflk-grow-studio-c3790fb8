@@ -5,7 +5,10 @@
 .white-label-page a:hover { color: var(--wl-accent-hover); }
 .white-label-page ul { list-style: disc; }
 .white-label-page section[id] { scroll-margin-top: 24px; }
-.white-label-page .wl-button { height: auto; padding: 0; font: inherit; white-space: normal; box-shadow: none; }
+.white-label-page .wl-button { height: auto; padding: 0; font: inherit; white-space: normal; box-shadow: none; background: transparent; }
+.white-label-page .wl-button:hover { filter: brightness(0.95); }
+.white-label-page .wl-button:is(.wl-6,.wl-13,.wl-83):hover { color: var(--wl-white); }
+.white-label-page .wl-button:is(.wl-14,.wl-57,.wl-82):hover { color: var(--wl-ink); }
 .white-label-page .wl-gallery-item { background: var(--wl-muted); }
 .wl-gallery-dialog { background: var(--wl-white); color: var(--wl-ink); border-color: var(--wl-border); }
 .white-label-page .wl-0, .white-label-page.wl-0 { border-bottom: 1px solid var(--wl-border); }
