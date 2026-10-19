@@ -32,6 +32,7 @@ export default function AdminApplications() {
   const [authChecked, setAuthChecked] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [search, setSearch] = useState("");
+  const [positionFilter, setPositionFilter] = useState<string>("all");
   const [range, setRange] = useState<string>("30");
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -78,14 +79,23 @@ export default function AdminApplications() {
   }, [apps, range]);
 
   const filtered = useMemo(() => {
+    let base = positionFilter === "all" ? inRange : inRange.filter((a) => a.position_title === positionFilter);
     const q = search.trim().toLowerCase();
-    if (!q) return inRange;
-    return inRange.filter((a) =>
+    if (!q) return base;
+    return base.filter((a) =>
       [a.name, a.email, a.phone, a.position_title, a.message, a.experience]
         .filter(Boolean)
         .some((v) => String(v).toLowerCase().includes(q))
     );
-  }, [inRange, search]);
+  }, [inRange, search, positionFilter]);
+
+  const positions = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const a of apps ?? []) map.set(a.position_title, (map.get(a.position_title) ?? 0) + 1);
+    return Array.from(map.entries())
+      .map(([position, count]) => ({ position, count }))
+      .sort((a, b) => b.count - a.count);
+  }, [apps]);
 
   const byPosition = useMemo(() => {
     const map = new Map<string, { count: number; slug: string | null; last: string }>();
