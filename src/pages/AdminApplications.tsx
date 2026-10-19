@@ -248,9 +248,12 @@ export default function AdminApplications() {
                 ) : byPosition.map((p) => (
                   <tr key={p.position} className="border-t border-border">
                     <td className="px-4 py-2">
-                      {p.slug ? (
-                        <a href={`/careers/${p.slug}`} target="_blank" rel="noreferrer" className="text-primary hover:underline">{p.position}</a>
-                      ) : p.position}
+                      <button
+                        className={p.position === positionFilter ? "text-primary font-semibold hover:underline" : "text-primary hover:underline"}
+                        onClick={() => setPositionFilter(p.position === positionFilter ? "all" : p.position)}
+                      >
+                        {p.position}
+                      </button>
                     </td>
                     <td className="px-4 py-2 font-semibold">{p.count}</td>
                     <td className="px-4 py-2 text-xs text-muted-foreground">{new Date(p.last).toLocaleDateString()}</td>
@@ -289,8 +292,22 @@ export default function AdminApplications() {
         </div>
       </div>
 
-      <div className="mb-4 max-w-sm">
-        <Input placeholder="Search name, position, phone, email..." value={search} onChange={(e) => setSearch(e.target.value)} />
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <Input placeholder="Search name, position, phone, email..." value={search} onChange={(e) => setSearch(e.target.value)} className="max-w-sm" />
+        <select
+          value={positionFilter}
+          onChange={(e) => setPositionFilter(e.target.value)}
+          className="h-9 rounded-md border border-border bg-card px-3 text-sm"
+          aria-label="Filter by vacancy"
+        >
+          <option value="all">All vacancies</option>
+          {positions.map((p) => (
+            <option key={p.position} value={p.position}>{p.position} ({p.count})</option>
+          ))}
+        </select>
+        {positionFilter !== "all" && (
+          <Button variant="ghost" size="sm" onClick={() => setPositionFilter("all")}>Clear filter</Button>
+        )}
       </div>
 
       {!apps ? (
