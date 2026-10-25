@@ -17,10 +17,11 @@
 - [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
 - [x] Create Page 1 /google-ads-cost-sri-lanka with supplied copy, highlighted placeholders, original internal links and unchanged shared components; add only its route.
 - [x] Add approved new-pages-only full HTML generation; verify Page 1 preview raw HTML and unchanged existing-page handling.
-- [ ] Verify Page 1 generated HTML delivery on the published domain; waiting for owner approval to publish.
+- [x] Verify all eleven generated pages on cypherdigital.lk: HTTP 200, full initial text, self-referencing canonicals, one H1, schema and no noindex confirmed on 2026-10-25.
 - [x] Build Pages 2–11 sequentially in this approved run, verifying each full-text HTML response before starting the next; append sitemap entries only after all eleven pages are complete.
 - [ ] Supply actual prices, credentials, team details, case studies and operating terms before advertising them; owner details are unavailable, so completed articles use quote-based and evidence-assessment wording instead.
 - [x] Update all eleven new pages with unique, factual search titles, descriptions and keyword targets; verify initial HTML and page navigation without changing existing pages.
 - [x] Research and replace externally verifiable placeholders across all eleven pages with sourced industry/platform facts; retain owner-only details pending confirmation and verify full-text HTML.
 - [ ] Supply Sri Lanka campaign forecasts or documented local results for numeric CPC/CPV/CPM/CPL ranges; public sources did not establish reliable local benchmarks.
 - [x] Complete all eleven pages without editing placeholders: retain sourced data, use quote-based wording for unconfirmed fees/scope and remove unsupported team/results claims; verify every page's full HTML.
+- [x] Request Lovable publication and resubmit the live cypherdigital.lk sitemap containing all eleven pages to Google; submission accepted (HTTP 204). Live robots.txt allows Google and references the correct sitemap; Google fetches it automatically, with no separate robots submission API.
