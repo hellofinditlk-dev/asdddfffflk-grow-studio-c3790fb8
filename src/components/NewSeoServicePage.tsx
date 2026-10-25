@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import SEOHead from "@/components/SEOHead";
+import NewSeoHead from "@/components/NewSeoHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import PaybackCard from "@/components/PaybackCard";
@@ -13,7 +13,7 @@ import heroImage from "@/assets/advertising-benefits.jpg";
 import "@/styles/new-seo-pages.css";
 
 export default function NewSeoServicePage({ page, markdown }: { page: NewSeoPage; markdown: string }) {
-  const { title, description } = page;
+  const { description } = page;
   const canonical = `https://cypherdigital.lk${page.path}`;
   const content = splitSeoMarkdown(markdown);
   const schemas = [
@@ -29,20 +29,10 @@ export default function NewSeoServicePage({ page, markdown }: { page: NewSeoPage
   const whatsapp = `https://wa.me/${number}?text=${encodeURIComponent(`Hi Cypher Digital, ${page.cta}.`)}`;
   useEffect(() => {
     document.querySelector('script[data-new-page-schema]')?.remove();
-    const existing = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
-    const previous = existing?.content;
-    const meta = existing ?? document.createElement("meta");
-    meta.setAttribute("property", "og:url");
-    meta.content = canonical;
-    if (!existing) document.head.appendChild(meta);
-    return () => {
-      if (previous !== undefined) meta.content = previous;
-      else meta.remove();
-    };
   }, [canonical]);
 
   return <div className="new-seo-page">
-    <SEOHead title={title} description={description} canonical={canonical} />
+    <NewSeoHead page={page} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} />
     <PageBreadcrumb items={[{ label: "Services", href: "/#services" }, { label: page.breadcrumbLabel }]} />
     <section className="new-seo-hero relative isolate overflow-hidden bg-foreground py-16 lg:py-24">

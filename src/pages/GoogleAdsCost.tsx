@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import SEOHead from "@/components/SEOHead";
+import NewSeoHead from "@/components/NewSeoHead";
+import { newSeoPages } from "@/data/new-seo-pages";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import PaybackCard from "@/components/PaybackCard";
@@ -11,8 +12,9 @@ import markdown from "@/content/google-ads-cost-sri-lanka.md?raw";
 import heroImage from "@/assets/advertising-benefits.jpg";
 import "@/styles/new-seo-pages.css";
 
-const title = "Google Ads Cost Sri Lanka (2026) | Budgets & Fees | Cypher Digital";
-const description = "How much do Google Ads cost in Sri Lanka? See typical cost per click, minimum budgets, management fees and what drives your price. Free quote in 1 hour.";
+const page = newSeoPages.find(entry => entry.path === "/google-ads-cost-sri-lanka");
+if (!page) throw new Error("Missing Google Ads cost page metadata");
+const description = page.description;
 const canonical = "https://cypherdigital.lk/google-ads-cost-sri-lanka";
 const content = splitSeoMarkdown(markdown);
 const schemas = [
@@ -30,20 +32,10 @@ export default function GoogleAdsCost() {
   const whatsapp = `https://wa.me/${number}?text=${encodeURIComponent("Hi Cypher Digital, I would like a free Google Ads budget estimate.")}`;
   useEffect(() => {
     document.querySelector('script[data-new-page-schema]')?.remove();
-    const existing = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
-    const previous = existing?.content;
-    const meta = existing ?? document.createElement("meta");
-    meta.setAttribute("property", "og:url");
-    meta.content = canonical;
-    if (!existing) document.head.appendChild(meta);
-    return () => {
-      if (previous !== undefined) meta.content = previous;
-      else meta.remove();
-    };
   }, []);
 
   return <div className="new-seo-page">
-    <SEOHead title={title} description={description} canonical={canonical} />
+    <NewSeoHead page={page} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} />
     <PageBreadcrumb items={[{ label: "Services", href: "/#services" }, { label: "Google Ads Cost Sri Lanka" }]} />
     <section className="new-seo-hero relative isolate overflow-hidden bg-foreground py-16 lg:py-24">

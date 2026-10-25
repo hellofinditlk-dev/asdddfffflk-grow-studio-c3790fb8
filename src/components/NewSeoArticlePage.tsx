@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import SEOHead from "@/components/SEOHead";
+import NewSeoHead from "@/components/NewSeoHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
 import type { NewSeoPage } from "@/data/new-seo-pages";
@@ -22,7 +22,7 @@ export default function NewSeoArticlePage({ page, markdown }: { page: NewSeoPage
     ] },
   ];
   return <div className="new-seo-page">
-    <SEOHead title={page.title} description={page.description} canonical={canonical} />
+    <NewSeoHead page={page} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: page.breadcrumbLabel }]} />
     <article className="pt-24 pb-20">
