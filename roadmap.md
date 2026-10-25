@@ -26,5 +26,7 @@
 - [x] Complete all eleven pages without editing placeholders: retain sourced data, use quote-based wording for unconfirmed fees/scope and remove unsupported team/results claims; verify every page's full HTML.
 - [x] Request Lovable publication and resubmit the live cypherdigital.lk sitemap containing all eleven pages to Google; submission accepted (HTTP 204). Live robots.txt allows Google and references the correct sitemap; Google fetches it automatically, with no separate robots submission API.
 - [x] Add and verify Batch 2 article 12 with supplied copy, highlighted placeholders and unchanged existing pages; preview full HTML, tests, blog-to-article navigation, FAQ and service CTA passed; unconfirmed rates remain highlighted, not published.
-- [ ] Build and verify Batch 2 articles 13–21 sequentially in the approved continued run, then append ten sitemap entries after all are complete.
-- [ ] Research and fill article 12’s fifteen placeholders with verified publisher rates, taxes and deadlines; report any unavailable current rate cards rather than inventing prices.
+- [x] Build and verify Batch 2 articles 13–21 sequentially in the approved continued run; append ten sitemap entries while preserving all original entries; all 41 tests, nine raw-HTML checks and browser FAQ/image/mobile checks passed.
+- [x] Research article 12’s fifteen placeholders and replace them with cited publisher guidance, date caveats and honest quote requests; zero placeholder tokens remain, but current numeric rates were not verified.
+- [ ] Supply current dated publisher rate cards for article 12; public research did not verify 2026 prices for the listed publications.
+- [ ] Resolve remaining Batch 2 article placeholders before publishing; 107 occurrences remain across articles 13–21, including owner-only pricing/scope and unverified account or statistical details.

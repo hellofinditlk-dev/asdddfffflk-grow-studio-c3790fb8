@@ -11,7 +11,7 @@ Route: /blog/newspaper-advertising-rates-sri-lanka
 - Not published. Sitemap addition deferred until all ten articles are completed.
 - All 21 targeted tests passed; blog listing → article → open FAQ → newspaper service CTA verified in browser with no runtime errors. Desktop and 390px phone layouts checked with no horizontal overflow. Existing global blog promotions still appear before the article header; shared promotion components were left unchanged.
 
-## Placeholders (15 occurrences)
+## Initial placeholders (15 occurrences; subsequently replaced)
 - [CONFIRM current tax treatment]
 - [ADD CURRENT RATE]
 - [ADD CURRENT RATE]
@@ -36,5 +36,5 @@ Route: /blog/newspaper-advertising-rates-sri-lanka
 - TV advertising rates → /blog/tv-advertising-rates-sri-lanka
 - Get a newspaper ad quote → /newspaper-advertising-sri-lanka (end CTA)
 
-## Next article
-Awaiting owner’s “next” before article 13.
+## Continued delivery update
+The owner approved articles 13–21 in the same continued run. All fifteen newspaper tokens were replaced with publisher guidance, current-quote requests and explicit caveats about the located 2023 Lake House rate card; no current 2026 numeric price was fabricated. The article now has zero placeholder tokens, but current title-specific rates still require dated publisher quotes. Ten new sitemap entries were subsequently appended after completing the batch. See batch-two-continued-delivery.md for verification, new source links and remaining evidence gaps.
