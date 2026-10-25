@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { MAX_PRERENDER_PAGES, newPageHtml } from "../../scripts/new-page-html";
 import { newSeoPages } from "@/data/new-seo-pages";
+import { markdownHtml } from "@/lib/newSeoMarkdown";
 
 const template = readFileSync("index.html", "utf8");
 const markdown = readFileSync("src/content/google-ads-cost-sri-lanka.md", "utf8");
@@ -26,5 +27,27 @@ describe("new-pages-only full HTML", () => {
   it("never generates more than the eleven requested new pages", () => {
     expect(MAX_PRERENDER_PAGES).toBe(11);
     expect(newSeoPages.length).toBeLessThanOrEqual(11);
+  });
+  it("registers the eleven supplied URLs in the required order", () => {
+    expect(newSeoPages.map(page => page.path)).toEqual([
+      "/google-ads-cost-sri-lanka", "/google-ads-specialist-sri-lanka",
+      "/google-ads-audit-sri-lanka", "/youtube-ads-sri-lanka",
+      "/google-shopping-ads-sri-lanka", "/google-remarketing-sri-lanka",
+      "/instagram-ads-sri-lanka", "/tiktok-ads-sri-lanka",
+      "/whatsapp-marketing-sri-lanka", "/blog/google-ads-vs-google-adsense-sri-lanka",
+      "/web-design-sri-lanka",
+    ]);
+  });
+  it.each(newSeoPages)("delivers full supplied content for $path", page => {
+    const source = readFileSync(page.contentFile, "utf8");
+    expect(newPageHtml(template, page.path, source)).toContain(markdownHtml(source));
+  });
+  it("uses Article rather than Service schema for the supplied blog page", () => {
+    const page = newSeoPages.find(entry => entry.path === "/blog/google-ads-vs-google-adsense-sri-lanka");
+    if (!page) throw new Error("Missing supplied blog page");
+    const html = newPageHtml(template, page.path, readFileSync(page.contentFile, "utf8"));
+    expect(html).toContain('"@type":"Article"');
+    expect(html).not.toContain('"@type":"Service"');
+    expect(html).toContain('"name":"Blog","item":"https://cypherdigital.lk/blog"');
   });
 });

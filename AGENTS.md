@@ -7,3 +7,4 @@
 - Keep vacancies in the shared Careers dataset; use explicit remote, expiry and project-detail fields so project-based roles avoid office and salary assumptions in their detail pages and search metadata.
 - Keep the supplied new SEO page copy and rendering separate from existing page modules; register only additive routes and reuse shared components unchanged to protect existing public pages.
 - Generate full initial HTML only for the explicit new SEO page allowlist via the Vite plugin; leave the root HTML and existing route responses untouched, cap generated pages, and replace the initial article with the existing React experience on load.
+- Build remaining brief pages with dedicated lazy route wrappers and a new-page-only renderer; distinguish article schema and breadcrumbs without modifying existing page templates or shared controls.

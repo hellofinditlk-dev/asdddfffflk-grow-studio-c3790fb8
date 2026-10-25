@@ -15,6 +15,16 @@ import CtaClickTracker from "@/components/CtaClickTracker";
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
 
+const NewSeoPage2 = lazy(() => import("./pages/NewSeoPage2"));
+const NewSeoPage3 = lazy(() => import("./pages/NewSeoPage3"));
+const NewSeoPage4 = lazy(() => import("./pages/NewSeoPage4"));
+const NewSeoPage5 = lazy(() => import("./pages/NewSeoPage5"));
+const NewSeoPage6 = lazy(() => import("./pages/NewSeoPage6"));
+const NewSeoPage7 = lazy(() => import("./pages/NewSeoPage7"));
+const NewSeoPage8 = lazy(() => import("./pages/NewSeoPage8"));
+const NewSeoPage9 = lazy(() => import("./pages/NewSeoPage9"));
+const NewSeoPage10 = lazy(() => import("./pages/NewSeoPage10"));
+const NewSeoPage11 = lazy(() => import("./pages/NewSeoPage11"));
 // Lazy load all other pages
 const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
@@ -288,6 +298,16 @@ const AppContent = () => {
               <Route path="/social-media-management-sri-lanka" element={<SocialMediaManagement />} />
               <Route path="/facebook-ads-sri-lanka" element={<FacebookAds />} />
               <Route path="/google-ads-sri-lanka" element={<GoogleAds />} />
+              <Route path="/google-ads-specialist-sri-lanka" element={<NewSeoPage2 />} />
+              <Route path="/google-ads-audit-sri-lanka" element={<NewSeoPage3 />} />
+              <Route path="/youtube-ads-sri-lanka" element={<NewSeoPage4 />} />
+              <Route path="/google-shopping-ads-sri-lanka" element={<NewSeoPage5 />} />
+              <Route path="/google-remarketing-sri-lanka" element={<NewSeoPage6 />} />
+              <Route path="/instagram-ads-sri-lanka" element={<NewSeoPage7 />} />
+              <Route path="/tiktok-ads-sri-lanka" element={<NewSeoPage8 />} />
+              <Route path="/whatsapp-marketing-sri-lanka" element={<NewSeoPage9 />} />
+              <Route path="/blog/google-ads-vs-google-adsense-sri-lanka" element={<NewSeoPage10 />} />
+              <Route path="/web-design-sri-lanka" element={<NewSeoPage11 />} />
               <Route path="/google-ads-cost-sri-lanka" element={<GoogleAdsCost />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
