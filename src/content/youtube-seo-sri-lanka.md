@@ -92,4 +92,4 @@ Choose the language your customers search in. Many Sri Lankan businesses do best
 They play a small role. Titles, thumbnails, descriptions and watch time matter much more.
 
 ### Can you manage our YouTube channel?
-Yes. We plan topics, produce videos, optimise titles and thumbnails, and promote key videos with ads. [CONFIRM: YouTube channel management offered as a service.]
+Ask us for a written scope covering topic planning, production, thumbnails, upload optimisation, moderation and reporting. Video production and YouTube advertising are linked above; ongoing channel management must be explicitly agreed rather than assumed to be included.

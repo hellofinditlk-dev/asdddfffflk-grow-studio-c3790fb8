@@ -10,16 +10,15 @@ There's no fixed price. You choose your own daily or total budget, and Meta show
 
 | Budget | Typical use | What to expect |
 |---|---|---|
-| [ADD REAL LKR AMOUNT] per day | Testing a single post | Small local reach, useful to see if a post resonates |
-| [ADD REAL LKR AMOUNT] per day | Promoting an offer or event for a week | Noticeable local reach and engagement |
-| [ADD REAL LKR AMOUNT]+ per day | Ongoing promotion | Steady reach – usually better run through Ads Manager |
+| LKR 500 per day × 7 days = LKR 3,500 | Illustrative small test | Measure actual reach and response; no result is guaranteed |
+| LKR 1,000 per day × 7 days = LKR 7,000 | Illustrative offer test | Compare qualified enquiries and creative performance |
+| LKR 2,000 per day × 7 days = LKR 14,000 | Illustrative larger test | Use Ads Manager to control objectives and reporting |
 
-Typical results in Sri Lanka:
-- Cost per 1,000 people reached: [ADD REAL RANGE]
-- Cost per engagement: [ADD REAL RANGE]
-- Cost per message: [ADD REAL RANGE]
+**Planning examples only:** the amounts above are editorial budget scenarios, not Meta minimums, agency fees or verified Sri Lankan performance benchmarks. They exclude any applicable taxes or payment charges.
 
-Sri Lanka is generally a lower-cost market for Facebook ads than many countries, but results depend heavily on your audience, creative and offer. For full campaign pricing, see [Facebook ads cost in Sri Lanka](/facebook-ads-cost-sri-lanka).
+There is no verified local cost-per-reach, engagement or message range in this article. Calculate these from your own campaign: spend ÷ people reached × 1,000; spend ÷ engagements; and spend ÷ messaging conversations. For a hypothetical LKR 7,000 test producing 20 conversations, cost per conversation would be LKR 350. The 20 conversations are an arithmetic assumption, not a forecast or client result.
+
+Costs depend on your audience, creative, objective and offer; this article does not establish a country-to-country cost comparison. For full campaign pricing, see [Facebook ads cost in Sri Lanka](/facebook-ads-cost-sri-lanka).
 
 ## What Affects Your Boost Results?
 
@@ -70,7 +69,7 @@ Having trouble paying for boosts? Read our guide on [Meta ads payment in Sri Lan
 ## Frequently Asked Questions
 
 ### What is the minimum amount to boost a Facebook post in Sri Lanka?
-Meta allows small daily budgets. [CONFIRM current minimum daily budget in LKR or USD.] We recommend starting with at least [ADD REAL LKR AMOUNT] per day for a meaningful test.
+Use the minimum displayed for your chosen objective, currency and account in Meta. Our LKR 500/day scenario above is an illustrative planning amount, not a universal platform minimum or a promise of a meaningful result. Check [Meta budget guidance](https://www.facebook.com/business/help/214319341922580) before publishing your campaign.
 
 ### Is boosting a Facebook post worth it?
 It can be for quick visibility. For leads and sales, campaigns built in Ads Manager with the right objective, targeting and tracking usually perform better.

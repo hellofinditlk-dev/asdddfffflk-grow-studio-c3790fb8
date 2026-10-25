@@ -67,7 +67,7 @@ Our [lead follow-up services](/lead-follow-up-services-sri-lanka) team can handl
 - **Increase budget** 3–4 weeks before the deadline.
 - **Run open day and seminar campaigns** to create urgency.
 - **Retarget** everyone who visited your course pages but didn't enquire.
-- **Plan around A/L and O/L results** releases, when many students start looking. [CONFIRM current exam result timelines]
+- **Plan around A/L and O/L results** releases, when many students start looking. Use announcements from the [Department of Examinations](https://www.doenets.lk/) for each exam cycle rather than assuming a recurring release date. Launch dates should follow confirmed results and your actual intake deadline.
 
 ## Measuring Student Lead Generation
 
@@ -86,7 +86,7 @@ As an [education marketing agency in Sri Lanka](/education-marketing-agency-sri-
 ## Frequently Asked Questions
 
 ### How much does a student lead cost in Sri Lanka?
-It depends on the programme, competition and channel. Typical cost per lead ranges from [ADD REAL RANGE]. The most important number is cost per enrolment.
+No verified Sri Lankan student-lead benchmark is supplied here. For planning only, a hypothetical LKR 30,000 advertising test yielding 50 enquiries has a cost per lead of LKR 600. If five of those enquiries enrol, advertising cost per enrolment is LKR 6,000. These enquiry and enrolment counts are assumptions, not forecasts or client results; agency fees and admissions costs are additional. Replace assumptions with your own qualified leads and confirmed enrolments.
 
 ### Which platform is best for student lead generation?
 Google Search captures students already looking for a course, while Facebook, Instagram and TikTok create awareness and drive open-day registrations. Most institutes use both.
