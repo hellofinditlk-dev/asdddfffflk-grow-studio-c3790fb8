@@ -4,26 +4,26 @@ One of the most common questions Sri Lankan business owners ask is simple: "Can 
 
 This guide explains the current ads support in Sri Lanka for Google, YouTube, Facebook, Instagram, LinkedIn and TikTok, what to check before you start, and what to do if a platform doesn't work for you.
 
-Platform rules change often. Where this guide says [CONFIRM], check the platform's official help pages for the latest position.
+Platform rules change often. This guide distinguishes account registration, billing and targeting; unresolved account-specific eligibility is highlighted for confirmation before spending.
 
 ## Quick Summary – Ads Support in Sri Lanka
 
 | Platform | Can Sri Lankan businesses advertise? | Can you target Sri Lanka? | Notes |
 |---|---|---|---|
-| Google Search & Display | [CONFIRM] | [CONFIRM] | Run through Google Ads |
-| YouTube | [CONFIRM] | [CONFIRM] | Run through Google Ads |
+| Google Search & Display | Google’s billing guidance includes Sri Lanka; account setup and payment eligibility apply | Use Google Ads location targeting; verify selected locations in the account | Run through Google Ads |
+| YouTube | Through Google Ads, subject to the same account and payment conditions | Use Google Ads location targeting | Run through Google Ads |
 | Facebook & Instagram | [CONFIRM] | [CONFIRM] | Run through Meta Ads Manager |
 | LinkedIn | [CONFIRM] | [CONFIRM] | Run through LinkedIn Campaign Manager |
-| TikTok | [CONFIRM] | [CONFIRM] | Availability varies by country – check TikTok Ads Manager |
+| TikTok | Sri Lanka is not listed in the self-serve Business Center account-creation country list reviewed | Account-creation eligibility does not establish target-country availability; verify the location selector | Availability varies by country – check TikTok Ads Manager |
 
-[CONFIRM: fill the table from each platform's current official documentation on supported countries, billing countries and targeting locations.]
+Sources checked for this guide: [Google payment methods](https://support.google.com/google-ads/answer/2375433?hl=en-GB), [Google billing options](https://support.google.com/google-ads/answer/1704418?hl=en), [Google location targeting](https://support.google.com/google-ads/answer/1722043?hl=en), [Meta payment options](https://www.facebook.com/business/help/212763688755026) and [TikTok account-creation country list](https://ads.tiktok.com/help/article/available-countries-and-regions-for-ad-account-creation-in-bc). Country-specific Meta and LinkedIn eligibility in the table remains unverified; check your actual account rather than treating billing eligibility as targeting eligibility.
 
 ## Google Ads Support in Sri Lanka
 
 Google Ads lets businesses appear on Google Search, Maps, YouTube and millions of partner websites. For most Sri Lankan businesses, it's the best way to reach people who are already searching for a product or service.
 
 What to check before you start:
-- **Billing:** which payment methods are available for accounts with a Sri Lankan billing address. [CONFIRM current options]
+- **Billing:** Google’s country-specific guidance includes Sri Lanka. Available methods depend on account settings; use its [payment-method guidance](https://support.google.com/google-ads/answer/2375433?hl=en-GB) and the methods displayed in your account before choosing how to pay.
 - **Currency:** the account currency is chosen when you create the account and can't easily be changed later.
 - **Verification:** Google may ask you to complete advertiser verification with business documents.
 
@@ -45,11 +45,11 @@ Our team runs [Facebook advertising in Sri Lanka](/facebook-ads-sri-lanka) and [
 
 LinkedIn ads reach professionals by job title, industry, company size and seniority, which makes them valuable for B2B services, recruitment and higher education.
 
-LinkedIn ads usually cost more per click than other platforms, and minimum budgets apply. [CONFIRM current minimum daily budget and billing options for Sri Lankan advertisers.] For B2B strategy, see our [LinkedIn marketing](/linkedin-marketing-sri-lanka) service.
+LinkedIn’s minimum budget depends on the campaign and account settings; this research did not establish a universal Sri Lanka-specific daily minimum or billing method. Check the minimum displayed in Campaign Manager and its [budget guidance](https://www.linkedin.com/help/lms/answer/a422101). For B2B strategy, see our [LinkedIn marketing](/linkedin-marketing-sri-lanka) service.
 
 ## TikTok Ads Support in Sri Lanka
 
-TikTok is hugely popular in Sri Lanka, but self-serve TikTok Ads Manager availability depends on the advertiser's country and target location. [CONFIRM current availability for Sri Lankan advertisers and for targeting Sri Lanka.]
+TikTok Ads Manager availability depends on the advertiser’s country and target location. Sri Lanka is absent from the [self-serve Business Center account-creation list](https://ads.tiktok.com/help/article/available-countries-and-regions-for-ad-account-creation-in-bc) reviewed. This does not establish whether another account type can target Sri Lanka; confirm both account eligibility and targeting before committing paid spend.
 
 If direct TikTok advertising isn't available for your situation, you can still use creator partnerships and organic content. See our [TikTok ads](/tiktok-ads-sri-lanka) and [TikTok marketing](/tiktok-marketing-sri-lanka) pages for options.
 
@@ -74,13 +74,13 @@ Most businesses get the best results by combining Google for demand capture with
 ## Frequently Asked Questions
 
 ### Does Google Ads work in Sri Lanka?
-Google Ads is widely used by Sri Lankan businesses to reach customers on Search, YouTube and partner websites. [CONFIRM current billing options.]
+Google’s country-specific billing guidance includes Sri Lanka. Account eligibility, verification and available payment methods still apply; check its official payment-method guidance and your own account before spending.
 
 ### Can I run Facebook ads from Sri Lanka?
 Yes, Facebook and Instagram ads are commonly run from Sri Lanka through Meta Ads Manager. Payment is the most common issue, so check your card supports international online payments.
 
 ### Does TikTok advertising work in Sri Lanka?
-It depends on current TikTok Ads Manager availability for your country and target location. [CONFIRM current status.]
+Sri Lanka is not included in the self-serve Business Center account-creation country list reviewed. Paid targeting through another eligible account type was not established by that list; confirm current account and location eligibility before planning a paid campaign.
 
 ### Is LinkedIn advertising available in Sri Lanka?
 [CONFIRM current availability and minimum budgets.]
