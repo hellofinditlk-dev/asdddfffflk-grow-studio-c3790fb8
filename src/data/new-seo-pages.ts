@@ -1,4 +1,15 @@
-export const newSeoPages = [
+export interface NewSeoPage {
+  path: string;
+  contentFile: string;
+  title: string;
+  description: string;
+  breadcrumbLabel: string;
+  heroAlt?: string;
+  cta?: string;
+  kind?: "service" | "article";
+}
+
+export const newSeoPages: NewSeoPage[] = [
   {
     path: "/google-ads-cost-sri-lanka",
     contentFile: "src/content/google-ads-cost-sri-lanka.md",
