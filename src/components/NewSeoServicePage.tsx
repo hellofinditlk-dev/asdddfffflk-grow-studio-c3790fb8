@@ -4,6 +4,7 @@ import PageBreadcrumb from "@/components/PageBreadcrumb";
 import OurWorkSection from "@/components/OurWorkSection";
 import PaybackCard from "@/components/PaybackCard";
 import InquiryForm from "@/components/InquiryForm";
+import NewSeoAuditForm from "@/components/NewSeoAuditForm";
 import { Button } from "@/components/ui/button";
 import { useWhatsappNumber } from "@/lib/whatsapp";
 import { markdownHtml, splitSeoMarkdown } from "@/lib/newSeoMarkdown";
@@ -55,6 +56,7 @@ export default function NewSeoServicePage({ page, markdown }: { page: NewSeoPage
         </Button>
       </div>
     </section>
+    {page.path === "/google-ads-audit-sri-lanka" && <section className="container mx-auto max-w-3xl px-4 py-10"><h2 className="font-heading text-2xl font-bold mb-6">Request my free audit</h2><NewSeoAuditForm /></section>}
     <nav aria-label="On this page" className="py-10 border-b border-border bg-secondary/40">
       <div className="container mx-auto max-w-4xl px-4">
         <h2 className="font-heading text-sm font-bold text-muted-foreground mb-4">On this page</h2>
@@ -87,7 +89,7 @@ export default function NewSeoServicePage({ page, markdown }: { page: NewSeoPage
     <section className="py-16 bg-secondary/40 border-t border-border">
       <div className="container mx-auto max-w-3xl px-4">
         <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{page.cta}</h2>
-        <InquiryForm service={page.breadcrumbLabel} />
+        {page.path === "/google-ads-audit-sri-lanka" ? <NewSeoAuditForm /> : <InquiryForm service={page.breadcrumbLabel} />}
       </div>
     </section>
   </div>;
