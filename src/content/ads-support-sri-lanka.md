@@ -12,11 +12,11 @@ Platform rules change often. This guide distinguishes account registration, bill
 |---|---|---|---|
 | Google Search & Display | Google’s billing guidance includes Sri Lanka; account setup and payment eligibility apply | Use Google Ads location targeting; verify selected locations in the account | Run through Google Ads |
 | YouTube | Through Google Ads, subject to the same account and payment conditions | Use Google Ads location targeting | Run through Google Ads |
-| Facebook & Instagram | [CONFIRM] | [CONFIRM] | Run through Meta Ads Manager |
-| LinkedIn | [CONFIRM] | [CONFIRM] | Run through LinkedIn Campaign Manager |
+| Facebook & Instagram | Managed through Meta Ads Manager; account country, currency and payment eligibility apply | Confirm Sri Lanka in the account location selector | Verify account-specific billing and targeting before spending |
+| LinkedIn | Confirm account creation and payment eligibility in Campaign Manager | Confirm Sri Lanka in the location selector | Payment eligibility and targeting availability are separate checks |
 | TikTok | Sri Lanka is not listed in the self-serve Business Center account-creation country list reviewed | Account-creation eligibility does not establish target-country availability; verify the location selector | Availability varies by country – check TikTok Ads Manager |
 
-Sources checked for this guide: [Google payment methods](https://support.google.com/google-ads/answer/2375433?hl=en-GB), [Google billing options](https://support.google.com/google-ads/answer/1704418?hl=en), [Google location targeting](https://support.google.com/google-ads/answer/1722043?hl=en), [Meta payment options](https://www.facebook.com/business/help/212763688755026) and [TikTok account-creation country list](https://ads.tiktok.com/help/article/available-countries-and-regions-for-ad-account-creation-in-bc). Country-specific Meta and LinkedIn eligibility in the table remains unverified; check your actual account rather than treating billing eligibility as targeting eligibility.
+Sources checked for this guide: [Google payment methods](https://support.google.com/google-ads/answer/2375433?hl=en-GB), [Google billing options](https://support.google.com/google-ads/answer/1704418?hl=en), [Google location targeting](https://support.google.com/google-ads/answer/1722043?hl=en), [Meta payment options](https://www.facebook.com/business/help/212763688755026) and [TikTok account-creation country list](https://ads.tiktok.com/help/article/available-countries-and-regions-for-ad-account-creation-in-bc). Check your actual account rather than treating payment eligibility as targeting eligibility. LinkedIn documents [payment methods](https://www.linkedin.com/help/lms/answer/a421456) and [invoicing currencies](https://www.linkedin.com/help/lms/answer/a426137); neither is a guarantee for every advertiser.
 
 ## Google Ads Support in Sri Lanka
 
@@ -55,7 +55,7 @@ If direct TikTok advertising isn't available for your situation, you can still u
 
 ## What If a Platform Doesn't Work for You?
 
-- **Payment problems:** try a different card, enable international transactions with your bank, or work with an agency that can manage billing. [CONFIRM which options apply]
+- **Payment problems:** check the methods shown in the account and ask your bank whether the transaction is permitted. Never assume an agency can provide local billing or authorised reseller services; confirm any proposed arrangement in writing.
 - **Platform not available:** shift budget to platforms that are, such as Google and Meta, which reach most Sri Lankan internet users.
 - **Account restrictions:** complete verification, follow ad policies and avoid restricted categories.
 
@@ -83,4 +83,4 @@ Yes, Facebook and Instagram ads are commonly run from Sri Lanka through Meta Ads
 Sri Lanka is not included in the self-serve Business Center account-creation country list reviewed. Paid targeting through another eligible account type was not established by that list; confirm current account and location eligibility before planning a paid campaign.
 
 ### Is LinkedIn advertising available in Sri Lanka?
-[CONFIRM current availability and minimum budgets.]
+Check account creation, location targeting, accepted currency and payment methods in Campaign Manager. LinkedIn documents card payments and eligibility-based invoicing, but these do not establish universal Sri Lankan account eligibility. Use the minimum shown for your actual campaign and its [budget guidance](https://www.linkedin.com/help/lms/answer/a422101).

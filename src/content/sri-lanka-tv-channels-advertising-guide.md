@@ -19,7 +19,7 @@ This guide introduces Sri Lanka's main TV channels for advertisers, explains aud
 | Vasantham TV | Tamil | State | Tamil programming |
 | Channel Eye | English | State | English programming |
 
-[CONFIRM: check current channel line-up, ownership and language before publishing. Do NOT add viewership rankings or audience share figures unless taken from a current, named research source – add [ADD AUDIENCE DATA + SOURCE] if available.]
+This table is an orientation guide, not an audience ranking. Confirm the current operator, language mix, programme schedule and available inventory directly with each broadcaster before booking. SLRC describes its Sinhala Rupavahini, English/sports Channel Eye and Tamil Nethra services in its [official broadcaster information](https://rupavahini.lk/about/). No current comparable audience-share figures are verified here.
 
 ## Which Channel Should You Advertise On?
 
@@ -33,7 +33,7 @@ There's no single "best" channel. It depends on:
 
 ## Prime Time in Sri Lanka
 
-Prime time is generally the evening block, around the main news bulletins and popular teledramas, when the largest audiences watch. Rates are highest during these slots. [CONFIRM typical prime-time hours by channel.]
+Prime-time definitions and prices vary by channel and programme. As a planning exercise, compare evening news and entertainment slots, but do not assume a universal clock-time window or the largest audience. Ask each broadcaster for its current rate card, programme schedule and exact transmission slot.
 
 Off-peak slots, such as morning and late-night, cost less and can work well for frequency, specific audiences or limited budgets.
 
@@ -73,7 +73,7 @@ For a full comparison of costs across media, see our guide to [advertising cost 
 ## Frequently Asked Questions
 
 ### What are the most popular TV channels in Sri Lanka?
-The most-watched channels vary by programme and time of day. Major Sinhala channels include Hiru TV, TV Derana, Sirasa TV, Swarnavahini, ITN and Rupavahini, and Tamil channels include Shakthi TV and Vasantham TV. [ADD AUDIENCE DATA + SOURCE if available.]
+The most-watched channels vary by programme and time of day. Major Sinhala channels include Hiru TV, TV Derana, Sirasa TV, Swarnavahini, ITN and Rupavahini, and Tamil channels include Shakthi TV and Vasantham TV. No current, comparable audience-share study is verified in this guide. A channel list cannot establish which channel is most watched; request named research with its date, measurement period and audience definition.
 
 ### How much does TV advertising cost in Sri Lanka?
 It depends on the channel, programme, time and spot length. See our [TV advertising rates](/blog/tv-advertising-rates-sri-lanka) guide.
