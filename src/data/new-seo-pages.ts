@@ -152,4 +152,37 @@ export const newSeoPages: NewSeoPage[] = [
     heroAlt: "Newspaper advertising rates in Sri Lanka – print ads in Sinhala, Tamil and English papers",
     kind: "article",
   },
+{
+  "path": "/blog/ads-support-sri-lanka",
+  "title": "Which Ad Platforms Work in Sri Lanka? Ads Support Guide (2026)",
+  "description": "Do Google, YouTube, Facebook, Instagram, LinkedIn and TikTok ads work in Sri Lanka? See which platforms support Sri Lankan advertisers and how to start.",
+  "breadcrumbLabel": "Ads Support in Sri Lanka",
+  "heroAlt": "Ad platforms that support advertisers in Sri Lanka",
+  "contentFile": "src/content/ads-support-sri-lanka.md",
+  "primaryKeyword": "ads support sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/meta-ads-payment-sri-lanka",
+  "title": "How to Pay for Facebook & Instagram Ads in Sri Lanka (2026)",
+  "description": "Card declined on Meta Ads? Learn how to pay for Facebook and Instagram ads in Sri Lanka: cards, local billing, prepaid funds, agencies and common fixes.",
+  "breadcrumbLabel": "Meta Ads Payment in Sri Lanka",
+  "heroAlt": "Paying for Facebook and Instagram ads in Sri Lanka – Meta Ads billing",
+  "contentFile": "src/content/meta-ads-payment-sri-lanka.md",
+  "primaryKeyword": "meta ads payment sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/facebook-boost-price-sri-lanka",
+  "title": "Facebook Boost Price in Sri Lanka (2026) – Is Boosting Worth It?",
+  "description": "How much does it cost to boost a Facebook post in Sri Lanka? See typical budgets, what you get, and when Ads Manager or a package works better.",
+  "breadcrumbLabel": "Facebook Boost Price in Sri Lanka",
+  "heroAlt": "Facebook boost price in Sri Lanka – boosting a post on a phone",
+  "contentFile": "src/content/facebook-boost-price-sri-lanka.md",
+  "primaryKeyword": "facebook boost price sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
 ];

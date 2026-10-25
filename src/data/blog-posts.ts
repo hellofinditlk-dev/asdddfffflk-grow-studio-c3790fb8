@@ -7,6 +7,27 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+{
+  "slug": "facebook-boost-price-sri-lanka",
+  "title": "Facebook Boost Price in Sri Lanka – How Much Does It Cost?",
+  "excerpt": "How much does it cost to boost a Facebook post in Sri Lanka? See typical budgets, what you get, and when Ads Manager or a package works better.",
+  "date": "2026-10-25",
+  "keyword": "facebook boost price sri lanka"
+},
+{
+  "slug": "meta-ads-payment-sri-lanka",
+  "title": "How to Pay for Facebook and Instagram Ads in Sri Lanka",
+  "excerpt": "Card declined on Meta Ads? Learn how to pay for Facebook and Instagram ads in Sri Lanka: cards, local billing, prepaid funds, agencies and common fixes.",
+  "date": "2026-10-25",
+  "keyword": "meta ads payment sri lanka"
+},
+{
+  "slug": "ads-support-sri-lanka",
+  "title": "Which Ad Platforms Work in Sri Lanka? A Guide to Ads Support in 2026",
+  "excerpt": "Do Google, YouTube, Facebook, Instagram, LinkedIn and TikTok ads work in Sri Lanka? See which platforms support Sri Lankan advertisers and how to start.",
+  "date": "2026-10-25",
+  "keyword": "ads support sri lanka"
+},
   {
     slug: "newspaper-advertising-rates-sri-lanka",
     title: "Newspaper Advertising Rates in Sri Lanka – 2026 Guide",
