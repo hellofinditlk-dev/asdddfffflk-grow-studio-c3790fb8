@@ -15,4 +15,6 @@
 - [x] Remove the team and partner-call sections from the direct-only white-label page.
 - [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.
 - [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
-- [ ] Add the eleven supplied SEO pages sequentially, starting with Google Ads Cost; awaiting approval for additive route registration and new-page-only full HTML delivery because the current raw HTML omits complete page content.
+- [x] Create Page 1 /google-ads-cost-sri-lanka with supplied copy, highlighted placeholders, original internal links and unchanged shared components; add only its route.
+- [ ] Complete Page 1 raw HTML indexing requirement; blocked because full body/metadata are absent before scripts run and the owner has not approved rendering/hosting changes.
+- [ ] Build Pages 2–11 sequentially after Page 1's indexing blocker is resolved and the owner says "next"; append sitemap entries only after all eleven pages are complete.

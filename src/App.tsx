@@ -19,6 +19,7 @@ import Index from "./pages/Index";
 const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
+const GoogleAdsCost = lazy(() => import("./pages/GoogleAdsCost"));
 const VideoProduction = lazy(() => import("./pages/VideoProduction"));
 const AIVideoProduction = lazy(() => import("./pages/AIVideoProduction"));
 const WhiteLabelDesign = lazy(() => import("./pages/WhiteLabelDesign"));
@@ -287,6 +288,7 @@ const AppContent = () => {
               <Route path="/social-media-management-sri-lanka" element={<SocialMediaManagement />} />
               <Route path="/facebook-ads-sri-lanka" element={<FacebookAds />} />
               <Route path="/google-ads-sri-lanka" element={<GoogleAds />} />
+              <Route path="/google-ads-cost-sri-lanka" element={<GoogleAdsCost />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
               <Route path="/seo-services-sri-lanka" element={<SEOServices />} />
