@@ -1,5 +1,7 @@
 # Web Design Sri Lanka – Websites Built to Win Customers
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 Your website is often the first place a customer decides whether to trust your business. At Cypher Digital, we design and build websites for Sri Lankan businesses that look professional, load fast on mobile, rank on Google and make it easy for visitors to call, WhatsApp or enquire.
 
 Because we're also a [digital marketing agency in Sri Lanka](/), every website we build is planned around marketing from day one: SEO-ready structure, conversion tracking and pages designed for ads, not just a nice-looking homepage.
@@ -29,7 +31,7 @@ Learn more about our [landing page design](/landing-page-design-sri-lanka), [UI/
 ## What Every Website We Build Includes
 
 - **Mobile-first design:** most Sri Lankan visitors browse on phones, so we design for mobile first.
-- **Fast loading:** optimised images, clean code and good hosting setup.
+- **Fast loading:** optimised images, clean code and good hosting setup. Google's published 'good' Core Web Vitals thresholds are LCP within **2.5 seconds**, INP **200 milliseconds or less**, and CLS **0.1 or less**, assessed at the 75th percentile of visits. These are industry assessment targets, not guaranteed results for an unbuilt website. [Source: Google Web Vitals](https://web.dev/articles/vitals).
 - **SEO foundations:** proper page titles, headings, URL structure, sitemap and schema markup.
 - **Clear calls to action:** call, WhatsApp and enquiry buttons on every key page.
 - **Conversion tracking:** Google Analytics and tracking for forms, calls and WhatsApp clicks.

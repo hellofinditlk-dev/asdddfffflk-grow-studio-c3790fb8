@@ -1,5 +1,7 @@
 # Google Ads vs Google AdSense in Sri Lanka – What's the Difference?
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 Google Ads and Google AdSense have similar names, both come from Google, and both involve ads. But they do opposite jobs. **Google Ads is for businesses that want to advertise. Google AdSense is for website owners who want to earn money by showing ads.**
 
 If you're a Sri Lankan business owner trying to get more customers, you need Google Ads – and often a [digital marketing agency in Sri Lanka](/) to run it well. If you run a blog, news site or YouTube channel and want to earn from your traffic, you're looking for AdSense. This guide explains both, how they connect, and which one is right for you.
@@ -37,7 +39,7 @@ To be approved for AdSense, a website generally needs:
 - Content that follows Google's publisher policies
 - Ownership or control of the website
 
-[CONFIRM CURRENT PAYMENT METHODS – check Google AdSense's current payment options, payment threshold and tax information requirements for publishers in Sri Lanka, and summarise them in 2–3 sentences. Do not guess.]
+Google's country table lists **cheque and wire transfer** for Sri Lankan AdSense payment accounts; EFT and Hyperwallet are not listed as available there. For an account reporting in US dollars, the payment threshold is **US$100**; thresholds differ by reporting currency, and payment also depends on completed verification and no payment holds. Follow any tax-information requests shown in your account and get advice on local tax obligations—this is not tax advice. [Sources: AdSense payment methods](https://support.google.com/adsense/answer/1714397?hl=en), [payment thresholds](https://support.google.com/adsense/answer/1709871?hl=en) and [tax information](https://support.google.com/adsense/answer/14131950?hl=en).
 
 If you're building a content website to earn from AdSense, a strong blogging plan matters. Our guide to [content marketing and blogging](/blog/content-marketing-blog-strategy-sri-lanka), our [SEO services](/seo-services-sri-lanka) and our [SEO packages Sri Lanka](/blog/seo-packages-sri-lanka) can help grow the traffic AdSense depends on.
 
@@ -88,7 +90,7 @@ Not sure where to advertise at all? Google Ads captures people already searching
 Yes, they're separate accounts with separate purposes. But business websites usually shouldn't show AdSense ads, because they can lead visitors to competitors.
 
 ### Is Google AdSense available in Sri Lanka?
-[CONFIRM – current availability of AdSense for Sri Lankan publishers. Answer in one or two sentences.]
+Yes. Google lists **Sri Lanka** among the countries where publishers can sign up for AdSense. Availability does not guarantee approval, ad serving or earnings; your site and account must meet Google's requirements. [Source: AdSense availability](https://support.google.com/adsense/answer/13402307?hl=en).
 
 ### Is Google AdWords the same as Google Ads?
 Yes. Google renamed AdWords to Google Ads in 2018. They are the same advertising platform.

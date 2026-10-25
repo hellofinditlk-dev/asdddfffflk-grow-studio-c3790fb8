@@ -1,12 +1,14 @@
 # YouTube Ads in Sri Lanka – Video Advertising That Gets Watched
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 YouTube ads let your business appear in front of Sri Lankans while they watch music, cricket highlights, teledramas, tutorials and reviews. At Cypher Digital, we plan, produce and manage YouTube ad campaigns from start to finish, so you get the right video, shown to the right people, at a cost you control.
 
 Because YouTube ads run through Google Ads, you can target by age, location, interests, life events and even people who have already visited your website. And you only pay when people watch or engage.
 
 ## Why YouTube Advertising Works in Sri Lanka
 
-YouTube is one of the most-used platforms in Sri Lanka, with [ADD REAL STAT – YouTube users or reach in Sri Lanka, with source]. It reaches audiences that are hard to reach on other channels, including people who watch on smart TVs at home.
+DataReportal's Digital 2026 report, drawing on Google's advertising tools, estimates **8.82 million potential YouTube ad reach in Sri Lanka in late 2025**. This is an advertising-audience estimate, not a count of monthly active users or a promise of campaign reach. [Source: Digital 2026 — Sri Lanka](https://datareportal.com/reports/digital-2026-sri-lanka).
 
 - **Sinhala, Tamil and English audiences:** you can run different ads for different language audiences.
 - **Sight, sound and motion:** video explains products and builds trust faster than images or text.
@@ -41,9 +43,9 @@ Most campaigns use a mix: a longer skippable ad to explain, and bumper ads to re
 
 YouTube ads are usually charged per view (CPV) or per 1,000 impressions (CPM). A view is typically counted when someone watches 30 seconds, the whole ad if it's shorter, or interacts with it.
 
-- Typical cost per view in Sri Lanka: [ADD REAL RANGE]
-- Typical cost per 1,000 impressions: [ADD REAL RANGE]
-- Suggested starting budget: [ADD REAL LKR AMOUNT] per month
+- **Cost per view:** no transparent Sri Lanka-wide CPV benchmark was verified. Use a Sri Lanka-targeted Reach Planner forecast where available and report actual campaign CPV.
+- **Cost per 1,000 impressions:** varies by audience and video format; use the account forecast rather than treating an overseas CPM as a local price.
+- **Planning example, not a local benchmark:** monthly spend = target views × forecast CPV, or target impressions ÷ 1,000 × forecast CPM. Creative and management costs are separate.
 
 You set the budget and can pause at any time. For overall Google Ads pricing, see [Google Ads Sri Lanka](/google-ads-sri-lanka).
 
@@ -85,7 +87,7 @@ We report on the numbers that matter for your goal:
 - **Reach and frequency:** how many unique people saw the ad, and how often.
 - **Watch time:** how much of the video people watched.
 - **Clicks and conversions:** website visits, calls, forms and WhatsApp messages.
-- **Brand lift:** [CONFIRM – available only above certain spend levels; offer only if applicable.]
+- **Brand lift:** Google requires account access to the measurement feature and campaign eligibility, including minimum budget requirements. It is not available for every account or small campaign; confirm eligibility before including it in a measurement plan. [Source: Google Brand Lift eligibility](https://support.google.com/google-ads/answer/9049825?hl=en).
 
 For more background, read our [complete guide to YouTube ads](/blog/youtube-ads-sri-lanka-complete-guide).
 
@@ -94,7 +96,7 @@ YouTube works best as one part of a bigger plan. The same videos can power your 
 ## Frequently Asked Questions
 
 ### What is the minimum budget for YouTube ads in Sri Lanka?
-There is no official minimum. We recommend starting from [ADD REAL LKR AMOUNT] per month so the campaign reaches enough people to measure results.
+There is no single Sri Lankan monthly minimum suitable for every YouTube campaign. Choose the video objective first, then use the audience forecast and a spend limit you can afford to test. Ask for separate estimates for media, video production and management.
 
 ### Do I need a YouTube channel?
 Yes. YouTube ads run from a video uploaded to a YouTube channel. The video can be unlisted, and we can help set the channel up.

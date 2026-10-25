@@ -1,6 +1,8 @@
 # Google Ads Cost in Sri Lanka – Budgets, CPC and Management Fees
 
-Google Ads cost in Sri Lanka depends on two things: the money you pay Google for clicks (your ad spend) and the fee you pay an agency to manage the campaigns. Most Sri Lankan businesses start with a monthly ad budget of [ADD REAL LKR RANGE] and a management fee from [ADD REAL PRICE]. There is no fixed price per ad. You set your own budget, and you only pay Google when someone clicks your ad.
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
+Google Ads cost in Sri Lanka depends on two things: the money you pay Google for clicks (your ad spend) and the fee you pay an agency to manage the campaigns. There is no verified national starting budget that suits every Sri Lankan business. Set ad spend using a Sri Lanka-targeted keyword forecast; our management fee starts from [ADD REAL PRICE]. There is no fixed price per ad. You set your own budget, and you only pay Google when someone clicks your ad.
 
 This page explains exactly what you pay, what affects the price, and how to get more leads from the same budget. If you want a number for your own business, our team will send a free estimate within one hour.
 
@@ -10,7 +12,7 @@ There is no single price, because Google Ads works like an auction. Every time s
 
 In practice, your total cost has three parts:
 
-- **Cost per click (CPC):** what you pay each time someone clicks your ad. In Sri Lanka this ranges from [ADD REAL CPC RANGE] depending on the industry and keyword.
+- **Cost per click (CPC):** what you pay each time someone clicks your ad. There is no independently verified Sri Lanka-wide CPC range in the sources reviewed. Estimate your keywords with Sri Lanka selected in Google's Keyword Planner, then compare the forecast with actual campaign CPC.
 - **Daily or monthly budget:** the maximum you allow Google to spend. You control this completely and can change it at any time.
 - **Management fee:** what you pay an agency or specialist to plan, build, monitor and improve your campaigns.
 
@@ -37,29 +39,31 @@ Keeping these separate means you can see exactly what Google charges and exactly
 
 ## Typical Cost per Click by Industry in Sri Lanka
 
-Cost per click changes with competition. Industries where one customer is worth a lot of money usually have higher click prices. The ranges below are a guide based on campaigns we manage.
+Cost per click changes with competition, the precise keyword, location and campaign settings. We did not find a transparent Sri Lanka industry-CPC dataset, so the table below identifies what to forecast instead of presenting invented LKR ranges or claiming unpublished client results.
 
-| Industry | Typical CPC range (LKR) | Notes |
+For international context only, WordStream/LocaliQ's **2025 US search-ad benchmark reports an average CPC of US$5.26**, based on more than 16,000 Google Ads and Microsoft Ads campaigns from April 2024 to March 2025. This is **not Sri Lankan pricing**, not a Google-only average, and should not be converted to LKR as a local estimate. [Source: WordStream 2025 benchmarks](https://www.wordstream.com/blog/2025-google-ads-benchmarks).
+
+| Industry | Local CPC evidence | What to forecast |
 |---|---|---|
-| Real estate & property | [ADD REAL CPC RANGE] | High-value leads, strong competition |
-| Education & higher studies | [ADD REAL CPC RANGE] | Seasonal peaks around intakes |
-| Healthcare & clinics | [ADD REAL CPC RANGE] | Service-specific keywords perform best |
-| Hotels & tourism | [ADD REAL CPC RANGE] | Competes with booking platforms |
-| E-commerce & retail | [ADD REAL CPC RANGE] | Shopping ads often cheaper per sale |
-| Finance & insurance | [ADD REAL CPC RANGE] | Among the most competitive keywords |
-| B2B services | [ADD REAL CPC RANGE] | Fewer searches, higher value per lead |
+| Real estate & property | Sri Lanka-targeted Keyword Planner forecast needed | Project location, property type and enquiry intent |
+| Education & higher studies | Sri Lanka-targeted Keyword Planner forecast needed | Course, intake dates and location |
+| Healthcare & clinics | Sri Lanka-targeted Keyword Planner forecast needed | Permitted service keywords and location |
+| Hotels & tourism | Sri Lanka-targeted Keyword Planner forecast needed | Sri Lankan versus overseas traveller searches |
+| E-commerce & retail | Sri Lanka-targeted Keyword Planner forecast needed | Product category and eligible campaign format |
+| Finance & insurance | Sri Lanka-targeted Keyword Planner forecast needed | Service-specific competition and advertising policy |
+| B2B services | Sri Lanka-targeted Keyword Planner forecast needed | Buyer intent, location and specialised service terms |
 
 The number that matters more than CPC is **cost per lead**: how much you pay to get one enquiry. A higher CPC can still be a good deal if those clicks turn into customers.
 
 ## Minimum Budget to Start Google Ads
 
-Google has no official minimum budget, but a budget that is too small will not collect enough clicks to learn what works. These are the starting points we recommend:
+Choose a budget from forecast CPC and the number of clicks you can afford to test, not an invented national minimum. The examples below use an **assumed LKR 100 CPC purely to show the arithmetic**; that assumption is not researched Sri Lankan CPC, a Cypher package or a results forecast.
 
 | Business stage | Suggested monthly ad spend | Best for |
 |---|---|---|
-| Starter | [ADD REAL LKR AMOUNT] | Local service businesses testing one service or area |
-| Growth | [ADD REAL LKR AMOUNT] | Businesses with several services or locations |
-| Competitive | [ADD REAL LKR AMOUNT] | Real estate, education, healthcare, finance, e-commerce |
+| Small illustrative test | LKR 20,000 = 200 clicks × assumed LKR 100 CPC | One focused offer; no promised leads |
+| Broader illustrative test | LKR 50,000 = 500 clicks × assumed LKR 100 CPC | More click data; feasibility depends on the real forecast |
+| Larger illustrative test | LKR 100,000 = 1,000 clicks × assumed LKR 100 CPC | Not an industry recommendation or minimum |
 
 We usually recommend running a campaign for at least 60–90 days before judging results. The first month is spent collecting data, removing wasted search terms and finding the keywords that bring real enquiries.
 
@@ -134,7 +138,7 @@ Many Sri Lankan businesses use both: Google to capture existing demand, and soci
 Not necessarily. You choose your own budget and can start small. Google Ads only becomes expensive when campaigns are poorly targeted and pay for clicks that never turn into enquiries. With good keyword selection and tracking, many businesses get leads at a lower cost than traditional advertising.
 
 ### What is the minimum daily budget for Google Ads?
-Google has no fixed minimum, but we recommend at least [ADD REAL LKR AMOUNT] per day for a single Search campaign, so the campaign collects enough data to improve.
+There is no universal Sri Lankan daily budget we can responsibly quote. Use your Sri Lanka keyword forecast and affordable monthly spend to choose it. For most campaigns, Google's monthly spending limit is based on **30.4 × the average daily budget**; some days can spend up to twice the average daily budget. For example, LKR 1,000 per day corresponds to a LKR 30,400 monthly limit under that rule, not a recommendation or guaranteed spend. [Source: Google budget spending limits](https://support.google.com/google-ads/answer/10486637?hl=en).
 
 ### Do I pay Google directly?
 Yes. Your ad spend is billed by Google directly to your payment method. Our management fee is invoiced separately, so you always know what goes to Google and what goes to us.
@@ -146,7 +150,7 @@ Our management fee is a fixed monthly amount based on your package, starting fro
 Ads can start showing within a day of approval, and many businesses receive enquiries in the first week. Cost per lead usually improves over the first 60–90 days as we refine keywords and bidding.
 
 ### Can I pay for Google Ads in LKR?
-[CONFIRM: current Google Ads billing currency and payment options available to Sri Lankan advertisers.]
+Billing currency and payment options depend on the account's billing country, currency and payment setting. Confirm the options in your Google Ads Billing settings before funding the account; if it is billed in another currency, bank conversion charges and applicable taxes are separate from ad spend. We have not verified a universal LKR billing option for every Sri Lankan account. [Source: Google Ads payment methods](https://support.google.com/google-ads/answer/2375433?hl=en-GB).
 
 ### Is Google AdWords the same as Google Ads?
 Yes. Google AdWords was renamed Google Ads in 2018. If you've seen "Google AdWords Sri Lanka" pricing, it refers to the same platform and the same costs explained on this page.

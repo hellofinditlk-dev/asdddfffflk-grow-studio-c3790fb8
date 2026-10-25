@@ -1,10 +1,12 @@
 # Instagram Ads in Sri Lanka – Reels, Stories and Feed Ads That Convert
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 Instagram ads put your brand in front of Sri Lankans where they spend time every day: scrolling Reels, tapping through Stories and browsing their feed. At Cypher Digital, we plan, create and manage Instagram ads from start to finish, from the Reel itself to the targeting, budget and reporting, so your ads look native to the platform and bring real enquiries and sales.
 
 ## Who You Can Reach With Instagram Ads in Sri Lanka
 
-Instagram is especially strong with younger, urban and lifestyle-focused audiences in Sri Lanka. [ADD REAL STAT – Instagram users or ad reach in Sri Lanka, with source and date.]
+Meta's advertising tools indicated **2.25 million potential Instagram ad reach in Sri Lanka in late 2025**, according to DataReportal's Digital 2026 report. Ad reach is not the same as active users; your reachable audience also depends on campaign settings. Use account-level forecasts to plan a local campaign. [Source: Digital 2026 — Sri Lanka](https://datareportal.com/reports/digital-2026-sri-lanka).
 
 It works particularly well for:
 
@@ -64,9 +66,9 @@ Our [Reel creation](/reel-creation-sri-lanka) team shoots and edits short vertic
 
 You set your own budget and can change or pause it at any time.
 
-- Typical cost per click: [ADD REAL RANGE]
-- Typical cost per message or lead: [ADD REAL RANGE]
-- Suggested starting budget: [ADD REAL LKR AMOUNT] per month
+- **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
+- **Cost per message or lead:** measure spend divided by valid conversations or leads; messages and qualified leads are different outcomes. No verified Sri Lanka-wide CPL range is claimed here.
+- **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
 - Management fee: from [ADD REAL PRICE] per month, or included in our [social media marketing packages Sri Lanka](/blog/social-media-marketing-packages)
 
 ## Boost Button vs Ads Manager – Why It Matters
@@ -97,10 +99,10 @@ Instagram ads are one part of our wider [social media advertising in Sri Lanka](
 ## Frequently Asked Questions
 
 ### Are Instagram ads supported in Sri Lanka?
-Yes. Sri Lankan businesses can run Instagram ads through Meta Ads Manager and target audiences in Sri Lanka and overseas. [CONFIRM: current payment methods accepted for Meta ads in Sri Lanka.]
+Yes. Sri Lankan businesses can run Instagram ads through Meta Ads Manager and target audiences in Sri Lanka and overseas. Payment methods depend on the Meta ad account's country and currency. Check the options displayed in Ads Manager rather than assuming every card, bank or PayPal option is supported. [Source: Meta payment options](https://www.facebook.com/business/help/212763688755026).
 
 ### What is the minimum budget for Instagram ads?
-Meta allows small daily budgets, but we recommend at least [ADD REAL LKR AMOUNT] per month so there's enough data to test and improve.
+Minimums depend on the objective, currency and settings shown in Meta Ads Manager. Choose a test budget from the account's forecast and your affordable spend; we do not claim a universal Sri Lankan monthly minimum or guarantee a number of leads.
 
 ### Instagram ads or Facebook ads – which is better?
 They are run from the same Ads Manager, so most campaigns use both. Instagram tends to suit younger, visual audiences; Facebook reaches a broader age range. We let performance decide where the budget goes.
