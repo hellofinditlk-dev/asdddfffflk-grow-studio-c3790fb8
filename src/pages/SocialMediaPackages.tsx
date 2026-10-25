@@ -413,6 +413,44 @@ const sections: ClusterSection[] = [
     ),
   },
   {
+    id: "market-estimates-and-payment",
+    h2: "Market estimates and payment arrangements",
+    body: (
+      <>
+        <p>
+          <strong>Market comparison, not our fees:</strong> E Lanka Solution publicly lists monthly
+          social packages at LKR 35,000, LKR 65,000 and LKR 130,000. Ceylond lists managed plans
+          from LKR 39,900 and LKR 79,900 per month. These are examples of different providers and
+          scopes, not an average market price or a replacement for Cypher Digital's published
+          Basic, Silver, Gold and Platinum prices above.
+        </p>
+        <p>
+          Sources checked 25 October 2026: {" "}
+          <a href="https://elankasolution.com/social-media-marketing-packages-sri-lanka" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">E Lanka Solution</a>
+          {" and "}
+          <a href="https://ceylond.com/sri-lanka/social-media-packages" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ceylond</a>.
+          Compare deliverables, shoots, reporting, community management and separate advertising spend, not price alone.
+        </p>
+        <h3>Payment schedule and method</h3>
+        <p>
+          Our packages are billed month-to-month. The written proposal must confirm the invoice
+          date, any advance payment, balance due date, accepted payment method and applicable taxes
+          before you book. Ceylond advertises monthly payment in advance; that is a competitor's
+          arrangement, not a confirmed Cypher Digital policy. Do not assume a 50% deposit,
+          card acceptance or a specific bank account from a market example.
+        </p>
+        <h3>Calls and lead follow-up</h3>
+        <p>
+          A caller's project fee and phone costs are different from social media management fees.
+          If your campaign needs outbound lead follow-up, request a separate written scope covering
+          call volume, retries, caller fees, phone-cost funding and payment terms through our {" "}
+          <Link to="/lead-follow-up-services-sri-lanka" className="text-primary hover:underline">lead follow-up service</Link>.
+          No company SIM or call reimbursement is promised by these package prices.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "getting-started",
     h2: "Getting started",
     body: (
