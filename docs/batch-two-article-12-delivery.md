@@ -9,6 +9,7 @@ Route: /blog/newspaper-advertising-rates-sri-lanka
 - Blog listing registration added; listing component unchanged. Existing page modules, header, footer, root HTML, sitemap and robots unchanged. No existing route or redirect entry edited.
 - New source files: src/content/newspaper-advertising-rates-sri-lanka.md and src/pages/BatchTwoArticle12.tsx. Generated illustrative newspaper image: src/assets/newspaper-advertising-guide.jpg (not publisher evidence).
 - Not published. Sitemap addition deferred until all ten articles are completed.
+- All 21 targeted tests passed; blog listing → article → open FAQ → newspaper service CTA verified in browser with no runtime errors. Desktop and 390px phone layouts checked with no horizontal overflow. Existing global blog promotions still appear before the article header; shared promotion components were left unchanged.
 
 ## Placeholders (15 occurrences)
 - [CONFIRM current tax treatment]
