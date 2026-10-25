@@ -6,7 +6,7 @@ import PaybackCard from "@/components/PaybackCard";
 import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import { useWhatsappNumber } from "@/lib/whatsapp";
-import { inlineMarkdown, markdownHtml, splitSeoMarkdown } from "@/lib/newSeoMarkdown";
+import { markdownHtml, splitSeoMarkdown } from "@/lib/newSeoMarkdown";
 import markdown from "@/content/google-ads-cost-sri-lanka.md?raw";
 import heroImage from "@/assets/advertising-benefits.jpg";
 import "@/styles/new-seo-pages.css";
@@ -29,6 +29,7 @@ export default function GoogleAdsCost() {
   const number = useWhatsappNumber();
   const whatsapp = `https://wa.me/${number}?text=${encodeURIComponent("Hi Cypher Digital, I would like a free Google Ads budget estimate.")}`;
   useEffect(() => {
+    document.querySelector('script[data-new-page-schema]')?.remove();
     const existing = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
     const previous = existing?.content;
     const meta = existing ?? document.createElement("meta");

@@ -16,5 +16,5 @@
 - [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.
 - [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
 - [x] Create Page 1 /google-ads-cost-sri-lanka with supplied copy, highlighted placeholders, original internal links and unchanged shared components; add only its route.
-- [ ] Complete Page 1 raw HTML indexing requirement; blocked because full body/metadata are absent before scripts run and the owner has not approved rendering/hosting changes.
+- [ ] Complete the approved new-pages-only full HTML generation and verify Page 1 plus unchanged existing-page responses.
 - [ ] Build Pages 2–11 sequentially after Page 1's indexing blocker is resolved and the owner says "next"; append sitemap entries only after all eleven pages are complete.
