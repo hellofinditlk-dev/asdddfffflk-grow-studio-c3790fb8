@@ -18,4 +18,5 @@
 - [x] Create Page 1 /google-ads-cost-sri-lanka with supplied copy, highlighted placeholders, original internal links and unchanged shared components; add only its route.
 - [x] Add approved new-pages-only full HTML generation; verify Page 1 preview raw HTML and unchanged existing-page handling.
 - [ ] Verify Page 1 generated HTML delivery on the published domain; waiting for owner approval to publish.
-- [ ] Build Pages 2–11 sequentially in this approved run, verifying each full-text HTML response before starting the next; append sitemap entries only after all eleven pages are complete.
+- [x] Build Pages 2–11 sequentially in this approved run, verifying each full-text HTML response before starting the next; append sitemap entries only after all eleven pages are complete.
+- [ ] Supply and confirm the highlighted prices, certifications, team details, case studies, platform eligibility and other real-data placeholders before publication; waiting for owner details.
