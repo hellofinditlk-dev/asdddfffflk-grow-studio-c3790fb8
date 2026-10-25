@@ -15,6 +15,7 @@ import CtaClickTracker from "@/components/CtaClickTracker";
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
 
+const NewSeoPage2 = lazy(() => import("./pages/NewSeoPage2"));
 // Lazy load all other pages
 const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
@@ -288,6 +289,7 @@ const AppContent = () => {
               <Route path="/social-media-management-sri-lanka" element={<SocialMediaManagement />} />
               <Route path="/facebook-ads-sri-lanka" element={<FacebookAds />} />
               <Route path="/google-ads-sri-lanka" element={<GoogleAds />} />
+              <Route path="/google-ads-specialist-sri-lanka" element={<NewSeoPage2 />} />
               <Route path="/google-ads-cost-sri-lanka" element={<GoogleAdsCost />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
