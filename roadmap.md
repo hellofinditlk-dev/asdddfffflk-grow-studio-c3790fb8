@@ -25,3 +25,4 @@
 - [ ] Supply Sri Lanka campaign forecasts or documented local results for numeric CPC/CPV/CPM/CPL ranges; public sources did not establish reliable local benchmarks.
 - [x] Complete all eleven pages without editing placeholders: retain sourced data, use quote-based wording for unconfirmed fees/scope and remove unsupported team/results claims; verify every page's full HTML.
 - [x] Request Lovable publication and resubmit the live cypherdigital.lk sitemap containing all eleven pages to Google; submission accepted (HTTP 204). Live robots.txt allows Google and references the correct sitemap; Google fetches it automatically, with no separate robots submission API.
+- [ ] Add Batch 2 articles 12–21 sequentially from the uploaded brief; awaiting permission for required existing-file changes and clarification of traditional-advertising service claims.
