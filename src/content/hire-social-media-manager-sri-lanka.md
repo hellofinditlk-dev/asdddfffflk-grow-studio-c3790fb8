@@ -21,7 +21,7 @@ That's a lot of different skills for one person, which is why many businesses fi
 
 ## Option 1: Hire an In-House Social Media Manager
 
-**Typical cost:** salary of [ADD REAL LKR RANGE] per month, plus EPF/ETF, equipment, software and training. See current salary ranges in our [digital marketing salary in Sri Lanka](/blog/digital-marketing-salary-sri-lanka-2026) guide.
+**Published salary example, not a market average:** an ikman listing for Kitchen Gallery Enterprises advertises LKR 100,000–150,000 per month for a social media marketing manager in Galle. This single job advertisement is not a Cypher Digital salary offer; experience and scope matter. Add applicable EPF/ETF, equipment, software and training. [Salary listing source, checked 25 October 2026](https://ikman.lk/en/ads/i/sri-lanka/digital-marketing-jobs/social-media-manager). See current salary ranges in our [digital marketing salary in Sri Lanka](/blog/digital-marketing-salary-sri-lanka-2026) guide.
 
 **Pros**
 - Knows your business deeply
@@ -36,7 +36,7 @@ That's a lot of different skills for one person, which is why many businesses fi
 
 ## Option 2: Hire a Freelancer
 
-**Typical cost:** [ADD REAL LKR RANGE] per month, depending on scope.
+**Illustrative budget, not a verified freelancer rate:** allow LKR 20,000–50,000 per month as a planning scenario for a limited brief, then get itemised freelancer quotes. This editorial estimate is not a market survey or a Cypher Digital offer; filming, ads and inbox cover may be separate.
 
 **Pros**
 - Lower cost than a full-time hire
@@ -51,7 +51,7 @@ For a full comparison, see [freelancer vs agency](/blog/freelancer-vs-digital-ma
 
 ## Option 3: Outsource to a Social Media Agency
 
-**Typical cost:** monthly packages from [ADD REAL PRICE]. Compare options in our [social media marketing packages Sri Lanka](/blog/social-media-marketing-packages) guide.
+**Cypher Digital published fees:** Basic LKR 85,000, Silver LKR 100,000, Gold LKR 150,000 and Platinum LKR 250,000 per month; advertising spend is separate. Check our [current service packages](/social-media-marketing-packages-sri-lanka) for scope and a written proposal. Compare options in our [social media marketing packages Sri Lanka](/blog/social-media-marketing-packages) guide.
 
 **Pros**
 - A team: strategist, designer, video editor, copywriter and ads specialist
@@ -67,7 +67,7 @@ For a full comparison, see [freelancer vs agency](/blog/freelancer-vs-digital-ma
 
 | | In-house manager | Freelancer | Agency |
 |---|---|---|---|
-| Monthly cost | [ADD REAL RANGE] + overheads | [ADD REAL RANGE] | [ADD REAL RANGE] |
+| Monthly cost | Advertised example: LKR 100,000–150,000 + overheads; not an average | Illustrative LKR 20,000–50,000 planning scenario, quote required | Cypher published packages: LKR 85,000–250,000; ad spend separate |
 | Skills covered | Usually 1–2 strong areas | Usually 1 area | Full team |
 | Design & video | Extra cost or limited | Often extra | Included (by package) |
 | Paid ads expertise | Varies | Varies | Dedicated specialist |
@@ -100,13 +100,13 @@ As a [social media marketing company in Sri Lanka](/social-media-management-sri-
 ## Frequently Asked Questions
 
 ### How much does a social media manager cost in Sri Lanka?
-An in-house social media manager typically costs [ADD REAL LKR RANGE] per month in salary, plus overheads. Agency packages start from [ADD REAL PRICE] per month and include a wider team.
+The cited Galle vacancy advertises LKR 100,000–150,000 monthly; it is one salary example, not a nationwide average. Our published packages start at LKR 85,000 monthly, with advertising spend separate. Freelance budgets in this guide are illustrative, not verified market rates.
 
 ### Is it cheaper to outsource social media?
 Often, yes, once you add the cost of design, video, ads expertise, software and backup cover that a single hire would need.
 
 ### Can an agency post in Sinhala?
-Yes. We create content in Sinhala, English and Tamil depending on your audience. [CONFIRM languages offered.]
+Request Sinhala, Tamil or English content in your brief and confirm native-language writing, translation, proofreading and any additional fee in the proposal. Do not assume every language is included in every package.
 
 ### Can I start with an agency and hire in-house later?
 Yes. Many businesses start with an agency, then hire a coordinator to work alongside it as they grow.
