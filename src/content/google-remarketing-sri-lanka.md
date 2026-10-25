@@ -61,15 +61,15 @@ Remarketing relies on cookies and website tags, so we set it up responsibly:
 - Google's remarketing policies followed, including restrictions on sensitive categories such as health conditions
 - No personal data shared without proper permission
 
-[CONFIRM – add any specific consent or privacy approach your business uses.]
+Before enabling audience collection, review your actual website notice, consent settings, data retention and access arrangements. These must match the target jurisdiction and Google's policies; a generic checklist does not certify compliance. [Source: Google personalised-advertising policy](https://support.google.com/adspolicy/answer/143465?hl=en).
 
 ## Cost and Expected Results
 
-Remarketing usually costs less per click and per lead than campaigns aimed at new audiences, because the audience is smaller and warmer.
+Returning visitors may be more familiar with your offer, but a small audience can also limit delivery or increase frequency. Compare actual qualified-lead costs rather than assuming remarketing will always be cheaper than acquisition.
 
 - **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
 - **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
-- Results example: [ADD CASE STUDY – real before and after numbers]
+- **Measure outcomes:** compare spend, qualified enquiries and cost per qualified lead over comparable periods. Separate new-customer acquisition from returning-visitor results; no unsupported before-and-after case study is claimed.
 
 Remarketing performs best alongside Search campaigns that bring new visitors to your site. See our full [Google Ads Sri Lanka](/google-ads-sri-lanka) service.
 

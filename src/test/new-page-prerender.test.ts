@@ -16,7 +16,7 @@ describe("new-pages-only full HTML", () => {
   });
   it("includes the complete new article, canonical, original links and schema", () => {
     const html = newPageHtml(template, "/google-ads-cost-sri-lanka", markdown);
-    expect(html).toContain("Typical Cost per Click by Industry in Sri Lanka");
+    expect(html).toContain(markdownHtml(markdown));
     expect(html).toContain("Most businesses get the fastest return from Search ads first");
     expect(html).toContain('href="/google-ads-sri-lanka">Google Ads Sri Lanka</a>');
     expect(html).toContain('rel="canonical" href="https://cypherdigital.lk/google-ads-cost-sri-lanka"');

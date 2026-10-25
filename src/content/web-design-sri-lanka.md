@@ -6,7 +6,7 @@ Your website is often the first place a customer decides whether to trust your b
 
 Because we're also a [digital marketing agency in Sri Lanka](/), every website we build is planned around marketing from day one: SEO-ready structure, conversion tracking and pages designed for ads, not just a nice-looking homepage.
 
-[CONFIRM: confirm the scope you offer – design only, or full design and development – and adjust this paragraph if needed.]
+Your proposal should identify the agreed scope: design, development, content, integrations and launch support. Ask which items are included and which require a separate quote before authorising work.
 
 ## Why Your Business Needs a Professional Website
 
@@ -20,7 +20,7 @@ Because we're also a [digital marketing agency in Sri Lanka](/), every website w
 
 | Service | What it is | Best for |
 |---|---|---|
-| Business websites | 5–15 page websites presenting your services | SMEs, professional services, clinics, schools |
+| Business websites | An agreed set of pages presenting your services | SMEs, professional services, clinics, schools |
 | Landing pages | Single pages built to convert ad traffic | Google Ads and social media campaigns |
 | E-commerce websites | Online stores with products, cart and payments | Retail, fashion, food and product brands |
 | Website redesign | Rebuilding an outdated or slow website | Businesses with old or underperforming sites |
@@ -36,7 +36,7 @@ Learn more about our [landing page design](/landing-page-design-sri-lanka), [UI/
 - **Clear calls to action:** call, WhatsApp and enquiry buttons on every key page.
 - **Conversion tracking:** Google Analytics and tracking for forms, calls and WhatsApp clicks.
 - **Secure (HTTPS):** SSL certificate and basic security best practice.
-- **Easy updates:** [CONFIRM – content management approach, e.g. CMS or editable sections].
+- **Content updates:** agree how pages will be edited, who has access and whether changes are self-managed or handled through support. Do not assume a CMS or maintenance subscription is included.
 - **Sinhala, Tamil or English:** multi-language options where needed.
 
 ## Our Web Design Process
@@ -59,16 +59,16 @@ We set up the domain, hosting, Google Search Console and Analytics, and submit y
 ### 6. Grow
 After launch, we can help you get traffic through SEO, Google Ads and social media.
 
-## Web Design Packages and Prices in Sri Lanka
+## Web Design Scope and Pricing in Sri Lanka
 
-| Package | Price | Suitable for | Includes |
+| Project scope | Pricing | Suitable for | Items to specify in your quote |
 |---|---|---|---|
-| Starter | [ADD REAL PRICE] | Small businesses | [ADD REAL PAGE COUNT] pages, mobile design, contact and WhatsApp buttons, basic SEO |
-| Business | [ADD REAL PRICE] | Growing businesses | [ADD REAL PAGE COUNT] pages, service pages, blog, tracking, SEO setup |
-| E-commerce | [ADD REAL PRICE] | Online stores | Product catalogue, cart, payment gateway, delivery settings |
-| Custom | [ADD REAL PRICE] | Larger projects | Custom features, integrations, multi-language |
+| Starter business site | Request a quote | Small businesses | Agreed page count, mobile design, contact and WhatsApp buttons, SEO foundations |
+| Growing business site | Request a quote | Businesses with several services | Agreed page count, service pages, optional blog, tracking and SEO setup |
+| E-commerce | Request a quote | Online stores | Catalogue size, cart, payment-provider eligibility and delivery settings |
+| Custom | Request a quote | Projects with specialised requirements | Features, integrations, language versions, access and support arrangements |
 
-Domain, hosting and maintenance: [ADD REAL PRICES AND WHAT IS INCLUDED].
+Domain, hosting and maintenance should be itemised separately, including renewal charges, account ownership, backups, security updates and ongoing support. The rows above describe scopes to discuss, not confirmed fixed-price packages.
 
 Prices depend on the number of pages, features, content writing and integrations. We'll give you a fixed quote before work starts.
 
@@ -95,10 +95,10 @@ You can [see our work](/our-work), or read our [web design guide](/blog/web-desi
 ## Frequently Asked Questions
 
 ### How much does web design cost in Sri Lanka?
-It depends on the number of pages, features and whether you need e-commerce. Our packages start from [ADD REAL PRICE]. We'll give you a fixed quote after understanding your needs.
+Pricing depends on page count, content preparation, design complexity, e-commerce, integrations and ongoing support. Send your requirements for a written quote; no unconfirmed starting price is advertised. Compare quotes on the same scope and ask about hosting, domain renewals and maintenance.
 
 ### How long does it take to build a website?
-A business website usually takes [ADD REAL TIMEFRAME], and an e-commerce website [ADD REAL TIMEFRAME], depending on content and feedback.
+The schedule depends on the agreed page count, content readiness, approvals and integration work. E-commerce also needs product data, checkout and payment testing. Request milestones and a target launch date in the proposal; we do not advertise a fixed turnaround without reviewing the brief.
 
 ### Will my website be mobile-friendly?
 Yes. Every website we build is designed mobile-first and tested on phones, tablets and desktops.
@@ -107,7 +107,7 @@ Yes. Every website we build is designed mobile-first and tested on phones, table
 We build every site with SEO foundations and submit it to Google. Ranking for competitive searches usually also needs ongoing SEO and content.
 
 ### Do you provide hosting and a domain?
-[CONFIRM – whether you provide hosting and domain registration, and pricing.]
+Discuss domain registration, hosting and support when requesting your quote. Confirm who owns each account, renewal costs and which launch tasks are included. Hosting and domain charges are not assumed to be bundled into the website price.
 
 ### Can you redesign my existing website?
 Yes. We review your current website, keep what works, and rebuild it to be faster, clearer and better at generating enquiries.

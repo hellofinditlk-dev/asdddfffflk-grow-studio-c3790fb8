@@ -45,7 +45,7 @@ Many stores use a combination: Performance Max for reach, Standard Shopping for 
 - **Shopify** – Google & YouTube app connection and feed optimisation
 - **WooCommerce** – feed plugins and tracking setup
 - **Custom-built stores** – product feeds through files, scheduled fetches or the Content API
-- [ADD ANY OTHER PLATFORMS YOU SUPPORT]
+- **Other platforms** – send your store details for a compatibility review; platform support and integration work must be confirmed in the brief
 
 We also set up purchase tracking, so every sale is measured and campaigns can optimise for revenue.
 
@@ -66,7 +66,7 @@ Shopping ads are charged per click, and you set the budget.
 
 - **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
 - **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
-- Management fee: from [ADD REAL PRICE] per month
+- **Management fee:** request a quote after store, feed, tracking and target-market eligibility have been reviewed. Media spend and optional integration work should be itemised separately.
 
 For a full breakdown, see [Google Ads cost](/google-ads-cost-sri-lanka).
 
@@ -91,7 +91,7 @@ Yes. Shopping ads send people to product pages on your website, where they can b
 Google's guidance says a first submission to a target country may take up to **3 business days**, while product-status guidance allows **3–5 business days for Shopping ad reviews** and longer for some other destinations. Reviews and disapprovals can extend the timeline; this is not a guaranteed approval date. [Sources: feed submission](https://support.google.com/merchants/answer/188477?hl=en) and [product review status](https://support.google.com/merchants/answer/12488713?hl=en).
 
 ### What ROAS can I expect?
-It depends on your products, prices, margins and competition. We set targets based on your margins and share realistic expectations after reviewing your store. [ADD CASE STUDY when available.]
+There is no guaranteed ROAS. Review gross margin, delivery, payment fees, refunds and management costs before setting a target. For illustration only, a 25% contribution margin implies a 4× revenue-to-ad-spend ratio to cover ad spend before other fixed costs: 1 ÷ 0.25 = 4. This arithmetic is not a client result or a forecast for your store.
 
 ### Can you fix Merchant Center suspensions?
 Yes. We review the cause, which is often missing policies, price mismatches or website issues, fix it and request a review.

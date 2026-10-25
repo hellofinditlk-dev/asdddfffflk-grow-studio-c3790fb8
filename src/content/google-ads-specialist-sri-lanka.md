@@ -1,6 +1,6 @@
 # Google Ads Specialist in Sri Lanka – Campaign Setup and Management
 
-Industry and platform sources reviewed **25 October 2026**. Credentials, fees and client results require separate owner confirmation.
+Industry and platform sources reviewed **25 October 2026**. Check credential expiry dates and request a proposal for account-specific staffing, fees and reporting.
 
 Looking for a Google Ads specialist in Sri Lanka? At Cypher Digital, your campaigns are run by a dedicated specialist who knows your account, your industry and your goals, backed by a full team for design, video, landing pages and lead follow-up. You get the personal attention of a freelancer with the reliability, tools and accountability of a full-service [digital marketing agency in Sri Lanka](/).
 
@@ -42,15 +42,15 @@ Freelancers can be a good option for some businesses. Here is how the two compar
 | Lead follow-up support | Rare | Available through our [lead follow-up services](/lead-follow-up-services-sri-lanka) |
 | Tools and reporting | Varies | Standard reporting and tracking setup |
 | Accountability | Individual | Agency agreement and team oversight |
-| Cost | Often lower | [ADD REAL PRICE] per month |
+| Cost | Depends on scope | Request an account-specific quote; media spend is separate |
 
 For a deeper look, read our guide on [freelancer vs agency](/blog/freelancer-vs-digital-marketing-agency-sri-lanka). The same questions apply if you're also comparing [social media marketing companies in Sri Lanka](/social-media-management-sri-lanka) – one team managing both search and social keeps your message and reporting consistent.
 
-## Meet Our Google Ads Team
+## How to Assess Your Google Ads Specialist
 
-[ADD TEAM MEMBERS – name, role, years of experience, short bio and photo for each specialist]
+Before appointing a specialist, ask who will manage the account, what campaign types they have worked on and who covers their absence. Request a relevant work example with permission to share it, rather than choosing an agency on an unsupported experience claim.
 
-[ADD CERTIFICATION – only owner-verified, current credentials may be listed here.]
+Ask for current individual credentials where certification is important to your selection. No team-member biography, certification or Google Partner badge is claimed here without verifiable evidence.
 
 Google Ads certification is an individual credential, not proof of Google Partner status for an agency. Google's certification guidance states that credentials remain valid for **one year** and require reassessment to renew. Ask to see the person's current credential and expiry; this explains the standard, not a claim that our team holds an unverified certification. [Source: Google Ads certification](https://support.google.com/google-ads/answer/9702955?hl=en).
 
@@ -101,30 +101,30 @@ Whoever you hire, ask these questions first:
 
 We share more in our list of [questions to ask a digital agency](/blog/questions-to-ask-digital-agency-sri-lanka).
 
-## Results From Our Google Ads Specialists
+## How to Evaluate Google Ads Results
 
-[ADD CASE STUDY 1 – industry, starting situation, what we changed, results with real numbers, timeframe]
+A useful case study shows the measurement period, target market, media spend, campaign changes and the definition of a lead or sale. It should distinguish account-reported conversions from qualified enquiries and explain any change in budget, offer or landing page.
 
-[ADD CASE STUDY 2 – industry, starting situation, what we changed, results with real numbers, timeframe]
+For your own account, compare equal-length periods and record spend, valid leads, cost per qualified lead and sales follow-up outcomes. A reduction in CPC alone does not prove better business performance. We do not publish invented client names or before-and-after results.
 
 You can also [see our work](/our-work) across other channels.
 
 ## Frequently Asked Questions
 
 ### Are your Google Ads specialists certified?
-[CONFIRM – state the current Google Ads certifications held by the team.]
+Ask to see the current credential for the person proposed for your account. Google Ads certifications are individual and expire after one year; agency Partner status is separate. We do not assert unverified certification status on this page. [Source: Google certification guidance](https://support.google.com/google-ads/answer/9702955?hl=en).
 
 ### Will I have one point of contact?
 Yes. You will have a dedicated specialist who manages your account and attends your calls, supported by the wider team.
 
 ### How many accounts does each specialist manage?
-[ADD REAL NUMBER – we limit the number of accounts per specialist so every client gets proper attention.]
+Ask about the proposed specialist’s capacity, review schedule, response arrangements and holiday cover before appointing the team. A fixed accounts-per-person limit is not published here; the practical question is whether your account receives the agreed level of attention.
 
 ### Do I keep ownership of my Google Ads account?
 Yes. Your account is created in your business name, or we work inside your existing account. If you ever leave, the account and all its data stay with you.
 
 ### Is there a minimum contract?
-[CONFIRM – minimum term, notice period and lock-in policy.]
+Request the current agreement before deciding. It should specify the initial term, renewal arrangements, cancellation notice and handover of account access and assets. No unconfirmed no-lock-in or minimum-term policy is promised here.
 
 ### Can you take over an existing Google Ads account?
 Yes. We start with a full review, keep what is working, fix what is not and make changes gradually so performance isn't disrupted. You can begin with a free [Google Ads audit](/google-ads-audit-sri-lanka).

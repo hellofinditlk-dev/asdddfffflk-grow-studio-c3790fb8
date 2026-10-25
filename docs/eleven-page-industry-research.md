@@ -30,4 +30,4 @@ Unverifiable local price gaps are replaced with forecast guidance. LKR 100 CPC b
 - Actual Sri Lanka campaign forecasts/results before publishing local numeric CPC, CPV, CPM or CPL estimates.
 - Account-specific TikTok delivery eligibility, Meta payment methods and Google Ads LKR billing availability.
 
-Owner-only placeholders remain visible rather than being filled with competitors' prices or fabricated evidence. Publication requires owner approval.
+The owner subsequently requested completed articles on 25 October 2026. All editing placeholders have now been replaced with quote-based pricing, brief-specific delivery/scope guidance and evidence-assessment advice. Unknown team credentials and case studies are not claimed. The unresolved owner/account evidence above is still needed before advertising actual fees, fixed turnaround, certifications or local cost ranges; completing the prose does not verify those facts. Publication requires owner approval.
