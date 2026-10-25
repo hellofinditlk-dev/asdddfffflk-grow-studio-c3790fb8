@@ -29,4 +29,4 @@
 - [x] Build and verify Batch 2 articles 13–21 sequentially in the approved continued run; append ten sitemap entries while preserving all original entries; all 41 tests, nine raw-HTML checks and browser FAQ/image/mobile checks passed.
 - [x] Research article 12’s fifteen placeholders and replace them with cited publisher guidance, date caveats and honest quote requests; zero placeholder tokens remain, but current numeric rates were not verified.
 - [ ] Supply current dated publisher rate cards for article 12; public research did not verify 2026 prices for the listed publications.
-- [ ] Audit all ten Batch 2 articles and replace remaining empty details with sourced facts, labelled planning estimates or explicit quote-based wording; verify initial HTML and tests without inventing owner policies.
+- [x] Audit all ten Batch 2 articles and replace empty details with sourced facts, labelled planning estimates or explicit quote-based wording; zero ADD/CONFIRM placeholders remain and 41 rendering tests pass. Current publisher rates and actual owner policies remain unverified, not invented.
