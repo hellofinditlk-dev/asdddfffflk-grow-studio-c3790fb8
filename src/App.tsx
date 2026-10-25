@@ -25,6 +25,7 @@ const NewSeoPage8 = lazy(() => import("./pages/NewSeoPage8"));
 const NewSeoPage9 = lazy(() => import("./pages/NewSeoPage9"));
 const NewSeoPage10 = lazy(() => import("./pages/NewSeoPage10"));
 const NewSeoPage11 = lazy(() => import("./pages/NewSeoPage11"));
+const BatchTwoArticle12 = lazy(() => import("./pages/BatchTwoArticle12"));
 // Lazy load all other pages
 const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
@@ -308,6 +309,7 @@ const AppContent = () => {
               <Route path="/whatsapp-marketing-sri-lanka" element={<NewSeoPage9 />} />
               <Route path="/blog/google-ads-vs-google-adsense-sri-lanka" element={<NewSeoPage10 />} />
               <Route path="/web-design-sri-lanka" element={<NewSeoPage11 />} />
+              <Route path="/blog/newspaper-advertising-rates-sri-lanka" element={<BatchTwoArticle12 />} />
               <Route path="/google-ads-cost-sri-lanka" element={<GoogleAdsCost />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />

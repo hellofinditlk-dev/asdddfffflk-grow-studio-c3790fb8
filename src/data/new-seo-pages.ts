@@ -141,4 +141,15 @@ export const newSeoPages: NewSeoPage[] = [
   "cta": "Get a free website quote",
   "kind": "service"
 },
+  {
+    path: "/blog/newspaper-advertising-rates-sri-lanka",
+    contentFile: "src/content/newspaper-advertising-rates-sri-lanka.md",
+    title: "Newspaper Advertising Rates in Sri Lanka (2026 Guide) | Cypher Digital",
+    description: "Newspaper advertising rates in Sri Lanka for Sunday Times, Lankadeepa, Virakesari, Daily Mirror and more. Ad sizes, classifieds, booking and tips.",
+    primaryKeyword: "newspaper advertising rates sri lanka",
+    supportingKeywords: [],
+    breadcrumbLabel: "Newspaper Advertising Rates in Sri Lanka",
+    heroAlt: "Newspaper advertising rates in Sri Lanka – print ads in Sinhala, Tamil and English papers",
+    kind: "article",
+  },
 ];
