@@ -113,7 +113,9 @@ export const vacancies: Vacancy[] = [
       pay: [
         "You are paid per completed project, not a fixed monthly salary. The rate is shared in the brief before you accept the work.",
         "Rates vary with the number of leads, qualification questions and language. The brief sets out the scope and deadline.",
-        "The exact rate, any bonus, payment timing and method, and who covers call costs are not specified in this vacancy. Ask our coordinator to confirm these before accepting a project.",
+        "Before accepting, request a written total project fee, paid-trial fee, completion criteria, any bonus and an agreed payment date after approval. Public monthly call-centre salaries are not a reliable estimate for this part-time project role.",
+        "Call-budget estimate only: Dialog lists 400 any-network minutes for LKR 298 including tax, valid for 30 days. A hypothetical 100 connected calls averaging four minutes would use 400 minutes; retries, longer calls, internet and excess usage can increase the cost. Check operator eligibility for commercial calling before buying a plan. This is not a Cypher Digital reimbursement allowance or a promise of a supplied SIM.",
+        "Agree in writing whether calls are company-funded, reimbursed against records or paid by the caller, including any limit. Confirm the payment method and exact due date with the coordinator; bank transfer or another agreed method must not be assumed to be an approved agency policy.",
       ],
       confidentiality: ["Use lead details only for the assigned project; never share them, save them to personal contacts or use them for anything else.", "Delete project lead lists and records from your devices when the project ends.", "Never contact leads outside the project or for personal reasons.", "Call only within agreed hours and respect anyone who asks not to be called again.", "Every caller signs a confidentiality agreement."],
       selection: [
@@ -129,11 +131,14 @@ export const vacancies: Vacancy[] = [
       { q: "Can I do this from outside Colombo?", a: "Yes. The role is 100% from home, anywhere in Sri Lanka." },
       { q: "How many hours do I need to work?", a: "It depends on the projects you accept. Each brief tells you the number of leads, calling hours and deadline so you can plan your time." },
       { q: "Is this a sales job?", a: "You start the conversation and record what the person needs. The client's own sales team handles selling afterwards." },
-      { q: "Who pays for the phone calls?", a: "Call-cost arrangements have not been specified in this vacancy. Ask our coordinator to confirm who covers them before accepting a project." },
-      { q: "When and how do I get paid?", a: "Payment is project-based after approval. Exact timing, payment method and rates must be confirmed with our coordinator before you accept the project." },
+      { q: "Who pays for the phone calls?", a: "Confirm the funding arrangement and any limit in the written project brief before accepting. For budgeting only, Dialog lists 400 any-network minutes at LKR 298 including tax for 30 days; retries and excess usage may cost more, and commercial-use eligibility must be checked. This example is not an agency call-cost allowance." },
+      { q: "When and how do I get paid?", a: "You are paid per completed project after approval, not monthly. Agree the project fee, paid-trial fee, due date and payment method in writing before accepting. No fixed payment interval or bank-transfer policy is promised here." },
       { q: "Do I need experience?", a: "No. Clear speaking, reliability and a quiet place to work matter more. We train you before your first project." },
     ],
-    internalLinks: [{ label: "Lead follow-up services in Sri Lanka", href: "/lead-follow-up-services-sri-lanka", desc: "See the client service your calls support." }],
+    internalLinks: [
+      { label: "Lead follow-up services in Sri Lanka", href: "/lead-follow-up-services-sri-lanka", desc: "See the client service your calls support." },
+      { label: "Dialog voice tariff source", href: "https://dialog.lk/mobile/prepaid/plans/mini-voice-plans", desc: "Operator source for the illustrative call budget; checked 25 October 2026. Confirm current pricing and business-use eligibility." },
+    ],
   },
   {
     slug: "graphic-designer-jobs-sri-lanka",
