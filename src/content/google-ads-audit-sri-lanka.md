@@ -48,7 +48,7 @@ We review every part of the account that affects cost and results:
 
 1. **Request your audit** using the form on this page.
 2. **Give us read-only access** to your Google Ads account. We'll send simple instructions.
-3. **We review your account** manually. This usually takes [ADD REAL TIMEFRAME, e.g. 3–5 working days].
+3. **We review your account** manually. Request a delivery date after access is confirmed and the account size, tracking and campaign types have been assessed.
 4. **Walkthrough call.** We share the report and explain what to fix, in plain language.
 
 ## Common Problems We Find in Sri Lankan Accounts
@@ -85,7 +85,7 @@ Often the biggest gains come from the page people land on. If that's the problem
 Yes. There's no charge and no obligation to work with us afterwards.
 
 ### How long does the audit take?
-Usually [ADD REAL TIMEFRAME] from the time we receive read-only access, depending on the size of the account.
+The timeline depends on account size, campaign types and whether tracking access is ready. Ask for the report delivery date when your review is scheduled; an unconfirmed fixed turnaround is not promised here.
 
 ### What access do you need?
 Read-only access to your Google Ads account. If possible, we also ask for view access to Google Analytics so we can check what happens after the click.

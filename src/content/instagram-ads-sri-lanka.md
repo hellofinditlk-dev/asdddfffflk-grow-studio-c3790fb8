@@ -69,7 +69,7 @@ You set your own budget and can change or pause it at any time.
 - **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
 - **Cost per message or lead:** measure spend divided by valid conversations or leads; messages and qualified leads are different outcomes. No verified Sri Lanka-wide CPL range is claimed here.
 - **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
-- Management fee: from [ADD REAL PRICE] per month, or included in our [social media marketing packages Sri Lanka](/blog/social-media-marketing-packages)
+- **Management fee:** request a quote for your campaign scope. Compare our [social media marketing packages Sri Lanka](/blog/social-media-marketing-packages), then confirm whether ad management, creative and media spend are included in the option you choose.
 
 ## Boost Button vs Ads Manager – Why It Matters
 

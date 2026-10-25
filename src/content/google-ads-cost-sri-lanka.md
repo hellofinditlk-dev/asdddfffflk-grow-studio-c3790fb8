@@ -2,7 +2,7 @@
 
 Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
 
-Google Ads cost in Sri Lanka depends on two things: the money you pay Google for clicks (your ad spend) and the fee you pay an agency to manage the campaigns. There is no verified national starting budget that suits every Sri Lankan business. Set ad spend using a Sri Lanka-targeted keyword forecast; our management fee starts from [ADD REAL PRICE]. There is no fixed price per ad. You set your own budget, and you only pay Google when someone clicks your ad.
+Google Ads cost in Sri Lanka depends on two things: the money you pay Google for clicks (your ad spend) and the fee you pay an agency to manage the campaigns. There is no verified national starting budget that suits every Sri Lankan business. Set ad spend using a Sri Lanka-targeted keyword forecast; request a separate management quote based on the work your account needs. There is no fixed price per ad. You set your own budget, and you only pay Google when someone clicks your ad.
 
 This page explains exactly what you pay, what affects the price, and how to get more leads from the same budget. If you want a number for your own business, our team will send a free estimate within one hour.
 
@@ -26,7 +26,7 @@ Many business owners are confused about where their money goes, so we keep it si
 This is the money that buys clicks. It is charged by Google directly to your card or account. With Cypher Digital, the Google Ads account is created in your business name, so you always own it and can see every rupee spent.
 
 ### 2. Management fee (paid to Cypher Digital)
-This covers the work: keyword research, campaign setup, ad writing, conversion tracking, daily monitoring, bid adjustments, negative keywords, testing and monthly reporting. Our management packages start from [ADD REAL PRICE] per month.
+This covers the work: keyword research, campaign setup, ad writing, conversion tracking, daily monitoring, bid adjustments, negative keywords, testing and monthly reporting. Ask for a written management quote that separates setup, ongoing optimisation and optional creative work from media spend.
 
 | Cost item | Who you pay | What it covers |
 |---|---|---|
@@ -37,7 +37,7 @@ This covers the work: keyword research, campaign setup, ad writing, conversion t
 
 Keeping these separate means you can see exactly what Google charges and exactly what you pay for expertise.
 
-## Typical Cost per Click by Industry in Sri Lanka
+## How to Estimate Cost per Click by Industry in Sri Lanka
 
 Cost per click changes with competition, the precise keyword, location and campaign settings. We did not find a transparent Sri Lanka industry-CPC dataset, so the table below identifies what to forecast instead of presenting invented LKR ranges or claiming unpublished client results.
 
@@ -59,7 +59,7 @@ The number that matters more than CPC is **cost per lead**: how much you pay to 
 
 Choose a budget from forecast CPC and the number of clicks you can afford to test, not an invented national minimum. The examples below use an **assumed LKR 100 CPC purely to show the arithmetic**; that assumption is not researched Sri Lankan CPC, a Cypher package or a results forecast.
 
-| Business stage | Suggested monthly ad spend | Best for |
+| Illustrative test | Example media spend, not a recommendation | Planning context |
 |---|---|---|
 | Small illustrative test | LKR 20,000 = 200 clicks × assumed LKR 100 CPC | One focused offer; no promised leads |
 | Broader illustrative test | LKR 50,000 = 500 clicks × assumed LKR 100 CPC | More click data; feasibility depends on the real forecast |
@@ -113,15 +113,15 @@ Our job is not to spend your budget. It is to get more enquiries from it. This i
 
 If you already run Google Ads and suspect you are overspending, start with a [free Google Ads audit](/google-ads-audit-sri-lanka). We'll show you where the budget is leaking.
 
-## Our Google Ads Management Packages and Pricing
+## Google Ads Management Scope and How to Request Pricing
 
-| Package | Monthly fee | Suitable ad spend | Includes |
+| Scope to discuss | Pricing | Ad-spend planning | Work to include in your brief |
 |---|---|---|---|
-| Starter | [ADD REAL PRICE] | [ADD REAL RANGE] | Search campaign setup, conversion tracking, monthly report |
-| Growth | [ADD REAL PRICE] | [ADD REAL RANGE] | Search + remarketing, weekly optimisation, landing page review |
-| Performance | [ADD REAL PRICE] | [ADD REAL RANGE] | Search, Display, YouTube or Shopping, dedicated [Google Ads specialist](/google-ads-specialist-sri-lanka), fortnightly calls |
+| Focused Search account | Request a scope-based quote | Forecast one offer and service area | Search campaign setup, conversion tracking, reporting |
+| Search with eligible retargeting | Request a scope-based quote | Forecast acquisition and eligible audience size separately | Search, tracking, optimisation and landing-page review |
+| Multi-format campaign | Request a scope-based quote | Confirm target-country and format eligibility first | Search, YouTube or eligible Shopping; [Google Ads specialist](/google-ads-specialist-sri-lanka) and reporting scope to agree |
 
-All packages are run in an account you own. There are no hidden markups on your ad spend. For the full service, see [Google Ads Sri Lanka](/google-ads-sri-lanka). If you are setting up an account for the first time, our guide on [how to set up Google Ads](/blog/how-to-set-up-google-ads-sri-lanka) walks through the basics.
+These are planning scopes, not published fixed-price packages or confirmed ad-spend bands. Ask for account ownership, any media markup, reporting frequency and optional charges to be documented in the proposal. For the full service, see [Google Ads Sri Lanka](/google-ads-sri-lanka). If you are setting up an account for the first time, our guide on [how to set up Google Ads](/blog/how-to-set-up-google-ads-sri-lanka) walks through the basics.
 
 ## Google Ads Cost vs Facebook Ads Cost
 
@@ -144,7 +144,7 @@ There is no universal Sri Lankan daily budget we can responsibly quote. Use your
 Yes. Your ad spend is billed by Google directly to your payment method. Our management fee is invoiced separately, so you always know what goes to Google and what goes to us.
 
 ### How is the management fee charged?
-Our management fee is a fixed monthly amount based on your package, starting from [ADD REAL PRICE]. [CONFIRM: fixed fee only, or percentage of ad spend above a certain level?]
+Request a written quote for your account. It should state whether management is a fixed fee, a percentage of media spend or another agreed model, and whether setup, creative, landing pages, taxes and reporting are included. No unconfirmed starting price or billing model is advertised here.
 
 ### How soon will I see results?
 Ads can start showing within a day of approval, and many businesses receive enquiries in the first week. Cost per lead usually improves over the first 60–90 days as we refine keywords and bidding.

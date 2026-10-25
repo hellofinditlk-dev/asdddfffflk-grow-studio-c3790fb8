@@ -58,7 +58,7 @@ We handle creator selection, briefs, approvals and usage rights through our [inf
 - **Cost per 1,000 impressions:** auction-based; no credible Sri Lanka-specific CPM range was verified. Check targeting eligibility first, then forecast inside the eligible account.
 - **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
 - **Platform minimums in USD:** TikTok's July 2026 budget guidance says a campaign daily budget must exceed **US$50** and an ad-group daily budget must exceed **US$20**. These are nested limits, not two separate fees to add together. Ad-group lifetime budgets are based on US$20 × scheduled days. These rules do not confirm Sri Lanka targeting. [Source: TikTok budget guidance](https://ads.tiktok.com/help/article/budget?lang=en).
-- Management fee: from [ADD REAL PRICE] per month
+- **Management fee:** request a quote after account and target-market eligibility are confirmed. Video production, creator usage rights, management and media spend should be separated in the proposal.
 
 ## TikTok Ads vs Facebook and Instagram Ads
 
