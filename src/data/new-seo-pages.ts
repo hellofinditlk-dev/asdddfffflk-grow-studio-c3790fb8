@@ -185,4 +185,70 @@ export const newSeoPages: NewSeoPage[] = [
   "supportingKeywords": [],
   "kind": "article"
 },
+{
+  "path": "/blog/web-design-price-sri-lanka",
+  "title": "Web Design Price in Sri Lanka (2026) – Packages & Costs Explained",
+  "description": "How much does web design cost in Sri Lanka? Compare low-cost, business and e-commerce website prices, hidden costs and what each package should include.",
+  "breadcrumbLabel": "Web Design Price in Sri Lanka",
+  "heroAlt": "Web design price in Sri Lanka – website packages compared",
+  "contentFile": "src/content/web-design-price-sri-lanka.md",
+  "primaryKeyword": "web design price sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/student-lead-generation-sri-lanka",
+  "title": "Student Lead Generation in Sri Lanka – Guide for Schools & Campuses",
+  "description": "How Sri Lankan campuses, private schools and tuition classes generate student leads online with Google, Facebook, TikTok, landing pages and fast follow-up.",
+  "breadcrumbLabel": "Student Lead Generation in Sri Lanka",
+  "heroAlt": "Student lead generation in Sri Lanka – students enquiring about courses online",
+  "contentFile": "src/content/student-lead-generation-sri-lanka.md",
+  "primaryKeyword": "student lead generation sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/hire-social-media-manager-sri-lanka",
+  "title": "Hire a Social Media Manager in Sri Lanka: In-House vs Agency (2026)",
+  "description": "Should you hire a social media manager in Sri Lanka or outsource to an agency? Compare costs, skills, workload and results to choose the right option.",
+  "breadcrumbLabel": "Hire a Social Media Manager in Sri Lanka",
+  "heroAlt": "Hiring a social media manager in Sri Lanka – in-house vs agency",
+  "contentFile": "src/content/hire-social-media-manager-sri-lanka.md",
+  "primaryKeyword": "hire social media manager sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/youtube-seo-sri-lanka",
+  "title": "YouTube SEO in Sri Lanka – How to Rank Your Videos (2026 Guide)",
+  "description": "Learn YouTube SEO for Sri Lankan businesses: keyword research in Sinhala and English, titles, thumbnails, descriptions, Shorts and how to grow views.",
+  "breadcrumbLabel": "YouTube SEO in Sri Lanka",
+  "heroAlt": "YouTube SEO in Sri Lanka – optimising video titles and thumbnails",
+  "contentFile": "src/content/youtube-seo-sri-lanka.md",
+  "primaryKeyword": "youtube seo sri lanka",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/sri-lanka-tv-channels-advertising-guide",
+  "title": "TV Channels in Sri Lanka for Advertising – 2026 Guide | Cypher Digital",
+  "description": "A guide to Sri Lanka's main TV channels for advertisers: Sinhala, Tamil and English channels, audiences, prime time, ad formats and how to book.",
+  "breadcrumbLabel": "TV Channels in Sri Lanka for Advertising",
+  "heroAlt": "TV channels in Sri Lanka for advertising – Sinhala, Tamil and English TV",
+  "contentFile": "src/content/sri-lanka-tv-channels-advertising-guide.md",
+  "primaryKeyword": "sri lanka tv channels advertising guide",
+  "supportingKeywords": [],
+  "kind": "article"
+},
+{
+  "path": "/blog/social-media-statistics-sri-lanka-2026",
+  "title": "Social Media Statistics Sri Lanka 2026 – Usage, Platforms & Trends",
+  "description": "Social media usage in Sri Lanka in 2026: users by platform, age groups, mobile use, peak times and trends, with what it means for your marketing.",
+  "breadcrumbLabel": "Social Media Statistics Sri Lanka 2026",
+  "heroAlt": "Social media statistics Sri Lanka 2026 – users by platform chart",
+  "contentFile": "src/content/social-media-statistics-sri-lanka-2026.md",
+  "primaryKeyword": "social media statistics sri lanka 2026",
+  "supportingKeywords": [],
+  "kind": "article"
+},
 ];
