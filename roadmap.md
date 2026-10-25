@@ -30,4 +30,4 @@
 - [x] Research article 12’s fifteen placeholders and replace them with cited publisher guidance, date caveats and honest quote requests; zero placeholder tokens remain, but current numeric rates were not verified.
 - [ ] Supply current dated publisher rate cards for article 12; public research did not verify 2026 prices for the listed publications.
 - [x] Audit all ten Batch 2 articles and replace empty details with sourced facts, labelled planning estimates or explicit quote-based wording; zero ADD/CONFIRM placeholders remain and 41 rendering tests pass. Current publisher rates and actual owner policies remain unverified, not invented.
-- [ ] Check earlier blog articles and first-batch content for empty details; repair genuine placeholders only, preserving existing URLs and layouts.
+- [x] Check earlier blog articles and first-batch content for empty details: scanned all 168 BlogPost files and 23 Markdown files; no unresolved content markers or confirmed blank price tables found. Quote-required text is intentional, not an empty field; no article changes needed.
