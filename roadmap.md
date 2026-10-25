@@ -15,3 +15,4 @@
 - [x] Remove the team and partner-call sections from the direct-only white-label page.
 - [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.
 - [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
+- [ ] Add the eleven supplied SEO pages sequentially, starting with Google Ads Cost; awaiting approval for additive route registration and new-page-only full HTML delivery because the current raw HTML omits complete page content.
