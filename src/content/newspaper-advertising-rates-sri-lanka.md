@@ -17,7 +17,7 @@ The final price depends on:
 - **Colour or black and white:** colour ads cost more.
 - **Size:** larger ads cost more, but the cost per col cm can fall for bigger bookings.
 - **Frequency:** booking several insertions can reduce the price per ad.
-- **Taxes:** published rates may or may not include VAT and other taxes. [CONFIRM current tax treatment]
+- **Taxes:** published rates may or may not include VAT and other taxes. Lake House’s official supplement page states that its listed rates exclude tax; confirm the tax-inclusive total for the specific booking. [Lake House supplement rates](https://lakehouse.lk/supplement/)
 
 ## Newspaper Advertising Rates by Publication
 
@@ -25,23 +25,23 @@ The table below gives a guide. Rates change often, so always confirm the latest 
 
 | Newspaper | Language | Typical display rate | Notes |
 |---|---|---|---|
-| Sunday Times | English | [ADD CURRENT RATE] | Strong reach with English-speaking, professional readers |
-| Daily Mirror | English | [ADD CURRENT RATE] | Daily business and urban audience |
-| Sunday Observer / Daily News | English | [ADD CURRENT RATE] | State-owned English papers |
-| Lankadeepa / Sunday Lankadeepa | Sinhala | [ADD CURRENT RATE] | Large Sinhala readership |
-| Divaina / Silumina | Sinhala | [ADD CURRENT RATE] | Wide island-wide reach |
-| Virakesari / Sunday Virakesari | Tamil | [ADD CURRENT RATE] | Leading Tamil-language newspaper |
-| Thinakaran | Tamil | [ADD CURRENT RATE] | State-owned Tamil paper |
+| Sunday Times | English | Request a current, dated publisher quote; current public rate not verified | Strong reach with English-speaking, professional readers |
+| Daily Mirror | English | Request a current, dated publisher quote; current public rate not verified | Daily business and urban audience |
+| Sunday Observer / Daily News | English | Request separate current rates for each title; the located Lake House main-paper card is effective 1 January 2023, not a verified 2026 rate | State-owned English papers |
+| Lankadeepa / Sunday Lankadeepa | Sinhala | Request separate current daily and Sunday edition quotes; current public rates not verified | Large Sinhala readership |
+| Divaina / Silumina | Sinhala | Request separate publisher quotes; Silumina’s located Lake House card is dated 2023 and does not establish Divaina’s price | Wide island-wide reach |
+| Virakesari / Sunday Virakesari | Tamil | Request separate current edition quotes; current public rates not verified | Leading Tamil-language newspaper |
+| Thinakaran | Tamil | Request a current publisher quote; the located Lake House main-paper card is dated 2023 | State-owned Tamil paper |
 
-[CONFIRM: check each publisher's current rate card, colour surcharges and Sunday premiums before publishing this table.]
+Research checked on 25 October 2026: no current, dated official public rate card was verified for every title in this table. The [Lake House main-paper card](https://lakehouse.lk/main-papers/) is effective 1 January 2023 and must not be presented as current pricing. Request the selected title’s current card, including colour and placement surcharges, taxes and Sunday premiums, through [Wijeya Newspapers’ rate-card page](https://wijeyanewspapers.lk/rate-card.html), [Lake House advertising](https://lakehouse.lk/advertise-with-us/) or [Virakesari’s advertising contact](https://www.virakesari.lk/contact), as appropriate.
 
 ## Classified Ads vs Display Ads
 
 | Type | What it is | Typical pricing | Best for |
 |---|---|---|---|
-| Classified ads | Short text ads in the classifieds section | Per word or per line – [ADD CURRENT RATE] | Property, vehicles, jobs, services, marriage proposals |
+| Classified ads | Short text ads in the classifieds section | Per word or per line; request the current title-, language- and category-specific tariff | Property, vehicles, jobs, services, marriage proposals |
 | Display ads | Designed ads with images and branding | Per col cm or per page size | Brand campaigns, launches, promotions, education intakes |
-| Supplements & advertorials | Sponsored articles or special sections | Package pricing – [ADD CURRENT RATE] | Detailed stories, corporate news, sector features |
+| Supplements & advertorials | Sponsored articles or special sections | Request a format- and insertion-specific quote; no universal current package price was verified | Detailed stories, corporate news, sector features |
 
 ## Sunday Papers vs Weekday Papers
 
@@ -53,7 +53,7 @@ Weekday papers work well for time-sensitive offers, recruitment and announcement
 
 1. **Choose the paper and language** that match your audience.
 2. **Choose the size, page and colour** that fit your budget.
-3. **Check deadlines.** Sunday papers usually close bookings several days earlier. [CONFIRM typical deadlines]
+3. **Check deadlines.** Deadlines depend on the title, section and artwork format. [Lake House’s published submission schedule](https://lakehouse.lk/deadline-for-submission-of-advertising-materials/) gives different cut-offs for different sections; confirm the selected publication’s current cut-off before booking rather than applying one deadline to all Sunday papers.
 4. **Prepare artwork** in the correct size and format.
 5. **Book through the newspaper's advertising department or an agent**, and get written confirmation of size, page and date.
 6. **Check the printed ad** on the day it appears.
@@ -78,13 +78,13 @@ Many Sri Lankan businesses now combine both: a Sunday newspaper ad for credibili
 ## Frequently Asked Questions
 
 ### How much does a newspaper ad cost in Sri Lanka?
-It depends on the paper, size, page, colour and day. Small classified ads can cost [ADD CURRENT RATE], while full-page colour ads in Sunday papers can cost [ADD CURRENT RATE] or more.
+It depends on the paper, size, page, colour and day. A reliable current price for classified or full-page colour ads cannot be stated from the dated official cards located. Request a written quote specifying title, edition, size, colour, section, placement, tax and publication date; do not apply one newspaper’s price to another.
 
 ### Which newspaper is best for advertising in Sri Lanka?
 It depends on your audience. English papers like the Sunday Times and Daily Mirror suit professional and business audiences, Sinhala papers like Lankadeepa and Divaina offer wide island-wide reach, and Tamil papers like Virakesari reach Tamil-speaking readers.
 
 ### How far in advance should I book?
-Usually several days before publication, and earlier for Sunday editions and premium pages. [CONFIRM typical deadlines]
+There is no verified universal lead time. Deadlines vary by newspaper and section; confirm booking and artwork cut-offs directly with the publisher. [Lake House’s submission schedule](https://lakehouse.lk/deadline-for-submission-of-advertising-materials/) illustrates why section-specific checks matter.
 
 ### Can an agency get better newspaper rates?
 Agencies that book regularly may access better placement and can manage several papers, design and scheduling for you. Ask for a quote from our [newspaper advertising in Sri Lanka](/newspaper-advertising-sri-lanka) team.

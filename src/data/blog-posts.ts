@@ -7,6 +7,69 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+{
+  "slug": "social-media-statistics-sri-lanka-2026",
+  "title": "Social Media Statistics Sri Lanka 2026 – Usage, Platforms and Trends",
+  "excerpt": "Social media usage in Sri Lanka in 2026: users by platform, age groups, mobile use, peak times and trends, with what it means for your marketing.",
+  "date": "2026-10-25",
+  "keyword": "social media statistics sri lanka 2026"
+},
+{
+  "slug": "sri-lanka-tv-channels-advertising-guide",
+  "title": "TV Channels in Sri Lanka for Advertising – A 2026 Guide",
+  "excerpt": "A guide to Sri Lanka's main TV channels for advertisers: Sinhala, Tamil and English channels, audiences, prime time, ad formats and how to book.",
+  "date": "2026-10-25",
+  "keyword": "sri lanka tv channels advertising guide"
+},
+{
+  "slug": "youtube-seo-sri-lanka",
+  "title": "YouTube SEO in Sri Lanka – How to Get Your Videos Found",
+  "excerpt": "Learn YouTube SEO for Sri Lankan businesses: keyword research in Sinhala and English, titles, thumbnails, descriptions, Shorts and how to grow views.",
+  "date": "2026-10-25",
+  "keyword": "youtube seo sri lanka"
+},
+{
+  "slug": "hire-social-media-manager-sri-lanka",
+  "title": "Hiring a Social Media Manager in Sri Lanka – In-House or Agency?",
+  "excerpt": "Should you hire a social media manager in Sri Lanka or outsource to an agency? Compare costs, skills, workload and results to choose the right option.",
+  "date": "2026-10-25",
+  "keyword": "hire social media manager sri lanka"
+},
+{
+  "slug": "student-lead-generation-sri-lanka",
+  "title": "Student Lead Generation in Sri Lanka – How Schools and Campuses Fill Intakes",
+  "excerpt": "How Sri Lankan campuses, private schools and tuition classes generate student leads online with Google, Facebook, TikTok, landing pages and fast follow-up.",
+  "date": "2026-10-25",
+  "keyword": "student lead generation sri lanka"
+},
+{
+  "slug": "web-design-price-sri-lanka",
+  "title": "Web Design Price in Sri Lanka – What Should a Website Cost in 2026?",
+  "excerpt": "How much does web design cost in Sri Lanka? Compare low-cost, business and e-commerce website prices, hidden costs and what each package should include.",
+  "date": "2026-10-25",
+  "keyword": "web design price sri lanka"
+},
+{
+  "slug": "facebook-boost-price-sri-lanka",
+  "title": "Facebook Boost Price in Sri Lanka – How Much Does It Cost?",
+  "excerpt": "How much does it cost to boost a Facebook post in Sri Lanka? See typical budgets, what you get, and when Ads Manager or a package works better.",
+  "date": "2026-10-25",
+  "keyword": "facebook boost price sri lanka"
+},
+{
+  "slug": "meta-ads-payment-sri-lanka",
+  "title": "How to Pay for Facebook and Instagram Ads in Sri Lanka",
+  "excerpt": "Card declined on Meta Ads? Learn how to pay for Facebook and Instagram ads in Sri Lanka: cards, local billing, prepaid funds, agencies and common fixes.",
+  "date": "2026-10-25",
+  "keyword": "meta ads payment sri lanka"
+},
+{
+  "slug": "ads-support-sri-lanka",
+  "title": "Which Ad Platforms Work in Sri Lanka? A Guide to Ads Support in 2026",
+  "excerpt": "Do Google, YouTube, Facebook, Instagram, LinkedIn and TikTok ads work in Sri Lanka? See which platforms support Sri Lankan advertisers and how to start.",
+  "date": "2026-10-25",
+  "keyword": "ads support sri lanka"
+},
   {
     slug: "newspaper-advertising-rates-sri-lanka",
     title: "Newspaper Advertising Rates in Sri Lanka – 2026 Guide",

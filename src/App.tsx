@@ -26,6 +26,15 @@ const NewSeoPage9 = lazy(() => import("./pages/NewSeoPage9"));
 const NewSeoPage10 = lazy(() => import("./pages/NewSeoPage10"));
 const NewSeoPage11 = lazy(() => import("./pages/NewSeoPage11"));
 const BatchTwoArticle12 = lazy(() => import("./pages/BatchTwoArticle12"));
+const BatchTwoArticle13 = lazy(() => import("./pages/BatchTwoArticle13"));
+const BatchTwoArticle14 = lazy(() => import("./pages/BatchTwoArticle14"));
+const BatchTwoArticle15 = lazy(() => import("./pages/BatchTwoArticle15"));
+const BatchTwoArticle16 = lazy(() => import("./pages/BatchTwoArticle16"));
+const BatchTwoArticle17 = lazy(() => import("./pages/BatchTwoArticle17"));
+const BatchTwoArticle18 = lazy(() => import("./pages/BatchTwoArticle18"));
+const BatchTwoArticle19 = lazy(() => import("./pages/BatchTwoArticle19"));
+const BatchTwoArticle20 = lazy(() => import("./pages/BatchTwoArticle20"));
+const BatchTwoArticle21 = lazy(() => import("./pages/BatchTwoArticle21"));
 // Lazy load all other pages
 const SocialMediaManagement = lazy(() => import("./pages/SocialMediaManagement"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
@@ -310,6 +319,15 @@ const AppContent = () => {
               <Route path="/blog/google-ads-vs-google-adsense-sri-lanka" element={<NewSeoPage10 />} />
               <Route path="/web-design-sri-lanka" element={<NewSeoPage11 />} />
               <Route path="/blog/newspaper-advertising-rates-sri-lanka" element={<BatchTwoArticle12 />} />
+              <Route path="/blog/ads-support-sri-lanka" element={<BatchTwoArticle13 />} />
+              <Route path="/blog/meta-ads-payment-sri-lanka" element={<BatchTwoArticle14 />} />
+              <Route path="/blog/facebook-boost-price-sri-lanka" element={<BatchTwoArticle15 />} />
+              <Route path="/blog/web-design-price-sri-lanka" element={<BatchTwoArticle16 />} />
+              <Route path="/blog/student-lead-generation-sri-lanka" element={<BatchTwoArticle17 />} />
+              <Route path="/blog/hire-social-media-manager-sri-lanka" element={<BatchTwoArticle18 />} />
+              <Route path="/blog/youtube-seo-sri-lanka" element={<BatchTwoArticle19 />} />
+              <Route path="/blog/sri-lanka-tv-channels-advertising-guide" element={<BatchTwoArticle20 />} />
+              <Route path="/blog/social-media-statistics-sri-lanka-2026" element={<BatchTwoArticle21 />} />
               <Route path="/google-ads-cost-sri-lanka" element={<GoogleAdsCost />} />
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
