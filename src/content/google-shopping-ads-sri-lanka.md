@@ -1,6 +1,8 @@
 # Google Shopping Ads in Sri Lanka – Sell More Products Online
 
-Google Shopping ads show your products, with image, price and store name, at the top of Google when people search for what you sell. For online stores, they are often the most direct way to turn searches into sales. At Cypher Digital, we set up Google Merchant Center, optimise your product feed and manage Shopping and Performance Max campaigns with one focus: profitable sales.
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
+Google Shopping ads show your products, with image, price and store name, at the top of Google when people search for what you sell. For online stores, they are often the most direct way to turn searches into sales. At Cypher Digital, we assess target-country eligibility before recommending Merchant Center, product feeds, Shopping or Performance Max campaigns. This page explains options for Sri Lankan businesses; it does not promise Shopping-ad delivery inside Sri Lanka.
 
 ## What Are Google Shopping Ads and Performance Max?
 
@@ -12,7 +14,7 @@ Both are powered by your product feed, the list of products, prices and details 
 
 ## Is Google Shopping Available for Sri Lankan Stores?
 
-[CONFIRM CURRENT GOOGLE ELIGIBILITY FOR SRI LANKA – check Google Merchant Center's current list of supported countries for Shopping ads and free listings, and whether Sri Lankan stores can target Sri Lanka and/or overseas markets. Write 2–3 sentences explaining the current position and what it means for local and export-focused stores. Do not guess.]
+Google's supported-country guidance does **not list Sri Lanka as a target country for Shopping ads and free listings**. Do not assume that Merchant Center product ads can serve to shoppers in Sri Lanka. A Sri Lankan exporter may explore supported overseas destinations if its store meets the destination's currency, language, shipping and policy requirements; check Merchant Center's current country selector before launch. [Sources: Google supported target countries](https://support.google.com/merchants/answer/12472394?hl=en) and [multi-country setup](https://support.google.com/merchants/answer/15404838?hl=en).
 
 If Shopping ads are not available for your target market, Performance Max and Search campaigns can still promote your products effectively, and we'll recommend the best option for your store.
 
@@ -62,8 +64,8 @@ Clicks are not the goal. Sales are. We manage Shopping campaigns around **return
 
 Shopping ads are charged per click, and you set the budget.
 
-- Typical cost per click: [ADD REAL RANGE]
-- Suggested starting budget: [ADD REAL LKR AMOUNT] per month
+- **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
+- **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
 - Management fee: from [ADD REAL PRICE] per month
 
 For a full breakdown, see [Google Ads cost](/google-ads-cost-sri-lanka).
@@ -86,7 +88,7 @@ Strong product images and packaging also improve click-through rates. Our [packa
 Yes. Shopping ads send people to product pages on your website, where they can buy. The website must show prices, policies and a working checkout.
 
 ### How long does product feed approval take?
-Google usually reviews new feeds within [CONFIRM – current typical review time]. We fix any disapprovals as they appear.
+Google's guidance says a first submission to a target country may take up to **3 business days**, while product-status guidance allows **3–5 business days for Shopping ad reviews** and longer for some other destinations. Reviews and disapprovals can extend the timeline; this is not a guaranteed approval date. [Sources: feed submission](https://support.google.com/merchants/answer/188477?hl=en) and [product review status](https://support.google.com/merchants/answer/12488713?hl=en).
 
 ### What ROAS can I expect?
 It depends on your products, prices, margins and competition. We set targets based on your margins and share realistic expectations after reviewing your store. [ADD CASE STUDY when available.]

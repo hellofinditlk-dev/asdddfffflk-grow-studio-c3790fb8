@@ -1,5 +1,7 @@
 # Google Remarketing in Sri Lanka – Win Back Lost Visitors
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 Most people who visit your website leave without calling, messaging or buying. They're comparing options, checking prices or simply busy. Google remarketing brings them back by showing your ads again while they search on Google, browse websites or watch YouTube.
 
 At Cypher Digital, we build remarketing audiences, create ads that remind people why they visited, and control how often they see them, so you win back interested customers without annoying them.
@@ -65,8 +67,8 @@ Remarketing relies on cookies and website tags, so we set it up responsibly:
 
 Remarketing usually costs less per click and per lead than campaigns aimed at new audiences, because the audience is smaller and warmer.
 
-- Typical cost per click: [ADD REAL RANGE]
-- Suggested starting budget: [ADD REAL LKR AMOUNT] per month
+- **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
+- **Starting budget:** agree a capped test based on forecast traffic and your goal. For CPC planning, estimated media spend = planned clicks × forecast CPC; this does not include management or creative fees.
 - Results example: [ADD CASE STUDY – real before and after numbers]
 
 Remarketing performs best alongside Search campaigns that bring new visitors to your site. See our full [Google Ads Sri Lanka](/google-ads-sri-lanka) service.
@@ -77,7 +79,7 @@ Remarketing is not just for e-commerce. It works well for:
 
 - **Real estate:** people who viewed a project page but didn't book a site visit
 - **Education:** students who viewed a course but didn't apply
-- **Healthcare:** patients who viewed a service but didn't book
+- **Healthcare:** personalised targeting based on health conditions or sensitive service-page visits is restricted. Assess Google's personalised-advertising rules first; do not create sensitive patient audiences
 - **Hotels:** travellers who checked rooms but didn't reserve
 - **B2B:** decision-makers who read your services but didn't contact you
 
@@ -86,7 +88,7 @@ To understand the difference between campaign types, read [Search vs Display ads
 ## Frequently Asked Questions
 
 ### How many website visitors do I need for remarketing?
-Google requires a minimum audience size before ads can serve: [CONFIRM – current minimum list sizes for Display and Search/YouTube]. If your traffic is low, we'll combine remarketing with campaigns that bring in more visitors.
+Google's current guidance lists at least **100 active visitors or users in the last 30 days** for website data segments on Display, Search and YouTube. Eligible active users are not the same as total website visits, and network compatibility and policy checks still apply. Older Customer Match lists uploaded before 1 February 2024 retain a different 1,000-matched-user requirement unless refreshed. Check Audience manager for the segment's actual serving status. [Source: Google data-segment requirements](https://support.google.com/google-ads/answer/2472738?hl=en).
 
 ### How long do people stay on remarketing lists?
 You choose. We usually set durations based on how long customers take to decide, from a few days for e-commerce to several months for property or education.

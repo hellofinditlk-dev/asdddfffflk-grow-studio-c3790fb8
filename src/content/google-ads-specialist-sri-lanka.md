@@ -1,4 +1,6 @@
-# Google Ads Specialist in Sri Lanka – Certified Experts Managing Your Ads
+# Google Ads Specialist in Sri Lanka – Campaign Setup and Management
+
+Industry and platform sources reviewed **25 October 2026**. Credentials, fees and client results require separate owner confirmation.
 
 Looking for a Google Ads specialist in Sri Lanka? At Cypher Digital, your campaigns are run by a dedicated specialist who knows your account, your industry and your goals, backed by a full team for design, video, landing pages and lead follow-up. You get the personal attention of a freelancer with the reliability, tools and accountability of a full-service [digital marketing agency in Sri Lanka](/).
 
@@ -48,7 +50,9 @@ For a deeper look, read our guide on [freelancer vs agency](/blog/freelancer-vs-
 
 [ADD TEAM MEMBERS – name, role, years of experience, short bio and photo for each specialist]
 
-[ADD CERTIFICATION – e.g. Google Ads certifications held by the team, Google Partner status if applicable. Only list what is current and verifiable.]
+[ADD CERTIFICATION – only owner-verified, current credentials may be listed here.]
+
+Google Ads certification is an individual credential, not proof of Google Partner status for an agency. Google's certification guidance states that credentials remain valid for **one year** and require reassessment to renew. Ask to see the person's current credential and expiry; this explains the standard, not a claim that our team holds an unverified certification. [Source: Google Ads certification](https://support.google.com/google-ads/answer/9702955?hl=en).
 
 ## What You Get When You Work With Us
 

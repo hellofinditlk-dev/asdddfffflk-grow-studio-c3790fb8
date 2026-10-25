@@ -1,10 +1,12 @@
 # TikTok Ads in Sri Lanka – Advertising Where Your Audience Scrolls
 
-TikTok has become one of the fastest ways to reach young Sri Lankans, and many older audiences too. TikTok ads let you appear in the For You feed with videos that feel like native content, not interruptions. At Cypher Digital, we create TikTok-style videos, run the campaigns, and work with creators to make your brand part of the conversation.
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
+TikTok has become one of the fastest ways to reach young Sri Lankans, and many older audiences too. TikTok ads let you appear in the For You feed with videos that feel like native content, not interruptions. At Cypher Digital, we create TikTok-style videos and work with creators; paid campaigns are subject to account, placement and target-country eligibility checks before launch.
 
 ## Who Is on TikTok in Sri Lanka?
 
-[ADD REAL STAT – TikTok users or ad reach in Sri Lanka, age breakdown if available, with source and date.]
+DataReportal's Digital 2026 report estimates **6.79 million potential TikTok ad reach among adults aged 18+ in Sri Lanka in late 2025**, equivalent to 39.7% of the adult population. These are advertising-tool estimates, not active-user counts, and exclude under-18s from the reported audience. They do not establish that a particular advertiser account can target Sri Lanka. [Source: Digital 2026 — Sri Lanka](https://datareportal.com/reports/digital-2026-sri-lanka).
 
 TikTok works especially well for:
 
@@ -24,11 +26,11 @@ TikTok works especially well for:
 | TopView | First video people see when opening the app | Large-scale launches (higher budgets) |
 | Branded effects & hashtag challenges | Filters or challenges people use in their own videos | Big brand campaigns and engagement |
 
-For most Sri Lankan businesses, In-Feed and Spark Ads give the best balance of cost and results.
+In-Feed and Spark Ads are options to assess where the advertiser account and target market support them. For a Sri Lankan audience, verify paid-placement eligibility before choosing the format.
 
 ## Is TikTok Ads Manager Available for Sri Lankan Advertisers?
 
-[CONFIRM CURRENT AVAILABILITY – check TikTok Ads Manager's current list of supported advertiser countries and targeting locations, and whether Sri Lankan businesses can advertise directly, through an agency account or not at all. Write 2–3 sentences explaining the current position. Do not guess.]
+Sri Lanka is **not listed** in TikTok's published countries for self-serve ad account creation in Business Center (list updated November 2025). Advertiser registration and targeting availability are separate: an overseas or managed account does not automatically establish that Sri Lanka is selectable for TikTok-feed delivery. Confirm the account's registration country, placement and location options before committing ad spend; we do not promise local paid delivery without that check. [Source: TikTok self-serve account countries](https://ads.tiktok.com/help/article/available-countries-and-regions-for-ad-account-creation-in-bc).
 
 If direct advertising isn't available for your situation, we'll recommend alternatives, such as creator partnerships and organic [TikTok marketing](/tiktok-marketing-sri-lanka), to still reach your audience on the platform.
 
@@ -53,9 +55,9 @@ We handle creator selection, briefs, approvals and usage rights through our [inf
 
 ## TikTok Ads Cost in Sri Lanka
 
-- Typical cost per 1,000 impressions: [ADD REAL RANGE]
-- Typical cost per click: [ADD REAL RANGE]
-- Minimum budgets: [CONFIRM – TikTok's current minimum campaign and ad group daily budgets]
+- **Cost per 1,000 impressions:** auction-based; no credible Sri Lanka-specific CPM range was verified. Check targeting eligibility first, then forecast inside the eligible account.
+- **Cost per click:** no transparent Sri Lanka-wide benchmark was verified. Forecast the specific audience, product or keywords in the relevant ad account and compare actual CPC after launch.
+- **Platform minimums in USD:** TikTok's July 2026 budget guidance says a campaign daily budget must exceed **US$50** and an ad-group daily budget must exceed **US$20**. These are nested limits, not two separate fees to add together. Ad-group lifetime budgets are based on US$20 × scheduled days. These rules do not confirm Sri Lanka targeting. [Source: TikTok budget guidance](https://ads.tiktok.com/help/article/budget?lang=en).
 - Management fee: from [ADD REAL PRICE] per month
 
 ## TikTok Ads vs Facebook and Instagram Ads
@@ -83,7 +85,7 @@ TikTok ads are part of our wider [social media advertising in Sri Lanka](/social
 ## Frequently Asked Questions
 
 ### What is the minimum budget for TikTok ads?
-TikTok sets minimum daily budgets for campaigns and ad groups: [CONFIRM current minimums]. We recommend at least [ADD REAL LKR AMOUNT] per month to test enough creative.
+TikTok's published daily-budget thresholds are above US$50 at campaign level and above US$20 at ad-group level. Its lifetime-budget example for a 31-day ad group is US$20 × 31 = US$620. This is a platform example, not Cypher's fee or a Sri Lankan monthly recommendation; exchange rates, bank charges and account eligibility must be checked separately. [Source: TikTok budget guidance](https://ads.tiktok.com/help/article/budget?lang=en).
 
 ### Is TikTok right for B2B businesses?
 TikTok is strongest for consumer brands. Some B2B businesses use it for employer branding or education, but LinkedIn and Google usually perform better for direct B2B leads.

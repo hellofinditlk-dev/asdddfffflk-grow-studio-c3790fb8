@@ -1,10 +1,12 @@
 # WhatsApp Marketing in Sri Lanka – Turn Chats into Customers
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 In Sri Lanka, customers would often rather send a WhatsApp message than fill in a form or make a call. That makes WhatsApp one of the most powerful sales channels a business can have, if it's set up and managed properly. At Cypher Digital, we help businesses use WhatsApp to attract enquiries, reply faster, follow up properly and turn more chats into sales.
 
 ## Why WhatsApp Matters for Sri Lankan Businesses
 
-- **It's where customers already are.** Most smartphone users in Sri Lanka use WhatsApp daily. [ADD REAL STAT with source, if available.]
+- **A direct contact channel.** Customers who already use WhatsApp can message your business from an ad, website button or QR code. A reliable, comparable Sri Lankan daily-usage figure was not established in the sources reviewed, so we do not claim a national usage percentage.
 - **Customers prefer to ask before they buy.** Price, availability, delivery and sizes are usually asked on chat.
 - **Conversations convert.** A quick, helpful reply on WhatsApp often closes a sale that a website alone would lose.
 - **It's personal.** Messages feel direct and trusted, which builds long-term customer relationships.
@@ -15,13 +17,13 @@ The challenge is that many businesses get enquiries on WhatsApp but reply slowly
 
 | | WhatsApp Business app | WhatsApp Business Platform (API) |
 |---|---|---|
-| Cost | Free app | Charged per conversation or message by Meta [CONFIRM current pricing model] |
+| Cost | Free app | Meta charges per delivered template message; category and recipient country determine the rate. Free service-window replies and some utility messages are exceptions |
 | Users | A small number of linked devices | Multiple team members through a shared inbox |
 | Automation | Quick replies, greeting and away messages | Chatbots, automated flows, CRM integration |
 | Bulk messages | Broadcast lists (only reach people who saved your number) | Approved template messages to opted-in customers |
 | Best for | Small businesses and shops | Growing businesses with high chat volume |
 
-We help you choose the right option and set it up correctly.
+We help you choose the right option and set it up correctly. Under [Meta's current WhatsApp Business Platform pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing), inbound messages and non-template replies within an open customer service window are not charged by Meta; utility templates in that window are also free. Provider inbox, hosting or automation charges may be additional. Check the current rate card for the recipient country and message category before setting a budget.
 
 ## Click-to-WhatsApp Ads
 

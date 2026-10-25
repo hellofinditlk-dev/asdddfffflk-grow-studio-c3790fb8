@@ -1,5 +1,7 @@
 # Free Google Ads Audit in Sri Lanka
 
+Industry and platform sources reviewed **25 October 2026**. Figures retain the source's market and measurement date; platform rules may change.
+
 Are you spending money on Google Ads but not sure it's working? Our free Google Ads audit shows exactly where your budget is going, what's being wasted and what to fix first. A Cypher Digital specialist reviews your account by hand, not with an automated tool, and sends you a clear, prioritised list of improvements.
 
 There's no cost and no obligation. You can use the report to fix the account yourself, give it to your current agency, or ask us – a results-focused [digital marketing agency in Sri Lanka](/) – to manage it.
@@ -65,7 +67,7 @@ Most of these are quick to fix, and fixing them often reduces cost per lead with
 
 ## Is Giving Access Safe?
 
-Yes. We ask for **read-only access**, which lets us view your account but not change anything, spend money or see your payment details. You can remove our access with one click at any time. Your account and data always remain yours.
+We ask for **read-only access**, not your password. Google's access-level table says read-only users can view campaigns and billing information and run reports, but cannot edit campaigns or billing information. Only invite someone you trust and remove their access when it is no longer needed. [Source: Google Ads access levels](https://support.google.com/google-ads/answer/9978556?hl=en).
 
 ## After the Audit – Your Options
 
