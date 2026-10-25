@@ -26,7 +26,7 @@ export function newPageHtml(template: string, pathname: string, markdown: string
     `<meta property="og:title" content="${escapeHtml(page.title)}">`,
     `<meta property="og:description" content="${escapeHtml(page.description)}">`,
     `<meta property="og:url" content="${canonical}">`,
-    `<meta property="og:type" content="website">`,
+    `<meta property="og:type" content="${page.kind === "article" ? "article" : "website"}">`,
     `<meta name="twitter:title" content="${escapeHtml(page.title)}">`,
     `<meta name="twitter:description" content="${escapeHtml(page.description)}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
