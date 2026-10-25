@@ -97,4 +97,24 @@ export const newSeoPages: NewSeoPage[] = [
   "cta": "Set up WhatsApp marketing for my business",
   "kind": "service"
 },
+{
+  "path": "/blog/google-ads-vs-google-adsense-sri-lanka",
+  "contentFile": "src/content/google-ads-vs-google-adsense-sri-lanka.md",
+  "title": "Google Ads vs Google AdSense in Sri Lanka: Key Differences",
+  "description": "Google Ads and AdSense sound alike but do opposite jobs. Learn which one helps you earn from a website and which one brings customers to your business.",
+  "breadcrumbLabel": "Google Ads vs Google AdSense in Sri Lanka",
+  "heroAlt": "Google Ads vs Google AdSense in Sri Lanka comparison",
+  "cta": "Explore Google Ads services",
+  "kind": "article"
+},
+{
+  "path": "/web-design-sri-lanka",
+  "contentFile": "src/content/web-design-sri-lanka.md",
+  "title": "Web Design Sri Lanka | Website Design & Development | Cypher Digital",
+  "description": "Professional web design in Sri Lanka. Fast, mobile-first websites built to rank on Google and turn visitors into enquiries. Get a free website quote.",
+  "breadcrumbLabel": "Web Design Sri Lanka",
+  "heroAlt": "Web design in Sri Lanka – responsive business website on laptop and phone",
+  "cta": "Get a free website quote",
+  "kind": "service"
+},
 ];
