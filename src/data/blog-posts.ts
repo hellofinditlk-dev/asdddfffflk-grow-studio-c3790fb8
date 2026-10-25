@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "newspaper-advertising-rates-sri-lanka",
+    title: "Newspaper Advertising Rates in Sri Lanka – 2026 Guide",
+    excerpt: "Newspaper advertising rates in Sri Lanka for Sunday Times, Lankadeepa, Virakesari, Daily Mirror and more. Ad sizes, classifieds, booking and tips.",
+    date: "2026-10-25",
+    keyword: "newspaper advertising rates sri lanka",
+  },
+  {
     slug: "advertising-cost-sri-lanka-2026",
     title: "How Much Does Advertising Cost in Sri Lanka in 2026?",
     excerpt: "Full 2026 advertising cost breakdown in Sri Lanka — digital ads, TV, radio, billboard and agency budgets. Plan your marketing spend with Cypher Digital.",

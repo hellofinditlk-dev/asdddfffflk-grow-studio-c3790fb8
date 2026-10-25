@@ -1,7 +1,7 @@
 import { escapeHtml, markdownHtml, splitSeoMarkdown } from "../src/lib/newSeoMarkdown";
 import { newSeoPages } from "../src/data/new-seo-pages";
 
-export const MAX_PRERENDER_PAGES = 11;
+export const MAX_PRERENDER_PAGES = 21;
 
 export function newPageHtml(template: string, pathname: string, markdown: string): string {
   const page = newSeoPages.find(entry => entry.path === pathname);

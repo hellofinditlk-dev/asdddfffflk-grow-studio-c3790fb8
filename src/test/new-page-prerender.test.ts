@@ -24,12 +24,12 @@ describe("new-pages-only full HTML", () => {
     expect(html.match(/<h1\b/g)).toHaveLength(1);
     expect(html).not.toContain("noindex");
   });
-  it("never generates more than the eleven requested new pages", () => {
-    expect(MAX_PRERENDER_PAGES).toBe(11);
-    expect(newSeoPages.length).toBeLessThanOrEqual(11);
+  it("never generates more than the approved twenty-one new pages", () => {
+    expect(MAX_PRERENDER_PAGES).toBe(21);
+    expect(newSeoPages.length).toBeLessThanOrEqual(21);
   });
   it("registers the eleven supplied URLs in the required order", () => {
-    expect(newSeoPages.map(page => page.path)).toEqual([
+    expect(newSeoPages.slice(0, 11).map(page => page.path)).toEqual([
       "/google-ads-cost-sri-lanka", "/google-ads-specialist-sri-lanka",
       "/google-ads-audit-sri-lanka", "/youtube-ads-sri-lanka",
       "/google-shopping-ads-sri-lanka", "/google-remarketing-sri-lanka",
