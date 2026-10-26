@@ -7,6 +7,15 @@ const markdown = readFileSync("src/content/telesales-executive-jobs-sri-lanka.md
 const now = new Date("2026-10-26T03:31:00Z");
 const schema = telesalesSchemas(markdown, now).find(s => s["@type"] === "JobPosting");
 describe("Owner-supplied telesales rules", () => {
+  it("serves both vacancy URL forms without a normalized self-redirect", () => {
+    const path = "/careers/telesales-executive-jobs-sri-lanka";
+    const rules = readFileSync("public/_redirects", "utf8").split("\n")
+      .filter(line => line.startsWith(path)).map(line => line.trim().split(/\s+/));
+    expect(rules).toEqual([
+      [path, `${path}/index.html`, "200!"],
+      [`${path}/`, `${path}/index.html`, "200!"],
+    ]);
+  });
   it("offers full-time and part-time employment", () => expect(job.employmentType).toEqual(["FULL_TIME", "PART_TIME"]));
   it("uses the actual posted date", () => expect(schema).toHaveProperty("datePosted", "2026-10-26"));
   it("uses the supplied closing date", () => expect(schema).toHaveProperty("validThrough", "2027-01-31T23:59:00+05:30"));
