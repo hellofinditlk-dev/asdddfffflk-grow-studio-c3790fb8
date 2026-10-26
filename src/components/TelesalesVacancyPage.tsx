@@ -47,6 +47,6 @@ export default function TelesalesVacancyPage() {
         {open ? <><p className="text-muted-foreground mb-5">Send your name, district, languages, availability and calling experience to +94 70 177 2626. No joining fee.</p><Button asChild className="bg-cta text-cta-foreground border-0 hover:bg-cta/90"><a href={telesalesWhatsApp} target="_blank" rel="noopener noreferrer"><Send className="mr-2 h-4 w-4" />Apply on WhatsApp</a></Button></> : <a href="/careers" className="text-primary">View current vacancies</a>}
       </section>
     </article>
-    {open && <div className="fixed bottom-0 inset-x-0 border-t border-border bg-background py-3 px-4 z-40 flex justify-center"><Button asChild className="bg-cta text-cta-foreground border-0 hover:bg-cta/90"><a href={telesalesWhatsApp} target="_blank" rel="noopener noreferrer"><MessageCircle className="mr-2 h-4 w-4" />Apply for Telesales Executive</a></Button></div>}
+    {open && <div className="fixed bottom-0 inset-x-0 border-t border-border bg-background py-3 px-4 pr-32 sm:pr-4 z-40 flex justify-start sm:justify-center"><Button asChild className="bg-cta text-cta-foreground border-0 hover:bg-cta/90"><a href={telesalesWhatsApp} aria-label="Apply for Telesales Executive" target="_blank" rel="noopener noreferrer"><MessageCircle className="mr-2 h-4 w-4" />Apply now</a></Button></div>}
   </main>;
 }
