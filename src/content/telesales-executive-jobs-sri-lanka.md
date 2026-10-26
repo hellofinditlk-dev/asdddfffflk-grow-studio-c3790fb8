@@ -2,11 +2,21 @@
 
 Are you confident on the phone, hungry to earn more, and ready to build a real career in sales? Cypher Digital is hiring Telesales Executives across Sri Lanka to sell our digital marketing services and products to businesses that want more customers.
 
-You call warm leads, explain how social media, Google Ads, SEO and AI-powered marketing can grow their business, and close the deal. Every sale you close earns you commission, and the best performers move up to Senior Executive and Team Lead quickly.
+You call warm leads, explain how social media, Google Ads, SEO and AI-powered marketing can grow their business, and close the deal. Commission eligibility is confirmed in writing, and strong performance supports progression to senior and leadership roles when available.
 
-No registration fee. No deposit. Full training, ready-made scripts and a steady flow of leads from our own ad campaigns.
+No registration fee. No deposit. Full training, ready-made scripts and warm leads from our own ad campaigns.
 
 ### At a glance
+
+| Detail | This vacancy |
+|---|---|
+| Title | Telesales Executive |
+| Location | Colombo office or fully remote anywhere in Sri Lanka |
+| Type | Full-time or part-time |
+| Earnings | Commission-based; rates and any allowance confirmed in your written offer |
+| Languages | Sinhala, Tamil or English; two or more is a plus |
+| Experience | Beginners welcome; sales experience is an advantage |
+| Closing date | 31 January 2027 |
 
 ## About this Telesales Executive job in Sri Lanka
 
@@ -39,7 +49,7 @@ No registration fee, training fee, deposit or starter-kit fee is charged.
 
 ## Grow fast: your career path at Cypher Digital
 
-Promotion here is based on results, not years of service. Hit your targets consistently, look after your clients and help the people around you, and you move up. The team is growing, so new leadership roles keep opening for ambitious people.
+Progression is based on results, client care, coaching ability and available positions. No fixed promotion deadline or leadership opening is guaranteed.
 
 1. Telesales Executive Learn our services, follow the scripts, call warm leads and close your first sales. Focus: confidence, product knowledge and steady weekly numbers.
 2. Senior Telesales Executive Progression depends on results, client care and an available role; no fixed promotion deadline is promised.
@@ -90,7 +100,7 @@ You can also move sideways. Many telesales people find they love the marketing s
 
 ### A typical day
 
-The uploaded day plan is illustrative. Actual full-time hours and part-time calling blocks are agreed before starting.
+Actual full-time hours and part-time calling blocks are agreed before starting. A day may include a team check-in, fresh-lead calls, proposal follow-ups, a client video call and CRM updates.
 
 Part-time executives choose agreed calling blocks, such as mornings or evenings, within business hours.
 
@@ -98,7 +108,7 @@ Part-time executives choose agreed calling blocks, such as mornings or evenings,
 
 Our hiring process is quick and free. The hiring team will contact shortlisted applicants; response times can vary.
 
-1. Apply on WhatsApp or the form. Send your name, district, languages, full-time or part-time, and any sales or calling experience.
+1. Apply on WhatsApp. Send your name, district, languages, full-time or part-time, and any sales or calling experience.
 2. Send a sales voice note. We send a short sample pitch; record it so we can hear your confidence and tone.
 3. Interview call (15 minutes). A friendly chat about your goals, the commission model and which working option suits you.
 4. Training. Learn our services, scripts, CRM and sales process with a coach.
