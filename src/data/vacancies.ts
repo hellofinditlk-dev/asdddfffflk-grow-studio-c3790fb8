@@ -1,4 +1,5 @@
 import { Palette, BarChart3, Film, GraduationCap, Share2, Briefcase, Handshake, Calculator, PenLine, Headset, type LucideIcon } from "lucide-react";
+import { telesalesIsOpen, telesalesVacancy } from "./telesales-vacancy";
 
 export interface Vacancy {
   slug: string;
@@ -61,6 +62,7 @@ export interface Vacancy {
 }
 
 export const vacancies: Vacancy[] = [
+  ...(telesalesIsOpen() ? [{ ...telesalesVacancy, icon: Headset, remote: true }] : []),
   {
     slug: "work-from-home-call-center-jobs-sri-lanka",
     title: "Work From Home Call Center Executive — Lead Follow-Up (Part-Time)",

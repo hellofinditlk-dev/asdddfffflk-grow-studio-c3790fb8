@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getVacancyBySlug, vacancies } from "@/data/vacancies";
 import JobApplicationForm from "@/components/JobApplicationForm";
 import ProjectVacancyDetails from "@/components/ProjectVacancyDetails";
+import TelesalesVacancyPage from "@/components/TelesalesVacancyPage";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
 
@@ -66,6 +67,7 @@ const FAMILIES: RegExp[] = [
 
 const VacancyPage = () => {
   const { slug } = useParams();
+  if (slug === "telesales-executive-jobs-sri-lanka") return <TelesalesVacancyPage />;
   const vacancy = getVacancyBySlug(slug);
 
   if (!vacancy) return <Navigate to="/careers" replace />;

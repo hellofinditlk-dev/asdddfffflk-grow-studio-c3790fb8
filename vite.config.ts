@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { newPagePrerender } from "./scripts/new-page-prerender";
+import { telesalesPrerender } from "./scripts/telesales-prerender";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,7 +14,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender()].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender(), telesalesPrerender()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
