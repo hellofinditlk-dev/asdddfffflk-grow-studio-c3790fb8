@@ -1883,6 +1883,9 @@ export default async function handler(request: Request, context: any) {
   try {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/$/, "") || "/";
+  // Telesales has complete generated HTML and its own matching client schema.
+  // Do not replace it with the generic hidden-H1 vacancy response.
+  if (path === "/careers/telesales-executive-jobs-sri-lanka") return context.next();
   // This direct-only partner page deliberately bypasses public-site SEO injection.
   if (path === "/white-label-design") {
     const response = await context.next();
