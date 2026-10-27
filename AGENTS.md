@@ -11,3 +11,4 @@
 - Register Batch 2 articles additively in the existing lazy router, blog dataset and capped HTML allowlist; use dedicated Markdown wrappers with a Batch-2-only renderer for subsequent articles so existing templates remain unchanged.
 - Build remaining brief pages with dedicated lazy route wrappers and a new-page-only renderer; distinguish article schema and breadcrumbs without modifying existing page templates or shared controls.
 - Keep the eleven new pages' titles, descriptions and keyword targets in their allowlist dataset; use their scoped head component and HTML generator for consistent metadata without changing shared public-page controls. Keyword targets guide content intent, not meta-keyword tags, which Google ignores.
+- Build candidate WhatsApp links with the dedicated candidate contact helper, not public CTA routing; normalize local phone formats and open an editable CV-request draft without automatic sending.
