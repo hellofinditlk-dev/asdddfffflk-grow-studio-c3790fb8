@@ -20,6 +20,7 @@ const SOCIAL_MEDIA_PREFIXES = [
   "/instagram-",
   "/tiktok-",
   "/linkedin-",
+  "/whatsapp-",
 ];
 
 const SOCIAL_MEDIA_WHATSAPP = "94760317477";
@@ -40,6 +41,10 @@ export const getWhatsappNumber = (pathname: string): string => {
   }
   return DEFAULT_WHATSAPP;
 };
+
+/** Formats a routing number for display, e.g. 94760317477 → "+94 76 031 7477". */
+export const formatWhatsappDisplay = (number: string): string =>
+  `+94 ${number.slice(2, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;
 
 /** Convenience hook for components. */
 export const useWhatsappNumber = (): string => {

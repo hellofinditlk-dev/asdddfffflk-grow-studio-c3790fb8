@@ -40,7 +40,7 @@ interface SocialClusterLayoutProps {
   formService: string;
 }
 
-import { useWhatsappNumber } from "@/lib/whatsapp";
+import { useWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
 
 const SocialClusterLayout = ({
   metaTitle,
@@ -186,7 +186,7 @@ const SocialClusterLayout = ({
                     </Button>
                     <Button asChild variant="outline" className="h-11 px-6 rounded-xl">
                       <a href={`tel:+94${WA.slice(2)}`}>
-                        <Phone className="w-4 h-4 mr-2" /> Call +94 70 177 2626
+                        <Phone className="w-4 h-4 mr-2" /> Call {formatWhatsappDisplay(WA)}
                       </a>
                     </Button>
                   </div>
