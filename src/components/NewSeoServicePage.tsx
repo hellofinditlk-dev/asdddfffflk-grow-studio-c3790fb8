@@ -5,8 +5,9 @@ import OurWorkSection from "@/components/OurWorkSection";
 import PaybackCard from "@/components/PaybackCard";
 import InquiryForm from "@/components/InquiryForm";
 import NewSeoAuditForm from "@/components/NewSeoAuditForm";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useWhatsappNumber } from "@/lib/whatsapp";
+import { useWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
 import { markdownHtml, splitSeoMarkdown } from "@/lib/newSeoMarkdown";
 import type { NewSeoPage } from "@/data/new-seo-pages";
 import heroImage from "@/assets/advertising-benefits.jpg";
@@ -41,9 +42,14 @@ export default function NewSeoServicePage({ page, markdown }: { page: NewSeoPage
       <div className="container mx-auto max-w-4xl px-4 text-center">
         <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-background leading-tight mb-6">{content.h1}</h1>
         <div className="new-seo-copy text-base md:text-lg" dangerouslySetInnerHTML={{ __html: markdownHtml(content.intro) }} />
-        <Button asChild size="lg" className="mt-8 h-auto min-h-12 max-w-full whitespace-normal bg-cta text-cta-foreground border-0 hover:bg-cta/90 px-7 py-3">
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer">{page.cta}</a>
-        </Button>
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <Button asChild size="lg" className="h-auto min-h-12 max-w-full whitespace-normal bg-cta text-cta-foreground border-0 hover:bg-cta/90 px-7 py-3">
+            <a href={whatsapp} target="_blank" rel="noopener noreferrer">{page.cta}</a>
+          </Button>
+          <Button asChild size="lg" className="h-auto min-h-12 max-w-full whitespace-normal bg-background/10 text-background border border-background/30 hover:bg-background/20 px-7 py-3">
+            <a href={`tel:+94${number.slice(2)}`}><Phone className="mr-2 h-4 w-4" />Call {formatWhatsappDisplay(number)}</a>
+          </Button>
+        </div>
       </div>
     </section>
     {page.path === "/google-ads-audit-sri-lanka" && <section className="container mx-auto max-w-3xl px-4 py-10"><h2 className="font-heading text-2xl font-bold mb-6">Request my free audit</h2><NewSeoAuditForm /></section>}
