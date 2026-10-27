@@ -4,6 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { MessageCircle } from "lucide-react";
+import { getCandidateCvWhatsappUrl } from "@/lib/candidate-whatsapp";
 
 interface Application {
   id: string;
@@ -25,6 +27,20 @@ const RANGES = [
   { key: "30", label: "Last 30 Days" },
   { key: "all", label: "All Time" },
 ] as const;
+
+function CandidateCvRequest({ application }: { application: Application }) {
+  const href = getCandidateCvWhatsappUrl(application.phone, application.name, application.position_title);
+  if (!href) {
+    return <Button size="sm" disabled title="A valid candidate phone number is needed"><MessageCircle />Request CV</Button>;
+  }
+  return (
+    <Button asChild size="sm">
+      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`Request CV from ${application.name} on WhatsApp`} title="Ask for CV on WhatsApp">
+        <MessageCircle />Request CV
+      </a>
+    </Button>
+  );
+}
 
 export default function AdminApplications() {
   const navigate = useNavigate();
@@ -329,11 +345,12 @@ export default function AdminApplications() {
                   <th className="px-4 py-3 font-semibold">Portfolio</th>
                   <th className="px-4 py-3 font-semibold">Source</th>
                   <th className="px-4 py-3 font-semibold">Details</th>
+                  <th className="px-4 py-3 font-semibold">WhatsApp</th>
                 </tr>
               </thead>
               <tbody>
                 {filtered.length === 0 ? (
-                  <tr><td colSpan={9} className="px-4 py-10 text-center text-muted-foreground">No applications found.</td></tr>
+                  <tr><td colSpan={10} className="px-4 py-10 text-center text-muted-foreground">No applications found.</td></tr>
                 ) : filtered.map((a) => (
                   <Fragment key={a.id}>
                     <tr className="border-t border-border">
@@ -354,10 +371,12 @@ export default function AdminApplications() {
                           {expanded === a.id ? "Hide" : "View"}
                         </button>
                       </td>
+                      <td className="px-4 py-3"><CandidateCvRequest application={a} /></td>
                     </tr>
                     {expanded === a.id && (
                       <tr className="border-t border-border bg-muted/30">
-                        <td colSpan={9} className="px-4 py-4 text-sm space-y-2">
+                        <td colSpan={10} className="px-4 py-4 text-sm space-y-2">
+                          <CandidateCvRequest application={a} />
                           <p><span className="text-muted-foreground">Message:</span> {a.message || "—"}</p>
                           <p className="font-mono text-xs"><span className="text-muted-foreground">Applied from:</span> {a.source_path || "—"}</p>
                           <p className="font-mono text-xs break-all"><span className="text-muted-foreground">Referrer:</span> {a.referrer || "Direct"}</p>

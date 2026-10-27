@@ -35,3 +35,4 @@
 - [x] Expand the same telesales page to at least 2,500 words with useful applicant guidance: 3,127 rendered article words verified, nine vacancy tests passed, section navigation and WhatsApp application checked; original pay and closing terms preserved, not published.
 - [x] Remove the normalized self-redirect from the telesales vacancy’s Netlify configuration and add regression coverage; preserve content and JobPosting metadata.
 - [ ] Deploy the redirect correction to the separately hosted cypherdigital.lk site and recheck live HTTP responses; external Netlify deployment is unavailable here.
+- [x] Add candidate-specific WhatsApp CV-request actions to application rows and details; normalize local numbers and keep sending manual.
