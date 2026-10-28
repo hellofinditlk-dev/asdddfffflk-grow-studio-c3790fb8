@@ -11,6 +11,7 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
 import ServiceStickyCTA from "@/components/ServiceStickyCTA";
 import CtaClickTracker from "@/components/CtaClickTracker";
+import SocialOpportunityIncomingLinks from "@/components/SocialOpportunityIncomingLinks";
 
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
@@ -585,6 +586,7 @@ const AppContent = () => {
         <WhatsAppButton />
         <FloatingCallButton />
         <BlogCTAInjector />
+        <SocialOpportunityIncomingLinks />
   </>;
 };
 
