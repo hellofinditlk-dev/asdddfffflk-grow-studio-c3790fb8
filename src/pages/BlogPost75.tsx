@@ -22,7 +22,7 @@ const BlogPost75 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Why Pricing Varies So Much</h2>
 <p>Experience and track record, team structure, scope of work, and ad spend management all impact pricing. Full-service agencies with in-house designers, copywriters, ad specialists and SEO experts cost more than a freelancer — but typically deliver more consistent quality.</p>
 <h2 className="font-heading text-xl font-bold text-foreground mt-8">Social Media Management Costs</h2>
-<p>Basic packages (LKR 15,000–30,000/month): 8–12 posts with basic graphics. Standard (LKR 30,000–60,000/month): 12–20 posts, professional graphics, story content, basic inbox management, monthly reports. Premium (LKR 60,000–120,000+/month): daily posting, video, reels, full inbox management, competitor analysis.</p>
+<p><Link to="/social-media-marketing-packages-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">Basic packages</Link> (LKR 15,000–30,000/month): 8–12 posts with basic graphics. Standard (LKR 30,000–60,000/month): 12–20 posts, professional graphics, story content, basic inbox management, monthly reports. Premium (LKR 60,000–120,000+/month): daily posting, video, reels, full inbox management, competitor analysis.</p>
 <h2 className="font-heading text-xl font-bold text-foreground mt-8">Facebook Advertising Costs</h2>
 <p>Agency management fees: Entry LKR 15,000–25,000, Standard LKR 25,000–50,000, Advanced LKR 50,000–100,000+/month. Recommended ad spend: LKR 20,000–50,000/month for small local, LKR 50,000–150,000 for most SMEs, LKR 150,000+ for multi-funnel strategies.</p>
 <h2 className="font-heading text-xl font-bold text-foreground mt-8">Google Ads Costs</h2>

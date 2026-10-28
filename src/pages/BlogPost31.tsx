@@ -23,7 +23,7 @@ const BlogPost31 = () => (
 
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>
-              Influencer marketing on TikTok has become one of the most effective strategies for brands looking to build trust, reach targeted audiences, and drive conversions in Sri Lanka. Unlike traditional advertising, influencer content feels authentic and relatable — which is exactly why it converts so well.
+              <Link to="/influencer-marketing-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">Influencer marketing</Link> on TikTok has become one of the most effective strategies for brands looking to build trust, reach targeted audiences, and drive conversions in Sri Lanka. Unlike traditional advertising, influencer content feels authentic and relatable — which is exactly why it converts so well.
             </p>
 
             <p>

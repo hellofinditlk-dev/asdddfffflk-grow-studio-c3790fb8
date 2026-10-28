@@ -79,6 +79,7 @@ const VacancyPage = () => {
     ? "social media creatives"
     : vacancy.slug === "content-specialist-jobs-sri-lanka" ? "social media" : undefined;
   const summaryAnchorIndex = summaryAnchor ? vacancy.summary.indexOf(summaryAnchor) : -1;
+  const contentCreatorAnchor = "Mobile Content Creator in Sri Lanka";
 
   const others = vacancies.filter((v) => v.slug !== vacancy.slug);
   const family = FAMILIES.find((re) => re.test(vacancy.slug));
@@ -276,7 +277,7 @@ const VacancyPage = () => {
               About this {vacancy.shortTitle} job in Sri Lanka
             </h2>
             {vacancy.seoIntro.map((p, i) => (
-              <p key={i} className="text-base text-muted-foreground leading-relaxed">{p}</p>
+              <p key={i} className="text-base text-muted-foreground leading-relaxed">{vacancy.slug === "mobile-content-creator-jobs-sri-lanka" && i === 0 && p.includes(contentCreatorAnchor) ? <>{p.slice(0, p.indexOf(contentCreatorAnchor))}<Link to="/social-media-content-creation-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">{contentCreatorAnchor}</Link>{p.slice(p.indexOf(contentCreatorAnchor) + contentCreatorAnchor.length)}</> : p}</p>
             ))}
             {vacancy.slug === "digital-marketing-jobs-sri-lanka" && (
               <p className="text-base text-muted-foreground leading-relaxed">
