@@ -38,6 +38,20 @@ describe("new-pages-only full HTML", () => {
       "/web-design-sri-lanka",
     ]);
   });
+  it("registers exactly the five uploaded social opportunity pages additively", () => {
+    expect(newSeoPages.slice(21).map(page => page.path)).toEqual([
+      "/social-media-ads-support-sri-lanka", "/social-media-boosting-service-sri-lanka",
+      "/social-media-marketing-colombo", "/social-media-marketing-small-business-sri-lanka",
+      "/social-media-cost-calculator",
+    ]);
+  });
+  it("provides calculator search data and an honest initial estimate without JavaScript", () => {
+    const source = readFileSync("src/content/social-media-cost-calculator.md", "utf8");
+    const html = newPageHtml(template, "/social-media-cost-calculator", source);
+    expect(html).toContain('"@type":"WebApplication"');
+    expect(html).toContain("LKR 160,000/month");
+    expect(html).toContain("not a final quote");
+  });
   it.each(newSeoPages)("delivers full supplied content for $path", page => {
     const source = readFileSync(page.contentFile, "utf8");
     expect(newPageHtml(template, page.path, source)).toContain(markdownHtml(source));
