@@ -20,6 +20,7 @@ const BlogPost92 = () => (
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>Getting traffic is easy. Getting people who actually want to buy from you is the challenge every Sri Lankan business faces. Lead generation is the process of attracting potential customers and converting them into enquiries, calls, or form submissions that your sales team can close.</p>
             <p>This guide covers the 10 most effective lead generation strategies for businesses in Sri Lanka in 2026 — from Facebook Ads to WhatsApp funnels to SEO.</p>
+            <p>For property businesses, explore <Link to="/real-estate-digital-marketing-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">property marketing in Sri Lanka</Link>, where enquiry forms and follow-up should help establish the buyer's requirements before arranging a viewing.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">What is lead generation and why does it matter?</h2>
             <p>A lead is anyone who has shown interest in your product or service. In Sri Lanka, leads typically come through WhatsApp messages, phone calls, form submissions, or direct messages on Facebook and Instagram.</p>

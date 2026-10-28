@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import type { ReactNode } from "react";
 import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award, MapPin, ArrowRight } from "lucide-react";
 import FinditProsDirectory from "@/components/FinditProsDirectory";
 import AIVisibilityHighlightCard from "@/components/AIVisibilityHighlightCard";
@@ -68,9 +69,10 @@ const defaultStats = [
 
 interface Props {
   data: IndustryData;
+  introContent?: ReactNode;
 }
 
-const IndustryPageLayout = ({ data }: Props) => {
+const IndustryPageLayout = ({ data, introContent }: Props) => {
   const canonical = `https://cypherdigital.lk/${data.slug}`;
   const otherIndustries = industries.filter((i) => i.slug !== data.slug);
   const waNumber = data.whatsappNumber || "94701772626";
@@ -148,7 +150,7 @@ const IndustryPageLayout = ({ data }: Props) => {
           <div className="max-w-2xl mx-auto text-center animate-fade-up">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Industry Marketing</p>
             <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">{data.h1}</h1>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">{data.intro}</p>
+            <p className="text-lg text-white/50 leading-relaxed mb-8">{introContent ?? data.intro}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
                 <a href={`https://wa.me/${waNumber}?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation`} target="_blank" rel="noopener noreferrer">

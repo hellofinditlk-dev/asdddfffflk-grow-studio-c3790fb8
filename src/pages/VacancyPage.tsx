@@ -279,6 +279,11 @@ const VacancyPage = () => {
             {vacancy.seoIntro.map((p, i) => (
               <p key={i} className="text-base text-muted-foreground leading-relaxed">{vacancy.slug === "mobile-content-creator-jobs-sri-lanka" && i === 0 && p.includes(contentCreatorAnchor) ? <>{p.slice(0, p.indexOf(contentCreatorAnchor))}<Link to="/social-media-content-creation-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">{contentCreatorAnchor}</Link>{p.slice(p.indexOf(contentCreatorAnchor) + contentCreatorAnchor.length)}</> : p}</p>
             ))}
+            {vacancy.slug === "internship-programme-sri-lanka" && (
+              <p className="text-base text-muted-foreground leading-relaxed">
+                To explore how marketing campaigns are adapted for student recruitment, see our <Link to="/education-marketing-agency-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">education marketing agency</Link> service.
+              </p>
+            )}
             {vacancy.slug === "digital-marketing-jobs-sri-lanka" && (
               <p className="text-base text-muted-foreground leading-relaxed">
                 Looking for more{" "}
