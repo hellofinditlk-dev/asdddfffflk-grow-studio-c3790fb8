@@ -71,6 +71,8 @@ There are two separate costs. We always keep them apart so you can see exactly w
 
 **2. Our service fee.** Our boosting service starts at a fee confirmed in your written quote. If you want full campaign management with new ad creatives, testing and retargeting across several campaigns, our [Facebook advertising management](/facebook-ads-sri-lanka) starts from LKR 25,000 per month.
 
+LKR 40,000–60,000 is a suggested planning budget, not a compulsory minimum; our Facebook Ads page also describes lower starting budgets. LKR 25,000 is the published standalone management starting fee, not the boosting fee or your Meta budget. Confirm deliverables, payment dates, any advance, method and taxes in your quote before work starts.
+
 Want the full picture of what Facebook advertising costs in Sri Lanka, including cost per message and cost per lead? Read our guide on [Facebook boost prices in Sri Lanka](/blog/facebook-boost-price-sri-lanka) and our breakdown of [Facebook ads costs](/facebook-ads-cost-sri-lanka).
 
 ---
@@ -111,7 +113,7 @@ If your posts don't pass this checklist, boosting won't fix that. Our [social me
 1. **Message us on WhatsApp** with your page link and what you sell.
 2. **We review your page** and suggest which posts to boost, the budget, and the goal (messages, calls or sales).
 3. **You approve and add us as a partner** in your Business Portfolio. You keep full ownership.
-4. **We launch within a few working days** and check results every week.
+4. **We agree a launch date** after account access, billing checks, creative approval and the platform's ad review, then check results every week.
 5. **You get a simple report** every month and can stop at any time.
 
 [Start boosting on WhatsApp](https://wa.me/94760317477?text=Hi%20Cypher%20Digital%2C%20I%20want%20to%20start%20your%20boosting%20service)

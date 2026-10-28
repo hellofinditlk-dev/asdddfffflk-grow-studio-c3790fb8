@@ -78,6 +78,8 @@ Our social media packages start from **LKR 85,000 per month**. Ad spend is separ
 
 **Plus ad budget (optional):** we suggest LKR 40,000 to 60,000 per month for most small businesses, paid directly to Meta. Ad management starts from LKR 25,000 per month if you want us to run your ads.
 
+LKR 40,000–60,000 is planning guidance, not a mandatory minimum or a promise of enquiries. Our Facebook Ads page also describes smaller starting budgets; choose a test budget around your goal and available funds. The LKR 25,000 figure is the standalone management starting fee: confirm what campaign work your package already covers before adding it. Your proposal confirms payment dates, any advance, payment method and taxes.
+
 See the full details on our [social media marketing packages](/social-media-marketing-packages-sri-lanka) page, or work out your monthly cost with our [social media cost calculator](/social-media-cost-calculator).
 
 ---
@@ -107,7 +109,7 @@ Doing it yourself costs nothing in cash, but it costs your evenings. A freelance
 
 **Days 61–90: Grow.** With two months of data, we refine targeting, plan seasonal campaigns and agree what to focus on next.
 
-Most small businesses see more page activity in the first month. Steady messages and sales from social media usually build over two to three months.
+Use the first three months as review points, not promised results. Compare page activity, qualified enquiries and sales against your starting position; outcomes depend on the offer, audience, content, budget and response handling.
 
 ---
 
@@ -157,9 +159,9 @@ If two or more of these are true, compare a monthly plan against your available 
 
 We'd rather set honest expectations than overpromise.
 
-**In the first month,** your page will look active and professional, and you'll see more reach and engagement. If you're running ads, measure whether enquiries arrive and review the campaign if they do not.
+**In the first month,** focus on publishing the approved content, checking tracking and establishing your starting metrics. If you're running ads, measure whether enquiries arrive and review the campaign if they do not; increased reach and engagement are not guaranteed.
 
-**By the second and third month,** the content plan and ads will have learned what your customers respond to. This is when steady messages, bookings and sales usually build.
+**By the second and third month,** review which content and audiences produced useful enquiries, bookings or sales. Use the recorded evidence to adjust the plan rather than expecting a fixed timetable for results.
 
 **Over six months,** a consistently active page builds trust. Customers recognise your brand, come back, and recommend you. Track whether your cost per qualified enquiry improves; lower costs are not guaranteed.
 
@@ -185,7 +187,7 @@ That's it. We handle the rest.
 Our packages start from LKR 85,000 per month, with ad spend separate. An illustrative starting ad budget is LKR 40,000 to 60,000 per month, paid directly to Meta.
 
 ### Is social media marketing worth it for a small business?
-For most small businesses in Sri Lanka, yes. Your customers already use Facebook, Instagram and WhatsApp every day. Consistent posts plus a small, well-targeted ad budget usually bring a steady flow of inquiries within two to three months.
+It can be worthwhile if your customers use the selected platforms and the enquiries produce enough contribution margin to justify the cost. Compare qualified enquiries and actual sales with your monthly fees and advertising spend. A steady flow of enquiries within two to three months is not guaranteed.
 
 ### Which platform should a small business start with?
 For most small businesses, Facebook and Instagram, because that's where most Sri Lankan customers are and they can be managed together. Add TikTok if your customers are younger, and LinkedIn only if you sell to other businesses.

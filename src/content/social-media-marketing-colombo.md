@@ -85,9 +85,11 @@ Our monthly social media packages start from **LKR 85,000 per month**. Ad spend 
 | Basic | LKR 85,000 | 12 posts, 3 reels from stock footage, Facebook and Instagram (TikTok cross-posting) |
 | Silver | LKR 100,000 | 15 posts, 3 reels from a 4-hour location shoot, 1 email campaign |
 | Gold | LKR 150,000 | 20 posts, reels from a location shoot, LinkedIn added, 2 email campaigns |
-| Platinum | LKR 250,000 | Unlimited posts, 8 reels from an 8-hour shoot, TikTok strategy, 4 email campaigns |
+| Platinum | LKR 250,000 | Unlimited posts, 8 reels from an 8-hour shoot, Facebook, Instagram, LinkedIn and TikTok managed, 4 email campaigns |
 
 For a full comparison, see our [social media marketing packages](/social-media-marketing-packages-sri-lanka), or estimate your monthly cost with the [social media cost calculator](/social-media-cost-calculator).
+
+These package fees match our published package page. Standalone ads management starts from LKR 25,000 per month; confirm the campaign work included in your selected package before adding a separate management service. Advertising spend remains separate. Payment dates, method, any advance and taxes are confirmed in your written proposal.
 
 [Get a package recommendation](https://wa.me/94760317477?text=Hi%20Cypher%20Digital%2C%20which%20package%20do%20you%20recommend%20for%20my%20Colombo%20business%3F)
 
@@ -171,7 +173,7 @@ We build your content plan around these moments, so your posts and ads land when
 **Cypher Digital**
 Please request the current meeting address on WhatsApp before travelling.
 Phone and WhatsApp: **+94 76 031 7477**
-Hours: Please confirm appointment availability on WhatsApp.
+Published working hours: **Monday–Saturday, 9AM–6PM**, as listed on our [contact page](/contact). Confirm meeting availability before travelling.
 
 
 
@@ -182,7 +184,7 @@ Please message us on WhatsApp before you visit so we can make sure the right per
 ## Frequently Asked Questions
 
 ### Where is Cypher Digital located?
-We're based in Colombo at Please request the current meeting address on WhatsApp before travelling.. You can visit us by appointment, or we can come to your location for a meeting or a shoot.
+Our contact page lists Colombo, Sri Lanka, but does not publish a street address. Request the current meeting address and confirm an appointment on WhatsApp before travelling. Location shoots are arranged according to your package and agreed schedule.
 
 ### Do you only work with Colombo businesses?
 No. Our team is in Colombo, but we work with businesses across Sri Lanka, and with Sri Lankan businesses abroad, over WhatsApp and Zoom.
@@ -200,7 +202,7 @@ Yes. We can target specific Colombo areas, or a radius around your location, so 
 Yes. We create content in English, Sinhala and Tamil, and test which works best for your audience.
 
 ### How quickly can we start?
-After the strategy call and approval, most Colombo clients have their first content and campaigns live within a week.
+We agree a start date after the strategy call, scope approval, account access and content preparation. Shoots, approvals and ad-platform reviews affect the schedule; a one-week launch is not guaranteed.
 
 ### Do I need a long contract?
 No. We don't lock you into long-term contracts.
