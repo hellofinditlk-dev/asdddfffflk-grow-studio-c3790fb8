@@ -24,4 +24,13 @@ describe("supplied social media calculator rules", () => {
   it("uses 10000 budget steps", () => { expect(calculateSocialCost({ ...defaults, budget: 54000 }).adBudget).toBe(50000); });
   it("allows zero reels without lowering package fees", () => { expect(calculateSocialCost({ ...defaults, reels: 0 })).toMatchObject({ packageFee: 85000, extraReelCost: 0 }); });
   it("sends the selected inputs and actual estimated total", () => { expect(socialEstimateMessage({ ...defaults, posts: 15, shoot: true })).toContain("Estimated total: LKR 175,000/month"); });
+  it("matches the cafe example with a 40000 Meta budget", () => {
+    expect(calculateSocialCost({ ...defaults, budget: 40000 })).toMatchObject({ packageFee: 85000, agencyFee: 110000, adBudget: 40000, totalMonthly: 150000 });
+  });
+  it("matches the salon example with a Silver shoot and 50000 Meta budget", () => {
+    expect(calculateSocialCost({ ...defaults, posts: 15, shoot: true })).toMatchObject({ packageFee: 100000, agencyFee: 125000, adBudget: 50000, totalMonthly: 175000 });
+  });
+  it("matches the B2B Gold example without paid ads", () => {
+    expect(calculateSocialCost({ ...defaults, posts: 20, linkedin: true, ads: false })).toMatchObject({ packageFee: 150000, agencyFee: 150000, adBudget: 0, totalMonthly: 150000 });
+  });
 });
