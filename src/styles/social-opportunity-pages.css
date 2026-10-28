@@ -1,0 +1,17 @@
+.social-opportunity-page .social-whatsapp { background: var(--wl-whatsapp); color: hsl(var(--cta-foreground)); }
+.social-opportunity-page .social-whatsapp:hover { background: var(--wl-whatsapp-hover); }
+.social-mobile-bar { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+.social-opportunity-page ~ * { scroll-margin-bottom: 5rem; }
+body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"] { bottom: 6rem; }
+body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { bottom: 10.5rem; }
+@media (max-width: 639px) {
+  .social-responsive-table table { min-width: 0; }
+  .social-responsive-table thead { display: none; }
+  .social-responsive-table table, .social-responsive-table tbody, .social-responsive-table tr, .social-responsive-table td { display: block; width: 100%; }
+  .social-responsive-table td { display: grid; grid-template-columns: minmax(90px, 0.7fr) minmax(0, 1.3fr); gap: 1rem; }
+  .social-responsive-table td::before { content: attr(data-label); color: hsl(var(--foreground)); font-weight: 600; }
+}
+@media (min-width: 1024px) {
+  body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"] { bottom: 1.5rem; }
+  body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { bottom: 6rem; }
+}
