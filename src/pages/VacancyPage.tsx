@@ -284,6 +284,11 @@ const VacancyPage = () => {
                 To explore how marketing campaigns are adapted for student recruitment, see our <Link to="/education-marketing-agency-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">education marketing agency</Link> service.
               </p>
             )}
+            {vacancy.slug === "social-media-jobs-sri-lanka" && (
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Before applying, explore our <Link to="/social-media-management-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">social media management in Sri Lanka</Link> service to understand how content planning, publishing and reporting fit together.
+              </p>
+            )}
             {vacancy.slug === "digital-marketing-jobs-sri-lanka" && (
               <p className="text-base text-muted-foreground leading-relaxed">
                 Looking for more{" "}
