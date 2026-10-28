@@ -12,3 +12,4 @@
 - Build remaining brief pages with dedicated lazy route wrappers and a new-page-only renderer; distinguish article schema and breadcrumbs without modifying existing page templates or shared controls.
 - Keep the eleven new pages' titles, descriptions and keyword targets in their allowlist dataset; use their scoped head component and HTML generator for consistent metadata without changing shared public-page controls. Keyword targets guide content intent, not meta-keyword tags, which Google ignores.
 - Build candidate WhatsApp links with the dedicated candidate contact helper, not public CTA routing; normalize local phone formats and open an editable CV-request draft without automatic sending.
+- Scope inline vacancy-summary links to explicitly requested slugs in the route renderer; keep shared vacancy strings plain so listing copy and JobPosting descriptions remain unchanged.

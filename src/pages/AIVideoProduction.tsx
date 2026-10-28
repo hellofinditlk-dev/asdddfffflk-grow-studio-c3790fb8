@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import aiVideoPromotion from "@/assets/cypher-ai-video-promotion.mp4.asset.json";
 import aiVideoPoster from "@/assets/cypher-ai-video-poster.jpg.asset.json";
@@ -504,7 +505,7 @@ const AIVideoProduction = () => {
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase", color: "#FF6B2B", marginBottom: 10 }}>Related Services</div>
             <p style={{ fontSize: 14, color: "#555", lineHeight: 1.75 }}>
               Pair AI video with our{" "}
-              <a href="/social-media-management-sri-lanka" style={{ color: "#FF6B2B" }}>social media management</a>,{" "}
+              <Link to="/social-media-management-sri-lanka" style={{ color: "#FF6B2B" }}>social media management</Link>,{" "}
               <a href="/facebook-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Facebook advertising</a>,{" "}
               <a href="/google-ads-sri-lanka" style={{ color: "#FF6B2B" }}>Google Ads</a>,{" "}
               <a href="/graphic-design-sri-lanka" style={{ color: "#FF6B2B" }}>graphic design</a>, and{" "}
