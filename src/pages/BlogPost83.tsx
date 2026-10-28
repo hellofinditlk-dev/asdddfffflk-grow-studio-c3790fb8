@@ -19,7 +19,7 @@ const BlogPost83 = () => (
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <p>If you've been searching for <Link to="/social-media-management-sri-lanka" className="text-primary font-semibold hover:underline">social media marketing packages in Sri Lanka</Link>, you already know one thing — every agency seems to offer something different. Some quote LKR 15,000. Others quote LKR 300,000. And most don't even tell you what's included.</p>
-            <p>This guide breaks down exactly what you should expect from social media marketing packages in Sri Lanka, what fair pricing looks like in 2025, and how to choose the right package for your business.</p>
+            <p>This guide breaks down exactly what you should expect from <Link to="/social-media-marketing-packages-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">social media marketing packages in Sri Lanka</Link>, what fair pricing looks like in 2025, and how to choose the right package for your business.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">What Are Social Media Marketing Packages?</h2>
             <p>Social media marketing packages are bundled service plans offered by digital marketing agencies. Instead of paying separately for content creation, scheduling, community management, and reporting — you pay one monthly fee that covers all of it.</p>

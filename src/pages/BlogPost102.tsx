@@ -305,8 +305,8 @@ const BlogPost102 = () => (
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-10 mb-3">Frequently asked questions</h2>
-            {faqs.map((f) => (
-              <p key={f.q}><strong className="text-foreground">{f.q}</strong> {f.a}</p>
+            {faqs.map((f, i) => (
+              <p key={f.q}><strong className="text-foreground">{f.q}</strong> {i === 0 ? <>Cypher Digital's <Link to="/social-media-marketing-packages-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">social media marketing packages in Sri Lanka</Link>{f.a.slice("Cypher Digital's social media marketing packages in Sri Lanka".length)}</> : f.a}</p>
             ))}
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-10 mb-3">Related guides</h2>

@@ -247,7 +247,7 @@ const IndustryPageLayout = ({ data }: Props) => {
                 {data.services.map((service, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary transition-colors">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-sm">{service}</span>
+                    <span className="text-sm">{data.slug === "fashion-brand-digital-marketing-sri-lanka" && service === "Influencer marketing campaigns" ? <><Link to="/influencer-marketing-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">Influencer marketing</Link> campaigns</> : service}</span>
                   </div>
                 ))}
               </div>
