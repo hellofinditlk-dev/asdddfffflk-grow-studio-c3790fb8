@@ -2,8 +2,13 @@
 .social-opportunity-page .social-whatsapp:hover { background: var(--wl-whatsapp-hover); }
 .social-mobile-bar { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
 .social-opportunity-page ~ * { scroll-margin-bottom: 5rem; }
-body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"] { bottom: 6rem; }
-body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { bottom: 10.5rem; }
+body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"],
+body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { display: none; }
+@media (max-width: 1023px) {
+  .social-opportunity-page .new-seo-hero { padding-top: 2rem; padding-bottom: 2rem; }
+  .social-opportunity-page .new-seo-hero h1 { font-size: 1.5rem; }
+  .social-opportunity-page .new-seo-hero .new-seo-copy { font-size: 0.875rem; line-height: 1.65; }
+}
 @media (max-width: 639px) {
   .social-responsive-table table { min-width: 0; }
   .social-responsive-table thead { display: none; }
@@ -12,6 +17,6 @@ body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] {
   .social-responsive-table td::before { content: attr(data-label); color: hsl(var(--foreground)); font-weight: 600; }
 }
 @media (min-width: 1024px) {
-  body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"] { bottom: 1.5rem; }
-  body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { bottom: 6rem; }
+  body:has(.social-opportunity-page) > #root a[aria-label="Chat on WhatsApp"] { display: flex; bottom: 1.5rem; }
+  body:has(.social-opportunity-page) > #root a[aria-label="Call Cypher Digital"] { display: flex; bottom: 6rem; }
 }
