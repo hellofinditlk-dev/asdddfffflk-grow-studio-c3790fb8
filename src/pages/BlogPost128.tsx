@@ -109,6 +109,7 @@ const BlogPost128 = () => (
               This guide covers which courses and certifications are worth your time, which ones agencies in Sri Lanka actually recognise, and how to go from completing a course to applying for your first role. Before diving in, see what skills are most in demand in our <Link to="/blog/digital-marketing-skills-sri-lanka" className="text-primary font-semibold underline">top 10 digital marketing skills guide for Sri Lanka</Link>.
             </p>
 
+            <p>For a practical example of adapting campaigns to student recruitment, explore our approach to <Link to="/education-marketing-agency-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">education marketing in Sri Lanka</Link>.</p>
             <h2 className="font-heading text-2xl font-bold mt-10 mb-4 pb-2 border-b-2 border-primary">Free digital marketing courses and certifications worth doing</h2>
             <p>
               These five free options are the ones with the highest value in the Sri Lanka job market. Complete Meta Blueprint and Google Ads first — everything else is a bonus.

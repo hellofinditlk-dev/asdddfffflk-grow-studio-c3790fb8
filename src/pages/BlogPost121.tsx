@@ -25,6 +25,7 @@ increasingly selective. In this case study, we walk through the
 strategy, content approach, and tactics that Cypher Digital used to help
 a Sri Lankan lifestyle brand reach this milestone and what it meant for
 their business.</em></p>
+<p>For help planning content, profile management and campaigns, explore our <a href="/instagram-marketing-sri-lanka" class="!text-inherit ![font-weight:inherit] !no-underline">Instagram marketing services</a>.</p>
 <h2>The Challenge</h2>
 <p>Our client — a Colombo-based lifestyle and wellness brand — had an
 Instagram presence with fewer than 800 followers and minimal engagement.
