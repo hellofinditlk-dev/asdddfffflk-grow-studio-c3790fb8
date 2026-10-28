@@ -377,7 +377,7 @@ const Careers = () => (
           Digital Marketing Jobs in Sri Lanka — Join Cypher Digital
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          Searching for the best digital marketing jobs in Sri Lanka? Cypher Digital is hiring across paid ads, SEO, social media marketing, graphic design and video editing in Colombo. Join Sri Lanka's most integrated marketing group — Cypher360 — and work on campaigns for 800+ brands.
+          Searching for the best digital marketing jobs in Sri Lanka? Cypher Digital is hiring across paid ads, SEO, <Link to="/social-media-management-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">social media marketing</Link>, graphic design and video editing in Colombo. Join Sri Lanka's most integrated marketing group — Cypher360 — and work on campaigns for 800+ brands.
         </p>
         <Button asChild size="lg" className="bg-[hsl(20,90%,55%)] hover:bg-[hsl(20,90%,50%)] text-white border-0">
           <a href={`${WHATSAPP_BASE}?text=${encodeURIComponent("Hi Cypher Digital, I'd like to join your team.")}`} target="_blank" rel="noopener noreferrer">

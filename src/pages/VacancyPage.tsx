@@ -75,6 +75,10 @@ const VacancyPage = () => {
   const Icon = vacancy.icon;
   const canonical = `https://cypherdigital.lk/careers/${vacancy.slug}`;
   const waUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(vacancy.whatsappMessage)}`;
+  const summaryAnchor = vacancy.slug === "graphic-designer-jobs-sri-lanka"
+    ? "social media creatives"
+    : vacancy.slug === "content-specialist-jobs-sri-lanka" ? "social media" : undefined;
+  const summaryAnchorIndex = summaryAnchor ? vacancy.summary.indexOf(summaryAnchor) : -1;
 
   const others = vacancies.filter((v) => v.slug !== vacancy.slug);
   const family = FAMILIES.find((re) => re.test(vacancy.slug));
@@ -243,7 +247,7 @@ const VacancyPage = () => {
             Last Updated:{" "}
             <time dateTime={lastUpdatedIso} className={vacancy.remote ? "font-semibold text-foreground" : "font-semibold text-white"}>{lastUpdatedLabel}</time>
           </p>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">{vacancy.summary}</p>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">{summaryAnchor && summaryAnchorIndex >= 0 ? <>{vacancy.summary.slice(0, summaryAnchorIndex)}<Link to="/social-media-management-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">{summaryAnchor}</Link>{vacancy.summary.slice(summaryAnchorIndex + summaryAnchor.length)}</> : vacancy.summary}</p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-cta hover:bg-cta/90 text-cta-foreground border-0 max-w-full">
               <a href="#apply">

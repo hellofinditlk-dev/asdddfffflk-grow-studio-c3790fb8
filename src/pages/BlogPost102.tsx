@@ -170,7 +170,7 @@ const BlogPost102 = () => (
 
             <div className="not-prose bg-muted/40 border border-border rounded-xl p-5 my-2">
               <div className="font-heading text-sm font-extrabold text-foreground mb-2">Quick answer</div>
-              <p className="text-sm text-muted-foreground">Social media marketing packages in Sri Lanka typically cost <strong className="text-foreground">LKR 85,000–250,000 per month</strong>. At Cypher Digital: Basic LKR 85,000 (12 posts + 3 reels), Silver LKR 100,000 (15 posts + 3 filmed reels + email campaign), Gold LKR 150,000 (20 posts + LinkedIn), Platinum LKR 250,000 (unlimited posts + 8 reels from an 8-hour shoot). Meta ad spend is separate.</p>
+              <p className="text-sm text-muted-foreground"><Link to="/social-media-management-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">Social media marketing packages in Sri Lanka</Link> typically cost <strong className="text-foreground">LKR 85,000–250,000 per month</strong>. At Cypher Digital: Basic LKR 85,000 (12 posts + 3 reels), Silver LKR 100,000 (15 posts + 3 filmed reels + email campaign), Gold LKR 150,000 (20 posts + LinkedIn), Platinum LKR 250,000 (unlimited posts + 8 reels from an 8-hour shoot). Meta ad spend is separate.</p>
             </div>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Social media marketing packages &amp; pricing — Sri Lanka 2026</h2>
