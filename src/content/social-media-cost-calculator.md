@@ -28,10 +28,14 @@ The calculator recommends one of these four monthly packages. All prices are per
 |---|---|---|---|---|---|
 | **Basic** | LKR 85,000 | 12 | 3, from stock footage | Facebook, Instagram, TikTok cross-posting | — |
 | **Silver** | LKR 100,000 | 15 | 3, from a 4-hour location shoot | Facebook, Instagram, TikTok cross-posting | 1 email campaign |
-| **Gold** | LKR 150,000 | 20 | 3, from a location shoot | Adds LinkedIn | 2 email campaigns |
-| **Platinum** | LKR 250,000 | Unlimited | 8, from an 8-hour location shoot | Adds LinkedIn and TikTok strategy | 4 email campaigns |
+| **Gold** | LKR 150,000 | 20 | From a location shoot; calculator assumes 3 | Facebook, Instagram, LinkedIn and TikTok cross-posting | 2 email campaigns |
+| **Platinum** | LKR 250,000 | Unlimited | 8, from an 8-hour location shoot | Facebook, Instagram, LinkedIn and TikTok managed | 4 email campaigns |
 
-**Add-ons:** extra pro reels LKR 30,000 each (plus travel outside Colombo) · Facebook and Instagram ads management from LKR 25,000 per month.
+**Calculator assumptions:** additional professional reels are estimated at LKR 30,000 each under this calculator's planning rules. This is not a universal price for every video format. The current [reel creation prices](/reel-creation-sri-lanka) start at LKR 25,000 for a professional 1-minute video shoot, LKR 35,000 for 1–3 minutes and LKR 40,000 onwards for 5 minutes or longer. AI character videos are listed separately at LKR 18,000 for 15–30 seconds, LKR 30,000 for 60 seconds and LKR 45,000 for 90 seconds.
+
+The published Gold package includes location-shot reels but does not specify a count; the calculator uses three for planning, subject to your written quote. Optional standalone Facebook and Instagram ads management starts from LKR 25,000 per month. The calculator adds that starting fee when selected; confirm whether campaign setup or management is already included in your chosen package so the final quote does not charge twice for the same work.
+
+**Travel and payment:** the reel creation page lists no travel charge within Colombo, LKR 6,000 for Greater Colombo and LKR 12,000 for regional areas, with outstation trips quoted individually. Travel is not added to this calculator's total; confirm the location and applicable charge in your proposal. Payment dates, any advance, accepted method and applicable taxes must also be confirmed in writing before booking.
 
 See everything included on our [social media marketing packages](/social-media-marketing-packages-sri-lanka) page.
 
@@ -192,7 +196,7 @@ No. Ad spend is always separate and paid directly to Meta from your own ad accou
 For most small businesses, LKR 40,000 to 60,000 per month. You can start lower to test, but very small budgets give Meta too little data to find buyers.
 
 ### Do you charge extra for shoots?
-Silver, Gold and Platinum include location shoots. Extra reels are LKR 30,000 each. Travel outside Colombo may be charged separately.
+Silver includes a 4-hour location shoot and three reels; Gold includes location-shot reels with the count confirmed in your proposal; Platinum includes an 8-hour shoot and eight reels. The calculator estimates extra professional reels at LKR 30,000 each, but standalone video prices vary by format. Check [reel creation prices and travel charges](/reel-creation-sri-lanka) and confirm your final scope in writing.
 
 ### Can I change packages later?
 Yes. You can move up or down between packages, and there's no long-term contract.

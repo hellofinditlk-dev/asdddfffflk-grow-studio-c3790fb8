@@ -58,13 +58,15 @@ Suspended Google Ads accounts, disapproved video ads, and billing verification i
 
 ## What does ads support cost?
 
-One-time ads support starts at a fee confirmed in writing after diagnosis, depending on the platform and how complex the problem is. We'll confirm the exact price on WhatsApp before we start any work.
+One-time ads support is quoted in writing after diagnosis, depending on the platform and how complex the problem is. No fixed support fee is published on the current site. We'll confirm the exact price on WhatsApp before we start any work.
 
 - **Quick diagnosis:** free when you send a screenshot on WhatsApp.
 - **One-time fix:** quoted after the account review.
 - **Ongoing ads management:** Facebook and Instagram ads management starts from LKR 25,000 per month, plus your ad spend, which you pay directly to Meta. See [Facebook ads costs in Sri Lanka](/facebook-ads-cost-sri-lanka) for a full breakdown.
 
 Your ad spend always goes directly to Meta, LinkedIn or Google from your own account. We never take your ad budget into our account.
+
+The LKR 25,000 figure is a standalone monthly ads-management starting fee, not a one-time repair price or a payment to the ad platform. Your written quote confirms the scope, payment dates, any advance, accepted method and taxes; platform appeal outcomes are not guaranteed.
 
 [Ask for a price on WhatsApp](https://wa.me/94760317477?text=Hi%20Cypher%20Digital%2C%20how%20much%20would%20it%20cost%20to%20fix%20my%20ad%20account%3F)
 
