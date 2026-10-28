@@ -245,6 +245,9 @@ const TikTokMarketing = () => {
             <p className="text-muted-foreground leading-relaxed">
               <strong className="text-foreground">TikTok marketing</strong> involves using short-form video content to promote products and services, build brand awareness, engage audiences, and drive traffic and sales. This includes organic content strategy, paid TikTok advertising (In-Feed Ads, Spark Ads, TopView Ads), influencer collaborations, and trend-based content creation. TikTok's unique algorithm allows businesses in Sri Lanka to reach massive audiences organically — even with zero followers — making it one of the most cost-effective digital marketing platforms available today.
             </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              If TikTok is one part of your wider content plan, explore how a <Link to="/social-media-management-sri-lanka" className="!text-inherit ![font-weight:inherit] !no-underline">social media agency in Sri Lanka</Link> can coordinate your content, publishing and reporting across platforms.
+            </p>
           </div>
         </div>
       </section>
