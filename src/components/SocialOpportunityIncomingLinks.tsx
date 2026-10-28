@@ -25,9 +25,11 @@ export default function SocialOpportunityIncomingLinks() {
       return true;
     };
     const observer = new MutationObserver(() => { if (mount()) observer.disconnect(); });
-    if (!mount()) observer.observe(document.body, { childList: true, subtree: true });
+    const start = window.setTimeout(() => {
+      if (!mount()) observer.observe(document.body, { childList: true, subtree: true });
+    }, 500);
     const timeout = window.setTimeout(() => observer.disconnect(), 5000);
-    return () => { observer.disconnect(); window.clearTimeout(timeout); element?.remove(); };
+    return () => { observer.disconnect(); window.clearTimeout(start); window.clearTimeout(timeout); element?.remove(); };
   }, [pathname]);
   if (!host) return null;
   return createPortal(<>{entries.map((entry, index) => <span key={entry.target}>{index > 0 ? " " : ""}{entry.prefix}<Link className="text-primary font-semibold hover:underline" to={entry.target}>{entry.anchor}</Link>{entry.suffix}</span>)}</>, host);
