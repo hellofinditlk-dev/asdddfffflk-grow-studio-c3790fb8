@@ -13,6 +13,8 @@ export default function SocialOpportunityIncomingLinks() {
     if (!entries.length) return;
     let element: HTMLParagraphElement | null = null;
     const mount = () => {
+      if (element?.isConnected && element.childNodes.length > 0) return true;
+      element?.remove();
       const article = document.querySelector("main article");
       const paragraphs = article ? Array.from(article.querySelectorAll("p")) : Array.from(document.querySelectorAll("main section:not(:first-of-type) p"));
       const paragraph = paragraphs.find(item => item.getBoundingClientRect().height > 0 && !item.closest("header, aside, nav, [data-blog-cta-end], [data-blog-internal-links]") && (item.textContent?.length ?? 0) > 80);
@@ -29,7 +31,8 @@ export default function SocialOpportunityIncomingLinks() {
       if (!mount()) observer.observe(document.body, { childList: true, subtree: true });
     }, 500);
     const timeout = window.setTimeout(() => observer.disconnect(), 5000);
-    return () => { observer.disconnect(); window.clearTimeout(start); window.clearTimeout(timeout); element?.remove(); };
+    const retry = window.setInterval(() => { if (!element?.isConnected || !element.childNodes.length) mount(); }, 750);
+    return () => { observer.disconnect(); window.clearTimeout(start); window.clearTimeout(timeout); window.clearInterval(retry); element?.remove(); };
   }, [pathname]);
   if (!host) return null;
   return createPortal(<>{entries.map((entry, index) => <span key={entry.target}>{index > 0 ? " " : ""}{entry.prefix}<Link className="text-primary font-semibold hover:underline" to={entry.target}>{entry.anchor}</Link>{entry.suffix}</span>)}</>, host);
