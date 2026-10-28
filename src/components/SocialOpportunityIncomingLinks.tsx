@@ -15,7 +15,7 @@ export default function SocialOpportunityIncomingLinks() {
     const mount = () => {
       const article = document.querySelector("main article");
       const paragraphs = article ? Array.from(article.querySelectorAll("p")) : Array.from(document.querySelectorAll("main section:not(:first-of-type) p"));
-      const paragraph = paragraphs.find(item => !item.closest("header, aside, nav, [data-blog-cta-end], [data-blog-internal-links]") && (item.textContent?.length ?? 0) > 80);
+      const paragraph = paragraphs.find(item => item.getBoundingClientRect().height > 0 && !item.closest("header, aside, nav, [data-blog-cta-end], [data-blog-internal-links]") && (item.textContent?.length ?? 0) > 80);
       if (!paragraph) return false;
       element = document.createElement("p");
       element.setAttribute("data-social-opportunity-incoming", "");
