@@ -230,7 +230,7 @@ const VideoProduction = () => {
           <div className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-8 shadow-sm">
             <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">What is Video Production?</h2>
             <p className="text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Video production</strong> is the complete process of creating video content — from initial concept development and scripting through filming, editing, and final delivery. In Sri Lanka's digital-first marketing landscape, video production has evolved from expensive TV commercials to fast, affordable, platform-optimized content designed for social media, digital advertising, and online engagement. It encompasses promotional videos, social media reels, brand stories, product demos, testimonial videos, ad creatives, and more — each tailored to specific platforms and marketing objectives.
+              <strong className="text-foreground">Video production</strong> is the complete process of creating video content — from initial concept development and scripting through filming, editing, and final delivery. In Sri Lanka's digital-first marketing landscape, video production has evolved from expensive TV commercials to fast, affordable, platform-optimized content designed for social media, digital advertising, and online engagement. It encompasses promotional videos, <Link to="/reel-creation-sri-lanka" className="text-inherit no-underline hover:no-underline">social media reels</Link>, brand stories, product demos, testimonial videos, ad creatives, and more — each tailored to specific platforms and marketing objectives.
             </p>
           </div>
         </div>
