@@ -16,8 +16,8 @@ export default function SocialOpportunityIncomingLinks() {
       if (element?.isConnected && element.childNodes.length > 0) return true;
       element?.remove();
       const article = document.querySelector("main article");
-      const paragraphs = article ? Array.from(article.querySelectorAll("p")) : Array.from(document.querySelectorAll("main section:not(:first-of-type) p"));
-      const paragraph = paragraphs.find(item => item.getBoundingClientRect().height > 0 && !item.closest("header, aside, nav, [data-blog-cta-end], [data-blog-internal-links]") && (item.textContent?.length ?? 0) > 80);
+      const paragraphs = article ? Array.from(article.querySelectorAll("p")) : Array.from(document.querySelectorAll("main section p"));
+      const paragraph = paragraphs.find(item => item.getBoundingClientRect().height > 0 && !item.closest("header, aside, nav, details, [data-blog-cta-end], [data-blog-internal-links]") && (item.textContent?.length ?? 0) > 80);
       if (!paragraph) return false;
       element = document.createElement("p");
       element.setAttribute("data-social-opportunity-incoming", "");
