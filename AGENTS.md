@@ -14,3 +14,5 @@
 - Build candidate WhatsApp links with the dedicated candidate contact helper, not public CTA routing; normalize local phone formats and open an editable CV-request draft without automatic sending.
 - Scope inline vacancy and industry links to explicitly requested slugs, fields and occurrences in their route renderers, using an optional industry introduction slot; keep shared data strings plain so other pages and structured descriptions remain unchanged.
 - Scope design introduction links in the route wrapper through an optional layout content slot; retain plain shared data and the default renderer so other design pages and schema remain unchanged.
+- Keep the five social opportunity pages in their own Markdown renderer and additive full-HTML allowlist; isolate calculator arithmetic in a tested pure helper and reuse central social contact routing so existing page templates and prices remain untouched.
+- Limit the uploaded social opportunity incoming links to an explicit source-URL dataset and lifecycle-cleaned main-body slot; add rather than replace earlier links so protected pillar anchors and existing page metadata remain intact.

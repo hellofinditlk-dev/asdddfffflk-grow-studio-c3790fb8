@@ -24,6 +24,17 @@
 /blog/google-ads-vs-google-adsense-sri-lanka  /blog/google-ads-vs-google-adsense-sri-lanka/index.html   200
 /blog/newspaper-advertising-rates-sri-lanka  /blog/newspaper-advertising-rates-sri-lanka/index.html   200
 /web-design-sri-lanka  /web-design-sri-lanka/index.html   200
+# New social-media pages: direct rewrites avoid normalized slash redirect loops
+/social-media-ads-support-sri-lanka /social-media-ads-support-sri-lanka/index.html 200!
+/social-media-ads-support-sri-lanka/ /social-media-ads-support-sri-lanka/index.html 200!
+/social-media-boosting-service-sri-lanka /social-media-boosting-service-sri-lanka/index.html 200!
+/social-media-boosting-service-sri-lanka/ /social-media-boosting-service-sri-lanka/index.html 200!
+/social-media-marketing-colombo /social-media-marketing-colombo/index.html 200!
+/social-media-marketing-colombo/ /social-media-marketing-colombo/index.html 200!
+/social-media-marketing-small-business-sri-lanka /social-media-marketing-small-business-sri-lanka/index.html 200!
+/social-media-marketing-small-business-sri-lanka/ /social-media-marketing-small-business-sri-lanka/index.html 200!
+/social-media-cost-calculator /social-media-cost-calculator/index.html 200!
+/social-media-cost-calculator/ /social-media-cost-calculator/index.html 200!
 # Service pages
 /google-ads-cost-sri-lanka                        /google-ads-cost-sri-lanka/index.html   200
 /social-media-management-sri-lanka                /index.html   200

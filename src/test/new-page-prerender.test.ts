@@ -24,9 +24,9 @@ describe("new-pages-only full HTML", () => {
     expect(html.match(/<h1\b/g)).toHaveLength(1);
     expect(html).not.toContain("noindex");
   });
-  it("never generates more than the approved twenty-one new pages", () => {
-    expect(MAX_PRERENDER_PAGES).toBe(21);
-    expect(newSeoPages.length).toBeLessThanOrEqual(21);
+  it("never generates more than the registered twenty-six new pages", () => {
+    expect(MAX_PRERENDER_PAGES).toBe(26);
+    expect(newSeoPages.length).toBeLessThanOrEqual(26);
   });
   it("registers the eleven supplied URLs in the required order", () => {
     expect(newSeoPages.slice(0, 11).map(page => page.path)).toEqual([
@@ -37,6 +37,20 @@ describe("new-pages-only full HTML", () => {
       "/whatsapp-marketing-sri-lanka", "/blog/google-ads-vs-google-adsense-sri-lanka",
       "/web-design-sri-lanka",
     ]);
+  });
+  it("registers exactly the five uploaded social opportunity pages additively", () => {
+    expect(newSeoPages.slice(21).map(page => page.path)).toEqual([
+      "/social-media-ads-support-sri-lanka", "/social-media-boosting-service-sri-lanka",
+      "/social-media-marketing-colombo", "/social-media-marketing-small-business-sri-lanka",
+      "/social-media-cost-calculator",
+    ]);
+  });
+  it("provides calculator search data and an honest initial estimate without JavaScript", () => {
+    const source = readFileSync("src/content/social-media-cost-calculator.md", "utf8");
+    const html = newPageHtml(template, "/social-media-cost-calculator", source);
+    expect(html).toContain('"@type":"WebApplication"');
+    expect(html).toContain("LKR 160,000/month");
+    expect(html).toContain("not a final quote");
   });
   it.each(newSeoPages)("delivers full supplied content for $path", page => {
     const source = readFileSync(page.contentFile, "utf8");

@@ -11,9 +11,12 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
 import ServiceStickyCTA from "@/components/ServiceStickyCTA";
 import CtaClickTracker from "@/components/CtaClickTracker";
+import SocialOpportunityIncomingLinks from "@/components/SocialOpportunityIncomingLinks";
 
 // Eager load homepage for fastest FCP
 import Index from "./pages/Index";
+
+const SocialOpportunityPage = lazy(() => import("./pages/SocialOpportunityPage"));
 
 const NewSeoPage2 = lazy(() => import("./pages/NewSeoPage2"));
 const NewSeoPage3 = lazy(() => import("./pages/NewSeoPage3"));
@@ -317,6 +320,11 @@ const AppContent = () => {
               <Route path="/tiktok-ads-sri-lanka" element={<NewSeoPage8 />} />
               <Route path="/whatsapp-marketing-sri-lanka" element={<NewSeoPage9 />} />
               <Route path="/blog/google-ads-vs-google-adsense-sri-lanka" element={<NewSeoPage10 />} />
+              <Route path="/social-media-ads-support-sri-lanka" element={<SocialOpportunityPage />} />
+              <Route path="/social-media-boosting-service-sri-lanka" element={<SocialOpportunityPage />} />
+              <Route path="/social-media-marketing-colombo" element={<SocialOpportunityPage />} />
+              <Route path="/social-media-marketing-small-business-sri-lanka" element={<SocialOpportunityPage />} />
+              <Route path="/social-media-cost-calculator" element={<SocialOpportunityPage />} />
               <Route path="/web-design-sri-lanka" element={<NewSeoPage11 />} />
               <Route path="/blog/newspaper-advertising-rates-sri-lanka" element={<BatchTwoArticle12 />} />
               <Route path="/blog/ads-support-sri-lanka" element={<BatchTwoArticle13 />} />
@@ -578,6 +586,7 @@ const AppContent = () => {
         <WhatsAppButton />
         <FloatingCallButton />
         <BlogCTAInjector />
+        <SocialOpportunityIncomingLinks />
   </>;
 };
 
