@@ -38,3 +38,4 @@
 - [x] Add candidate-specific WhatsApp CV-request actions to application rows and details; normalize local numbers and keep sending manual.
 - [x] Link suitable existing body phrases on the ten supplied pages to the protected social service; five pages updated and five existing React Router links retained, all ten verified with unchanged copy/metadata and 27 regression tests passing. Match table supplied for review before publishing.
 - [x] Check seventeen proposed links: added eight existing-word body links, retained three already-supported sources without duplicates, and skipped six without suitable body wording; all seventeen copy/metadata comparisons and eight destination journeys passed, earlier pillar links preserved, 27 tests passing. Not published.
+- [ ] Apply Batch 3's 24 requested internal links using existing main-body words only; retain existing links, skip missing matches, and verify unchanged copy and metadata before publication.
