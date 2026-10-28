@@ -9,6 +9,9 @@ const IndustryPage = () => {
   if (!industry) return <Navigate to="/404" replace />;
 
   const introLinks: Record<string, { anchor: string; target: string; sentence?: string }> = {
+    "small-business-digital-marketing-sri-lanka": {
+      anchor: "Digital marketing", target: "/",
+    },
     "travel-agency-digital-marketing-sri-lanka": {
       anchor: "hotel digital marketing", target: "/hotel-digital-marketing-sri-lanka",
       sentence: " For accommodation-focused campaigns, explore our approach to ",
