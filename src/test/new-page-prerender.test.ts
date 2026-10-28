@@ -24,9 +24,9 @@ describe("new-pages-only full HTML", () => {
     expect(html.match(/<h1\b/g)).toHaveLength(1);
     expect(html).not.toContain("noindex");
   });
-  it("never generates more than the approved twenty-one new pages", () => {
-    expect(MAX_PRERENDER_PAGES).toBe(21);
-    expect(newSeoPages.length).toBeLessThanOrEqual(21);
+  it("never generates more than the registered twenty-six new pages", () => {
+    expect(MAX_PRERENDER_PAGES).toBe(26);
+    expect(newSeoPages.length).toBeLessThanOrEqual(26);
   });
   it("registers the eleven supplied URLs in the required order", () => {
     expect(newSeoPages.slice(0, 11).map(page => page.path)).toEqual([

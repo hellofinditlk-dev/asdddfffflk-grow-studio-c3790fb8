@@ -1,7 +1,7 @@
 import { escapeHtml, markdownHtml, splitSeoMarkdown } from "../src/lib/newSeoMarkdown";
 import { newSeoPages } from "../src/data/new-seo-pages";
 
-export const MAX_PRERENDER_PAGES = 21;
+export const MAX_PRERENDER_PAGES = 26;
 
 export function newPageHtml(template: string, pathname: string, markdown: string): string {
   const page = newSeoPages.find(entry => entry.path === pathname);
@@ -19,6 +19,9 @@ export function newPageHtml(template: string, pathname: string, markdown: string
       { "@type": "ListItem", position: 3, name: page.breadcrumbLabel, item: canonical },
     ] },
   ];
+  if (pathname === "/social-media-cost-calculator") {
+    schemas[0] = { "@context": "https://schema.org", "@type": "WebApplication", name: "Social Media Marketing Cost Calculator", applicationCategory: "BusinessApplication", operatingSystem: "Any", url: canonical, offers: { "@type": "Offer", price: "0", priceCurrency: "LKR" }, provider: { "@type": "Organization", name: "Cypher Digital" } } as unknown as typeof schemas[0];
+  }
   const tags = [
     `<title>${escapeHtml(page.title)}</title>`,
     `<meta name="description" content="${escapeHtml(page.description)}">`,

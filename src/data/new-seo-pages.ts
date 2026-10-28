@@ -251,4 +251,64 @@ export const newSeoPages: NewSeoPage[] = [
   "supportingKeywords": [],
   "kind": "article"
 },
+{
+  "path": "/social-media-ads-support-sri-lanka",
+  "contentFile": "src/content/social-media-ads-support-sri-lanka.md",
+  "title": "Meta Ads Support Sri Lanka | Facebook, Instagram & LinkedIn Ad Help",
+  "description": "Need help with disabled ad accounts, payment failures or rejected ads? Discuss Facebook, Instagram, LinkedIn and YouTube account support with Cypher Digital.",
+  "primaryKeyword": "social media ads support sri lanka",
+  "supportingKeywords": [],
+  "breadcrumbLabel": "Ads Support",
+  "kind": "service",
+  "cta": "Get ads support on WhatsApp",
+  "heroAlt": "Social media campaign planning for Sri Lankan businesses"
+},
+{
+  "path": "/social-media-boosting-service-sri-lanka",
+  "contentFile": "src/content/social-media-boosting-service-sri-lanka.md",
+  "title": "Facebook & Instagram Boosting Service Sri Lanka | Cypher Digital",
+  "description": "Stop wasting money on the Boost button. We boost your Facebook, Instagram and TikTok posts to the right people in Sri Lanka, for messages and sales, not just likes.",
+  "primaryKeyword": "social media boosting service sri lanka",
+  "supportingKeywords": [],
+  "breadcrumbLabel": "Boosting Service",
+  "kind": "service",
+  "cta": "Boost my posts properly",
+  "heroAlt": "Social media campaign planning for Sri Lankan businesses"
+},
+{
+  "path": "/social-media-marketing-colombo",
+  "contentFile": "src/content/social-media-marketing-colombo.md",
+  "title": "Social Media Marketing Agency in Colombo | Cypher Digital",
+  "description": "Colombo social media marketing agency. Posts, reels, page handling and Facebook ads for Colombo businesses. Meet us in person or on Zoom. Packages from LKR 85,000/month.",
+  "primaryKeyword": "social media marketing colombo",
+  "supportingKeywords": [],
+  "breadcrumbLabel": "Social Media Marketing Colombo",
+  "kind": "service",
+  "cta": "Book a free strategy call",
+  "heroAlt": "Social media campaign planning for Sri Lankan businesses"
+},
+{
+  "path": "/social-media-marketing-small-business-sri-lanka",
+  "contentFile": "src/content/social-media-marketing-small-business-sri-lanka.md",
+  "title": "Social Media Marketing for Small Business Sri Lanka | From LKR 85,000",
+  "description": "Social media marketing for small businesses in Sri Lanka. Compare posts, reels, page handling and optional ads with clear monthly LKR package pricing.",
+  "primaryKeyword": "social media marketing small business sri lanka",
+  "supportingKeywords": [],
+  "breadcrumbLabel": "Small Business Social Media",
+  "kind": "service",
+  "cta": "Get a small business plan on WhatsApp",
+  "heroAlt": "Social media campaign planning for Sri Lankan businesses"
+},
+{
+  "path": "/social-media-cost-calculator",
+  "contentFile": "src/content/social-media-cost-calculator.md",
+  "title": "Social Media Marketing Cost Calculator Sri Lanka (LKR) | Cypher Digital",
+  "description": "How much does social media marketing cost in Sri Lanka? Choose your platforms, posts, reels and ad budget, and get an instant monthly estimate in LKR.",
+  "primaryKeyword": "social media cost calculator",
+  "supportingKeywords": [],
+  "breadcrumbLabel": "Social Media Cost Calculator",
+  "kind": "service",
+  "cta": "Ask which package fits you",
+  "heroAlt": "Social media campaign planning for Sri Lankan businesses"
+},
 ];
