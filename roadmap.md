@@ -37,4 +37,4 @@
 - [ ] Deploy the redirect correction to the separately hosted cypherdigital.lk site and recheck live HTTP responses; external Netlify deployment is unavailable here.
 - [x] Add candidate-specific WhatsApp CV-request actions to application rows and details; normalize local numbers and keep sending manual.
 - [x] Link suitable existing body phrases on the ten supplied pages to the protected social service; five pages updated and five existing React Router links retained, all ten verified with unchanged copy/metadata and 27 regression tests passing. Match table supplied for review before publishing.
-- [ ] Add the next seventeen existing-word internal links across packages, design, content, advertising and influencer groups; preserve earlier links and report matches or skips.
+- [x] Check seventeen proposed links: added eight existing-word body links, retained three already-supported sources without duplicates, and skipped six without suitable body wording; all seventeen copy/metadata comparisons and eight destination journeys passed, earlier pillar links preserved, 27 tests passing. Not published.
