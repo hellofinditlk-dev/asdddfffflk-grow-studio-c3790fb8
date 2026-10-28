@@ -133,6 +133,7 @@ const BlogCreativeAgency = () => (
             <p>That's where a <strong>creative agency</strong> comes in.</p>
             <p>A professional creative agency in Sri Lanka handles everything visual — from your logo and brand identity to your social media graphics, packaging, advertising creatives, and motion videos. Done right, it's one of the highest-ROI investments a Sri Lankan business can make.</p>
             <p>This guide covers what a creative agency does, what to look for when hiring one in Sri Lanka, and how Cypher Digital's creative team delivers results for businesses across the island.</p>
+            <p>To connect your creative work with SEO, paid advertising and lead generation, explore our services as a <Link to="/" className="!text-inherit ![font-weight:inherit] !no-underline">digital marketing agency in Colombo</Link>.</p>
 
             <div className="bg-secondary rounded-xl p-6 my-8 not-prose">
               <div className="text-[11px] font-bold uppercase tracking-wider text-primary mb-3">Table of Contents</div>

@@ -24,6 +24,7 @@ important yet least understood functions in advertising. This guide
 explains exactly what media buying is, how it works in the Sri Lankan
 context, and why getting it right can make or break your advertising
 campaign.</em></p>
+<p>For help connecting your advertising plan with online campaigns, explore Cypher Digital's services as a <a href="/" class="!text-inherit ![font-weight:inherit] !no-underline">digital marketing and advertising agency</a>.</p>
 <h2>What is Media Buying?</h2>
 <p>Media buying is the process of purchasing advertising space and time
 across different media channels — television, radio, digital platforms,
