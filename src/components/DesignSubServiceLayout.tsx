@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import { useEffect } from "react";
+import type { ReactNode } from "react";
 import {
   CheckCircle, ArrowRight, Sparkles, MessageCircle,
 } from "lucide-react";
@@ -12,9 +13,10 @@ import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 
 interface Props {
   data: DesignSubService;
+  introContent?: ReactNode;
 }
 
-const DesignSubServiceLayout = ({ data }: Props) => {
+const DesignSubServiceLayout = ({ data, introContent }: Props) => {
   const canonical = `https://cypherdigital.lk/${data.slug}`;
 
   // JSON-LD
@@ -93,7 +95,7 @@ const DesignSubServiceLayout = ({ data }: Props) => {
             {data.h1}
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
-            {data.intro}
+            {introContent ?? data.intro}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white font-semibold hover:bg-[hsl(25,95%,45%)] rounded-xl border-none">

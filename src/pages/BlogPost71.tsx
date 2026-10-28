@@ -19,7 +19,7 @@ const BlogPost71 = () => (
             <h1 className="font-heading text-2xl md:text-3xl font-extrabold mt-3 mb-4">TikTok Marketing in Sri Lanka: How to Go Viral and Get Customers in 2025</h1>
           </header>
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
-            <p>TikTok is no longer just for teenagers dancing to trending songs. With 5.2 million Sri Lankan users and the highest average session time of any platform, TikTok has become one of the most powerful marketing channels for Sri Lankan businesses in 2025 — if you know how to use it.</p>
+            <p><Link to="/tiktok-marketing-sri-lanka" className="text-inherit no-underline hover:no-underline">TikTok</Link> is no longer just for teenagers dancing to trending songs. With 5.2 million Sri Lankan users and the highest average session time of any platform, TikTok has become one of the most powerful marketing channels for Sri Lankan businesses in 2025 — if you know how to use it.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Why TikTok Is a Massive Opportunity Right Now</h2>
             <p>5.2 million Sri Lankan users and growing rapidly. Average time on platform significantly exceeds Facebook and Instagram. The algorithm can give a brand-new account viral reach with no ad spend. TikTok partnered with a local Sri Lankan reseller for ads. Most Sri Lankan businesses are NOT on TikTok yet — competition for attention is low.</p>
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">How the TikTok Algorithm Works in Sri Lanka</h2>

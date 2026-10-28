@@ -24,7 +24,7 @@ const BlogPost150 = () => (
 
           <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed space-y-5">
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">Why Video Dominates Social Media in Sri Lanka</h2>
-            <p>Sri Lanka has over 7 million active Facebook users and a rapidly growing TikTok and Instagram audience. Facebook Reels get 22% more reach than standard video posts; TikTok videos under 30 seconds have the highest completion rates; Instagram Reels generate 50% more engagement than regular posts.</p>
+            <p>Sri Lanka has over 7 million active Facebook users and a rapidly growing TikTok and Instagram audience. <Link to="/reel-creation-sri-lanka" className="text-inherit no-underline hover:no-underline">Facebook Reels</Link> get 22% more reach than standard video posts; TikTok videos under 30 seconds have the highest completion rates; Instagram Reels generate 50% more engagement than regular posts.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">The 4 Video Formats That Drive Results</h2>
             <p><strong>1. Problem-Solution Reels (15–30s)</strong> — show a problem, then your service as the solution. Works for clinics, salons, real estate, education.</p>
