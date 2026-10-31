@@ -4,7 +4,7 @@ How much should social media marketing cost your business each month? Choose you
 
 No sign-up. No email. When you're happy with the estimate, send it to us on WhatsApp and we'll confirm it on a free call.
 
-**Default planning estimate:** Basic package LKR 85,000 + ads management LKR 25,000 + Meta ad budget LKR 50,000 = LKR 160,000/month. This is an estimate, not a final quote.
+**Default planning estimate:** Basic package LKR 85,000 + Meta ad budget LKR 50,000 = LKR 135,000/month. Campaign management is covered within the package scope; no standalone management surcharge is added. This is an estimate, not a final quote.
 
 ---
 
@@ -33,7 +33,7 @@ The calculator recommends one of these four monthly packages. All prices are per
 
 **Calculator assumptions:** additional professional reels are estimated at LKR 30,000 each under this calculator's planning rules. This is not a universal price for every video format. The current [reel creation prices](/reel-creation-sri-lanka) start at LKR 25,000 for a professional 1-minute video shoot, LKR 35,000 for 1–3 minutes and LKR 40,000 onwards for 5 minutes or longer. AI character videos are listed separately at LKR 18,000 for 15–30 seconds, LKR 30,000 for 60 seconds and LKR 45,000 for 90 seconds.
 
-The published Gold package includes location-shot reels but does not specify a count; the calculator uses three for planning, subject to your written quote. Optional standalone Facebook and Instagram ads management starts from LKR 25,000 per month. The calculator adds that starting fee when selected; confirm whether campaign setup or management is already included in your chosen package so the final quote does not charge twice for the same work.
+The published Gold package includes location-shot reels but does not specify a count; the calculator uses three for planning, subject to your written quote. Standalone Facebook and Instagram ads management starts from LKR 25,000 per month, but that separate-service starting fee is not added to these package estimates. Campaign setup and management follow your chosen package's scope; confirm any work beyond that scope in your written quote.
 
 **Travel and payment:** the reel creation page lists no travel charge within Colombo, LKR 6,000 for Greater Colombo and LKR 12,000 for regional areas, with outstation trips quoted individually. Travel is not added to this calculator's total; confirm the location and applicable charge in your proposal. Payment dates, any advance, accepted method and applicable taxes must also be confirmed in writing before booking.
 
@@ -86,19 +86,19 @@ These show how the calculator works for three common types of business.
 - Facebook and Instagram, 12 posts, 3 reels, no shoot
 - Ads management: yes, with LKR 40,000 ad budget
 - **Package:** Basic, LKR 85,000
-- **Ads management:** LKR 25,000
-- **Agency fee:** LKR 110,000 per month
+- **Campaign management:** within package scope, no standalone surcharge
+- **Agency fee:** LKR 85,000 per month
 - **Ad budget paid to Meta:** LKR 40,000
-- **Estimated total:** LKR 150,000 per month
+- **Estimated total:** LKR 125,000 per month
 
 ### Example 2: a salon in Nugegoda
 - Facebook and Instagram, 15 posts, 3 reels from a location shoot
 - Ads management: yes, with LKR 50,000 ad budget
 - **Package:** Silver, LKR 100,000
-- **Ads management:** LKR 25,000
-- **Agency fee:** LKR 125,000 per month
+- **Campaign management:** within package scope, no standalone surcharge
+- **Agency fee:** LKR 100,000 per month
 - **Ad budget paid to Meta:** LKR 50,000
-- **Estimated total:** LKR 175,000 per month
+- **Estimated total:** LKR 150,000 per month
 
 ### Example 3: a B2B services company
 - Facebook, Instagram and LinkedIn, 20 posts, 3 reels

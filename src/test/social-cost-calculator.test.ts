@@ -2,8 +2,8 @@ import { describe, expect, it } from "vitest";
 import { calculateSocialCost, defaultSocialCostInputs as defaults, socialEstimateMessage } from "@/lib/socialCostCalculator";
 
 describe("supplied social media calculator rules", () => {
-  it("starts with Basic 85000, management 25000 and budget 50000", () => {
-    expect(calculateSocialCost(defaults)).toMatchObject({ name: "Basic", packageFee: 85000, adsManagementFee: 25000, adBudget: 50000, agencyFee: 110000, totalMonthly: 160000 });
+  it("matches Basic 85000 plus separate budget 50000 without a standalone surcharge", () => {
+    expect(calculateSocialCost(defaults)).toMatchObject({ name: "Basic", packageFee: 85000, adsManagementFee: 0, adBudget: 50000, agencyFee: 85000, totalMonthly: 135000 });
   });
   it("recommends Silver at 15 posts", () => { expect(calculateSocialCost({ ...defaults, posts: 15 })).toMatchObject({ name: "Silver", packageFee: 100000 }); });
   it("recommends Silver for a location shoot", () => { expect(calculateSocialCost({ ...defaults, shoot: true }).name).toBe("Silver"); });
@@ -23,12 +23,12 @@ describe("supplied social media calculator rules", () => {
   it("caps ad budget at 300000", () => { expect(calculateSocialCost({ ...defaults, budget: 500000 }).adBudget).toBe(300000); });
   it("uses 10000 budget steps", () => { expect(calculateSocialCost({ ...defaults, budget: 54000 }).adBudget).toBe(50000); });
   it("allows zero reels without lowering package fees", () => { expect(calculateSocialCost({ ...defaults, reels: 0 })).toMatchObject({ packageFee: 85000, extraReelCost: 0 }); });
-  it("sends the selected inputs and actual estimated total", () => { expect(socialEstimateMessage({ ...defaults, posts: 15, shoot: true })).toContain("Estimated total: LKR 175,000/month"); });
+  it("sends the selected inputs and actual estimated total", () => { expect(socialEstimateMessage({ ...defaults, posts: 15, shoot: true })).toContain("Estimated total: LKR 150,000/month"); });
   it("matches the cafe example with a 40000 Meta budget", () => {
-    expect(calculateSocialCost({ ...defaults, budget: 40000 })).toMatchObject({ packageFee: 85000, agencyFee: 110000, adBudget: 40000, totalMonthly: 150000 });
+    expect(calculateSocialCost({ ...defaults, budget: 40000 })).toMatchObject({ packageFee: 85000, agencyFee: 85000, adBudget: 40000, totalMonthly: 125000 });
   });
   it("matches the salon example with a Silver shoot and 50000 Meta budget", () => {
-    expect(calculateSocialCost({ ...defaults, posts: 15, shoot: true })).toMatchObject({ packageFee: 100000, agencyFee: 125000, adBudget: 50000, totalMonthly: 175000 });
+    expect(calculateSocialCost({ ...defaults, posts: 15, shoot: true })).toMatchObject({ packageFee: 100000, agencyFee: 100000, adBudget: 50000, totalMonthly: 150000 });
   });
   it("matches the B2B Gold example without paid ads", () => {
     expect(calculateSocialCost({ ...defaults, posts: 20, linkedin: true, ads: false })).toMatchObject({ packageFee: 150000, agencyFee: 150000, adBudget: 0, totalMonthly: 150000 });

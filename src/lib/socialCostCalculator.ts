@@ -30,7 +30,9 @@ export function calculateSocialCost(input: SocialCostInputs) {
   }
   const packageFee = socialPackageRates[name].fee;
   const extraReelCost = extraReels * 30000;
-  const adsManagementFee = input.ads ? 25000 : 0;
+  // Published package fees already cover campaign setup/management within scope.
+  // The LKR 25,000 starting fee is for standalone management, not a package surcharge.
+  const adsManagementFee = 0;
   const adBudget = input.ads ? Math.max(0, Math.min(300000, Math.round(input.budget / 10000) * 10000)) : 0;
   const agencyFee = packageFee + extraReelCost + adsManagementFee;
   return { name, packageFee, extraReels, extraReelCost, adsManagementFee, adBudget, agencyFee, totalMonthly: agencyFee + adBudget };
@@ -38,5 +40,5 @@ export function calculateSocialCost(input: SocialCostInputs) {
 export function socialEstimateMessage(input: SocialCostInputs) {
   const result = calculateSocialCost(input);
   const platforms = ["Facebook", "Instagram", ...(input.tiktok ? [input.fullTiktok ? "TikTok (full strategy)" : "TikTok (cross-posting)"] : []), ...(input.linkedin ? ["LinkedIn"] : [])];
-  return `Hi Cypher Digital, I used your cost calculator. Package: ${result.name}. Platforms requested: ${platforms.join(", ")}. Posts: ${input.posts === 21 ? "More than 20" : input.posts}/month. Reels: ${input.reels}/month. Shoot requested: ${input.shoot ? "yes" : "no"}. Package baseline: ${formatLkr(result.packageFee)}. Extra reels: ${result.extraReels} (${formatLkr(result.extraReelCost)}). Ads management estimate: ${formatLkr(result.adsManagementFee)}. Agency fee estimate: ${formatLkr(result.agencyFee)}. Ad budget paid to Meta: ${formatLkr(result.adBudget)}. Estimated total: ${formatLkr(result.totalMonthly)}/month. Please confirm reel format/count, included campaign management, travel, taxes and payment terms in my final quote. Can we talk?`;
+  return `Hi Cypher Digital, I used your cost calculator. Package: ${result.name}. Platforms requested: ${platforms.join(", ")}. Posts: ${input.posts === 21 ? "More than 20" : input.posts}/month. Reels: ${input.reels}/month. Shoot requested: ${input.shoot ? "yes" : "no"}. Package baseline: ${formatLkr(result.packageFee)}. Extra reels: ${result.extraReels} (${formatLkr(result.extraReelCost)}). Campaign management: within package scope, no standalone surcharge added. Agency fee estimate: ${formatLkr(result.agencyFee)}. Ad budget paid to Meta: ${formatLkr(result.adBudget)}. Estimated total: ${formatLkr(result.totalMonthly)}/month. Please confirm reel format/count, included campaign management, travel, taxes and payment terms in my final quote. Can we talk?`;
 }

@@ -49,12 +49,12 @@ export default function SocialCostCalculator() {
         <dl className="space-y-3 text-sm">
           <div className="flex justify-between gap-3"><dt>Package fee</dt><dd>{formatLkr(result.packageFee)}</dd></div>
           {result.extraReels > 0 && <div className="flex justify-between gap-3"><dt>Extra reels estimate ({result.extraReels})</dt><dd>{formatLkr(result.extraReelCost)}</dd></div>}
-          {input.ads && <div className="flex justify-between gap-3"><dt>Ads management estimate</dt><dd>{formatLkr(result.adsManagementFee)}</dd></div>}
+          {input.ads && <div className="flex justify-between gap-3"><dt>Campaign management</dt><dd>Within package scope</dd></div>}
           <div className="flex justify-between gap-3 border-t border-border pt-3 font-bold"><dt>Agency fee per month</dt><dd>{formatLkr(result.agencyFee)}</dd></div>
           <div className="flex justify-between gap-3"><dt>Ad budget paid to Meta</dt><dd>{formatLkr(result.adBudget)}</dd></div>
         </dl>
         <div className="border-t border-border mt-5 pt-5"><p className="text-sm text-muted-foreground">Estimated total per month</p><p className="font-heading text-3xl font-bold mt-2" data-testid="estimate-total">{formatLkr(result.totalMonthly)}</p></div>
-        <p className="text-xs text-muted-foreground leading-relaxed my-5">Estimate only. Extra professional reels use a LKR 30,000 planning allowance; video formats have different standalone prices. Confirm Gold's reel count and any campaign management already included in your package. Meta budget is separate; travel and applicable taxes are not calculated. Final scope and payment terms are confirmed in your quote.</p>
+        <p className="text-xs text-muted-foreground leading-relaxed my-5">Package fees match our published packages. The standalone LKR 25,000 ads-management fee is not added to a package. Extra professional reels use a LKR 30,000 planning allowance; video formats have different standalone prices. Confirm Gold's reel count and campaign scope in your quote. Meta budget is separate; travel and applicable taxes are not calculated. Final scope and payment terms are confirmed in your quote.</p>
         <Button asChild className="social-whatsapp h-auto min-h-12 whitespace-normal w-full border-0 py-3"><a href={href} target="_blank" rel="noopener noreferrer" onClick={track}><MessageCircle className="h-4 w-4 mr-2 shrink-0" />Send this estimate on WhatsApp</a></Button>
       </div>
     </div>
