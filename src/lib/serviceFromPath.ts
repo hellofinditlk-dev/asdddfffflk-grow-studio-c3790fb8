@@ -87,6 +87,14 @@ export function cleanPath(rawPath: string | null | undefined): string {
   return rawPath.split("?")[0].split("#")[0].replace(/\/+$/, "") || "/";
 }
 
+// Career pages and vacancy pages ("/careers", "/careers/:slug") produce job
+// seeker contacts, not sales leads. Admin lead views use this to keep them out.
+export function isCareerPath(rawPath: string | null | undefined): boolean {
+  if (!rawPath) return false;
+  const clean = rawPath.split("?")[0].split("#")[0].replace(/\/+$/, "") || "/";
+  return clean === "/careers" || clean.startsWith("/careers/");
+}
+
 export function sourceFromReferrer(ref: string | null | undefined): string {
   if (!ref) return "Direct";
   try {

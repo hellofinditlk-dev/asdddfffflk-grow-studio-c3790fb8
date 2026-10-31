@@ -16,7 +16,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl, urlFromPath } from "@/lib/serviceFromPath";
+import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl, urlFromPath, isCareerPath } from "@/lib/serviceFromPath";
 
 interface Inquiry {
   id: string;
@@ -624,7 +624,8 @@ export default function AdminInquiries() {
         </div>
       </Section>
 
-      {/* Recent inquiries */}
+      {/* Recent inquiries — career page and job application contacts are excluded;
+          they are job seekers, not sales leads (see Admin Applications). */}
       <Section title="Recent Inquiries" sub="Latest leads with clean page names">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
@@ -638,7 +639,7 @@ export default function AdminInquiries() {
               </tr>
             </thead>
             <tbody>
-              {scopedInquiries.slice(0, 25).map((i) => (
+              {scopedInquiries.filter((i) => !isCareerPath(i.source_path)).slice(0, 25).map((i) => (
                 <tr key={i.id} className="border-t border-border">
                   <td className="px-4 py-2 whitespace-nowrap text-muted-foreground">
                     {new Date(i.created_at).toLocaleString()}
@@ -678,7 +679,7 @@ export default function AdminInquiries() {
                   </td>
                 </tr>
               ))}
-              {scopedInquiries.length === 0 && (
+              {scopedInquiries.filter((i) => !isCareerPath(i.source_path)).length === 0 && (
                 <tr><td colSpan={5} className="px-4 py-6 text-center text-muted-foreground">No inquiries yet.</td></tr>
               )}
             </tbody>
