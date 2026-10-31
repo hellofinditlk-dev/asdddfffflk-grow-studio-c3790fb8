@@ -16,7 +16,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl, urlFromPath } from "@/lib/serviceFromPath";
+import { serviceFromPath, sourceFromReferrer, cleanPath, serviceUrl, urlFromPath, isCareerPath } from "@/lib/serviceFromPath";
 
 interface Inquiry {
   id: string;
