@@ -1,5 +1,4 @@
 import { toast } from "sonner";
-import { trackCtaClick } from "@/lib/trackCtaClick";
 import { requestWhatsappContact } from "@/lib/whatsappContact";
 
 /** Open only after the record is accepted; retain a same-tab fallback for popup blockers. */
