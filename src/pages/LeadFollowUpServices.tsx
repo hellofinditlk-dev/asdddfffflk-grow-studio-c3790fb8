@@ -9,6 +9,9 @@ import {
 import SEOHead from "@/components/SEOHead";
 import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/integrations/supabase/client";
+import { openTrackedWhatsapp } from "@/lib/contactNavigation";
+import { toast } from "sonner";
 
 const URL = "https://cypherdigital.lk/lead-follow-up-services-sri-lanka";
 const PHONE_DISPLAY = "077 143 7707";
@@ -184,10 +187,14 @@ const whyCypher = [
 const LeadForm = () => {
   const [f, setF] = useState({ name: "", business: "", phone: "", leads: "", source: "", message: "" });
   const set = (k: keyof typeof f) => (e: any) => setF({ ...f, [k]: e.target.value });
-  const submit = (e: FormEvent) => {
+  const submit = async (e: FormEvent) => {
     e.preventDefault();
     const msg = `Hi Cypher Digital, I'd like a lead follow-up proposal.\nName: ${f.name}\nBusiness: ${f.business}\nPhone: ${f.phone}\nApprox. leads: ${f.leads}\nLead source: ${f.source}\nNotes: ${f.message}`;
-    window.open(waLink(msg), "_blank", "noopener,noreferrer");
+    const { error } = await supabase.from("inquiries").insert({ name: f.name, phone: f.phone, message: msg,
+      service: "Lead Follow-Up Services", source_path: window.location.pathname,
+      extra: { business: f.business, leads: f.leads, lead_source: f.source, referrer: document.referrer || null } });
+    if (error) { toast.error("Could not save your inquiry. Please try again."); return; }
+    await openTrackedWhatsapp(waLink(msg), "Request a campaign proposal", "Lead follow-up form");
   };
   const input = "w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring";
   return (

@@ -4,6 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
+import AdminContactRecords from "@/components/AdminContactRecords";
+import { loadContactRecords, whatsappDetails, type ContactRecord } from "@/lib/contactRecords";
 import {
   LineChart,
   Line,
@@ -66,6 +68,9 @@ export default function AdminInquiries() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [range, setRange] = useState<Range>("today");
   const [audience, setAudience] = useState('all');
+  const [refresh, setRefresh] = useState(0);
+  const [loadingRecords, setLoadingRecords] = useState(true);
+  const [recordsError, setRecordsError] = useState(false);
 
   useEffect(() => {
     const init = async () => {
@@ -83,18 +88,13 @@ export default function AdminInquiries() {
       setIsAdmin(admin);
       setAuthChecked(true);
       if (!admin) return;
+      setLoadingRecords(true);
 
       const [{ data: iData, error: iErr }, { data: ccData, error: ccErr }, { data: ctaData, error: ctaErr }] =
         await Promise.all([
-          supabase.from("inquiries").select("*").order("created_at", { ascending: false }),
-          supabase
-            .from("call_clicks")
-            .select("id,phone,source_path,referrer,created_at")
-            .order("created_at", { ascending: false }),
-          (supabase as any)
-            .from("cta_clicks")
-            .select("id,cta_type,cta_label,placement,source_path,href,referrer,created_at")
-            .order("created_at", { ascending: false }),
+          loadContactRecords("inquiries"),
+          loadContactRecords("call_clicks"),
+          loadContactRecords("cta_clicks"),
         ]);
       if (iErr) toast.error("Failed to load inquiries: " + iErr.message);
       if (ccErr) console.error("call_clicks error", ccErr);
@@ -102,9 +102,11 @@ export default function AdminInquiries() {
       setInquiries((iData as Inquiry[]) ?? []);
       setCallClicks((ccData as CallClick[]) ?? []);
       setCtaClicks((ctaData as CtaClick[]) ?? []);
+      setRecordsError(Boolean(iErr || ccErr || ctaErr));
+      setLoadingRecords(false);
     };
     init();
-  }, [navigate]);
+  }, [navigate, refresh]);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -130,6 +132,11 @@ export default function AdminInquiries() {
   const periodInq = useMemo(() => inRange(scopedInquiries), [scopedInquiries, rangeStart]);
   const periodCalls = useMemo(() => inRange(scopedCalls), [scopedCalls, rangeStart]);
   const periodCtas = useMemo(() => inRange(scopedCtas), [scopedCtas, rangeStart]);
+  const contactRecords: ContactRecord[] = useMemo(() => [
+    ...scopedInquiries.map(r => ({ ...r, kind: "inquiry" as const, label: r.service || "General inquiry", referrer: String(r.extra?.referrer || ""), message: [r.message, r.extra ? JSON.stringify(r.extra, null, 2) : ""].filter(Boolean).join("\n") })),
+    ...scopedCalls.map(r => ({ ...r, kind: "call" as const, label: "Call", message: null })),
+    ...scopedCtas.filter(r => r.cta_type === "whatsapp").map(r => ({ ...r, ...whatsappDetails(r.href), kind: "whatsapp" as const, label: r.cta_label || "WhatsApp" })),
+  ], [scopedInquiries, scopedCalls, scopedCtas]);
 
   // ---------------- KPIs ----------------
   const totalCtaClicks = periodCtas.length + periodCalls.length;
@@ -407,12 +414,15 @@ export default function AdminInquiries() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
+          <Button variant="outline" size="sm" disabled={loadingRecords} onClick={() => setRefresh(v => v + 1)}>{loadingRecords ? "Loading records…" : "Refresh records"}</Button>
           <Link to="/admin/leads"><Button variant="outline" size="sm">AI Visibility</Button></Link>
           <Link to="/admin/call-clicks"><Button variant="outline" size="sm">Call Log</Button></Link>
           <Link to="/admin/applications"><Button variant="outline" size="sm">Applications</Button></Link>
           <Button variant="outline" size="sm" onClick={handleLogout}>Sign Out</Button>
         </div>
       </div>
+
+      {recordsError ? <p role="alert" className="text-destructive mb-4">Some contact records could not be loaded. Refresh to try again.</p> : loadingRecords ? <p className="text-muted-foreground mb-4">Loading contact records…</p> : <AdminContactRecords records={contactRecords} />}
 
       <Tabs value={range} onValueChange={(v) => setRange(v as Range)} className="mb-6">
         <TabsList>

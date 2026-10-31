@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { openTrackedWhatsapp } from "@/lib/contactNavigation";
 
 interface JobApplicationFormProps {
   positionTitle: string;
@@ -47,7 +48,7 @@ const JobApplicationForm = ({ positionTitle, positionSlug }: JobApplicationFormP
         form.message ? `\n${form.message}` : "",
       ].filter(Boolean).join("\n");
 
-      window.open(`https://wa.me/94701772626?text=${encodeURIComponent(waMessage)}`, "_blank", "noopener,noreferrer");
+      if (!await openTrackedWhatsapp(`https://wa.me/94701772626?text=${encodeURIComponent(waMessage)}`, "Apply via WhatsApp", positionTitle)) return;
       toast.success("Application received — opening WhatsApp so you can send your CV.");
       setForm({ name: "", email: "", phone: "", experience: "", portfolio: "", message: "" });
     } catch (err: any) {

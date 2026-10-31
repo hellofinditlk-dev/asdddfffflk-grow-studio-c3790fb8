@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { vacancies } from "@/data/vacancies";
+import { openTrackedWhatsapp } from "@/lib/contactNavigation";
 
 const WHATSAPP_BASE = "https://wa.me/94701772626";
 
@@ -276,7 +277,7 @@ const ApplyForm = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", role: "", portfolio: "", message: "" });
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const text = encodeURIComponent(
       `Hi Cypher Digital, I'd like to apply for a role!\n\n` +
@@ -287,8 +288,7 @@ const ApplyForm = () => {
       `Portfolio: ${form.portfolio || "Not provided"}\n` +
       `Message: ${form.message || "No message"}`
     );
-    setSent(true);
-    window.open(`${WHATSAPP_BASE}?text=${text}`, "_blank");
+    if (await openTrackedWhatsapp(`${WHATSAPP_BASE}?text=${text}`, "Apply via WhatsApp", "Careers application form")) setSent(true);
   };
 
   return (
