@@ -48,3 +48,5 @@
 - [x] Record contact clicks before navigation without duplicates and add searchable, complete admin contact records with source pages; 33 tests and authenticated visitor-to-admin WhatsApp/call readback passed. Preview only, not published.
 - [x] Match calculator package fees to the current packages page and remove the automatic standalone management surcharge; verified Basic 135,000 with budget, Silver 150,000 with budget / 100,000 without, and WhatsApp draft. Preview only, not published.
 - [x] Require name, phone and email before public WhatsApp navigation; client/server validation, real inquiry save and authenticated admin readback verified with calculator draft and source page. Eleven tests pass; frontend not published.
+- [ ] Improve calculator long-tail search wording and connect the supplied Google listing link without changing package prices or protected pages.
+- [ ] Verify and optimise the Google Business Profile itself; account connection was declined, so profile access is unavailable.
