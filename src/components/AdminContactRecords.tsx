@@ -24,8 +24,8 @@ export default function AdminContactRecords({ records }: { records: ContactRecor
     <p className="text-sm text-muted-foreground mt-1 mb-4">WhatsApp and call clicks show contact intent, not sent messages or completed calls. Destination numbers are agency numbers; visitor details appear only when submitted.</p>
     <div className="flex flex-wrap gap-3 mb-4">
       <Tabs value={kind} onValueChange={v => { setKind(v); setPage(0); }}><TabsList className="h-auto flex-wrap">
-        <TabsTrigger value="all" onClick={() => { setKind("all"); setPage(0); }}>All records</TabsTrigger><TabsTrigger value="inquiry" onClick={() => { setKind("inquiry"); setPage(0); }}>Inquiries</TabsTrigger>
-        <TabsTrigger value="whatsapp" onClick={() => { setKind("whatsapp"); setPage(0); }}>WhatsApp clicks</TabsTrigger><TabsTrigger value="call" onClick={() => { setKind("call"); setPage(0); }}>Call clicks</TabsTrigger>
+        <TabsTrigger value="all">All records</TabsTrigger><TabsTrigger value="inquiry">Inquiries</TabsTrigger>
+        <TabsTrigger value="whatsapp">WhatsApp clicks</TabsTrigger><TabsTrigger value="call">Call clicks</TabsTrigger>
       </TabsList></Tabs>
       <Input aria-label="Search contact records" placeholder="Search name, phone, page or message" className="max-w-sm" value={search} onChange={e => { setSearch(e.target.value); setPage(0); }} />
       <Select value={source} onValueChange={v => { setSource(v); setPage(0); }}><SelectTrigger className="w-full sm:w-72" aria-label="Filter source page"><SelectValue placeholder="Source page" /></SelectTrigger><SelectContent>
