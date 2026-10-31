@@ -19,7 +19,7 @@ export default function AdminContactRecords({ records }: { records: ContactRecor
     [r.name, r.email, r.phone, r.label, r.message, r.source_path, r.placement].join(" ").toLowerCase().includes(search.toLowerCase())
   ).sort((a, b) => b.created_at.localeCompare(a.created_at)), [records, kind, source, search]);
   const current = Math.min(page, Math.max(0, Math.ceil(filtered.length / 25) - 1));
-  return <section className="mb-8" aria-label="Contact records">
+  return <section className="mb-8 scroll-mt-28" aria-label="Contact records">
     <h2 className="text-xl font-semibold">All contact records</h2>
     <p className="text-sm text-muted-foreground mt-1 mb-4">WhatsApp and call clicks show contact intent, not sent messages or completed calls. Destination numbers are agency numbers; visitor details appear only when submitted.</p>
     <div className="flex flex-wrap gap-3 mb-4">
