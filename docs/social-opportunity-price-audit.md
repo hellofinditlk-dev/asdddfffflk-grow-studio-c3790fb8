@@ -2,6 +2,10 @@
 
 Checked 28 October 2026 against the public Cypher Digital packages, reel creation, Facebook Ads and Contact pages. No package prices or existing service pages were changed.
 
+## Calculator correction — 31 October 2026
+
+Rechecked the live packages page at the owner's request. Package fees cover campaign setup/management within package scope; the LKR 25,000 fee is a standalone-service starting price. Removed that automatic surcharge from the calculator only. Default Basic + LKR 50,000 Meta budget is now LKR 135,000; café + LKR 40,000 is LKR 125,000; Silver + LKR 50,000 is LKR 150,000. Updated examples and WhatsApp breakdown. Original audit notes below describe the previous calculation, superseded by this correction. Existing package and other service pages are unchanged.
+
 ## Confirmed live prices
 
 - Basic: LKR 85,000/month; 12 posts and three stock-footage reels.
