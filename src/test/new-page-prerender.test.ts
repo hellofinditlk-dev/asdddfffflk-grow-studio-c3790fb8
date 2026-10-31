@@ -49,7 +49,7 @@ describe("new-pages-only full HTML", () => {
     const source = readFileSync("src/content/social-media-cost-calculator.md", "utf8");
     const html = newPageHtml(template, "/social-media-cost-calculator", source);
     expect(html).toContain('"@type":"WebApplication"');
-    expect(html).toContain("LKR 160,000/month");
+    expect(html).toContain("LKR 135,000/month");
     expect(html).toContain("not a final quote");
   });
   it.each(newSeoPages)("delivers full supplied content for $path", page => {
