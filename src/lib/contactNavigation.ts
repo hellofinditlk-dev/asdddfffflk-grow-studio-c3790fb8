@@ -1,5 +1,6 @@
 import { toast } from "sonner";
 import { trackCtaClick } from "@/lib/trackCtaClick";
+import { requestWhatsappContact } from "@/lib/whatsappContact";
 
 /** Open only after the record is accepted; retain a same-tab fallback for popup blockers. */
 export async function recordBeforeOpening(record: () => Promise<boolean>, href: string, newTab = false) {
@@ -18,5 +19,5 @@ export async function recordBeforeOpening(record: () => Promise<boolean>, href: 
 }
 
 export function openTrackedWhatsapp(href: string, label: string, placement: string) {
-  return recordBeforeOpening(() => trackCtaClick({ ctaType: "whatsapp", ctaLabel: label, placement, href }), href, true);
+  return requestWhatsappContact(href, label, placement);
 }

@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { trackCtaClick, type CtaType } from "@/lib/trackCtaClick";
 import { trackCallClick } from "@/lib/trackCallClick";
 import { recordBeforeOpening } from "@/lib/contactNavigation";
+import { requestWhatsappContact } from "@/lib/whatsappContact";
+import WhatsappContactDialog from "@/components/WhatsappContactDialog";
 
 /**
  * Global delegated click listener that records clicks on WhatsApp, tel:,
@@ -38,6 +40,10 @@ const CtaClickTracker = () => {
         null;
 
       e.preventDefault();
+      if (ctaType === "whatsapp") {
+        void requestWhatsappContact(href, label || "WhatsApp inquiry", placement || "Website CTA");
+        return;
+      }
       const newTab = anchor.target === "_blank" || e.ctrlKey || e.metaKey || e.shiftKey;
       void recordBeforeOpening(() => trackCtaClick({ ctaType, ctaLabel: label || null, placement, href }), href, newTab);
     };
@@ -45,7 +51,7 @@ const CtaClickTracker = () => {
     return () => document.removeEventListener("click", onClick, true);
   }, []);
 
-  return null;
+  return <WhatsappContactDialog />;
 };
 
 export default CtaClickTracker;
