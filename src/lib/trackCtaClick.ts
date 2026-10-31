@@ -17,7 +17,7 @@ export async function trackCtaClick({ ctaType, ctaLabel, placement, href }: Trac
       placement: placement ?? null,
       href: href ?? null,
       source_path:
-        typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
+        typeof window !== "undefined" ? window.location.pathname : null,
       referrer: typeof document !== "undefined" ? document.referrer || null : null,
       user_agent: typeof navigator !== "undefined" ? navigator.userAgent : null,
     });

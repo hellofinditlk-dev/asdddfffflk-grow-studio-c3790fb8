@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Send, MessageCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { openTrackedWhatsapp } from "@/lib/contactNavigation";
 
 interface InquiryFormProps {
   service?: string;
@@ -35,9 +36,11 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
           ...(ref ? { referrer: ref } : {}),
         },
       });
-      if (error) console.error("Failed to save inquiry", error);
+      if (error) throw error;
     } catch (err) {
       console.error("Failed to save inquiry", err);
+      toast.error("Could not save your inquiry. Please try again.");
+      return;
     }
 
     const message = [
@@ -49,7 +52,7 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
     ].filter(Boolean).join("\n");
 
     const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(message)}`;
-    window.open(waUrl, "_blank", "noopener,noreferrer");
+    if (!await openTrackedWhatsapp(waUrl, "Send via WhatsApp", service || "Inquiry form")) return;
     toast.success("Opening WhatsApp...");
     setForm({ name: "", email: "", phone: "", message: "" });
   };

@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { Send, MessageCircle } from "lucide-react";
 import type { IndustryFormField } from "@/data/industries";
 import { supabase } from "@/integrations/supabase/client";
+import { openTrackedWhatsapp } from "@/lib/contactNavigation";
 
 interface IndustryInquiryFormProps {
   fields: IndustryFormField[];
@@ -46,9 +47,11 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
         source_path: typeof window !== "undefined" ? window.location.pathname + window.location.search : null,
         extra: Object.keys(extra).length ? extra : null,
       });
-      if (error) console.error("Failed to save inquiry", error);
+      if (error) throw error;
     } catch (err) {
       console.error("Failed to save inquiry", err);
+      toast.error("Could not save your inquiry. Please try again.");
+      return;
     }
 
     const lines = [
@@ -63,7 +66,7 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
     ].filter(Boolean).join("\n");
 
     const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(lines)}`;
-    window.open(waUrl, "_blank", "noopener,noreferrer");
+    if (!await openTrackedWhatsapp(waUrl, ctaButtonText, serviceName)) return;
     toast.success("Opening WhatsApp...");
     setForm(Object.fromEntries(fields.map((f) => [f.name, ""])));
   };
