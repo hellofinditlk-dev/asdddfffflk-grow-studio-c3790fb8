@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { cleanPath } from "@/lib/serviceFromPath";
+import { cleanPath, excludeCareerRecords } from "@/lib/serviceFromPath";
 import type { ContactRecord } from "@/lib/contactRecords";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -13,11 +13,12 @@ export default function AdminContactRecords({ records }: { records: ContactRecor
   const [search, setSearch] = useState("");
   const [source, setSource] = useState("all");
   const [page, setPage] = useState(0);
-  const sources = useMemo(() => Array.from(new Set(records.map(r => cleanPath(r.source_path)))).sort(), [records]);
-  const filtered = useMemo(() => records.filter(r =>
+  const salesRecords = useMemo(() => excludeCareerRecords(records), [records]);
+  const sources = useMemo(() => Array.from(new Set(salesRecords.map(r => cleanPath(r.source_path)))).sort(), [salesRecords]);
+  const filtered = useMemo(() => salesRecords.filter(r =>
     (kind === "all" || r.kind === kind) && (source === "all" || cleanPath(r.source_path) === source) &&
     [r.name, r.email, r.phone, r.label, r.message, r.source_path, r.placement].join(" ").toLowerCase().includes(search.toLowerCase())
-  ).sort((a, b) => b.created_at.localeCompare(a.created_at)), [records, kind, source, search]);
+  ).sort((a, b) => b.created_at.localeCompare(a.created_at)), [salesRecords, kind, source, search]);
   const current = Math.min(page, Math.max(0, Math.ceil(filtered.length / 25) - 1));
   return <section className="mb-8 scroll-mt-28" aria-label="Contact records">
     <h2 className="text-xl font-semibold">All contact records</h2>

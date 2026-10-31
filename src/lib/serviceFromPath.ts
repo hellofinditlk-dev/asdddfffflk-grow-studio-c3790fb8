@@ -95,6 +95,10 @@ export function isCareerPath(rawPath: string | null | undefined): boolean {
   return clean === "/careers" || clean.startsWith("/careers/");
 }
 
+export function excludeCareerRecords<T extends { source_path: string | null }>(records: T[]): T[] {
+  return records.filter(record => !isCareerPath(record.source_path));
+}
+
 export function sourceFromReferrer(ref: string | null | undefined): string {
   if (!ref) return "Direct";
   try {

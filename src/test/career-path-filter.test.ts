@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { isCareerPath } from "@/lib/serviceFromPath";
+import { excludeCareerRecords, isCareerPath } from "@/lib/serviceFromPath";
 
 // Admin "Recent Inquiries" must exclude career page and job application
 // contacts — they are job seekers, not sales leads.
@@ -23,4 +23,19 @@ describe("isCareerPath", () => {
     expect(isCareerPath(null)).toBe(false);
     expect(isCareerPath(undefined)).toBe(false);
   });
+});
+
+describe("All contact records career exclusion", () => {
+  for (const kind of ["inquiry", "whatsapp", "call"]) {
+    it(`excludes career ${kind} records while retaining service records`, () => {
+      const records = [
+        { id: "career", kind, source_path: "/careers" },
+        { id: "vacancy", kind, source_path: "/careers/work-from-home-call-center-jobs-sri-lanka?apply=1" },
+        { id: "service", kind, source_path: "/social-media-cost-calculator" },
+        { id: "unknown", kind, source_path: null },
+      ];
+      expect(excludeCareerRecords(records).map(record => record.id)).toEqual(["service", "unknown"]);
+      expect(records).toHaveLength(4);
+    });
+  }
 });
