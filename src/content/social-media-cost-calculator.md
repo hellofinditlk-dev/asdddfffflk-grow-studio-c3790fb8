@@ -1,14 +1,14 @@
-# Social Media Marketing Cost Calculator for Sri Lanka
+# Social Media Cost Calculator Sri Lanka
 
-How much should social media marketing cost your business each month? Choose your platforms, how many posts and reels you need, and your ad budget. The calculator shows an instant estimate in Sri Lankan rupees, split into what you pay us and what you pay Meta for ads.
+Estimate your monthly social media marketing cost in Sri Lanka using Cypher Digital's published packages. Choose your platforms, posts, reels and Facebook or Instagram ad budget. Compare the agency fee and separate Meta spend in Sri Lankan rupees (LKR), whether you are planning for a Colombo café, a salon or another local business.
 
-No sign-up. No email. When you're happy with the estimate, send it to us on WhatsApp and we'll confirm it on a free call.
+Use the calculator free without signing up or entering contact details. To send your estimate on WhatsApp, provide your name, phone number and email first so we can record your inquiry and follow up about a written quote.
 
 **Default planning estimate:** Basic package LKR 85,000 + Meta ad budget LKR 50,000 = LKR 135,000/month. Campaign management is covered within the package scope; no standalone management surcharge is added. This is an estimate, not a final quote.
 
 ---
 
-## Planning your monthly estimate
+## Calculate your monthly Facebook and Instagram marketing budget
 
 1. **Pick your platforms.** Facebook and Instagram are always included because they're where most Sri Lankan customers are. Add TikTok if your customers are younger, and LinkedIn if you sell to other businesses.
 2. **Choose your posts per month.** 12 is enough for most small businesses. 15 to 20 suits businesses with frequent offers or new products.
@@ -183,6 +183,15 @@ Read our full comparison: [freelancer vs digital marketing agency](/blog/freelan
 
 ## Frequently Asked Questions
 
+### Is this social media cost calculator free to use in Sri Lanka?
+Yes. You can adjust the inputs and view your estimate in LKR without creating an account or entering contact details. The calculator is free; the recommended marketing package is a paid service. Name, phone number and email are requested only when you choose to continue to WhatsApp.
+
+### Can I estimate Facebook and Instagram marketing costs separately from ad spend?
+The calculator shows your monthly agency fee and the budget paid directly to Meta as separate amounts. With the default Basic package, LKR 85,000 in agency fees plus LKR 50,000 in Meta spend gives an estimated LKR 135,000 per month. Disable paid ads to see the package-only estimate; a standalone ads-management fee is not added on top of the package.
+
+### Does the estimate include a location shoot in Colombo or outside Colombo?
+Shoot inclusion depends on the recommended package. Travel is not included in the calculator total. The published reel creation page lists Colombo travel as free, Greater Colombo at LKR 6,000 and regional travel at LKR 12,000; outstation trips are quoted individually. Confirm your shoot location, package scope and travel charge in your written proposal.
+
 ### How much does social media marketing cost in Sri Lanka?
 At Cypher Digital, monthly social media packages cost from LKR 85,000 to LKR 250,000, with ad spend separate. An illustrative starting ad budget is LKR 40,000 to 60,000 per month, paid directly to Meta.
 
@@ -224,6 +233,12 @@ Send your estimate to us on WhatsApp. We'll confirm the price, suggest what to f
 Prefer to talk? Call **+94 76 031 7477**.
 
 More from Cypher Digital: [social media marketing agency in Sri Lanka](/social-media-management-sri-lanka) · [social media marketing for small businesses](/social-media-marketing-small-business-sri-lanka) · [social media marketing in Colombo](/social-media-marketing-colombo)
+
+## Discuss your estimate with Cypher Digital
+
+For a Colombo-based campaign, compare our [social media marketing in Colombo](/social-media-marketing-colombo) options with the estimate above. For a broader plan, see our [social media marketing services in Sri Lanka](/social-media-management-sri-lanka). Confirm the target area, shoot location and monthly deliverables before booking.
+
+[Find Cypher Digital on Google](https://share.google/XT1Ol3n1HNjs9wAyT), or call **+94 76 031 7477** to discuss the estimate. The calculator does not add location-specific travel charges automatically.
 
 
 ## Choose your next step

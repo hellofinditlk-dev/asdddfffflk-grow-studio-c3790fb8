@@ -7,6 +7,7 @@ import NewSeoHead from "@/components/NewSeoHead";
 import SocialCostCalculator from "@/components/SocialCostCalculator";
 import { newSeoPages } from "@/data/new-seo-pages";
 import { inlineMarkdown, splitSeoMarkdown } from "@/lib/newSeoMarkdown";
+import { socialCalculatorSchema } from "@/lib/socialCalculatorSeo";
 import { useWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
 import support from "@/content/social-media-ads-support-sri-lanka.md?raw";
 import boosting from "@/content/social-media-boosting-service-sri-lanka.md?raw";
@@ -88,7 +89,7 @@ export default function SocialOpportunityPage() {
   const canonical = `https://cypherdigital.lk${path}`;
   const whatsapp = `https://wa.me/${number}?text=${encodeURIComponent(`Hi Cypher Digital, ${page.cta}.`)}`;
   const schemas = [
-    isCalculator ? { "@context": "https://schema.org", "@type": "WebApplication", name: "Social Media Marketing Cost Calculator", applicationCategory: "BusinessApplication", operatingSystem: "Any", url: canonical, offers: { "@type": "Offer", price: "0", priceCurrency: "LKR" }, provider: { "@type": "Organization", name: "Cypher Digital" } } : { "@context": "https://schema.org", "@type": "Service", name: page.breadcrumbLabel, description: page.description, url: canonical, provider: { "@type": "Organization", name: "Cypher Digital", url: "https://cypherdigital.lk" }, areaServed: { "@type": path.includes("colombo") ? "City" : "Country", name: path.includes("colombo") ? "Colombo" : "Sri Lanka" } },
+    isCalculator ? socialCalculatorSchema(page.description) : { "@context": "https://schema.org", "@type": "Service", name: page.breadcrumbLabel, description: page.description, url: canonical, provider: { "@type": "Organization", name: "Cypher Digital", url: "https://cypherdigital.lk" }, areaServed: { "@type": path.includes("colombo") ? "City" : "Country", name: path.includes("colombo") ? "Colombo" : "Sri Lanka" } },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: content.faqs.map(faq => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") } })) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk/" }, { "@type": "ListItem", position: 2, name: "Social Media Marketing", item: "https://cypherdigital.lk/social-media-management-sri-lanka" }, { "@type": "ListItem", position: 3, name: page.breadcrumbLabel, item: canonical }] },
   ];
