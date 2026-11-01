@@ -8,13 +8,18 @@ const IndustryPage = () => {
 
   if (!industry) return <Navigate to="/404" replace />;
 
-  const introLinks: Record<string, { anchor: string; target: string; sentence?: string }> = {
+  const introLinks: Record<string, { anchor: string; target: string; sentence?: string; external?: { anchor: string; href: string; sentence: string } }> = {
     "small-business-digital-marketing-sri-lanka": {
       anchor: "Digital marketing", target: "/",
     },
     "travel-agency-digital-marketing-sri-lanka": {
       anchor: "hotel digital marketing", target: "/hotel-digital-marketing-sri-lanka",
       sentence: " For accommodation-focused campaigns, explore our approach to ",
+      external: {
+        anchor: "Sri Lanka tour agency",
+        href: "https://vacationceylon.com/",
+        sentence: " You can also see how a ",
+      },
     },
     "b2b-digital-marketing-sri-lanka": {
       anchor: "LinkedIn marketing", target: "/linkedin-marketing-sri-lanka",
@@ -26,7 +31,17 @@ const IndustryPage = () => {
   const entry = introLinks[industry.slug];
   const index = entry ? industry.intro.indexOf(entry.anchor) : -1;
   const introContent = entry?.sentence ? (
-    <>{industry.intro}{entry.sentence}<Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>.</>
+    <>
+      {industry.intro}{entry.sentence}
+      <Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>.
+      {entry.external && (
+        <>
+          {entry.external.sentence}
+          <a href={entry.external.href} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.external.anchor}</a>
+          {" "}website presents its tours.
+        </>
+      )}
+    </>
   ) : entry && index >= 0 ? (
     <>{industry.intro.slice(0, index)}<Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>{industry.intro.slice(index + entry.anchor.length)}</>
   ) : undefined;
