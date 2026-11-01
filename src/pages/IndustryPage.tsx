@@ -31,7 +31,17 @@ const IndustryPage = () => {
   const entry = introLinks[industry.slug];
   const index = entry ? industry.intro.indexOf(entry.anchor) : -1;
   const introContent = entry?.sentence ? (
-    <>{industry.intro}{entry.sentence}<Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>.</>
+    <>
+      {industry.intro}{entry.sentence}
+      <Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>.
+      {entry.external && (
+        <>
+          {entry.external.sentence}
+          <a href={entry.external.href} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.external.anchor}</a>
+          {" "}website presents its tours.
+        </>
+      )}
+    </>
   ) : entry && index >= 0 ? (
     <>{industry.intro.slice(0, index)}<Link to={entry.target} className="!text-inherit ![font-weight:inherit] !no-underline">{entry.anchor}</Link>{industry.intro.slice(index + entry.anchor.length)}</>
   ) : undefined;
