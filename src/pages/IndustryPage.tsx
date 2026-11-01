@@ -8,13 +8,18 @@ const IndustryPage = () => {
 
   if (!industry) return <Navigate to="/404" replace />;
 
-  const introLinks: Record<string, { anchor: string; target: string; sentence?: string }> = {
+  const introLinks: Record<string, { anchor: string; target: string; sentence?: string; external?: { anchor: string; href: string; sentence: string } }> = {
     "small-business-digital-marketing-sri-lanka": {
       anchor: "Digital marketing", target: "/",
     },
     "travel-agency-digital-marketing-sri-lanka": {
       anchor: "hotel digital marketing", target: "/hotel-digital-marketing-sri-lanka",
       sentence: " For accommodation-focused campaigns, explore our approach to ",
+      external: {
+        anchor: "Sri Lanka tour agency",
+        href: "https://vacationceylon.com/",
+        sentence: " You can also see how a ",
+      },
     },
     "b2b-digital-marketing-sri-lanka": {
       anchor: "LinkedIn marketing", target: "/linkedin-marketing-sri-lanka",
