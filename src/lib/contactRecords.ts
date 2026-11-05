@@ -22,6 +22,26 @@ export interface ContactRecord {
   email?: string | null;
   referrer?: string | null;
   placement?: string | null;
+  channel?: string | null;
+  href?: string | null;
+  linkedClick?: ContactRecord;
+}
+
+// Pair legacy events one-to-one; never collapse independent leads or call clicks.
+export function combineWhatsappContactRecords(records: ContactRecord[]): ContactRecord[] {
+  const used = new Set<string>();
+  const paired = new Map<string, ContactRecord>();
+  for (const inquiry of records.filter(r => r.kind === "inquiry" && r.channel === "whatsapp")) {
+    if (!inquiry.href) continue;
+    const time = Date.parse(inquiry.created_at);
+    const click = records.filter(r => r.kind === "whatsapp" && !used.has(r.id) &&
+      r.source_path === inquiry.source_path && r.href === inquiry.href && r.label === inquiry.label &&
+      Date.parse(r.created_at) >= time && Date.parse(r.created_at) - time <= 10000
+    ).sort((a, b) => Date.parse(a.created_at) - Date.parse(b.created_at))[0];
+    if (click) { used.add(click.id); paired.set(inquiry.id, click); }
+  }
+  return records.filter(r => r.kind !== "whatsapp" || !used.has(r.id)).map(r =>
+    paired.has(r.id) ? { ...r, linkedClick: paired.get(r.id) } : r);
 }
 
 export function whatsappDetails(href: string | null) {

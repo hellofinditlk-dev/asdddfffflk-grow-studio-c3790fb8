@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { cleanPath, excludeCareerRecords } from "@/lib/serviceFromPath";
-import type { ContactRecord } from "@/lib/contactRecords";
+import { combineWhatsappContactRecords, type ContactRecord } from "@/lib/contactRecords";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function AdminContactRecords({ records }: { records: ContactRecord[] }) {
@@ -14,11 +14,12 @@ export default function AdminContactRecords({ records }: { records: ContactRecor
   const [source, setSource] = useState("all");
   const [page, setPage] = useState(0);
   const salesRecords = useMemo(() => excludeCareerRecords(records), [records]);
+  const displayRecords = useMemo(() => kind === "all" ? combineWhatsappContactRecords(salesRecords) : salesRecords, [salesRecords, kind]);
   const sources = useMemo(() => Array.from(new Set(salesRecords.map(r => cleanPath(r.source_path)))).sort(), [salesRecords]);
-  const filtered = useMemo(() => salesRecords.filter(r =>
+  const filtered = useMemo(() => displayRecords.filter(r =>
     (kind === "all" || r.kind === kind) && (source === "all" || cleanPath(r.source_path) === source) &&
     [r.name, r.email, r.phone, r.label, r.message, r.source_path, r.placement].join(" ").toLowerCase().includes(search.toLowerCase())
-  ).sort((a, b) => b.created_at.localeCompare(a.created_at)), [salesRecords, kind, source, search]);
+  ).sort((a, b) => b.created_at.localeCompare(a.created_at)), [displayRecords, kind, source, search]);
   const current = Math.min(page, Math.max(0, Math.ceil(filtered.length / 25) - 1));
   return <section className="mb-8 scroll-mt-28" aria-label="Contact records">
     <h2 className="text-xl font-semibold">All contact records</h2>
@@ -37,11 +38,12 @@ export default function AdminContactRecords({ records }: { records: ContactRecor
       <thead className="bg-muted text-left"><tr>{["Date / time", "Record", "Contact / destination", "Source page", "Details"].map(h => <th key={h} className="px-3 py-3">{h}</th>)}</tr></thead>
       <tbody>{filtered.slice(current * 25, (current + 1) * 25).map(r => <tr key={`${r.kind}:${r.id}`} className="border-t border-border">
         <td className="px-3 py-3 whitespace-nowrap">{new Date(r.created_at).toLocaleString("en-GB", { timeZone: "Asia/Colombo" })}<span className="block text-xs text-muted-foreground">Sri Lanka time</span></td>
-        <td className="px-3 py-3">{r.kind === "inquiry" ? "Inquiry submitted" : r.kind === "call" ? "Call clicked" : "WhatsApp clicked"}<span className="block text-muted-foreground">{r.label}</span></td>
+        <td className="px-3 py-3">{r.linkedClick ? "WhatsApp inquiry" : r.kind === "inquiry" ? "Inquiry submitted" : r.kind === "call" ? "Call clicked" : "WhatsApp clicked"}<span className="block text-muted-foreground">{r.label}</span></td>
         <td className="px-3 py-3">{r.name || (r.kind === "inquiry" ? "—" : "Agency destination")}<span className="block">{r.phone || "Not available"}</span>{r.email && <span className="block">{r.email}</span>}</td>
         <td className="px-3 py-3"><Link to={cleanPath(r.source_path)} target="_blank" rel="noopener noreferrer" className="text-primary break-all hover:underline">{r.source_path ? cleanPath(r.source_path) : "Unknown"}</Link></td>
         <td className="px-3 py-3 min-w-48"><details><summary className="cursor-pointer text-primary">View details</summary><div className="max-w-md break-words space-y-2 pt-2">
           {r.placement && <p>Placement: {r.placement}</p>}<p className="whitespace-pre-wrap">{r.message || "No message supplied"}</p>{r.referrer && <p>Referrer: {r.referrer}</p>}<p className="text-xs text-muted-foreground">Record ID: {r.id}</p>
+          {r.linkedClick && <><p>Agency destination: {r.linkedClick.phone || "Not available"}</p><p className="text-xs text-muted-foreground">WhatsApp click ID: {r.linkedClick.id}</p></>}
         </div></details></td>
       </tr>)}</tbody>
     </table>{filtered.length === 0 && <p className="py-8 text-center text-muted-foreground">No matching contact records.</p>}</div>

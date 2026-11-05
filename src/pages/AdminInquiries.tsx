@@ -133,7 +133,7 @@ export default function AdminInquiries() {
   const periodCalls = useMemo(() => inRange(scopedCalls), [scopedCalls, rangeStart]);
   const periodCtas = useMemo(() => inRange(scopedCtas), [scopedCtas, rangeStart]);
   const contactRecords: ContactRecord[] = useMemo(() => [
-    ...scopedInquiries.map(r => ({ ...r, kind: "inquiry" as const, label: r.service || "General inquiry", referrer: String(r.extra?.referrer || ""), message: [r.message, r.extra ? JSON.stringify(r.extra, null, 2) : ""].filter(Boolean).join("\n") })),
+    ...scopedInquiries.map(r => ({ ...r, kind: "inquiry" as const, channel: r.extra?.channel, href: r.extra?.href, placement: r.extra?.placement, label: r.service || "General inquiry", referrer: String(r.extra?.referrer || ""), message: [r.message, r.extra ? JSON.stringify(r.extra, null, 2) : ""].filter(Boolean).join("\n") })),
     ...scopedCalls.map(r => ({ ...r, kind: "call" as const, label: "Call", message: null })),
     ...scopedCtas.filter(r => r.cta_type === "whatsapp").map(r => ({ ...r, ...whatsappDetails(r.href), kind: "whatsapp" as const, label: r.cta_label || "WhatsApp" })),
   ], [scopedInquiries, scopedCalls, scopedCtas]);
