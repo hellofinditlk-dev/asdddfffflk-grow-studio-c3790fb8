@@ -19,3 +19,4 @@
 - Limit the uploaded social opportunity incoming links to an explicit source-URL dataset and lifecycle-cleaned main-body slot; add rather than replace earlier links so protected pillar anchors and existing page metadata remain intact.
 - Use shared record-before-navigation contact helpers, deduplicate legacy call handlers and exclude admin outreach from public click tracking; load contact records in paged batches so the admin ledger is complete without inflating visitor intent.
 - Mount WhatsApp contact capture alongside the delegated tracker, route programmatic WhatsApp actions through its request channel, and validate captured leads in a dedicated Cloud function before navigation; this covers isolated pages without changing admin outreach.
+- Pair matching WhatsApp inquiry/click events one-to-one only in the combined admin ledger; retain raw records and separate click views so analytics and independent leads remain intact.
