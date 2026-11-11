@@ -177,8 +177,9 @@ const EventManagement = () => {
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: "Cypher Digital — Event Management Sri Lanka",
-        description: "Event planning and marketing coordination in Sri Lanka covering in corporate events, product launches, brand activations and wedding planning.",
+        "@id": "https://cypherdigital.lk/#event-service-provider",
+        name: "Cypher Digital",
+        description: "Event planning and marketing coordination in Sri Lanka covering corporate events, product launches, brand activations and wedding planning.",
         url: "https://cypherdigital.lk",
         telephone: "+94701772626",
         address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
@@ -200,10 +201,13 @@ const EventManagement = () => {
       {
         "@context": "https://schema.org",
         "@type": "Service",
+        "@id": `${canonical}#service`,
+        url: canonical,
         name: "Event Management Sri Lanka",
         description: "Professional marketing-driven event management and event planning services in Sri Lanka by Cypher Digital. Corporate events, weddings, brand activations, and product launches.",
         provider: {
           "@type": "LocalBusiness",
+          "@id": "https://cypherdigital.lk/#event-service-provider",
           name: "Cypher Digital",
           url: "https://cypherdigital.lk",
         },
@@ -240,6 +244,9 @@ const EventManagement = () => {
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
+        "@id": `${canonical}#webpage`,
+        inLanguage: "en-LK",
+        mainEntity: { "@id": `${canonical}#service` },
         name: "Event Management Sri Lanka – Complete Guide & Services",
         url: canonical,
         dateModified: "2026-11-11",
@@ -262,6 +269,9 @@ const EventManagement = () => {
       />
 
       {/* Hero */}
+      <nav aria-label="Breadcrumb" className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
+        <ol className="flex flex-wrap gap-2"><li><Link to="/" className="hover:text-primary">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Event Management Sri Lanka</li></ol>
+      </nav>
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-up">
@@ -276,7 +286,7 @@ const EventManagement = () => {
               Complete Guide & Professional Event Planning Services
             </p>
             <p className="text-sm text-white/40 leading-relaxed mb-8 max-w-2xl mx-auto">
-              When arranging <strong className="text-white/60">event management Sri Lanka</strong>, businesses and individuals look for more than just event organizers. They need a professional team that can handle planning, execution, and audience engagement. At Cypher Digital, we provide advanced <strong className="text-white/60">event planning Sri Lanka</strong> services that combine creativity, logistics, and marketing strategy. The event brief connects the guest experience with promotion, content and agreed business objectives.
+              Cypher Digital brings together event planning and digital promotion for corporate events, product launches, brand activations and celebrations in Sri Lanka. Start with your purpose, date, location and guest count; agree the planning, supplier coordination, content and marketing scope in a written proposal. Event fees and availability are confirmed for your brief, not assumed from a generic price list.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
@@ -295,8 +305,15 @@ const EventManagement = () => {
       </section>
 
       {/* Snippet Bait Definition */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-20" id="event-overview">
         <div className="container mx-auto px-4 max-w-3xl">
+          <nav aria-label="Event page sections" className="flex flex-wrap gap-x-6 gap-y-3 mb-8 text-sm text-primary">
+            <a href="#event-services" className="hover:underline">Event services</a>
+            <a href="#event-process" className="hover:underline">Planning process</a>
+            <a href="#event-planning-guide" className="hover:underline">Budget and planning guide</a>
+            <a href="#event-faq" className="hover:underline">Questions</a>
+            <a href="#event-enquiry" className="hover:underline">Request a quotation</a>
+          </nav>
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8">
             <h2 className="font-heading text-xl md:text-2xl font-extrabold mb-4">What is Event Management?</h2>
             <p className="text-sm text-muted-foreground leading-relaxed mb-3">
@@ -310,13 +327,13 @@ const EventManagement = () => {
       </section>
 
       {/* Types of Events – Topical Authority Section */}
-      <section className="py-20 lg:py-28 bg-secondary">
+      <section className="py-20 lg:py-28 bg-secondary" id="event-services">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Comprehensive Services</p>
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Types of Events We Manage in Sri Lanka</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              As an <strong>event management Sri Lanka</strong> provider, we offer a wide range of services covering all industries and event types.
+              Discuss the event format that fits your audience, purpose and budget. The proposal should identify the services and suppliers available for your date and location.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -458,7 +475,7 @@ const EventManagement = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 lg:py-28 bg-secondary">
+      <section className="py-20 lg:py-28 bg-secondary" id="event-process">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">How It Works</p>
@@ -583,7 +600,7 @@ const EventManagement = () => {
       </section>
 
       {/* FAQs */}
-      <section className="py-20 lg:py-28 bg-secondary">
+      <section className="py-20 lg:py-28 bg-secondary" id="event-faq">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">FAQ</p>
@@ -672,7 +689,7 @@ const EventManagement = () => {
       </section>
 
       {/* CTA + Form */}
-      <section className="bg-foreground py-20 lg:py-28">
+      <section className="bg-foreground py-20 lg:py-28" id="event-enquiry">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

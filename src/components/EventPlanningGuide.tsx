@@ -69,6 +69,19 @@ export default function EventPlanningGuide() {
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-6">A Practical Event Planning Guide for Sri Lankan Businesses</h2>
         <p className="text-sm text-muted-foreground leading-relaxed mb-8">Use the guidance below to prepare a brief, compare quotations and connect your event to a realistic promotion and follow-up plan.</p>
+        <h3 className="font-heading text-xl font-bold mb-4">Which Event Planning Scope Fits Your Brief?</h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-sm text-left">
+            <caption className="text-left text-muted-foreground mb-3">Planning options to discuss, not pre-priced packages or confirmed inclusions.</caption>
+            <thead><tr className="border-b border-border"><th scope="col" className="p-3">Requirement</th><th scope="col" className="p-3">Scope to discuss</th><th scope="col" className="p-3">Confirm before booking</th></tr></thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-b border-border"><th scope="row" className="p-3 font-medium">Venue and suppliers already booked</th><td className="p-3">Programme coordination and on-site responsibilities</td><td className="p-3">Handover, staffing and supplier contacts</td></tr>
+              <tr className="border-b border-border"><th scope="row" className="p-3 font-medium">A new event from the first brief</th><td className="p-3">Planning, venue review, production and supplier coordination</td><td className="p-3">Separate fees, approval stages and payment terms</td></tr>
+              <tr className="border-b border-border"><th scope="row" className="p-3 font-medium">An event that needs an audience</th><td className="p-3">Promotion, registration communications and campaign reporting</td><td className="p-3">Ad spend, target audience and consent requirements</td></tr>
+              <tr><th scope="row" className="p-3 font-medium">Content for use after the event</th><td className="p-3">Photography, interviews, highlight footage or social clips</td><td className="p-3">Permissions, editing, delivery dates and usage rights</td></tr>
+            </tbody>
+          </table>
+        </div>
         <div className="space-y-10">
           {sections.map((section) => (
             <div key={section.title}>
