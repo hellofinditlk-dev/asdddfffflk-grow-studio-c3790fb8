@@ -51,4 +51,4 @@
 - [x] Improve calculator long-tail wording, practical FAQs and shared application schema; add the supplied Google listing link without changing prices or protected pages. Initial/rendered metadata, calculator totals and contact dialog verified; 58 tests pass, build OK. Not published.
 - [ ] Verify and optimise the Google Business Profile itself; account connection was declined, so profile access is unavailable.
 - [x] Expand event management content with practical planning guidance, remove unverified prices/reviews/ratings, align search metadata and verify nine related links, mobile display and WhatsApp contact dialog; not published.
-- [ ] Strengthen the same event page's answer clarity, section navigation, service schema and AI discovery references; verify without ranking promises or publication.
+- [x] Strengthen the event page's opening answer, visible breadcrumbs, section navigation, scope comparison, connected service schema and AI discovery references; sitemap date, mobile display, links and contact dialog verified. Semrush Sri Lanka data unavailable; no ranking promises or publication.
