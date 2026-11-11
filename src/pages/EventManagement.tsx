@@ -101,7 +101,7 @@ const processSteps = [
   { title: "Creative Planning", desc: "Developing concepts, themes, and comprehensive event strategies" },
   { title: "Coordination & Setup", desc: "Managing vendors, logistics, timelines, and rehearsals" },
   { title: "Execution", desc: "Ensuring smooth on-ground operations with real-time management" },
-  { title: "Post-Event Marketing", desc: "Content repurposing, follow-ups, and ROI measurement" },
+  { title: "Post-Event Marketing", desc: "Approved content, requested follow-ups and outcome reporting" },
 ];
 
 const locations = ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Jaffna", "Matara", "Anuradhapura", "Trincomalee", "Island-wide"];
@@ -303,7 +303,7 @@ const EventManagement = () => {
               <strong>Event management</strong> is the professional process of planning, organizing, coordinating, and executing events from concept to completion. It includes budgeting, venue selection, vendor coordination, logistics, marketing, and on-site management to create memorable and impactful experiences.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Professional <strong>event management Sri Lanka</strong> companies like Cypher Digital go beyond traditional planning by integrating digital marketing, social media promotion, and lead generation strategies to maximize the ROI of every event.
+              An <strong>event management Sri Lanka</strong> brief can also include digital marketing, social media promotion and enquiry follow-up, with responsibilities and reporting agreed before work begins.
             </p>
           </div>
         </div>
@@ -546,7 +546,7 @@ const EventManagement = () => {
           <div className="text-center mb-10">
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Why Professional Event Management Matters</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Working with a professional <strong>event management Sri Lanka</strong> company ensures your event runs smoothly and delivers real results.
+              Working with an <strong>event management Sri Lanka</strong> company can help coordinate suppliers, reduce avoidable disruption and report against your agreed objectives.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
