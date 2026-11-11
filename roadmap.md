@@ -50,3 +50,4 @@
 - [x] Require name, phone and email before public WhatsApp navigation; client/server validation, real inquiry save and authenticated admin readback verified with calculator draft and source page. Eleven tests pass; frontend not published.
 - [x] Improve calculator long-tail wording, practical FAQs and shared application schema; add the supplied Google listing link without changing prices or protected pages. Initial/rendered metadata, calculator totals and contact dialog verified; 58 tests pass, build OK. Not published.
 - [ ] Verify and optimise the Google Business Profile itself; account connection was declined, so profile access is unavailable.
+- [ ] Expand event management content, remove unverified claims, align search metadata and verify relevant links; provide the existing page URL without publication.
