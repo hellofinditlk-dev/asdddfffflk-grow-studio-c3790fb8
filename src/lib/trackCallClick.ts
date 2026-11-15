@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { trackPixel } from "@/lib/metaPixel";
 
 let recent: { key: string; at: number; promise: Promise<boolean> } | undefined;
 
@@ -7,6 +8,7 @@ export function trackCallClick(phone: string = "+94701772626") {
   const key = `${window.location.pathname}:${phone.replace(/\D/g, "")}`;
   // Capture listener and legacy React handlers share one write for the same click.
   if (recent?.key === key && Date.now() - recent.at < 100) return recent.promise;
+  trackPixel("Contact", { method: "call" });
   const promise = saveCallClick(phone);
   recent = { key, at: Date.now(), promise };
   return promise;
