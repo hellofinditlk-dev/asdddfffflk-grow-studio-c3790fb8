@@ -11,6 +11,7 @@ import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
 import ServiceStickyCTA from "@/components/ServiceStickyCTA";
 import CtaClickTracker from "@/components/CtaClickTracker";
+import { usePixelPageViews } from "@/lib/metaPixel";
 import SocialOpportunityIncomingLinks from "@/components/SocialOpportunityIncomingLinks";
 
 // Eager load homepage for fastest FCP
@@ -296,6 +297,7 @@ const SiteShell = ({ children }: { children: React.ReactNode }) => {
 
 const AppContent = () => {
   const { pathname } = useLocation();
+  usePixelPageViews(pathname);
   if (pathname.replace(/\/+$/, "") === "/white-label-design") {
     return <Suspense fallback={<PageLoader />}><WhiteLabelDesign /></Suspense>;
   }

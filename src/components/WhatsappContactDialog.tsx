@@ -8,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { whatsappContactSchema, type WhatsappRequest } from "@/lib/whatsappContact";
 import { recordBeforeOpening } from "@/lib/contactNavigation";
 import { trackCtaClick } from "@/lib/trackCtaClick";
+import { trackPixel } from "@/lib/metaPixel";
 
 export default function WhatsappContactDialog() {
   const [request, setRequest] = useState<WhatsappRequest | null>(null);
@@ -37,6 +38,7 @@ export default function WhatsappContactDialog() {
       if (saveError || !data?.success) { setError("Could not save your details. Please try again."); return false; }
       // The inquiry is the authoritative saved lead; click analytics must not lose it.
       await trackCtaClick({ ctaType: "whatsapp", ctaLabel: current.label, placement: current.placement, href: current.href });
+      trackPixel("Lead", { content_name: current.label.slice(0, 120) });
       return true;
     }, current.href, true);
     setBusy(false);
