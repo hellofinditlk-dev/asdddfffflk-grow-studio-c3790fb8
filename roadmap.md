@@ -54,3 +54,4 @@
 - [x] Strengthen the event page's opening answer, visible breadcrumbs, section navigation, scope comparison, connected service schema and AI discovery references; sitemap date, mobile display, links and contact dialog verified. Semrush Sri Lanka data unavailable; no ranking promises or publication.
 - [x] Refine homepage section rhythm, card headings, service grid, metric contrast and aligned package actions; preserve content, pricing and contact flows, and verify desktop/mobile presentation without publishing.
 - [x] Restore staggered, slightly tilted boxed hero service cards while retaining all nine services and existing homepage content.
+- [x] Route Event Management and Event Marketing page contact buttons and forms through the supplied dedicated number, preserving shared navigation contacts and lead capture.

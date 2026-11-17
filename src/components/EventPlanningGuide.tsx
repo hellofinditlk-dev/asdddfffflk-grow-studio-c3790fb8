@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 
 const sections = [
   {
@@ -64,6 +65,7 @@ const sections = [
 ];
 
 export default function EventPlanningGuide() {
+  const whatsappNumber = useWhatsappNumber();
   return (
     <section className="py-16 lg:py-20" id="event-planning-guide">
       <div className="container mx-auto px-4 max-w-3xl">
@@ -105,7 +107,7 @@ export default function EventPlanningGuide() {
             <li>Available budget, approval contact and any procurement requirements.</li>
             <li>Accessibility, language, dietary and recording requirements.</li>
           </ul>
-          <Button asChild size="lg"><a href="https://wa.me/94701772626?text=Hi%2C%20I%20would%20like%20to%20discuss%20an%20event%20brief" target="_blank" rel="noopener noreferrer">Discuss Your Event Brief <ArrowRight className="w-4 h-4 ml-2" /></a></Button>
+          <Button asChild size="lg"><a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20would%20like%20to%20discuss%20an%20event%20brief`} target="_blank" rel="noopener noreferrer">Discuss Your Event Brief <ArrowRight className="w-4 h-4 ml-2" /></a></Button>
         </div>
       </div>
     </section>

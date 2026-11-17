@@ -2,6 +2,7 @@ import EventPlanningGuide from "@/components/EventPlanningGuide";
 import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
+import { useWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
 import { useEffect } from "react";
@@ -170,6 +171,7 @@ const ServiceBlock = ({ icon, title, items, highlight }: { icon: React.ReactNode
 );
 
 const EventManagement = () => {
+  const whatsappNumber = useWhatsappNumber();
   const canonical = "https://cypherdigital.lk/event-management-sri-lanka";
 
   useEffect(() => {
@@ -290,12 +292,12 @@ const EventManagement = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20plan%20an%20event" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">
                   Chat on WhatsApp <MessageCircle className="w-4 h-4 ml-1" />
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20a%20free%20event%20consultation" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20a%20free%20event%20consultation`} target="_blank" rel="noopener noreferrer">
                   Get a Free Consultation <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
               </Button>
@@ -550,7 +552,7 @@ const EventManagement = () => {
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Affordable Event Packages</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">We offer flexible pricing based on event type, number of guests, location, and custom requirements. Ask for an itemised quotation with inclusions, exclusions and payment conditions.</p>
           <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] rounded-xl font-semibold border-none">
-            <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20a%20custom%20event%20quotation" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20a%20custom%20event%20quotation`} target="_blank" rel="noopener noreferrer">
               Get Your Custom Quotation <ArrowRight className="w-4 h-4 ml-1" />
             </a>
           </Button>
@@ -709,10 +711,10 @@ const EventManagement = () => {
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Ready to create an unforgettable event? Let's talk!</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-                      <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20plan%20an%20event" target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
+                      <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
                     </Button>
                     <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href="tel:+94701772626" onClick={() => trackCallClick()}>Call 070 177 2626</a>
+                      <a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)}</a>
                     </Button>
                   </div>
                 </div>
@@ -722,7 +724,7 @@ const EventManagement = () => {
             <div className="bg-white/5 border border-white/10 rounded-2xl p-7 md:p-8">
               <h3 className="font-heading text-lg font-bold text-white mb-1.5">Send Us Your Details</h3>
               <p className="text-sm text-white/40 mb-6">We'll reach out to you on WhatsApp.</p>
-              <InquiryForm service="Event Management" />
+              <InquiryForm service="Event Management" whatsappNumber={whatsappNumber} />
             </div>
           </div>
         </div>

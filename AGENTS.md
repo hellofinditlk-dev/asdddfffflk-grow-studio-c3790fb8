@@ -22,3 +22,4 @@
 - Mount WhatsApp contact capture alongside the delegated tracker, route programmatic WhatsApp actions through its request channel, and validate captured leads in a dedicated Cloud function before navigation; this covers isolated pages without changing admin outreach.
 - Pair matching WhatsApp inquiry/click events one-to-one only in the combined admin ledger; retain raw records and separate click views so analytics and independent leads remain intact.
 - Scope homepage presentation refinements beneath its own root class and stylesheet so shared service pages and admin views remain unchanged.
+- Pass a route-resolved destination into InquiryForm for dedicated contact pages; retain its default destination elsewhere to avoid changing unrelated forms.

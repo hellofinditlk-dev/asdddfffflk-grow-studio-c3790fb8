@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { CheckCircle, ArrowRight, MessageCircle, Megaphone, Zap } from "lucide-react";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
+import { useWhatsappNumber } from "@/lib/whatsapp";
 
 const services = [
   "Pre-event social media campaigns",
@@ -29,6 +30,7 @@ const faqs = [
 ];
 
 const EventMarketing = () => {
+  const whatsappNumber = useWhatsappNumber();
   const canonical = "https://cypherdigital.lk/event-marketing-sri-lanka";
 
   useEffect(() => {
@@ -62,10 +64,10 @@ const EventMarketing = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 text-sm px-7 h-12 rounded-xl">
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20event%20marketing%20services" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <MessageCircle className="w-4 h-4 ml-1" /></a>
+              <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20event%20marketing%20services`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp <MessageCircle className="w-4 h-4 ml-1" /></a>
             </Button>
             <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20event%20marketing%20quote" target="_blank" rel="noopener noreferrer">Get a Free Quote <ArrowRight className="w-4 h-4 ml-1" /></a>
+              <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20event%20marketing%20quote`} target="_blank" rel="noopener noreferrer">Get a Free Quote <ArrowRight className="w-4 h-4 ml-1" /></a>
             </Button>
           </div>
         </div>
@@ -135,7 +137,7 @@ const EventMarketing = () => {
                 <div>
                   <p className="text-white/80 text-sm font-medium mb-2">💬 Let's promote your event!</p>
                   <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-                    <a href="https://wa.me/94701772626?text=Hi%2C%20I%20need%20event%20marketing" target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
+                    <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20event%20marketing`} target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
                   </Button>
                 </div>
               </div>
@@ -143,7 +145,7 @@ const EventMarketing = () => {
             <div className="bg-white/5 border border-white/10 rounded-2xl p-7 md:p-8">
               <h3 className="font-heading text-lg font-bold text-white mb-1.5">Send Us Your Details</h3>
               <p className="text-sm text-white/40 mb-6">We'll reach out on WhatsApp.</p>
-              <InquiryForm service="Event Marketing" />
+              <InquiryForm service="Event Marketing" whatsappNumber={whatsappNumber} />
             </div>
           </div>
         </div>

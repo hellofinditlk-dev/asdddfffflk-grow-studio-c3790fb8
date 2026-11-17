@@ -2,6 +2,13 @@ import { describe, expect, it } from "vitest";
 import { getWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
 
 describe("social media page WhatsApp and call routing", () => {
+  it.each(["/event-management-sri-lanka", "/event-marketing-sri-lanka"])(
+    "routes %s contact actions to 94760317477",
+    (path) => {
+      expect(getWhatsappNumber(path)).toBe("94760317477");
+      expect(getWhatsappNumber(`${path}/`)).toBe("94760317477");
+    },
+  );
   it.each([
     "/social-media-strategy-sri-lanka",
     "/social-media-content-creation-sri-lanka",

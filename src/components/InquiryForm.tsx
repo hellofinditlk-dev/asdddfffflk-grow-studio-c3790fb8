@@ -9,9 +9,10 @@ import { openTrackedWhatsapp } from "@/lib/contactNavigation";
 
 interface InquiryFormProps {
   service?: string;
+  whatsappNumber?: string;
 }
 
-const InquiryForm = ({ service }: InquiryFormProps) => {
+const InquiryForm = ({ service, whatsappNumber = "94701772626" }: InquiryFormProps) => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -51,7 +52,7 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
       service ? `\nI'm interested in ${service} services.` : "",
     ].filter(Boolean).join("\n");
 
-    const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     if (!await openTrackedWhatsapp(waUrl, "Send via WhatsApp", service || "Inquiry form")) return;
     toast.success("Opening WhatsApp...");
     setForm({ name: "", email: "", phone: "", message: "" });
