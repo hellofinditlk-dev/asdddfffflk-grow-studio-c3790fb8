@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "@/styles/homepage.css";
 import { trackCallClick } from "@/lib/trackCallClick";
 import { Button } from "@/components/ui/button";
 import {
@@ -343,7 +344,7 @@ const faqSchema = {
 };
 
 const Index = () => (
-  <div className="pt-16">
+  <div className="homepage-refined pt-16">
     <SEOHead
       title="Digital Marketing Agency Sri Lanka | Cypher Digital"
       description="Sri Lanka's top digital marketing agency. Facebook Ads, Google Ads, SEO & social media in Colombo. 15,000+ leads. Free consultation today."
@@ -430,7 +431,7 @@ const Index = () => (
       </div>
     </section>
     {/* STATS — 4-up tinted glass cards */}
-    <section className="relative bg-[#030612] pb-20 lg:pb-28">
+    <section className="homepage-stats relative">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
           {stats.map((s, i) => {
@@ -438,22 +439,22 @@ const Index = () => (
               s.tone === "purple"
                 ? "bg-primary/5 border-primary/20"
                 : s.tone === "orange"
-                  ? "bg-[hsl(25,95%,53%)]/5 border-[hsl(25,95%,53%)]/20"
-                  : "bg-white/[0.02] border-white/5";
+                  ? "bg-cta/5 border-cta/20"
+                  : "bg-secondary border-border";
             const valueColor =
               s.tone === "purple"
                 ? "text-primary"
                 : s.tone === "orange"
-                  ? "text-[hsl(25,95%,53%)]"
-                  : "text-white";
+                  ? "text-cta"
+                  : "text-foreground";
             return (
               <div
                 key={i}
-                className={`p-6 md:p-8 rounded-[2rem] border backdrop-blur-sm animate-fade-up hover:-translate-y-1 transition-transform ${toneClasses}`}
+                className={`p-5 sm:p-6 md:p-8 rounded-lg border ${toneClasses}`}
                 style={{ animationDelay: `${0.1 * (i + 1)}s` }}
               >
                 <h3 className={`font-heading text-3xl md:text-4xl font-extrabold mb-2 ${valueColor}`}>{s.value}</h3>
-                <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">{s.label}</p>
+                <p className="text-muted-foreground text-xs font-semibold uppercase leading-relaxed">{s.label}</p>
               </div>
             );
           })}
@@ -504,22 +505,22 @@ const Index = () => (
             We are one of the leading <Link to="/tv-advertising-sri-lanka" className="text-primary font-semibold hover:underline">TV advertising companies in Sri Lanka</Link> offering end-to-end TVC production and media planning.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="homepage-services grid md:grid-cols-2 xl:grid-cols-3 gap-5">
           {services.map((s, i) => (
             <Link
               key={i}
               to={s.link}
-              className="group relative rounded-2xl border border-border bg-card p-7 md:p-8 hover:border-primary/30 hover:shadow-[0_8px_30px_hsl(252_65%_55%/0.08)] transition-all duration-500 overflow-hidden hover:-translate-y-1"
+              className="group relative rounded-lg border border-border bg-card p-6 hover:border-primary/30 transition-all duration-200 overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               {/* Animated gradient line on top */}
-              <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${s.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               {/* Shimmer effect on hover */}
               <div className="absolute inset-0 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/[0.03] to-transparent" style={{ animation: 'shimmer 2s infinite' }} />
               </div>
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-5">
-                  <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${s.gradient} flex items-center justify-center text-white shadow-sm`}>
+                  <div className="w-11 h-11 rounded-md bg-primary/10 flex items-center justify-center text-primary">
                     {s.icon}
                   </div>
                   <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
@@ -670,11 +671,11 @@ const Index = () => (
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {homePackages.map((p) => (
-              <div key={p.name} className={`relative rounded-2xl p-6 md:p-7 border-2 transition-all hover:-translate-y-1 ${p.featured ? "border-[#f97316] bg-card shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
+              <div key={p.name} className={`homepage-package relative rounded-lg p-6 md:p-7 border-2 transition-colors ${p.featured ? "border-cta bg-card shadow-card-hover" : "border-border bg-card hover:border-primary/30"}`}>
                 {p.featured && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#f97316] text-white text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap uppercase tracking-wider">Most Popular</span>
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-cta text-cta-foreground text-[10px] font-bold px-3 py-1 rounded-md whitespace-nowrap uppercase">Most Popular</span>
                 )}
-                <div className="text-[11px] font-bold tracking-wider uppercase text-[#f97316] mb-1">{p.name}</div>
+                <div className="text-[11px] font-bold uppercase text-cta mb-1">{p.name}</div>
                 <div className="font-heading text-2xl md:text-3xl font-extrabold text-foreground mb-1">{p.price}<span className="text-xs font-medium text-muted-foreground"> /month</span></div>
                 <div className="text-xs font-semibold text-foreground mb-3">{p.posts}</div>
                 <p className="text-xs text-muted-foreground mb-4 leading-relaxed">{p.desc}</p>
@@ -686,9 +687,11 @@ const Index = () => (
                     </li>
                   ))}
                 </ul>
-                <a href={`https://wa.me/94701772626?text=${p.msg}`} target="_blank" rel="noopener noreferrer" className={`block text-center text-xs font-bold py-3 rounded-xl transition-colors ${p.featured ? "bg-[#f97316] !text-white hover:bg-[#f97316]/90" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}>
+                <Button asChild className={`w-full text-xs font-bold rounded-md ${p.featured ? "bg-cta text-cta-foreground hover:bg-cta/90" : "bg-primary text-primary-foreground hover:bg-primary/90"}`}>
+                <a href={`https://wa.me/94701772626?text=${p.msg}`} target="_blank" rel="noopener noreferrer">
                   Enquire — {p.name}
                 </a>
+                </Button>
               </div>
             ))}
           </div>

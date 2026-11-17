@@ -1,0 +1,81 @@
+/* Homepage-only refinement; shared page templates retain their presentation. */
+.homepage-refined {
+  letter-spacing: 0;
+}
+
+.homepage-refined :is(h1, h2, h3, h4, p.uppercase) {
+  letter-spacing: 0;
+}
+
+.homepage-refined > section:not(.hero-stage) {
+  padding-block: 4rem;
+}
+
+.homepage-refined > section > .container {
+  max-width: 1280px;
+}
+
+.homepage-refined :is(h2, h3) {
+  text-wrap: balance;
+}
+
+.site-editorial .homepage-refined section.hero-stage .hero-service-tile h2 {
+  margin-inline: 0;
+  width: auto;
+  background: none;
+  text-wrap: pretty;
+}
+
+.homepage-refined .hero-service-tile {
+  box-shadow: var(--shadow-card);
+}
+
+.homepage-refined .hero-service-tile:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.homepage-refined .homepage-stats {
+  background: hsl(var(--background));
+}
+
+.homepage-refined .homepage-services > a {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-refined .homepage-package {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-refined .homepage-package > ul {
+  flex: 1;
+}
+
+.homepage-refined :is(.homepage-services, #pricing) .bg-card.border {
+  box-shadow: var(--shadow-card);
+}
+
+.homepage-refined .homepage-services > a:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.homepage-refined #pricing {
+  scroll-margin-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .homepage-refined > section:not(.hero-stage) {
+    padding-block: 5rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .homepage-refined > section:not(.hero-stage) {
+    padding-block: 3rem;
+  }
+
+  .homepage-refined .hero-stage h1 {
+    font-size: 2.25rem;
+  }
+}
