@@ -410,7 +410,7 @@ const Index = () => (
           </div>
 
           <div className="relative min-w-0 animate-fade-up">
-            <div className="grid grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-3 sm:gap-4">
+            <div className="hero-service-grid grid grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-3 sm:gap-4">
               {heroServices.map((service) => (
                 <Link
                   key={service.title}
