@@ -354,17 +354,17 @@ const Index = () => (
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
     {/* HERO — editorial outcome headline with animated service tile network */}
-    <section className="hero-stage relative overflow-hidden py-12 lg:py-20">
+    <section className="hero-stage relative overflow-hidden py-10 sm:py-12 lg:py-16">
       <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-[1.08fr_0.92fr] gap-12 lg:gap-14 items-center max-w-7xl mx-auto">
-          <div className="relative z-10 animate-fade-up">
+        <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-10 xl:gap-14 items-center max-w-7xl mx-auto">
+          <div className="relative z-10 min-w-0 animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-7">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-primary text-xs font-bold uppercase">Premier Digital Agency • Sri Lanka</span>
             </div>
 
-            <h1 className="font-heading text-[clamp(2.8rem,6vw,5.2rem)] font-extrabold leading-[0.94] text-hero-foreground mb-7">
+            <h1 className="font-heading text-[2.5rem] sm:text-6xl lg:text-[3.5rem] xl:text-[4rem] font-extrabold leading-[1.02] text-hero-foreground mb-7">
               <span className="hero-headline-mark">Marketing that actually</span>
               <span className="hero-headline-mark mt-2">gets you</span>
               <span className="hero-word-window mt-3" aria-label="Paid, Remembered, Seen, Booked">
@@ -382,7 +382,7 @@ const Index = () => (
               We empower brands across <span className="text-hero-foreground font-semibold italic">Colombo</span> and beyond with high-performance <Link to="/social-media-management-sri-lanka" className="text-primary hover:underline font-semibold">social media</Link>, <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline font-semibold">Facebook</Link> & <Link to="/google-ads-sri-lanka" className="text-primary hover:underline font-semibold">Google Ads</Link>, and <Link to="/seo-services-sri-lanka" className="text-primary hover:underline font-semibold">SEO</Link> strategies that turn clicks into customers.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
               <Button asChild size="lg" className="h-14 rounded-lg bg-cta text-cta-foreground hover:bg-cta/90 px-7 font-bold shadow-cta">
                 <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
@@ -408,22 +408,19 @@ const Index = () => (
             </div>
           </div>
 
-          <div className="relative animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            <div className="hero-tile-accent hero-tile-accent-star" aria-hidden="true">✦</div>
-            <div className="hero-tile-accent hero-tile-accent-dot" aria-hidden="true" />
-            <div className="relative grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-0">
-              {heroServices.map((service, index) => (
+          <div className="relative min-w-0 animate-fade-up">
+            <div className="grid grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-3 sm:gap-4">
+              {heroServices.map((service) => (
                 <Link
                   key={service.title}
                   to={service.link}
-                  className={`hero-service-tile group relative min-h-[146px] p-4 sm:p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"} ${service.title === "AI Visibility" ? "col-span-2 sm:translate-x-0" : ""}`}
-                  style={{ animationDelay: `${index * -0.55}s` }}
+                  className={`hero-service-tile group relative flex flex-col min-w-0 min-h-[180px] p-4 border border-hero-foreground/15 overflow-hidden transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${service.title === "AI Visibility" ? "order-last col-span-2 lg:col-span-1" : ""}`}
                 >
-                  <span className="inline-flex w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <span className="inline-flex shrink-0 w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     {service.icon}
                   </span>
-                  <h2 className="font-heading text-base md:text-lg font-bold text-hero-foreground mb-1.5">{service.title}</h2>
-                  <p className="text-xs md:text-sm text-hero-muted leading-relaxed line-clamp-2">{service.desc}</p>
+                  <h2 className="font-heading text-base font-bold leading-snug text-hero-foreground mb-2">{service.title}</h2>
+                  <p className="text-xs text-hero-muted leading-relaxed">{service.desc}</p>
                   <ArrowUpRight className="absolute right-4 top-4 w-4 h-4 text-hero-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </Link>
               ))}
