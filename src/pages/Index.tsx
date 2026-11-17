@@ -6,7 +6,7 @@ import {
   BarChart3, Users, Lightbulb, Rocket, FileText, TrendingUp,
   Phone, ArrowUpRight, Palette, Globe, Eye, MousePointerClick,
   MapPin, ShoppingBag, GraduationCap, Building2, Sparkles, Zap, Star,
-  Play, ChevronRight, ArrowDown, Clapperboard
+  Play, ChevronRight, ArrowDown, Clapperboard, CalendarDays, Ticket
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
@@ -120,7 +120,7 @@ const services = [
   },
 ];
 
-const heroServices = services.filter((service) =>
+const heroServices = [...services.filter((service) =>
   [
     "Social Media Marketing",
     "Google Ads",
@@ -130,7 +130,20 @@ const heroServices = services.filter((service) =>
     "AI Video Production",
     "Graphic Design",
   ].includes(service.title),
-);
+),
+  {
+    icon: <CalendarDays className="w-5 h-5" />,
+    title: "Event Management",
+    desc: "Plan and coordinate corporate events, product launches and business gatherings in Sri Lanka.",
+    link: "/event-management-sri-lanka",
+  },
+  {
+    icon: <Ticket className="w-5 h-5" />,
+    title: "Event Marketing",
+    desc: "Promote your event with social media campaigns, creative content and audience targeting.",
+    link: "/event-marketing-sri-lanka",
+  },
+];
 
 const whyUs = [
   { icon: <Lightbulb className="w-5 h-5" />, text: "Strategy-first campaigns", detail: "Data-backed strategies tailored to your market" },
@@ -395,15 +408,15 @@ const Index = () => (
             </div>
           </div>
 
-          <div className="relative min-h-[510px] lg:min-h-[660px] animate-fade-up" style={{ animationDelay: "0.15s" }}>
+          <div className="relative animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="hero-tile-accent hero-tile-accent-star" aria-hidden="true">✦</div>
             <div className="hero-tile-accent hero-tile-accent-dot" aria-hidden="true" />
-            <div className="absolute inset-0 grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-0">
+            <div className="relative grid grid-cols-2 gap-3 content-center sm:px-8 lg:px-0">
               {heroServices.map((service, index) => (
                 <Link
                   key={service.title}
                   to={service.link}
-                  className={`hero-service-tile group relative min-h-[146px] p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"} ${index === heroServices.length - 1 && heroServices.length % 2 === 1 ? "col-span-2 sm:translate-x-0" : ""}`}
+                  className={`hero-service-tile group relative min-h-[146px] p-4 sm:p-5 border border-hero-foreground/15 overflow-hidden ${index % 2 === 0 ? "hero-float-a" : "hero-float-b"} ${index === 0 || index === 4 ? "sm:-translate-x-3" : "sm:translate-x-3"} ${service.title === "AI Visibility" ? "col-span-2 sm:translate-x-0" : ""}`}
                   style={{ animationDelay: `${index * -0.55}s` }}
                 >
                   <span className="inline-flex w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
