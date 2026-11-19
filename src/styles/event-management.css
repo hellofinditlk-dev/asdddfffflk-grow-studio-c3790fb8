@@ -7,7 +7,7 @@
 .event-page > section:not(.event-hero) {
   padding-block: 64px;
 }
-.event-page > section:nth-of-type(3n) {
+.event-page > section:nth-of-type(3n):not(.event-hero):not(.event-decision-band):not(#event-process) {
   background: hsl(var(--event-surface));
 }
 .event-page .rounded-xl, .event-page .rounded-2xl { border-radius: 8px; }
