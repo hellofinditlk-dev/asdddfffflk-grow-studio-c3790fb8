@@ -1,3 +1,4 @@
+- [x] Replace the event page FAQ with the owner-supplied 12-question set (24–48h proposals, staffing and private events confirmed); FAQPage schema updates automatically. Preview only, not published.
 - [x] Redesign homepage hero: keep “Marketing that actually gets you” fixed; animate Paid, Remembered, Seen, Booked; keep six service tiles on the right.
 - [x] Carry a subtle version of the homepage editorial theme across public pages without changing content or layouts.
 
