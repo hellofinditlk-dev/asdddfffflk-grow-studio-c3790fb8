@@ -1,4 +1,5 @@
-import eventConcept from "@/assets/event-planning-concept.jpg";
+import { eventWork } from "@/data/eventWork";
+import EventWorkGallery from "@/components/EventWorkGallery";
 import "@/styles/event-management.css";
 import EventPlanningGuide from "@/components/EventPlanningGuide";
 import EventTrustSections from "@/components/EventTrustSections";
@@ -272,7 +273,7 @@ const EventManagement = () => {
       />
 
       <section className="event-hero">
-        <img src={eventConcept} alt="Concept illustration of a prepared conference venue with stage, seating and presentation screen" width={1920} height={1088} fetchPriority="high" />
+        <img src={eventWork[0]?.url} alt={eventWork[0]?.alt} width={1920} height={1280} fetchPriority="high" />
         <div className="container mx-auto px-6">
           <div className="event-hero-copy">
             <nav aria-label="Breadcrumb" className="mb-8 text-xs opacity-80">
@@ -292,11 +293,11 @@ const EventManagement = () => {
             </div>
           </div>
         </div>
-        <span className="event-hero-caption">Event venue concept · illustrative image</span>
+        <span className="event-hero-caption">From our work · University of Kelaniya DBA session</span>
       </section>
       <nav aria-label="Event page sections" className="event-section-nav">
         <div className="container mx-auto px-6 flex flex-wrap gap-x-7 gap-y-0">
-          <a href="#event-services">Event services</a><a href="#event-process">Our process</a><a href="#event-costs">Quotations</a><a href="#event-planning-guide">Planning &amp; budgets</a><a href="#event-faq">FAQs</a><a href="#event-enquiry">Start your brief <ArrowRight className="w-3 h-3 ml-2" /></a>
+          <a href="#event-work">Our event work</a><a href="#event-services">Event services</a><a href="#event-process">Our process</a><a href="#event-costs">Quotations</a><a href="#event-planning-guide">Planning &amp; budgets</a><a href="#event-faq">FAQs</a><a href="#event-enquiry">Start your brief <ArrowRight className="w-3 h-3 ml-2" /></a>
         </div>
       </nav>
       <section id="event-overview">
@@ -313,6 +314,8 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
+
+      <EventWorkGallery />
 
       {/* Types of Events – Topical Authority Section */}
       <section className="py-20 lg:py-28 bg-secondary" id="event-services">

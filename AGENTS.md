@@ -18,6 +18,7 @@
 - Share calculator application schema between initial HTML and React rendering so search metadata remains consistent without changing other pages or asserting unverified local business details.
 - Keep expanded event-planning guidance scoped to the event management page; align its React and edge metadata without changing other event templates.
 - Scope event-page presentation under `.event-page` and its dedicated stylesheet; use concept imagery as illustration, not client evidence, so other service pages and trust records remain unchanged.
+- Keep owner-supplied event photos in a scoped asset-pointer dataset with descriptive captions and an accessible gallery; link supplied social reels externally without inventing video metadata or delivery results.
 - Limit the uploaded social opportunity incoming links to an explicit source-URL dataset and lifecycle-cleaned main-body slot; add rather than replace earlier links so protected pillar anchors and existing page metadata remain intact.
 - Use shared record-before-navigation contact helpers, deduplicate legacy call handlers and exclude admin outreach from public click tracking; load contact records in paged batches so the admin ledger is complete without inflating visitor intent.
 - Mount WhatsApp contact capture alongside the delegated tracker, route programmatic WhatsApp actions through its request channel, and validate captured leads in a dedicated Cloud function before navigation; this covers isolated pages without changing admin outreach.

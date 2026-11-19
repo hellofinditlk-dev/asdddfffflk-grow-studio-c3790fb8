@@ -114,6 +114,14 @@
 .event-page #event-value .grid > div { background: transparent; border: none; border-bottom: 1px solid hsl(var(--border)); border-radius: 0; }
 .event-page #event-costs { background: hsl(var(--event-surface)); }
 .event-page #event-costs h2 { max-width: 600px; }
+.event-work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; align-items: start; }
+.event-work-grid figure:first-child { grid-column: span 2; }
+.event-page .event-work-photo { position: relative; display: block; width: 100%; height: auto; padding: 0; overflow: hidden; border-radius: 6px; background: hsl(var(--event-surface)); }
+.event-work-photo img { display: block; width: 100%; height: auto; transition: transform .3s ease; }
+.event-work-photo:hover img { transform: scale(1.02); }
+.event-work-expand { position: absolute; right: 12px; top: 12px; padding: 8px; border-radius: 4px; background: hsl(var(--event-ink) / .8); color: hsl(var(--event-on-image)); }
+.event-work-dialog p { letter-spacing: 0; }
+@media (max-width: 900px) { .event-work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767px) {
   .event-hero { min-height: 570px; }
   .event-hero h1 { font-size: 36px; max-width: 460px; }
@@ -126,6 +134,8 @@
   .event-page .event-overview-grid { grid-template-columns: 1fr; gap: 28px; }
   .event-page #event-planning-guide .space-y-10 > div { grid-template-columns: 1fr; gap: 4px; }
   .event-page #event-enquiry .event-form { padding: 24px; }
+  .event-work-grid { grid-template-columns: 1fr; gap: 24px; }
+  .event-work-grid figure:first-child { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
   .event-page *, .event-page *::before { animation: none !important; transition: none !important; }
