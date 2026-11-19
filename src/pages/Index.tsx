@@ -137,12 +137,14 @@ const heroServices = [...services.filter((service) =>
     title: "Event Management",
     desc: "Plan and coordinate corporate events, product launches and business gatherings in Sri Lanka.",
     link: "/event-management-sri-lanka",
+    gradient: "from-[hsl(24,95%,53%)] to-[hsl(38,95%,55%)]",
   },
   {
     icon: <Ticket className="w-5 h-5" />,
     title: "Event Marketing",
     desc: "Promote your event with social media campaigns, creative content and audience targeting.",
     link: "/event-marketing-sri-lanka",
+    gradient: "from-[hsl(330,80%,55%)] to-[hsl(280,75%,60%)]",
   },
 ];
 
@@ -415,13 +417,15 @@ const Index = () => (
                 <Link
                   key={service.title}
                   to={service.link}
-                  className={`hero-service-tile group relative flex flex-col min-w-0 min-h-[180px] p-4 border border-hero-foreground/15 overflow-hidden transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${service.title === "AI Visibility" ? "order-last col-span-2 lg:col-span-1" : ""}`}
+                  className={`hero-service-tile group relative flex flex-col min-w-0 min-h-[180px] p-4 border border-hero-foreground/15 overflow-hidden transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${service.title === "AI Visibility" ? "order-last col-span-2 lg:col-span-1" : ""}`}
                 >
-                  <span className="inline-flex shrink-0 w-10 h-10 items-center justify-center rounded-md bg-primary/15 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <span aria-hidden="true" className={`pointer-events-none absolute -right-8 -top-8 w-28 h-28 rounded-full bg-gradient-to-br ${service.gradient} opacity-20 blur-2xl transition-opacity duration-300 group-hover:opacity-45`} />
+                  <span aria-hidden="true" className={`pointer-events-none absolute -left-10 -bottom-10 w-24 h-24 rounded-full bg-gradient-to-tr ${service.gradient} opacity-10 blur-2xl transition-opacity duration-300 group-hover:opacity-25`} />
+                   <span className={`relative inline-flex shrink-0 w-10 h-10 items-center justify-center rounded-lg bg-gradient-to-br ${service.gradient} text-primary-foreground shadow-md mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6`}>
                     {service.icon}
                   </span>
-                  <h2 className="font-heading text-base font-bold leading-snug text-hero-foreground mb-2">{service.title}</h2>
-                  <p className="text-xs text-hero-muted leading-relaxed">{service.desc}</p>
+                  <h2 className="relative font-heading text-base font-bold leading-snug text-hero-foreground mb-2">{service.title}</h2>
+                  <p className="relative text-xs text-hero-muted leading-relaxed">{service.desc}</p>
                   <ArrowUpRight className="absolute right-4 top-4 w-4 h-4 text-hero-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </Link>
               ))}
