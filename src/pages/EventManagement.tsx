@@ -2,7 +2,6 @@ import eventConcept from "@/assets/event-planning-concept.jpg";
 import "@/styles/event-management.css";
 import EventPlanningGuide from "@/components/EventPlanningGuide";
 import EventTrustSections from "@/components/EventTrustSections";
-import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
 import { useWhatsappNumber, formatWhatsappDisplay } from "@/lib/whatsapp";
@@ -21,7 +20,7 @@ const whyDifferent = [
   { icon: <Calendar className="w-5 h-5" />, title: "Event Planning", desc: "End-to-end event design and logistics management" },
   { icon: <Megaphone className="w-5 h-5" />, title: "Digital Marketing", desc: "Pre and post-event digital campaigns for maximum reach" },
   { icon: <Target className="w-5 h-5" />, title: "Social Media Promotion", desc: "Event content creation and social amplification" },
-  { icon: <TrendingUp className="w-5 h-5" />, title: "Lead Generation", desc: "Turn event attendees into long-term customers" },
+  { icon: <TrendingUp className="w-5 h-5" />, title: "Enquiry Follow-Up", desc: "Plan the next conversation with attendees who request contact" },
   { icon: <Star className="w-5 h-5" />, title: "Content Creation", desc: "Professional photo, video & graphic content" },
   { icon: <BarChart3 className="w-5 h-5" />, title: "Results Tracking", desc: "Tracking aligned with the event objectives and available data" },
 ];
@@ -64,20 +63,20 @@ const weddingServices = [
   "Entertainment and logistics",
 ];
 
-const longTailKeywords = [
-  "Product launch events Sri Lanka",
-  "Exhibition organizers Sri Lanka",
-  "Corporate event planners Sri Lanka",
-  "Business event management Sri Lanka",
-  "Brand activation companies Sri Lanka",
-  "Event marketing agency Sri Lanka",
-  "Conference organizers Sri Lanka",
+const corporateFormats = [
+  "Product launches and demonstrations",
+  "Exhibitions and trade-show participation",
+  "Staff, client and stakeholder gatherings",
+  "Business forums and networking programmes",
+  "Brand activations and sampling experiences",
+  "Campaign-supported public events",
+  "Conferences, seminars and workshops",
 ];
 
 const businessBenefits = [
   { icon: <Award className="w-5 h-5" />, title: "Brand Awareness", desc: "Events create memorable experiences that strengthen brand recognition" },
   { icon: <Users className="w-5 h-5" />, title: "Customer Engagement", desc: "Direct interaction with your target audience builds lasting relationships" },
-  { icon: <TrendingUp className="w-5 h-5" />, title: "Sales Opportunities", desc: "Convert attendees into customers through strategic event funnels" },
+  { icon: <TrendingUp className="w-5 h-5" />, title: "Business Conversations", desc: "Create space for product questions, demonstrations and requested follow-ups" },
   { icon: <Lightbulb className="w-5 h-5" />, title: "Thought Leadership", desc: "Position your brand as an industry leader through expert events" },
 ];
 
@@ -133,7 +132,7 @@ const industries = [
 
 const expertTips = [
   { title: "Choose the Right Season for Your Event Location", desc: "Sri Lanka has two monsoons. The Southwest Monsoon (May–September) impacts Colombo, Galle and the Hill Country; the Northeast Monsoon (October–February) affects the North and East. Time outdoor events to avoid local monsoons." },
-  { title: "Check Venue Availability Early", desc: "Venue availability depends on the date, location, capacity and competing bookings. Treat these as planning lead-time examples, not a booking requirement or guarantee of availability. Check your preferred venue early." },
+  { title: "Check Venue Availability Early", desc: "Venue availability depends on the date, location, capacity and competing bookings. Check your preferred venue early." },
   { title: "Budget for Marketing as Part of the Event", desc: "Set a promotion budget based on the audience, registration objective and selected channels. Identify agency work and advertising spend separately; no universal percentage applies to every event." },
   { title: "Always Have a Contingency Plan", desc: "Power outages, sudden rain, vendor cancellations, and traffic disruptions are real risks. Professional event management companies in Sri Lanka build in backup generators, wet-weather contingencies, substitute vendor lists, and live communication protocols." },
   { title: "Capture Every Moment on Professional Photo & Video", desc: "Photos and videos captured at your event should fuel your brand's social media, website, and ads for months. Budget for professional photography and a highlight video and confirm the intended usage before the event." },
@@ -154,7 +153,7 @@ const subPages = [
   { to: "/product-launch-events-sri-lanka", label: "Product Launch Events Sri Lanka", desc: "Strategic product launches designed to generate buzz and media coverage" },
 ];
 
-const ServiceBlock = ({ icon, title, items, highlight }: { icon: React.ReactNode; title: string; items: string[]; highlight?: string }) => (
+const ServiceBlock = ({ icon, title, items, highlight, to }: { icon: React.ReactNode; title: string; items: string[]; highlight?: string; to?: string }) => (
   <div className="bg-card border border-border rounded-xl p-6 md:p-8">
     <div className="flex items-center gap-3 mb-4">
       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">{icon}</div>
@@ -168,7 +167,8 @@ const ServiceBlock = ({ icon, title, items, highlight }: { icon: React.ReactNode
         </div>
       ))}
     </div>
-    {highlight && <p className="text-xs text-primary mt-4 font-medium">👉 {highlight}</p>}
+    {highlight && <p className="text-xs text-muted-foreground mt-4">{highlight}</p>}
+    {to && <Button asChild variant="link" className="px-0 mt-4"><Link to={to}>Explore this event format <ArrowRight /></Link></Button>}
   </div>
 );
 
@@ -280,9 +280,9 @@ const EventManagement = () => {
             </nav>
             <p className="event-eyebrow mb-5">Cypher Digital · Planning + Promotion</p>
             <h1 className="mb-6">Event Planning &amp; Event Management <span>Sri Lanka</span></h1>
-            <p className="event-lead mb-7">From the first brief to the final cue. Bring your corporate event, product launch or brand activation together with a clear plan, coordinated delivery and digital promotion.</p>
+            <p className="event-lead mb-7">An event your guests remember. A plan your team can follow. Bring your corporate event, product launch or brand activation together with creative planning, coordinated delivery and digital promotion.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
-              <Button asChild size="lg" className="event-quote-button h-12 px-5"><a href="#event-enquiry">Get a Free Event Quote <ArrowRight /></a></Button>
+              <Button asChild size="lg" className="event-quote-button h-12 px-5"><a href="#event-enquiry">Plan My Event — Get a Quote <ArrowRight /></a></Button>
               <Button asChild size="lg" className="event-whatsapp-button h-12 px-5"><a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer"><MessageCircle /> Discuss Your Event</a></Button>
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-3 mt-8 text-xs">
@@ -296,7 +296,7 @@ const EventManagement = () => {
       </section>
       <nav aria-label="Event page sections" className="event-section-nav">
         <div className="container mx-auto px-6 flex flex-wrap gap-x-7 gap-y-0">
-          <a href="#event-services">Event services</a><a href="#event-process">Our process</a><a href="#event-planning-guide">Planning &amp; budgets</a><a href="#event-faq">FAQs</a><a href="#event-enquiry">Start your brief <ArrowRight className="w-3 h-3 ml-2" /></a>
+          <a href="#event-services">Event services</a><a href="#event-process">Our process</a><a href="#event-costs">Quotations</a><a href="#event-planning-guide">Planning &amp; budgets</a><a href="#event-faq">FAQs</a><a href="#event-enquiry">Start your brief <ArrowRight className="w-3 h-3 ml-2" /></a>
         </div>
       </nav>
       <section id="event-overview">
@@ -329,13 +329,15 @@ const EventManagement = () => {
               icon={<Briefcase className="w-5 h-5" />}
               title="Corporate Event Management Sri Lanka"
               items={corporateServices}
-              highlight="Ideal for companies looking for an event agency in Colombo with real business impact"
+              highlight="Shape the programme around your team, customers or stakeholders."
+              to="/corporate-event-management-sri-lanka"
             />
             <ServiceBlock
               icon={<Megaphone className="w-5 h-5" />}
               title="Marketing & Promotional Events"
               items={marketingEvents}
-              highlight="Drive visibility and leads through strategic marketing events"
+              highlight="Connect your event concept with invitations, registration and promotion."
+              to="/event-marketing-sri-lanka"
             />
             <ServiceBlock
               icon={<Star className="w-5 h-5" />}
@@ -346,13 +348,56 @@ const EventManagement = () => {
               icon={<Heart className="w-5 h-5" />}
               title="Wedding Planning Sri Lanka"
               items={weddingServices}
+              to="/wedding-planning-sri-lanka"
             />
           </div>
         </div>
       </section>
 
+      {/* Process */}
+      <section className="py-20 lg:py-28 bg-secondary" id="event-process">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">How It Works</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Our Event Planning Process</h2>
+            <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
+              A structured event plan covers responsibilities from the first brief through delivery and follow-up.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            {processSteps.map((step, i) => (
+              <div key={i} className="text-center group">
+                <div className="w-12 h-12 rounded-full border-2 border-primary/20 text-primary font-heading font-bold text-sm flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3 className="font-heading text-sm font-bold mb-1.5">{step.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust sections: team, case studies, testimonials (hidden until real content is supplied) */}
+      <EventTrustSections />
+
+      {/* Affordable Packages */}
+
+      <section className="py-20 lg:py-28" id="event-costs">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Built Around Your Brief</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Event Planning Costs & Custom Quotations</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">We offer flexible pricing based on event type, number of guests, location, and custom requirements. Ask for an itemised quotation with inclusions, exclusions and payment conditions.</p>
+          <Button asChild size="lg" className="event-quote-button font-semibold">
+            <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20a%20custom%20event%20quotation`} target="_blank" rel="noopener noreferrer">
+              Get Your Custom Quotation <ArrowRight className="w-4 h-4 ml-1" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
       {/* Differentiation – Why Cypher Digital is Different */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-28" id="event-value">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Planning and Promotion</p>
@@ -409,7 +454,7 @@ const EventManagement = () => {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
-            {longTailKeywords.map((item, i) => (
+            {corporateFormats.map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/20 transition-colors">
                 <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <span className="text-sm font-medium">{item}</span>
@@ -417,6 +462,13 @@ const EventManagement = () => {
             ))}
           </div>
           <p className="text-xs text-primary text-center mt-6 font-medium">Share your format, location and date to confirm the available scope.</p>
+        </div>
+      </section>
+
+      <section className="event-decision-band">
+        <div className="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div><p className="event-eyebrow mb-3">Let’s turn the idea into a brief</p><h2 className="font-heading text-2xl font-bold mb-3">Have a date in mind?</h2><p>Share your event type, city and expected guests. Let’s discuss the next step.</p></div>
+          <Button asChild size="lg" className="event-quote-button shrink-0"><a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20would%20like%20to%20discuss%20my%20event%20date%20and%20planning%20brief`} target="_blank" rel="noopener noreferrer"><MessageCircle /> Discuss My Event Date</a></Button>
         </div>
       </section>
 
@@ -448,7 +500,7 @@ const EventManagement = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Beyond Traditional</p>
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Marketing-Driven Event Management</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              At Cypher Digital, we go beyond traditional event planning. Our <strong>corporate event planning</strong> approach combines event execution with digital marketing to maximize results. Your event continues to generate value even after it ends.
+              Connect your <strong>corporate event planning</strong> brief to digital promotion before doors open and approved content after the event. Registration campaigns, photography and follow-up can support the wider business goal when their scope and permissions are agreed.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -461,33 +513,6 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
-
-      {/* Process */}
-      <section className="py-20 lg:py-28 bg-secondary" id="event-process">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">How It Works</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Our Event Planning Process</h2>
-            <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              A structured event plan covers responsibilities from the first brief through delivery and follow-up.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
-            {processSteps.map((step, i) => (
-              <div key={i} className="text-center group">
-                <div className="w-12 h-12 rounded-full border-2 border-primary/20 text-primary font-heading font-bold text-sm flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-                <h3 className="font-heading text-sm font-bold mb-1.5">{step.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust sections: team, case studies, testimonials (hidden until real content is supplied) */}
-      <EventTrustSections />
 
       {/* Sub-Service Internal Links */}
       <section className="py-20 lg:py-28">
@@ -533,21 +558,6 @@ const EventManagement = () => {
         </div>
       </section>
 
-      {/* Affordable Packages */}
-      <OurWorkSection service="event management" />
-      <section className="py-20 lg:py-28">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Built Around Your Brief</p>
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Event Planning Costs & Custom Quotations</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">We offer flexible pricing based on event type, number of guests, location, and custom requirements. Ask for an itemised quotation with inclusions, exclusions and payment conditions.</p>
-          <Button asChild size="lg" className="event-quote-button font-semibold">
-            <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20a%20custom%20event%20quotation`} target="_blank" rel="noopener noreferrer">
-              Get Your Custom Quotation <ArrowRight className="w-4 h-4 ml-1" />
-            </a>
-          </Button>
-        </div>
-      </section>
-
       {/* Why Professional Event Management Matters */}
       <section className="py-20 lg:py-28 bg-secondary">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -590,29 +600,29 @@ const EventManagement = () => {
         </div>
       </section>
 
-      <EventPlanningGuide />
-
-      {/* FAQs */}
-      <section className="py-20 lg:py-28 bg-secondary" id="event-faq">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <div className="text-center mb-12">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">FAQ</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Planning & Management: Your Questions Answered</h2>
-          </div>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <details key={i} className="group bg-card border border-border rounded-xl p-5">
-                <summary className="font-heading text-sm font-semibold cursor-pointer list-none flex items-center justify-between">
-                  {faq.q}
-                  <Zap className="w-4 h-4 text-primary shrink-0 group-open:rotate-90 transition-transform" />
-                </summary>
-                <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{faq.a}</p>
-              </details>
-            ))}
+      <section id="event-enquiry">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="event-eyebrow text-primary mb-4">Your next event starts here</p>
+              <h2 className="font-heading text-3xl font-extrabold mb-5">Tell us what you’re planning.</h2>
+              <p className="text-muted-foreground mb-6">A conference, product launch, activation or celebration — start with the essentials. We’ll discuss your requirements before preparing a custom scope and quotation.</p>
+              <ul className="space-y-3 text-sm mb-8">
+                {['Purpose and type of event', 'Preferred date, city and venue', 'Expected guests and available budget', 'Planning, production and promotion needs'].map(item => <li key={item} className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-primary shrink-0" />{item}</li>)}
+              </ul>
+              <Button asChild className="event-quote-button"><a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)} <ArrowRight /></a></Button>
+              <p className="text-xs text-muted-foreground mt-5">Fees, supplier costs, payment terms and availability are confirmed in writing.</p>
+            </div>
+            <div className="event-form">
+              <h3 className="font-heading text-xl font-bold mb-2">Request Your Event Quotation</h3>
+              <p className="text-sm text-muted-foreground mb-6">Tell us your date, location and guest count. Not sure of every detail? Share what you know and start the conversation.</p>
+              <InquiryForm service="Event Management" whatsappNumber={whatsappNumber} />
+            </div>
           </div>
         </div>
       </section>
 
+      <EventPlanningGuide />
 
       {/* Industries */}
       <section className="py-20 lg:py-28">
@@ -680,27 +690,29 @@ const EventManagement = () => {
         </div>
       </section>
 
-      <section id="event-enquiry">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <p className="event-eyebrow text-primary mb-4">Your next event starts here</p>
-              <h2 className="font-heading text-3xl font-extrabold mb-5">Tell us what you’re planning.</h2>
-              <p className="text-muted-foreground mb-6">A conference, product launch, activation or celebration — start with the essentials. We’ll discuss your requirements before preparing a custom scope and quotation.</p>
-              <ul className="space-y-3 text-sm mb-8">
-                {['Purpose and type of event', 'Preferred date, city and venue', 'Expected guests and available budget', 'Planning, production and promotion needs'].map(item => <li key={item} className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-primary shrink-0" />{item}</li>)}
-              </ul>
-              <Button asChild className="event-quote-button"><a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)} <ArrowRight /></a></Button>
-              <p className="text-xs text-muted-foreground mt-5">Fees, supplier costs, payment terms and availability are confirmed in writing.</p>
-            </div>
-            <div className="event-form">
-              <h3 className="font-heading text-xl font-bold mb-2">Request Your Event Quotation</h3>
-              <p className="text-sm text-muted-foreground mb-6">Share your details and event brief.</p>
-              <InquiryForm service="Event Management" whatsappNumber={whatsappNumber} />
-            </div>
+      {/* FAQs */}
+      <section className="py-20 lg:py-28 bg-secondary" id="event-faq">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="text-center mb-12">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">FAQ</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Planning & Management: Your Questions Answered</h2>
+          </div>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <details key={i} className="group bg-card border border-border rounded-xl p-5">
+                <summary className="font-heading text-sm font-semibold cursor-pointer list-none flex items-center justify-between">
+                  {faq.q}
+                  <Zap className="w-4 h-4 text-primary shrink-0 group-open:rotate-90 transition-transform" />
+                </summary>
+                <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
+
+
+
     </div>
   );
 };

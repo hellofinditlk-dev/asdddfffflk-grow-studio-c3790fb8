@@ -90,6 +90,7 @@ const EventMarketing = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-center mb-4">Why Event Marketing Matters</h2>
           <p className="text-sm text-muted-foreground text-center mb-10 max-w-2xl mx-auto">Events without marketing are like products without advertising. Our digital-first approach ensures your event reaches the right audience and delivers measurable business results.</p>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">Connect your promotional campaign to a practical programme and guest journey with <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event planning in Sri Lanka</Link> before finalising the scope.</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {["Increase event attendance by 3x with targeted campaigns", "Generate qualified leads before and during events", "Create content assets that work long after the event", "Build brand authority through event thought leadership", "Track ROI with detailed analytics and reporting", "Retarget attendees for future conversions"].map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border">

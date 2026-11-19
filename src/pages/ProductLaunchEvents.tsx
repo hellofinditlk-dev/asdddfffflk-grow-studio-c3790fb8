@@ -73,6 +73,7 @@ const ProductLaunchEvents = () => {
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-center mb-12">Our Product Launch Services</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">Coordinate your launch venue, suppliers and programme through a wider brief for <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management in Sri Lanka</Link> before finalising the scope.</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {services.map((s, i) => (
               <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/20 transition-colors">

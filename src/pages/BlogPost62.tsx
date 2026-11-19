@@ -22,6 +22,7 @@ const BlogPost62 = () => (
             <p>Corporate events — conferences, product launches, team events, annual dinners, awards ceremonies, client appreciation — are high-stakes occasions. A well-executed event strengthens relationships, generates buzz, and reflects your professionalism. A poorly managed one does the opposite. Choosing the right partner in Sri Lanka is one of the most important decisions in the planning process.</p>
 
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">What Does a Corporate Event Agency Actually Do?</h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">Start with our guide to <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management in Sri Lanka</Link> before finalising the scope.</p>
             <p>A full-service <Link to="/corporate-event-management-sri-lanka" className="text-primary font-semibold hover:underline">corporate event management agency</Link> in Sri Lanka handles:</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Venue sourcing and coordination</strong> across Colombo and Sri Lanka</li>

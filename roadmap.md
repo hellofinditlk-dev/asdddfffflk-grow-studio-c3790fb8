@@ -57,3 +57,5 @@
 - [x] Route Event Management and Event Marketing page contact buttons and forms through the supplied dedicated number, preserving shared navigation contacts and lead capture.
 
 - [x] Redesign only the event management page with a visual event-led opening, clearer planning content and aligned search metadata; 3,246 words, 13 related links, one H1, mobile layouts and enquiry access checked; 30 contact tests passed. Not published; verified business details and trust material still await the owner.
+
+- [x] Reorder event content around customer decisions, strengthen event CTAs and add five contextual incoming links; all five source-to-destination journeys, mobile layouts, quote actions and 30 contact tests passed. Real photos and trust content remain owner-dependent; not published.

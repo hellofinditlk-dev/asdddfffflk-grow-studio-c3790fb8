@@ -95,6 +95,7 @@ const CorporateEventManagement = () => {
           <div className="text-center mb-12">
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Our Corporate Event Services</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">We deliver professional corporate events that enhance your brand and create real business impact.</p>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">For the wider venue, supplier and on-site coordination brief, explore <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management in Sri Lanka</Link> before finalising the scope.</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {services.map((s, i) => (

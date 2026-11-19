@@ -105,6 +105,15 @@
 .event-page #event-enquiry { background: hsl(var(--event-surface)); color: hsl(var(--foreground)); }
 .event-page #event-enquiry .event-form { background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 8px; padding: 32px; }
 .event-page section[id] { scroll-margin-top: 90px; }
+.event-page .event-decision-band {
+  background: hsl(var(--event-ink));
+  color: hsl(var(--event-on-image));
+}
+.event-page #event-services .grid > div { display: flex; flex-direction: column; }
+.event-page #event-services .grid > div > a { align-self: flex-start; margin-top: auto; padding-top: 20px; }
+.event-page #event-value .grid > div { background: transparent; border: none; border-bottom: 1px solid hsl(var(--border)); border-radius: 0; }
+.event-page #event-costs { background: hsl(var(--event-surface)); }
+.event-page #event-costs h2 { max-width: 600px; }
 @media (max-width: 767px) {
   .event-hero { min-height: 570px; }
   .event-hero h1 { font-size: 36px; max-width: 460px; }
