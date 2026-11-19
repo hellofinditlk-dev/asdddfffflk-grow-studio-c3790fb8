@@ -265,8 +265,8 @@ const EventManagement = () => {
   return (
     <div className="pt-16">
       <SEOHead
-        title="Event Management Sri Lanka | Planning & Marketing | Cypher Digital"
-        description="Plan corporate events, product launches and celebrations in Sri Lanka. Explore budgeting, venue selection, event promotion and custom quotes from Cypher Digital."
+        title="Event Management & Planning Sri Lanka | Cypher Digital"
+        description="Corporate events, product launches and brand activations, planned and promoted by one team in Colombo. Island-wide service. Send your brief for a written quote."
         canonical={canonical}
       />
 
@@ -280,25 +280,22 @@ const EventManagement = () => {
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
               <Calendar className="w-6 h-6" />
             </div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Marketing-Driven Event Planning Sri Lanka</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Event Planning + Digital Promotion, One Team</p>
             <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
               Event Management Sri Lanka
             </h1>
-            <p className="text-lg text-white/50 leading-relaxed mb-4">
-              Complete Guide & Professional Event Planning Services
-            </p>
-            <p className="text-sm text-white/40 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Cypher Digital brings together event planning and digital promotion for corporate events, product launches, brand activations and celebrations in Sri Lanka. Start with your purpose, date, location and guest count; agree the planning, supplier coordination, content and marketing scope in a written proposal. Event fees and availability are confirmed for your brief, not assumed from a generic price list.
+            <p className="text-sm text-white/50 leading-relaxed mb-8 max-w-2xl mx-auto">
+              Cypher Digital plans and promotes corporate events, product launches and brand activations across Sri Lanka. Send your date, location and guest count, and we reply with a written scope and quotation within 1–2 working days.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">
-                  Chat on WhatsApp <MessageCircle className="w-4 h-4 ml-1" />
+              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
+                <a href="#event-enquiry">
+                  Get a Free Event Quote <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
               </Button>
-              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20a%20free%20event%20consultation`} target="_blank" rel="noopener noreferrer">
-                  Get a Free Consultation <ArrowRight className="w-4 h-4 ml-1" />
+              <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
+                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">
+                  WhatsApp +94 76 031 7477 <MessageCircle className="w-4 h-4 ml-1" />
                 </a>
               </Button>
             </div>
@@ -322,7 +319,7 @@ const EventManagement = () => {
               <strong>Event management</strong> is the professional process of planning, organizing, coordinating, and executing events from concept to completion. It includes budgeting, venue selection, vendor coordination, logistics, marketing, and on-site management to create memorable and impactful experiences.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              An <strong>event management Sri Lanka</strong> brief can also include digital marketing, social media promotion and enquiry follow-up, with responsibilities and reporting agreed before work begins.
+              An <strong>event planning</strong> brief in Sri Lanka can also include digital marketing, social media promotion and enquiry follow-up, with responsibilities and reporting agreed before work begins.
             </p>
           </div>
         </div>
@@ -343,7 +340,7 @@ const EventManagement = () => {
               icon={<Briefcase className="w-5 h-5" />}
               title="Corporate Event Management Sri Lanka"
               items={corporateServices}
-              highlight="Ideal for companies looking for event management Sri Lanka with real business impact"
+              highlight="Ideal for companies looking for an event agency in Colombo with real business impact"
             />
             <ServiceBlock
               icon={<Megaphone className="w-5 h-5" />}
@@ -441,7 +438,7 @@ const EventManagement = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Trusted Partner</p>
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Choosing an Event Management Partner in Sri Lanka</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Choosing the right event partner is critical for your brand's reputation and event success. Discuss your requirements with Cypher Digital when considering <strong>event management Sri Lanka</strong>.
+              Choosing the right event partner is critical for your brand's reputation and event success. Discuss your requirements with Cypher Digital when comparing <strong>event organisers in Sri Lanka</strong>.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -460,9 +457,9 @@ const EventManagement = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Beyond Traditional</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">SEO & Marketing-Driven Event Management</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Marketing-Driven Event Management</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              At Cypher Digital, we go beyond traditional event planning. Our <strong>event management Sri Lanka</strong> approach combines event execution with digital marketing to maximize results. Your event continues to generate value even after it ends.
+              At Cypher Digital, we go beyond traditional event planning. Our <strong>corporate event planning</strong> approach combines event execution with digital marketing to maximize results. Your event continues to generate value even after it ends.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">

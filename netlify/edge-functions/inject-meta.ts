@@ -280,8 +280,8 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Label Design Sri Lanka – Professional Product Label Design Services",
   },
   "/event-management-sri-lanka": {
-    title: "Event Management Sri Lanka | Planning & Marketing | Cypher Digital",
-    description: "Plan corporate events, product launches and celebrations in Sri Lanka. Explore budgeting, venue selection, event promotion and custom quotes from Cypher Digital.",
+    title: "Event Management & Planning Sri Lanka | Cypher Digital",
+    description: "Corporate events, product launches and brand activations, planned and promoted by one team in Colombo. Island-wide service. Send your brief for a written quote.",
     h1: "Event Management Sri Lanka",
   },
   "/corporate-event-management-sri-lanka": {
