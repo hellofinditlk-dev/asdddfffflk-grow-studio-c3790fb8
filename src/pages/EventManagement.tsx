@@ -1,4 +1,5 @@
 import EventPlanningGuide from "@/components/EventPlanningGuide";
+import EventTrustSections from "@/components/EventTrustSections";
 import OurWorkSection from "@/components/OurWorkSection";
 import { Link } from "react-router-dom";
 import { trackCallClick } from "@/lib/trackCallClick";
@@ -496,6 +497,9 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
+
+      {/* Trust sections: team, case studies, testimonials (hidden until real content is supplied) */}
+      <EventTrustSections />
 
       {/* Sub-Service Internal Links */}
       <section className="py-20 lg:py-28">
