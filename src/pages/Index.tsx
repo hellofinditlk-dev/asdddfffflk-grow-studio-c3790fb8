@@ -426,10 +426,6 @@ const Index = () => (
                   </span>
                   <h2 className="relative font-heading text-base font-bold leading-snug text-hero-foreground mb-2">{service.title}</h2>
                   <p className="relative text-xs text-hero-muted leading-relaxed">{service.desc}</p>
-                  <span className="relative mt-auto pt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-primary">
-                    Explore service
-                    <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-                  </span>
                   <ArrowUpRight className="absolute right-4 top-4 w-4 h-4 text-hero-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </Link>
               ))}
