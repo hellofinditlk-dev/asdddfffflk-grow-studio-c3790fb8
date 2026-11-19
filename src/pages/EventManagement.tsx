@@ -253,7 +253,7 @@ const EventManagement = () => {
         name: "Event Planning & Event Management Sri Lanka | Cypher Digital",
         url: canonical,
         dateModified: "2026-11-19",
-        description: "Complete guide to professional event management and event planning services in Sri Lanka. Corporate events, weddings, brand activations, and marketing-driven event execution.",
+        description: "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.",
       },
     ];
     const script = document.createElement("script");
@@ -267,7 +267,7 @@ const EventManagement = () => {
     <div className="event-page pt-16">
       <SEOHead
         title="Event Planning & Event Management Sri Lanka | Cypher Digital"
-        description="Event planning and event management in Sri Lanka for corporate events, product launches and brand activations. Discuss your brief and request an itemised quote."
+        description="Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote."
         canonical={canonical}
       />
 

@@ -281,7 +281,7 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
   },
   "/event-management-sri-lanka": {
     title: "Event Planning & Event Management Sri Lanka | Cypher Digital",
-    description: "Event planning and event management in Sri Lanka for corporate events, product launches and brand activations. Discuss your brief and request an itemised quote.",
+    description: "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.",
     h1: "Event Planning & Event Management Sri Lanka",
   },
   "/corporate-event-management-sri-lanka": {
