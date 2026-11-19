@@ -419,13 +419,17 @@ const Index = () => (
                   to={service.link}
                   className={`hero-service-tile group relative flex flex-col min-w-0 min-h-[180px] p-4 border border-hero-foreground/15 overflow-hidden transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${service.title === "AI Visibility" ? "order-last col-span-2 lg:col-span-1" : ""}`}
                 >
-                  <span aria-hidden="true" className={`pointer-events-none absolute -right-8 -top-8 w-28 h-28 rounded-full bg-gradient-to-br ${service.gradient} opacity-20 blur-2xl transition-opacity duration-300 group-hover:opacity-45`} />
-                  <span aria-hidden="true" className={`pointer-events-none absolute -left-10 -bottom-10 w-24 h-24 rounded-full bg-gradient-to-tr ${service.gradient} opacity-10 blur-2xl transition-opacity duration-300 group-hover:opacity-25`} />
+                  <span aria-hidden="true" className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-[0.08] transition-opacity duration-300 group-hover:opacity-[0.16]`} />
+                  <span aria-hidden="true" className={`pointer-events-none absolute -right-8 -top-8 w-28 h-28 rounded-full bg-gradient-to-br ${service.gradient} opacity-25 blur-2xl transition-opacity duration-300 group-hover:opacity-50`} />
                    <span className={`relative inline-flex shrink-0 w-10 h-10 items-center justify-center rounded-lg bg-gradient-to-br ${service.gradient} text-primary-foreground shadow-md mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6`}>
                     {service.icon}
                   </span>
                   <h2 className="relative font-heading text-base font-bold leading-snug text-hero-foreground mb-2">{service.title}</h2>
                   <p className="relative text-xs text-hero-muted leading-relaxed">{service.desc}</p>
+                  <span className="relative mt-auto pt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide text-primary">
+                    Explore service
+                    <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
                   <ArrowUpRight className="absolute right-4 top-4 w-4 h-4 text-hero-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </Link>
               ))}
