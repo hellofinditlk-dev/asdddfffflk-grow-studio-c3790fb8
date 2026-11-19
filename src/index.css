@@ -73,6 +73,13 @@
     --section-dark: 220 20% 12%;
     --section-dark-foreground: 0 0% 98%;
 
+    --event-ink: 230 18% 12%;
+    --event-on-image: 0 0% 100%;
+    --event-highlight: 78 92% 72%;
+    --event-surface: 250 25% 97%;
+    --event-image-overlay: linear-gradient(90deg, hsl(var(--event-ink) / .96) 0%, hsl(var(--event-ink) / .88) 35%, hsl(var(--event-ink) / .3) 70%, hsl(var(--event-ink) / .1) 100%);
+    --event-image-overlay-mobile: linear-gradient(90deg, hsl(var(--event-ink) / .93), hsl(var(--event-ink) / .65));
+
     --shadow-card: 0 1px 3px hsl(220 20% 12% / 0.04), 0 1px 2px hsl(220 20% 12% / 0.06);
     --shadow-card-hover: 0 4px 16px hsl(220 20% 12% / 0.08);
 
@@ -109,6 +116,7 @@
     --border: 220 18% 18%;
     --input: 220 18% 18%;
     --ring: 252 65% 60%;
+    --event-surface: 230 18% 11%;
   }
 }
 

@@ -1,3 +1,5 @@
+import eventConcept from "@/assets/event-planning-concept.jpg";
+import "@/styles/event-management.css";
 import EventPlanningGuide from "@/components/EventPlanningGuide";
 import EventTrustSections from "@/components/EventTrustSections";
 import OurWorkSection from "@/components/OurWorkSection";
@@ -13,7 +15,6 @@ import {
   Heart, Megaphone, Star, Target, TrendingUp, Award, Lightbulb,
   Building2, ShoppingBag, Landmark, HeartPulse, GraduationCap, Cpu,
 } from "lucide-react";
-import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 import { Button } from "@/components/ui/button";
 
 const whyDifferent = [
@@ -132,7 +133,7 @@ const industries = [
 
 const expertTips = [
   { title: "Choose the Right Season for Your Event Location", desc: "Sri Lanka has two monsoons. The Southwest Monsoon (May–September) impacts Colombo, Galle and the Hill Country; the Northeast Monsoon (October–February) affects the North and East. Time outdoor events to avoid local monsoons." },
-  { title: "Book Venues 3–6 Months in Advance", desc: "Top venues — especially five-star hotel ballrooms in Colombo — book out fast during peak corporate (Oct–Mar) and wedding (Dec–Apr) season. Start 3 months ahead for mid-size events, 6 months for large conferences or weddings." },
+  { title: "Check Venue Availability Early", desc: "Venue availability depends on the date, location, capacity and competing bookings. Treat these as planning lead-time examples, not a booking requirement or guarantee of availability. Check your preferred venue early." },
   { title: "Budget for Marketing as Part of the Event", desc: "Set a promotion budget based on the audience, registration objective and selected channels. Identify agency work and advertising spend separately; no universal percentage applies to every event." },
   { title: "Always Have a Contingency Plan", desc: "Power outages, sudden rain, vendor cancellations, and traffic disruptions are real risks. Professional event management companies in Sri Lanka build in backup generators, wet-weather contingencies, substitute vendor lists, and live communication protocols." },
   { title: "Capture Every Moment on Professional Photo & Video", desc: "Photos and videos captured at your event should fuel your brand's social media, website, and ads for months. Budget for professional photography and a highlight video and confirm the intended usage before the event." },
@@ -179,13 +180,12 @@ const EventManagement = () => {
     const schemas = [
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         "@id": "https://cypherdigital.lk/#event-service-provider",
         name: "Cypher Digital",
         description: "Event planning and marketing coordination in Sri Lanka covering corporate events, product launches, brand activations and wedding planning.",
         url: "https://cypherdigital.lk",
         telephone: "+94760317477",
-        address: { "@type": "PostalAddress", addressLocality: "Colombo", addressCountry: "LK" },
         areaServed: { "@type": "Country", name: "Sri Lanka" },
       },
       {
@@ -206,15 +206,15 @@ const EventManagement = () => {
         "@type": "Service",
         "@id": `${canonical}#service`,
         url: canonical,
-        name: "Event Management Sri Lanka",
+        name: "Event Planning & Event Management Sri Lanka",
         description: "Professional marketing-driven event management and event planning services in Sri Lanka by Cypher Digital. Corporate events, weddings, brand activations, and product launches.",
         provider: {
-          "@type": "LocalBusiness",
+          "@type": "Organization",
           "@id": "https://cypherdigital.lk/#event-service-provider",
           name: "Cypher Digital",
           url: "https://cypherdigital.lk",
         },
-        serviceType: "Event Management",
+        serviceType: ["Event planning", "Event management", "Event promotion"],
         areaServed: { "@type": "Country", name: "Sri Lanka" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -241,7 +241,7 @@ const EventManagement = () => {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
-          { "@type": "ListItem", position: 2, name: "Event Management Sri Lanka", item: canonical },
+          { "@type": "ListItem", position: 2, name: "Event Planning & Event Management Sri Lanka", item: canonical },
         ],
       },
       {
@@ -250,9 +250,9 @@ const EventManagement = () => {
         "@id": `${canonical}#webpage`,
         inLanguage: "en-LK",
         mainEntity: { "@id": `${canonical}#service` },
-        name: "Event Management Sri Lanka – Complete Guide & Services",
+        name: "Event Planning & Event Management Sri Lanka | Cypher Digital",
         url: canonical,
-        dateModified: "2026-11-11",
+        dateModified: "2026-11-19",
         description: "Complete guide to professional event management and event planning services in Sri Lanka. Corporate events, weddings, brand activations, and marketing-driven event execution.",
       },
     ];
@@ -264,64 +264,52 @@ const EventManagement = () => {
   }, []);
 
   return (
-    <div className="pt-16">
+    <div className="event-page pt-16">
       <SEOHead
-        title="Event Management & Planning Sri Lanka | Cypher Digital"
-        description="Corporate events, product launches and brand activations, planned and promoted by one team in Colombo. Island-wide service. Send your brief for a written quote."
+        title="Event Planning & Event Management Sri Lanka | Cypher Digital"
+        description="Event planning and event management in Sri Lanka for corporate events, product launches and brand activations. Discuss your brief and request an itemised quote."
         canonical={canonical}
       />
 
-      {/* Hero */}
-      <nav aria-label="Breadcrumb" className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
-        <ol className="flex flex-wrap gap-2"><li><Link to="/" className="hover:text-primary">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Event Management Sri Lanka</li></ol>
-      </nav>
-      <section className="bg-foreground py-20 lg:py-28">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center animate-fade-up">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
-              <Calendar className="w-6 h-6" />
+      <section className="event-hero">
+        <img src={eventConcept} alt="Concept illustration of a prepared conference venue with stage, seating and presentation screen" width={1920} height={1088} fetchPriority="high" />
+        <div className="container mx-auto px-6">
+          <div className="event-hero-copy">
+            <nav aria-label="Breadcrumb" className="mb-8 text-xs opacity-80">
+              <ol className="flex flex-wrap gap-2"><li><Link to="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Event Management</li></ol>
+            </nav>
+            <p className="event-eyebrow mb-5">Cypher Digital · Planning + Promotion</p>
+            <h1 className="mb-6">Event Planning &amp; Event Management <span>Sri Lanka</span></h1>
+            <p className="event-lead mb-7">From the first brief to the final cue. Bring your corporate event, product launch or brand activation together with a clear plan, coordinated delivery and digital promotion.</p>
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
+              <Button asChild size="lg" className="event-quote-button h-12 px-5"><a href="#event-enquiry">Get a Free Event Quote <ArrowRight /></a></Button>
+              <Button asChild size="lg" className="event-whatsapp-button h-12 px-5"><a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer"><MessageCircle /> Discuss Your Event</a></Button>
             </div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Event Planning + Digital Promotion, One Team</p>
-            <h1 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-              Event Management Sri Lanka
-            </h1>
-            <p className="text-sm text-white/50 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Cypher Digital plans and promotes corporate events, product launches and brand activations across Sri Lanka. Send your date, location and guest count, and we reply with a written scope and quotation within 1–2 working days.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none">
-                <a href="#event-enquiry">
-                  Get a Free Event Quote <ArrowRight className="w-4 h-4 ml-1" />
-                </a>
-              </Button>
-              <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-sm px-7 h-12 rounded-xl">
-                <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">
-                  WhatsApp +94 76 031 7477 <MessageCircle className="w-4 h-4 ml-1" />
-                </a>
-              </Button>
+            <div className="flex flex-wrap gap-x-6 gap-y-3 mt-8 text-xs">
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Written scope</span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> Itemised quotation</span>
+              <a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()} className="flex items-center gap-2">Call {formatWhatsappDisplay(whatsappNumber)} <ArrowRight className="w-3 h-3" /></a>
             </div>
           </div>
         </div>
+        <span className="event-hero-caption">Event venue concept · illustrative image</span>
       </section>
-
-      {/* Snippet Bait Definition */}
-      <section className="py-16 lg:py-20" id="event-overview">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <nav aria-label="Event page sections" className="flex flex-wrap gap-x-6 gap-y-3 mb-8 text-sm text-primary">
-            <a href="#event-services" className="hover:underline">Event services</a>
-            <a href="#event-process" className="hover:underline">Planning process</a>
-            <a href="#event-planning-guide" className="hover:underline">Budget and planning guide</a>
-            <a href="#event-faq" className="hover:underline">Questions</a>
-            <a href="#event-enquiry" className="hover:underline">Request a quotation</a>
-          </nav>
-          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8">
-            <h2 className="font-heading text-xl md:text-2xl font-extrabold mb-4">What is Event Management?</h2>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-              <strong>Event management</strong> is the professional process of planning, organizing, coordinating, and executing events from concept to completion. It includes budgeting, venue selection, vendor coordination, logistics, marketing, and on-site management to create memorable and impactful experiences.
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              An <strong>event planning</strong> brief in Sri Lanka can also include digital marketing, social media promotion and enquiry follow-up, with responsibilities and reporting agreed before work begins.
-            </p>
+      <nav aria-label="Event page sections" className="event-section-nav">
+        <div className="container mx-auto px-6 flex flex-wrap gap-x-7 gap-y-0">
+          <a href="#event-services">Event services</a><a href="#event-process">Our process</a><a href="#event-planning-guide">Planning &amp; budgets</a><a href="#event-faq">FAQs</a><a href="#event-enquiry">Start your brief <ArrowRight className="w-3 h-3 ml-2" /></a>
+        </div>
+      </nav>
+      <section id="event-overview">
+        <div className="container mx-auto px-6 max-w-5xl event-overview-grid">
+          <div>
+            <p className="event-eyebrow text-primary mb-4">A clear plan. A connected experience.</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Your event has a purpose.<br />Let’s plan around it.</h2>
+            <p className="text-muted-foreground">Cypher Digital combines event planning and promotion for Sri Lankan businesses. Share your date, location, audience and guest count to discuss the scope available for your event.</p>
+          </div>
+          <div className="event-overview-answer">
+            <h3 className="font-heading text-lg font-bold mb-3">Event planning vs event management</h3>
+            <p className="text-sm text-muted-foreground mb-4"><strong className="text-foreground">Event planning</strong> shapes the purpose, budget, venue, programme and guest experience before the event. <strong className="text-foreground">Event management</strong> coordinates suppliers, schedules, technical checks and on-site delivery so the plan can be put into action.</p>
+            <p className="text-sm text-muted-foreground">Promotion is a separate part of the brief: connect invitations, registration and follow-up with an <Link to="/event-marketing-sri-lanka" className="text-primary underline underline-offset-4">event marketing plan</Link>. Confirm the responsibilities and costs in your written quotation.</p>
           </div>
         </div>
       </section>
@@ -368,7 +356,7 @@ const EventManagement = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Planning and Promotion</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Why Cypher Digital is Different from Other Event Management Companies in Sri Lanka</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Planning, Production & Promotion — Connected</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
               Cypher Digital brings together planning and promotion through a <strong>marketing-driven event management company</strong> that combines event execution with digital strategy to support your agreed business objectives.
             </p>
@@ -383,7 +371,7 @@ const EventManagement = () => {
             ))}
           </div>
           <p className="text-sm text-muted-foreground text-center mt-8 max-w-2xl mx-auto">
-            This makes us a modern <strong>event planning Sri Lanka</strong> company focused on both experience and business results. Depending on the agreed scope, an event can support business conversations, brand awareness and reusable content.
+            This makes our <strong>event planning in Sri Lanka</strong> approach focused on both experience and business results. Depending on the agreed scope, an event can support business conversations, brand awareness and reusable content.
           </p>
         </div>
       </section>
@@ -393,9 +381,9 @@ const EventManagement = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">For Businesses</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Management Sri Lanka for Businesses</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Business Events with a Clear Objective</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Businesses today need events that generate tangible results — not just a gathering. Our <strong>event management Sri Lanka</strong> services are designed to support business growth through strategic planning and execution.
+              Businesses today need events that generate tangible results — not just a gathering. Our <strong>event management</strong> services are designed to support business growth through strategic planning and execution.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
@@ -417,7 +405,7 @@ const EventManagement = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Specialized Services</p>
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Corporate Event Planning Sri Lanka</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              We specialize in <strong>corporate event planning Sri Lanka</strong> across multiple categories. Whatever your business event needs, our team delivers professional results.
+              Discuss <strong>corporate event planning in Sri Lanka</strong> for conferences, launches and business gatherings. Confirm the planning, production and promotional services available for your brief.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -428,7 +416,7 @@ const EventManagement = () => {
               </div>
             ))}
           </div>
-          <p className="text-xs text-primary text-center mt-6 font-medium">👉 We cover every type of corporate and business event across Sri Lanka</p>
+          <p className="text-xs text-primary text-center mt-6 font-medium">Share your format, location and date to confirm the available scope.</p>
         </div>
       </section>
 
@@ -532,7 +520,7 @@ const EventManagement = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Coverage</p>
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Management Across Sri Lanka</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              We provide <strong>event planning Sri Lanka</strong> services across all major cities and regions.
+              Request <strong>event planning in Sri Lanka</strong> for Colombo or a regional location. Travel, suppliers and availability are confirmed for your date and venue.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
@@ -549,10 +537,10 @@ const EventManagement = () => {
       <OurWorkSection service="event management" />
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Affordable & Scalable</p>
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Affordable Event Packages</h2>
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Built Around Your Brief</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Event Planning Costs & Custom Quotations</h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">We offer flexible pricing based on event type, number of guests, location, and custom requirements. Ask for an itemised quotation with inclusions, exclusions and payment conditions.</p>
-          <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] rounded-xl font-semibold border-none">
+          <Button asChild size="lg" className="event-quote-button font-semibold">
             <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20need%20a%20custom%20event%20quotation`} target="_blank" rel="noopener noreferrer">
               Get Your Custom Quotation <ArrowRight className="w-4 h-4 ml-1" />
             </a>
@@ -566,7 +554,7 @@ const EventManagement = () => {
           <div className="text-center mb-10">
             <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Why Professional Event Management Matters</h2>
             <p className="text-sm text-muted-foreground mt-3 max-w-2xl mx-auto">
-              Working with an <strong>event management Sri Lanka</strong> company can help coordinate suppliers, reduce avoidable disruption and report against your agreed objectives.
+              Working with an <strong>event management company in Sri Lanka</strong> can help coordinate suppliers, reduce avoidable disruption and report against your agreed objectives.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -602,12 +590,14 @@ const EventManagement = () => {
         </div>
       </section>
 
+      <EventPlanningGuide />
+
       {/* FAQs */}
       <section className="py-20 lg:py-28 bg-secondary" id="event-faq">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">FAQ</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Frequently Asked Questions – Event Planning Sri Lanka</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Event Planning & Management: Your Questions Answered</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
@@ -623,7 +613,6 @@ const EventManagement = () => {
         </div>
       </section>
 
-      <EventPlanningGuide />
 
       {/* Industries */}
       <section className="py-20 lg:py-28">
@@ -691,40 +680,22 @@ const EventManagement = () => {
         </div>
       </section>
 
-      {/* CTA + Form */}
-      <section className="bg-foreground py-20 lg:py-28" id="event-enquiry">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <section id="event-enquiry">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Get a Free Event Consultation</p>
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">
-                Plan Your Event with Cypher Digital Today
-              </h2>
-              <p className="text-white/50 mb-4 max-w-xl text-sm leading-relaxed">
-                Planning an event in Sri Lanka? Let our experts help you design, plan, and execute a successful event. Work with a team that combines creativity, strategy, and execution.
-              </p>
-              <p className="text-white/40 mb-8 max-w-xl text-sm leading-relaxed">
-                Whether it's a corporate conference, product launch, brand activation, or wedding — we'll create an event that delivers real results.
-              </p>
-              <div className="flex items-center gap-4 mb-6 bg-white/5 border border-white/10 rounded-2xl p-4">
-                <img src={mascotGlasses} alt="Cypher Digital mascot" className="w-14 h-14 rounded-xl object-cover hidden sm:block" />
-                <div>
-                  <p className="text-white/80 text-sm font-medium mb-2">💬 Ready to create an unforgettable event? Let's talk!</p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-                      <a href={`https://wa.me/${whatsappNumber}?text=Hi%2C%20I%20want%20to%20plan%20an%20event`} target="_blank" rel="noopener noreferrer">WhatsApp Now</a>
-                    </Button>
-                    <Button asChild className="border border-white/20 bg-transparent rounded-xl h-11 px-6 hover:bg-white/5" style={{ color: "white" }}>
-                      <a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)}</a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-              <p className="text-xs text-white/30">👉 Event Brief | Consultation | Custom Quotation</p>
+              <p className="event-eyebrow text-primary mb-4">Your next event starts here</p>
+              <h2 className="font-heading text-3xl font-extrabold mb-5">Tell us what you’re planning.</h2>
+              <p className="text-muted-foreground mb-6">A conference, product launch, activation or celebration — start with the essentials. We’ll discuss your requirements before preparing a custom scope and quotation.</p>
+              <ul className="space-y-3 text-sm mb-8">
+                {['Purpose and type of event', 'Preferred date, city and venue', 'Expected guests and available budget', 'Planning, production and promotion needs'].map(item => <li key={item} className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-primary shrink-0" />{item}</li>)}
+              </ul>
+              <Button asChild className="event-quote-button"><a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)} <ArrowRight /></a></Button>
+              <p className="text-xs text-muted-foreground mt-5">Fees, supplier costs, payment terms and availability are confirmed in writing.</p>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-7 md:p-8">
-              <h3 className="font-heading text-lg font-bold text-white mb-1.5">Send Us Your Details</h3>
-              <p className="text-sm text-white/40 mb-6">We'll reach out to you on WhatsApp.</p>
+            <div className="event-form">
+              <h3 className="font-heading text-xl font-bold mb-2">Request Your Event Quotation</h3>
+              <p className="text-sm text-muted-foreground mb-6">Share your details and event brief.</p>
               <InquiryForm service="Event Management" whatsappNumber={whatsappNumber} />
             </div>
           </div>
