@@ -1,3 +1,4 @@
+- [x] Add /digital-marketing-faq-sri-lanka from the uploaded HTML: 56 word-for-word Q&As in a data file, scoped stylesheet, search/highlight, expand-all, sticky chips, hash links, page-only head tags and JSON-LD; footer link, sitemap and llms.txt additions only. Crawlability: raw HTML has no Q&A text or JSON-LD (CSR shell) — prerendering recommended, hosting untouched. Preview only, not published.
 - [x] Replace the event page FAQ with the owner-supplied 12-question set (24–48h proposals, staffing and private events confirmed); FAQPage schema updates automatically. Preview only, not published.
 - [x] Redesign homepage hero: keep “Marketing that actually gets you” fixed; animate Paid, Remembered, Seen, Booked; keep six service tiles on the right.
 - [x] Carry a subtle version of the homepage editorial theme across public pages without changing content or layouts.
