@@ -202,7 +202,7 @@ const LinkedInAdvertising = () => {
         <div className="container mx-auto px-4">
           <div className="text-xs uppercase tracking-widest text-primary font-semibold mb-3">Our LinkedIn Services</div>
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold mb-4 max-w-3xl">Complete LinkedIn marketing services for Sri Lankan businesses</h2>
-          <p className="text-muted-foreground max-w-2xl mb-12">From company page setup to full LinkedIn Ads management — everything your business needs to dominate LinkedIn in Sri Lanka.</p>
+          <p className="text-muted-foreground max-w-2xl mb-12">From company page setup to full LinkedIn Ads management — everything your business needs to dominate LinkedIn in Sri Lanka. If your LinkedIn campaign invites professionals to a conference or seminar, our <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management Sri Lanka</Link> page covers the venue, programme and guest coordination behind the invitation.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map(({ icon: Icon, title, desc, items }) => (
               <Card key={title} className="p-7 hover:shadow-lg hover:-translate-y-0.5 transition">

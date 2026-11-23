@@ -418,7 +418,7 @@ const TvAdvertising = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-secondary border border-border rounded px-2.5 py-1 mb-3">Step-by-Step</span>
           <h2 className="font-heading text-3xl font-bold mb-4">How to Run a TV Advertising Campaign in Sri Lanka</h2>
-          <p className="text-muted-foreground mb-6">Here is the step-by-step process for launching a successful TV advertising campaign, whether you manage it yourself or work with a media agency.</p>
+          <p className="text-muted-foreground mb-6">Here is the step-by-step process for launching a successful TV advertising campaign, whether you manage it yourself or work with a media agency. When your TV campaign supports a live product launch or brand activation, align the advertising schedule with <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event planning Sri Lanka</Link> requirements, including the event date, venue and guest registration.</p>
           {[
             ["Step 1 — Define Your Campaign Objectives", "Are you building brand awareness, launching a product, promoting a seasonal offer, or driving direct response? Your objective determines your media strategy, budget allocation, and success metrics."],
             ["Step 2 — Identify Your Target Audience", "Define who you are trying to reach — language (Sinhala / Tamil / English), age range, gender, region, income level, and viewing habits. This determines which channels and time slots to choose."],

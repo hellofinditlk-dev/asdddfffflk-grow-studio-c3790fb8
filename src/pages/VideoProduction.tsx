@@ -291,7 +291,7 @@ const VideoProduction = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Video Production Services We Offer in Sri Lanka</h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">From quick social media reels to cinematic brand videos — we cover every type of video content your business needs.</p>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">From quick social media reels to cinematic brand videos — we cover every type of video content your business needs. For a conference or product launch that also needs venue and supplier coordination, explore our <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management Sri Lanka</Link> services and include filming requirements in the event brief.</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
                 { icon: <Smartphone className="w-5 h-5" />, title: "Social Media Videos", desc: "Instagram Reels, TikTok, YouTube Shorts, and Facebook videos optimized for maximum engagement and reach." },

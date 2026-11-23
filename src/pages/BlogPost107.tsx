@@ -45,7 +45,7 @@ const BlogPost107 = () => (
             </ul>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">Who Instagram works best for in Sri Lanka</h2>
-            <p>Restaurants and cafes, fashion and clothing, beauty and salons, hotels and resorts, interior design, wedding services, fitness, jewellery, photography, bakeries, skincare and event planning. Any brand targeting audiences under 40 also benefits.</p>
+            <p>Restaurants and cafes, fashion and clothing, beauty and salons, hotels and resorts, interior design, wedding services, fitness, jewellery, photography, bakeries, skincare and event planning. Any brand targeting audiences under 40 also benefits. For a brand launch or customer gathering, our <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event planning Sri Lanka</Link> page explains how to brief the venue, guest experience and on-site coordination alongside your Instagram promotion.</p>
 
             <h2 className="text-foreground font-heading text-xl font-bold mt-8 mb-3">FAQs</h2>
             <p><strong className="text-foreground">How much does Instagram marketing cost in Sri Lanka?</strong> LKR 30,000 to LKR 100,000 per month depending on Reels production and ad management. Ad spend is separate.</p>
