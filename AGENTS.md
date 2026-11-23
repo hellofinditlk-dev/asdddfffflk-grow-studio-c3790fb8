@@ -25,3 +25,4 @@
 - Pair matching WhatsApp inquiry/click events one-to-one only in the combined admin ledger; retain raw records and separate click views so analytics and independent leads remain intact.
 - Scope homepage presentation refinements beneath its own root class and stylesheet so shared service pages and admin views remain unchanged.
 - Pass a route-resolved destination into InquiryForm for dedicated contact pages; retain its default destination elsewhere to avoid changing unrelated forms.
+- Prerender only the digital marketing FAQ route through its dedicated Vite generator and Netlify rewrites; share its data/schema with React and reuse the initial schema script so other pages and client navigation remain unchanged.

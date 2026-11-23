@@ -6,20 +6,7 @@ import {
   digitalMarketingFaqCategories,
 } from "@/data/digitalMarketingFaq";
 import "@/styles/digital-marketing-faq.css";
-
-const CANONICAL = "https://cypherdigital.lk/digital-marketing-faq-sri-lanka";
-const PAGE_TITLE = "Digital Marketing FAQ Sri Lanka: 56 Questions Answered | Cypher Digital";
-const PAGE_DESCRIPTION =
-  "Clear answers to 56 common digital marketing questions in Sri Lanka: costs in LKR, social media, Facebook and Google Ads, SEO, AI search visibility, video and TV advertising.";
-
-const stripHtml = (html: string) =>
-  html
-    .replace(/<[^>]*>/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;|&#39;/g, "'");
+import { CANONICAL, PAGE_TITLE, PAGE_DESCRIPTION, stripHtml, digitalMarketingFaqSchema } from "@/lib/digitalMarketingFaqSeo";
 
 const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -142,81 +129,9 @@ const DigitalMarketingFaq = () => {
       "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap";
     document.head.appendChild(font);
 
-    const graph = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "FAQPage",
-          "@id": `${CANONICAL}#faq`,
-          url: CANONICAL,
-          name: "Digital Marketing FAQ Sri Lanka",
-          inLanguage: "en-LK",
-          dateModified: "2026-11-23",
-          publisher: { "@id": "https://cypherdigital.lk/#organization" },
-          mainEntity: digitalMarketingFaq.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: stripHtml(item.answerHtml),
-            },
-          })),
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://cypherdigital.lk/#organization",
-          name: "Cypher Digital",
-          url: "https://cypherdigital.lk/",
-          logo: "https://cypherdigital.lk/assets/logo-DJLYsmc6.png",
-          telephone: "+94760317477",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Colombo",
-            addressCountry: "LK",
-          },
-          areaServed: { "@type": "Country", name: "Sri Lanka" },
-          knowsAbout: [
-            "Social media marketing",
-            "Facebook advertising",
-            "Google Ads",
-            "Search engine optimisation",
-            "AI search visibility",
-            "Video production",
-            "Graphic design",
-            "TV and media buying",
-          ],
-          sameAs: [
-            "https://www.facebook.com/cypherdigitalsrilanka",
-            "https://www.instagram.com/cypherdigital_sl/",
-          ],
-        },
-        {
-          "@type": "WebPage",
-          "@id": CANONICAL,
-          url: CANONICAL,
-          name: "Digital Marketing FAQ Sri Lanka",
-          inLanguage: "en-LK",
-          dateModified: "2026-11-23",
-          isPartOf: { "@id": "https://cypherdigital.lk/#website" },
-          about: { "@id": "https://cypherdigital.lk/#organization" },
-          mainEntity: { "@id": `${CANONICAL}#faq` },
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://cypherdigital.lk/#website",
-          url: "https://cypherdigital.lk/",
-          name: "Cypher Digital",
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk/" },
-            { "@type": "ListItem", position: 2, name: "Digital Marketing FAQ", item: CANONICAL },
-          ],
-        },
-      ],
-    };
-    const script = document.createElement("script");
+    const graph = digitalMarketingFaqSchema();
+    const script = document.querySelector<HTMLScriptElement>("script[data-dm-faq-schema]") ?? document.createElement("script");
+    script.setAttribute("data-dm-faq-schema", "");
     script.type = "application/ld+json";
     script.text = JSON.stringify(graph);
     document.head.appendChild(script);

@@ -1886,6 +1886,8 @@ export default async function handler(request: Request, context: any) {
   // Telesales has complete generated HTML and its own matching client schema.
   // Do not replace it with the generic hidden-H1 vacancy response.
   if (path === "/careers/telesales-executive-jobs-sri-lanka") return context.next();
+  // FAQ content and metadata are generated together; preserve that complete response.
+  if (path === "/digital-marketing-faq-sri-lanka" || path === "/digital-marketing-faq-sri-lanka/index.html") return context.next();
   // This direct-only partner page deliberately bypasses public-site SEO injection.
   if (path === "/white-label-design") {
     const response = await context.next();

@@ -109,6 +109,9 @@
 /product-launch-events-sri-lanka                  /index.html   200
 
 # Static pages
+# Serve only the FAQ's generated HTML; both forms avoid Netlify slash loops.
+/digital-marketing-faq-sri-lanka /digital-marketing-faq-sri-lanka/index.html 200!
+/digital-marketing-faq-sri-lanka/ /digital-marketing-faq-sri-lanka/index.html 200!
 /contact                                          /index.html   200
 /about                                            /index.html   200
 /careers                                          /index.html   200
