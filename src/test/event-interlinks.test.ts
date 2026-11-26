@@ -27,6 +27,15 @@ describe("event article prerender", () => {
     expect(html).toContain('"FAQPage"');
   });
   it("leaves other routes unchanged", () => expect(eventArticlesHtml(tpl, "/blog/other")).toBe(tpl));
+  it.each(["event-management-sri-lanka", "event-planning-sri-lanka"])("provides exactly one Cypher Events backlink to %s", (path) => {
+    const article = eventArticles.find(a => a.slug === "event-planner-vs-event-management-company-sri-lanka");
+    if (!article) throw new Error("Source article missing");
+    const destination = `https://cypherevents.lk/${path}`;
+    const links = article.sections.flatMap(s => s.paragraphs).join(" ").match(/\]\((https:\/\/[^)]+)\)/g) ?? [];
+    expect(links.filter(link => link === `](${destination})`)).toHaveLength(1);
+    const html = eventArticlesHtml(tpl, `/blog/${article.slug}`);
+    expect(html.split(`href="${destination}"`)).toHaveLength(2);
+  });
 });
 describe("related reading boxes", () => {
   const newFour = ["award-ceremony-planning-sri-lanka","annual-get-together-ideas-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka"];

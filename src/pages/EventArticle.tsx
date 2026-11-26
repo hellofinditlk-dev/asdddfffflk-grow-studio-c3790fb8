@@ -13,6 +13,9 @@ function Linked({ text }: { text: string }) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
   return <>{parts.map((p, i) => {
     const m = p.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (m && /^https:\/\//.test(m[2])) {
+      return <a key={i} href={m[2]} className="text-primary underline">{m[1]}</a>;
+    }
     return m ? <Link key={i} to={m[2]} className="text-primary underline">{m[1]}</Link> : <Fragment key={i}>{p}</Fragment>;
   })}</>;
 }

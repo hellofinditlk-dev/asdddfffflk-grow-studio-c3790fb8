@@ -1,4 +1,4 @@
-// Supporting event blog articles. Paragraph text may contain [anchor](/path) internal links.
+// Supporting event blog articles. Paragraph text may contain internal or HTTPS Markdown links.
 export interface EventArticleSection { id: string; title: string; paragraphs: string[]; list?: string[] }
 export interface EventArticle {
   slug: string; title: string; description: string; h1: string; intro: string; date: string;
@@ -467,6 +467,7 @@ export const eventArticles: EventArticle[] = [
         paragraphs: [
           "Our team combines event management with digital marketing. We have coordinated academic ceremonies for the University of Kelaniya, the FoodCycler Eco 5 product launch and the Study in Moldova information session at Taj Samudra, and we can also promote events before they happen and share content afterwards. You can hand us the full event or only the parts you need.",
           "Share your brief and we will send a written proposal within 24–48 hours, showing what is included so you can compare it fairly.",
+          "You can also explore Cypher Events for [event management Sri Lanka](https://cypherevents.lk/event-management-sri-lanka), or read its [event planning Sri Lanka](https://cypherevents.lk/event-planning-sri-lanka) page when preparing your brief and deciding which tasks to hand over.",
           "Because promotion and delivery sit with the same team, the message in your invitations, social posts and paid ads matches what guests experience on the day. Photos and video captured at the event can then be used for follow-up posts, thank-you messages and future campaigns, which helps one event keep working long after the guests have gone home. If you only need advice at the start, we can also review your plan and point out gaps before you book suppliers.",
         ],
       },

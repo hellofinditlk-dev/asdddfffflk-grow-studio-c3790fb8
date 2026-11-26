@@ -1,7 +1,7 @@
 import { eventArticles, eventArticleSchema } from "../src/data/eventArticles";
 import { escapeHtml } from "../src/lib/newSeoMarkdown";
 
-const linked = (t: string) => escapeHtml(t).replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
+const linked = (t: string) => escapeHtml(t).replace(/\[([^\]]+)\]\(((?:\/(?!\/)|https:\/\/)[^)\s]*)\)/g, '<a href="$2">$1</a>');
 const p = (t: string) => `<p>${linked(t)}</p>`;
 const ul = (items: string[]) => `<ul>${items.map(i => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
 
