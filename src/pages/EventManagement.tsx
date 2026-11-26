@@ -1,3 +1,5 @@
+import { EVENT_CANONICAL, EVENT_TITLE, EVENT_DESCRIPTION, EVENT_OVERVIEW, eventManagementSchema } from "@/lib/eventManagementSeo";
+import { corporateServices, marketingEvents, socialEvents, weddingServices, corporateFormats, processSteps, locations, faqs, expertTips, subPages } from "@/data/eventManagementContent";
 import eventConcept from "@/assets/event-planning-concept.jpg";
 import EventWorkGallery from "@/components/EventWorkGallery";
 import "@/styles/event-management.css";
@@ -26,54 +28,6 @@ const whyDifferent = [
   { icon: <BarChart3 className="w-5 h-5" />, title: "Results Tracking", desc: "Tracking aligned with the event objectives and available data" },
 ];
 
-const corporateServices = [
-  "Conferences and seminars",
-  "Business forums and networking events",
-  "Product launches and brand events",
-  "Exhibitions and trade shows",
-  "Corporate parties and award ceremonies",
-  "Employee engagement events",
-  "Training programs and workshops",
-  "Team-building events",
-  "Hybrid and virtual events",
-];
-
-const marketingEvents = [
-  "Brand activations",
-  "Roadshows",
-  "Mall campaigns and promotions",
-  "Experiential marketing events",
-  "Product demonstrations and sampling",
-  "Trade show exhibitions",
-  "Pop-up experiences",
-];
-
-const socialEvents = [
-  "Birthday parties and milestones",
-  "Anniversaries and reunions",
-  "Engagement parties",
-  "VIP and exclusive gatherings",
-  "Family celebrations",
-];
-
-const weddingServices = [
-  "Full wedding planning and coordination",
-  "Venue selection and setup",
-  "Decoration and theme design",
-  "Vendor management",
-  "Entertainment and logistics",
-];
-
-const corporateFormats = [
-  "Product launches and demonstrations",
-  "Exhibitions and trade-show participation",
-  "Staff, client and stakeholder gatherings",
-  "Business forums and networking programmes",
-  "Brand activations and sampling experiences",
-  "Campaign-supported public events",
-  "Conferences, seminars and workshops",
-];
-
 const businessBenefits = [
   { icon: <Award className="w-5 h-5" />, title: "Brand Awareness", desc: "Events create memorable experiences that strengthen brand recognition" },
   { icon: <Users className="w-5 h-5" />, title: "Customer Engagement", desc: "Direct interaction with your target audience builds lasting relationships" },
@@ -99,31 +53,6 @@ const marketingIntegration = [
   "Email marketing and follow-up sequences",
 ];
 
-const processSteps = [
-  { title: "Requirement Analysis", desc: "Understanding your goals, audience, budget, and KPIs" },
-  { title: "Creative Planning", desc: "Developing concepts, themes, and comprehensive event strategies" },
-  { title: "Coordination & Setup", desc: "Managing vendors, logistics, timelines, and rehearsals" },
-  { title: "Execution", desc: "Ensuring smooth on-ground operations with real-time management" },
-  { title: "Post-Event Marketing", desc: "Approved content, requested follow-ups and outcome reporting" },
-];
-
-const locations = ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Jaffna", "Matara", "Anuradhapura", "Trincomalee", "Island-wide"];
-
-const faqs = [
-  { q: "How do I choose an event management company in Sri Lanka?", a: "Choose a company with experience in your type of event, a written scope, an itemised quote, and real case studies or reviews. Ask for references from similar events, check who manages the vendors, and compare at least three proposals on the same brief." },
-  { q: "Which event management companies in Colombo handle corporate events?", a: "Cypher Digital plans and runs corporate functions, product launches, conferences and brand activations in Colombo and across Sri Lanka. One team handles both the event and its digital promotion, so planning and marketing stay connected." },
-  { q: "What services do event planners in Sri Lanka typically offer?", a: "Most event planners offer planning and budgeting, venue sourcing, vendor management (catering, décor, sound, lighting, AV), run sheets, guest management and on-day coordination. Cypher Digital also adds pre-event promotion, live content capture and post-event follow-up campaigns." },
-  { q: "How do I plan a corporate conference in Sri Lanka?", a: "Start 4–6 months ahead: set the goal, audience and guest count; fix the budget and date; book the venue and AV; confirm speakers and the agenda; open registration and promote the event; run the day with a timed run sheet; and follow up with attendees within a week." },
-  { q: "How do I get quotes for a product launch event in Colombo?", a: "Send the same brief to three event companies: date, guest count, area or venue, launch goals, must-have items, and whether you need promotion. Ask each for an itemised quote. Cypher Digital sends a written proposal within 24–48 hours. WhatsApp +94 76 031 7477 to start." },
-  { q: "How much does event planning cost in Sri Lanka?", a: "Every event is quoted to its brief. The cost depends mainly on guest count, venue, location, production level (stage, sound, lighting) and whether you need digital promotion. Send your event details for a written, itemised quote." },
-  { q: "How far in advance should I book an event planner in Sri Lanka?", a: "Book 8–12 weeks ahead for most corporate events, and 4–6 months for conferences, large events or peak dates such as December and April. Weddings usually need 6–12 months." },
-  { q: "Do you organise events outside Colombo?", a: "Yes. We manage events island-wide, including Negombo, Kandy, Galle, Kurunegala, Jaffna, Matara, Anuradhapura and Trincomalee." },
-  { q: "Do you offer event photography and videography?", a: "Yes. Our team captures photos, videos and reels during the event, for same-day social posts and post-event campaigns." },
-  { q: "Is digital marketing included in your event packages?", a: "Yes, in our Event + Marketing package. It covers pre-event promotion on social media, live coverage on the day, and follow-up campaigns to attendees afterwards. It's optional, and you can choose planning only." },
-  { q: "Do you provide event staffing for conferences in Colombo?", a: "Yes. We supply registration desk staff, ushers, hosts and on-day coordinators for conferences and corporate events in Colombo." },
-  { q: "Do you organise birthday parties and private events?", a: "Yes. We plan birthday parties, anniversaries and private celebrations, including venue, décor, entertainment and photography." },
-];
-
 const industries = [
   { icon: <Building2 className="w-5 h-5" />, title: "Hospitality & Tourism", desc: "Hotel launches, travel trade events, tourism activations, resort promotions, MICE events." },
   { icon: <ShoppingBag className="w-5 h-5" />, title: "FMCG & Retail", desc: "Product launches, in-store activations, consumer promotions, trade shows, sampling campaigns." },
@@ -133,27 +62,11 @@ const industries = [
   { icon: <Cpu className="w-5 h-5" />, title: "Technology", desc: "Tech launches, developer conferences, startup pitching events, digital summits." },
 ];
 
-const expertTips = [
-  { title: "Choose the Right Season for Your Event Location", desc: "Sri Lanka has two monsoons. The Southwest Monsoon (May–September) impacts Colombo, Galle and the Hill Country; the Northeast Monsoon (October–February) affects the North and East. Time outdoor events to avoid local monsoons." },
-  { title: "Check Venue Availability Early", desc: "Venue availability depends on the date, location, capacity and competing bookings. Check your preferred venue early." },
-  { title: "Budget for Marketing as Part of the Event", desc: "Set a promotion budget based on the audience, registration objective and selected channels. Identify agency work and advertising spend separately; no universal percentage applies to every event." },
-  { title: "Always Have a Contingency Plan", desc: "Power outages, sudden rain, vendor cancellations, and traffic disruptions are real risks. Professional event management companies in Sri Lanka build in backup generators, wet-weather contingencies, substitute vendor lists, and live communication protocols." },
-  { title: "Capture Every Moment on Professional Photo & Video", desc: "Photos and videos captured at your event should fuel your brand's social media, website, and ads for months. Budget for professional photography and a highlight video and confirm the intended usage before the event." },
-  { title: "Agree a Post-Event Follow-Up Schedule", desc: "Agree a follow-up schedule before the event. Share approved materials and respond to requested conversations promptly, respecting attendee consent and avoiding automatic sales contact for every guest." },
-];
-
 const trustPoints = [
   { icon: <Shield className="w-5 h-5" />, title: "Written Event Scope", desc: "Confirm the scope and contract conditions before booking." },
   { icon: <BarChart3 className="w-5 h-5" />, title: "Transparent Pricing", desc: "Clear quotations so you always know what you're paying for." },
   { icon: <Clock className="w-5 h-5" />, title: "Agreed Timeline", desc: "Confirm availability and delivery dates in your proposal." },
   { icon: <Users className="w-5 h-5" />, title: "Coordination Contact", desc: "Agree who handles decisions and on-site coordination." },
-];
-
-const subPages = [
-  { to: "/corporate-event-management-sri-lanka", label: "Corporate Event Management Sri Lanka", desc: "Professional conferences, seminars, product launches & business events" },
-  { to: "/wedding-planning-sri-lanka", label: "Wedding Planning Sri Lanka", desc: "Complete wedding coordination from venue to entertainment" },
-  { to: "/event-marketing-sri-lanka", label: "Event Marketing Sri Lanka", desc: "Digital promotion, social media campaigns & lead generation for events" },
-  { to: "/product-launch-events-sri-lanka", label: "Product Launch Events Sri Lanka", desc: "Strategic product launches designed to generate buzz and media coverage" },
 ];
 
 const ServiceBlock = ({ icon, title, items, highlight, to }: { icon: React.ReactNode; title: string; items: string[]; highlight?: string; to?: string }) => (
@@ -177,100 +90,41 @@ const ServiceBlock = ({ icon, title, items, highlight, to }: { icon: React.React
 
 const EventManagement = () => {
   const whatsappNumber = useWhatsappNumber();
-  const canonical = "https://cypherdigital.lk/event-management-sri-lanka";
+  const canonical = EVENT_CANONICAL;
 
   useEffect(() => {
-    const schemas = [
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://cypherdigital.lk/#event-service-provider",
-        name: "Cypher Digital",
-        description: "Event planning and marketing coordination in Sri Lanka covering corporate events, product launches, brand activations and wedding planning.",
-        url: "https://cypherdigital.lk",
-        telephone: "+94760317477",
-        areaServed: { "@type": "Country", name: "Sri Lanka" },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        name: "Event Management Services in Sri Lanka — Cypher Digital",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Corporate Event Management Sri Lanka" },
-          { "@type": "ListItem", position: 2, name: "Product Launch Events Sri Lanka" },
-          { "@type": "ListItem", position: 3, name: "Brand Activation Sri Lanka" },
-          { "@type": "ListItem", position: 4, name: "Wedding Planning Sri Lanka" },
-          { "@type": "ListItem", position: 5, name: "Conference & Seminar Management Sri Lanka" },
-          { "@type": "ListItem", position: 6, name: "Exhibition & Trade Show Management Sri Lanka" },
-        ],
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": `${canonical}#service`,
-        url: canonical,
-        name: "Event Planning & Event Management Sri Lanka",
-        description: "Professional marketing-driven event management and event planning services in Sri Lanka by Cypher Digital. Corporate events, weddings, brand activations, and product launches.",
-        provider: {
-          "@type": "Organization",
-          "@id": "https://cypherdigital.lk/#event-service-provider",
-          name: "Cypher Digital",
-          url: "https://cypherdigital.lk",
-        },
-        serviceType: ["Event planning", "Event management", "Event promotion"],
-        areaServed: { "@type": "Country", name: "Sri Lanka" },
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: "Event Management Services",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Corporate Event Management Sri Lanka" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Wedding Planning Sri Lanka" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Event Marketing Sri Lanka" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Product Launch Events Sri Lanka" } },
-          ],
-        },
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
-          { "@type": "ListItem", position: 2, name: "Event Planning & Event Management Sri Lanka", item: canonical },
-        ],
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": `${canonical}#webpage`,
-        inLanguage: "en-LK",
-        mainEntity: { "@id": `${canonical}#service` },
-        name: "Event Planning & Event Management Sri Lanka | Cypher Digital",
-        url: canonical,
-        dateModified: "2026-11-19",
-        description: "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.",
-      },
-    ];
-    const script = document.createElement("script");
+    const existing = document.querySelector<HTMLScriptElement>("script[data-event-schema]");
+    const script = existing ?? document.createElement("script");
     script.type = "application/ld+json";
-    script.text = JSON.stringify(schemas);
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
+    script.setAttribute("data-event-schema", "");
+    script.text = JSON.stringify(eventManagementSchema());
+    if (!existing) document.head.appendChild(script);
+    const keys = [["property", "og:url", EVENT_CANONICAL], ["property", "og:type", "website"], ["name", "robots", "index, follow, max-snippet:-1, max-image-preview:large"]];
+    const previous = keys.map(([attr, key, value]) => {
+      const existingMeta = document.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
+      const meta = existingMeta ?? document.createElement("meta");
+      const content = meta.getAttribute("content");
+      // A prerendered event URL belongs to this route, not the next public page.
+      const original = key === "og:url" && content === EVENT_CANONICAL ? "https://cypherdigital.lk/" : content;
+      meta.setAttribute(attr, key);
+      meta.content = value;
+      if (!existingMeta) document.head.appendChild(meta);
+      return { meta, original, created: !existingMeta };
+    });
+    return () => {
+      script.remove();
+      previous.forEach(({ meta, original, created }) => {
+        if (created) meta.remove();
+        else if (original !== null) meta.content = original;
+      });
+    };
   }, []);
 
   return (
     <div className="event-page pt-16">
       <SEOHead
-        title="Event Planning & Event Management Sri Lanka | Cypher Digital"
-        description="Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote."
+        title={EVENT_TITLE}
+        description={EVENT_DESCRIPTION}
         canonical={canonical}
       />
 
@@ -282,7 +136,7 @@ const EventManagement = () => {
               <ol className="flex flex-wrap gap-2"><li><Link to="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Event Management</li></ol>
             </nav>
             <p className="event-eyebrow mb-5">Cypher Digital · Planning + Promotion</p>
-            <h1 className="mb-6">Event Planning &amp; Event Management <span>Sri Lanka</span></h1>
+            <h1 className="mb-6">Event Planning &amp; Event Management <span className="whitespace-nowrap">Sri Lanka</span></h1>
             <p className="event-lead mb-7">An event your guests remember. A plan your team can follow. Bring your corporate event, product launch or brand activation together with creative planning, coordinated delivery and digital promotion.</p>
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-start">
               <Button asChild size="lg" className="event-quote-button h-12 px-5"><a href="#event-enquiry">Plan My Event — Get a Quote <ArrowRight /></a></Button>
@@ -306,8 +160,8 @@ const EventManagement = () => {
         <div className="container mx-auto px-6 max-w-5xl event-overview-grid">
           <div>
             <p className="event-eyebrow text-primary mb-4">A clear plan. A connected experience.</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Your event has a purpose.<br />Let’s plan around it.</h2>
-            <p className="text-muted-foreground">Cypher Digital combines event planning and promotion for Sri Lankan businesses. Share your date, location, audience and guest count to discuss the scope available for your event.</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Event planning in Sri Lanka,<br />from brief to event day.</h2>
+            <p className="text-muted-foreground">{EVENT_OVERVIEW}</p>
           </div>
           <div className="event-overview-answer">
             <h3 className="font-heading text-lg font-bold mb-3">Event planning vs event management</h3>
@@ -616,7 +470,7 @@ const EventManagement = () => {
                 {['Purpose and type of event', 'Preferred date, city and venue', 'Expected guests and available budget', 'Planning, production and promotion needs'].map(item => <li key={item} className="flex items-center gap-3"><CheckCircle className="w-4 h-4 text-primary shrink-0" />{item}</li>)}
               </ul>
               <Button asChild className="event-quote-button"><a href={`tel:+${whatsappNumber}`} onClick={() => trackCallClick()}>Call {formatWhatsappDisplay(whatsappNumber)} <ArrowRight /></a></Button>
-              <p className="text-xs text-muted-foreground mt-5">Fees, supplier costs, payment terms and availability are confirmed in writing.</p>
+              <p className="text-sm text-muted-foreground mt-5">Send your event brief for a written proposal within 24–48 hours. Fees, supplier costs, payment terms and availability are confirmed in writing.</p>
             </div>
             <div className="event-form">
               <h3 className="font-heading text-xl font-bold mb-2">Request Your Event Quotation</h3>
@@ -715,8 +569,6 @@ const EventManagement = () => {
           </div>
         </div>
       </section>
-
-
 
     </div>
   );

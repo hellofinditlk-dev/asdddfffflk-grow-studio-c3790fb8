@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 import { newPagePrerender } from "./scripts/new-page-prerender";
 import { telesalesPrerender } from "./scripts/telesales-prerender";
 import { digitalMarketingFaqPrerender } from "./scripts/digital-marketing-faq-prerender";
+import { eventManagementPrerender } from "./scripts/event-management-prerender";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -15,7 +16,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender(), telesalesPrerender(), digitalMarketingFaqPrerender()].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender(), telesalesPrerender(), digitalMarketingFaqPrerender(), eventManagementPrerender()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

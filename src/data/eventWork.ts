@@ -1,17 +1,17 @@
-import stage from "@/assets/event-work/dba-stage.webp.asset.json";
-import presentation from "@/assets/event-work/product-presentation.webp.asset.json";
-import launchSpeaker from "@/assets/event-work/product-launch-speaker.webp.asset.json";
-import audience from "@/assets/event-work/inauguration-audience.webp.asset.json";
-import group from "@/assets/event-work/inauguration-group.webp.asset.json";
-import inaugurationStage from "@/assets/event-work/inauguration-stage.webp.asset.json";
-import speaker from "@/assets/event-work/inauguration-speaker.webp.asset.json";
-import moldovaTable from "@/assets/event-work/moldova-session-table.jpeg.asset.json";
-import moldovaSpeaker from "@/assets/event-work/moldova-session-speaker.jpeg.asset.json";
-import moldovaWelcome from "@/assets/event-work/moldova-session-welcome.jpeg.asset.json";
-import moldovaHost from "@/assets/event-work/moldova-session-host.jpeg.asset.json";
-import fashionGroup from "@/assets/event-work/fashion-shoot-group.jpeg.asset.json";
-import fashionFilming from "@/assets/event-work/fashion-shoot-filming.jpeg.asset.json";
-import fashionMakeup from "@/assets/event-work/fashion-shoot-makeup.jpeg.asset.json";
+import stage from "../assets/event-work/dba-stage.webp.asset.json";
+import presentation from "../assets/event-work/product-presentation.webp.asset.json";
+import launchSpeaker from "../assets/event-work/product-launch-speaker.webp.asset.json";
+import audience from "../assets/event-work/inauguration-audience.webp.asset.json";
+import group from "../assets/event-work/inauguration-group.webp.asset.json";
+import inaugurationStage from "../assets/event-work/inauguration-stage.webp.asset.json";
+import speaker from "../assets/event-work/inauguration-speaker.webp.asset.json";
+import moldovaTable from "../assets/event-work/moldova-session-table.jpeg.asset.json";
+import moldovaSpeaker from "../assets/event-work/moldova-session-speaker.jpeg.asset.json";
+import moldovaWelcome from "../assets/event-work/moldova-session-welcome.jpeg.asset.json";
+import moldovaHost from "../assets/event-work/moldova-session-host.jpeg.asset.json";
+import fashionGroup from "../assets/event-work/fashion-shoot-group.jpeg.asset.json";
+import fashionFilming from "../assets/event-work/fashion-shoot-filming.jpeg.asset.json";
+import fashionMakeup from "../assets/event-work/fashion-shoot-makeup.jpeg.asset.json";
 
 // Captions describe visible owner-supplied material, not unconfirmed delivery scope or results.
 export const eventWork = [
