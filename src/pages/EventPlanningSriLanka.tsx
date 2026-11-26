@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useWhatsappNumber } from "@/lib/whatsapp";
 import { eventWork } from "@/data/eventWork";
 import { PLANNING_CANONICAL, PLANNING_TITLE, PLANNING_DESCRIPTION, PLANNING_H1, PLANNING_INTRO, planningSections, eventTypeGuides, planningChecklist, hireAdvice, planningFaqs, eventPlanningSchema } from "@/data/eventPlanningGuide";
+import EventWorkGallery from "@/components/EventWorkGallery";
 import "@/styles/event-management.css";
 
 const photos = [eventWork[0], eventWork[1], eventWork[4]].filter(Boolean);
@@ -84,6 +85,7 @@ export default function EventPlanningSriLanka() {
           <ul className="space-y-2">{planningChecklist.map(c => <li key={c} className="flex gap-2 text-sm"><CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />{c}</li>)}</ul>
         </section>
 
+        <div className="-mx-6"><EventWorkGallery /></div>
         <section id="plan-hire">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">When to Hire an Event Management Company</h2>
           {hireAdvice.map((p, i) => <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>)}
