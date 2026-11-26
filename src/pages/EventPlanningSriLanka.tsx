@@ -60,6 +60,13 @@ export default function EventPlanningSriLanka() {
                 {photos.map(ph => <figure key={ph.url}><img src={ph.url} alt={ph.alt} width={ph.width} height={ph.height} loading="lazy" className="rounded-lg w-full h-40 object-cover" /><figcaption className="text-xs text-muted-foreground mt-1">{ph.caption}</figcaption></figure>)}
               </div>
             )}
+            {i === 2 && (
+              <aside className="mt-6 rounded-xl border border-primary/20 bg-primary/5 p-5">
+                <p className="font-heading font-bold mb-2">Planning an event? Get a written proposal within 24–48 hours.</p>
+                <p className="text-sm text-muted-foreground mb-4">Share your date, guest count and location, and our <Link to="/event-management-sri-lanka" className="text-primary underline">event organisers in Sri Lanka</Link> will reply with a plan.</p>
+                <Button asChild><a href={wa} target="_blank" rel="noopener noreferrer"><MessageCircle className="w-4 h-4 mr-2" />WhatsApp 076 031 7477</a></Button>
+              </aside>
+            )}
             {i === 5 && <p className="text-sm mt-4">Prefer one team to coordinate every supplier? See our <Link to="/event-management-sri-lanka" className="text-primary underline">event management in Sri Lanka</Link> service.</p>}
           </section>
         ))}

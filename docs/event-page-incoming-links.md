@@ -27,3 +27,6 @@ Existing title, description, canonical and FAQ/Service/Breadcrumb data remain in
 | `/blog/instagram-marketing-sri-lanka` | event planning Sri Lanka | Connect brand-launch promotion to guest experience and on-site coordination. |
 
 These five links are within existing body paragraphs, with one new keyword anchor per source page. All previous links, headings, metadata, shared controls and page styles are preserved; the destination page is unchanged. No ranking guarantee or publication is implied.
+## Interlinking update (2026-11-26)
+- Event Marketing and Wedding Planning: anchor "event planning in Sri Lanka" now points to the guide `/event-planning-sri-lanka` (planning intent) instead of the service hub; their "Event Management Sri Lanka" cards still link to the hub.
+- Guide: enquiry box after step 3 links to the hub ("event organisers in Sri Lanka") and opens WhatsApp 076 031 7477.
