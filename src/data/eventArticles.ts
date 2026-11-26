@@ -146,6 +146,165 @@ export const eventArticles: EventArticle[] = [
       { q: "Can Cypher Digital help me choose a venue?", a: "Yes. Share your purpose, dates and guest count on WhatsApp and we will prepare a written proposal, including venue options and coordination, within 24–48 hours." },
     ],
   },
+  {
+    slug: "event-budget-planning-sri-lanka",
+    title: "Event Budget Planning in Sri Lanka: What to Include",
+    description: "Plan an event budget in Sri Lanka: the cost categories to include, how to request and compare quotes, contingency, payment schedules and a budget template.",
+    h1: "Event Budget Planning in Sri Lanka: What to Include and Where Costs Go",
+    intro: "An event budget in Sri Lanka should cover seven main areas: venue, food and drink, production and AV, decor, people, promotion and a contingency reserve. The exact cost of each depends on your date, guest count, location and suppliers, so the most reliable figures come from written quotes, not price lists. This guide shows you how to build the budget line by line, how to compare quotes fairly and how to keep spending under control from the first brief to the final invoice.",
+    date: "2026-11-26",
+    photoIndexes: [1, 3, 9],
+    sections: [
+      {
+        id: "why-budget-first",
+        title: "Why Should You Set the Budget Before Booking Anything?",
+        paragraphs: [
+          "The budget shapes every other decision: the venue you can shortlist, the number of guests you can invite, the quality of the stage and sound, and how much promotion you can run. When the budget comes last, organisers often book a venue they love, then discover there is little left for catering, AV or photography. Setting a total figure, even a rough one, before you book means every supplier conversation starts from the same limit.",
+          "Begin with the outcome you need. A product launch that must attract media and social coverage will spend more on staging, lighting and content. An internal training day will spend more on the venue, meals and materials. Our [event planning Sri Lanka guide](/event-planning-sri-lanka) explains how to write the purpose and brief that sit behind the budget.",
+        ],
+      },
+      {
+        id: "cost-categories",
+        title: "What Cost Categories Belong in an Event Budget?",
+        paragraphs: [
+          "Use these categories as the rows of your budget sheet. Not every event needs every line, but checking each one prevents surprises later.",
+        ],
+        list: [
+          "Venue: hire charge or minimum spend, setup and breakdown time, overtime, security deposit and service charge.",
+          "Food and beverages: per-head menus, welcome drinks, tea breaks, special diets, staff meals and corkage if you bring your own drinks.",
+          "Production and AV: sound system, microphones, LED wall or projector, lighting, stage, live streaming and the technical crew.",
+          "Decor and branding: backdrops, banners, signage, florals, table styling, photo areas and printed materials.",
+          "People: host or MC, speakers, performers, ushers, registration staff, event coordinators and security.",
+          "Content and promotion: photography, videography, invitations, social media posts, paid ads and printing.",
+          "Logistics: transport, accommodation for speakers or outstation guests, permits, insurance and equipment delivery.",
+          "Gifts and extras: guest packs, awards, souvenirs and thank-you items.",
+          "Contingency: a reserve, often around 10 percent of the total, for changes and items you did not expect.",
+        ],
+      },
+      {
+        id: "fixed-vs-variable",
+        title: "Which Costs Are Fixed and Which Change With Guest Numbers?",
+        paragraphs: [
+          "Splitting costs into fixed and variable lines makes the budget easier to manage. Fixed costs stay the same whether 80 or 120 guests arrive: the stage, the sound system, the backdrop, the MC and the photographer. Variable costs rise with every extra guest: meals, drinks, chairs, gift packs, printed name tags and sometimes transport.",
+          "When the budget is tight, look first at variable costs, because a small saving per head multiplies quickly. When guest numbers are uncertain, confirm the venue's minimum guarantee and the date by which the final number must be given. That one date has a large effect on the final bill.",
+        ],
+      },
+      {
+        id: "getting-quotes",
+        title: "How Do You Get Accurate Quotes From Suppliers in Sri Lanka?",
+        paragraphs: [
+          "Suppliers can only quote accurately when they receive the same clear brief. Send each one the date, start and end times, venue, guest count, layout and a short description of what you need. Ask for an itemised quote that shows quantities, unit rates, taxes, service charges, transport and setup fees.",
+          "Request at least two or three quotes for the larger categories, such as venue, catering and AV. Ask what is excluded, how long the quote is valid and what deposit is needed to hold the date. If a quote is much lower than the others, check whether it leaves out items the others include, such as a backup generator or a technician on site.",
+        ],
+      },
+      {
+        id: "compare-quotes",
+        title: "How Should You Compare Quotes Fairly?",
+        paragraphs: [
+          "Place every quote in the same spreadsheet, line by line. Add missing items to the cheaper quote at a realistic cost so you are comparing like with like. Include service charge and taxes in every total, since some suppliers show them separately.",
+          "Look beyond price. Reliability, experience with similar events, response time and on-site support all matter. A supplier who answers questions quickly and visits the venue before the day can save far more than a small price difference. Ask for examples of similar work and speak to the person who will manage your event on the day.",
+        ],
+      },
+      {
+        id: "payment-schedule",
+        title: "How Do Deposits and Payment Schedules Work?",
+        paragraphs: [
+          "Most venues and suppliers ask for a deposit to confirm a booking, with the balance due before or shortly after the event. Record every deposit, due date and cancellation term in your budget sheet. Missing a payment date can mean losing a date or a supplier during a busy season.",
+          "Spread payments where possible, and avoid paying the full amount long before the event unless the terms are clear. Keep receipts and written confirmations together in one shared folder so that anyone on the team can check what has been paid.",
+        ],
+      },
+      {
+        id: "seasonal-factors",
+        title: "Which Sri Lankan Seasons and Dates Affect Event Costs?",
+        paragraphs: [
+          "Demand for venues and suppliers rises during the wedding season, around Sinhala and Tamil New Year in April, and in November and December when many companies hold year-end parties. Popular weekend dates book early, and some suppliers may charge more or have limited availability. Poya days bring restrictions, including on the sale of alcohol, so check the calendar before you fix a date.",
+          "Weather affects the budget too. Outdoor events during the monsoon months need tents, flooring, extra power protection and covered walkways, which add cost. Building a rain plan into the budget from the start is cheaper than arranging it at the last minute.",
+        ],
+      },
+      {
+        id: "saving-money",
+        title: "How Can You Reduce Costs Without Lowering Quality?",
+        paragraphs: [
+          "Small changes often save more than cutting a whole category. Consider these options before reducing the guest experience.",
+        ],
+        list: [
+          "Choose a weekday or a less busy month when venues may be more flexible.",
+          "Use one strong stage backdrop and good lighting instead of decor spread across the whole room.",
+          "Combine suppliers, such as AV and lighting, to reduce transport and setup fees.",
+          "Shorten the programme so that one meal service covers the event.",
+          "Send digital invitations and use social media for promotion instead of printed mailers.",
+          "Reuse branded items such as banners and pull-up stands at future events.",
+          "Lock in guest numbers early to avoid paying for empty seats.",
+        ],
+      },
+      {
+        id: "tracking-spend",
+        title: "How Do You Keep the Budget Under Control During Planning?",
+        paragraphs: [
+          "Keep three columns for each line: estimated, quoted and actual. Update the sheet whenever a quote arrives or a change is agreed. Ask suppliers to confirm any extra cost in writing before the work is done, especially overtime, additional equipment or extra meals on the day.",
+          "Name one person who approves spending. When several people agree changes with suppliers, costs grow without anyone noticing. A weekly budget check in the final month keeps everyone aware of where the money is going.",
+        ],
+      },
+      {
+        id: "budget-by-event-type",
+        title: "How Do Budgets Differ by Type of Event?",
+        paragraphs: [
+          "Different events put their money in different places. A corporate conference usually spends most on the venue, meals across the day, sound, screens and speaker arrangements. Registration, name badges and printed or digital programmes add smaller but important lines. If the conference runs over two days, accommodation and transport for speakers can become a large item.",
+          "A product launch puts more weight on the stage, lighting, the reveal moment, branding, photography and video. Media and influencer invitations, guest packs and paid social promotion often follow. Because the launch content keeps working online after the event, many brands treat photography and video as an investment rather than an extra.",
+          "Academic ceremonies and inaugurations focus on protocol, stage dressing, flags and lecterns, seating for dignitaries, refreshments and the official photographs. Staff parties and annual get-togethers spend more on food, entertainment, activities and transport. Private celebrations such as weddings and milestone birthdays tend to spend most on venue, catering, decor and photography.",
+          "Knowing where your type of event usually spends helps you set realistic limits for each category and spot a quote that looks out of balance.",
+        ],
+      },
+      {
+        id: "common-mistakes",
+        title: "What Are the Most Common Event Budget Mistakes?",
+        paragraphs: [
+          "The first mistake is starting without a total limit, which leads to small additions that add up to a large overspend. The second is forgetting service charge and taxes until the final invoice. The third is booking the venue before checking catering rules, minimum guarantees and AV inclusions, which can force expensive changes later.",
+          "Other common problems include leaving no contingency, agreeing extra items verbally on the day, paying full amounts too early and not planning for weather. Each of these can be avoided with a clear budget sheet, written confirmations and one person responsible for approving changes.",
+        ],
+      },
+      {
+        id: "budget-template",
+        title: "A Simple Event Budget Template",
+        paragraphs: ["Copy these columns into a spreadsheet and add one row for each item in your categories."],
+        list: [
+          "Category (venue, catering, AV, decor, people, promotion, logistics, extras, contingency)",
+          "Item and description",
+          "Supplier name and contact",
+          "Quantity and unit rate",
+          "Estimated cost",
+          "Quoted cost",
+          "Actual cost",
+          "Deposit paid and date",
+          "Balance due and date",
+          "Notes on inclusions, exclusions and cancellation terms",
+        ],
+      },
+      {
+        id: "real-example",
+        title: "What Real Events Teach Us About Budgets",
+        paragraphs: [
+          "At events such as the FoodCycler Eco 5 product launch and the University of Kelaniya MHRM inauguration, the costs that mattered most were the ones guests saw directly: the stage, the sound, the programme flow and the photographs. Planning those first, then fitting the remaining items around them, gave a clear structure for decisions. The same approach works for any size of event.",
+          "If you are choosing a location, our guide to [event venues in Colombo](/blog/event-venues-colombo-guide) explains how to compare venue quotes and what to check on a site visit.",
+        ],
+      },
+      {
+        id: "get-help",
+        title: "When Should You Ask for a Managed Event Quote?",
+        paragraphs: [
+          "If your event has several suppliers, a tight timeline or important guests, one coordinated quote can be easier to manage than a dozen separate ones. Ask an [event management company in Sri Lanka](/event-management-sri-lanka) for a written proposal that lists each item, what is included and what is not. Compare it with your own budget sheet before you decide.",
+          "For business events such as conferences and seminars, see our [corporate event management](/corporate-event-management-sri-lanka) page for the services we coordinate.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How much does an event cost in Sri Lanka?", a: "It depends on the date, guest count, venue, menu, production and suppliers. The reliable way to know is to send the same brief to each supplier and compare itemised written quotes." },
+      { q: "How much contingency should I keep?", a: "Many planners keep around 10 percent of the total budget as a reserve for changes, extra guests and items that were not in the original plan." },
+      { q: "What costs do people usually forget?", a: "Service charge and taxes, overtime, staff meals, transport and setup fees, backup power, rain cover and the final photo and video editing are commonly missed." },
+      { q: "Should I pay the full amount in advance?", a: "Usually a deposit holds the booking and the balance follows closer to the event. Check the payment schedule and cancellation terms in writing before paying." },
+      { q: "Can Cypher Digital prepare an event quote?", a: "Yes. Share your purpose, date, guest count and location on WhatsApp and we will send a written proposal within 24–48 hours." },
+    ],
+  },
 ];
 
 export const getEventArticle = (slug: string) => eventArticles.find(a => a.slug === slug);

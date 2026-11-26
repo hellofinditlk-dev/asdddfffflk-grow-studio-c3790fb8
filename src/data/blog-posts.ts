@@ -722,6 +722,13 @@ export const blogPosts: BlogPost[] = [
     keyword: "Ecommerce Marketing Sri Lanka",
   },
   {
+    slug: "event-budget-planning-sri-lanka",
+    title: "Event Budget Planning in Sri Lanka: What to Include and Where Costs Go",
+    excerpt: "The cost categories to include in an event budget in Sri Lanka, how to compare quotes, contingency and a simple budget template.",
+    date: "2026-11-26",
+    keyword: "Event Budget Sri Lanka",
+  },
+  {
     slug: "event-venues-colombo-guide",
     title: "Event Venues in Colombo: How to Choose the Right Venue for Your Event",
     excerpt: "How to compare event venues in Colombo: venue types, capacity, parking, AV, monsoon backup and the questions to ask before you book.",
