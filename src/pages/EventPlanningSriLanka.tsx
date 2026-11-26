@@ -8,6 +8,7 @@ import { useWhatsappNumber } from "@/lib/whatsapp";
 import { eventWork } from "@/data/eventWork";
 import { PLANNING_CANONICAL, PLANNING_TITLE, PLANNING_DESCRIPTION, PLANNING_H1, PLANNING_INTRO, planningSections, eventTypeGuides, planningChecklist, hireAdvice, planningFaqs, eventPlanningSchema } from "@/data/eventPlanningGuide";
 import EventWorkGallery from "@/components/EventWorkGallery";
+import EventRelatedReading from "@/components/EventRelatedReading";
 import "@/styles/event-management.css";
 
 const photos = [eventWork[0], eventWork[1], eventWork[4]].filter(Boolean);
@@ -68,6 +69,8 @@ export default function EventPlanningSriLanka() {
                 <Button asChild><a href={wa} target="_blank" rel="noopener noreferrer"><MessageCircle className="w-4 h-4 mr-2" />WhatsApp 076 031 7477</a></Button>
               </aside>
             )}
+            {s.id === "plan-budget" && <p className="text-sm mt-4">For a line-by-line template, read our <Link to="/blog/event-budget-planning-sri-lanka" className="text-primary underline">event budget planning guide for Sri Lanka</Link>.</p>}
+            {s.id === "plan-venue" && <p className="text-sm mt-4">Comparing venues? See <Link to="/blog/event-venues-colombo-guide" className="text-primary underline">how to choose event venues in Colombo</Link>.</p>}
             {i === 5 && <p className="text-sm mt-4">Prefer one team to coordinate every supplier? See our <Link to="/event-management-sri-lanka" className="text-primary underline">event management in Sri Lanka</Link> service.</p>}
           </section>
         ))}
@@ -95,6 +98,7 @@ export default function EventPlanningSriLanka() {
           </div>
         </section>
 
+        <div className="-mx-4"><EventRelatedReading title="Related Event Planning Reading" slugs={["event-venues-colombo-guide","event-budget-planning-sri-lanka","event-planner-vs-event-management-company-sri-lanka","annual-get-together-ideas-sri-lanka"]} /></div>
         <section id="plan-faq">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Event Planning FAQs</h2>
           <div className="space-y-3">

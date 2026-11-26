@@ -39,7 +39,7 @@ const BlogPost62 = () => (
             <h2 className="font-heading text-xl font-bold text-foreground mt-8">7 Things to Look For in a Sri Lankan Corporate Event Agency</h2>
 
             <h3 className="font-heading text-lg font-bold text-foreground mt-6">1. Relevant Portfolio</h3>
-            <p>Ask for examples of similar events. Variety across scales, industries, and event types indicates genuine capability.</p>
+            <p>Ask for examples of similar events. Variety across scales, industries, and event types indicates genuine capability. When you compare <Link to="/event-management-sri-lanka" className="text-primary font-semibold hover:underline">event management companies in Sri Lanka</Link>, ask to see real photos rather than stock images, and read our guide on <Link to="/blog/event-planner-vs-event-management-company-sri-lanka" className="text-primary font-semibold hover:underline">event planner vs event management company</Link> to decide how much support you need.</p>
 
             <h3 className="font-heading text-lg font-bold text-foreground mt-6">2. Clear Communication and Responsiveness</h3>
             <p>Planning involves dozens of decisions. An agency slow to respond during planning will be problematic when urgent issues arise on event day.</p>

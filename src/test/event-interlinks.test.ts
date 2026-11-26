@@ -16,3 +16,15 @@ describe("supporting event articles", () => {
     expect(text).toContain("(/event-management-sri-lanka)");
   });
 });
+import { eventArticlesHtml } from "../../scripts/event-articles-html";
+describe("event article prerender", () => {
+  const tpl = '<html><head><title>x</title></head><body><div id="root"></div></body></html>';
+  it.each(eventArticles.map(a => a.slug))("%s renders full text without JavaScript", (slug) => {
+    const html = eventArticlesHtml(tpl, `/blog/${slug}`);
+    expect(html).toContain(`<link rel="canonical" href="https://cypherdigital.lk/blog/${slug}">`);
+    expect(html).toContain('href="/event-management-sri-lanka"');
+    expect(html).toContain('href="/event-planning-sri-lanka"');
+    expect(html).toContain('"FAQPage"');
+  });
+  it("leaves other routes unchanged", () => expect(eventArticlesHtml(tpl, "/blog/other")).toBe(tpl));
+});

@@ -2,6 +2,7 @@ import { EVENT_CANONICAL, EVENT_TITLE, EVENT_DESCRIPTION, EVENT_OVERVIEW, eventM
 import { corporateServices, marketingEvents, socialEvents, weddingServices, corporateFormats, processSteps, locations, faqs, expertTips, subPages } from "@/data/eventManagementContent";
 import eventConcept from "@/assets/event-planning-concept.jpg";
 import EventWorkGallery from "@/components/EventWorkGallery";
+import EventRelatedReading from "@/components/EventRelatedReading";
 import "@/styles/event-management.css";
 import EventPlanningGuide from "@/components/EventPlanningGuide";
 import EventTrustSections from "@/components/EventTrustSections";
@@ -172,6 +173,7 @@ const EventManagement = () => {
       </section>
 
       <EventWorkGallery />
+      <EventRelatedReading title="Helpful Event Guides" slugs={["product-launch-event-ideas-sri-lanka","award-ceremony-planning-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka","event-planner-vs-event-management-company-sri-lanka"]} />
 
       {/* Types of Events – Topical Authority Section */}
       <section className="py-20 lg:py-28 bg-secondary" id="event-services">

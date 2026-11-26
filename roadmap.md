@@ -1,67 +1,9 @@
-- [x] Review live event-page crawlability and Sri Lanka Semrush/Search Console evidence; strengthen the event overview and add route-only initial guide/FAQ/photo HTML with shared schema, preserving existing pages. Preview verified; 85 tests pass, not published. Ubersuggest data awaits owner export; new Netlify production response awaits deployment.
-- [x] Add five more contextual event-management incoming links using both requested keyword anchors; all five source-to-destination journeys and mobile navigation verified, existing links and metadata preserved, build OK. Not published.
-- [x] Prerender only /digital-marketing-faq-sri-lanka with 56 full questions/answers and shared JSON-LD; raw HTML and no-JavaScript access, search/expand, mobile layout and schema cleanup verified; 51 tests pass including unchanged existing-page responses and Netlify 200 rewrites. Not published; live Netlify deployment remains unverified.
-- [x] Add /digital-marketing-faq-sri-lanka from the uploaded HTML: 56 word-for-word Q&As in a data file, scoped stylesheet, search/highlight, expand-all, sticky chips, hash links, page-only head tags and JSON-LD; footer link, sitemap and llms.txt additions only. Preview only, not published.
-- [x] Replace the event page FAQ with the owner-supplied 12-question set (24–48h proposals, staffing and private events confirmed); FAQPage schema updates automatically. Preview only, not published.
-- [x] Redesign homepage hero: keep “Marketing that actually gets you” fixed; animate Paid, Remembered, Seen, Booked; keep six service tiles on the right.
-- [x] Carry a subtle version of the homepage editorial theme across public pages without changing content or layouts.
-
-- [x] Slightly strengthen existing site-wide editorial styling without changing layouts or content.
-- [x] Extend the homepage editorial look to hero sections on other public pages without changing their content.
-- [x] Build Phase 2 Facebook authority cluster: strategy, cost, lead generation, retargeting, ad creative and page management, wired to the protected pillar and Facebook Ads hub.
-- [x] Rearrange the AI Video Production page for faster mobile scanning and easier actions.
-- [x] Publish first 3 articles from the 10-article brief (programmatic, logo, fashion) with two-way internal linking.
-- [x] Publish articles 4 and 5 (salons & spas, car dealerships) with two-way internal linking.
-- [x] Upgrade the existing call-center outsourcing page with accurate educational coverage, comparisons, pricing factors, industries and aligned search metadata.
-- [x] Build the multichannel Lead Generation Campaigns service page and connect it to lead follow-up and channel-specific services.
-- [x] Create the isolated /white-label-design page with supplied design, route-only noindex and a work image gallery.
-- [x] Improve the international agency page with English-only work, WhatsApp actions, stored enquiries and distinct admin tracking.
-- [x] Enhance white-label page: portfolio mockups, currencies, profit calculator, sample form, trust row, mobile CTA and share metadata.
-- [x] Remove the team and partner-call sections from the direct-only white-label page.
-- [ ] Confirm redo/refund terms and review rating; waiting for owner policy and verified review details.
-- [x] Add the uploaded work-from-home call center vacancy to Careers with its own application page and search metadata.
-- [x] Create Page 1 /google-ads-cost-sri-lanka with supplied copy, highlighted placeholders, original internal links and unchanged shared components; add only its route.
-- [x] Add approved new-pages-only full HTML generation; verify Page 1 preview raw HTML and unchanged existing-page handling.
-- [x] Verify all eleven generated pages on cypherdigital.lk: HTTP 200, full initial text, self-referencing canonicals, one H1, schema and no noindex confirmed on 2026-10-25.
-- [x] Build Pages 2–11 sequentially in this approved run, verifying each full-text HTML response before starting the next; append sitemap entries only after all eleven pages are complete.
-- [ ] Supply actual prices, credentials, team details, case studies and operating terms before advertising them; owner details are unavailable, so completed articles use quote-based and evidence-assessment wording instead.
-- [x] Update all eleven new pages with unique, factual search titles, descriptions and keyword targets; verify initial HTML and page navigation without changing existing pages.
-- [x] Research and replace externally verifiable placeholders across all eleven pages with sourced industry/platform facts; retain owner-only details pending confirmation and verify full-text HTML.
-- [ ] Supply Sri Lanka campaign forecasts or documented local results for numeric CPC/CPV/CPM/CPL ranges; public sources did not establish reliable local benchmarks.
-- [x] Complete all eleven pages without editing placeholders: retain sourced data, use quote-based wording for unconfirmed fees/scope and remove unsupported team/results claims; verify every page's full HTML.
-- [x] Request Lovable publication and resubmit the live cypherdigital.lk sitemap containing all eleven pages to Google; submission accepted (HTTP 204). Live robots.txt allows Google and references the correct sitemap; Google fetches it automatically, with no separate robots submission API.
-- [x] Add and verify Batch 2 article 12 with supplied copy, highlighted placeholders and unchanged existing pages; preview full HTML, tests, blog-to-article navigation, FAQ and service CTA passed; unconfirmed rates remain highlighted, not published.
-- [x] Build and verify Batch 2 articles 13–21 sequentially in the approved continued run; append ten sitemap entries while preserving all original entries; all 41 tests, nine raw-HTML checks and browser FAQ/image/mobile checks passed.
-- [x] Research article 12’s fifteen placeholders and replace them with cited publisher guidance, date caveats and honest quote requests; zero placeholder tokens remain, but current numeric rates were not verified.
-- [ ] Supply current dated publisher rate cards for article 12; public research did not verify 2026 prices for the listed publications.
-- [x] Audit all ten Batch 2 articles and replace empty details with sourced facts, labelled planning estimates or explicit quote-based wording; zero ADD/CONFIRM placeholders remain and 41 rendering tests pass. Current publisher rates and actual owner policies remain unverified, not invented.
-- [x] Check earlier blog articles and first-batch content for empty details: scanned all 168 BlogPost files and 23 Markdown files; no unresolved content markers or confirmed blank price tables found. Quote-required text is intentional, not an empty field; no article changes needed.
-- [x] Add uploaded telesales vacancy, Careers listing, full initial HTML and Google Jobs metadata, sitemap/AI discovery links; verify application access and supplied expiry without invented commission terms. 47 tests passed; preview raw HTML and Careers-to-WhatsApp access checked. Publishing and Google inclusion remain outside this preview change.
-- [x] Expand the same telesales page to at least 2,500 words with useful applicant guidance: 3,127 rendered article words verified, nine vacancy tests passed, section navigation and WhatsApp application checked; original pay and closing terms preserved, not published.
-- [x] Remove the normalized self-redirect from the telesales vacancy’s Netlify configuration and add regression coverage; preserve content and JobPosting metadata.
-- [ ] Deploy the redirect correction to the separately hosted cypherdigital.lk site and recheck live HTTP responses; external Netlify deployment is unavailable here.
-- [x] Add candidate-specific WhatsApp CV-request actions to application rows and details; normalize local numbers and keep sending manual.
-- [x] Link suitable existing body phrases on the ten supplied pages to the protected social service; five pages updated and five existing React Router links retained, all ten verified with unchanged copy/metadata and 27 regression tests passing. Match table supplied for review before publishing.
-- [x] Check seventeen proposed links: added eight existing-word body links, retained three already-supported sources without duplicates, and skipped six without suitable body wording; all seventeen copy/metadata comparisons and eight destination journeys passed, earlier pillar links preserved, 27 tests passing. Not published.
-- [x] Complete Batch 3's 24 requested internal links: seven existing-word body links added, seventeen retained, zero skipped; all 24 wording/metadata comparisons, seven destination journeys and 41 tests passed. Actual anchors and dates recorded in the reviewed spreadsheet; summary formulas verified. Not published.
-- [x] Complete Batch 4's 24 internal links: nine body links added, fifteen retained, zero skipped; six natural context sentences added where wording was missing. All 24 metadata/copy comparisons, nine destination journeys, inherited-style checks and 42 regression tests passed; dated reviewed spreadsheet and actual anchor report completed. Not published.
-- [x] Complete the 19-source social media main-page spreadsheet: three new contextual paragraph links added, sixteen existing body links retained; all nineteen metadata comparisons and earlier paragraph links preserved, three destination journeys visually verified, 21 regression tests passing. Reviewed XLSX has dates and actual anchor comments; recalculated copy confirms 19 done, zero remaining. Protected target unchanged; not published.
-- [x] Complete homepage spreadsheet: three missing contextual links added, nine existing body links retained; all twelve metadata and prior paragraph-link comparisons passed, three homepage journeys visually verified, 20 regression tests passed. Homepage social-media destinations unchanged and correct. Reviewed XLSX confirms twelve done and zero remaining; future tracking blank. Not published; indexing request awaits publication; no automatic blog redirects.
-- [x] Create five uploaded social-media pages, working cost calculator, contact actions, contextual money-page links, 30 specified incoming links and sitemap entries; calculator rules, full initial HTML, source metadata/link preservation and visitor journeys verified without publication.
-- [x] Compare the five social pages against live packages, reel pricing and contact details; retain matching package prices, clarify video-format rates, calculator assumptions, management inclusions and payment terms, correct Colombo details and qualify unsupported outcome promises. All five visitor checks and 76 tests passed; not published.
-- [x] Align the five new pages' unique titles, descriptions and keyword targets with the main social media service; verify matching initial/rendered metadata, self-referencing canonicals and social tags on all five pages. Protected service unchanged; 36 tests passed; reaches live hosting on the next publish.
-- [x] Record contact clicks before navigation without duplicates and add searchable, complete admin contact records with source pages; 33 tests and authenticated visitor-to-admin WhatsApp/call readback passed. Preview only, not published.
-- [x] Match calculator package fees to the current packages page and remove the automatic standalone management surcharge; verified Basic 135,000 with budget, Silver 150,000 with budget / 100,000 without, and WhatsApp draft. Preview only, not published.
-- [x] Require name, phone and email before public WhatsApp navigation; client/server validation, real inquiry save and authenticated admin readback verified with calculator draft and source page. Eleven tests pass; frontend not published.
-- [x] Improve calculator long-tail wording, practical FAQs and shared application schema; add the supplied Google listing link without changing prices or protected pages. Initial/rendered metadata, calculator totals and contact dialog verified; 58 tests pass, build OK. Not published.
-- [ ] Verify and optimise the Google Business Profile itself; account connection was declined, so profile access is unavailable.
-- [x] Expand event management content with practical planning guidance, remove unverified prices/reviews/ratings, align search metadata and verify nine related links, mobile display and WhatsApp contact dialog; not published.
-- [x] Strengthen the event page's opening answer, visible breadcrumbs, section navigation, scope comparison, connected service schema and AI discovery references; sitemap date, mobile display, links and contact dialog verified. Semrush Sri Lanka data unavailable; no ranking promises or publication.
-- [x] Refine homepage section rhythm, card headings, service grid, metric contrast and aligned package actions; preserve content, pricing and contact flows, and verify desktop/mobile presentation without publishing.
-- [x] Restore staggered, slightly tilted boxed hero service cards while retaining all nine services and existing homepage content.
-- [x] Route Event Management and Event Marketing page contact buttons and forms through the supplied dedicated number, preserving shared navigation contacts and lead capture.
-
-- [x] Redesign only the event management page with a visual event-led opening, clearer planning content and aligned search metadata; 3,246 words, 13 related links, one H1, mobile layouts and enquiry access checked; 30 contact tests passed. Not published; verified business details and trust material still await the owner.
-
-- [x] Reorder event content around customer decisions, strengthen event CTAs and add five contextual incoming links; all five source-to-destination journeys, mobile layouts, quote actions and 30 contact tests passed. Real photos and trust content remain owner-dependent; not published.
-- [x] Replace the event concept photo with owner-supplied real work; all seven photos load, accessible enlarged viewing and enquiry jump pass on desktop/mobile, supplied behind-the-scenes Facebook reel linked externally. Preview only, not published; reel playback remains on Facebook.
+# Roadmap
+- [x] Articles 1-4 (venues, budget, planner vs company, product launch)
+- [x] Related reading boxes on Event Planning guide and Event Management hub
+- [x] Article 5: award ceremony planning
+- [x] Article 6: annual get-together ideas
+- [x] Article 7: graduation/inauguration ceremony planning
+- [x] Article 8: event decoration ideas
+- [x] Prerender (no-JS HTML) for event articles
+- [x] Hub link in existing corporate agency blog post

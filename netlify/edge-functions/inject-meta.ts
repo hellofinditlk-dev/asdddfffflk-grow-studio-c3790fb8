@@ -1892,6 +1892,7 @@ export default async function handler(request: Request, context: any) {
   if (path === "/event-management-sri-lanka" || path === "/event-management-sri-lanka/index.html") return context.next();
   // The planning guide ships its own generated content and metadata.
   if (path === "/event-planning-sri-lanka" || path === "/event-planning-sri-lanka/index.html") return context.next();
+  if (/^\/blog\/(event-venues-colombo-guide|event-budget-planning-sri-lanka|event-planner-vs-event-management-company-sri-lanka|product-launch-event-ideas-sri-lanka|award-ceremony-planning-sri-lanka|annual-get-together-ideas-sri-lanka|graduation-inauguration-ceremony-planning-sri-lanka|event-decoration-ideas-sri-lanka)(\/index\.html)?$/.test(path)) return context.next();
   // This direct-only partner page deliberately bypasses public-site SEO injection.
   if (path === "/white-label-design") {
     const response = await context.next();

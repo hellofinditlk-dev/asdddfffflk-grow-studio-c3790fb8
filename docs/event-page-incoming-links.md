@@ -30,3 +30,6 @@ These five links are within existing body paragraphs, with one new keyword ancho
 ## Interlinking update (2026-11-26)
 - Event Marketing and Wedding Planning: anchor "event planning in Sri Lanka" now points to the guide `/event-planning-sri-lanka` (planning intent) instead of the service hub; their "Event Management Sri Lanka" cards still link to the hub.
 - Guide: enquiry box after step 3 links to the hub ("event organisers in Sri Lanka") and opens WhatsApp 076 031 7477.
+
+## Supporting articles (2026-11-26)
+Eight event articles under /blog (venues, budget, planner vs company, product launch, award ceremony, annual get-together, graduation/inauguration, decoration) each link to `/event-management-sri-lanka` and `/event-planning-sri-lanka`. Guide shows "Related Event Planning Reading"; hub shows "Helpful Event Guides". BlogPost62 adds "event management companies in Sri Lanka" → hub.
