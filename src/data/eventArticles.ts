@@ -449,6 +449,151 @@ export const eventArticles: EventArticle[] = [
       { q: "Can Cypher Digital manage only part of my event?", a: "Yes. We can manage the full event or selected parts such as production, AV, staging, promotion or on-site coordination." },
     ],
   },
+  {
+    slug: "product-launch-event-ideas-sri-lanka",
+    title: "Product Launch Event Ideas for Sri Lankan Brands",
+    description: "Product launch event ideas for Sri Lankan brands: launch formats, venue staging, the reveal moment, media and influencer invitations, promotion and follow-up.",
+    h1: "Product Launch Event Ideas for Sri Lankan Brands",
+    intro: "A strong product launch in Sri Lanka combines a clear message, a memorable reveal moment, the right audience in the room and a plan to share the launch online before, during and after the event. The format can be a press conference, a hotel launch evening, a retail activation or a hybrid event streamed to a wider audience. This guide sets out practical launch ideas, how to stage them and how to turn one event into lasting visibility for your product.",
+    date: "2026-11-26",
+    photoIndexes: [1, 2, 11],
+    sections: [
+      {
+        id: "start-with-message",
+        title: "What Should a Product Launch Achieve?",
+        paragraphs: [
+          "Before choosing a format, decide what the launch must achieve. Some launches aim for media coverage, others for dealer and distributor confidence, direct sales, social media reach or early customer sign-ups. Each goal leads to a different guest list, programme and budget. A launch for retail partners needs product demos and pricing discussions, while a consumer launch needs photo moments and shareable content.",
+          "Write one sentence that explains why the product matters to the customer. Every part of the event, from the backdrop to the speeches and social posts, should support that sentence. A launch with a clear message is easier for journalists to report and for guests to repeat to others.",
+        ],
+      },
+      {
+        id: "launch-formats",
+        title: "Which Product Launch Formats Work Well in Sri Lanka?",
+        paragraphs: ["Choose the format that matches your goal, audience and product."],
+        list: [
+          "Press launch: a short, focused programme for journalists and content creators, with a presentation, product demonstration, Q&A and interview time.",
+          "Hotel launch evening: a formal programme for partners, corporate clients and VIPs, with a stage reveal, networking and dinner or cocktails.",
+          "Dealer and distributor launch: product training, demos, sales targets and incentives, often combined with a celebration.",
+          "Retail or mall activation: the product in front of shoppers, with trials, demonstrations, giveaways and live social content.",
+          "Experiential pop-up: a themed space where guests can try the product, suited to food, beauty, lifestyle and technology brands.",
+          "Hybrid or streamed launch: an in-person event streamed to customers and partners across the island or overseas.",
+          "Campus or community launch: useful for education, youth and lifestyle products that need word of mouth among a specific group.",
+        ],
+      },
+      {
+        id: "reveal-moment",
+        title: "How Do You Create a Memorable Reveal Moment?",
+        paragraphs: [
+          "The reveal is the moment guests photograph and share. Plan it carefully. Common ideas include a curtain or cloth drop, a lighting change with music, a countdown on an LED screen, a short teaser video followed by the live product, or the product arriving with the speaker on stage. Keep it short and well rehearsed, and make sure photographers and videographers know exactly when and where it will happen.",
+          "Think about what happens after the reveal. Guests should be able to see and touch the product, ask questions and take photos with it. Demonstration tables, trained staff and a branded photo area help the excitement continue beyond a few seconds on stage.",
+        ],
+      },
+      {
+        id: "venue-staging",
+        title: "How Should You Stage the Venue?",
+        paragraphs: [
+          "Choose a venue that suits the product. Technology and automotive launches often need large stages, LED walls and space for vehicles or equipment. Food and lifestyle products may suit restaurants, rooftop spaces or smaller hotel rooms with a warmer atmosphere. Check ceiling height, loading access, power and lighting control before you book. Our guide to [event venues in Colombo](/blog/event-venues-colombo-guide) covers what to check on a site visit.",
+          "Use one strong stage backdrop with the product name and key message, good lighting on the speaker and product, and clear sound. Add branding at the entrance, registration desk and photo area so that every photo shows the brand. Keep the stage simple enough that the product, not the decor, is the hero.",
+        ],
+      },
+      {
+        id: "guest-list",
+        title: "Who Should You Invite?",
+        paragraphs: [
+          "Build the guest list around the launch goal. A media-focused launch needs journalists, editors and content creators relevant to your category. A trade launch needs distributors, dealers, retail buyers and key accounts. A consumer launch may invite loyal customers, community leaders and people who will share the experience online.",
+          "Send invitations early, follow up with reminders and confirm attendance a few days before. Prepare press kits with the product information, key facts approved by your team, high-quality photos and contact details. Make it easy for guests to report and post about the product accurately.",
+        ],
+      },
+      {
+        id: "programme",
+        title: "What Does a Good Launch Programme Look Like?",
+        paragraphs: [
+          "Most launches work best when the formal part is short. A typical programme might include guest arrival and registration, a welcome by the host, a brief speech from a senior leader, a teaser video, the reveal, a product presentation or demonstration, a short Q&A, photos and networking. Long speeches lose attention, so keep each one focused.",
+          "Prepare a minute-by-minute run sheet with cues for lighting, sound, video and speakers. Hold a technical rehearsal before guests arrive, test every video file and microphone and agree who gives each cue. A clear run sheet keeps the launch on time and makes the event feel professional.",
+        ],
+      },
+      {
+        id: "promotion",
+        title: "How Do You Promote the Launch Before, During and After?",
+        paragraphs: [
+          "Before the event, build interest with teaser posts, countdowns, short videos and invitations to selected guests. During the event, share live stories, short clips and photos, and encourage guests to tag the brand with an event hashtag. After the event, publish a highlights video, a photo album, press coverage and follow-up posts that link to where customers can buy or enquire.",
+          "Paid social media can extend reach to the exact audience you want, such as people in particular cities or interest groups. Our [event marketing Sri Lanka](/event-marketing-sri-lanka) service connects the launch with promotion so that the event reaches far more people than those in the room.",
+        ],
+      },
+      {
+        id: "content-capture",
+        title: "How Should You Capture Content at the Launch?",
+        paragraphs: [
+          "Brief the photographer and videographer with a shot list: the product hero shots, the reveal, the speakers, guest reactions, demonstrations, the branded areas and group photos. Ask for a fast edit of a few photos and a short clip for same-day posting, followed by the full set later.",
+          "Plan vertical video for social media as well as horizontal video for presentations and websites. Short interviews with guests or speakers can become testimonials, but only use quotes that the person has agreed to share.",
+        ],
+      },
+      {
+        id: "local-factors",
+        title: "Which Local Factors Should You Plan Around?",
+        paragraphs: [
+          "Check the calendar for Poya days, public holidays and major festivals, which affect guest availability and alcohol service. April and December are busy months for venues and suppliers. Evening launches in Colombo should allow for traffic, and outdoor elements need a rain plan, especially during the monsoon months.",
+          "Some activations in public spaces or malls need approval from the property management or local authorities. Ask early, as approvals can take time. For launches outside Colombo, plan travel and setup time for equipment and staff.",
+        ],
+      },
+      {
+        id: "real-example",
+        title: "Real Example: The FoodCycler Eco 5 Launch",
+        paragraphs: [
+          "At the FoodCycler Eco 5 product launch, the programme centred on a clear product presentation from the lectern, with the product visible on stage and photographs captured throughout. The focus on a simple message, good staging and strong photography gave the brand material to use after the event as well as on the day.",
+          "Every launch is different, but the same principles apply: one clear message, one strong reveal, a well-briefed team and a plan to keep sharing the launch afterwards. See our [product launch events Sri Lanka](/product-launch-events-sri-lanka) page for how we help brands plan and run launches.",
+        ],
+      },
+      {
+        id: "measure-success",
+        title: "How Do You Measure Whether the Launch Worked?",
+        paragraphs: [
+          "Decide how you will measure success before the event, so that you collect the right information on the day. Useful measures include the number of guests who attended compared with those invited, media articles and posts published, social media reach and engagement, website visits, enquiries and leads, dealer orders and product trials.",
+          "Use a simple registration form or QR code to capture guest details with their consent, and set up tracking links for posts and ads so you can see which channels brought the most interest. Collect enquiries in one place, follow up quickly and record which ones become customers. A short review meeting a week after the launch helps the team learn what to repeat and what to change for the next product.",
+        ],
+      },
+      {
+        id: "budget-priorities",
+        title: "Where Should a Launch Budget Go First?",
+        paragraphs: [
+          "Spend first on what guests and cameras see: the stage, lighting, sound, the reveal and photography. These shape every photo, video and article that comes out of the event. Next, fund the guest experience, including registration, refreshments and comfortable seating. Decor across the wider room, gifts and extras can be scaled to fit what remains.",
+          "Keep a reserve for promotion after the event. A well-shot launch with no follow-up campaign loses most of its value within days, while a modest paid campaign using the launch content can keep the product in front of customers for weeks.",
+        ],
+      },
+      {
+        id: "checklist",
+        title: "Product Launch Checklist",
+        paragraphs: ["Use this short checklist to keep the launch on track."],
+        list: [
+          "Launch goal and one-sentence product message agreed",
+          "Format, date and venue confirmed",
+          "Guest list, invitations and reminders sent",
+          "Press kit with approved facts and photos ready",
+          "Stage, backdrop, lighting and sound booked",
+          "Reveal moment planned and rehearsed",
+          "Run sheet with cues shared with all suppliers",
+          "Photographer and videographer briefed with a shot list",
+          "Social media plan for before, during and after",
+          "Follow-up plan for leads, partners and media",
+        ],
+      },
+      {
+        id: "get-help",
+        title: "When Should You Bring in an Event Team?",
+        paragraphs: [
+          "A launch has many moving parts and only one chance to make a first impression. If you are working with several suppliers, inviting media or VIPs, or combining the event with a promotion campaign, an experienced team can coordinate the details so you can focus on the product and your guests. Speak to an [event management company in Sri Lanka](/event-management-sri-lanka) with a clear brief and ask for a written proposal.",
+          "If you are still shaping the plan, our [event planning Sri Lanka guide](/event-planning-sri-lanka) and [event budget planning guide](/blog/event-budget-planning-sri-lanka) will help you prepare.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How early should we start planning a product launch?", a: "Start as early as possible, ideally several weeks or months before the date, so that the venue, suppliers, invitations and promotion all have enough time." },
+      { q: "Where should we hold a product launch in Colombo?", a: "Choose a venue that suits the product and audience, such as a hotel ballroom for formal launches, a restaurant or rooftop for lifestyle brands, or a mall for consumer activations." },
+      { q: "Should we invite influencers to our launch?", a: "If your audience follows content creators, inviting relevant creators can extend reach. Choose people whose followers match your customers and give them accurate product information." },
+      { q: "How long should a launch programme be?", a: "Keep the formal part short and focused, with brief speeches, a clear reveal and time for guests to see the product and network." },
+      { q: "Can Cypher Digital manage and promote our launch?", a: "Yes. We can manage the launch event and promote it on social media. Share your brief on WhatsApp for a written proposal within 24–48 hours." },
+    ],
+  },
 ];
 
 export const getEventArticle = (slug: string) => eventArticles.find(a => a.slug === slug);

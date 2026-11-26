@@ -571,6 +571,7 @@ const AppContent = () => {
               <Route path="/event-management-sri-lanka" element={<EventManagement />} />
               <Route path="/event-planning-sri-lanka" element={<EventPlanningSriLanka />} />
               <Route path="/blog/event-venues-colombo-guide" element={<EventArticle slug="event-venues-colombo-guide" />} />
+              <Route path="/blog/product-launch-event-ideas-sri-lanka" element={<EventArticle slug="product-launch-event-ideas-sri-lanka" />} />
               <Route path="/blog/event-planner-vs-event-management-company-sri-lanka" element={<EventArticle slug="event-planner-vs-event-management-company-sri-lanka" />} />
               <Route path="/blog/event-budget-planning-sri-lanka" element={<EventArticle slug="event-budget-planning-sri-lanka" />} />
               <Route path="/digital-marketing-faq-sri-lanka" element={<DigitalMarketingFaq />} />

@@ -736,6 +736,13 @@ export const blogPosts: BlogPost[] = [
     keyword: "Event Planner Sri Lanka",
   },
   {
+    slug: "product-launch-event-ideas-sri-lanka",
+    title: "Product Launch Event Ideas for Sri Lankan Brands",
+    excerpt: "Product launch event ideas for Sri Lankan brands: formats, reveal moments, staging, guest lists, promotion and a launch checklist.",
+    date: "2026-11-26",
+    keyword: "Product Launch Ideas Sri Lanka",
+  },
+  {
     slug: "event-venues-colombo-guide",
     title: "Event Venues in Colombo: How to Choose the Right Venue for Your Event",
     excerpt: "How to compare event venues in Colombo: venue types, capacity, parking, AV, monsoon backup and the questions to ask before you book.",
