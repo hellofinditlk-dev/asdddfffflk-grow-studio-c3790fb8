@@ -1890,6 +1890,8 @@ export default async function handler(request: Request, context: any) {
   if (path === "/digital-marketing-faq-sri-lanka" || path === "/digital-marketing-faq-sri-lanka/index.html") return context.next();
   // Preserve the event page's shared initial guide, photos, FAQs and complete metadata.
   if (path === "/event-management-sri-lanka" || path === "/event-management-sri-lanka/index.html") return context.next();
+  // The planning guide ships its own generated content and metadata.
+  if (path === "/event-planning-sri-lanka" || path === "/event-planning-sri-lanka/index.html") return context.next();
   // This direct-only partner page deliberately bypasses public-site SEO injection.
   if (path === "/white-label-design") {
     const response = await context.next();

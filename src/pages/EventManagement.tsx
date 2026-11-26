@@ -482,6 +482,7 @@ const EventManagement = () => {
       </section>
 
       <EventPlanningGuide />
+      <p className="container mx-auto px-4 max-w-3xl -mt-8 mb-12 text-sm">Planning step by step? Read our <Link to="/event-planning-sri-lanka" className="text-primary underline">full event planning guide for Sri Lanka</Link>.</p>
 
       {/* Industries */}
       <section className="py-20 lg:py-28">

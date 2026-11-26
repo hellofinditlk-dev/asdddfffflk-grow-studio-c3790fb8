@@ -103,6 +103,7 @@ const Footer = () => (
             <Link to="/about" className="hover:text-foreground transition-colors">About Us</Link>
             <Link to="/careers" className="hover:text-foreground transition-colors">Digital Marketing Jobs in Sri Lanka</Link>
             <Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link>
+            <Link to="/event-planning-sri-lanka" className="hover:text-foreground transition-colors">Event Planning Guide</Link>
             <Link to="/digital-marketing-faq-sri-lanka" className="hover:text-foreground transition-colors">Digital Marketing FAQ</Link>
             <Link to="/advertising-in-sri-lanka" className="hover:text-foreground transition-colors">Advertising Sri Lanka</Link>
             <Link to="/lead-follow-up-services-sri-lanka" className="hover:text-foreground transition-colors">Lead Follow-Up Services</Link>
