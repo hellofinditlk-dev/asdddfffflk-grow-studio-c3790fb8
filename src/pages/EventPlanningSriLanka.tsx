@@ -98,7 +98,7 @@ export default function EventPlanningSriLanka() {
           </div>
         </section>
 
-        <div className="-mx-4"><EventRelatedReading title="Related Event Planning Reading" slugs={["event-venues-colombo-guide","event-budget-planning-sri-lanka","event-planner-vs-event-management-company-sri-lanka","annual-get-together-ideas-sri-lanka"]} /></div>
+        <div className="-mx-4"><EventRelatedReading title="Related Event Planning Reading" slugs={["event-venues-colombo-guide","event-budget-planning-sri-lanka","event-planner-vs-event-management-company-sri-lanka","annual-get-together-ideas-sri-lanka","award-ceremony-planning-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka"]} /></div>
         <section id="plan-faq">
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold mb-4">Event Planning FAQs</h2>
           <div className="space-y-3">

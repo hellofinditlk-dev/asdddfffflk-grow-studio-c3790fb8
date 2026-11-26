@@ -28,3 +28,9 @@ describe("event article prerender", () => {
   });
   it("leaves other routes unchanged", () => expect(eventArticlesHtml(tpl, "/blog/other")).toBe(tpl));
 });
+describe("related reading boxes", () => {
+  const newFour = ["award-ceremony-planning-sri-lanka","annual-get-together-ideas-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka"];
+  it.each(["EventPlanningSriLanka","EventManagement"])("%s lists all four newer articles", (f) => {
+    const src = read(f); for (const s of newFour) expect(src).toContain(`"${s}"`);
+  });
+});

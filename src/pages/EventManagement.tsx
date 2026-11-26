@@ -173,7 +173,7 @@ const EventManagement = () => {
       </section>
 
       <EventWorkGallery />
-      <EventRelatedReading title="Helpful Event Guides" slugs={["product-launch-event-ideas-sri-lanka","award-ceremony-planning-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka","event-planner-vs-event-management-company-sri-lanka"]} />
+      <EventRelatedReading title="Helpful Event Guides" slugs={["product-launch-event-ideas-sri-lanka","award-ceremony-planning-sri-lanka","graduation-inauguration-ceremony-planning-sri-lanka","event-decoration-ideas-sri-lanka","annual-get-together-ideas-sri-lanka","event-planner-vs-event-management-company-sri-lanka"]} />
 
       {/* Types of Events – Topical Authority Section */}
       <section className="py-20 lg:py-28 bg-secondary" id="event-services">
