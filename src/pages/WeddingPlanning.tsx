@@ -50,7 +50,7 @@ const WeddingPlanning = () => {
 
   return (
     <div className="pt-16">
-      <SEOHead title="Wedding Planning Sri Lanka | Professional Wedding Planners | Cypher Digital" description="Expert wedding planning services in Sri Lanka. Full coordination, venue selection, decoration & vendor management. Create your dream wedding. Contact via WhatsApp." canonical={canonical} />
+      <SEOHead title="Wedding Planning Sri Lanka | Wedding Coordination Services" description="Wedding planning in Sri Lanka: venue shortlisting, decor, suppliers and day-of coordination for your celebration. Tell us your date for a custom proposal." canonical={canonical} />
 
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl text-center animate-fade-up">

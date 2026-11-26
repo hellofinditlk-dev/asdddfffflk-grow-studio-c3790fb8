@@ -52,7 +52,7 @@ const EventMarketing = () => {
 
   return (
     <div className="pt-16">
-      <SEOHead title="Event Marketing Sri Lanka | Digital Promotion for Events | Cypher Digital" description="Event marketing services in Sri Lanka. Social media promotion, digital advertising, content creation & lead generation for events. Maximize your event ROI." canonical={canonical} />
+      <SEOHead title="Event Marketing Sri Lanka | Promote Events & Fill Seats" description="Event marketing in Sri Lanka: social media campaigns, ads, registrations and reminders to drive attendance. Combine it with event management. Get a plan." canonical={canonical} />
 
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl text-center animate-fade-up">

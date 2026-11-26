@@ -280,28 +280,28 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "Label Design Sri Lanka – Professional Product Label Design Services",
   },
   "/event-management-sri-lanka": {
-    title: "Event Planning & Event Management Sri Lanka | Cypher Digital",
-    description: "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.",
+    title: "Event Management Company in Sri Lanka | Cypher Digital",
+    description: "Event management in Sri Lanka for corporate events, launches, ceremonies and activations. Venue, suppliers and on-site coordination. Get a proposal in 24–48 hours.",
     h1: "Event Planning & Event Management Sri Lanka",
   },
   "/corporate-event-management-sri-lanka": {
-    title: "Corporate Event Management Sri Lanka | Conferences & Business Events | Cypher Digital",
-    description: "Professional corporate event management in Sri Lanka. Conferences, seminars, product launches, exhibitions & team-building events. Get a free consultation today.",
+    title: "Corporate Event Management Sri Lanka | Conferences & Seminars",
+    description: "Corporate event management in Sri Lanka for conferences, seminars, inaugurations and staff events. One team for venue, AV, suppliers and guests. Request a proposal.",
     h1: "Corporate Event Management Sri Lanka",
   },
   "/wedding-planning-sri-lanka": {
-    title: "Wedding Planning Sri Lanka | Professional Wedding Planners | Cypher Digital",
-    description: "Expert wedding planning services in Sri Lanka. Full coordination, venue selection, decoration & vendor management. Create your dream wedding.",
+    title: "Wedding Planning Sri Lanka | Wedding Coordination Services",
+    description: "Wedding planning in Sri Lanka: venue shortlisting, decor, suppliers and day-of coordination for your celebration. Tell us your date for a custom proposal.",
     h1: "Wedding Planning Sri Lanka",
   },
   "/event-marketing-sri-lanka": {
-    title: "Event Marketing Sri Lanka | Digital Promotion for Events | Cypher Digital",
-    description: "Event marketing services in Sri Lanka. Social media promotion, digital advertising, content creation & lead generation for events. Maximize your event ROI.",
+    title: "Event Marketing Sri Lanka | Promote Events & Fill Seats",
+    description: "Event marketing in Sri Lanka: social media campaigns, ads, registrations and reminders to drive attendance. Combine it with event management. Get a plan.",
     h1: "Event Marketing Sri Lanka",
   },
   "/product-launch-events-sri-lanka": {
-    title: "Product Launch Events Sri Lanka | Launch Event Planners | Cypher Digital",
-    description: "Professional product launch event management in Sri Lanka. Planning, execution, media coordination & marketing. Make your product launch unforgettable.",
+    title: "Product Launch Events Sri Lanka | Launch Planning & Staging",
+    description: "Plan a product launch in Sri Lanka with venue, staging, media invitations and on-day coordination, plus event promotion. Share your brief on WhatsApp.",
     h1: "Product Launch Events Sri Lanka",
   },
   "/tiktok-marketing-sri-lanka": {

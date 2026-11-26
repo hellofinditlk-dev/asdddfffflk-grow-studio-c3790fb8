@@ -2,8 +2,8 @@ import { faqs } from "../data/eventManagementContent";
 
 export const EVENT_PATH = "/event-management-sri-lanka";
 export const EVENT_CANONICAL = `https://cypherdigital.lk${EVENT_PATH}`;
-export const EVENT_TITLE = "Event Planning & Event Management Sri Lanka | Cypher Digital";
-export const EVENT_DESCRIPTION = "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.";
+export const EVENT_TITLE = "Event Management Company in Sri Lanka | Cypher Digital";
+export const EVENT_DESCRIPTION = "Event management in Sri Lanka for corporate events, launches, ceremonies and activations. Venue, suppliers and on-site coordination. Get a proposal in 24–48 hours.";
 export const EVENT_OVERVIEW = "Cypher Digital provides event planning and event management in Sri Lanka for corporate events, conferences, product launches, brand activations, weddings and private celebrations. Planning covers the brief, budget, venue and programme; management coordinates suppliers, guest arrangements and on-day delivery. Choose planning only or discuss optional event promotion, photography and video. Share your date, city, guest count and requirements for a written, itemised quotation.";
 
 export function eventManagementSchema() {
@@ -82,11 +82,11 @@ export function eventManagementSchema() {
         "@id": `${EVENT_CANONICAL}#webpage`,
         inLanguage: "en-LK",
         mainEntity: { "@id": `${EVENT_CANONICAL}#service` },
-        name: "Event Planning & Event Management Sri Lanka | Cypher Digital",
+        name: "Event Management Company in Sri Lanka | Cypher Digital",
         url: EVENT_CANONICAL,
         breadcrumb: { "@id": `${EVENT_CANONICAL}#breadcrumbs` },
         dateModified: "2026-11-26",
-        description: "Event planning and event management in Sri Lanka by Cypher Digital. Corporate events, product launches and brand activations. Request your custom event quote.",
+        description: "Event management in Sri Lanka for corporate events, launches, ceremonies and activations. Venue, suppliers and on-site coordination. Get a proposal in 24–48 hours.",
       },
     ];
 }

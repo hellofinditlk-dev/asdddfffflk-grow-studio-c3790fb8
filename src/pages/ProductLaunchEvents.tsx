@@ -49,7 +49,7 @@ const ProductLaunchEvents = () => {
 
   return (
     <div className="pt-16">
-      <SEOHead title="Product Launch Events Sri Lanka | Launch Event Planners | Cypher Digital" description="Professional product launch event management in Sri Lanka. Planning, execution, media coordination & marketing. Make your product launch unforgettable." canonical={canonical} />
+      <SEOHead title="Product Launch Events Sri Lanka | Launch Planning & Staging" description="Plan a product launch in Sri Lanka with venue, staging, media invitations and on-day coordination, plus event promotion. Share your brief on WhatsApp." canonical={canonical} />
 
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl text-center animate-fade-up">

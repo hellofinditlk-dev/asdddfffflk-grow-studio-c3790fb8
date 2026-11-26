@@ -69,7 +69,7 @@ const CorporateEventManagement = () => {
 
   return (
     <div className="pt-16">
-      <SEOHead title="Corporate Event Management Sri Lanka | Conferences & Business Events | Cypher Digital" description="Professional corporate event management in Sri Lanka. Conferences, seminars, product launches, exhibitions & team-building events. Get a free consultation today." canonical={canonical} />
+      <SEOHead title="Corporate Event Management Sri Lanka | Conferences & Seminars" description="Corporate event management in Sri Lanka for conferences, seminars, inaugurations and staff events. One team for venue, AV, suppliers and guests. Request a proposal." canonical={canonical} />
 
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4 max-w-3xl text-center animate-fade-up">

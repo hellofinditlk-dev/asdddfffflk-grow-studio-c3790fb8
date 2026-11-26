@@ -2,8 +2,8 @@ export interface GuideSection { id: string; title: string; paragraphs: string[];
 
 export const PLANNING_PATH = "/event-planning-sri-lanka";
 export const PLANNING_CANONICAL = `https://cypherdigital.lk${PLANNING_PATH}`;
-export const PLANNING_TITLE = "Event Planning Sri Lanka: Step-by-Step Guide | Cypher Digital";
-export const PLANNING_DESCRIPTION = "Event planning in Sri Lanka made simple: timeline, budget categories, venues, weather, approvals, suppliers and a checklist for corporate and private events.";
+export const PLANNING_TITLE = "Event Planning Sri Lanka: Step-by-Step Guide & Checklist";
+export const PLANNING_DESCRIPTION = "How to plan an event in Sri Lanka: timeline, budget, venues, monsoon timing, approvals, suppliers and a free checklist. Real examples from our events.";
 export const PLANNING_H1 = "Event Planning in Sri Lanka: A Complete Step-by-Step Guide";
 export const PLANNING_INTRO = "Event planning in Sri Lanka starts with a clear purpose, a realistic date and a budget that covers the venue, production, people and promotion. This guide walks you through each stage, from the first brief to the follow-up after guests leave, with practical notes on local seasons, venues, approvals and suppliers. Use it to plan the event yourself, or to prepare a strong brief before you speak to an event management company.";
 
