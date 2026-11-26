@@ -7,6 +7,7 @@ const PAGE_WHATSAPP_NUMBERS: Record<string, string> = {
   "/event-management-sri-lanka": "94760317477",
   "/event-marketing-sri-lanka": "94760317477",
   "/event-planning-sri-lanka": "94760317477",
+  "/blog/event-venues-colombo-guide": "94760317477",
   "/real-estate-digital-marketing-sri-lanka": "94771437707",
   "/lead-follow-up-services-sri-lanka": "94771437707",
   "/healthcare-digital-marketing-sri-lanka": "94771437707",

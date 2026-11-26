@@ -722,6 +722,13 @@ export const blogPosts: BlogPost[] = [
     keyword: "Ecommerce Marketing Sri Lanka",
   },
   {
+    slug: "event-venues-colombo-guide",
+    title: "Event Venues in Colombo: How to Choose the Right Venue for Your Event",
+    excerpt: "How to compare event venues in Colombo: venue types, capacity, parking, AV, monsoon backup and the questions to ask before you book.",
+    date: "2026-11-26",
+    keyword: "Event Venues in Colombo",
+  },
+  {
     slug: "corporate-event-management-sri-lanka-choose-agency",
     title: "Corporate Event Management Sri Lanka — How to Choose the Right Agency (2026)",
     excerpt: "What to look for when choosing a corporate event management agency in Sri Lanka — venue, AV, catering, marketing, and questions to ask.",

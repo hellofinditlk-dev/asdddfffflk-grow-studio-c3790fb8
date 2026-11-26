@@ -55,6 +55,7 @@ const LinkedInAdvertising = lazy(() => import("./pages/LinkedInAdvertising"));
 const InstagramMarketing = lazy(() => import("./pages/InstagramMarketing"));
 const EventManagement = lazy(() => import("./pages/EventManagement"));
 const EventPlanningSriLanka = lazy(() => import("./pages/EventPlanningSriLanka"));
+const EventArticle = lazy(() => import("./pages/EventArticle"));
 const DigitalMarketingFaq = lazy(() => import("./pages/DigitalMarketingFaq"));
 const CorporateEventManagement = lazy(() => import("./pages/CorporateEventManagement"));
 const WeddingPlanning = lazy(() => import("./pages/WeddingPlanning"));
@@ -569,6 +570,7 @@ const AppContent = () => {
               <Route path="/label-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/event-management-sri-lanka" element={<EventManagement />} />
               <Route path="/event-planning-sri-lanka" element={<EventPlanningSriLanka />} />
+              <Route path="/blog/event-venues-colombo-guide" element={<EventArticle slug="event-venues-colombo-guide" />} />
               <Route path="/digital-marketing-faq-sri-lanka" element={<DigitalMarketingFaq />} />
               <Route path="/corporate-event-management-sri-lanka" element={<CorporateEventManagement />} />
               <Route path="/wedding-planning-sri-lanka" element={<WeddingPlanning />} />

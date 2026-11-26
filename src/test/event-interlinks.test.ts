@@ -7,3 +7,12 @@ describe("event interlinking", () => {
   it.each(["EventMarketing", "WeddingPlanning"])("%s sends 'event planning' anchor to the guide", (f) =>
     expect(read(f)).toMatch(/to="\/event-planning-sri-lanka"[^>]*>event planning in Sri Lanka</));
 });
+import { eventArticles } from "@/data/eventArticles";
+describe("supporting event articles", () => {
+  it.each(eventArticles.map(a => a.slug))("%s links to the guide and the hub", (slug) => {
+    const a = eventArticles.find(x => x.slug === slug)!;
+    const text = [a.intro, ...a.sections.flatMap(s => s.paragraphs)].join(" ");
+    expect(text).toContain("(/event-planning-sri-lanka)");
+    expect(text).toContain("(/event-management-sri-lanka)");
+  });
+});
