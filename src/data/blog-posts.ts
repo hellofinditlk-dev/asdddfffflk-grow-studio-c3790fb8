@@ -729,6 +729,13 @@ export const blogPosts: BlogPost[] = [
     keyword: "Event Budget Sri Lanka",
   },
   {
+    slug: "event-planner-vs-event-management-company-sri-lanka",
+    title: "Event Planner vs Event Management Company in Sri Lanka: Which Do You Need?",
+    excerpt: "The difference between an event planner and an event management company in Sri Lanka, when to hire each, questions to ask and red flags.",
+    date: "2026-11-26",
+    keyword: "Event Planner Sri Lanka",
+  },
+  {
     slug: "event-venues-colombo-guide",
     title: "Event Venues in Colombo: How to Choose the Right Venue for Your Event",
     excerpt: "How to compare event venues in Colombo: venue types, capacity, parking, AV, monsoon backup and the questions to ask before you book.",

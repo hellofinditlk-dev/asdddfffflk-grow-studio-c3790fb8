@@ -305,6 +305,150 @@ export const eventArticles: EventArticle[] = [
       { q: "Can Cypher Digital prepare an event quote?", a: "Yes. Share your purpose, date, guest count and location on WhatsApp and we will send a written proposal within 24–48 hours." },
     ],
   },
+  {
+    slug: "event-planner-vs-event-management-company-sri-lanka",
+    title: "Event Planner vs Event Management Company in Sri Lanka",
+    description: "Event planner or event management company in Sri Lanka? Compare roles, when to hire each, questions to ask, red flags and how to brief them well.",
+    h1: "Event Planner vs Event Management Company in Sri Lanka: Which Do You Need?",
+    intro: "An event planner in Sri Lanka usually helps you shape the idea, timeline and supplier choices, while an event management company takes responsibility for coordinating suppliers, production and the event day itself. Many providers offer both, so the real question is how much of the work you want to hand over. This guide explains the difference, when each option makes sense, what to ask before you hire and the warning signs to watch for.",
+    date: "2026-11-26",
+    photoIndexes: [2, 4, 10],
+    sections: [
+      {
+        id: "what-planner-does",
+        title: "What Does an Event Planner Do?",
+        paragraphs: [
+          "An event planner focuses on the early and creative stages. They help you turn an idea into a workable plan: the purpose of the event, the audience, the format, the date, a budget outline and a timeline. Many planners recommend venues and suppliers, prepare mood boards and draft the programme. Some stay involved until the day, while others hand over a finished plan for your own team to run.",
+          "Planners are especially common for weddings, birthdays and private celebrations, where taste, style and family decisions take time. For smaller corporate events with a capable in-house team, a planner can provide structure without taking over every task.",
+        ],
+      },
+      {
+        id: "what-company-does",
+        title: "What Does an Event Management Company Do?",
+        paragraphs: [
+          "An event management company takes on delivery. It coordinates the venue, AV and lighting, stage, decor, catering liaison, staffing, registration, run sheets and on-site supervision. It manages supplier timings, solves problems on the day and makes sure the programme runs to time. Many companies also handle promotion, photography and video so that the event is supported before and after it happens.",
+          "This option suits conferences, seminars, product launches, academic ceremonies, brand activations and any event with several suppliers or senior guests. If you want one point of contact and one team accountable for the result, an [event management company in Sri Lanka](/event-management-sri-lanka) is usually the better fit.",
+        ],
+      },
+      {
+        id: "key-differences",
+        title: "What Are the Key Differences?",
+        paragraphs: ["The two roles often overlap, but these differences help you decide which one you need."],
+        list: [
+          "Scope: a planner shapes the plan; a management company delivers it end to end.",
+          "Responsibility: with a planner, your team often runs the day; with a management company, its team runs the day.",
+          "Supplier contracts: planners may recommend suppliers you book directly; management companies often coordinate or contract them for you.",
+          "On-site team: planners may attend alone; management companies usually bring coordinators, technical leads and floor staff.",
+          "Best for: planners suit private and smaller events; management companies suit corporate, public and multi-supplier events.",
+        ],
+      },
+      {
+        id: "when-planner",
+        title: "When Is an Event Planner Enough?",
+        paragraphs: [
+          "Choose a planner when your event is small or medium sized, your team has time to coordinate suppliers, and you mainly need ideas, structure and recommendations. A planner is also useful when you are still exploring options and do not yet know your date, venue or budget.",
+          "If you want to try planning on your own first, our [event planning Sri Lanka guide](/event-planning-sri-lanka) covers each step, and our [event budget planning guide](/blog/event-budget-planning-sri-lanka) helps you set realistic cost categories.",
+        ],
+      },
+      {
+        id: "when-company",
+        title: "When Should You Hire an Event Management Company?",
+        paragraphs: [
+          "Hire an event management company when the event involves several suppliers, a fixed date that cannot move, important guests such as dignitaries or media, technical needs such as LED walls or live streaming, or a large guest count. It also makes sense when your team is busy with its own work and cannot spend weeks managing quotes, calls and confirmations.",
+          "Corporate events benefit most, because the result reflects directly on the brand. Our [corporate event management](/corporate-event-management-sri-lanka) and [product launch events](/product-launch-events-sri-lanka) pages describe what this looks like in practice.",
+        ],
+      },
+      {
+        id: "hybrid-options",
+        title: "Can You Combine Both Approaches?",
+        paragraphs: [
+          "Yes. Many organisers use a mixed model. Your team keeps the decisions it cares about most, such as the guest list, speakers and menu, while the event company handles production, AV, staging and on-site coordination. Others hire a company only for the event day, after planning most details themselves.",
+          "Be clear about who does what. Write a short responsibility list that shows each task, who owns it and the deadline. This prevents gaps, such as nobody booking the photographer, and overlaps, such as two people giving the venue different instructions.",
+        ],
+      },
+      {
+        id: "questions-to-ask",
+        title: "What Should You Ask Before You Hire?",
+        paragraphs: ["Use these questions with any planner or event company you are considering."],
+        list: [
+          "Have you managed events of a similar type and size? Can you show photos or examples?",
+          "Who will be my main contact, and who will be on site on the day?",
+          "What exactly is included in your proposal, and what is excluded?",
+          "Do you book suppliers on my behalf, or recommend them for me to book?",
+          "How do you handle changes, extra costs and approvals?",
+          "What is your plan for rain, power failure or a late supplier?",
+          "What is the payment schedule and cancellation policy?",
+          "How soon will I receive a written proposal?",
+        ],
+      },
+      {
+        id: "red-flags",
+        title: "What Red Flags Should You Watch For?",
+        paragraphs: [
+          "Be careful with providers who will not put the scope in writing, give a single total with no breakdown, cannot name who will be on site, or push for full payment long before the event. Vague answers about backup plans and supplier arrangements are another warning sign.",
+          "Ask to see real photos from past events, not only stock images. A reliable team will be open about what it has done and what it has not, and will explain how it would handle your specific requirements.",
+        ],
+      },
+      {
+        id: "how-to-brief",
+        title: "How Do You Brief an Event Planner or Company Well?",
+        paragraphs: [
+          "A clear brief gets you faster and more accurate proposals. Include the purpose of the event, the audience, the preferred date and alternatives, the expected guest count, the location or venue if known, the format, the programme length, any must-have elements and a budget range. Mention any brand guidelines, approvals or VIP protocol that apply.",
+          "Share examples of events you liked and explain why. Say which decisions you want to keep and which you want to hand over. With this information, a provider can recommend the right level of support instead of guessing.",
+        ],
+      },
+      {
+        id: "by-event-type",
+        title: "Which Option Suits Each Type of Event?",
+        paragraphs: [
+          "Weddings and family celebrations often begin with a planner, because the early decisions are personal: theme, colours, guest list, rituals and the order of ceremonies. As the date approaches, many couples add a coordination team for the day so that relatives can enjoy the occasion instead of managing suppliers. Our [wedding planning Sri Lanka](/wedding-planning-sri-lanka) page explains how that support works.",
+          "Conferences, seminars and training days usually need full management. There are speakers to schedule, slides to test, microphones to manage, registration desks to staff and meals to time between sessions. A single missed detail, such as a projector that will not connect, affects every guest in the room.",
+          "Product launches and brand activations sit between creative planning and technical production. The idea and the reveal moment matter, but so do lighting, sound, media arrivals, content capture and the social media plan. A company that offers both event management and [event marketing](/event-marketing-sri-lanka) can connect the launch to the promotion around it.",
+          "Academic ceremonies and inaugurations depend on protocol: the order of speakers, seating for dignitaries, flags, lecterns and official photography. Experience with formal programmes is more important here than decorative ideas.",
+        ],
+      },
+      {
+        id: "proposal-contents",
+        title: "What Should a Good Proposal Include?",
+        paragraphs: [
+          "Whether you hire a planner or a full event company, the proposal should make the scope easy to understand. Look for a summary of your brief, a list of services, a timeline of key dates, the team that will work on your event, the items included and excluded, the payment schedule and the terms for changes or cancellation.",
+          "For managed events, ask for a draft run sheet or programme outline. It shows that the team has thought through the flow of the day, from setup and rehearsals to guest arrival, the main programme and breakdown. Compare proposals side by side and ask questions about anything that is unclear before you sign.",
+        ],
+      },
+      {
+        id: "working-together",
+        title: "How Do You Work Well With Your Event Team?",
+        paragraphs: [
+          "Agree on one decision-maker on your side and one main contact on theirs. Set a regular check-in, weekly in the early stages and more often in the final fortnight. Keep all confirmations, designs and schedules in one shared folder so that everyone works from the latest version.",
+          "Give feedback early. Changing a backdrop design two weeks before the event is simple; changing it the night before is expensive and stressful. After the event, ask for a short review of what worked and what to improve, so the next event starts from a stronger base.",
+        ],
+      },
+      {
+        id: "sri-lanka-factors",
+        title: "Which Local Factors Matter When Choosing in Sri Lanka?",
+        paragraphs: [
+          "Local experience counts. A good provider knows how Colombo traffic affects arrival times, which seasons bring heavy rain, how Poya days affect alcohol service, and how busy venues become around April and December. They should also understand protocol for academic and government guests, and the approvals some public events need.",
+          "If your event is outside Colombo, ask how the team handles travel, accommodation and suppliers in that area. Transporting equipment to Kandy, Galle or the east coast adds time and cost that should appear in the proposal.",
+        ],
+      },
+      {
+        id: "our-approach",
+        title: "How Cypher Digital Works",
+        paragraphs: [
+          "Our team combines event management with digital marketing. We have coordinated academic ceremonies for the University of Kelaniya, the FoodCycler Eco 5 product launch and the Study in Moldova information session at Taj Samudra, and we can also promote events before they happen and share content afterwards. You can hand us the full event or only the parts you need.",
+          "Share your brief and we will send a written proposal within 24–48 hours, showing what is included so you can compare it fairly.",
+          "Because promotion and delivery sit with the same team, the message in your invitations, social posts and paid ads matches what guests experience on the day. Photos and video captured at the event can then be used for follow-up posts, thank-you messages and future campaigns, which helps one event keep working long after the guests have gone home. If you only need advice at the start, we can also review your plan and point out gaps before you book suppliers.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Is an event planner the same as an event manager?", a: "Not always. A planner mainly shapes the plan, while an event manager or management company coordinates suppliers and runs the event day. Many providers offer both." },
+      { q: "Which is cheaper, a planner or an event company?", a: "It depends on the scope. A planner may cost less for advice and planning only, but you take on more coordination work. Compare written proposals for the same brief." },
+      { q: "Do I need an event company for a small event?", a: "Not necessarily. A small event with a capable team may only need a planner or a good checklist. Larger or more technical events benefit from full management." },
+      { q: "How early should I contact an event company?", a: "As early as possible, especially for large events, popular venues or busy months such as April and December. Earlier contact gives more choice of dates and suppliers." },
+      { q: "Can Cypher Digital manage only part of my event?", a: "Yes. We can manage the full event or selected parts such as production, AV, staging, promotion or on-site coordination." },
+    ],
+  },
 ];
 
 export const getEventArticle = (slug: string) => eventArticles.find(a => a.slug === slug);
