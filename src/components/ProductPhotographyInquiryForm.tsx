@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
-import { openTrackedWhatsapp } from "@/lib/contactNavigation";
+import { openWhatsappAfterSavedForm } from "@/lib/contactNavigation";
 import { buildProductPhotographyMessage, type ProductPhotographyInquiry } from "@/lib/productPhotographyInquiry";
 import { useWhatsappNumber } from "@/lib/whatsapp";
 
@@ -65,7 +65,7 @@ export default function ProductPhotographyInquiryForm() {
     }
 
     const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(detailedMessage)}`;
-    const opened = await openTrackedWhatsapp(waUrl, "Get my quote", "Product Photography quote form");
+    const opened = await openWhatsappAfterSavedForm(waUrl, "Get my quote", "Product Photography quote form");
     setBusy(false);
     if (!opened) return;
     toast.success("Opening WhatsApp...");

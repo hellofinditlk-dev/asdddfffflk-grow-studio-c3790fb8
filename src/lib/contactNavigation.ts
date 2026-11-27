@@ -20,3 +20,11 @@ export async function recordBeforeOpening(record: () => Promise<boolean>, href: 
 export function openTrackedWhatsapp(href: string, label: string, placement: string) {
   return requestWhatsappContact(href, label, placement);
 }
+/** For forms that already saved the inquiry: record the click and open WhatsApp directly, without the contact dialog. */
+export async function openWhatsappAfterSavedForm(href: string, label: string, placement: string) {
+  const { trackCtaClick } = await import("@/lib/trackCtaClick");
+  return recordBeforeOpening(async () => {
+    await trackCtaClick({ ctaType: "whatsapp", ctaLabel: label, placement, href });
+    return true;
+  }, href);
+}

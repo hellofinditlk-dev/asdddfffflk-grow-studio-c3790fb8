@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { marketingServiceOptions } from "@/data/digitalMarketingServices";
 import { buildMarketingPlanMessage, selectedMarketingServices, type MarketingPlanInquiry } from "@/lib/digitalMarketingServicesInquiry";
-import { openTrackedWhatsapp } from "@/lib/contactNavigation";
+import { openWhatsappAfterSavedForm } from "@/lib/contactNavigation";
 import { supabase } from "@/integrations/supabase/client";
 
 const initialForm: MarketingPlanInquiry = { name: "", company: "", email: "", phone: "", services: [], message: "" };
@@ -41,7 +41,7 @@ export default function DigitalMarketingServicesForm() {
       return;
     }
     try {
-      const opened = await openTrackedWhatsapp(`https://wa.me/94701772626?text=${encodeURIComponent(message)}`, "Get my plan", "Digital Marketing Services form");
+      const opened = await openWhatsappAfterSavedForm(`https://wa.me/94701772626?text=${encodeURIComponent(message)}`, "Get my plan", "Digital Marketing Services form");
       if (opened) { toast.success("Opening WhatsApp…"); setForm(initialForm); }
     } finally { setBusy(false); }
   };

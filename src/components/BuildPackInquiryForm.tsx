@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import type { BuildPackPage } from "@/data/buildPackPages";
 import { buildPackDetails, buildPackInquiryMessage, type BuildPackInquiry } from "@/lib/buildPackInquiry";
-import { openTrackedWhatsapp } from "@/lib/contactNavigation";
+import { openWhatsappAfterSavedForm } from "@/lib/contactNavigation";
 import { supabase } from "@/integrations/supabase/client";
 
 const emptyForm = (): BuildPackInquiry => ({ name: "", company: "", email: "", phone: "", message: "", details: {} });
@@ -34,7 +34,7 @@ export default function BuildPackInquiryForm({ page }: { page: BuildPackPage }) 
       if (error) throw error;
     } catch { toast.error("Could not save your inquiry. Please try again."); setBusy(false); return; }
     try {
-      const opened = await openTrackedWhatsapp(`https://wa.me/94701772626?text=${encodeURIComponent(message)}`, page.submit, `${page.service} form`);
+      const opened = await openWhatsappAfterSavedForm(`https://wa.me/94701772626?text=${encodeURIComponent(message)}`, page.submit, `${page.service} form`);
       if (opened) { setForm(emptyForm()); toast.success("Opening WhatsApp…"); }
     } finally { setBusy(false); }
   };
