@@ -94,20 +94,20 @@ export default function DigitalMarketingServicesSriLanka() {
       const Icon = serviceIcons[index];
       return <section key={section.title} id={sectionId(section.title)} className={`py-10 md:py-14 border-b border-border scroll-mt-24 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}>
         <div className="container mx-auto px-6 max-w-5xl grid md:grid-cols-[1fr_1.5fr] gap-6 md:gap-12">
-          <div>{Icon && <Icon className="w-7 h-7 text-primary mb-4" aria-hidden="true" />}<h2 className="font-heading text-2xl font-bold tracking-normal leading-snug text-foreground">{section.title}</h2></div>
+          <div>{Icon && <Icon className="w-7 h-7 text-primary mb-4" aria-hidden="true" />}<h2 className="self-start font-heading text-2xl font-bold tracking-normal leading-snug text-foreground">{section.title}</h2></div>
           <Body text={section.body} />
         </div>
       </section>;
     })}
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-6 max-w-5xl grid md:grid-cols-[1fr_1.5fr] gap-6 md:gap-12">
-        <h2 className="font-heading text-2xl font-bold tracking-normal text-foreground">Frequently asked questions</h2>
+        <h2 className="self-start font-heading text-2xl font-bold tracking-normal text-foreground">Frequently asked questions</h2>
         <Accordion type="single" collapsible>{servicesHubFaqs.map((faq, index) => <AccordionItem key={faq.question} value={`faq-${index}`}><AccordionTrigger className="text-left text-base leading-relaxed">{faq.question}</AccordionTrigger><AccordionContent><Body text={faq.answer} /></AccordionContent></AccordionItem>)}</Accordion>
       </div>
     </section>
     <section id="marketing-plan" className="py-12 md:py-16 bg-secondary border-t border-border scroll-mt-24">
       <div className="container mx-auto px-6 max-w-5xl grid md:grid-cols-[1fr_1.5fr] gap-8 md:gap-12">
-        <h2 className="font-heading text-3xl font-bold tracking-normal leading-tight text-foreground">Get a free marketing plan</h2>
+        <h2 className="self-start font-heading text-3xl font-bold tracking-normal leading-tight text-foreground">Get a free marketing plan</h2>
         <DigitalMarketingServicesForm />
       </div>
     </section>
