@@ -21,6 +21,7 @@ const socialItems = [
   { label: "Instagram Marketing", path: "/instagram-marketing-sri-lanka" },
   { label: "TikTok Marketing", path: "/tiktok-marketing-sri-lanka" },
   { label: "LinkedIn Marketing", path: "/linkedin-marketing-sri-lanka" },
+  { label: "Product Photography", path: "/product-photography-sri-lanka" },
 ];
 
 const navLinks = [

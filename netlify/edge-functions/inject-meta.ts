@@ -1888,6 +1888,8 @@ export default async function handler(request: Request, context: any) {
   if (path === "/careers/telesales-executive-jobs-sri-lanka") return context.next();
   // FAQ content and metadata are generated together; preserve that complete response.
   if (path === "/digital-marketing-faq-sri-lanka" || path === "/digital-marketing-faq-sri-lanka/index.html") return context.next();
+  // Product photography ships complete generated content and metadata for this route only.
+  if (path === "/product-photography-sri-lanka" || path === "/product-photography-sri-lanka/index.html") return context.next();
   // Preserve the event page's shared initial guide, photos, FAQs and complete metadata.
   if (path === "/event-management-sri-lanka" || path === "/event-management-sri-lanka/index.html") return context.next();
   // The planning guide ships its own generated content and metadata.

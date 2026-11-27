@@ -29,3 +29,4 @@
 - Prerender the event management route with its shared guide, FAQs, gallery pointers and schema; reuse and clean up the initial schema during navigation and bypass edge replacement only for this route so non-JavaScript readers get substantive content without changing other pages.
 - Keep the event planning guide (`/event-planning-sri-lanka`) as an informational guide in its own dataset, page and prerender generator, linking to the event management service page; this avoids the two pages competing for the same intent.
 - Render event-article HTTPS Markdown links as native anchors in React and initial HTML; preserve internal router links so external destinations work for visitors and crawlers.
+- Keep the Product Photography page's supplied copy, shared schema, quote form and route-only prerender in dedicated modules so existing service templates remain unchanged.
