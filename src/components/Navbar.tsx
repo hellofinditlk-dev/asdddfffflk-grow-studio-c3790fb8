@@ -7,6 +7,30 @@ import logo from "@/assets/logo.png";
 import { industries } from "@/data/industries";
 import { trackCallClick } from "@/lib/trackCallClick";
 
+const socialItems = [
+  { label: "Social Media Marketing", path: "/social-media-management-sri-lanka" },
+  { label: "Social Media Advertising", path: "/social-media-advertising-sri-lanka" },
+  { label: "Social Media Campaigns", path: "/social-media-campaigns-sri-lanka" },
+  { label: "Social Media Strategy", path: "/social-media-strategy-sri-lanka" },
+  { label: "Content Creation", path: "/social-media-content-creation-sri-lanka" },
+  { label: "Lead Generation", path: "/social-media-lead-generation-sri-lanka" },
+  { label: "Social Media Audit", path: "/social-media-audit-sri-lanka" },
+  { label: "Social Media Consultant", path: "/social-media-consultant-sri-lanka" },
+  { label: "Packages & Pricing", path: "/social-media-marketing-packages-sri-lanka" },
+  { label: "Facebook Ads", path: "/facebook-ads-sri-lanka" },
+  { label: "Instagram Marketing", path: "/instagram-marketing-sri-lanka" },
+  { label: "TikTok Marketing", path: "/tiktok-marketing-sri-lanka" },
+  { label: "LinkedIn Marketing", path: "/linkedin-marketing-sri-lanka" },
+  { label: "Product Photography", path: "/product-photography-sri-lanka" },
+];
+
+const navLinks = [
+  { label: "Google Ads", path: "/google-ads-sri-lanka" },
+  { label: "Graphic Design", path: "/graphic-design-sri-lanka" },
+  { label: "AI Visibility", path: "/ai-visibility-sri-lanka" },
+  { label: "AI Video", path: "/ai-video-production-sri-lanka" },
+];
+
 const industryItems = industries.map((i) => ({
   label: i.shortName,
   path: `/${i.slug}`,
@@ -14,8 +38,11 @@ const industryItems = industries.map((i) => ({
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [socialOpen, setSocialOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
+  const [mobileSocialOpen, setMobileSocialOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
+  const socialRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
@@ -24,6 +51,9 @@ const Navbar = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setIndustriesOpen(false);
       }
+      if (socialRef.current && !socialRef.current.contains(e.target as Node)) {
+        setSocialOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
@@ -31,7 +61,9 @@ const Navbar = () => {
 
   useEffect(() => {
     setOpen(false);
+    setSocialOpen(false);
     setIndustriesOpen(false);
+    setMobileSocialOpen(false);
     setMobileIndustriesOpen(false);
   }, [location.pathname]);
 
@@ -49,6 +81,40 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-1">
+          {/* Social Media Dropdown */}
+          <div className="relative" ref={socialRef}>
+            <button
+              onClick={() => setSocialOpen(!socialOpen)}
+              className={`${itemClass(socialItems.some((i) => location.pathname === i.path))} flex items-center gap-1`}
+            >
+              Social Media
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${socialOpen ? "rotate-180" : ""}`} />
+            </button>
+            {socialOpen && (
+              <div className="absolute top-full left-0 mt-1 w-60 bg-card border border-border rounded-xl shadow-lg py-2 z-50">
+                {socialItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`block px-4 py-2.5 text-sm transition-colors ${
+                      location.pathname === item.path
+                        ? "text-primary bg-primary/5"
+                        : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {navLinks.map((link) => (
+            <Link key={link.path} to={link.path} className={itemClass(location.pathname === link.path)}>
+              {link.label}
+            </Link>
+          ))}
+
           {/* Industries Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -108,6 +174,44 @@ const Navbar = () => {
       {open && (
         <div className="lg:hidden bg-background border-t border-border animate-fade-in max-h-[80vh] overflow-y-auto">
           <div className="container mx-auto px-4 py-3 flex flex-col gap-1">
+            {/* Mobile Social Media */}
+            <button
+              onClick={() => setMobileSocialOpen(!mobileSocialOpen)}
+              className={`${itemClass(socialItems.some((i) => location.pathname === i.path))} flex items-center justify-between`}
+            >
+              Social Media
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${mobileSocialOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileSocialOpen && (
+              <div className="pl-4 flex flex-col gap-0.5">
+                {socialItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setOpen(false)}
+                    className={`text-sm py-2 px-3 rounded-lg transition-colors ${
+                      location.pathname === item.path
+                        ? "text-primary bg-primary/5"
+                        : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setOpen(false)}
+                className={itemClass(location.pathname === link.path)}
+              >
+                {link.label}
+              </Link>
+            ))}
+
             {/* Mobile Industries */}
             <button
               onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
