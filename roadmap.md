@@ -7,7 +7,7 @@
 - [x] Article 8: event decoration ideas
 - [x] Prerender (no-JS HTML) for event articles
 - [x] Hub link in existing corporate agency blog post
-- [ ] Product Photography Sri Lanka page, navigation, footer, sitemap and route-only prerender
+- [x] Product Photography Sri Lanka page, navigation, footer, sitemap and route-only prerender
 - [x] Product shoot setup and five-working-day delivery wording (owner confirmed)
 - [ ] Real product-shoot gallery (blocked: owner has no permitted product-shoot photos yet)
 - [ ] Twelve incoming links from the brief (after the new page is live)
