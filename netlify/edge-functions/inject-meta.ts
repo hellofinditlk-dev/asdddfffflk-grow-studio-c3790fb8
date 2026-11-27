@@ -1889,6 +1889,7 @@ export default async function handler(request: Request, context: any) {
   // FAQ content and metadata are generated together; preserve that complete response.
   if (path === "/digital-marketing-faq-sri-lanka" || path === "/digital-marketing-faq-sri-lanka/index.html") return context.next();
   // Product photography ships complete generated content and metadata for this route only.
+  if (path === "/digital-marketing-services-sri-lanka" || path === "/digital-marketing-services-sri-lanka/index.html") return context.next();
   if (path === "/product-photography-sri-lanka" || path === "/product-photography-sri-lanka/index.html") return context.next();
   // Preserve the event page's shared initial guide, photos, FAQs and complete metadata.
   if (path === "/event-management-sri-lanka" || path === "/event-management-sri-lanka/index.html") return context.next();

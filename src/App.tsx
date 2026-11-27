@@ -48,6 +48,7 @@ const VideoProduction = lazy(() => import("./pages/VideoProduction"));
 const AIVideoProduction = lazy(() => import("./pages/AIVideoProduction"));
 const WhiteLabelDesign = lazy(() => import("./pages/WhiteLabelDesign"));
 const SEOServices = lazy(() => import("./pages/SEOServices"));
+const DigitalMarketingServicesSriLanka = lazy(() => import("./pages/DigitalMarketingServicesSriLanka"));
 const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
 const TikTokMarketing = lazy(() => import("./pages/TikTokMarketing"));
 const InfluencerMarketing = lazy(() => import("./pages/InfluencerMarketing"));
@@ -346,6 +347,7 @@ const AppContent = () => {
               <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
               <Route path="/seo-services-sri-lanka" element={<SEOServices />} />
+              <Route path="/digital-marketing-services-sri-lanka" element={<DigitalMarketingServicesSriLanka />} />
               <Route path="/graphic-design-sri-lanka" element={<GraphicDesign />} />
               <Route path="/tiktok-marketing-sri-lanka" element={<TikTokMarketing />} />
               <Route path="/influencer-marketing-sri-lanka" element={<InfluencerMarketing />} />

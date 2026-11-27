@@ -1,4 +1,7 @@
 # Roadmap
+- [x] Build-pack Page 01: All Services page, additive route, sitemap and route-only initial HTML
+- [x] All Services page without photos (owner requested no photo)
+- [ ] Build-pack navigation and optional incoming links (later phases after Page 01 is live)
 - [x] Articles 1-4 (venues, budget, planner vs company, product launch)
 - [x] Related reading boxes on Event Planning guide and Event Management hub
 - [x] Article 5: award ceremony planning
