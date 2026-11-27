@@ -29,6 +29,7 @@ const navLinks = [
   { label: "Graphic Design", path: "/graphic-design-sri-lanka" },
   { label: "AI Visibility", path: "/ai-visibility-sri-lanka" },
   { label: "AI Video", path: "/ai-video-production-sri-lanka" },
+  { label: "All Services", path: "/digital-marketing-services-sri-lanka" },
 ];
 
 const industryItems = industries.map((i) => ({

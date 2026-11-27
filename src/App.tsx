@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedNewServices from "@/components/RelatedNewServices";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FloatingCallButton from "@/components/FloatingCallButton";
 import BlogCTAInjector from "@/components/BlogCTAInjector";
@@ -617,6 +618,7 @@ const AppContent = () => {
           </Suspense>
           <ServiceStickyCTA />
         </SiteShell>
+        <RelatedNewServices />
         <Footer />
         <WhatsAppButton />
         <FloatingCallButton />
