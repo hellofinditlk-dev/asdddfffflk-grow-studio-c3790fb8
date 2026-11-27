@@ -10,6 +10,7 @@ import { eventPlanningPrerender } from "./scripts/event-planning-prerender";
 import { eventArticlesPrerender } from "./scripts/event-articles-prerender";
 import { productPhotographyPrerender } from "./scripts/product-photography-prerender";
 import { digitalMarketingServicesPrerender } from "./scripts/digital-marketing-services-prerender";
+import { buildPackPrerender } from "./scripts/build-pack-prerender";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -20,7 +21,7 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender(), telesalesPrerender(), digitalMarketingFaqPrerender(), eventManagementPrerender(), eventPlanningPrerender(), eventArticlesPrerender(), productPhotographyPrerender(), digitalMarketingServicesPrerender()].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger(), newPagePrerender(), telesalesPrerender(), digitalMarketingFaqPrerender(), eventManagementPrerender(), eventPlanningPrerender(), eventArticlesPrerender(), productPhotographyPrerender(), digitalMarketingServicesPrerender(), buildPackPrerender()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

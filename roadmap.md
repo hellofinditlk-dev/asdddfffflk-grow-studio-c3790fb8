@@ -1,4 +1,6 @@
 # Roadmap
+- [x] Build remaining eight new build-pack pages together with forms, schema, sitemap and scoped initial HTML; preserve existing Product Photography page
+- [ ] Resolve owner-only details in remaining pack (blocked: timelines, usage rights, platforms, optional services and real portfolio assets not supplied; omitted meanwhile)
 - [x] Build-pack Page 01: All Services page, additive route, sitemap and route-only initial HTML
 - [x] All Services page without photos (owner requested no photo)
 - [ ] Build-pack navigation and optional incoming links (later phases after Page 01 is live)

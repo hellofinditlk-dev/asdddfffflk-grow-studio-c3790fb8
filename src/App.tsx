@@ -49,6 +49,14 @@ const AIVideoProduction = lazy(() => import("./pages/AIVideoProduction"));
 const WhiteLabelDesign = lazy(() => import("./pages/WhiteLabelDesign"));
 const SEOServices = lazy(() => import("./pages/SEOServices"));
 const DigitalMarketingServicesSriLanka = lazy(() => import("./pages/DigitalMarketingServicesSriLanka"));
+const AdvertisingAgencySriLanka = lazy(() => import("./pages/AdvertisingAgencySriLanka"));
+const DigitalMarketingConsultantSriLanka = lazy(() => import("./pages/DigitalMarketingConsultantSriLanka"));
+const PhotoshootSriLanka = lazy(() => import("./pages/PhotoshootSriLanka"));
+const CorporatePhotographyColombo = lazy(() => import("./pages/CorporatePhotographyColombo"));
+const WebDevelopmentSriLanka = lazy(() => import("./pages/WebDevelopmentSriLanka"));
+const EcommerceWebsiteSriLanka = lazy(() => import("./pages/EcommerceWebsiteSriLanka"));
+const OutdoorAdvertisingSriLanka = lazy(() => import("./pages/OutdoorAdvertisingSriLanka"));
+const EmailMarketingSriLanka = lazy(() => import("./pages/EmailMarketingSriLanka"));
 const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
 const TikTokMarketing = lazy(() => import("./pages/TikTokMarketing"));
 const InfluencerMarketing = lazy(() => import("./pages/InfluencerMarketing"));
@@ -348,6 +356,14 @@ const AppContent = () => {
               <Route path="/ai-video-production-sri-lanka" element={<AIVideoProduction />} />
               <Route path="/seo-services-sri-lanka" element={<SEOServices />} />
               <Route path="/digital-marketing-services-sri-lanka" element={<DigitalMarketingServicesSriLanka />} />
+              <Route path="/advertising-agency-sri-lanka" element={<AdvertisingAgencySriLanka />} />
+              <Route path="/digital-marketing-consultant-sri-lanka" element={<DigitalMarketingConsultantSriLanka />} />
+              <Route path="/photoshoot-sri-lanka" element={<PhotoshootSriLanka />} />
+              <Route path="/corporate-photography-colombo" element={<CorporatePhotographyColombo />} />
+              <Route path="/web-development-sri-lanka" element={<WebDevelopmentSriLanka />} />
+              <Route path="/ecommerce-website-sri-lanka" element={<EcommerceWebsiteSriLanka />} />
+              <Route path="/outdoor-advertising-sri-lanka" element={<OutdoorAdvertisingSriLanka />} />
+              <Route path="/email-marketing-sri-lanka" element={<EmailMarketingSriLanka />} />
               <Route path="/graphic-design-sri-lanka" element={<GraphicDesign />} />
               <Route path="/tiktok-marketing-sri-lanka" element={<TikTokMarketing />} />
               <Route path="/influencer-marketing-sri-lanka" element={<InfluencerMarketing />} />

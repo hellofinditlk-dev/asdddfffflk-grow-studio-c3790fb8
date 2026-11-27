@@ -31,3 +31,4 @@
 - Render event-article HTTPS Markdown links as native anchors in React and initial HTML; preserve internal router links so external destinations work for visitors and crawlers.
 - Keep the Product Photography page's supplied copy, shared schema, quote form and route-only prerender in dedicated modules so existing service templates remain unchanged.
 - Keep build-pack pages' supplied content, available-link lists, forms and initial HTML scoped to their own modules; reuse shared controls unchanged so existing public pages remain protected.
+- Render the remaining build-pack pages from their dedicated allowlist through lazy wrappers and a pack-only layout/form; share schema and safe Markdown with capped initial HTML so existing templates stay unchanged.
